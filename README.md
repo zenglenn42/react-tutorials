@@ -1,55 +1,11 @@
 # react-tutorials
-Container for various react tutorials I complete.
 
-## Setting up my github repo for various React tutorials
+This is a contaier app for hosting various React tutorials I complete.
 
-[bootstrapping react devevelopment](https://create-react-app.dev/)
+## Bootstrap a minimal Express / React Heroku-ready app
 
-Install and run create-react-app as a single step using npx ...
+I'm following [this blog](https://daveceddia.com/deploy-react-express-app-heroku/) for bringing up a simple Express server with React frontend client.
 
+Here's what it looks like from Heroku:
 
-```
-$ cd dev/git/react-tutorials
-$ npx create-react-app app
-
-Success! Created app at /Users/gs/dev/git/react-tutorials/app
-Inside that directory, you can run several commands:
-
-  npm start
-    Starts the development server.
-
-  npm run build
-    Bundles the app into static files for production.
-
-  npm test
-    Starts the test runner.
-
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
-
-We suggest that you begin by typing:
-
-  cd app
-  npm start
-
-Happy hacking!
-```
-
-## Deploying MERN stack to Heroku
-
-[link](https://www.youtube.com/watch?v=5PaUiPyBDJY)
-
-[link](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
-[link](https://cli-assets.heroku.com/heroku.pkg)
-
-Install homebrew ...
-
-[link](https://apple.stackexchange.com/questions/381664/installing-heroku-cli-on-macos-catalina)
-
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-brew tap heroku/brew && brew install heroku
-
-gs@Gs-MacBook-Pro client % which heroku
-/usr/local/bin/heroku
+![alt](docs/img/bootstrap-app.png)
