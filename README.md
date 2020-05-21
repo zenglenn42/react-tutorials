@@ -1,6 +1,6 @@
 # react-tutorials
 
-This is a contaier app for hosting various React tutorials I complete.
+This is a container app for hosting various React tutorials I complete.
 
 ## Bootstrap a minimal Express / React Heroku-ready app
 
