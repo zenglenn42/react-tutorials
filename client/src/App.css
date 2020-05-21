@@ -2,6 +2,27 @@
   text-align: center;
   font-family: "Courier New", monospace;
   width: 100%;
+  display: flex;
+  min-height: 100vh;
+  min-width: 100ww;
+  justify-content: center;
+  align-items: center;
+}
+
+.SplashIcon {
+  color: cyan;
+  width: 80%;
+  height: 80%;
+}
+
+.AppPaper {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
 }
 
 h1 {
