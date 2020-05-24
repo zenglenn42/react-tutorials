@@ -14,6 +14,10 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import NestedList from './components/NestedList';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { FaReact as ReactIcon } from 'react-icons/fa';
+import Paper from '@material-ui/core/Paper';
+import Link from '@material-ui/core/Link';
+import Button from '@material-ui/core/Button';
+import { MdTouchApp } from "react-icons/md";
 
 const drawerWidth = 240;
 
@@ -73,6 +77,12 @@ const useStyles = makeStyles((theme) => ({
     }),
     marginLeft: 0,
   },
+  mainPaper: {
+    padding: theme.spacing(1, 2)
+  },
+  button: {
+    padding: theme.spacing(0, 1)
+  }
 }));
 
 export default function PersistentDrawerLeft(props) {
@@ -139,29 +149,26 @@ export default function PersistentDrawerLeft(props) {
         })}
       >
         <div className={classes.drawerHeader} />
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-          donec massa sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-          facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-          tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-          consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-          vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-          hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-          tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-          nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-          accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+        <Paper className={classes.mainPaper} elevation={0} >
+          <Typography variant="h4" gutterBottom> 
+            <ReactIcon/> Learning React
+          </Typography>
+          <Typography paragraph>
+            React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
+          </Typography>
+          <Typography paragraph>
+            Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions to share with you.
+          </Typography>
+          <Button
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            variant="contained"
+            color="default"
+          >
+            <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
+          </Button>
+        </Paper>
       </main>
     </div>
   );

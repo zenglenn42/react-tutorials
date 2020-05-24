@@ -7,7 +7,7 @@ import PersistentDrawerLeft from './App';
 ReactDOM.render(
   <React.StrictMode>
     <PersistentDrawerLeft 
-      text="React Demos"
+      text="React Tutorials"
     />
   </React.StrictMode>,
   document.getElementById('root')
