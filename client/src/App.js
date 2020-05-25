@@ -18,6 +18,8 @@ import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import { MdTouchApp } from "react-icons/md";
+import GitHubIcon from '@material-ui/icons/GitHub';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const drawerWidth = 240;
 
@@ -82,7 +84,10 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     padding: theme.spacing(0, 1)
-  }
+  },
+  grow: {
+    flex: '1 1 auto',
+  },
 }));
 
 export default function PersistentDrawerLeft(props) {
@@ -120,6 +125,17 @@ export default function PersistentDrawerLeft(props) {
           <Typography variant="h6" noWrap>
             {props.text||"Persistent drawer"}
           </Typography>
+          <div className={classes.grow} />
+          <Tooltip title="github" enterDelay={300}>
+            <IconButton
+                component="a"
+                color="inherit"
+                href="https://github.com/zenglenn42/react-tutorials"
+                aria-label="github"
+              >
+                <GitHubIcon />
+            </IconButton>
+          </Tooltip>
         </Toolbar>
       </AppBar>
       <Drawer
