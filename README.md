@@ -18,9 +18,11 @@ The basic server directory layout is:
 ./index.js             # server
 ./package.json         # server config management control file (with Heroku build info)
 ./node_modules         # third party packages required by server
+```
 
 The frontend react code lives in a subdirectory off the server folder and is bootstrapped by a call to 'create-react-app' as described in the blog above.  This configures the webpack toolchain responsible for transforming client code and packages into a deployable, browser-ready bundle.
 
+```
 ./client               # react client folder
 ./client/index.js      # generic, top-level build entrypoint for React client
 ./client/App.js        # application-specific frontend code
