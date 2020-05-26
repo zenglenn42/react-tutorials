@@ -83,8 +83,8 @@ The proxy port setting is for the development workflow only and describes to the
 In development, we have to start the server and then manually start the client:
 
 ```
-npm start &
-cd client && npm start
+$ npm start &
+$ cd client && npm start
 ```
 
-though I may tweak that shortly to make things more convenient.
+That's a bit clunky for development, but it works.
