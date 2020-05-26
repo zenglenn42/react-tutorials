@@ -22,7 +22,7 @@ Instead of components, I could drop in Tutorial providers with my selected solut
 
 ![alt](docs/img/slideout-drawer-zg.png)
 
-This container could even scale up to /become/ to host my entire portfolio.
+This container could even scale up to /host/ my entire portfolio.
 
 ## Bootstrap a minimal Heroku-ready express/react stack 
 
