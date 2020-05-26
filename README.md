@@ -2,11 +2,15 @@
 
 This is a container app for hosting various React tutorials I complete.
 
-## Bootstrap a minimal Express / React Heroku-ready dev environment
+## Bootstrap a minimal Heroku-ready express/react stack 
 
-I want a fairly minimal stack for now.  Maybe just express for the webserver and react for the frontend.  And something Heroku ready would be nice.  The fu in [this blog](https://daveceddia.com/deploy-react-express-app-heroku/) fits the bill.
+I want a fairly minimal stack for now.  Maybe just express for the web server and definitely react for the front end (since that's the whole point of these tutorials) and something Heroku-ready would be nice.
 
-It's a simple React client that retrieves generated password candidate strings from an express server.  We'll rework the functionality for our puposes.  It just gives us a good starting point for establishing development and deployment workflows with our desired technology stack and hosting platform.
+The fu in [this blog](https://daveceddia.com/deploy-react-express-app-heroku/) from Dave Ceddia fits the bill!
+
+It's a simple React client that retrieves generated password candidate strings from an express server.
+
+Eventually, I'll replace the generator logic with stuff I need for my tutorial solutions.  It just gives me a good starting point for establishing development and deployment workflows with our desired technology stack and hosting platform.
 
 ![alt](docs/img/bootstrap-app.png)
 
