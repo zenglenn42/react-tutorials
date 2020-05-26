@@ -6,7 +6,7 @@ This is a container app for hosting various React tutorials I complete.
 
 I want a fairly minimal stack for now.  Maybe just express for the webserver and react for the frontend.  And something Heroku ready would be nice.  The fu in [this blog](https://daveceddia.com/deploy-react-express-app-heroku/) fits the bill.
 
-It's a simple React client that retrieves generated password candidate strings from an express server.  We'll rework the functionality for our puposes.  It just gives us a good starting point for establishing development and deployment work flows with our desired technology stack and hosting platform.
+It's a simple React client that retrieves generated password candidate strings from an express server.  We'll rework the functionality for our puposes.  It just gives us a good starting point for establishing development and deployment workflows with our desired technology stack and hosting platform.
 
 ![alt](docs/img/bootstrap-app.png)
 
@@ -80,11 +80,17 @@ The proxy port setting is for the development workflow only and describes to the
 
 ```
 
-In development, we have to start the server and then manually start the client:
+In development, we start the web server and client as two separate steps:
 
 ```
 $ npm start &
 $ cd client && npm start
 ```
 
-That's a bit clunky for development, but it works.
+We can then browse to localhost:3000.  I may streamline this.
+
+In production on Heroku, our server is already running and the client bundle is prebuilt and deployable simply by visiting:
+
+```
+https://react-tutorials.herokuap.com
+```
