@@ -8,7 +8,15 @@ A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube
 
 I thought it would be nice to oranize my solutions and make them shareable.  I could just blast them to [codesandbox](https://codesandbox.io/).  But I want to play around with React itself and crafting a React-based container for my solutions would be a good design exercise and something I could plug into my growing portfolio.
 
-As I acquire more React knowledge, I'll want to aggregate solutions from multiple books and online tutorials.  So I need a design that scales for that.  I also want it to be responsive.  Some animation might be nice.  Links to my own github blog and code sections would be good along with the runnable demo code.  I'm not really down for custom-designing some new, exotic interface, though.  I just want to sensibly combine UI components which are already out there. I think about various design elements:
+### Requirements
+
+* As I acquire more React knowledge, I'll want to aggregate solutions from multiple books and online tutorials.  So I need a design that scales for that.  
+* I also want it to be responsive.
+* Links to my own github blog and code sections would be good along with the runnable demo code.  
+* I'm not really down for custom-designing some exotic interface.  I just want to sensibly combine UI components which are already out there.
+* Making the container searchable would be very useful.
+
+I think about various design elements:
 
 * Carousels
 * Breadcrumbs
