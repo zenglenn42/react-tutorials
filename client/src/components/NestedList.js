@@ -22,12 +22,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NestedList() {
+export default function NestedList(props) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  // const [open, setOpen] = React.useState(true);
 
-  const handleClick = () => {
-    setOpen(!open);
+  const [open, setOpen] = React.useState({
+    "vschool.io": false,
+    "Set 2": false
+  });
+
+  const handleClick = (e) => {
+    const key = e.target.innerHTML
+    const value = open[key]
+    setOpen({...open, [key]: !value})
+    // setOpen(!open);
+    // props.setMainContent("splash")
   };
 
   return (
@@ -36,7 +45,7 @@ export default function NestedList() {
       aria-labelledby="nested-list-subheader"
       subheader={
         <ListSubheader component="div" id="nested-list-subheader">
-          Select a demo ...
+          Tutorial demos
         </ListSubheader>
       }
       className={classes.root}
@@ -45,17 +54,18 @@ export default function NestedList() {
         <ListItemIcon>
           <DemoGroupIcon />
         </ListItemIcon>
-        <ListItemText primary="vschool.io course" />
-        {open ? <ExpandLess /> : <ExpandMore />}
+        <ListItemText primary="vschool.io" />
+        {open["vschool.io"] ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
-      <Collapse in={open} timeout="auto" unmountOnExit>
+      <Collapse in={open["vschool.io"]} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-        <ListItem button className={classes.nested}>
+          <ListItem button className={classes.nested}>
             <ListItemIcon>
               <PlayDemoIcon />
             </ListItemIcon>
             <ListItemText primary="Todo MVC" />
           </ListItem>
+
           <ListItem button className={classes.nested}>
             <ListItemIcon>
               <PlayDemoIcon />
@@ -64,12 +74,32 @@ export default function NestedList() {
           </ListItem>
         </List>
       </Collapse>
-      <ListItem button>
+
+      <ListItem button onClick={handleClick}>
         <ListItemIcon>
           <DemoGroupIcon />
         </ListItemIcon>
         <ListItemText primary="Set 2" />
+        {open["Set 2"] ? <ExpandLess /> : <ExpandMore />}
       </ListItem>
+      <Collapse in={open["Set 2"]} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItem button className={classes.nested}>
+            <ListItemIcon>
+              <PlayDemoIcon />
+            </ListItemIcon>
+            <ListItemText primary="Todo MVC" />
+          </ListItem>
+
+          <ListItem button className={classes.nested}>
+            <ListItemIcon>
+              <PlayDemoIcon />
+            </ListItemIcon>
+            <ListItemText primary="Meme Generator" />
+          </ListItem>
+        </List>
+      </Collapse>
+      
       <ListItem button>
         <ListItemIcon>
           <DemoGroupIcon />

@@ -94,6 +94,7 @@ export default function PersistentDrawerLeft(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
+  const [mainContent, setMainContent] = React.useState(props.main)
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -157,7 +158,7 @@ export default function PersistentDrawerLeft(props) {
           </IconButton>
         </div>
         <Divider />
-        <NestedList />
+        <NestedList setMainContent={setMainContent} />
       </Drawer>
       <main
         className={clsx(classes.content, {
@@ -165,6 +166,7 @@ export default function PersistentDrawerLeft(props) {
         })}
       >
         <div className={classes.drawerHeader} />
+        {(mainContent === "splash") &&
         <Paper className={classes.mainPaper} elevation={0} >
           <Typography variant="h4" gutterBottom> 
             <ReactIcon/> Learning React
@@ -185,6 +187,7 @@ export default function PersistentDrawerLeft(props) {
             <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
           </Button>
         </Paper>
+        }
       </main>
     </div>
   );
