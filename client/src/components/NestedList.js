@@ -45,6 +45,10 @@ export default function NestedList(props) {
         props.setMainContent("todo")
         break;
 
+      case "Meme Generator":
+        props.setMainContent("memeGenerator")
+        break;
+
       default:
         props.setMainContent("splash")
         break;
@@ -78,12 +82,12 @@ export default function NestedList(props) {
             <ListItemText primary="Todo MVC" />
           </ListItem>
 
-          {/* <ListItem button className={classes.nested} onClick={handleChoice}>
+          <ListItem button className={classes.nested} onClick={handleChoice}>
             <ListItemIcon>
               <PlayDemoIcon />
             </ListItemIcon>
             <ListItemText primary="Meme Generator" />
-          </ListItem> */}
+          </ListItem>
         </List>
       </Collapse>
 

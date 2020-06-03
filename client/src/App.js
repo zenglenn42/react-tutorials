@@ -21,6 +21,7 @@ import { MdTouchApp } from "react-icons/md";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Tooltip from '@material-ui/core/Tooltip';
 import TodoList from './components/vschool/todo/TodoList'
+import MemeGenerator from './components/vschool/memeGenerator/MemeGenerator'
 
 const drawerWidth = 240;
 
@@ -100,6 +101,17 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
               <ReactIcon/> Todo List
             </Typography>
             <TodoList />
+          </Paper>
+        )
+        break;
+
+      case "memeGenerator":
+        return (
+          <Paper className={classes.mainPaper} elevation={0} >
+            <Typography variant="h4" gutterBottom> 
+              <ReactIcon/> Meme Generator
+            </Typography>
+            <MemeGenerator />
           </Paper>
         )
         break;
