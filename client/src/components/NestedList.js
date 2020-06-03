@@ -35,9 +35,21 @@ export default function NestedList(props) {
     const key = e.target.innerHTML
     const value = open[key]
     setOpen({...open, [key]: !value})
-    // setOpen(!open);
-    // props.setMainContent("splash")
   };
+  
+  const handleChoice = (e) => {
+    const key = e.target.innerHTML
+    console.log("key = ", key)
+    switch(key) {
+      case "Todo MVC":
+        props.setMainContent("todo")
+        break;
+
+      default:
+        props.setMainContent("splash")
+        break;
+    }
+  }
 
   return (
     <List
@@ -59,23 +71,23 @@ export default function NestedList(props) {
       </ListItem>
       <Collapse in={open["vschool.io"]} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
-          <ListItem button className={classes.nested}>
+          <ListItem button className={classes.nested} onClick={handleChoice}>
             <ListItemIcon>
               <PlayDemoIcon />
             </ListItemIcon>
             <ListItemText primary="Todo MVC" />
           </ListItem>
 
-          <ListItem button className={classes.nested}>
+          {/* <ListItem button className={classes.nested} onClick={handleChoice}>
             <ListItemIcon>
               <PlayDemoIcon />
             </ListItemIcon>
             <ListItemText primary="Meme Generator" />
-          </ListItem>
+          </ListItem> */}
         </List>
       </Collapse>
 
-      <ListItem button onClick={handleClick}>
+      {/* <ListItem button onClick={handleClick}>
         <ListItemIcon>
           <DemoGroupIcon />
         </ListItemIcon>
@@ -98,14 +110,14 @@ export default function NestedList(props) {
             <ListItemText primary="Meme Generator" />
           </ListItem>
         </List>
-      </Collapse>
+      </Collapse> */}
       
-      <ListItem button>
+      {/* <ListItem button>
         <ListItemIcon>
           <DemoGroupIcon />
         </ListItemIcon>
         <ListItemText primary="Set 3" />
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }

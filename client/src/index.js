@@ -5,12 +5,10 @@ import * as serviceWorker from './serviceWorker';
 import PersistentDrawerLeft from './App';
 
 ReactDOM.render(
-  <React.StrictMode>
     <PersistentDrawerLeft 
       text="React Tutorials"
       main="splash"
-    />
-  </React.StrictMode>,
+    />,
   document.getElementById('root')
 );
 

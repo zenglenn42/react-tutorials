@@ -20,6 +20,7 @@ import Button from '@material-ui/core/Button';
 import { MdTouchApp } from "react-icons/md";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Tooltip from '@material-ui/core/Tooltip';
+import TodoList from './components/vschool/todo/TodoList'
 
 const drawerWidth = 240;
 
@@ -89,6 +90,46 @@ const useStyles = makeStyles((theme) => ({
     flex: '1 1 auto',
   },
 }));
+
+function getMainContent(mainContent, classes, handleDrawerOpen) {
+    switch(mainContent) {
+      case "todo":
+        return (
+          <Paper className={classes.mainPaper} elevation={0} >
+            <Typography variant="h4" gutterBottom> 
+              <ReactIcon/> Todo List
+            </Typography>
+            <TodoList />
+          </Paper>
+        )
+        break;
+
+      case "splash":
+      default:
+        return (
+          <Paper className={classes.mainPaper} elevation={0} >
+            <Typography variant="h4" gutterBottom> 
+              <ReactIcon/> Learning React
+            </Typography>
+            <Typography paragraph>
+              React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
+            </Typography>
+            <Typography paragraph>
+              Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions to share with you.
+            </Typography>
+            <Button
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              variant="contained"
+              color="default"
+            >
+              <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
+            </Button>
+          </Paper>
+        )
+    }
+}
 
 export default function PersistentDrawerLeft(props) {
   const classes = useStyles();
@@ -160,34 +201,14 @@ export default function PersistentDrawerLeft(props) {
         <Divider />
         <NestedList setMainContent={setMainContent} />
       </Drawer>
+
       <main
         className={clsx(classes.content, {
           [classes.contentShift]: open,
         })}
       >
         <div className={classes.drawerHeader} />
-        {(mainContent === "splash") &&
-        <Paper className={classes.mainPaper} elevation={0} >
-          <Typography variant="h4" gutterBottom> 
-            <ReactIcon/> Learning React
-          </Typography>
-          <Typography paragraph>
-            React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
-          </Typography>
-          <Typography paragraph>
-            Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions to share with you.
-          </Typography>
-          <Button
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            variant="contained"
-            color="default"
-          >
-            <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
-          </Button>
-        </Paper>
-        }
+        {getMainContent(mainContent, classes, handleDrawerOpen)}
       </main>
     </div>
   );
