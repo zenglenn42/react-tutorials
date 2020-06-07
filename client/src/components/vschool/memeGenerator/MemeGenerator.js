@@ -49,7 +49,7 @@ class MemeGenerator extends React.Component {
             <div style={style}>
                 {
                     this.state.isLoading ? 
-                        <h2>Loading ...</h2> : 
+                        <p style={{fontStyle: "italic"}}>Loading ... requires internet</p> : 
                         <div>
                             <form onSubmit={this.handleSubmit}>
                                 <input type="text" name="topText" value={this.state.topText} onChange={this.handleChange} placeholder="Top text" />
