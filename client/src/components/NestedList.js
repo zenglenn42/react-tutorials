@@ -10,6 +10,7 @@ import DemoGroupIcon from '@material-ui/icons/GroupWork';
 import PlayDemoIcon from '@material-ui/icons/PlayCircleFilled';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import IconButton from '@material-ui/core/IconButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -34,6 +35,10 @@ export default function NestedList(props) {
   const handleClick = (e) => {
     const key = e.target.innerHTML
     const value = open[key]
+    console.log("handleClick")
+    console.log("key = ", key)
+    console.log("value = ", value)
+    console.log("target = ", e.target)
     setOpen({...open, [key]: !value})
   };
   
@@ -41,7 +46,7 @@ export default function NestedList(props) {
     const key = e.target.innerHTML
     console.log("key = ", key)
     switch(key) {
-      case "Todo MVC":
+      case "Todo List":
         props.setMainContent("todo")
         break;
 
@@ -67,25 +72,15 @@ export default function NestedList(props) {
       className={classes.root}
     >
       <ListItem button onClick={handleClick}>
-        <ListItemIcon>
-          <DemoGroupIcon />
-        </ListItemIcon>
         <ListItemText primary="vschool.io" />
         {open["vschool.io"] ? <ExpandLess /> : <ExpandMore />}
-      </ListItem>
+      </ListItem >
       <Collapse in={open["vschool.io"]} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
           <ListItem button className={classes.nested} onClick={handleChoice}>
-            <ListItemIcon>
-              <PlayDemoIcon />
-            </ListItemIcon>
-            <ListItemText primary="Todo MVC" />
+            <ListItemText primary="Todo List" />
           </ListItem>
-
           <ListItem button className={classes.nested} onClick={handleChoice}>
-            <ListItemIcon>
-              <PlayDemoIcon />
-            </ListItemIcon>
             <ListItemText primary="Meme Generator" />
           </ListItem>
         </List>
@@ -104,7 +99,7 @@ export default function NestedList(props) {
             <ListItemIcon>
               <PlayDemoIcon />
             </ListItemIcon>
-            <ListItemText primary="Todo MVC" />
+            <ListItemText primary="Todo List" />
           </ListItem>
 
           <ListItem button className={classes.nested}>

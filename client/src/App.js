@@ -14,6 +14,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import NestedList from './components/NestedList';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { FaReact as ReactIcon } from 'react-icons/fa';
+import { FaHome } from 'react-icons/fa'
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
@@ -157,6 +158,11 @@ export default function PersistentDrawerLeft(props) {
     setOpen(false);
   };
 
+  const handleGoHome = () => {
+    setMainContent("splash")
+    setOpen(false);
+  };
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -203,7 +209,9 @@ export default function PersistentDrawerLeft(props) {
       >
         <div className={classes.drawerHeader}>
           <ListItemIcon>
-            <ReactIcon size="2em" />
+            <IconButton onClick={handleGoHome}>
+              <FaHome size="1em" />
+            </IconButton>
           </ListItemIcon>
           {/* <ListItemText primary="Tutorials" /> */}
           <IconButton onClick={handleDrawerClose}>
