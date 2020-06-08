@@ -238,10 +238,10 @@ export default function PersistentDrawerLeft(props) {
         })} style={{backgroundColor: "gray"}}>
         <Toolbar variant="dense">
           <Typography variant="h7" noWrap>
-            {"Incremental Industries (c) 2020"||"Persistent drawer"}
+            {"Incremental Industries \u00A9 2020"||"Persistent drawer"}
           </Typography>
           <div className={classes.grow} />
-          <Tooltip title="github" enterDelay={300}>
+          {/* <Tooltip title="github" enterDelay={300}>
             <IconButton
                 component="a"
                 color="inherit"
@@ -250,7 +250,7 @@ export default function PersistentDrawerLeft(props) {
               >
                 <GitHubIcon />
             </IconButton>
-          </Tooltip>
+          </Tooltip> */}
         </Toolbar>
       </div>
     </div>
