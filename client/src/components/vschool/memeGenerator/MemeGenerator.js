@@ -56,12 +56,13 @@ class MemeGenerator extends React.Component {
                                 <br />
         
                                 <input type="text" name="bottomText" value={this.state.bottomText} onChange={this.handleChange} placeholder="Bottom text" />
-                                <br />
-
-                                <button>Gen</button>
+                                <br /><hr />
+                                <button primary={true} >Generate</button>
                             </form>
                             <h1>{this.state.topText}</h1>
-                            <img src={this.state.imgSrc} alt="random meme"/>
+                            <div style={{width: "40%"}}>
+                                <img  style={{maxHeight: "100%", maxWidth: "100%"}} src={this.state.imgSrc} alt="random meme"/>
+                            </div>
                             <h1>{this.state.bottomText}</h1>
                         </div>
                 }
