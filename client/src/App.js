@@ -13,7 +13,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import NestedList from './components/NestedList';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import { FaReact as ReactIcon } from 'react-icons/fa';
+import { FaReact as ReactIcon, FaCopy } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa'
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
@@ -29,6 +29,8 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    flexDirection: 'column',
+    minHeight: '100vh'
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
@@ -73,14 +75,14 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    marginLeft: -drawerWidth,
+    marginLeft: 0,
   },
   contentShift: {
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    marginLeft: 0,
+    marginLeft: drawerWidth,
   },
   mainPaper: {
     padding: theme.spacing(1, 2)
@@ -213,7 +215,6 @@ export default function PersistentDrawerLeft(props) {
               <FaHome size="1em" />
             </IconButton>
           </ListItemIcon>
-          {/* <ListItemText primary="Tutorials" /> */}
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
@@ -230,6 +231,28 @@ export default function PersistentDrawerLeft(props) {
         <div className={classes.drawerHeader} />
         {getMainContent(mainContent, classes, handleDrawerOpen)}
       </main>
+      <div className={classes.grow}/>
+      <div
+        className={clsx(classes.appBar, {
+          [classes.appBarShift]: open,
+        })} style={{backgroundColor: "gray"}}>
+        <Toolbar variant="dense">
+          <Typography variant="h7" noWrap>
+            {"Incremental Industries (c) 2020"||"Persistent drawer"}
+          </Typography>
+          <div className={classes.grow} />
+          <Tooltip title="github" enterDelay={300}>
+            <IconButton
+                component="a"
+                color="inherit"
+                href="https://github.com/zenglenn42/react-tutorials"
+                aria-label="github"
+              >
+                <GitHubIcon />
+            </IconButton>
+          </Tooltip>
+        </Toolbar>
+      </div>
     </div>
   );
 }
