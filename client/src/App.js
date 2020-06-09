@@ -14,6 +14,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import NestedList from './components/NestedList';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { FaReact as ReactIcon, FaCopy } from 'react-icons/fa';
+import { FaYoutube } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa'
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
@@ -100,9 +101,34 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
       case "todo":
         return (
           <Paper className={classes.mainPaper} elevation={0} >
-            <Typography variant="h4" gutterBottom> 
-              <ReactIcon/> Todo List
-            </Typography>
+            <Toolbar variant="dense" style={{paddingLeft: "0px", paddingRight: "0px"}}>
+              <Typography variant="h5" noWrap>
+                {"Todo List"||"TodoList"}
+              </Typography>
+              <div className={classes.grow} />
+              <Tooltip title="youtube" enterDelay={300}>
+                <IconButton
+                    component="a"
+                    color="inherit"
+                    href="https://youtu.be/DLX62G4lc44?t=2896"
+                    aria-label="youtube"
+                    target="_blank"
+                  >
+                    <FaYoutube />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="github" enterDelay={300}>
+                <IconButton
+                    component="a"
+                    color="inherit"
+                    href="https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo"
+                    aria-label="github"
+                    target="_blank"
+                  >
+                    <GitHubIcon />
+                </IconButton>
+              </Tooltip>
+            </Toolbar>
             <TodoList />
           </Paper>
         )
@@ -111,9 +137,34 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
       case "memeGenerator":
         return (
           <Paper className={classes.mainPaper} elevation={0} >
-            <Typography variant="h4" gutterBottom> 
-              <ReactIcon/> Meme Generator
-            </Typography>
+            <Toolbar variant="dense" style={{paddingLeft: "0px", paddingRight: "0px"}}>
+              <Typography variant="h5" noWrap>
+                {"Meme Generator"||"Meme Generator"}
+              </Typography>
+              <div className={classes.grow} />
+              <Tooltip title="youtube" enterDelay={300}>
+                <IconButton
+                    component="a"
+                    color="inherit"
+                    href="https://youtu.be/DLX62G4lc44?t=16569"
+                    aria-label="youtube"
+                    target="_blank"
+                  >
+                    <FaYoutube />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="github" enterDelay={300}>
+                <IconButton
+                    component="a"
+                    color="inherit"
+                    href="https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/memeGenerator"
+                    aria-label="github"
+                    target="_blank"
+                  >
+                    <GitHubIcon />
+                </IconButton>
+              </Tooltip>
+            </Toolbar>
             <MemeGenerator />
           </Paper>
         )
@@ -194,6 +245,7 @@ export default function PersistentDrawerLeft(props) {
                 color="inherit"
                 href="https://github.com/zenglenn42/react-tutorials"
                 aria-label="github"
+                target="_blank"
               >
                 <GitHubIcon />
             </IconButton>
