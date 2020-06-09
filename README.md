@@ -2,8 +2,6 @@
 
 This is a container app for hosting various React tutorials I complete.
 
-Still under construction! :-)
-
 ## User interface design for a container of tutorial solutions
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
@@ -33,6 +31,12 @@ Instead of components, I could drop in Tutorial providers with my selected solut
 ![alt](docs/img/slideout-drawer-zg.png)
 
 This container could even scale up to host my _entire_ portfolio.
+
+#### Minimal Viable User Interface
+
+This is what my user interface is looking like with video and code links added to each demo.
+
+![alt](docs/img/ui-mvp.png)
 
 ## Bootstrap a minimal Heroku-ready express/react stack 
 
