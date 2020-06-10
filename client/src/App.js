@@ -154,7 +154,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 <IconButton
                     component="a"
                     color="inherit"
-                    href="https://youtu.be/DLX62G4lc44"
+                    href="https://youtu.be/DLX62G4lc44?t=5384"
                     aria-label="youtube"
                     target="_blank"
                   >
