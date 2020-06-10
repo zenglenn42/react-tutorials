@@ -24,6 +24,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import Tooltip from '@material-ui/core/Tooltip';
 import TodoList from './components/vschool/todo/TodoList'
 import MemeGenerator from './components/vschool/memeGenerator/MemeGenerator'
+import DemobarColor from '@material-ui/core/colors/indigo';
 
 const drawerWidth = 240;
 
@@ -94,6 +95,12 @@ const useStyles = makeStyles((theme) => ({
   grow: {
     flex: '1 1 auto',
   },
+  Demobar: {
+    backgroundColor: DemobarColor[200],
+    paddingLeft: "0.5em", 
+    paddingRight: "0px",
+    marginBottom: "1em"
+  }
 }));
 
 function getMainContent(mainContent, classes, handleDrawerOpen) {
@@ -101,8 +108,8 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
       case "todo":
         return (
           <Paper className={classes.mainPaper} elevation={0} >
-            <Toolbar variant="dense" style={{paddingLeft: "0px", paddingRight: "0px"}}>
-              <Typography variant="h5" noWrap>
+            <Toolbar className={classes.Demobar} variant="dense" >
+              <Typography variant="h6" noWrap>
                 {"Todo List"||"TodoList"}
               </Typography>
               <div className={classes.grow} />
@@ -137,8 +144,8 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
       case "memeGenerator":
         return (
           <Paper className={classes.mainPaper} elevation={0} >
-            <Toolbar variant="dense" style={{paddingLeft: "0px", paddingRight: "0px"}}>
-              <Typography variant="h5" noWrap>
+            <Toolbar className={classes.Demobar} variant="dense" >
+              <Typography variant="h6" noWrap>
                 {"Meme Generator"||"Meme Generator"}
               </Typography>
               <div className={classes.grow} />
