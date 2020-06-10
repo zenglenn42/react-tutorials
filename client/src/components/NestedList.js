@@ -46,6 +46,10 @@ export default function NestedList(props) {
     const key = e.target.innerHTML
     console.log("key = ", key)
     switch(key) {
+      case "Joke List":
+        props.setMainContent("jokeList")
+        break;
+
       case "Todo List":
         props.setMainContent("todo")
         break;
@@ -77,6 +81,9 @@ export default function NestedList(props) {
       </ListItem >
       <Collapse in={open["vschool.io"]} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
+          <ListItem button className={classes.nested} onClick={handleChoice}>
+            <ListItemText primary="Joke List" />
+          </ListItem>          
           <ListItem button className={classes.nested} onClick={handleChoice}>
             <ListItemText primary="Todo List" />
           </ListItem>

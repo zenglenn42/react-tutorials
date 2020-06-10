@@ -24,6 +24,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import Tooltip from '@material-ui/core/Tooltip';
 import TodoList from './components/vschool/todo/TodoList'
 import MemeGenerator from './components/vschool/memeGenerator/MemeGenerator'
+import JokeList from './components/vschool/jokeList/JokeList'
 import DemobarColor from '@material-ui/core/colors/indigo';
 
 const drawerWidth = 240;
@@ -137,6 +138,42 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
               </Tooltip>
             </Toolbar>
             <TodoList />
+          </Paper>
+        )
+        break;
+
+      case "jokeList":
+        return (
+          <Paper className={classes.mainPaper} elevation={0} >
+            <Toolbar className={classes.Demobar} variant="dense" >
+              <Typography variant="h6" noWrap>
+                {"Joke List"||""}
+              </Typography>
+              <div className={classes.grow} />
+              <Tooltip title="youtube" enterDelay={300}>
+                <IconButton
+                    component="a"
+                    color="inherit"
+                    href="https://youtu.be/DLX62G4lc44"
+                    aria-label="youtube"
+                    target="_blank"
+                  >
+                    <FaYoutube />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title="github" enterDelay={300}>
+                <IconButton
+                    component="a"
+                    color="inherit"
+                    href="https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/jokeList"
+                    aria-label="github"
+                    target="_blank"
+                  >
+                    <GitHubIcon />
+                </IconButton>
+              </Tooltip>
+            </Toolbar>
+            <JokeList />
           </Paper>
         )
         break;
