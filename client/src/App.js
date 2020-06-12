@@ -22,9 +22,6 @@ import Button from '@material-ui/core/Button';
 import { MdTouchApp } from "react-icons/md";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Tooltip from '@material-ui/core/Tooltip';
-import TodoList from './components/vschool/todo/TodoList'
-import MemeGenerator from './components/vschool/memeGenerator/MemeGenerator'
-import JokeList from './components/vschool/jokeList/JokeList'
 import DemobarColor from '@material-ui/core/colors/indigo';
 
 const drawerWidth = 240;
