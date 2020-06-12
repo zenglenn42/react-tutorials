@@ -7,6 +7,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
+import TutorialData from './api/TutorialData'
+
+const tutorialData = TutorialData
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 export default function TutorialList(props) {
   const classes = useStyles();
 
@@ -27,28 +29,6 @@ export default function TutorialList(props) {
     "vschool.io": false,
   });
 
-  const tutorialData = [
-    {
-      primaryText: "vschool.io",
-      solutions: [
-        {
-          primaryText: "Joke List",
-          secondaryText: "Props and Styling",
-          contentKey: "jokeList"
-        },
-        {
-          primaryText: "Todo List",
-          secondaryText: "MVC and Forms",
-          contentKey: "todo"
-        },
-        {
-          primaryText: "Meme Generator",
-          secondaryText: "Capstone Project",
-          contentKey: "memeGenerator"
-        }
-      ]
-    },
-  ]
 
   const handleExpandClick = (e) => {
     const key = e.target.innerHTML
@@ -57,8 +37,13 @@ export default function TutorialList(props) {
   };
   
   const handleSolutionClick = (e) => {
-    const contentKey = e.currentTarget.getAttribute('data-key') || "splash"
-    props.setMainContent(contentKey)
+    const demoKey = e.currentTarget.getAttribute('data-demokey') || "splash"
+    const tutorialKey = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
+
+    const tutorial = tutorialData.filter((tutorial) => { return (tutorial.primaryText === tutorialKey) })[0]
+    const solution = tutorial.solutions.filter((solution) => { return (solution.demoKey === demoKey) })[0]
+
+    props.setMainContent(solution || {contentKey: "splash"})
   }
 
   return (
@@ -83,7 +68,7 @@ export default function TutorialList(props) {
         
         const collapseListItems = tutorial.solutions.map((solution) => {
           return (
-          <ListItem button data-key={solution.contentKey} className={classes.nested} onClick={handleSolutionClick}>
+          <ListItem button data-tutorialkey={primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
             <ListItemText
               primary={solution.primaryText}
               secondary={solution.secondaryText}

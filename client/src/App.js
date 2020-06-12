@@ -105,147 +105,77 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function getMainContent(mainContent, classes, handleDrawerOpen) {
-    switch(mainContent) {
-      case "todo":
-        return (
-          <Paper className={classes.mainPaper} elevation={0} >
-            <Toolbar className={classes.Demobar} variant="dense" >
-              <Typography variant="h6" noWrap>
-                {"Todo List"||"TodoList"}
-              </Typography>
-              <div className={classes.grow} />
-              <Tooltip title="youtube" enterDelay={300}>
-                <IconButton
-                    component="a"
-                    color="inherit"
-                    href="https://youtu.be/DLX62G4lc44?t=2896"
-                    aria-label="youtube"
-                    target="_blank"
-                  >
-                    <FaYoutube />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="github" enterDelay={300}>
-                <IconButton
-                    component="a"
-                    color="inherit"
-                    href="https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo"
-                    aria-label="github"
-                    target="_blank"
-                  >
-                    <GitHubIcon />
-                </IconButton>
-              </Tooltip>
-            </Toolbar>
-            <TodoList />
-          </Paper>
-        )
-        break;
-
-      case "jokeList":
-        return (
-          <Paper className={classes.mainPaper} elevation={0} >
-            <Toolbar className={classes.Demobar} variant="dense" >
-              <Typography variant="h6" noWrap>
-                {"Joke List"||""}
-              </Typography>
-              <div className={classes.grow} />
-              <Tooltip title="youtube" enterDelay={300}>
-                <IconButton
-                    component="a"
-                    color="inherit"
-                    href="https://youtu.be/DLX62G4lc44?t=5384"
-                    aria-label="youtube"
-                    target="_blank"
-                  >
-                    <FaYoutube />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="github" enterDelay={300}>
-                <IconButton
-                    component="a"
-                    color="inherit"
-                    href="https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/jokeList"
-                    aria-label="github"
-                    target="_blank"
-                  >
-                    <GitHubIcon />
-                </IconButton>
-              </Tooltip>
-            </Toolbar>
-            <JokeList />
-          </Paper>
-        )
-        break;
-
-      case "memeGenerator":
-        return (
-          <Paper className={classes.mainPaper} elevation={0} >
-            <Toolbar className={classes.Demobar} variant="dense" >
-              <Typography variant="h6" noWrap>
-                {"Meme Generator"||"Meme Generator"}
-              </Typography>
-              <div className={classes.grow} />
-              <Tooltip title="youtube" enterDelay={300}>
-                <IconButton
-                    component="a"
-                    color="inherit"
-                    href="https://youtu.be/DLX62G4lc44?t=16569"
-                    aria-label="youtube"
-                    target="_blank"
-                  >
-                    <FaYoutube />
-                </IconButton>
-              </Tooltip>
-              <Tooltip title="github" enterDelay={300}>
-                <IconButton
-                    component="a"
-                    color="inherit"
-                    href="https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/memeGenerator"
-                    aria-label="github"
-                    target="_blank"
-                  >
-                    <GitHubIcon />
-                </IconButton>
-              </Tooltip>
-            </Toolbar>
-            <MemeGenerator />
-          </Paper>
-        )
-        break;
-
-      case "splash":
-      default:
-        return (
-          <Paper className={classes.mainPaper} elevation={0} >
-            <Typography variant="h4" gutterBottom> 
-              <ReactIcon/> Learning React
-            </Typography>
-            <Typography paragraph>
-              React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
-            </Typography>
-            <Typography paragraph>
-              Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions to share with you.
-            </Typography>
-            <Button
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              variant="contained"
-              color="default"
-            >
-              <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
-            </Button>
-          </Paper>
-        )
+    let content = null
+    if (mainContent.demoKey === "splash") {
+      content = (
+        <React.Fragment>
+          <Typography variant="h4" gutterBottom> 
+          <ReactIcon/> Learning React
+          </Typography>
+          <Typography paragraph>
+            React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
+          </Typography>
+          <Typography paragraph>
+            Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions to share with you.
+          </Typography>
+          <Button
+            aria-label="open drawer"
+            onClick={handleDrawerOpen}
+            edge="start"
+            variant="contained"
+            color="default"
+          >
+            <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
+          </Button>
+        </React.Fragment>
+      )
+    } else {
+      content = (
+        <React.Fragment>
+          <Toolbar className={classes.Demobar} variant="dense" >
+          <Typography variant="h6" noWrap>
+            {mainContent.primaryText}
+          </Typography>
+          <div className={classes.grow} />
+          <Tooltip title={mainContent.refLink.tipText} enterDelay={300}>
+            <IconButton
+                component="a"
+                color="inherit"
+                href={mainContent.refLink.href}
+                aria-label={mainContent.refLink.tipText}
+                target="_blank"
+              >
+                <FaYoutube />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title={mainContent.codeLink.tipText} enterDelay={300}>
+            <IconButton
+                component="a"
+                color="inherit"
+                href={mainContent.codeLink.href}
+                aria-label={mainContent.codeLink.tipText}
+                target="_blank"
+              >
+                <GitHubIcon />
+            </IconButton>
+          </Tooltip>
+          </Toolbar>
+          {mainContent.demoComponent}
+        </React.Fragment>
+      )
     }
+    return (
+      <Paper className={classes.mainPaper} elevation={0} >
+        {content}
+      </Paper>
+    )     
 }
 
 export default function PersistentDrawerLeft(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
-  const [mainContent, setMainContent] = React.useState(props.main)
+  const [mainContent, setMainContent] = React.useState({demoKey: props.main})
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -256,7 +186,7 @@ export default function PersistentDrawerLeft(props) {
   };
 
   const handleGoHome = () => {
-    setMainContent("splash")
+    setMainContent({ demoKey: "splash" })
     setOpen(false);
   };
 
