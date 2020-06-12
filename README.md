@@ -10,6 +10,10 @@ Hosted solutions are available for the following tutorials:
 
 # Developer's Blog
 
+A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
+
+I thought it would be nice to oranize my solutions and make them shareable.  I could just blast them to [codesandbox](https://codesandbox.io/).  But I want to play around with React itself and crafting a React-based container for my solutions would be a good design exercise and something I could plug into my growing portfolio.
+
 ## Bootstrap a minimal Heroku-ready express/react stack 
 
 I want a fairly minimal stack for now.  Maybe just express for the web server and definitely react for the front end (since that's the whole point of these tutorials) and something Heroku-ready would be nice.
@@ -108,10 +112,6 @@ https://react-tutorials.herokuap.com
 ```
 
 ## User interface design for a container of tutorial solutions
-
-A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
-
-I thought it would be nice to oranize my solutions and make them shareable.  I could just blast them to [codesandbox](https://codesandbox.io/).  But I want to play around with React itself and crafting a React-based container for my solutions would be a good design exercise and something I could plug into my growing portfolio.
 
 ### Requirements
 
