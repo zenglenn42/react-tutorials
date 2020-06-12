@@ -2,6 +2,137 @@
 
 This is a container app for hosting various React tutorials I complete.
 
+# Developer's Blog
+
+## Refactor UI to be more data-driven
+
+I spend time today adding some intrinsic beauty to the container code.  In the rush to get something working, I inlined the expandable list items in the slideout drawer:
+
+```
+      <ListItem button onClick={handleClick}>
+        <ListItemText primary="vschool.io" />
+        {open["vschool.io"] ? <ExpandLess /> : <ExpandMore />}
+      </ListItem >
+      <Collapse in={open["vschool.io"]} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItem button className={classes.nested} onClick={handleChoice}>
+            <ListItemText
+              primary="Joke List"
+              secondary="Props and Styling"
+            />
+          </ListItem>          
+          <ListItem button className={classes.nested} onClick={handleChoice}>
+            <ListItemText 
+              primary="Todo List" 
+              secondary="MVC and Forms"
+            />
+          </ListItem>
+          <ListItem button className={classes.nested} onClick={handleChoice}>
+            <ListItemText 
+              primary="Meme Generator" 
+              secondary="Capstone Project"
+            />
+          </ListItem>
+        </List>
+```
+
+I pick out all the unique data and organize that as an array in an [api file](https://github.com/zenglenn42/react-tutorials/blob/94a96a82343bc49a0fc3d56846b37c9cf5adb14a/client/src/components/api/TutorialData.js#L1):
+
+```
+import React from 'react';
+import MemeGenerator from '../vschool/memeGenerator/MemeGenerator'
+import JokeList from '../vschool/jokeList/JokeList'
+import TodoList from '../vschool/todo/TodoList'
+
+const TutorialData = [
+{
+      primaryText: "vschool.io",
+      solutions: [
+        {
+          demoKey: "jokeList",
+          primaryText: "Joke List",
+          secondaryText: "Props and Styling",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=5384"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/jokeList"           
+          },
+          demoComponent: <JokeList />
+        },
+        {
+          demoKey: "todo",
+          primaryText: "Todo List",
+          secondaryText: "MVC and Forms",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=2896"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo"           
+          },
+          demoComponent: <TodoList />
+        },
+        {
+          demoKey: "memeGenerator",
+          primaryText: "Meme Generator",
+          secondaryText: "Capstone Project",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=16569"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/memeGenerator"           
+          },
+          demoComponent: <MemeGenerator />
+        },
+        {
+          demoKey: "splash"
+        }
+      ]
+    },
+]
+
+export default TutorialData
+```
+
+and then just map across that to create the refactored list:
+
+```
+{ tutorialData.map((tutorial) => {
+    const primaryText = tutorial.primaryText
+    const listItem = (
+        <ListItem button onClick={handleExpandClick}>
+        <ListItemText primary={primaryText} />
+        {open[primaryText] ? <ExpandLess /> : <ExpandMore />}
+        </ListItem >
+    )
+
+    const collapseListItems = tutorial.solutions.map((solution) => {
+        return (
+        <ListItem button data-tutorialkey={primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
+        <ListItemText
+            primary={solution.primaryText}
+            secondary={solution.secondaryText}
+        />
+        </ListItem>
+        )
+    })
+    const collapseList = (
+        <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+            {collapseListItems}
+        </List>
+        </Collapse>
+    )
+    return <React.Fragment>{listItem} {collapseList}</React.Fragment>
+})}
+```
+
 ## User interface design for a container of tutorial solutions
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
