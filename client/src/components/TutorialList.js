@@ -19,47 +19,13 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function NestedList(props) {
+
+export default function TutorialList(props) {
   const classes = useStyles();
-  // const [open, setOpen] = React.useState(true);
 
   const [open, setOpen] = React.useState({
     "vschool.io": false,
   });
-
-  const handleClick = (e) => {
-    const key = e.target.innerHTML
-    const value = open[key]
-    // console.log("key = ", key)
-    // console.log("value = ", value)
-    // console.log("target = ", e.target)
-    setOpen({...open, [key]: !value})
-  };
-  
-  const handleChoice = (e) => {
-    const key = e.target.innerHTML
-    console.log("key = ", key)
-    switch(key) {
-      case "Joke List":
-      case "Props and Styling":
-        props.setMainContent("jokeList")
-        break;
-
-      case "Todo List":
-      case "MVC and Forms":
-        props.setMainContent("todo")
-        break;
-
-      case "Meme Generator":
-      case "Capstone Project":
-        props.setMainContent("memeGenerator")
-        break;
-
-      default:
-        props.setMainContent("splash")
-        break;
-    }
-  }
 
   const tutorialData = [
     {
@@ -67,19 +33,33 @@ export default function NestedList(props) {
       solutions: [
         {
           primaryText: "Joke List",
-          secondaryText: "Props and Styling"
+          secondaryText: "Props and Styling",
+          contentKey: "jokeList"
         },
         {
           primaryText: "Todo List",
-          secondaryText: "MVC and Forms"
+          secondaryText: "MVC and Forms",
+          contentKey: "todo"
         },
         {
           primaryText: "Meme Generator",
-          secondaryText: "Capstone Project"
+          secondaryText: "Capstone Project",
+          contentKey: "memeGenerator"
         }
       ]
     },
   ]
+
+  const handleExpandClick = (e) => {
+    const key = e.target.innerHTML
+    const value = open[key]
+    setOpen({...open, [key]: !value})
+  };
+  
+  const handleSolutionClick = (e) => {
+    const contentKey = e.currentTarget.getAttribute('data-key') || "splash"
+    props.setMainContent(contentKey)
+  }
 
   return (
     <List
@@ -95,7 +75,7 @@ export default function NestedList(props) {
       { tutorialData.map((tutorial) => {
         const primaryText = tutorial.primaryText
         const listItem = (
-          <ListItem button onClick={handleClick}>
+          <ListItem button onClick={handleExpandClick}>
             <ListItemText primary={primaryText} />
             {open[primaryText] ? <ExpandLess /> : <ExpandMore />}
           </ListItem >
@@ -103,7 +83,7 @@ export default function NestedList(props) {
         
         const collapseListItems = tutorial.solutions.map((solution) => {
           return (
-          <ListItem button className={classes.nested} onClick={handleChoice}>
+          <ListItem button data-key={solution.contentKey} className={classes.nested} onClick={handleSolutionClick}>
             <ListItemText
               primary={solution.primaryText}
               secondary={solution.secondaryText}

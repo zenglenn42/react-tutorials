@@ -11,7 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import NestedList from './components/NestedList';
+import TutorialList from './components/TutorialList';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { FaReact as ReactIcon } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
@@ -316,7 +316,7 @@ export default function PersistentDrawerLeft(props) {
           </IconButton>
         </div>
         <Divider />
-        <NestedList setMainContent={setMainContent} />
+        <TutorialList setMainContent={setMainContent} />
       </Drawer>
 
       <main
