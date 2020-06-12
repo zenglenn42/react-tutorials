@@ -3,14 +3,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
-import DemoGroupIcon from '@material-ui/icons/GroupWork';
-import PlayDemoIcon from '@material-ui/icons/PlayCircleFilled';
 import ExpandLess from '@material-ui/icons/ExpandLess';
 import ExpandMore from '@material-ui/icons/ExpandMore';
-import IconButton from '@material-ui/core/IconButton';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,16 +25,14 @@ export default function NestedList(props) {
 
   const [open, setOpen] = React.useState({
     "vschool.io": false,
-    "Set 2": false
   });
 
   const handleClick = (e) => {
     const key = e.target.innerHTML
     const value = open[key]
-    console.log("handleClick")
-    console.log("key = ", key)
-    console.log("value = ", value)
-    console.log("target = ", e.target)
+    // console.log("key = ", key)
+    // console.log("value = ", value)
+    // console.log("target = ", e.target)
     setOpen({...open, [key]: !value})
   };
   
@@ -67,6 +61,26 @@ export default function NestedList(props) {
     }
   }
 
+  const tutorialData = [
+    {
+      primaryText: "vschool.io",
+      solutions: [
+        {
+          primaryText: "Joke List",
+          secondaryText: "Props and Styling"
+        },
+        {
+          primaryText: "Todo List",
+          secondaryText: "MVC and Forms"
+        },
+        {
+          primaryText: "Meme Generator",
+          secondaryText: "Capstone Project"
+        }
+      ]
+    },
+  ]
+
   return (
     <List
       component="nav"
@@ -78,67 +92,34 @@ export default function NestedList(props) {
       }
       className={classes.root}
     >
-      <ListItem button onClick={handleClick}>
-        <ListItemText primary="vschool.io" />
-        {open["vschool.io"] ? <ExpandLess /> : <ExpandMore />}
-      </ListItem >
-      <Collapse in={open["vschool.io"]} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
+      { tutorialData.map((tutorial) => {
+        const primaryText = tutorial.primaryText
+        const listItem = (
+          <ListItem button onClick={handleClick}>
+            <ListItemText primary={primaryText} />
+            {open[primaryText] ? <ExpandLess /> : <ExpandMore />}
+          </ListItem >
+        )
+        
+        const collapseListItems = tutorial.solutions.map((solution) => {
+          return (
           <ListItem button className={classes.nested} onClick={handleChoice}>
             <ListItemText
-              data-demo="Joke List"
-              primary="Joke List"
-              secondary="Props and Styling"
-            />
-          </ListItem>          
-          <ListItem button className={classes.nested} onClick={handleChoice}>
-            <ListItemText 
-              data-demo="Todo List"
-              primary="Todo List" 
-              secondary="MVC and Forms"
+              primary={solution.primaryText}
+              secondary={solution.secondaryText}
             />
           </ListItem>
-          <ListItem button className={classes.nested} onClick={handleChoice}>
-            <ListItemText 
-              data-demo="Meme Generator"
-              primary="Meme Generator" 
-              secondary="Capstone Project"
-            />
-          </ListItem>
-        </List>
-      </Collapse>
-
-      {/* <ListItem button onClick={handleClick}>
-        <ListItemIcon>
-          <DemoGroupIcon />
-        </ListItemIcon>
-        <ListItemText primary="Set 2" />
-        {open["Set 2"] ? <ExpandLess /> : <ExpandMore />}
-      </ListItem>
-      <Collapse in={open["Set 2"]} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItem button className={classes.nested}>
-            <ListItemIcon>
-              <PlayDemoIcon />
-            </ListItemIcon>
-            <ListItemText primary="Todo List" />
-          </ListItem>
-
-          <ListItem button className={classes.nested}>
-            <ListItemIcon>
-              <PlayDemoIcon />
-            </ListItemIcon>
-            <ListItemText primary="Meme Generator" />
-          </ListItem>
-        </List>
-      </Collapse> */}
-      
-      {/* <ListItem button>
-        <ListItemIcon>
-          <DemoGroupIcon />
-        </ListItemIcon>
-        <ListItemText primary="Set 3" />
-      </ListItem> */}
+          )
+        })
+        const collapseList = (
+          <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              {collapseListItems}
+            </List>
+          </Collapse>
+        )
+        return <React.Fragment>{listItem} {collapseList}</React.Fragment>
+      })}
     </List>
   );
 }

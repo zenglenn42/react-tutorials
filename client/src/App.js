@@ -13,7 +13,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import NestedList from './components/NestedList';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
-import { FaReact as ReactIcon, FaCopy } from 'react-icons/fa';
+import { FaReact as ReactIcon } from 'react-icons/fa';
 import { FaYoutube } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa'
 import Paper from '@material-ui/core/Paper';
