@@ -2,6 +2,10 @@
 
 This is a container app for hosting various React tutorials I complete.
 
+Hosted solutions are available for the following tutorials:
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/DLX62G4lc44/0.jpg)](http://www.youtube.com/watch?v=DLX62G4lc44 "vschool.io React in 5 hours 2019")
+
 # Developer's Blog
 
 ## Refactor UI to be more data-driven
