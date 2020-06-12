@@ -100,7 +100,7 @@ const TutorialData = [
 export default TutorialData
 ```
 
-and then just map across that to create the refactored list:
+and then just [map](https://github.com/zenglenn42/react-tutorials/blob/c24a626c20fe10267862a5dc4e10c9c5656f259a/client/src/components/TutorialList.js#L60) across that to create the refactored list:
 
 ```
 { tutorialData.map((tutorial) => {
