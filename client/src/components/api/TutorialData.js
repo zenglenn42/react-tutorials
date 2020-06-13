@@ -6,6 +6,7 @@ import ProductCatalog from '../vschool/mapComponents/ProductCatalog'
 import HelloClass from '../vschool/classComponents/HelloClass'
 import LoginState from '../vschool/state1/LoginState'
 import CountState from '../vschool/state2/CountState'
+import ConditionalRender from '../vschool/conditionalRender/ConditionalRender'
 
 const TutorialData = [
 {
@@ -80,6 +81,20 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state2"           
           },
           demoComponent: <CountState />
+        },
+        {
+          demoKey: "conditionalRender",
+          primaryText: "Login/Logout",
+          secondaryText: "38. Conditional Render",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=11674"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/conditionalRender"           
+          },
+          demoComponent: <ConditionalRender />
         },
         {
           demoKey: "todo",
