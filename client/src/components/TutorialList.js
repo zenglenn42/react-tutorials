@@ -24,11 +24,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function TutorialList(props) {
   const classes = useStyles();
-
   const [open, setOpen] = React.useState({
     "vschool.io": false,
   });
-
 
   const handleExpandClick = (e) => {
     const key = e.target.innerHTML
@@ -60,10 +58,12 @@ export default function TutorialList(props) {
       { tutorialData.map((tutorial) => {
         const primaryText = tutorial.primaryText
         const listItem = (
-          <ListItem button onClick={handleExpandClick}>
-            <ListItemText primary={primaryText} />
-            {open[primaryText] ? <ExpandLess /> : <ExpandMore />}
-          </ListItem >
+          <ListSubheader>
+            <ListItem button onClick={handleExpandClick}>
+              <ListItemText primary={primaryText} />
+              {open[primaryText] ? <ExpandLess /> : <ExpandMore />}
+            </ListItem >
+          </ListSubheader>
         )
         
         const collapseListItems = tutorial.solutions.map((solution) => {
