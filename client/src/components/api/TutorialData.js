@@ -14,6 +14,20 @@ const TutorialData = [
       primaryText: "vschool.io",
       solutions: [
         {
+          demoKey: "todo",
+          primaryText: "Todo App",
+          secondaryText: "11. Forms & MVC",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=2896"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo"           
+          },
+          demoComponent: <TodoList />
+        },
+        {
           demoKey: "jokeList",
           primaryText: "Joke List",
           secondaryText: "20. Props and Styling",
@@ -112,23 +126,9 @@ const TutorialData = [
           demoComponent: <TravelForm />
         },
         {
-          demoKey: "todo",
-          primaryText: "Todo List",
-          secondaryText: "MVC and Forms",
-          refLink: {
-            tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=2896"
-          },
-          codeLink: {
-            tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo"           
-          },
-          demoComponent: <TodoList />
-        },
-        {
           demoKey: "memeGenerator",
           primaryText: "Meme Generator",
-          secondaryText: "43. Capstone Project",
+          secondaryText: "45. Capstone Project",
           refLink: {
             tipText: "youtube",
             href: "https://youtu.be/DLX62G4lc44?t=16569"
