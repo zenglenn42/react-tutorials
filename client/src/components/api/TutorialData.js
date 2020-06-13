@@ -128,7 +128,7 @@ const TutorialData = [
         {
           demoKey: "memeGenerator",
           primaryText: "Meme Generator",
-          secondaryText: "Capstone Project",
+          secondaryText: "43. Capstone Project",
           refLink: {
             tipText: "youtube",
             href: "https://youtu.be/DLX62G4lc44?t=16569"
