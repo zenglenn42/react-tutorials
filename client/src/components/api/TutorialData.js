@@ -7,6 +7,7 @@ import HelloClass from '../vschool/classComponents/HelloClass'
 import LoginState from '../vschool/state1/LoginState'
 import CountState from '../vschool/state2/CountState'
 import ConditionalRender from '../vschool/conditionalRender/ConditionalRender'
+import TravelForm from '../vschool/forms/TravelForm'
 
 const TutorialData = [
 {
@@ -95,6 +96,20 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/conditionalRender"           
           },
           demoComponent: <ConditionalRender />
+        },
+        {
+          demoKey: "travelForm",
+          primaryText: "Travel Form",
+          secondaryText: "43. Forms",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=14666"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/forms"           
+          },
+          demoComponent: <TravelForm />
         },
         {
           demoKey: "todo",
