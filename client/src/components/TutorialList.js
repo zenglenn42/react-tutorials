@@ -50,7 +50,7 @@ export default function TutorialList(props) {
       aria-labelledby="nested-list-subheader"
       subheader={
         <ListSubheader component="div" id="nested-list-subheader">
-          Tutorial demos
+          Select a tutorial ...
         </ListSubheader>
       }
       className={classes.root}
