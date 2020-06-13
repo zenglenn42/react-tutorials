@@ -3,6 +3,7 @@ import MemeGenerator from '../vschool/memeGenerator/MemeGenerator'
 import JokeList from '../vschool/jokeList/JokeList'
 import TodoList from '../vschool/todo/TodoList'
 import ProductCatalog from '../vschool/mapComponents/ProductCatalog'
+import HelloClass from '../vschool/classComponents/HelloClass'
 
 const TutorialData = [
 {
@@ -35,6 +36,20 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/mapComponents"           
           },
           demoComponent: <ProductCatalog />
+        },
+        {
+          demoKey: "classComponents",
+          primaryText: "Hello, Class",
+          secondaryText: "25. Class Components",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=7421"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/classComponents"           
+          },
+          demoComponent: <HelloClass />
         },
         {
           demoKey: "todo",
