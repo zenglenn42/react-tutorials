@@ -4,6 +4,8 @@ import JokeList from '../vschool/jokeList/JokeList'
 import TodoList from '../vschool/todo/TodoList'
 import ProductCatalog from '../vschool/mapComponents/ProductCatalog'
 import HelloClass from '../vschool/classComponents/HelloClass'
+import LoginState from '../vschool/state1/LoginState'
+import CountState from '../vschool/state2/CountState'
 
 const TutorialData = [
 {
@@ -50,6 +52,34 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/classComponents"           
           },
           demoComponent: <HelloClass />
+        },
+        {
+          demoKey: "loginState",
+          primaryText: "Login State",
+          secondaryText: "27. State (part 1)",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=7935"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state1"           
+          },
+          demoComponent: <LoginState />
+        },
+        {
+          demoKey: "countState",
+          primaryText: "Change State",
+          secondaryText: "28. State (part 2)",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/DLX62G4lc44?t=8153"
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state2"           
+          },
+          demoComponent: <CountState />
         },
         {
           demoKey: "todo",
