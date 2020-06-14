@@ -15,7 +15,7 @@ const TutorialData = [
       primaryText: "vschool.io",
       summary: {
         provider: "vschool.io",
-        courseTitle: "Introduction to React",
+        courseTitle: "Learn React JS - Full Course for Beginners",
         demoKey: "summary",
         refLink: {
           tipText: "youtube",
@@ -28,7 +28,7 @@ const TutorialData = [
         },
         level: "introductory",
         descText: "This nicely paced, 5-hour introduction to React offers plenty of progressive practice.",
-        date: "yyyy-mm-dd",
+        date: "2018-12-18",
         author: "Bob Ziroll",
         features: [
           {
