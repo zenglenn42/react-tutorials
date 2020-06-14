@@ -62,6 +62,7 @@ export default function TutorialList(props) {
           return (
           <ListItem button data-tutorialkey={primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
             <ListItemText
+              dense
               primary={solution.primaryText}
               secondary={solution.secondaryText}
             /> 
@@ -80,7 +81,7 @@ export default function TutorialList(props) {
         const listItem = (
           <ListSubheader>
             <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
-              <ListItemText primary={primaryText} />
+              <ListItemText dense primary={primaryText} />
               {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
             </ListItem >
             {collapseList}
