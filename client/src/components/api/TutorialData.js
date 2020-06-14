@@ -150,7 +150,8 @@ const TutorialData = [
           secondaryText: "38. Conditional Render",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=11674"
+            href: "https://youtu.be/DLX62G4lc44?t=11674",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",
