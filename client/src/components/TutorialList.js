@@ -29,7 +29,7 @@ export default function TutorialList(props) {
   });
 
   const handleExpandClick = (e) => {
-    const key = e.target.innerHTML
+    const key = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
     const value = open[key]
     setOpen({...open, [key]: !value})
   };
@@ -59,7 +59,7 @@ export default function TutorialList(props) {
         const primaryText = tutorial.primaryText
         const listItem = (
           <ListSubheader>
-            <ListItem button onClick={handleExpandClick}>
+            <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
               <ListItemText primary={primaryText} />
               {open[primaryText] ? <ExpandLess /> : <ExpandMore />}
             </ListItem >
