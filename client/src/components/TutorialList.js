@@ -5,8 +5,8 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Collapse from '@material-ui/core/Collapse';
-import ExpandLess from '@material-ui/icons/ExpandLess';
-import ExpandMore from '@material-ui/icons/ExpandMore';
+// import ExpandLess from '@material-ui/icons/ExpandLess';
+// import ExpandMore from '@material-ui/icons/ExpandMore';
 import TutorialData from './api/TutorialData'
 
 const tutorialData = TutorialData
@@ -32,6 +32,8 @@ export default function TutorialList(props) {
     const key = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
     const value = open[key]
     setOpen({...open, [key]: !value})
+    const tutorial = tutorialData.filter((tutorial) => {return (tutorial.primaryText === key)})[0]
+    props.setMainContent(tutorial.summary)
   };
   
   const handleSolutionClick = (e) => {

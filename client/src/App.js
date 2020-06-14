@@ -22,6 +22,7 @@ import { MdTouchApp } from "react-icons/md";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import Tooltip from '@material-ui/core/Tooltip';
 import DemobarColor from '@material-ui/core/colors/indigo';
+import TutorialSummary from './components/TutorialSummary'
 
 const drawerWidth = 250;
 
@@ -102,64 +103,75 @@ const useStyles = makeStyles((theme) => ({
 
 function getMainContent(mainContent, classes, handleDrawerOpen) {
     let content = null
-    if (mainContent.demoKey === "splash") {
-      content = (
-        <React.Fragment>
-          <Typography variant="h4" gutterBottom> 
-          <ReactIcon/> Learning React
-          </Typography>
-          <Typography paragraph>
-            React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
-          </Typography>
-          <Typography paragraph>
-            Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions to share with you.
-          </Typography>
-          <Button
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            variant="contained"
-            color="default"
-          >
-            <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
-          </Button>
-        </React.Fragment>
-      )
-    } else {
-      content = (
-        <React.Fragment>
-          <Toolbar className={classes.Demobar} variant="dense" >
-          <Typography variant="h6" noWrap={true}>
-            {mainContent.primaryText}
-          </Typography>
-          <div className={classes.grow} />
-          <Tooltip title={mainContent.refLink.tipText} enterDelay={300}>
-            <IconButton
-                component="a"
-                color="inherit"
-                href={mainContent.refLink.href}
-                aria-label={mainContent.refLink.tipText}
-                target="_blank"
-              >
-                {mainContent.refLink.icon}
-            </IconButton>
-          </Tooltip>
-          <Tooltip title={mainContent.codeLink.tipText} enterDelay={300}>
-            <IconButton
-                component="a"
-                color="inherit"
-                href={mainContent.codeLink.href}
-                aria-label={mainContent.codeLink.tipText}
-                target="_blank"
-              >
-                <GitHubIcon />
-            </IconButton>
-          </Tooltip>
-          </Toolbar>
-          {mainContent.demoComponent}
-        </React.Fragment>
-      )
+    
+    switch (mainContent.demoKey) {
+      case "splash":
+        content = (
+          <React.Fragment>
+            <Typography variant="h4" gutterBottom> 
+            <ReactIcon/> Learning React
+            </Typography>
+            <Typography paragraph>
+              React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
+            </Typography>
+            <Typography paragraph>
+              Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions to share with you.
+            </Typography>
+            <Button
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              variant="contained"
+              color="default"
+            >
+              <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
+            </Button>
+          </React.Fragment>
+        )
+        break;
+
+      case "summary":
+        content = (
+          <TutorialSummary {...mainContent} />
+        )
+        break;
+
+      default:
+        content = (
+          <React.Fragment>
+            <Toolbar className={classes.Demobar} variant="dense" >
+            <Typography variant="h6" noWrap={true}>
+              {mainContent.primaryText}
+            </Typography>
+            <div className={classes.grow} />
+            <Tooltip title={mainContent.refLink.tipText} enterDelay={300}>
+              <IconButton
+                  component="a"
+                  color="inherit"
+                  href={mainContent.refLink.href}
+                  aria-label={mainContent.refLink.tipText}
+                  target="_blank"
+                >
+                  {mainContent.refLink.icon}
+              </IconButton>
+            </Tooltip>
+            <Tooltip title={mainContent.codeLink.tipText} enterDelay={300}>
+              <IconButton
+                  component="a"
+                  color="inherit"
+                  href={mainContent.codeLink.href}
+                  aria-label={mainContent.codeLink.tipText}
+                  target="_blank"
+                >
+                  <GitHubIcon />
+              </IconButton>
+            </Tooltip>
+            </Toolbar>
+            {mainContent.demoComponent}
+          </React.Fragment>
+        )
     }
+   
     return (
       <Paper className={classes.mainPaper} elevation={1} >
         {content}

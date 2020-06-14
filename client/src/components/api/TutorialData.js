@@ -13,6 +13,46 @@ import { FaYoutube } from 'react-icons/fa';
 const TutorialData = [
 {
       primaryText: "vschool.io",
+      summary: {
+        provider: "vschool.io",
+        courseTitle: "Introduction to React",
+        demoKey: "summary",
+        refLink: {
+          tipText: "youtube",
+          href: "https://youtu.be/DLX62G4lc44",
+          icon: <FaYoutube style={{color: "red"}}/>
+        },
+        codeLink: {
+          tipText: "github",
+          href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool"           
+        },
+        level: "introductory",
+        descText: "This nicely paced, 5-hour introduction to React offers plenty of progressive practice.",
+        date: "yyyy-mm-dd",
+        author: "Bob Ziroll",
+        features: [
+          {
+            bulletPoint: "Props",
+            bulletText: "Use props to customize components."
+          },
+          {
+            bulletPoint: "Class components",
+            bulletText: "Used especially for stateful components.  Introduction to lifecycle methods."
+          },
+          {
+            bulletPoint: "Function components",
+            bulletText: "Used especially for presentational components. No treatment of 'hooks'."
+          },
+          {
+            bulletPoint: "Forms",
+            bulletText: "Use component state to drive interactive forms.  Write event handlers."
+          },
+          {
+            bulletPoint: "Fetch",
+            bulletText: "Use fetch inside of a lifecycle method to make API calls across the net."
+          },
+        ],
+      },
       solutions: [
         {
           demoKey: "todo",
