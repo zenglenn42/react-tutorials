@@ -147,9 +147,6 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/memeGenerator"           
           },
           demoComponent: <MemeGenerator />
-        },
-        {
-          demoKey: "splash"
         }
       ]
     },

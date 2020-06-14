@@ -57,14 +57,6 @@ export default function TutorialList(props) {
     >
       { tutorialData.map((tutorial) => {
         const primaryText = tutorial.primaryText
-        const listItem = (
-          <ListSubheader>
-            <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
-              <ListItemText primary={primaryText} />
-              {open[primaryText] ? <ExpandLess /> : <ExpandMore />}
-            </ListItem >
-          </ListSubheader>
-        )
         
         const collapseListItems = tutorial.solutions.map((solution) => {
           return (
@@ -72,7 +64,8 @@ export default function TutorialList(props) {
             <ListItemText
               primary={solution.primaryText}
               secondary={solution.secondaryText}
-            />
+            /> 
+            {props.closeButton}
           </ListItem>
           )
         })
@@ -83,7 +76,17 @@ export default function TutorialList(props) {
             </List>
           </Collapse>
         )
-        return <React.Fragment>{listItem} {collapseList}</React.Fragment>
+
+        const listItem = (
+          <ListSubheader>
+            <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
+              <ListItemText primary={primaryText} />
+              {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
+            </ListItem >
+            {collapseList}
+          </ListSubheader>
+        )
+        return <React.Fragment>{listItem}</React.Fragment>
       })}
     </List>
   );

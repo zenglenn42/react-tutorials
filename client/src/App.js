@@ -23,7 +23,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import Tooltip from '@material-ui/core/Tooltip';
 import DemobarColor from '@material-ui/core/colors/indigo';
 
-const drawerWidth = 240;
+const drawerWidth = 250;
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -129,7 +129,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
       content = (
         <React.Fragment>
           <Toolbar className={classes.Demobar} variant="dense" >
-          <Typography variant="h6" noWrap>
+          <Typography variant="h6" noWrap={true}>
             {mainContent.primaryText}
           </Typography>
           <div className={classes.grow} />
@@ -161,7 +161,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
       )
     }
     return (
-      <Paper className={classes.mainPaper} elevation={0} >
+      <Paper className={classes.mainPaper} elevation={1} >
         {content}
       </Paper>
     )     
@@ -185,6 +185,12 @@ export default function PersistentDrawerLeft(props) {
     setMainContent({ demoKey: "splash" })
     setOpen(false);
   };
+
+  const drawerCloseButton = (
+    <IconButton onClick={handleDrawerClose}>
+      {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
+  </IconButton>
+  )
 
   return (
     <div className={classes.root}>
@@ -237,15 +243,16 @@ export default function PersistentDrawerLeft(props) {
               <FaHome size="1em" />
             </IconButton>
           </ListItemIcon>
-          <IconButton onClick={handleDrawerClose}>
+          {drawerCloseButton}
+          {/* <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton>
+          </IconButton> */}
         </div>
         <Divider />
-        <TutorialList setMainContent={setMainContent} />
+        <TutorialList setMainContent={setMainContent} closeButton={drawerCloseButton} />
       </Drawer>
 
-      <main
+      <main 
         className={clsx(classes.content, {
           [classes.contentShift]: open,
         })}
