@@ -8,6 +8,7 @@ import LoginState from '../vschool/state1/LoginState'
 import CountState from '../vschool/state2/CountState'
 import ConditionalRender from '../vschool/conditionalRender/ConditionalRender'
 import TravelForm from '../vschool/forms/TravelForm'
+import { FaYoutube } from 'react-icons/fa';
 
 const TutorialData = [
 {
@@ -19,7 +20,8 @@ const TutorialData = [
           secondaryText: "11. Forms & MVC",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=2896"
+            href: "https://youtu.be/DLX62G4lc44?t=2896",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",
@@ -33,7 +35,8 @@ const TutorialData = [
           secondaryText: "20. Props and Styling",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=5384"
+            href: "https://youtu.be/DLX62G4lc44?t=5384",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",
@@ -47,7 +50,8 @@ const TutorialData = [
           secondaryText: "22. Mapping Components",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=6513"
+            href: "https://youtu.be/DLX62G4lc44?t=6513",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",
@@ -61,7 +65,8 @@ const TutorialData = [
           secondaryText: "25. Class Components",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=7421"
+            href: "https://youtu.be/DLX62G4lc44?t=7421",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",
@@ -75,7 +80,8 @@ const TutorialData = [
           secondaryText: "27. State (part 1)",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=7935"
+            href: "https://youtu.be/DLX62G4lc44?t=7935",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",
@@ -89,7 +95,8 @@ const TutorialData = [
           secondaryText: "28. State (part 2)",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=8153"
+            href: "https://youtu.be/DLX62G4lc44?t=8153",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",
@@ -117,7 +124,8 @@ const TutorialData = [
           secondaryText: "43. Forms",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=14666"
+            href: "https://youtu.be/DLX62G4lc44?t=14666",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",
@@ -131,7 +139,8 @@ const TutorialData = [
           secondaryText: "45. Capstone Project",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/DLX62G4lc44?t=16569"
+            href: "https://youtu.be/DLX62G4lc44?t=16569",
+            icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
             tipText: "github",

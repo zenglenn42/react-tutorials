@@ -14,7 +14,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import TutorialList from './components/TutorialList';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { FaReact as ReactIcon } from 'react-icons/fa';
-import { FaYoutube } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa'
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
@@ -142,7 +141,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 aria-label={mainContent.refLink.tipText}
                 target="_blank"
               >
-                <FaYoutube />
+                {mainContent.refLink.icon}
             </IconButton>
           </Tooltip>
           <Tooltip title={mainContent.codeLink.tipText} enterDelay={300}>
