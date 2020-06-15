@@ -2,6 +2,18 @@
 
 This is a container app for hosting various React tutorials I complete.
 
+It features a slide-out drawer that allows you to select a given tutorial to explore.  Currently I just have one tutorial listed:
+
+![alt](docs/img/ui-mobile-intro.png)
+
+Users may view one or more solved problems from a tutorial and watch the related video for that problem or drill down into the code itself on github:
+
+![alt](docs/img/ui-mobile-demo.png)
+
+The demos are live and reflect specific curriculum goals:
+
+![alt](docs/img/ui-mobile-examples.png)
+
 Hosted solutions are available for the following tutorials:
 
 #### vschool.io with Bob Ziroll
