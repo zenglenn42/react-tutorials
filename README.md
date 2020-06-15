@@ -280,7 +280,7 @@ So I do that ...
 
 ![alt](docs/img/ui-summary.png)
 
-In my [data model](https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/api/TutorialData.js), I simply add a summary object for each tutorial in my array of tutorials:
+In my [data model](https://github.com/zenglenn42/react-tutorials/blob/c2e15e0d903b19c9a562729871227b6cc1417a69/client/src/components/api/TutorialData.js#L13), I simply add a summary object for each tutorial in my array of tutorials:
 
 ```
 const TutorialData = [
@@ -331,7 +331,7 @@ const TutorialData = [
 export default TutorialData
 ```
 
-Then I create a presentational component, [TutorialSummary](https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/TutorialSummary.js), for rendering that data nicely:
+Then I create a presentational component, [TutorialSummary](https://github.com/zenglenn42/react-tutorials/blob/c2e15e0d903b19c9a562729871227b6cc1417a69/client/src/components/TutorialSummary.js#L26), for rendering that data nicely:
 
 ```
 function TutorialSummary(props) {
@@ -358,7 +358,7 @@ function TutorialSummary(props) {
 }
 ```
 
-I update the [slideout drawer click-handler](https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/TutorialList.js) to detect when a top-level tutorial list item is clicked,
+I update the [slideout drawer click-handler](https://github.com/zenglenn42/react-tutorials/blob/c2e15e0d903b19c9a562729871227b6cc1417a69/client/src/components/TutorialList.js#L36) to detect when a top-level tutorial list item is clicked,
 passing the js object of summary info to the hosting app through the setMainContent callback:
 
 ```
@@ -375,7 +375,7 @@ export default function TutorialList(props) {
 }
 ```
 
-and then render the [TutorialSummary](https://github.com/zenglenn42/react-tutorials/tree/master/client/src/App.js) component in the main content window, driven by the summary props populated into state by the setMainContent callback:
+and then render the [TutorialSummary](https://github.com/zenglenn42/react-tutorials/blob/c2e15e0d903b19c9a562729871227b6cc1417a69/client/src/App.js#L133) component in the main content window, driven by the summary props populated into state by the setMainContent callback:
 
 ```
 function getMainContent(mainContent, classes, handleDrawerOpen) {
