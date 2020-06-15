@@ -271,3 +271,148 @@ and then just [map](https://github.com/zenglenn42/react-tutorials/blob/c24a626c2
     return <React.Fragment>{listItem} {collapseList}</React.Fragment>
 })}
 ```
+
+## Tutorial Summary
+
+It'd be nice to get a little summary information on a given tutorial, like when it was written, what level of expertise is expected, who wrote it, plus any special features it offers.
+
+So I do that ...
+
+![alt](docs/img/ui-summary.png)
+
+In my [data model](https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/api/TutorialData.js), I simply add a summary object for each tutorial in my array of tutorials:
+
+```
+const TutorialData = [
+{
+      summary: {
+        provider: "vschool.io",
+        courseTitle: "Learn React JS - Full Course for Beginners",
+        demoKey: "summary",
+        refLink: {
+          tipText: "youtube",
+          href: "https://youtu.be/DLX62G4lc44",
+          icon: <FaYoutube style={{color: "red"}}/>
+        },
+        codeLink: {
+          tipText: "github",
+          href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool"           
+        },
+        level: "introductory",
+        descText: "This nicely paced, 5-hour introduction to React offers plenty of progressive practice.",
+        date: "2018-12-18",
+        author: "Bob Ziroll",
+        features: [
+          {
+            bulletPoint: "Props",
+            bulletText: "Use props to customize components."
+          },
+          {
+            bulletPoint: "Class components",
+            bulletText: "Used especially for stateful components.  Introduction to lifecycle methods."
+          },
+          ...
+        ],
+      },
+      primaryText: "vschool.io",
+      solutions: [
+        {
+          demoKey: "todo",
+          primaryText: "Todo App",
+          secondaryText: "11. Forms & MVC",
+          ...
+          demoComponent: <TodoList />
+        },
+        ...
+      ]
+    },
+]
+
+export default TutorialData
+```
+
+Then I create a presentational component, [TutorialSummary](https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/TutorialSummary.js), for rendering that data nicely:
+
+```
+function TutorialSummary(props) {
+  const classes = useStyles();
+
+  const summary = (
+      <React.Fragment>
+          <Toolbar className={classes.Demobar} variant="dense" >
+              <Typography variant="h6" noWrap={true}>
+              <ReactIcon/> {props.courseTitle}
+              ...
+          </Toolbar>
+
+          <Typography variant="h7" gutterBottom> 
+              Author: {props.author}<br/>
+              Provider: {props.provider}<br/>
+              Date: {props.date}<br/>
+              Level: {props.level}<br/><hr/>
+          </Typography>
+          ...
+      </React.Fragment>
+  )
+  ...
+}
+```
+
+I update the [slideout drawer click-handler](https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/TutorialList.js) to detect when a top-level tutorial list item is clicked,
+passing the js object of summary info to the hosting app through the setMainContent callback:
+
+```
+export default function TutorialList(props) {
+
+  const handleExpandClick = (e) => {
+    const key = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
+    const tutorial = tutorialData.filter((tutorial) => {return (tutorial.primaryText === key)})[0]
+    props.setMainContent(tutorial.summary)
+    ...
+  };
+
+  ...
+}
+```
+
+and then render the [TutorialSummary](https://github.com/zenglenn42/react-tutorials/tree/master/client/src/App.js) component in the main content window, driven by the summary props populated into state by the setMainContent callback:
+
+```
+function getMainContent(mainContent, classes, handleDrawerOpen) {
+  let content = null
+  
+  switch (mainContent.demoKey) {
+    case "splash":
+      content = (
+        <React.Fragment>
+          <Typography variant="h4" gutterBottom> 
+          <ReactIcon/> Learning React
+          ...
+        </React.Fragment>
+      )
+      break;
+
+    case "summary":
+      content = (
+        <TutorialSummary {...mainContent} />
+      )
+      break;
+
+    ...
+  }
+}
+  
+export default function PersistentDrawerLeft(props) {
+  const [mainContent, setMainContent] = React.useState({demoKey: props.main})
+
+  ...
+
+  return (
+    ...
+      <main>
+        <div className={classes.drawerHeader} />
+        {getMainContent(mainContent, classes, handleDrawerOpen)}
+      </main>
+  )
+}
+```
