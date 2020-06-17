@@ -13,7 +13,7 @@ import TodoListUnstyled from '../brilliant-react-hooks/TodoListUnstyled'
 import TodoListStyled from '../brilliant-react-hooks/TodoListStyled'
 import TodoWithForm from '../brilliant-react-hooks/TodoWithForm'
 import TodoWithDone from '../brilliant-react-hooks/TodoWithDone'
-
+import TodoWithDel from '../brilliant-react-hooks/TodoWithDel'
 
 const TutorialData = [
   {
@@ -218,7 +218,7 @@ const TutorialData = [
         features: [
           {
             bulletPoint: "Todo List",
-            bulletText: "Create a todo list with 'complete' and 'delete' buttons."
+            bulletText: "Create a todo list with 'done' and 'delete' buttons."
           },
           {
             bulletPoint: "Forms",
@@ -290,6 +290,21 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDone.js"           
           },
           demoComponent: <TodoWithDone />
+        },
+        {
+          demoKey: "todo-w-del",
+          primaryText: "Todo with Delete",
+          secondaryText: "Delete items",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/mxK8b99iJTg?t=1175",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDel.js"           
+          },
+          demoComponent: <TodoWithDel />
         },
       ]
     },
