@@ -18,7 +18,11 @@ Hosted solutions are available for the following tutorials:
 
 #### vschool.io with Bob Ziroll
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/DLX62G4lc44/0.jpg)](http://www.youtube.com/watch?v=DLX62G4lc44 "vschool.io React in 5 hours 2019")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/DLX62G4lc44/0.jpg)](http://www.youtube.com/watch?v=DLX62G4lc44 "React in 5 hours 2019")
+
+#### brilliant.org with Kapeche and TraversyMedia
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/mxK8b99iJTg/0.jpg)](http://www.youtube.com/watch?v=mxK8b99iJTg "Introducing React Hooks")
 
 # Developer's Blog
 
