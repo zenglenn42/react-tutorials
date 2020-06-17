@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './style.css'
 
 const initialToDos = [
     {
@@ -17,17 +18,17 @@ const initialToDos = [
 
 function Todo({todo, index}) {
     return (
-        <div>
+        <div className="todo">
             {todo.text}
         </div>        
     )
 }
 
-function TodoListUnstyled() {
+function TodoListStyled() {
     const [todos, setTodos] = useState(initialToDos)
 
     return (
-        <div>
+        <div className="todo-list">
             {todos.map((todo, index) => {
                 return <Todo key={index} index={index} todo={todo} />
             })}
@@ -35,4 +36,4 @@ function TodoListUnstyled() {
     )
 }
 
-export default TodoListUnstyled
+export default TodoListStyled

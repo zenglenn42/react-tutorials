@@ -10,6 +10,7 @@ import ConditionalRender from '../vschool/conditionalRender/ConditionalRender'
 import TravelForm from '../vschool/forms/TravelForm'
 import { FaYoutube } from 'react-icons/fa';
 import TodoListUnstyled from '../brilliant-react-hooks/TodoListUnstyled'
+import TodoListStyled from '../brilliant-react-hooks/TodoListStyled'
 
 const TutorialData = [
   {
@@ -241,6 +242,21 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListUnstyled.js"           
           },
           demoComponent: <TodoListUnstyled />
+        },
+        {
+          demoKey: "todo-styled",
+          primaryText: "Todo Styled",
+          secondaryText: "Styled list",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/mxK8b99iJTg?t=492",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListStyled.js"           
+          },
+          demoComponent: <TodoListStyled />
         },
       ]
     },
