@@ -238,7 +238,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/todo"           
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListUnstyled.js"           
           },
           demoComponent: <TodoListUnstyled />
         },
