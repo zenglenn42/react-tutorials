@@ -11,6 +11,9 @@ import TravelForm from '../vschool/forms/TravelForm'
 import { FaYoutube } from 'react-icons/fa';
 import TodoListUnstyled from '../brilliant-react-hooks/TodoListUnstyled'
 import TodoListStyled from '../brilliant-react-hooks/TodoListStyled'
+import TodoWithForm from '../brilliant-react-hooks/TodoWithForm'
+import TodoWithDone from '../brilliant-react-hooks/TodoWithDone'
+
 
 const TutorialData = [
   {
@@ -257,6 +260,36 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListStyled.js"           
           },
           demoComponent: <TodoListStyled />
+        },
+        {
+          demoKey: "todo-w-form",
+          primaryText: "Todo with Form",
+          secondaryText: "Add new items",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/mxK8b99iJTg?t=804",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithForm.js"           
+          },
+          demoComponent: <TodoWithForm />
+        },
+        {
+          demoKey: "todo-w-done",
+          primaryText: "Todo with Done",
+          secondaryText: "Mark done items",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/mxK8b99iJTg?t=1016",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDone.js"           
+          },
+          demoComponent: <TodoWithDone />
         },
       ]
     },
