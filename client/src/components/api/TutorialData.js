@@ -9,9 +9,10 @@ import CountState from '../vschool/state2/CountState'
 import ConditionalRender from '../vschool/conditionalRender/ConditionalRender'
 import TravelForm from '../vschool/forms/TravelForm'
 import { FaYoutube } from 'react-icons/fa';
+import TodoListUnstyled from '../brilliant-react-hooks/TodoListUnstyled'
 
 const TutorialData = [
-{
+  {
       primaryText: "vschool.io",
       summary: {
         provider: "vschool.io",
@@ -189,6 +190,58 @@ const TutorialData = [
           },
           demoComponent: <MemeGenerator />
         }
+      ]
+    },
+    {
+      primaryText: "brilliant.org hooks",
+      summary: {
+        provider: "brilliant.org",
+        courseTitle: "Introducing React Hooks",
+        demoKey: "summary",
+        refLink: {
+          tipText: "youtube",
+          href: "https://youtu.be/mxK8b99iJTg",
+          icon: <FaYoutube style={{color: "red"}}/>
+        },
+        codeLink: {
+          tipText: "github",
+          href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks"           
+        },
+        level: "introductory",
+        descText: "This 30 minute tutorial introduces hooks, a means of adding state to function-based components.",
+        date: "2018-11-15",
+        author: "Kapeche & Traversey Media",
+        features: [
+          {
+            bulletPoint: "Todo List",
+            bulletText: "Create a todo list with 'complete' and 'delete' buttons."
+          },
+          {
+            bulletPoint: "Forms",
+            bulletText: "Add new items with a simple form."
+          },
+          {
+            bulletPoint: "State",
+            bulletText: "Leverage useState() to create a variable to hold state along with a function to set state."
+          },
+        ],
+      },
+      solutions: [
+        {
+          demoKey: "todo-unstyled",
+          primaryText: "Todo",
+          secondaryText: "Unstyled list",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/mxK8b99iJTg?t=442",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/todo"           
+          },
+          demoComponent: <TodoListUnstyled />
+        },
       ]
     },
 ]
