@@ -442,3 +442,5 @@ This provides a guided sequence for implementing a classic todo list using funct
 We start off by rendering a simple list of todo items and end up with a modest app that can mark items 'done' and delete them as well.  The app is simple and does not persist state across sessions, so if you refresh the page, you'll see the same initial items appear again.  Maybe I'll leverage session or local storage in a follow-on exercise to address persistence.
 
 ![alt](docs/img/ui-hooks-seq.png)
+
+##### Progression from list to hooks-based Todo App
