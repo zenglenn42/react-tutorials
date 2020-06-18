@@ -432,3 +432,13 @@ export default function PersistentDrawerLeft(props) {
   )
 }
 ```
+
+## I add a tutorial on React Hooks
+
+![alt](docs/img/ui-hooks.png)
+
+This provides a guided sequence for implementing a classic todo list using function-based components that leverage the useState() primitive for capturing and mutating state within a function (as opposed to a class).  In this case, the textual description of the item along with its state of completetion are managed through state.
+
+We start off by rendering a simple list of todo items and and up with a modest app that can mark items 'done' and delete them as well.  The app is simple and does not persist state across sessions, so if you refresh the page, you'll see the same initial items appear again.  Maybe I'll leverage session or local storage in a follow-on exercise to address persistence.
+
+![alt](docs/img/ui-hooks-seq.png)
