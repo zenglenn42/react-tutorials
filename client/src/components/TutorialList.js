@@ -50,13 +50,13 @@ export default function TutorialList(props) {
     <List
       component="nav"
       aria-labelledby="nested-list-subheader"
-      subheader={
-        <ListSubheader component="div" id="nested-list-subheader">
-          Select a tutorial ...
-        </ListSubheader>
-      }
+      subheader={<ListSubheader />}
       className={classes.root}
     >
+      <ListSubheader component="div" id="nested-list-subheader">
+        Select a tutorial ...
+      </ListSubheader>
+
       { tutorialData.map((tutorial) => {
         const primaryText = tutorial.primaryText
         
@@ -75,13 +75,13 @@ export default function TutorialList(props) {
         const collapseList = (
           <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
             <List component="div" disablePadding>
-              {collapseListItems}
+                {collapseListItems}
             </List>
           </Collapse>
         )
 
         const listItem = (
-          <ListSubheader>
+          <ListSubheader id="tutorial-provider">
             <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
               <ListItemText dense primary={primaryText} />
               {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
