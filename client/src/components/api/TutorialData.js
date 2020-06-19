@@ -14,10 +14,14 @@ import TodoListStyled from '../brilliant-react-hooks/TodoListStyled'
 import TodoWithForm from '../brilliant-react-hooks/TodoWithForm'
 import TodoWithDone from '../brilliant-react-hooks/TodoWithDone'
 import TodoWithDel from '../brilliant-react-hooks/TodoWithDel'
+import SimpleState from '../wesbos-context/SimpleState'
+import PropDrilling from '../wesbos-context/PropDrilling'
+import SimpleContext from '../wesbos-context/SimpleContext'
+import MutateContext from '../wesbos-context/MutateContext'
 
 const TutorialData = [
   {
-      primaryText: "vschool.io",
+      primaryText: "Bob Ziroll - Intro to React",
       summary: {
         provider: "vschool.io",
         courseTitle: "Learn React JS - Full Course for Beginners",
@@ -197,7 +201,7 @@ const TutorialData = [
       ]
     },
     {
-      primaryText: "brilliant.org hooks",
+      primaryText: "Kapeche - Hooks",
       summary: {
         provider: "brilliant.org",
         courseTitle: "Introducing React Hooks",
@@ -217,16 +221,12 @@ const TutorialData = [
         author: "Kapeche & Traversey Media",
         features: [
           {
-            bulletPoint: "Todo List",
-            bulletText: "Create a todo list with 'done' and 'delete' buttons."
+            bulletPoint: "Todo list",
+            bulletText: "Manage a todo list by adding, completing, and deleting items."
           },
           {
-            bulletPoint: "Forms",
-            bulletText: "Add new items with a simple form."
-          },
-          {
-            bulletPoint: "State",
-            bulletText: "Leverage useState() to create a variable to hold state along with a function to set state."
+            bulletPoint: "React hook, useState()",
+            bulletText: "Manage state within function-based list and input form components."
           },
         ],
       },
@@ -305,6 +305,103 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDel.js"           
           },
           demoComponent: <TodoWithDel />
+        },
+      ]
+    },
+    {
+      primaryText: "Wes Bos - Context API",
+      summary: {
+        provider: "Wes Bos",
+        courseTitle: "React Context API",
+        demoKey: "summary",
+        refLink: {
+          tipText: "youtube",
+          href: "https://youtu.be/XLJN4JfniH4",
+          icon: <FaYoutube style={{color: "red"}}/>
+        },
+        codeLink: {
+          tipText: "github",
+          href: "https://github.com/wesbos/React-Context"           
+        },
+        level: "introductory",
+        descText: "This spare 15 minute tutorial introduces React's Context API, a lightweight data store for managing state outside your components.",
+        date: "2018-03-13",
+        author: "Wes Bos",
+        features: [
+          {
+            bulletPoint: "Class-based implementation",
+            bulletText: "Learn about React.createContext(), <Context.Provider>, <Context.Consumer>"
+          },
+          {
+            bulletPoint: "Applicability",
+            bulletText: "Fits between lightweight component state and heavy duty datastores like Redux."
+          },
+          {
+            bulletPoint: "State for nested children",
+            bulletText: "Avoid 'prop-drilling' when passing state to deeply nested child components."
+          }
+        ],
+      },
+      solutions: [
+        {
+          demoKey: "wb-context-simple",
+          primaryText: "Simple state",
+          secondaryText: "Pass state with prop",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/XLJN4JfniH4?t=94",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleState.js"           
+          },
+          demoComponent: <SimpleState />
+        },
+        {
+          demoKey: "wb-context-prop-drilling",
+          primaryText: "Prop drilling",
+          secondaryText: "Pass state deeply",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/XLJN4JfniH4?t=178",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/PropDrilling.js"           
+          },
+          demoComponent: <PropDrilling />
+        },
+        {
+          demoKey: "wb-simple-context",
+          primaryText: "Read context",
+          secondaryText: "Get state from context",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/XLJN4JfniH4?t=295",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleContext.js"           
+          },
+          demoComponent: <SimpleContext />
+        },
+        {
+          demoKey: "wb-mutate-context",
+          primaryText: "Change context",
+          secondaryText: "Mutate state within context",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/XLJN4JfniH4?t=755",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/MutateContext.js"           
+          },
+          demoComponent: <MutateContext />
         },
       ]
     },

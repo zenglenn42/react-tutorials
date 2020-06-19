@@ -40,7 +40,7 @@ function Todo({todo, index}) {
 }
 
 function TodoListStyled() {
-    const [todos, setTodos] = useState(initialToDos)
+    const [todos] = useState(initialToDos)
     const classes = useStyles();
 
     return (

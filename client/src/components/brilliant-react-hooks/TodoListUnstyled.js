@@ -24,7 +24,7 @@ function Todo({todo, index}) {
 }
 
 function TodoListUnstyled() {
-    const [todos, setTodos] = useState(initialToDos)
+    const [todos] = useState(initialToDos)
 
     return (
         <div>

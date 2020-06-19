@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles';
 import ListColor from '@material-ui/core/colors/yellow';
-import { FaFileExcel } from 'react-icons/fa';
 
 // Shooting for a postit-like color with subtle stripe effect to make more readable.
 // See 'CSS Secrets #22: Zebra-Striped Text Lines'
