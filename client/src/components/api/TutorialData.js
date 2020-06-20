@@ -18,6 +18,10 @@ import SimpleState from '../wesbos-context/SimpleState'
 import PropDrilling from '../wesbos-context/PropDrilling'
 import SimpleContext from '../wesbos-context/SimpleContext'
 import MutateContext from '../wesbos-context/MutateContext'
+import { AppRouter as AppRouter0 } from '../benawad-useContext/0-router-base/AppRouter'
+import { AppRouter as AppRouter1 } from '../benawad-useContext/1-read-msg/AppRouter'
+import { AppRouter as AppRouter2 } from '../benawad-useContext/2-mutable-context/AppRouter'
+import { AppRouter as AppRouter3 } from '../benawad-useContext/3-login-context/AppRouter'
 
 const TutorialData = [
   {
@@ -402,6 +406,115 @@ const TutorialData = [
             href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/MutateContext.js"           
           },
           demoComponent: <MutateContext />
+        },
+      ]
+    },
+    {
+      primaryText: "Ben Awad - useContext",
+      summary: {
+        provider: "Ben Awad",
+        courseTitle: "useContext (Storing a User)",
+        demoKey: "summary",
+        refLink: {
+          tipText: "youtube",
+          href: "https://youtu.be/lhMKvyLRWo0",
+          icon: <FaYoutube style={{color: "red"}}/>
+        },
+        codeLink: {
+          tipText: "github",
+          href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext"           
+        },
+        level: "introductory",
+        descText: "This lean but rich 10 minute tutorial introduces useContext, the hooks version of React's Context API. In this case, a user's login identity is stored and shared among components as state within a context store.",
+        date: "2019-06-29",
+        author: "Ben Awad",
+        features: [
+          {
+            bulletPoint: "Easily share state",
+            bulletText: "Share state with deeply nested child components without prop-drilling.",
+          },
+          {
+            bulletPoint: "createContext()",
+            bulletText: "Learn to create a context data store with createContext()"
+          },
+          {
+            bulletPoint: "useContext()",
+            bulletText: "Subscribe to context state with useContext()"
+          },
+          {
+            bulletPoint: "Works nicely with useState()",
+            bulletText: "Can store useState() output (i.e., getter/setter) within a context."
+          },
+          {
+            bulletPoint: "useMemo()",
+            bulletText: "Minimize component re-rendering."
+          },
+          {
+            bulletPoint: "React Router",
+            bulletText: "Features skeleton app that uses <Router> and <Route> to achieve effect of multi-page app within single page architecutre.",
+          }
+        ],
+      },
+      solutions: [
+        {
+          demoKey: "ba-router-base",
+          primaryText: "Starter template",
+          secondaryText: "Router-based starter code",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/lhMKvyLRWo0",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-userContext/0-router-base"           
+          },
+          demoComponent: <AppRouter0 />
+        },
+        {
+          demoKey: "ba-read-context-msg",
+          primaryText: "Simple context",
+          secondaryText: "Read string from context",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/lhMKvyLRWo0?t=63",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-userContext/1-read-msg"           
+          },
+          demoComponent: <AppRouter1 />
+        },
+        {
+          demoKey: "ba-store-state",
+          primaryText: "Mutable context",
+          secondaryText: "useState + useContext",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/lhMKvyLRWo0?t=249",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-userContext/2-mutable-context"           
+          },
+          demoComponent: <AppRouter2 />
+        },
+        {
+          demoKey: "ba-login-context",
+          primaryText: "Login context",
+          secondaryText: "Manage user state",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/lhMKvyLRWo0?t=424",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-userContext/3-login-context"           
+          },
+          demoComponent: <AppRouter3 />
         },
       ]
     },
