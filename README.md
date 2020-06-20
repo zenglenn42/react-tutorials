@@ -20,9 +20,17 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/DLX62G4lc44/0.jpg)](http://www.youtube.com/watch?v=DLX62G4lc44 "React in 5 hours 2019")
 
-#### brilliant.org with Kapeche and TraversyMedia
+#### brilliant.org with Kapeche and Brad Traversy
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/mxK8b99iJTg/0.jpg)](http://www.youtube.com/watch?v=mxK8b99iJTg "Introducing React Hooks")
+
+#### Wes Bos
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/XLJN4JfniH4/0.jpg)](http://www.youtube.com/watch?v=XLJN4JfniH4 "React's New Context API")
+
+#### Ben Awad
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/lhMKvyLRWo0/0.jpg)](http://www.youtube.com/watch?v=lhMKvyLRWo0 "React Hooks useContext Tutorial (Storing a User")
 
 # Developer's Blog
 
