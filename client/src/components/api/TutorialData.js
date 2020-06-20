@@ -467,7 +467,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-userContext/0-router-base"           
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/0-router-base"           
           },
           demoComponent: <AppRouter0 />
         },
@@ -482,7 +482,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-userContext/1-read-msg"           
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/1-read-msg"           
           },
           demoComponent: <AppRouter1 />
         },
@@ -497,7 +497,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-userContext/2-mutable-context"           
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/2-mutable-context"           
           },
           demoComponent: <AppRouter2 />
         },
@@ -512,7 +512,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-userContext/3-login-context"           
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/3-login-context"           
           },
           demoComponent: <AppRouter3 />
         },
