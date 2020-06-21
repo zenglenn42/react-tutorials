@@ -20,6 +20,7 @@ import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import { MdTouchApp } from "react-icons/md";
 import GitHubIcon from '@material-ui/icons/GitHub';
+import WorkIcon from '@material-ui/icons/Work';
 import Tooltip from '@material-ui/core/Tooltip';
 import DemobarColor from '@material-ui/core/colors/indigo';
 import TutorialSummary from './components/TutorialSummary'
@@ -227,6 +228,17 @@ export default function PersistentDrawerLeft(props) {
             {props.text||"Persistent drawer"}
           </Typography>
           <div className={classes.grow} />
+          <Tooltip title="portfolio" enterDelay={300}>
+            <IconButton
+                component="a"
+                color="inherit"
+                href="https://zenglenn42.github.io/portfolio/"
+                aria-label="portfolio"
+                target="_blank"
+              >
+                <WorkIcon />
+            </IconButton>
+          </Tooltip>
           <Tooltip title="github" enterDelay={300}>
             <IconButton
                 component="a"
