@@ -115,7 +115,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
               React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
             </Typography>
             <Typography paragraph>
-              Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions to share with you.
+              Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions and selected snapshopts to share with you.
             </Typography>
             <Button
               aria-label="open drawer"
