@@ -12,8 +12,11 @@ export function App() {
                     Hello there (color="primary")
                 </Typography>
                 <Typography variant="h1" color="primary">
-                    Hello there (variant="h1")
+                    Hello there
                 </Typography>
+                <pre>
+                    {'<'}Typography variant="h1"{'>'}Hello there{'<'}/Typography{'>'}
+                </pre>
         </div>
     )
 }
