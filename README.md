@@ -1,8 +1,8 @@
 # react-tutorials [(demo)](https://react-tutorials.herokuapp.com/)
 
-This is a container app for hosting various React tutorials I complete.
+This is a React-based container app for hosting various React tutorials I complete.  So I'm using React to master React. :-)
 
-It features a slide-out drawer that allows you to select a given tutorial to explore.  Currently I just have one tutorial listed:
+It features a slide-out drawer that allows you to select a given tutorial to explore.
 
 ![alt](docs/img/ui-mobile-intro.png)
 
