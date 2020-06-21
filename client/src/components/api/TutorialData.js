@@ -22,6 +22,10 @@ import { AppRouter as AppRouter0 } from '../benawad-useContext/0-router-base/App
 import { AppRouter as AppRouter1 } from '../benawad-useContext/1-read-msg/AppRouter'
 import { AppRouter as AppRouter2 } from '../benawad-useContext/2-mutable-context/AppRouter'
 import { AppRouter as AppRouter3 } from '../benawad-useContext/3-login-context/AppRouter'
+import { App as MaterialUIIntro1 } from '../sistilli-material-ui/1-intro/App1'
+import { App as MaterialUIIntro2 } from '../sistilli-material-ui/1-intro/App2'
+import { App as MaterialUIIntro3 } from '../sistilli-material-ui/1-intro/App3'
+import { App as MaterialUIIntro4 } from '../sistilli-material-ui/1-intro/App4'
 
 const TutorialData = [
   {
@@ -536,119 +540,136 @@ const TutorialData = [
   },
   {
     summary: {
-      primaryText: "Tutorial 1 & 2 Playlist",
-      provider: "Some Provider",
-      courseTitle: "Tutorial 1 & 2 Playlist",
+      primaryText: "Sistilli - Material UI",
+      provider: "Forge Coding",
+      courseTitle: "React and Material UI",
       demoKey: "summary",
       refLink: {
         tipText: "youtube",
-        href: "https://youtu.be/lhMKvyLRWo0",
+        href: "https://www.youtube.com/watch?v=pHclLuRolzE",
         icon: <FaYoutube style={{color: "red"}}/>
       },
       codeLink: {
-        tipText: "github",
-        href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext"           
+        tipText: "code",
+        href: "http://theforge.ca"           
       },
       level: "introductory",
-      descText: "Description of tutorial playlist",
-      author: "Some Dude",
+      descText: "Material UI is a library of React components informed by the Materialize design system.",
+      date: "2020-03-08",
+      author: "Anthony Sistilli",
       features: [
         {
-          bulletPoint: "bullet point",
-          bulletText: "Description of awesome tutorial sequence.",
+          bulletPoint: "Themes",
+          bulletText: "Themes embody a collection of styling attributes that may be overridden.",
         },
-
+        {
+          bulletPoint: "Styles",
+          bulletText: "Styles associate visual attributes with class names.",
+        },
       ],
     },
     playlist: [
       {
-        primaryText: "Some tutorial 1",
+        primaryText: "#1 Introduction",
         summary: {
-          provider: "Some Provider",
-          courseTitle: "Short Title of Tutorial",
+          provider: "Forge Coding",
+          courseTitle: "React + Material UI #1: Introduction",
           demoKey: "summary",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/lhMKvyLRWo0",
+            href: "https://www.youtube.com/watch?v=pHclLuRolzE",
             icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
-            tipText: "github",
-            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext"           
+            tipText: "code",
+            href: "https://codesandbox.io/s/eloquent-beaver-3j1l2"           
           },
           level: "introductory",
-          descText: "Description of tutorial.",
-          author: "Some Dude",
+          descText: "Provides overview of Material UI component library for React",
+          date: "2020-03-08",
+          author: "Anthony Sistilli",
           features: [
             {
-              bulletPoint: "bullet point",
-              bulletText: "Description of awesome tutorial feature.",
+              bulletPoint: "Buttons",
+              bulletText: "Style using props.",
             },
-
+            {
+              bulletPoint: "Themes",
+              bulletText: "Application-wide styling overrides.",
+            },
+            {
+              bulletPoint: "Typography",
+              bulletText: "Text styling with props.",
+            },
+            {
+              bulletPoint: "makeStyles",
+              bulletText: "Surgical styling overrides.",
+            },
           ],
         },
         snapshots: [
           {
-            demoKey: "demo-key-1",
-            primaryText: "Demo desc",
-            secondaryText: "Longer desc",
+            demoKey: "material-ui-intro-1",
+            primaryText: "Buttons",
+            secondaryText: "color & variant",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://www.youtube.com/watch?v=pHclLuRolzE",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/0-router-base"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro"           
             },
-            demoComponent: <AppRouter0 />
+            demoComponent: <MaterialUIIntro1 />
+          },
+          {
+            demoKey: "material-ui-intro-2",
+            primaryText: "Themes",
+            secondaryText: "Override colors",
+            refLink: {
+              tipText: "youtube",
+              href: "https://www.youtube.com/watch?v=pHclLuRolzE",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro"           
+            },
+            demoComponent: <MaterialUIIntro2 />
+          },
+          {
+            demoKey: "material-ui-intro-3",
+            primaryText: "Typography",
+            secondaryText: "Text styling",
+            refLink: {
+              tipText: "youtube",
+              href: "https://www.youtube.com/watch?v=pHclLuRolzE",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro"           
+            },
+            demoComponent: <MaterialUIIntro3 />
+          },
+          {
+            demoKey: "material-ui-intro-4",
+            primaryText: "makeStyles",
+            secondaryText: "Override via className",
+            refLink: {
+              tipText: "youtube",
+              href: "https://www.youtube.com/watch?v=pHclLuRolzE",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro"           
+            },
+            demoComponent: <MaterialUIIntro4 />
           },
         ]
       },
-      {
-        primaryText: "Some tutorial 2",
-        summary: {
-          provider: "Some Provider",
-          courseTitle: "Short Title of Tutorial 2",
-          demoKey: "summary",
-          refLink: {
-            tipText: "youtube",
-            href: "https://youtu.be/lhMKvyLRWo0",
-            icon: <FaYoutube style={{color: "red"}}/>
-          },
-          codeLink: {
-            tipText: "github",
-            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext"           
-          },
-          level: "introductory",
-          descText: "Description of tutorial 2.",
-          author: "Some Dude",
-          features: [
-            {
-              bulletPoint: "bullet point",
-              bulletText: "Description of awesome tutorial 2 feature.",
-            },
-
-          ],
-        },
-        snapshots: [
-          {
-            demoKey: "demo-key-2",
-            primaryText: "Demo desc 2",
-            secondaryText: "Longer desc 2",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0?t=63",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/1-read-msg"           
-            },
-            demoComponent: <AppRouter1 />
-          },
-        ]
-      },      
     ]
   },  
 ]
