@@ -32,6 +32,10 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/lhMKvyLRWo0/0.jpg)](http://www.youtube.com/watch?v=lhMKvyLRWo0 "React Hooks useContext Tutorial (Storing a User")
 
+#### Anthony Sistilli
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/pHclLuRolzE/0.jpg)](http://www.youtube.com/watch?v=pHclLuRolzE "React + Material UI #1: Introduction - 2020 Edition")
+
 # Developer's Blog
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
