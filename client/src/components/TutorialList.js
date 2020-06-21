@@ -22,29 +22,76 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const findMatchingTutorial = (key) => {
+  const tutorial = tutorialData.reduce((matchingTutorial, {playlist}) => {
+    const plResult = playlist.reduce((result, tutorial) => {
+      if (tutorial.primaryText === key) result = tutorial
+      return result
+    }, {})
+    if (plResult.hasOwnProperty("summary")) matchingTutorial = plResult
+    return matchingTutorial
+  }, {})
+  return tutorial
+}
+
 export default function TutorialList(props) {
   const classes = useStyles();
-  const [open, setOpen] = React.useState({
-    "vschool.io": false,
-  });
+  const [open, setOpen] = React.useState({});
 
   const handleExpandClick = (e) => {
     const key = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
-    const value = open[key]
+    const value = open[key] || false;
     setOpen({...open, [key]: !value})
-    const tutorial = tutorialData.filter((tutorial) => {return (tutorial.primaryText === key)})[0]
-    props.setMainContent(tutorial.summary)
+    const tutorial = findMatchingTutorial(key)
+    if (tutorial.summary) {
+      props.setMainContent(tutorial.summary)
+    }
   };
   
   const handleSolutionClick = (e) => {
     const demoKey = e.currentTarget.getAttribute('data-demokey') || "splash"
     const tutorialKey = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
 
-    const tutorial = tutorialData.filter((tutorial) => { return (tutorial.primaryText === tutorialKey) })[0]
-    const solution = tutorial.solutions.filter((solution) => { return (solution.demoKey === demoKey) })[0]
+    const tutorial = findMatchingTutorial(tutorialKey)
+    const solution = tutorial.snapshots.filter((solution) => { return (solution.demoKey === demoKey) })[0]
 
     props.setMainContent(solution || {contentKey: "splash"})
   }
+
+  const getTutorialListItems = (tutorial) => {
+    console.log("getTutorialListItems = ", tutorial)
+    const primaryText = tutorial.primaryText
+        
+    const collapseListItems = tutorial.snapshots.map((solution) => {
+      return (
+      <ListItem button data-tutorialkey={primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
+        <ListItemText
+          dense
+          primary={solution.primaryText}
+          secondary={solution.secondaryText}
+        /> 
+        {props.closeButton}
+      </ListItem>
+      )
+    })
+    const collapseList = (
+      <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+            {collapseListItems}
+        </List>
+      </Collapse>
+    )
+    const listItems = (
+      <ListSubheader id={tutorial.summary.provider}>
+        <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
+          <ListItemText dense primary={primaryText} />
+          {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
+        </ListItem >
+        {collapseList}
+      </ListSubheader>
+    )
+    return listItems
+  } 
 
   return (
     <List
@@ -57,40 +104,13 @@ export default function TutorialList(props) {
         Select a tutorial ...
       </ListSubheader>
 
-      { tutorialData.map((tutorial) => {
-        const primaryText = tutorial.primaryText
-        
-        const collapseListItems = tutorial.solutions.map((solution) => {
-          return (
-          <ListItem button data-tutorialkey={primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
-            <ListItemText
-              dense
-              primary={solution.primaryText}
-              secondary={solution.secondaryText}
-            /> 
-            {props.closeButton}
-          </ListItem>
-          )
+      { 
+        tutorialData.map((tutorial) => {
+          const listItems = tutorial.playlist.map((chapter) => getTutorialListItems(chapter))
+          return <React.Fragment>{listItems}</React.Fragment>
         })
-        const collapseList = (
-          <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
-            <List component="div" disablePadding>
-                {collapseListItems}
-            </List>
-          </Collapse>
-        )
+      }
 
-        const listItem = (
-          <ListSubheader id="tutorial-provider">
-            <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
-              <ListItemText dense primary={primaryText} />
-              {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
-            </ListItem >
-            {collapseList}
-          </ListSubheader>
-        )
-        return <React.Fragment>{listItem}</React.Fragment>
-      })}
     </List>
   );
 }
