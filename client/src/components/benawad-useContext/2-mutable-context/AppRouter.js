@@ -5,7 +5,7 @@ import { About } from "./pages/about"
 import { UserContext } from "./UserContext"
 
 export function AppRouter() {
-    const [value, setValue] = useState("value from context (set with useState)")
+    const [value, setValue] = useState("value from context (set with setValue from useState hook)")
 
     const providerValue = useMemo(() => ({value, setValue}), [value, setValue])
 
