@@ -546,7 +546,7 @@ const TutorialData = [
       demoKey: "summary",
       refLink: {
         tipText: "youtube",
-        href: "https://www.youtube.com/watch?v=pHclLuRolzE",
+        href: "https://www.youtube.com/channel/UCoYzQqZNCRqqAomJwJ6yEdg",
         icon: <FaYoutube style={{color: "red"}}/>
       },
       codeLink: {
@@ -614,7 +614,7 @@ const TutorialData = [
             secondaryText: "color & variant",
             refLink: {
               tipText: "youtube",
-              href: "https://www.youtube.com/watch?v=pHclLuRolzE",
+              href: "https://youtu.be/pHclLuRolzE",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -629,7 +629,7 @@ const TutorialData = [
             secondaryText: "Override colors",
             refLink: {
               tipText: "youtube",
-              href: "https://www.youtube.com/watch?v=pHclLuRolzE",
+              href: "https://youtu.be/pHclLuRolzE?t=327",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -644,7 +644,7 @@ const TutorialData = [
             secondaryText: "Text styling",
             refLink: {
               tipText: "youtube",
-              href: "https://www.youtube.com/watch?v=pHclLuRolzE",
+              href: "https://youtu.be/pHclLuRolzE?t=597",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -655,11 +655,11 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-intro-4",
-            primaryText: "makeStyles",
+            primaryText: "makeStyles hook",
             secondaryText: "Override via className",
             refLink: {
               tipText: "youtube",
-              href: "https://www.youtube.com/watch?v=pHclLuRolzE",
+              href: "https://youtu.be/pHclLuRolzE?t=770",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
