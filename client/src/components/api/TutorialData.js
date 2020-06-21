@@ -35,6 +35,8 @@ import { App as MaterialUIUXCode4 } from '../sistilli-material-ui/2-uiux/4-heade
 import { App as MaterialUIUXCode5 } from '../sistilli-material-ui/2-uiux/5-header-content/App'
 import { App as MaterialUIUXCode6 } from '../sistilli-material-ui/2-uiux/6-simple-card/App'
 import { App as MaterialUIUXCode7 } from '../sistilli-material-ui/2-uiux/7-content-grid/App'
+import { App as MaterialUIUXCode8 } from '../sistilli-material-ui/2-uiux/8-content-card/App'
+
 const TutorialData = [
   {
     playlist: [
@@ -865,7 +867,23 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIUXCode7 />
-          },     
+          },
+          {
+            demoKey: "material-ui-ux-8",
+            primaryText: "Content card",
+            secondaryText: "buildout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/8-content-card",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIUXCode8 />
+          },        
         ]
       },      
     ]
