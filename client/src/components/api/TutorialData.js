@@ -599,7 +599,7 @@ const TutorialData = [
             },
             {
               bulletPoint: "Themes",
-              bulletText: "Application-wide styling overrides.",
+              bulletText: "Override default theme with createMuiTheme",
             },
             {
               bulletPoint: "Typography",
