@@ -32,7 +32,7 @@ const Family = (props) => (
 
 class Person extends React.Component {
     render() {
-        const cake = <span role="img" area-label="cake emoji">🎂</span>
+        const cake = <span role="img" aria-label="cake emoji">🎂</span>
         return (
             <div>
                 <MyContext.Consumer>
