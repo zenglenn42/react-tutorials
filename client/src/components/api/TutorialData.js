@@ -779,7 +779,7 @@ const TutorialData = [
             secondaryText: "Using <Grid>",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              href: "https://youtu.be/tKzSnjWPtEw?t=342",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -795,7 +795,7 @@ const TutorialData = [
             secondaryText: "& breakpoints",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              href: "https://youtu.be/tKzSnjWPtEw?t=596",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -811,7 +811,7 @@ const TutorialData = [
             secondaryText: "<AppBar>",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              href: "https://youtu.be/tKzSnjWPtEw?t=855",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -823,11 +823,11 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-ux-5",
-            primaryText: "Header",
-            secondaryText: "Add content",
+            primaryText: "Toolbar",
+            secondaryText: "flex w/ makeStyles",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              href: "https://youtu.be/tKzSnjWPtEw?t=996",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -839,11 +839,11 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-ux-6",
-            primaryText: "Simple card",
-            secondaryText: "as content",
+            primaryText: "Content",
+            secondaryText: "simple card",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              href: "https://youtu.be/tKzSnjWPtEw?t=1205",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -859,7 +859,7 @@ const TutorialData = [
             secondaryText: "multi-card",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              href: "https://youtu.be/tKzSnjWPtEw?t=1354",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -875,7 +875,7 @@ const TutorialData = [
             secondaryText: "buildout",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              href: "https://youtu.be/tKzSnjWPtEw?t=1624",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -891,7 +891,7 @@ const TutorialData = [
             secondaryText: "data-driven",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              href: "https://youtu.be/tKzSnjWPtEw?t=2068",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
