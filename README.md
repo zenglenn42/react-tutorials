@@ -463,12 +463,12 @@ We start off by rendering a simple list of todo items and end up with a modest a
 
 ![alt](docs/img/uiux-figma-to-fact.png)
 
-Anthony Sistilli has done a beautiful job with his React + Material UI tutorial series.  I recently worked through his figma design to implementation tutorial and captured some snapshots along the way.
+Anthony Sistilli has done a beautiful job with his React + Material UI tutorial series.  I recently worked through his figma design-to-implementation tutorial and captured some snapshots along the way.
 
 ![alt](docs/img/uiux-progression.png)
 
 ##### Progression from skeleton app to responsive product page.
 
-The final implementation makes good use of Material UI <Grid> and various <Card> primitives along with an <AppBar>.  The best thing about this tutorial is just the basic work flow one takes to break down a design into components and thinking about how those components would live within a responsive grid.
+The final implementation makes good use of Material UI '<Grid>' and various '<Card>' components along with an '<AppBar>'.  The best thing about this tutorial is just the basic work flow one takes to break down a design into components and thinking about how those components would live within a responsive grid.
 
 ![alt](docs/img/uiux-final.png)
