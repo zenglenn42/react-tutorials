@@ -23,7 +23,7 @@ import { AppRouter as AppRouter1 } from '../benawad-useContext/1-read-msg/AppRou
 import { AppRouter as AppRouter2 } from '../benawad-useContext/2-mutable-context/AppRouter'
 import { AppRouter as AppRouter3 } from '../benawad-useContext/3-login-context/AppRouter'
 import { App as MaterialUIIntro1 } from '../sistilli-material-ui/1-intro/App1'
-import { App as MaterialUIIntro2 } from '../sistilli-material-ui/1-intro/App2'
+import { App as MaterialUIIntro2 } from '../sistilli-material-ui/1-intro/override-theme/App2'
 import { App as MaterialUIIntro3 } from '../sistilli-material-ui/1-intro/App3'
 import { App as MaterialUIIntro4 } from '../sistilli-material-ui/1-intro/App4'
 
@@ -638,7 +638,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App2.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/override-theme"           
             },
             demoComponent: <MaterialUIIntro2 />
           },
