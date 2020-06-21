@@ -164,7 +164,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                   aria-label={mainContent.codeLink.tipText}
                   target="_blank"
                 >
-                  <GitHubIcon />
+                  {mainContent.codeLink.icon}
               </IconButton>
             </Tooltip>
             </Toolbar>

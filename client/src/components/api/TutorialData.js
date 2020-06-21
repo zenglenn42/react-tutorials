@@ -9,6 +9,8 @@ import CountState from '../vschool/state2/CountState'
 import ConditionalRender from '../vschool/conditionalRender/ConditionalRender'
 import TravelForm from '../vschool/forms/TravelForm'
 import { FaYoutube } from 'react-icons/fa';
+import CodeIcon from '@material-ui/icons/Code';
+import GitHubIcon from '@material-ui/icons/GitHub';
 import TodoListUnstyled from '../brilliant-react-hooks/TodoListUnstyled'
 import TodoListStyled from '../brilliant-react-hooks/TodoListStyled'
 import TodoWithForm from '../brilliant-react-hooks/TodoWithForm'
@@ -43,7 +45,8 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool"           
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool",
+            icon: <GitHubIcon />         
           },
           level: "introductory",
           descText: "This nicely paced, 5-hour introduction to React offers plenty of progressive practice.",
@@ -84,7 +87,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo",
+              icon: <GitHubIcon />             
             },
             demoComponent: <TodoList />
           },
@@ -99,7 +103,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/jokeList"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/jokeList",
+              icon: <GitHubIcon />           
             },
             demoComponent: <JokeList />
           },
@@ -114,7 +119,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/mapComponents"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/mapComponents",
+              icon: <GitHubIcon />             
             },
             demoComponent: <ProductCatalog />
           },
@@ -129,7 +135,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/classComponents"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/classComponents",
+              icon: <GitHubIcon />             
             },
             demoComponent: <HelloClass />
           },
@@ -144,7 +151,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state1"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state1",
+              icon: <GitHubIcon />           
             },
             demoComponent: <LoginState />
           },
@@ -159,7 +167,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state2"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state2",
+              icon: <GitHubIcon />           
             },
             demoComponent: <CountState />
           },
@@ -174,7 +183,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/conditionalRender"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/conditionalRender",
+              icon: <GitHubIcon />           
             },
             demoComponent: <ConditionalRender />
           },
@@ -189,7 +199,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/forms"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/forms",
+              icon: <GitHubIcon />           
             },
             demoComponent: <TravelForm />
           },
@@ -204,7 +215,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/memeGenerator"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/memeGenerator",
+              icon: <GitHubIcon />           
             },
             demoComponent: <MemeGenerator />
           }
@@ -215,9 +227,9 @@ const TutorialData = [
   {
     playlist: [
       {
-        primaryText: "Kapeche - Hooks",
+        primaryText: "Kapehe, Traversy - Hooks",
         summary: {
-          provider: "brilliant.org",
+          provider: "Traversy Media",
           courseTitle: "Introducing React Hooks",
           demoKey: "summary",
           refLink: {
@@ -226,13 +238,14 @@ const TutorialData = [
             icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
-            tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks"           
+            tipText: "codesandbox",
+            href: "https://codesandbox.io/s/oj3qm2zq06",  
+            icon: <CodeIcon />       
           },
           level: "introductory",
           descText: "This 30 minute tutorial introduces hooks, a means of adding state to function-based components.",
           date: "2018-11-15",
-          author: "Kapeche & Traversey Media",
+          author: "Kapehe, Brad Traversy",
           features: [
             {
               bulletPoint: "Todo list",
@@ -256,7 +269,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListUnstyled.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListUnstyled.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <TodoListUnstyled />
           },
@@ -271,7 +285,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListStyled.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListStyled.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <TodoListStyled />
           },
@@ -286,7 +301,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithForm.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithForm.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <TodoWithForm />
           },
@@ -301,7 +317,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDone.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDone.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <TodoWithDone />
           },
@@ -316,7 +333,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDel.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDel.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <TodoWithDel />
           },
@@ -339,7 +357,8 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/wesbos/React-Context"           
+            href: "https://github.com/wesbos/React-Context",
+            icon: <GitHubIcon />            
           },
           level: "introductory",
           descText: "This spare 15 minute tutorial introduces React's Context API, a lightweight data store for managing state outside your components.",
@@ -372,7 +391,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleState.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleState.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <SimpleState />
           },
@@ -387,7 +407,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/PropDrilling.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/PropDrilling.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <PropDrilling />
           },
@@ -402,7 +423,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleContext.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleContext.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <SimpleContext />
           },
@@ -417,7 +439,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/MutateContext.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/MutateContext.js",
+              icon: <GitHubIcon />           
             },
             demoComponent: <MutateContext />
           },
@@ -440,7 +463,8 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext"           
+            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext",
+            icon: <GitHubIcon />            
           },
           level: "introductory",
           descText: "This lean but rich 10 minute tutorial introduces useContext, the hooks version of React's Context API. In this case, a user's login identity is stored and shared among components as state within a context store.",
@@ -489,7 +513,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/0-router-base"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/0-router-base",
+              icon: <GitHubIcon />            
             },
             demoComponent: <AppRouter0 />
           },
@@ -504,7 +529,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/1-read-msg"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/1-read-msg",
+              icon: <GitHubIcon />            
             },
             demoComponent: <AppRouter1 />
           },
@@ -519,7 +545,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/2-mutable-context"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/2-mutable-context",
+              icon: <GitHubIcon />            
             },
             demoComponent: <AppRouter2 />
           },
@@ -534,7 +561,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/3-login-context"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/3-login-context",
+              icon: <GitHubIcon />            
             },
             demoComponent: <AppRouter3 />
           },
@@ -554,8 +582,9 @@ const TutorialData = [
         icon: <FaYoutube style={{color: "red"}}/>
       },
       codeLink: {
-        tipText: "code",
-        href: "http://theforge.ca"           
+        tipText: "github",
+        href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui",
+        icon: <GitHubIcon />            
       },
       level: "introductory",
       descText: "Material UI is a library of React components informed by the Materialize design system.",
@@ -586,7 +615,8 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "code",
-            href: "https://codesandbox.io/s/eloquent-beaver-3j1l2"           
+            href: "https://codesandbox.io/s/eloquent-beaver-3j1l2",  
+            icon: <CodeIcon />         
           },
           level: "introductory",
           descText: "Provides overview of Material UI component library for React",
@@ -623,7 +653,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App1.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App1.js",
+              icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIIntro1 />
           },
@@ -638,7 +669,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/override-theme"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/override-theme",
+              icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIIntro2 />
           },
@@ -653,7 +685,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App3.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App3.js",
+              icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIIntro3 />
           },
@@ -668,7 +701,8 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App4.js"           
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App4.js",
+              icon: <GitHubIcon />            
             },
             demoComponent: <MaterialUIIntro4 />
           },
