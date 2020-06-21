@@ -469,6 +469,6 @@ Anthony Sistilli has done a beautiful job with his React + Material UI tutorial 
 
 ##### Progression from skeleton app to responsive product page.
 
-The final implementation makes good use of Material UI '<Grid>' and various '<Card>' components along with an '<AppBar>'.  The best thing about this tutorial is just the basic work flow one takes to break down a design into components and thinking about how those components would live within a responsive grid.
+The final implementation makes good use of Material UI Grid and various Card components along with an AppBar.  The best thing about this tutorial is just the basic work flow one takes to break down a design into components and thinking about how those components would live within a responsive grid.
 
 ![alt](docs/img/uiux-final.png)
