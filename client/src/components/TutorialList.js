@@ -34,28 +34,45 @@ const findMatchingTutorial = (key) => {
   return tutorial
 }
 
+const findMatchingPlaylist = (key) => {
+  const playlist = tutorialData.reduce((result, item) => {
+    if (!item.summary) return result
+    if (item.summary.primaryText === key) result = item
+    return result
+  }, {})
+  return playlist
+}
+
 export default function TutorialList(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState({});
 
   const handleExpandClick = (e) => {
-    const key = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
+    const playlistKey = e.currentTarget.getAttribute('data-playlistkey')
+    const tutorialKey = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
+    const key = (playlistKey) ? playlistKey : tutorialKey
     const value = open[key] || false;
     setOpen({...open, [key]: !value})
-    const tutorial = findMatchingTutorial(key)
-    if (tutorial.summary) {
-      props.setMainContent(tutorial.summary)
+
+    if (playlistKey) {
+      const playlist = findMatchingPlaylist(key)
+      props.setMainContent(playlist.summary)
+    } else {
+      const tutorial = findMatchingTutorial(key)
+      if (tutorial.summary) {
+        props.setMainContent(tutorial.summary)
+      }
     }
   };
   
   const handleSolutionClick = (e) => {
-    const demoKey = e.currentTarget.getAttribute('data-demokey') || "splash"
     const tutorialKey = e.currentTarget.getAttribute('data-tutorialkey') || "splash"
+    const demoKey = e.currentTarget.getAttribute('data-demokey') || "splash"
 
     const tutorial = findMatchingTutorial(tutorialKey)
     const solution = tutorial.snapshots.filter((solution) => { return (solution.demoKey === demoKey) })[0]
 
-    props.setMainContent(solution || {contentKey: "splash"})
+    props.setMainContent(solution || {demoKey: "splash"})
   }
 
   const getTutorialListItems = (tutorial) => {
@@ -74,6 +91,7 @@ export default function TutorialList(props) {
       </ListItem>
       )
     })
+
     const collapseList = (
       <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
         <List component="div" disablePadding>
@@ -84,6 +102,57 @@ export default function TutorialList(props) {
     const listItems = (
       <ListSubheader id={tutorial.summary.provider}>
         <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
+          <ListItemText dense primary={primaryText} />
+          {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
+        </ListItem >
+        {collapseList}
+      </ListSubheader>
+    )
+    return listItems
+  } 
+
+  const getTutorialPlaylistItems = (tutorial) => {
+    console.log("getTutorialPlaylistItems = ", tutorial)
+    const primaryText = tutorial.summary.primaryText
+
+    const collapseListItems = tutorial.playlist.map((pl) => {
+      return (
+        <ListSubheader id={pl.primaryText}>
+          <ListItem button data-tutorialkey={pl.primaryText} data-demokey={pl.summary.demoKey} onClick={handleExpandClick}>
+            <ListItemText dense primary={pl.primaryText} />
+          {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
+          </ListItem >
+          {
+            pl.snapshots.map(
+              (solution) => {
+                return (
+                  <ListItem button data-tutorialkey={pl.primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
+                    <ListItemText
+                      dense
+                      primary={solution.primaryText}
+                      secondary={solution.secondaryText}
+                      /> 
+                    {props.closeButton}
+                  </ListItem>
+                )
+              }
+            )
+          }
+        </ListSubheader>
+      )
+    })
+
+    const collapseList = (
+      <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+            {collapseListItems}
+        </List>
+      </Collapse>
+    )
+    // const collapseList = tutorial.playlist.map((chapter) => getTutorialListItems(chapter))
+    const listItems = (
+      <ListSubheader id={tutorial.summary.provider}>
+        <ListItem button data-playlistkey={primaryText} onClick={handleExpandClick}>
           <ListItemText dense primary={primaryText} />
           {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
         </ListItem >
@@ -106,7 +175,12 @@ export default function TutorialList(props) {
 
       { 
         tutorialData.map((tutorial) => {
-          const listItems = tutorial.playlist.map((chapter) => getTutorialListItems(chapter))
+          let listItems = null
+          if (tutorial.summary) {
+            listItems = getTutorialPlaylistItems(tutorial)
+          } else {
+            listItems = tutorial.playlist.map((chapter) => getTutorialListItems(chapter))
+          }
           return <React.Fragment>{listItems}</React.Fragment>
         })
       }

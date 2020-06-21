@@ -534,6 +534,123 @@ const TutorialData = [
       },
     ]
   },
+  {
+    summary: {
+      primaryText: "Tutorial 1 & 2 Playlist",
+      provider: "Some Provider",
+      courseTitle: "Tutorial 1 & 2 Playlist",
+      demoKey: "summary",
+      refLink: {
+        tipText: "youtube",
+        href: "https://youtu.be/lhMKvyLRWo0",
+        icon: <FaYoutube style={{color: "red"}}/>
+      },
+      codeLink: {
+        tipText: "github",
+        href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext"           
+      },
+      level: "introductory",
+      descText: "Description of tutorial playlist",
+      author: "Some Dude",
+      features: [
+        {
+          bulletPoint: "bullet point",
+          bulletText: "Description of awesome tutorial sequence.",
+        },
+
+      ],
+    },
+    playlist: [
+      {
+        primaryText: "Some tutorial 1",
+        summary: {
+          provider: "Some Provider",
+          courseTitle: "Short Title of Tutorial",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/lhMKvyLRWo0",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext"           
+          },
+          level: "introductory",
+          descText: "Description of tutorial.",
+          author: "Some Dude",
+          features: [
+            {
+              bulletPoint: "bullet point",
+              bulletText: "Description of awesome tutorial feature.",
+            },
+
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "demo-key-1",
+            primaryText: "Demo desc",
+            secondaryText: "Longer desc",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/0-router-base"           
+            },
+            demoComponent: <AppRouter0 />
+          },
+        ]
+      },
+      {
+        primaryText: "Some tutorial 2",
+        summary: {
+          provider: "Some Provider",
+          courseTitle: "Short Title of Tutorial 2",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/lhMKvyLRWo0",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext"           
+          },
+          level: "introductory",
+          descText: "Description of tutorial 2.",
+          author: "Some Dude",
+          features: [
+            {
+              bulletPoint: "bullet point",
+              bulletText: "Description of awesome tutorial 2 feature.",
+            },
+
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "demo-key-2",
+            primaryText: "Demo desc 2",
+            secondaryText: "Longer desc 2",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0?t=63",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/1-read-msg"           
+            },
+            demoComponent: <AppRouter1 />
+          },
+        ]
+      },      
+    ]
+  },  
 ]
 
 export default TutorialData
