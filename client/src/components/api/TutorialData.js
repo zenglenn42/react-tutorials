@@ -470,6 +470,10 @@ const TutorialData = [
             {
               bulletPoint: "React Router",
               bulletText: "Features skeleton app that uses <Router> and <Route> to achieve effect of multi-page app within single page architecutre.",
+            },
+            {
+              bulletPoint: "async / await",
+              bulletText: "Mock up a backend api call to fetch a fake user during development.",
             }
           ],
         },
