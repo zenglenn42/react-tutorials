@@ -117,7 +117,7 @@ export default function TutorialList(props) {
 
     const collapseListItems = tutorial.playlist.map((pl) => {
       return (
-        <ListSubheader id={pl.primaryText}>
+        <ListSubheader disableSticky={true} id={pl.primaryText}>
           <ListItem button data-tutorialkey={pl.primaryText} data-demokey={pl.summary.demoKey} onClick={handleExpandClick}>
             <ListItemText dense primary={pl.primaryText} />
           {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
@@ -151,7 +151,7 @@ export default function TutorialList(props) {
     )
     // const collapseList = tutorial.playlist.map((chapter) => getTutorialListItems(chapter))
     const listItems = (
-      <ListSubheader id={tutorial.summary.provider}>
+      <ListSubheader disableSticky={true} id={tutorial.summary.provider}>
         <ListItem button data-playlistkey={primaryText} onClick={handleExpandClick}>
           <ListItemText dense primary={primaryText} />
           {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}

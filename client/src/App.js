@@ -25,7 +25,7 @@ import Tooltip from '@material-ui/core/Tooltip';
 import DemobarColor from '@material-ui/core/colors/indigo';
 import TutorialSummary from './components/TutorialSummary'
 
-const drawerWidth = 250;
+const drawerWidth = 255;
 
 const useStyles = makeStyles((theme) => ({
   root: {
