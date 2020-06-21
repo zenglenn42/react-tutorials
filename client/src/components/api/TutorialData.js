@@ -28,7 +28,13 @@ import { App as MaterialUIIntro1 } from '../sistilli-material-ui/1-intro/App1'
 import { App as MaterialUIIntro2 } from '../sistilli-material-ui/1-intro/override-theme/App2'
 import { App as MaterialUIIntro3 } from '../sistilli-material-ui/1-intro/App3'
 import { App as MaterialUIIntro4 } from '../sistilli-material-ui/1-intro/App4'
-
+import { App as MaterialUIUXCode1 } from '../sistilli-material-ui/2-uiux/1-starter/App'
+import { App as MaterialUIUXCode2 } from '../sistilli-material-ui/2-uiux/2-app-layout/App'
+import { App as MaterialUIUXCode3 } from '../sistilli-material-ui/2-uiux/3-content-layout/App'
+import { App as MaterialUIUXCode4 } from '../sistilli-material-ui/2-uiux/4-header-appbar/App'
+import { App as MaterialUIUXCode5 } from '../sistilli-material-ui/2-uiux/5-header-content/App'
+import { App as MaterialUIUXCode6 } from '../sistilli-material-ui/2-uiux/6-simple-card/App'
+import { App as MaterialUIUXCode7 } from '../sistilli-material-ui/2-uiux/7-content-grid/App'
 const TutorialData = [
   {
     playlist: [
@@ -606,7 +612,7 @@ const TutorialData = [
         primaryText: "#1 Introduction",
         summary: {
           provider: "Forge Coding",
-          courseTitle: "React + Material UI #1: Introduction",
+          courseTitle: "Material UI #1: Introduction",
           demoKey: "summary",
           refLink: {
             tipText: "youtube",
@@ -708,6 +714,160 @@ const TutorialData = [
           },
         ]
       },
+      {
+        primaryText: "#2 Code a Design",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #2: Code a UX Design",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/tKzSnjWPtEw",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/AtotheY/material-ui-ux-video",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "Progresses from a Figma design of a product catalog page to a basic frontend implementation.",
+          date: "2020-03-14",
+          author: "Anthony Sistilli",
+          features: [
+            {
+              bulletPoint: "Breakdown a design",
+              bulletText: "Deconstruct a design into a collection of Material UI components.",
+            },
+            {
+              bulletPoint: "Analyze spacial layout",
+              bulletText: "Leverage <Grid> component at multiple levels of layout.",
+            },
+            {
+              bulletPoint: "Map design features to components.",
+              bulletText: "Use or augment primitives like <AppBar>, <Card>, and <IconButton>.",
+            },
+            {
+              bulletPoint: "Develop workflow",
+              bulletText: "Progress through implementation in structured way.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-ux-1",
+            primaryText: "Starter code",
+            secondaryText: "Skeleton app",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/1-starter",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIUXCode1 />
+          },
+          {
+            demoKey: "material-ui-ux-2",
+            primaryText: "App layout",
+            secondaryText: "Using <Grid>",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/2-app-layout",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIUXCode2 />
+          }, 
+          {
+            demoKey: "material-ui-ux-3",
+            primaryText: "Content layout",
+            secondaryText: "& breakpoints",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/3-content-layout",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIUXCode3 />
+          },
+          {
+            demoKey: "material-ui-ux-4",
+            primaryText: "Add header",
+            secondaryText: "<AppBar>",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/4-header-appbar",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIUXCode4 />
+          },
+          {
+            demoKey: "material-ui-ux-5",
+            primaryText: "Header",
+            secondaryText: "Add content",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/5-header-content",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIUXCode5 />
+          },
+          {
+            demoKey: "material-ui-ux-6",
+            primaryText: "Simple card",
+            secondaryText: "as content",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/6-simple-card",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIUXCode6 />
+          },     
+          {
+            demoKey: "material-ui-ux-7",
+            primaryText: "Content grid",
+            secondaryText: "multi-card",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/tKzSnjWPtEw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/7-content-grid",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIUXCode7 />
+          },     
+        ]
+      },      
     ]
   },  
 ]
