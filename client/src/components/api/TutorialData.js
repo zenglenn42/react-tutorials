@@ -37,6 +37,7 @@ import { App as MaterialUIUXCode6 } from '../sistilli-material-ui/2-uiux/6-simpl
 import { App as MaterialUIUXCode7 } from '../sistilli-material-ui/2-uiux/7-content-grid/App'
 import { App as MaterialUIUXCode8 } from '../sistilli-material-ui/2-uiux/8-content-card/App'
 import { App as MaterialUIUXCode9 } from '../sistilli-material-ui/2-uiux/9-final-products/App'
+import { App as BaRouter1}  from '../benawad-router/js/1-start/App'
 
 const TutorialData = [
   {
@@ -579,6 +580,80 @@ const TutorialData = [
       },
     ]
   },
+  {
+    playlist: [
+      {
+        primaryText: "Ben Awad - Router",
+        summary: {
+          provider: "Ben Awad",
+          courseTitle: "React Router",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=110dW3l5GQY",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/benawad/react-router-example",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "This 10 minute typescript-based tutorial introduces React Router, a means of giving your Single Page Applications the usability of multi-page applications without the overhead of separate requests to the server.",
+          date: "2019-06-29",
+          author: "Ben Awad",
+          features: [
+            {
+              bulletPoint: "Understand <BrowserRouter>, <Route>, <Switch>",
+              bulletText: "Render one or more React components when browser location matches a path.",
+            },
+            {
+              bulletPoint: "Constrain path matching",
+              bulletText: "With <Route exact ..> and <Switch>"
+            },
+            {
+              bulletPoint: "404",
+              bulletText: "Detect unknown url locations on the frontend."
+            },
+            {
+              bulletPoint: "Change router path",
+              bulletText: "With <Link to='path'> or with history.push('path')"
+            },
+            {
+              bulletPoint: "Query string",
+              bulletText: "Extract query strings from urls with 'search' prop."
+            },
+            {
+              bulletPoint: "Parameters in paths",
+              bulletText: "How to define path parameters and extract them with 'match' prop."
+            },
+            {
+              bulletPoint: "withRouter() hoc",
+              bulletText: "Give non-route components knowledge of router props.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "ba-react-router-base",
+            primaryText: "Intro",
+            secondaryText: "Starter code",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/1-start",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter1 />
+          },
+        ]
+      },
+    ]
+  },  
   {
     summary: {
       primaryText: "Sistilli - Material UI",
