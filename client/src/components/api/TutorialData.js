@@ -46,6 +46,7 @@ import { App as BaRouter6}  from '../benawad-router/js/6-link-to/App'
 import { App as BaRouter7}  from '../benawad-router/js/7-history-push/App'
 import { App as BaRouter8}  from '../benawad-router/js/8-location-prop/App'
 import { App as BaRouter9}  from '../benawad-router/js/9-match-prop/App'
+import { App as BaRouter10}  from '../benawad-router/js/10-withRouter/App'
 
 const TutorialData = [
   {
@@ -789,6 +790,22 @@ const TutorialData = [
               icon: <GitHubIcon />            
             },
             demoComponent: <BaRouter9 />
+          },
+          {
+            demoKey: "ba-react-router-with-router",
+            primaryText: "withRouter hoc",
+            secondaryText: "share router props",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/10-withRouter",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter10 />
           },
         ]
       },
