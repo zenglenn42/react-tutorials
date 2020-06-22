@@ -653,7 +653,7 @@ const TutorialData = [
             secondaryText: "Starter code",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -669,7 +669,7 @@ const TutorialData = [
             secondaryText: "/ and /about",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0?t=25",
+              href: "https://youtu.be/110dW3l5GQY?t=25",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
