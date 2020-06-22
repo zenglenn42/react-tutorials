@@ -10,7 +10,7 @@ const About = () => {
             <Link to={`/posts/${postId}`}>
                 <Button variant="contained"> 
                     <Typography style={{textTransform: "none"}}>
-                        CHANGE TO '/posts/{postId}'
+                        Change to '/posts/{postId}'
                     </Typography>
                 </Button>
             </Link>
