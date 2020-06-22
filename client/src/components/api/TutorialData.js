@@ -47,6 +47,7 @@ import { App as BaRouter7}  from '../benawad-router/js/7-history-push/App'
 import { App as BaRouter8}  from '../benawad-router/js/8-location-prop/App'
 import { App as BaRouter9}  from '../benawad-router/js/9-match-prop/App'
 import { App as BaRouter10}  from '../benawad-router/js/10-withRouter/App'
+import { App as MaterialUImakeStyles1 } from '../sistilli-material-ui/3-makeStyles/1-starter/App'
 
 const TutorialData = [
   {
@@ -1133,6 +1134,68 @@ const TutorialData = [
             },
             demoComponent: <MaterialUIUXCode9 />
           },          
+        ]
+      },
+      {
+        primaryText: "#3 makeStyles",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #3: makeStyles",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/tKzSnjWPtEw",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles",  
+            icon: <GitHubIcon />         
+          },
+          level: "intermediate",
+          descText: "Use the makeStyles hook with props or themes to customize your React components' appearance.",
+          date: "2020-03-21",
+          author: "Anthony Sistilli",
+          features: [
+            {
+              bulletPoint: "What is JSS?",
+              bulletText: "Increasingly popular way of blending CSS with JSX to style in React",
+            },
+            {
+              bulletPoint: "Advanced use cases",
+              bulletText: "Use props and themes to control style definitions.",
+            },
+            {
+              bulletPoint: "classnames packge",
+              bulletText: "Apply multiple styling classes with 3rd party package. ",
+            },
+            {
+              bulletPoint: "Breakpoints",
+              bulletText: "Change styles according to window size.",
+            },
+            {
+              bulletPoint: "makeStyles vs withStyles",
+              bulletText: "Pass style classes as props via withStyles higher order component.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-useStyles-1",
+            primaryText: "Starter code",
+            secondaryText: "Skeleton app",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/1-starter",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUImakeStyles1 />
+          },         
         ]
       },      
     ]
