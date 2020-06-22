@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '@material-ui/core'
+import { Button, Typography } from '@material-ui/core'
 
 const Home = ({history}) => {
     return (
@@ -9,7 +9,9 @@ const Home = ({history}) => {
             <hr/>
             <Link to="/about">
                 <Button variant="contained"> 
-                    Change to '/about' Route (with Link)
+                    <Typography style={{textTransform: "none"}}>
+                        Change to '/about' route ( with Link )
+                    </Typography>   
                 </Button>
             </Link>
             <br /><br />
@@ -20,7 +22,9 @@ const Home = ({history}) => {
                     history.push('/about')
                 }}
                 >
-                Change to '/about' Route (with history.push)
+                <Typography style={{textTransform: "none"}}>
+                    Change to '/about' route ( with history.push() )
+                </Typography>  
             </Button>
         </div>
     )

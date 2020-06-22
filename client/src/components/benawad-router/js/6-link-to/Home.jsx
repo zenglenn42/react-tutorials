@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Button } from '@material-ui/core'
+import { Button, Typography } from '@material-ui/core'
 
 const Home = () => {
     return (
@@ -8,8 +8,10 @@ const Home = () => {
             <div>Home component</div>
             <hr/>
             <Link to="/about">
-                <Button variant="contained"> 
-                    Change to '/about' Route (with Link)
+                <Button variant="contained">
+                    <Typography style={{textTransform: "none"}}>
+                        Change to '/about' route (with Link)
+                    </Typography>
                 </Button>
             </Link>
         </div>
