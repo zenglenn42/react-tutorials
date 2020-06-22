@@ -669,7 +669,7 @@ const TutorialData = [
             secondaryText: "/ and /about",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/lhMKvyLRWo0?t=25",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -685,7 +685,7 @@ const TutorialData = [
             secondaryText: "<Route exact ..>",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY?t=151",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -701,7 +701,7 @@ const TutorialData = [
             secondaryText: "render first match",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY?t=210",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -717,7 +717,7 @@ const TutorialData = [
             secondaryText: "detect unknown route",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY?t=270",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -733,7 +733,7 @@ const TutorialData = [
             secondaryText: "w/ <Link>",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY?t=345",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -749,7 +749,7 @@ const TutorialData = [
             secondaryText: "history.push()",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY?t=423",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -765,7 +765,7 @@ const TutorialData = [
             secondaryText: "location prop",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY?t=527",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -781,7 +781,7 @@ const TutorialData = [
             secondaryText: "match prop",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY?t=578",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -797,7 +797,7 @@ const TutorialData = [
             secondaryText: "share router props",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
+              href: "https://youtu.be/110dW3l5GQY?t=849",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
