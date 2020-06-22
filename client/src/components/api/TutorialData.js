@@ -38,6 +38,14 @@ import { App as MaterialUIUXCode7 } from '../sistilli-material-ui/2-uiux/7-conte
 import { App as MaterialUIUXCode8 } from '../sistilli-material-ui/2-uiux/8-content-card/App'
 import { App as MaterialUIUXCode9 } from '../sistilli-material-ui/2-uiux/9-final-products/App'
 import { App as BaRouter1}  from '../benawad-router/js/1-start/App'
+import { App as BaRouter2}  from '../benawad-router/js/2-basic-routes/App'
+import { App as BaRouter3}  from '../benawad-router/js/3-exact-routes/App'
+import { App as BaRouter4}  from '../benawad-router/js/4-switch/App'
+import { App as BaRouter5}  from '../benawad-router/js/5-404-route/App'
+import { App as BaRouter6}  from '../benawad-router/js/6-link-to/App'
+import { App as BaRouter7}  from '../benawad-router/js/7-history-push/App'
+import { App as BaRouter8}  from '../benawad-router/js/8-location-prop/App'
+import { App as BaRouter9}  from '../benawad-router/js/9-match-prop/App'
 
 const TutorialData = [
   {
@@ -600,9 +608,13 @@ const TutorialData = [
           },
           level: "introductory",
           descText: "This 10 minute typescript-based tutorial introduces React Router, a means of giving your Single Page Applications the usability of multi-page applications without the overhead of separate requests to the server.",
-          date: "2019-06-29",
+          date: "2019-09-29",
           author: "Ben Awad",
           features: [
+            {
+              bulletPoint: "Make 'back' button work!",
+              bulletText: "Allow for canonical browsing within SPA.",
+            },
             {
               bulletPoint: "Understand <BrowserRouter>, <Route>, <Switch>",
               bulletText: "Render one or more React components when browser location matches a path.",
@@ -649,6 +661,134 @@ const TutorialData = [
               icon: <GitHubIcon />            
             },
             demoComponent: <BaRouter1 />
+          },
+          {
+            demoKey: "ba-react-router-basic-routes",
+            primaryText: "Basic routes",
+            secondaryText: "/ and /about",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/2-basic-routes",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter2 />
+          },
+          {
+            demoKey: "ba-react-router-exact-routes",
+            primaryText: "Exact routes",
+            secondaryText: "<Route exact ..>",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/3-exact-routes",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter3 />
+          },
+          {
+            demoKey: "ba-react-router-switch",
+            primaryText: "Switch",
+            secondaryText: "render first match",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/4-switch",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter4 />
+          },
+          {
+            demoKey: "ba-react-router-404",
+            primaryText: "404",
+            secondaryText: "detect unknown route",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/5-404-route",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter5 />
+          },
+          {
+            demoKey: "ba-react-router-link",
+            primaryText: "Change route",
+            secondaryText: "w/ <Link>",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/6-link-to",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter6 />
+          },
+          {
+            demoKey: "ba-react-router-history-push",
+            primaryText: "Change route",
+            secondaryText: "history.push()",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/7-history-push",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter7 />
+          },
+          {
+            demoKey: "ba-react-router-location-prop",
+            primaryText: "Query string",
+            secondaryText: "location prop",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/8-location-prop",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter8 />
+          },
+          {
+            demoKey: "ba-react-router-match-prop",
+            primaryText: "Url params",
+            secondaryText: "match prop",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/9-match-prop",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaRouter9 />
           },
         ]
       },
