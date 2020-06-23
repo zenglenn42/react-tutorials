@@ -829,7 +829,7 @@ const TutorialData = [
         icon: <GitHubIcon />            
       },
       level: "introductory",
-      descText: "Material UI is a library of React components informed by the Materialize design system.",
+      descText: "Material UI is a library of React components informed by the Materialize design system.  This is a significant tutorial sequence of more than 20 videos.  Anthony has a very accessible presentation style and his content is well organized.  He also sprinkles in some advanced use-cases to add sophistication and elegance to your frontend implementations.",
       date: "2020-03-08",
       author: "Anthony Sistilli",
       features: [
@@ -839,7 +839,19 @@ const TutorialData = [
         },
         {
           bulletPoint: "Styles",
-          bulletText: "Styles associate visual attributes with class names.",
+          bulletText: "Learn multiple ways to style and override component apperance.",
+        },
+        {
+          bulletPoint: "Grids",
+          bulletText: "Breakdowns some of the more tricky aspects of responsive grid layouts.",
+        },
+        {
+          bulletPoint: "Components",
+          bulletText: "Get a solid introduction to essential components and visual primitives.",
+        },
+        {
+          bulletPoint: "Workflow",
+          bulletText: "Go from design to code in a systematic manner.",
         },
       ],
     },
