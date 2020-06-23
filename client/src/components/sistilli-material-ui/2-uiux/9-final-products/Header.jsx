@@ -3,6 +3,9 @@ import { AppBar, Toolbar, Typography,  makeStyles } from '@material-ui/core'
 import AcUnitRoundedIcon from '@material-ui/icons/AcUnitRounded'
 
 const useStyles = makeStyles(() => ({
+    root: {
+        marginBottom: "2em"
+    },
     typographyStyles: {
         flex: "1"
     }
@@ -11,7 +14,7 @@ const useStyles = makeStyles(() => ({
 const Header = () => {
     const classes = useStyles()
     return (
-        <AppBar position="static">
+        <AppBar className={classes.root} position="static">
             <Toolbar className={classes.toolbarStyle}>
                 <Typography className={classes.typographyStyles}>
                     Anthony Sistelli
