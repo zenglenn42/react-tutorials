@@ -53,7 +53,7 @@ const TutorialData = [
   {
     playlist: [
       {
-        primaryText: "Bob Ziroll - Intro to React",
+        primaryText: "Introduction to React",
         summary: {
           provider: "vschool.io",
           courseTitle: "Learn React JS - Full Course for Beginners",
@@ -247,7 +247,7 @@ const TutorialData = [
   {
     playlist: [
       {
-        primaryText: "Kapehe, Traversy - Hooks",
+        primaryText: "Introduction to Hooks",
         summary: {
           provider: "Traversy Media",
           courseTitle: "Introducing React Hooks",
@@ -365,7 +365,7 @@ const TutorialData = [
   {
     playlist: [
       {
-        primaryText: "Wes Bos - Context API",
+        primaryText: "Context API",
         summary: {
           provider: "Wes Bos",
           courseTitle: "React Context API",
@@ -471,7 +471,7 @@ const TutorialData = [
   {
     playlist: [
       {
-        primaryText: "Ben Awad - useContext",
+        primaryText: "useContext Hook",
         summary: {
           provider: "Ben Awad",
           courseTitle: "useContext (Storing a User)",
@@ -593,7 +593,7 @@ const TutorialData = [
   {
     playlist: [
       {
-        primaryText: "Ben Awad - Router",
+        primaryText: "React Router",
         summary: {
           provider: "Ben Awad",
           courseTitle: "React Router",
@@ -814,7 +814,7 @@ const TutorialData = [
   },  
   {
     summary: {
-      primaryText: "Sistilli - Material UI",
+      primaryText: "React + Material UI",
       provider: "Forge Coding",
       courseTitle: "React and Material UI",
       demoKey: "summary",
