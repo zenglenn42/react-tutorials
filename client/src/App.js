@@ -103,6 +103,9 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: "0.5em", 
     paddingRight: "0px",
     marginBottom: "1em"
+  },
+  scrollableList: {
+    overflowY: "scroll"
   }
 }));
 
@@ -277,7 +280,9 @@ export default function PersistentDrawerLeft(props) {
           </IconButton> */}
         </div>
         <Divider />
-        <TutorialList setMainContent={setMainContent} closeButton={drawerCloseButton} />
+        <div className={classes.scrollableList}>
+          <TutorialList setMainContent={setMainContent} closeButton={drawerCloseButton} />
+        </div>
       </Drawer>
 
       <main 
