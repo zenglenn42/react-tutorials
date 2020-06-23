@@ -107,6 +107,9 @@ const useStyles = makeStyles((theme) => ({
   },
   scrollableList: {
     overflowY: "scroll"
+  },
+  scrollableListX: {
+    overflowX: "scroll"
   }
 }));
 
@@ -116,27 +119,27 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
     switch (mainContent.demoKey) {
       case "splash":
         content = (
-          <React.Fragment>
-            <Typography variant="h4" gutterBottom> 
-            <ReactIcon/> Learning React
-            </Typography>
-            <Typography paragraph>
-              React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
-            </Typography>
-            <Typography paragraph>
-              Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions and selected snapshopts to share with you.
-            </Typography>
-            <Button
-              aria-label="open drawer"
-              onClick={handleDrawerOpen}
-              edge="start"
-              variant="contained"
-              color="default"
-              disableElevation
-            >
-              <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
-            </Button>
-          </React.Fragment>
+            <div className={classes.scrollableListX}>
+              <Typography variant="h4" gutterBottom> 
+              <ReactIcon/> Learning React
+              </Typography>
+              <Typography paragraph>
+                React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
+              </Typography>
+              <Typography paragraph>
+                Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions and selected snapshopts to share with you.
+              </Typography>
+              <Button
+                aria-label="open drawer"
+                onClick={handleDrawerOpen}
+                edge="start"
+                variant="contained"
+                color="default"
+                disableElevation
+                >
+                <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
+              </Button>
+            </div>
         )
         break;
 
