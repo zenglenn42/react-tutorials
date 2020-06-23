@@ -42,7 +42,6 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/k_AN49fA9g0/0.jpg)](http://www.youtube.com/watch?v=k_AN49fA9g0 "React + Material UI #3: makeStyles")
 
-k_AN49fA9g0
 
 # Developer's Blog
 
