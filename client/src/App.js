@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    backgroundColor: "#9baaf5",
+    backgroundColor: "#b0b0b0",
     backgroundImage: 'url("/assets/img/clean-textile.png")'
   },
   appBar: {
