@@ -27,11 +27,15 @@ import TutorialSummary from './components/TutorialSummary'
 
 const drawerWidth = 255;
 
+// backgroundImage: 'url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png")'
+
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     flexDirection: 'column',
-    minHeight: '100vh'
+    minHeight: '100vh',
+    backgroundColor: "#9baaf5",
+    backgroundImage: 'url("/assets/img/clean-textile.png")'
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
