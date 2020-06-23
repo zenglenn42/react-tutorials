@@ -100,7 +100,7 @@ export default function TutorialList(props) {
       </Collapse>
     )
     const listItems = (
-      <ListSubheader id={tutorial.summary.provider}>
+      <ListSubheader disableSticky={true} id={tutorial.summary.provider}>
         <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
           <ListItemText dense primary={primaryText} />
           {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
@@ -169,7 +169,7 @@ export default function TutorialList(props) {
       subheader={<ListSubheader />}
       className={classes.root}
     >
-      <ListSubheader component="div" id="nested-list-subheader">
+      <ListSubheader  component="div" id="nested-list-subheader">
         Select a tutorial ...
       </ListSubheader>
 
