@@ -91,6 +91,7 @@ export default function TutorialList(props) {
       </ListItem>
       )
     })
+    // console.log("getTutorialListItems: collapseLI", collapseListItems)
 
     const collapseList = (
       <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
@@ -122,25 +123,33 @@ export default function TutorialList(props) {
             <ListItemText dense primary={pl.primaryText} />
           {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
           </ListItem >
-          {
-            pl.snapshots.map(
-              (solution) => {
-                return (
-                  <ListItem button data-tutorialkey={pl.primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
-                    <ListItemText
-                      dense
-                      primary={solution.primaryText}
-                      secondary={solution.secondaryText}
-                      /> 
-                    {props.closeButton}
-                  </ListItem>
+          <Collapse in={open[pl.primaryText]} timeout="auto" unmountOnExit>
+            <List component="div" disablePadding>
+              <ListSubheader disableSticky={true} id={pl.primaryText}>
+              {
+                pl.snapshots.map(
+                  (solution) => {
+                    return (
+                      <ListItem button data-tutorialkey={pl.primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
+                        <ListItemText
+                          dense
+                          primary={solution.primaryText}
+                          secondary={solution.secondaryText}
+                          /> 
+                        {props.closeButton}
+                      </ListItem>
+                    )
+                  }
                 )
               }
-            )
-          }
+              </ListSubheader>
+            </List>
+          </Collapse>
         </ListSubheader>
       )
     })
+
+    // console.log("getPlaylistItems: collapseLI", collapseListItems)
 
     const collapseList = (
       <Collapse in={open[primaryText]} timeout="auto" unmountOnExit>
