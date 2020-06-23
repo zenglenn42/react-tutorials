@@ -20,13 +20,16 @@ const useStyles = makeStyles((theme) => ({
     grow: {
       flex: '1 1 auto',
     },
+    scrollableListX: {
+        overflowX: "scroll"
+    }
   }));
 
 function TutorialSummary(props) {
     const classes = useStyles();
 
     const summary = (
-        <React.Fragment>
+        <div className={classes.scrollableListX}>
             <Toolbar className={classes.Demobar} variant="dense" >
                 <Typography variant="h6" noWrap={true}>
                 <ReactIcon/> {props.courseTitle}
@@ -79,7 +82,7 @@ function TutorialSummary(props) {
                     })}
                 </List>
             </Typography>
-        </React.Fragment>
+        </div>
     )
     return summary
 }

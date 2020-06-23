@@ -151,7 +151,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
 
       default:
         content = (
-          <React.Fragment>
+          <div className={classes.scrollableListX}>
             <Toolbar className={classes.Demobar} variant="dense" >
             <Typography variant="h6" noWrap={true}>
               {mainContent.primaryText}
@@ -181,7 +181,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
             </Tooltip>
             </Toolbar>
             {mainContent.demoComponent}
-          </React.Fragment>
+          </div>
         )
     }
    
