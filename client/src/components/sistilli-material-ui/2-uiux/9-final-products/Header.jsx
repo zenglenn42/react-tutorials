@@ -4,7 +4,8 @@ import AcUnitRoundedIcon from '@material-ui/icons/AcUnitRounded'
 
 const useStyles = makeStyles(() => ({
     root: {
-        marginBottom: "2em"
+        marginBottom: "2em",
+        zIndex: 0
     },
     typographyStyles: {
         flex: "1"
