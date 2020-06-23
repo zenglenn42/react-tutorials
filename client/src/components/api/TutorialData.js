@@ -48,6 +48,13 @@ import { App as BaRouter8}  from '../benawad-router/js/8-location-prop/App'
 import { App as BaRouter9}  from '../benawad-router/js/9-match-prop/App'
 import { App as BaRouter10}  from '../benawad-router/js/10-withRouter/App'
 import { App as MaterialUImakeStyles1 } from '../sistilli-material-ui/3-makeStyles/1-starter/App'
+import { App as MaterialUImakeStyles2 } from '../sistilli-material-ui/3-makeStyles/2-makeStyles/App'
+import { App as MaterialUImakeStyles3 } from '../sistilli-material-ui/3-makeStyles/3-textStyle/App'
+import { App as MaterialUImakeStyles4 } from '../sistilli-material-ui/3-makeStyles/4-props/App'
+import { App as MaterialUImakeStyles5 } from '../sistilli-material-ui/3-makeStyles/5-props-multi/App'
+import { App as MaterialUImakeStyles6 } from '../sistilli-material-ui/3-makeStyles/6-theme/App'
+import { App as MaterialUImakeStyles7 } from '../sistilli-material-ui/3-makeStyles/7-props-and-theme/App'
+import { App as MaterialUImakeStyles8 } from '../sistilli-material-ui/3-makeStyles/8-multi-class/App'
 
 const TutorialData = [
   {
@@ -1160,9 +1167,9 @@ const TutorialData = [
             icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
-            tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles",  
-            icon: <GitHubIcon />         
+            tipText: "code",
+            href: "https://codesandbox.io/s/practical-goldberg-fzpht",  
+            icon: <CodeIcon />         
           },
           level: "intermediate",
           descText: "Use the makeStyles hook with props or themes to customize your React components' appearance.",
@@ -1207,7 +1214,119 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUImakeStyles1 />
-          },         
+          },
+          {
+            demoKey: "material-ui-makeStyles-2",
+            primaryText: "makeStyles",
+            secondaryText: "Override button style",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/2-makeStyles",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUImakeStyles2 />
+          },
+          {
+            demoKey: "material-ui-makeStyles-3",
+            primaryText: "makeStyles",
+            secondaryText: "Override text style",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/3-textStyle",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUImakeStyles3 />
+          },
+          {
+            demoKey: "material-ui-makeStyles-4",
+            primaryText: "useStyles(props)",
+            secondaryText: "Conditional overrides",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/4-props",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUImakeStyles4 />
+          },   
+          {
+            demoKey: "material-ui-makeStyles-5",
+            primaryText: "useStyles(props) multi",
+            secondaryText: "Conditional overrides",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/5-props-multi",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUImakeStyles5 />
+          }, 
+          {
+            demoKey: "material-ui-makeStyles-6",
+            primaryText: "makeStyles(theme => (..))",
+            secondaryText: "Breakpoint override",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/6-theme",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUImakeStyles6 />
+          },
+          {
+            demoKey: "material-ui-makeStyles-7",
+            primaryText: "Advanced",
+            secondaryText: "props & theme",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/7-props-and-theme",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUImakeStyles7 />
+          },
+          {
+            demoKey: "material-ui-makeStyles-8",
+            primaryText: "Multiclass style",
+            secondaryText: "clsx pkg",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/8-multi-class",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUImakeStyles8 />
+          },                   
         ]
       },      
     ]
