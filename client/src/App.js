@@ -42,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
+    boxShadow: "none"
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -131,6 +132,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
               edge="start"
               variant="contained"
               color="default"
+              disableElevation
             >
               <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
             </Button>
@@ -181,7 +183,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
     }
    
     return (
-      <Paper className={classes.mainPaper} elevation={1} >
+      <Paper className={classes.mainPaper} elevation={0} >
         {content}
       </Paper>
     )     
