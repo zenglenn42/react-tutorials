@@ -14,6 +14,15 @@ The demos are live and reflect specific curriculum goals:
 
 ![alt](docs/img/ui-mobile-examples.png)
 
+Snapshots of code and video are captured for each key segment of a tutorial:
+
+![alt](docs/img/uiux-progression-2.png)
+
+with ability to quickly see where you're headed:
+
+![alt](docs/img/uiux-final-2.png)
+
+
 Hosted solutions are available for the following tutorials:
 
 #### vschool.io with Bob Ziroll
