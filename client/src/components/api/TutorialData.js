@@ -835,15 +835,15 @@ const TutorialData = [
       features: [
         {
           bulletPoint: "Themes",
-          bulletText: "Themes embody a collection of styling attributes that may be overridden.",
+          bulletText: "Themes can embody an extensive, cohesive, and overridable collection of styling attributes that define the overall look of your applications.",
         },
         {
           bulletPoint: "Styles",
-          bulletText: "Learn multiple ways to style and override component apperance.",
+          bulletText: "Learn multiple ways to style and override component apperance at a more granular level.",
         },
         {
           bulletPoint: "Grids",
-          bulletText: "Breakdowns some of the more tricky aspects of responsive grid layouts.",
+          bulletText: "Breakdown some of the more tricky aspects of responsive grid layouts.",
         },
         {
           bulletPoint: "Components",
