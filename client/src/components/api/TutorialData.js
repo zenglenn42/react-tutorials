@@ -1221,7 +1221,7 @@ const TutorialData = [
             secondaryText: "Override button style",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              href: "https://youtu.be/k_AN49fA9g0?t=62",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1237,7 +1237,7 @@ const TutorialData = [
             secondaryText: "Override text style",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              href: "https://youtu.be/k_AN49fA9g0?t=313",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1253,7 +1253,7 @@ const TutorialData = [
             secondaryText: "Conditional overrides",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              href: "https://youtu.be/k_AN49fA9g0?t=378",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1269,7 +1269,7 @@ const TutorialData = [
             secondaryText: "Conditional overrides",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              href: "https://youtu.be/k_AN49fA9g0?t=453",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1285,7 +1285,7 @@ const TutorialData = [
             secondaryText: "Breakpoint override",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              href: "https://youtu.be/k_AN49fA9g0?t=524",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1301,7 +1301,7 @@ const TutorialData = [
             secondaryText: "props & theme",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              href: "https://youtu.be/k_AN49fA9g0?t=669",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1317,7 +1317,7 @@ const TutorialData = [
             secondaryText: "clsx pkg",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/k_AN49fA9g0?t=0",
+              href: "https://youtu.be/k_AN49fA9g0?t=736",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
