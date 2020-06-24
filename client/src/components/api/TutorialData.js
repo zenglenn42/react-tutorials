@@ -1357,6 +1357,10 @@ const TutorialData = [
               bulletPoint: "Button variants",
               bulletText: "Map Material UI props to well known CSS attributes.",
             },
+            {
+              bulletPoint: "Override MUI css classes",
+              buttetText: "Using the classes prop for granular overrides."
+            }
           ],
         },
         snapshots: [
@@ -1382,7 +1386,7 @@ const TutorialData = [
             secondaryText: "survey",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/ewq0UgnQo9E?t=0",
+              href: "https://youtu.be/ewq0UgnQo9E?t=33",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1398,7 +1402,7 @@ const TutorialData = [
             secondaryText: "<IconButton>",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/ewq0UgnQo9E?t=0",
+              href: "https://youtu.be/ewq0UgnQo9E?t=153",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
