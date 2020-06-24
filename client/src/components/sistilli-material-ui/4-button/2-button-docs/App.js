@@ -1,15 +1,32 @@
 import React from 'react'
 import { makeStyles, Button, Typography, IconButton } from '@material-ui/core'
-import { CloudUpload, Delete, Send } from '@material-ui/icons'
+import { CloudUpload, Delete, Send, Work } from '@material-ui/icons'
+import teal from '@material-ui/core/colors/teal'
 
-const useStyles = makeStyles((theme) => ({
-    buttonSpacing: {
-        marginRight: theme.spacing(2)
-    },
-    input: {
-        display: "none"
-    }
-}))
+const useStyles = makeStyles((theme) => {
+    const mainTeal = teal[700]
+    const darkTeal = teal[900]
+    return ({
+        buttonSpacing: {
+            marginRight: theme.spacing(2)
+        },
+        input: {
+            display: "none"
+        },
+        // Is there an easier way to override button color?
+        // This works but doesn't seem very elegant. Tried creating a theme
+        // but I affected /every/ button's primary color not just portfolio's.
+        tealButton: {
+            backgroundColor: mainTeal,
+            '&:hover': {
+                backgroundColor: darkTeal,
+                '@media (hover: none)': {
+                    backgroundColor: mainTeal
+                }
+            }
+        }
+    })}
+)
 
 export const App = () => {
     const classes = useStyles()
@@ -92,7 +109,7 @@ export const App = () => {
                 <Button size="medium" variant="contained" className={classes.buttonSpacing}>medium</Button>
                 <Button size="large"  variant="contained" className={classes.buttonSpacing}>large</Button>
                 <hr />
-                <p>embed icons with startIcon or endIcon props</p>
+                <p>startIcon, endIcon props</p>
                 <Button variant="contained" color="secondary" className={classes.buttonSpacing} startIcon={<Delete />} >
                     Delete
                 </Button>
@@ -103,10 +120,29 @@ export const App = () => {
                     Upload
                 </Button>
                 <hr />
-                <p>ripple effect on click</p>
-                <Button variant="contained" className={classes.buttonSpacing}>With Ripple</Button>
+                <p>disableRipple prop</p>
+                <Button variant="contained" className={classes.buttonSpacing}>With Ripple (click me)</Button>
                 <Button variant="contained" className={classes.buttonSpacing} disableRipple>
                     <span style={{textTransform: "none"}}>disableRipple</span>
+                </Button>
+                <hr />
+                <p>fullWidth prop</p>
+                <Button fullWidth variant="contained" className={classes.buttonSpacing}>
+                    Full Width Button
+                </Button>
+                <hr />
+                <p>href prop</p>
+                <Button 
+                    classes={{
+                        containedPrimary: classes.tealButton
+                    }}
+                    startIcon={<Work/>} 
+                    className={classes.buttonSpacing} 
+                    color="primary" 
+                    variant="contained" 
+                    href="https://zenglenn42.github.io/portfolio"
+                >
+                    Glenn's Portfolio
                 </Button>
             </div>
         </>
