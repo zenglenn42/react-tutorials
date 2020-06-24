@@ -1344,9 +1344,9 @@ const TutorialData = [
             icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
-            tipText: "code",
-            href: "https://codesandbox.io/s/practical-goldberg-fzpht",  
-            icon: <CodeIcon />         
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button",  
+            icon: <GitHubIcon />         
           },
           level: "intermediate",
           descText: "<Button> is a ubiquitous component but it does have some subltlety.  Learn about it here.",
