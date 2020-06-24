@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => {
         },
         // Is there an easier way to override button color?
         // This works but doesn't seem very elegant. Tried creating a theme
-        // but I affected /every/ button's primary color not just portfolio's.
+        // but it affected /every/ button's primary color not just portfolio's.
         tealButton: {
             backgroundColor: mainTeal,
             '&:hover': {
