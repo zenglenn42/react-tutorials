@@ -1,11 +1,13 @@
 import React from 'react'
 import { makeStyles, Button, Typography, IconButton } from '@material-ui/core'
-import classNames from 'clsx'
-import { CloudUpload } from '@material-ui/icons'
+import { CloudUpload, Delete, Send } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
     buttonSpacing: {
         marginRight: theme.spacing(2)
+    },
+    input: {
+        display: "none"
     }
 }))
 
@@ -61,31 +63,51 @@ export const App = () => {
                 <div>
                     <input
                         accept="image/"
-                        className={classNames("MuiButtonBase-root", "MuiButton-root", "MuiButton-outlined", classes.buttonSpacing)}
+                        className={classes.input}
                         id="contained-button-file"
                         multiple
                         type="file"    
                     />
                     <label htmlFor="contained-button-file">
-                        <Button variant="contained" color="primary" component="span">
+                        <Button className={classes.buttonSpacing} variant="contained" color="primary" component="span">
                             Upload
                         </Button>
                     </label>
-                </div>
-                <div>
                     <input
                         accept="image/"
-                        className={classNames("MuiButtonBase-root", "MuiButton-root", "MuiButton-outlined", classes.buttonSpacing)}
+                        className={classes.input}
                         id="icon-button-file"
                         multiple
                         type="file"    
                     />
                     <label htmlFor="icon-button-file">
-                        <IconButton color="primary" aria-label="upload picture" component="span">
+                        <IconButton className={classes.buttonSpacing} color="primary" aria-label="upload picture" component="span">
                             <CloudUpload/>
                         </IconButton>
                     </label>
                 </div>
+                <hr />
+                <p>size = "small" | "medium" | "large" </p>
+                <Button size="small"  variant="contained" className={classes.buttonSpacing}>small</Button>
+                <Button size="medium" variant="contained" className={classes.buttonSpacing}>medium</Button>
+                <Button size="large"  variant="contained" className={classes.buttonSpacing}>large</Button>
+                <hr />
+                <p>embed icons with startIcon or endIcon props</p>
+                <Button variant="contained" color="secondary" className={classes.buttonSpacing} startIcon={<Delete />} >
+                    Delete
+                </Button>
+                <Button variant="contained" color="primary" className={classes.buttonSpacing} endIcon={<Send />} >
+                    Send
+                </Button>
+                <Button variant="contained" color="default" className={classes.buttonSpacing} startIcon={<CloudUpload />} >
+                    Upload
+                </Button>
+                <hr />
+                <p>ripple effect on click</p>
+                <Button variant="contained" className={classes.buttonSpacing}>With Ripple</Button>
+                <Button variant="contained" className={classes.buttonSpacing} disableRipple>
+                    <span style={{textTransform: "none"}}>disableRipple</span>
+                </Button>
             </div>
         </>
     )

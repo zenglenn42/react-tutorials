@@ -57,6 +57,8 @@ import { App as MaterialUImakeStyles7 } from '../sistilli-material-ui/3-makeStyl
 import { App as MaterialUImakeStyles8 } from '../sistilli-material-ui/3-makeStyles/8-multi-class/App'
 import { App as MaterialUIButton1 } from '../sistilli-material-ui/4-button/1-start/App'
 import { App as MaterialUIButton2 } from '../sistilli-material-ui/4-button/2-button-docs/App'
+import { App as MaterialUIButton3 } from '../sistilli-material-ui/4-button/3-icon-buttons/App'
+
 const TutorialData = [
   {
     playlist: [
@@ -1389,7 +1391,23 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIButton2 />
-          },               
+          },
+          {
+            demoKey: "material-ui-button-3",
+            primaryText: "Icon",
+            secondaryText: "<IconButton>",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/ewq0UgnQo9E?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button/3-icon-buttons",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIButton3 />
+          },                  
         ]
       },    
     ]
