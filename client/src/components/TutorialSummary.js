@@ -59,7 +59,7 @@ function TutorialSummary(props) {
                 </Tooltip>
             </Toolbar>
 
-            <Typography variant="h7" gutterBottom> 
+            <Typography gutterBottom> 
                 Author: {props.author}<br/>
                 Provider: {props.provider}<br/>
                 Date: {props.date}<br/>

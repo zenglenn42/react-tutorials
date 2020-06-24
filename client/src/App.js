@@ -304,7 +304,7 @@ export default function PersistentDrawerLeft(props) {
           [classes.appBarShift]: open,
         })} style={{backgroundColor: "gray"}}>
         <Toolbar variant="dense">
-          <Typography variant="h7" noWrap>
+          <Typography noWrap>
             {"Incremental Industries \u00A9 2020"||"Persistent drawer"}
           </Typography>
           <div className={classes.grow} />
