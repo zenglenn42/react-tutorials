@@ -76,15 +76,15 @@ export default function TutorialList(props) {
   }
 
   const getTutorialListItems = (tutorial) => {
-    console.log("getTutorialListItems = ", tutorial)
+    // console.log("getTutorialListItems = ", tutorial)
     const primaryText = tutorial.primaryText
     const secondaryText = tutorial.summary.author
         
     const collapseListItems = tutorial.snapshots.map((solution) => {
       return (
-      <ListItem button data-tutorialkey={primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
+      <ListItem button data-tutorialkey={primaryText} key={solution.demoKey} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
         <ListItemText
-          dense
+          dense="true"
           primary={solution.primaryText}
           secondary={solution.secondaryText}
         /> 
@@ -103,8 +103,8 @@ export default function TutorialList(props) {
     )
     const listItems = (
       <ListSubheader disableSticky={true} id={tutorial.summary.provider}>
-        <ListItem button data-tutorialkey={primaryText} onClick={handleExpandClick}>
-          <ListItemText dense primary={primaryText} secondary={secondaryText}/>
+        <ListItem button key={primaryText} data-tutorialkey={primaryText} onClick={handleExpandClick}>
+          <ListItemText dense="true" primary={primaryText} secondary={secondaryText}/>
           {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
         </ListItem >
         {collapseList}
@@ -114,7 +114,7 @@ export default function TutorialList(props) {
   } 
 
   const getTutorialPlaylistItems = (tutorial) => {
-    console.log("getTutorialPlaylistItems = ", tutorial)
+    // console.log("getTutorialPlaylistItems = ", tutorial)
     const primaryText = tutorial.summary.primaryText
     const secondaryText = tutorial.summary.author
 
@@ -122,7 +122,7 @@ export default function TutorialList(props) {
       return (
         <ListSubheader disableSticky={true} id={pl.primaryText}>
           <ListItem button data-tutorialkey={pl.primaryText} data-demokey={pl.summary.demoKey} onClick={handleExpandClick}>
-            <ListItemText dense primary={pl.primaryText} />
+            <ListItemText dense="true" primary={pl.primaryText} />
           {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
           </ListItem >
           <Collapse in={open[pl.primaryText]} timeout="auto" unmountOnExit>
@@ -134,7 +134,7 @@ export default function TutorialList(props) {
                     return (
                       <ListItem button data-tutorialkey={pl.primaryText} data-demokey={solution.demoKey} className={classes.nested} onClick={handleSolutionClick}>
                         <ListItemText
-                          dense
+                          dense="true"
                           primary={solution.primaryText}
                           secondary={solution.secondaryText}
                           /> 
@@ -164,7 +164,7 @@ export default function TutorialList(props) {
     const listItems = (
       <ListSubheader disableSticky={true} id={tutorial.summary.provider}>
         <ListItem button data-playlistkey={primaryText} onClick={handleExpandClick}>
-          <ListItemText dense primary={primaryText} secondary={secondaryText}/>
+          <ListItemText dense="true" primary={primaryText} secondary={secondaryText}/>
           {/* {open[primaryText] ? <ExpandLess /> : <ExpandMore />} */}
         </ListItem >
         {collapseList}

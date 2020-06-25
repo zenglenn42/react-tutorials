@@ -137,7 +137,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 color="default"
                 disableElevation
                 >
-                <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography variant="small">Get Started</Typography>
+                <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography>Get Started</Typography>
               </Button>
             </div>
         )

@@ -70,7 +70,7 @@ function TutorialSummary(props) {
             </Typography>
             <Typography paragraph>
                 Features:
-                <List dense component="div" disablePadding>
+                <List dense="true" component="div" disablePadding>
                     {props.features.map((feature) => {
                         return (
                             <ListItem>
