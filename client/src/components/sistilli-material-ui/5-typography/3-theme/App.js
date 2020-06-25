@@ -1,6 +1,6 @@
 import React from 'react'
 import TypographyDemo from './TypographyDemo'
-import { createMuiTheme, ThemeProvider, Typography } from '@material-ui/core'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core'
 import { purple, green } from '@material-ui/core/colors'
 
 const overrideTheme = createMuiTheme({
@@ -10,7 +10,7 @@ const overrideTheme = createMuiTheme({
     },
     typography: {
         h1: {
-            fontSize: "1em"
+            fontSize: "2em"
         }
     }
 })

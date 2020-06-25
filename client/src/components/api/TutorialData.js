@@ -60,7 +60,8 @@ import { App as MaterialUIButton2 } from '../sistilli-material-ui/4-button/2-but
 import { App as MaterialUIButton3 } from '../sistilli-material-ui/4-button/3-icon-buttons/App'
 import { App as MaterialUIText1 } from '../sistilli-material-ui/5-typography/1-props/App'
 import { App as MaterialUIText2 } from '../sistilli-material-ui/5-typography/2-override/App'
-import { App as MaterialUIText3 } from '../sistilli-material-ui/5-typography/3-themes/App'
+import { App as MaterialUIText3 } from '../sistilli-material-ui/5-typography/3-theme/App'
+import { App as MaterialUIText4 } from '../sistilli-material-ui/5-typography/4-themes/App'
 
 const TutorialData = [
   {
@@ -1468,7 +1469,7 @@ const TutorialData = [
           {
             demoKey: "material-ui-button-2",
             primaryText: "Override",
-            secondaryText: "style & class",
+            secondaryText: "style & css class",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/OvPrUQ3gPtw?t=0",
@@ -1492,11 +1493,27 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/3-themes",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/3-theme",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIText3 />
-          },             
+          },
+          {
+            demoKey: "material-ui-button-4",
+            primaryText: "Override",
+            secondaryText: "theme & css class",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/4-themes",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIText4 />
+          },               
         ]
       },     
     ]
