@@ -1547,15 +1547,11 @@ const TutorialData = [
             },
             {
               bulletPoint: "Create your own theme",
-              bulletText: "Use createMuiTheme and <ThemeProvider theme={theme}>"
+              bulletText: "Use createMuiTheme then share with components via <ThemeProvider theme={theme}> or useTheme() hook."
             },
             {
               bulletPoint: "Read theme breakpoints",
-              bulletText: "Change background color, or other attributes, on small devices."
-            },
-            {
-              bulletPoint: "useTheme()",
-              bulletText: "Deliver current theme to deep child nodes."
+              bulletText: "Change background color, or other presentation attributes, based upon browser window size."
             },
             {
               bulletPoint: "Dark theme",
