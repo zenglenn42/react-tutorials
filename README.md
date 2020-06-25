@@ -53,6 +53,8 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/ewq0UgnQo9E/0.jpg)](http://www.youtube.com/watch?v=ewq0UgnQo9E "React + Material UI #4: Button")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/OvPrUQ3gPtw/0.jpg)](http://www.youtube.com/watch?v=OvPrUQ3gPtw "React + Material UI #5: Typography")
+
 # Developer's Blog
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
