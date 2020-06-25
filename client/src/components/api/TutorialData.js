@@ -1546,16 +1546,16 @@ const TutorialData = [
               bulletText: "Learn about breakpoints, palettes, and typography.",
             },
             {
-              bulletPoint: "Creating your own theme",
+              bulletPoint: "Create your own theme",
               bulletText: "Use createMuiTheme and <ThemeProvider theme={theme}>"
             },
             {
-              bulletPoint: "Read from your theme",
-              bulletText: "To change background color on small devices."
+              bulletPoint: "Read theme breakpoints",
+              bulletText: "Change background color, or other attributes, on small devices."
             },
             {
-              bulletPoint: "Use theme in makeStyles (JSS)",
-              bulletText: "To define overrides."
+              bulletPoint: "useTheme()",
+              bulletText: "Deliver current theme to deep child nodes."
             },
             {
               bulletPoint: "Dark theme",
@@ -1567,7 +1567,7 @@ const TutorialData = [
           {
             demoKey: "material-ui-themes-1",
             primaryText: "Intro",
-            secondaryText: "essential",
+            secondaryText: "Essentials",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/OvPrUQ3gPtw?t=0",
