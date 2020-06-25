@@ -1477,7 +1477,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/3-override",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/2-override",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIText2 />
