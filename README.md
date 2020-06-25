@@ -25,11 +25,11 @@ with ability to quickly see where you're headed:
 
 Hosted solutions are available for the following tutorials:
 
-#### vschool.io with Bob Ziroll
+#### Bob Ziroll
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/DLX62G4lc44/0.jpg)](http://www.youtube.com/watch?v=DLX62G4lc44 "React in 5 hours 2019")
 
-#### brilliant.org with Kapeche and Brad Traversy
+#### Brad Traversy and Kapeche
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/mxK8b99iJTg/0.jpg)](http://www.youtube.com/watch?v=mxK8b99iJTg "Introducing React Hooks")
 
