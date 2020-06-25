@@ -1445,13 +1445,13 @@ const TutorialData = [
             },
             {
               bulletPoint: "Override default appearance",
-              bulletText: "Using styles, MUI class overrides, and theme overrides."
+              bulletText: "Using style, MUI css class, and theme overrides."
             }
           ],
         },
         snapshots: [
           {
-            demoKey: "material-ui-button-1",
+            demoKey: "material-ui-typography-1",
             primaryText: "Props",
             secondaryText: "",
             refLink: {
@@ -1467,12 +1467,12 @@ const TutorialData = [
             demoComponent: <MaterialUIText1 />
           }, 
           {
-            demoKey: "material-ui-button-2",
+            demoKey: "material-ui-typography-2",
             primaryText: "Override",
             secondaryText: "style & css class",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=389",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1483,12 +1483,12 @@ const TutorialData = [
             demoComponent: <MaterialUIText2 />
           },    
           {
-            demoKey: "material-ui-button-3",
+            demoKey: "material-ui-typography-3",
             primaryText: "Override",
             secondaryText: "theme",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=471",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1499,12 +1499,12 @@ const TutorialData = [
             demoComponent: <MaterialUIText3 />
           },
           {
-            demoKey: "material-ui-button-4",
+            demoKey: "material-ui-typography-4",
             primaryText: "Override",
             secondaryText: "theme & css class",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=471",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
