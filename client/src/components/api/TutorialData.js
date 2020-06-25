@@ -1586,7 +1586,7 @@ const TutorialData = [
             secondaryText: "new theme",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=380",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1602,7 +1602,7 @@ const TutorialData = [
             secondaryText: "background color",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=708",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1618,7 +1618,7 @@ const TutorialData = [
             secondaryText: "theme",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=987",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
