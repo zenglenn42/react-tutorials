@@ -58,6 +58,9 @@ import { App as MaterialUImakeStyles8 } from '../sistilli-material-ui/3-makeStyl
 import { App as MaterialUIButton1 } from '../sistilli-material-ui/4-button/1-start/App'
 import { App as MaterialUIButton2 } from '../sistilli-material-ui/4-button/2-button-docs/App'
 import { App as MaterialUIButton3 } from '../sistilli-material-ui/4-button/3-icon-buttons/App'
+import { App as MaterialUIText1 } from '../sistilli-material-ui/5-typography/1-props/App'
+import { App as MaterialUIText2 } from '../sistilli-material-ui/5-typography/2-override/App'
+import { App as MaterialUIText3 } from '../sistilli-material-ui/5-typography/3-themes/App'
 
 const TutorialData = [
   {
@@ -1413,7 +1416,89 @@ const TutorialData = [
             demoComponent: <MaterialUIButton3 />
           },                  
         ]
-      },    
+      },   
+      {
+        primaryText: "#5 Typography",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #5: Typography",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=OvPrUQ3gPtw",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "Learn about basic <Typography> properties and override mechanisms.",
+          date: "2020-03-23",
+          author: "Anthony Sistilli",
+          features: [
+            {
+              bulletPoint: "Typography variants",
+              bulletText: "Learn about common variants such as h1, body1, etc",
+            },
+            {
+              bulletPoint: "Override default appearance",
+              bulletText: "Using styles, MUI class overrides, and theme overrides."
+            }
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-button-1",
+            primaryText: "Props",
+            secondaryText: "",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/1-props",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIText1 />
+          }, 
+          {
+            demoKey: "material-ui-button-2",
+            primaryText: "Override",
+            secondaryText: "style & class",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/3-override",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIText2 />
+          },    
+          {
+            demoKey: "material-ui-button-3",
+            primaryText: "Override",
+            secondaryText: "theme",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/3-themes",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIText3 />
+          },             
+        ]
+      },     
     ]
   },  
 ]
