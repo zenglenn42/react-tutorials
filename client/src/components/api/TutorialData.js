@@ -1571,7 +1571,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-themes/1-intro/App.js",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/1-intro/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIThemes1 />
@@ -1587,7 +1587,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-themes/2-create-theme",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/2-create-theme/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIThemes2 />
@@ -1603,7 +1603,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-themes/3-breakpoint-style",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/3-breakpoint-style/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIThemes3 />
@@ -1619,7 +1619,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-themes/4-dark",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/4-dark/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIThemes4 />
