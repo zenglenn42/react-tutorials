@@ -5,11 +5,11 @@ import * as serviceWorker from './serviceWorker';
 import PersistentDrawerLeft from './App';
 
 ReactDOM.render(
-    <PersistentDrawerLeft 
-      text="React Tutorials"
-      main="splash"
-    />,
-  document.getElementById('root')
+  <PersistentDrawerLeft 
+    text="React Tutorials"
+    main="splash"
+  />,
+document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change

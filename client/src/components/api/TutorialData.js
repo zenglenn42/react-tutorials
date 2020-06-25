@@ -62,6 +62,10 @@ import { App as MaterialUIText1 } from '../sistilli-material-ui/5-typography/1-p
 import { App as MaterialUIText2 } from '../sistilli-material-ui/5-typography/2-override/App'
 import { App as MaterialUIText3 } from '../sistilli-material-ui/5-typography/3-theme/App'
 import { App as MaterialUIText4 } from '../sistilli-material-ui/5-typography/4-themes/App'
+import { App as MaterialUIThemes1 } from '../sistilli-material-ui/6-themes/1-intro/App'
+import { App as MaterialUIThemes2 } from '../sistilli-material-ui/6-themes/2-create-theme/App'
+import { App as MaterialUIThemes3 } from '../sistilli-material-ui/6-themes/3-breakpoint-style/App'
+import { App as MaterialUIThemes4 } from '../sistilli-material-ui/6-themes/4-dark/App'
 
 const TutorialData = [
   {
@@ -1515,7 +1519,117 @@ const TutorialData = [
             demoComponent: <MaterialUIText4 />
           },               
         ]
-      },     
+      },
+      {
+        primaryText: "#6 Themes",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #6: Themes - Making your own Theme",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=Q4o0GmfNpJc",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "Use themes to define a cohesive, overall look to your applications.  The default theme gives you thoughtful values for most attributes, but may be overridden depending upon your design rules.",
+          date: "2020-03-28",
+          author: "Anthony Sistilli",
+          features: [
+            {
+              bulletPoint: "Basic theme objects",
+              bulletText: "Learn about breakpoints, palettes, and typography.",
+            },
+            {
+              bulletPoint: "Creating your own theme",
+              bulletText: "Use createMuiTheme and <ThemeProvider theme={theme}>"
+            },
+            {
+              bulletPoint: "Read from your theme",
+              bulletText: "To change background color on small devices."
+            },
+            {
+              bulletPoint: "Use theme in makeStyles (JSS)",
+              bulletText: "To define overrides."
+            },
+            {
+              bulletPoint: "Dark theme",
+              bulletText: "Use createMuiTheme to enable palette.type='dark'"
+            }
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-themes-1",
+            primaryText: "Intro",
+            secondaryText: "essential",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-themes/1-intro/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIThemes1 />
+          },
+          {
+            demoKey: "material-ui-themes-2",
+            primaryText: "createMuiTheme",
+            secondaryText: "new theme",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-themes/2-create-theme",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIThemes2 />
+          },
+          {
+            demoKey: "material-ui-themes-3",
+            primaryText: "Breakpoint",
+            secondaryText: "background color",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-themes/3-breakpoint-style",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIThemes3 />
+          },
+          {
+            demoKey: "material-ui-themes-4",
+            primaryText: "Dark",
+            secondaryText: "theme",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-themes/4-dark",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIThemes4 />
+          },
+        ]
+      }, 
     ]
   },  
 ]
