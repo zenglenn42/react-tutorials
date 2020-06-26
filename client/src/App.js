@@ -63,9 +63,19 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: theme.palette.primary.light
+    backgroundColor: "white"
   },
   drawerHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    padding: theme.spacing(0, 2),
+    // paddingLeft: theme.spacing(4),
+    // necessary for content to be below app bar
+    ...theme.mixins.toolbar,
+    justifyContent: 'space-between',
+    backgroundColor: theme.palette.primary.light
+  },
+  contentHeader: {
     display: 'flex',
     alignItems: 'center',
     padding: theme.spacing(0, 2),
@@ -295,7 +305,7 @@ export default function PersistentDrawerLeft(props) {
           [classes.contentShift]: open,
         })}
       >
-        <div className={classes.drawerHeader} />
+        <div className={classes.contentHeader}/>
         {getMainContent(mainContent, classes, handleDrawerOpen)}
       </main>
       <div className={classes.grow}/>
