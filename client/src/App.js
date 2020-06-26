@@ -22,7 +22,6 @@ import { MdTouchApp } from "react-icons/md";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import WorkIcon from '@material-ui/icons/Work';
 import Tooltip from '@material-ui/core/Tooltip';
-import DemobarColor from '@material-ui/core/colors/indigo';
 import TutorialSummary from './components/TutorialSummary'
 
 const drawerWidth = 255;
@@ -64,6 +63,7 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaper: {
     width: drawerWidth,
+    backgroundColor: theme.palette.primary.light
   },
   drawerHeader: {
     display: 'flex',
@@ -100,7 +100,7 @@ const useStyles = makeStyles((theme) => ({
     flex: '1 1 auto',
   },
   Demobar: {
-    backgroundColor: DemobarColor[200],
+    backgroundColor: theme.palette.primary.light,
     paddingLeft: "0.5em", 
     paddingRight: "0px",
     marginBottom: "1em"
@@ -214,7 +214,7 @@ export default function PersistentDrawerLeft(props) {
   const drawerCloseButton = (
     <IconButton onClick={handleDrawerClose}>
       {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-  </IconButton>
+    </IconButton>
   )
 
   return (

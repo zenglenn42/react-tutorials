@@ -8,11 +8,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
-import DemobarColor from '@material-ui/core/colors/indigo';
 
 const useStyles = makeStyles((theme) => ({
     Demobar: {
-        backgroundColor: DemobarColor[200],
+        backgroundColor: theme.palette.primary.light,
         paddingLeft: "0.5em", 
         paddingRight: "0px",
         marginBottom: "1em"
