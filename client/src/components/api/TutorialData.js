@@ -1550,6 +1550,10 @@ const TutorialData = [
               bulletText: "Use createMuiTheme then share with components via <ThemeProvider theme={theme}> or useTheme() hook."
             },
             {
+              bulletPoint: "Run-time theme selection tip",
+              bulletText: "Import themes from a separate 'themes' file if selection is dynamic and based upon a setting or reducer value."
+            },
+            {
               bulletPoint: "Read theme breakpoints",
               bulletText: "Change background color, or other presentation attributes, based upon browser window size."
             },
