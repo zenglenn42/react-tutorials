@@ -1572,7 +1572,7 @@ const TutorialData = [
             secondaryText: "Essentials",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              href: "https://youtu.be/Q4o0GmfNpJc?t=0",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1588,7 +1588,7 @@ const TutorialData = [
             secondaryText: "new theme",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=380",
+              href: "https://youtu.be/Q4o0GmfNpJc?t=380",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1604,7 +1604,7 @@ const TutorialData = [
             secondaryText: "background color",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=708",
+              href: "https://youtu.be/Q4o0GmfNpJc?t=708",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1620,7 +1620,7 @@ const TutorialData = [
             secondaryText: "theme",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=987",
+              href: "https://youtu.be/Q4o0GmfNpJc?t=987",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1666,7 +1666,7 @@ const TutorialData = [
             secondaryText: "elevation",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              href: "https://youtu.be/nmCcr-Y9qdc?t=0",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -1682,7 +1682,7 @@ const TutorialData = [
             secondaryText: "square",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/OvPrUQ3gPtw?t=175",
+              href: "https://youtu.be/nmCcr-Y9qdc?t=175",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
