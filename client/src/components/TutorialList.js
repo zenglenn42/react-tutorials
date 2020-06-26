@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
+    height: '100vh'
   },
   nested: {
     paddingLeft: theme.spacing(4),
