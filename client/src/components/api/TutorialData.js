@@ -66,6 +66,8 @@ import { App as MaterialUIThemes1 } from '../sistilli-material-ui/6-themes/1-int
 import { App as MaterialUIThemes2 } from '../sistilli-material-ui/6-themes/2-create-theme/App'
 import { App as MaterialUIThemes3 } from '../sistilli-material-ui/6-themes/3-breakpoint-style/App'
 import { App as MaterialUIThemes4 } from '../sistilli-material-ui/6-themes/4-dark/App'
+import { App as MaterialUIPaper1 }  from '../sistilli-material-ui/7-paper/1-elevation/App'
+import { App as MaterialUIPaper2 }  from '../sistilli-material-ui/7-paper/2-square/App'
 
 const TutorialData = [
   {
@@ -1629,7 +1631,69 @@ const TutorialData = [
             demoComponent: <MaterialUIThemes4 />
           },
         ]
-      }, 
+      },
+      {
+        primaryText: "#7 Paper",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #7: Paper",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=nmCcr-Y9qdc",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "The <Paper> component is really just a div providing a background and a box-shadow.  But it is fundamental. ",
+          date: "2020-03-30",
+          author: "Anthony Sistilli",
+          features: [
+            {
+              bulletPoint: "Paper is a wrapper",
+              bulletText: "It wraps nested items inside a div with a background color and box shadow.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-paper-1",
+            primaryText: "Props",
+            secondaryText: "elevation",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper/1-elevation",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIPaper1 />
+          },
+          {
+            demoKey: "material-ui-paper-2",
+            primaryText: "Props",
+            secondaryText: "square",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/OvPrUQ3gPtw?t=175",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper/2-square",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIPaper2 />
+          },
+        ]
+      },
     ]
   },  
 ]

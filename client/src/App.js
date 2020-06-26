@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     minHeight: '100vh',
     backgroundColor: "#b0b0b0",
-    backgroundImage: 'url("/assets/img/clean-textile.png")'
+    backgroundImage: 'url("/assets/img/clean-textile.png")',
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
@@ -101,7 +101,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: drawerWidth,
   },
   mainPaper: {
-    padding: theme.spacing(1, 2)
+    padding: theme.spacing(1, 2),
+    backgroundColor: "white"
   },
   button: {
     padding: theme.spacing(0, 1)
@@ -196,7 +197,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
     }
    
     return (
-      <Paper className={classes.mainPaper} elevation={0} >
+      <Paper className={classes.mainPaper} elevation={0}>
         {content}
       </Paper>
     )     

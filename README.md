@@ -57,6 +57,8 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/Q4o0GmfNpJc/0.jpg)](http://www.youtube.com/watch?v=Q4o0GmfNpJc "React + Material UI #6: Themes")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/nmCcr-Y9qdc/0.jpg)](http://www.youtube.com/watch?v=nmCcr-Y9qdc "React + Material UI #7: Paper")
+
 # Developer's Blog
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).

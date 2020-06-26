@@ -1,5 +1,6 @@
 import React from 'react'
-import { Typography, createMuiTheme, ThemeProvider, Paper } from '@material-ui/core'
+import { createMuiTheme, ThemeProvider, makeStyles, Paper } from '@material-ui/core'
+import PaperDemo from './PaperDemo'
 
 const darkTheme = createMuiTheme({
     palette: {
@@ -17,17 +18,21 @@ const darkTheme = createMuiTheme({
     },
 });
 
+const useStyles = makeStyles((theme) => {
+    return ({
+        margin: {
+            margin: theme.spacing(1),
+        }
+    })
+})
+
 export const App = () => {
+    const classes = useStyles()
+
     return (
-        <div>
+        <div className={classes.margin}>
             <ThemeProvider theme={darkTheme}>
-                <div>
-                <Paper>
-                    <Typography variant="h1">
-                        This is my dark typography
-                    </Typography>
-                </Paper>
-                </div>
+                <PaperDemo />
             </ThemeProvider>
         </div>
     )
