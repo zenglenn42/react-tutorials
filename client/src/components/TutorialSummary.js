@@ -1,6 +1,5 @@
 import React from "react"
 import Typography from '@material-ui/core/Typography'
-import { FaReact as ReactIcon } from 'react-icons/fa'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -8,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
+// import { FaReact as ReactIcon } from 'react-icons/fa'
 
 const useStyles = makeStyles((theme) => ({
     Demobar: {
@@ -31,7 +31,7 @@ function TutorialSummary(props) {
         <div className={classes.scrollableListX}>
             <Toolbar className={classes.Demobar} variant="dense" >
                 <Typography variant="h6" noWrap={true}>
-                <ReactIcon/> {props.courseTitle}
+                {props.courseTitle}
                 </Typography>
                 <div className={classes.grow} />
                 <Tooltip title={props.refLink.tipText} enterDelay={300}>

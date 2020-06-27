@@ -52,7 +52,7 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   hide: {
     display: 'none',
@@ -132,13 +132,13 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
         content = (
             <div className={classes.scrollableListX}>
               <Typography variant="h4" gutterBottom> 
-              <ReactIcon/> Learning React
+                Learning React
               </Typography>
               <Typography paragraph>
                 React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
               </Typography>
               <Typography paragraph>
-                Here, I dive into various <Link href="https://reactjs.org/" rel="noreferrer" target="_blank">React</Link> tutorials and gather up my coding solutions and selected snapshopts to share with you.
+                Here, I dive into various React tutorials and gather up my coding solutions and selected snapshopts to share with you.
               </Typography>
               <Button
                 aria-label="open drawer"
@@ -247,6 +247,17 @@ export default function PersistentDrawerLeft(props) {
           >
             <MenuIcon />
           </IconButton>
+          <Tooltip title="react home" enterDelay={300}>
+            <IconButton
+                component="a"
+                color="inherit"
+                href="https://reactjs.org/"
+                aria-label="react home"
+                target="_blank"
+              >
+                <ReactIcon />
+            </IconButton>
+          </Tooltip>
           <Typography variant="h6" noWrap>
             {props.text||"Persistent drawer"}
           </Typography>
