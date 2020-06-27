@@ -7,7 +7,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
-import { Grid } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
+import { yellow } from "@material-ui/core/colors";
+
 // import { FaReact as ReactIcon } from 'react-icons/fa'
 
 const useStyles = makeStyles((theme) => ({
@@ -22,8 +24,16 @@ const useStyles = makeStyles((theme) => ({
     },
     scrollableListX: {
         overflowX: "scroll"
-    }
-  }));
+    },
+    postIt: {
+        background: yellow[100],
+        backgroundOrigin: "content-box",
+        backgroundImage: "linear-gradient(rgba(0,0,0,.04) 50%, transparent 0)",
+        backgroundSize: "auto 3em",
+        lineHeight: "1.5",
+        padding: ".5em",
+    },
+}));
 
 function TutorialSummary(props) {
     const classes = useStyles()
@@ -75,6 +85,7 @@ function TutorialSummary(props) {
                         })}
                 </Grid>
                 <Grid container item direction="column" xs={12} sm={6}>
+                    <Paper className={classes.postIt} square elevation={0}>
                     <Grid container direction="row">
                         <Grid item xs={4}>
                             <Typography noWrap>
@@ -111,6 +122,7 @@ function TutorialSummary(props) {
                             </Typography>
                         </Grid>
                     </Grid>
+                    </Paper>
                 </Grid>
             </Grid>
             <hr style={{color: "lightgray"}}/>

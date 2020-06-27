@@ -75,6 +75,11 @@ import { App as MaterialUIDark2}  from '../sistilli-material-ui/8-dark/2-dark/Ap
 import { App as MaterialUIDark3}  from '../sistilli-material-ui/8-dark/3-toggle/App'
 import { App as MaterialUIDark4}  from '../sistilli-material-ui/8-dark/4-green/App'
 
+const avatarStyle = {
+    width: "60px",
+    height: "60px"
+}
+
 const TutorialData = [
   {
     playlist: [
@@ -99,7 +104,7 @@ const TutorialData = [
           date: "2018-12-18",
           author: "Bob Ziroll",
           avatars: [
-            <Avatar alt="Bob Ziroll" src="/assets/img/avatar/bob-ziroll-2.png" />
+            <Avatar style={avatarStyle} alt="Bob Ziroll" src="/assets/img/avatar/bob-ziroll-2.png" />
           ],
           features: [
             {
@@ -296,8 +301,8 @@ const TutorialData = [
           date: "2018-11-15",
           author: "Kapehe, Brad Traversy",
           avatars: [
-            <Avatar alt="Kapehe" src="/assets/img/avatar/kapehe.png" />,
-            <Avatar alt="Brad Traversy" src="/assets/img/avatar/brad-traversy.png" />
+            <Avatar style={avatarStyle} alt="Kapehe" src="/assets/img/avatar/kapehe.png" />,
+            <Avatar style={avatarStyle} alt="Brad Traversy" src="/assets/img/avatar/brad-traversy.png" />
           ],
           features: [
             {
@@ -418,7 +423,7 @@ const TutorialData = [
           date: "2018-03-13",
           author: "Wes Bos",
           avatars: [
-            <Avatar alt="Wes Bos" src="/assets/img/avatar/wes-bos.png" />
+            <Avatar style={avatarStyle} alt="Wes Bos" src="/assets/img/avatar/wes-bos.png" />
           ],
           features: [
             {
@@ -527,7 +532,7 @@ const TutorialData = [
           date: "2019-06-29",
           author: "Ben Awad",
           avatars: [
-            <Avatar alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
           ],
           features: [
             {
@@ -652,7 +657,7 @@ const TutorialData = [
           date: "2019-09-29",
           author: "Ben Awad",
           avatars: [
-            <Avatar alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
           ],
           features: [
             {
@@ -875,7 +880,7 @@ const TutorialData = [
       date: "2020-03-08",
       author: "Anthony Sistilli",
       avatars: [
-          <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
       ],
       features: [
         {
@@ -922,7 +927,7 @@ const TutorialData = [
           date: "2020-03-08",
           author: "Anthony Sistilli",
           avatars: [
-            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
           ],
           features: [
             {
@@ -1031,7 +1036,7 @@ const TutorialData = [
           date: "2020-03-14",
           author: "Anthony Sistilli",
           avatars: [
-            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
           ],
           features: [
             {
@@ -1220,7 +1225,7 @@ const TutorialData = [
           date: "2020-03-21",
           author: "Anthony Sistilli",
           avatars: [
-            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
           ],
           features: [
             {
@@ -1397,7 +1402,7 @@ const TutorialData = [
           date: "2020-03-22",
           author: "Anthony Sistilli",
           avatars: [
-            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
           ],
           features: [
             {
@@ -1482,7 +1487,7 @@ const TutorialData = [
           date: "2020-03-23",
           author: "Anthony Sistilli",
           avatars: [
-            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
           ],
           features: [
             {
@@ -1583,7 +1588,7 @@ const TutorialData = [
           date: "2020-03-28",
           author: "Anthony Sistilli",
           avatars: [
-            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
           ],
           features: [
             {
@@ -1696,7 +1701,7 @@ const TutorialData = [
           date: "2020-03-30",
           author: "Anthony Sistilli",
           avatars: [
-            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
           ],
           features: [
             {
@@ -1761,7 +1766,7 @@ const TutorialData = [
           date: "2020-04-04",
           author: "Anthony Sistilli",
           avatars: [
-            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
           ],
           features: [
             {
