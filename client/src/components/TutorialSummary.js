@@ -59,19 +59,62 @@ function TutorialSummary(props) {
                 </IconButton>
                 </Tooltip>
             </Toolbar>
-            <Grid container direction="row">
-                {props.avatars.map((avatar) => {
-                    return (
-                        <Grid style={{margin: theme.spacing(1)}} item>{avatar}</Grid>
-                    )
-                })}
+            <Grid container direction="row" alignContent="space-between">
+                <Grid container item direction="column" xs={12} sm={6} alignContent="center">
+                    {props.avatars.map((avatar, i) => {
+                        const authorNames = props.author.split(",")
+                        return (
+                            <Grid container item direction="column" alignItems="center">
+                                <Grid item>
+                                    {avatar}
+                                </Grid>
+                                <Grid item>
+                                    <Typography variant="caption" wrap>{authorNames[i]}</Typography>
+                                </Grid>
+                            </Grid>
+                            )
+                        })}
+                </Grid>
+                <Grid container item direction="column" xs={12} sm={6}>
+                    <Grid container direction="row">
+                        <Grid item xs={4}>
+                            <Typography noWrap>
+                                Sponsor:
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={8}>
+                            <Typography noWrap>
+                                {props.provider}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container direction="row">
+                        <Grid item xs={4}>
+                            <Typography noWrap>
+                                Date:
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={8}>
+                            <Typography noWrap>
+                                {props.date}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container direction="row">
+                        <Grid item xs={4}>
+                            <Typography noWrap>
+                                Level:
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={8}>
+                            <Typography noWrap>
+                                {props.level}
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Grid>
             </Grid>
-            <Typography gutterBottom> 
-                Author: {props.author}<br/>
-                Provider: {props.provider}<br/>
-                Date: {props.date}<br/>
-                Level: {props.level}<br/><hr/>
-            </Typography>
+            <hr style={{color: "lightgray"}}/>
             <Typography paragraph>
                 {props.descText}
             </Typography>
