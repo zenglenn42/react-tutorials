@@ -414,7 +414,7 @@ const TutorialData = [
             icon: <GitHubIcon />            
           },
           level: "introductory",
-          descText: "This spare 15 minute tutorial introduces React's Context API, a lightweight data store for managing state outside your components.",
+          descText: "This spare, 15 minute tutorial introduces React's Context API, a lightweight data store for managing state outside your components.",
           date: "2018-03-13",
           author: "Wes Bos",
           avatars: [
