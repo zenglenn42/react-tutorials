@@ -3,10 +3,11 @@ import Typography from '@material-ui/core/Typography'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
+import { Grid } from "@material-ui/core";
 // import { FaReact as ReactIcon } from 'react-icons/fa'
 
 const useStyles = makeStyles((theme) => ({
@@ -25,7 +26,8 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 function TutorialSummary(props) {
-    const classes = useStyles();
+    const classes = useStyles()
+    const theme = useTheme()
 
     const summary = (
         <div className={classes.scrollableListX}>
@@ -57,7 +59,13 @@ function TutorialSummary(props) {
                 </IconButton>
                 </Tooltip>
             </Toolbar>
-
+            <Grid container direction="row">
+                {props.avatars.map((avatar) => {
+                    return (
+                        <Grid style={{margin: theme.spacing(1)}} item>{avatar}</Grid>
+                    )
+                })}
+            </Grid>
             <Typography gutterBottom> 
                 Author: {props.author}<br/>
                 Provider: {props.provider}<br/>

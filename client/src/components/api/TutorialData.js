@@ -8,9 +8,11 @@ import LoginState from '../vschool/state1/LoginState'
 import CountState from '../vschool/state2/CountState'
 import ConditionalRender from '../vschool/conditionalRender/ConditionalRender'
 import TravelForm from '../vschool/forms/TravelForm'
-import { FaYoutube } from 'react-icons/fa';
-import CodeIcon from '@material-ui/icons/Code';
-import GitHubIcon from '@material-ui/icons/GitHub';
+import { FaYoutube } from 'react-icons/fa'
+import CodeIcon from '@material-ui/icons/Code'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import Avatar from '@material-ui/core/Avatar'
+
 import TodoListUnstyled from '../brilliant-react-hooks/TodoListUnstyled'
 import TodoListStyled from '../brilliant-react-hooks/TodoListStyled'
 import TodoWithForm from '../brilliant-react-hooks/TodoWithForm'
@@ -96,6 +98,9 @@ const TutorialData = [
           descText: "This nicely paced, 5-hour introduction to React offers plenty of progressive practice.",
           date: "2018-12-18",
           author: "Bob Ziroll",
+          avatars: [
+            <Avatar alt="Bob Ziroll" src="/assets/img/avatar/bob-ziroll.png" />
+          ],
           features: [
             {
               bulletPoint: "Props",
@@ -290,6 +295,10 @@ const TutorialData = [
           descText: "This 30 minute tutorial introduces hooks, a means of adding state to function-based components.",
           date: "2018-11-15",
           author: "Kapehe, Brad Traversy",
+          avatars: [
+            <Avatar alt="Kapehe" src="/assets/img/avatar/kapehe.png" />,
+            <Avatar alt="Brad Traversy" src="/assets/img/avatar/brad-traversy.png" />
+          ],
           features: [
             {
               bulletPoint: "Todo list",
@@ -408,6 +417,9 @@ const TutorialData = [
           descText: "This spare 15 minute tutorial introduces React's Context API, a lightweight data store for managing state outside your components.",
           date: "2018-03-13",
           author: "Wes Bos",
+          avatars: [
+            <Avatar alt="Wes Bos" src="/assets/img/avatar/wes-bos.png" />
+          ],
           features: [
             {
               bulletPoint: "Class-based implementation",
@@ -514,6 +526,9 @@ const TutorialData = [
           descText: "This lean but rich 10 minute tutorial introduces useContext, the hooks version of React's Context API. In this case, a user's login identity is stored and shared among components as state within a context store.",
           date: "2019-06-29",
           author: "Ben Awad",
+          avatars: [
+            <Avatar alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+          ],
           features: [
             {
               bulletPoint: "Easily share state",
@@ -636,6 +651,9 @@ const TutorialData = [
           descText: "This 10 minute typescript-based tutorial introduces React Router, a means of giving your Single Page Applications the usability of multi-page applications without the overhead of separate requests to the server.",
           date: "2019-09-29",
           author: "Ben Awad",
+          avatars: [
+            <Avatar alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+          ],
           features: [
             {
               bulletPoint: "Make 'back' button work!",
@@ -856,6 +874,9 @@ const TutorialData = [
       descText: "Material UI is a library of React components informed by the Materialize design system.  This is a significant tutorial sequence of more than 20 videos.  Anthony has a very accessible presentation style and his content is well organized.  He also sprinkles in some advanced use-cases to add sophistication and elegance to your frontend implementations.",
       date: "2020-03-08",
       author: "Anthony Sistilli",
+      avatars: [
+          <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+      ],
       features: [
         {
           bulletPoint: "Themes",
@@ -900,6 +921,9 @@ const TutorialData = [
           descText: "Provides overview of Material UI component library for React",
           date: "2020-03-08",
           author: "Anthony Sistilli",
+          avatars: [
+            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
           features: [
             {
               bulletPoint: "Buttons",
@@ -1006,6 +1030,9 @@ const TutorialData = [
           descText: "Progresses from a Figma design of a product catalog page to a basic frontend implementation.",
           date: "2020-03-14",
           author: "Anthony Sistilli",
+          avatars: [
+            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
           features: [
             {
               bulletPoint: "Breakdown a design",
@@ -1192,6 +1219,9 @@ const TutorialData = [
           descText: "Use the makeStyles hook with props or themes to customize your React components' appearance.",
           date: "2020-03-21",
           author: "Anthony Sistilli",
+          avatars: [
+            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
           features: [
             {
               bulletPoint: "What is JSS?",
@@ -1366,6 +1396,9 @@ const TutorialData = [
           descText: "<Button> is a ubiquitous component but it does have some subltlety.  Learn about it here.",
           date: "2020-03-22",
           author: "Anthony Sistilli",
+          avatars: [
+            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
           features: [
             {
               bulletPoint: "Button variants",
@@ -1448,6 +1481,9 @@ const TutorialData = [
           descText: "Learn about basic <Typography> properties and override mechanisms.",
           date: "2020-03-23",
           author: "Anthony Sistilli",
+          avatars: [
+            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
           features: [
             {
               bulletPoint: "Typography variants",
@@ -1546,6 +1582,9 @@ const TutorialData = [
           descText: "Use themes to define a cohesive, overall look to your applications.  The default theme gives you thoughtful values for most attributes, but may be overridden depending upon your design rules.",
           date: "2020-03-28",
           author: "Anthony Sistilli",
+          avatars: [
+            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
           features: [
             {
               bulletPoint: "Basic theme objects",
@@ -1656,6 +1695,9 @@ const TutorialData = [
           descText: "The <Paper> component is really just a div providing a background and a box-shadow.  But it is fundamental. ",
           date: "2020-03-30",
           author: "Anthony Sistilli",
+          avatars: [
+            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
           features: [
             {
               bulletPoint: "Paper is a wrapper",
@@ -1718,6 +1760,9 @@ const TutorialData = [
           descText: "Dark mode is the new hotness.  But it's basically already built into Material-UI.  Just use <Paper> and tweak one setting in the default theme to unleash.",
           date: "2020-04-04",
           author: "Anthony Sistilli",
+          avatars: [
+            <Avatar alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
           features: [
             {
               bulletPoint: "Dark mode is easy in Material-UI",
