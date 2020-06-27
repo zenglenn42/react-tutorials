@@ -99,7 +99,7 @@ const TutorialData = [
           date: "2018-12-18",
           author: "Bob Ziroll",
           avatars: [
-            <Avatar alt="Bob Ziroll" src="/assets/img/avatar/bob-ziroll.png" />
+            <Avatar alt="Bob Ziroll" src="/assets/img/avatar/bob-ziroll-2.png" />
           ],
           features: [
             {

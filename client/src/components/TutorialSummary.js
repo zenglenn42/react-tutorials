@@ -3,7 +3,7 @@ import Typography from '@material-ui/core/Typography'
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -27,7 +27,6 @@ const useStyles = makeStyles((theme) => ({
 
 function TutorialSummary(props) {
     const classes = useStyles()
-    const theme = useTheme()
 
     const summary = (
         <div className={classes.scrollableListX}>
