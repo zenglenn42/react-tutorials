@@ -1741,7 +1741,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-dark/1-light",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/1-light",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDark1 />
@@ -1757,7 +1757,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-dark/2-dark",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/2-dark",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDark2 />
@@ -1773,7 +1773,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-dark/3-toggle",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/3-toggle",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDark3 />
@@ -1789,7 +1789,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-dark/4-green",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/4-green",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDark4 />
