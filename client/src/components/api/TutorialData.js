@@ -1826,7 +1826,7 @@ const TutorialData = [
           {
             demoKey: "material-ui-dark-4",
             primaryText: "Toggle",
-            secondaryText: "light & green",
+            secondaryText: "green & dark",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/H_PO_GY4xXU?t=424",
