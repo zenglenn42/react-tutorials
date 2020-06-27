@@ -68,6 +68,10 @@ import { App as MaterialUIThemes3 } from '../sistilli-material-ui/6-themes/3-bre
 import { App as MaterialUIThemes4 } from '../sistilli-material-ui/6-themes/4-dark/App'
 import { App as MaterialUIPaper1 }  from '../sistilli-material-ui/7-paper/1-elevation/App'
 import { App as MaterialUIPaper2 }  from '../sistilli-material-ui/7-paper/2-square/App'
+import { App as MaterialUIDark1}  from '../sistilli-material-ui/8-dark/1-light/App'
+import { App as MaterialUIDark2}  from '../sistilli-material-ui/8-dark/2-dark/App'
+import { App as MaterialUIDark3}  from '../sistilli-material-ui/8-dark/3-toggle/App'
+import { App as MaterialUIDark4}  from '../sistilli-material-ui/8-dark/4-green/App'
 
 const TutorialData = [
   {
@@ -1691,6 +1695,104 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIPaper2 />
+          },
+        ]
+      },
+      {
+        primaryText: "#8 Dark Mode",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #8: Dark Mode",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=H_PO_GY4xXU",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "Dark mode is the new hotness.  But it's basically already built into Material-UI.  Just use <Paper> and tweak one setting in the default theme to unleash.",
+          date: "2020-04-04",
+          author: "Anthony Sistilli",
+          features: [
+            {
+              bulletPoint: "Dark mode is easy in Material-UI",
+              bulletText: "Override the theme and set palette.type='dark' and bam.",
+            },
+            {
+              bulletPoint: "But <Paper> is key.",
+              bulletText: "Not all components change background color in relation to dark mode.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-dark-1",
+            primaryText: "Start",
+            secondaryText: "light mode",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/H_PO_GY4xXU?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-dark/1-light",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDark1 />
+          },
+          {
+            demoKey: "material-ui-dark-2",
+            primaryText: "Dark mode",
+            secondaryText: "w/ palette",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/H_PO_GY4xXU?t=113",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-dark/2-dark",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDark2 />
+          },
+          {
+            demoKey: "material-ui-dark-3",
+            primaryText: "Toggle",
+            secondaryText: "light & dark",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/H_PO_GY4xXU?t=287",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-dark/3-toggle",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDark3 />
+          },
+          {
+            demoKey: "material-ui-dark-4",
+            primaryText: "Toggle",
+            secondaryText: "light & green",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/H_PO_GY4xXU?t=424",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-dark/4-green",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDark4 />
           },
         ]
       },

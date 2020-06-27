@@ -1,5 +1,5 @@
 import React from 'react'
-import { createMuiTheme, ThemeProvider, makeStyles, Paper } from '@material-ui/core'
+import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core'
 import PaperDemo from './PaperDemo'
 
 const darkTheme = createMuiTheme({
