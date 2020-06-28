@@ -16,13 +16,15 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { FaReact as ReactIcon } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa'
 import Paper from '@material-ui/core/Paper';
-import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 import { MdTouchApp } from "react-icons/md";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import WorkIcon from '@material-ui/icons/Work';
 import Tooltip from '@material-ui/core/Tooltip';
 import TutorialSummary from './components/TutorialSummary'
+import LandingData from './components/api/LandingData'
+import { Grid } from '@material-ui/core';
+import TutorialCard from './components/TutorialCard';
 
 const drawerWidth = 255;
 
@@ -133,23 +135,103 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
         content = (
             <div className={classes.scrollableListX}>
               <Typography variant="h4" gutterBottom> 
-                Learning React
+                {LandingData.callToActionHeader}
               </Typography>
-              <Typography paragraph>
-                React is a <Link href="https://medium.com/techmagic/reactjs-vs-angular5-vs-vue-js-what-to-choose-in-2018-b91e028fa91d" rel="noreferrer" target="_blank">popular</Link> JavaScript library for building user interfaces.
-              </Typography>
-              <Typography paragraph>
-                Here, I dive into various React tutorials and gather up my coding solutions and selected snapshopts to share with you.
-              </Typography>
+
+              {LandingData.callToActionText.map((sentence) => {
+                return (<Typography paragraph variant="h6">{sentence}</Typography>)
+              })}
+              <br/>
+
               <Button
                 aria-label="open drawer"
                 onClick={handleDrawerOpen}
                 edge="start"
                 variant="contained"
-                color="default"
+                color="primary"
                 disableElevation
-                >
-                <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> <Typography>Get Started</Typography>
+                size="large"
+              >
+                <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> 
+                <Typography>{LandingData.getStartedText}</Typography>
+              </Button>
+              <br/><br/>
+              <hr style={{color: "lightgray"}} />
+
+              <br/>
+              <Typography variant="h4" gutterBottom> 
+                {LandingData.tutorialCardHeader}
+              </Typography>
+              <Typography paragraph variant="h6">
+                {LandingData.tutorialCardText}
+              </Typography>
+
+              <Grid container direction="row" wrap="nowrap" spacing={2} >
+                {LandingData.tutorialCardImages.map((imgSrc) => {
+                  return (
+                    <Grid item xs={12} sm={12} md={4} xl={4}>
+                      <TutorialCard imageUrl={imgSrc} />
+                    </Grid>
+                  )
+                })}
+              </Grid>
+              <br/>
+              <hr style={{color: "lightgray"}} />
+              <br/>
+              <Typography variant="h4">
+                {LandingData.splashSequenceHeader}
+              </Typography>
+              <br/>
+              <Typography variant="h6">
+                {LandingData.splashSequenceText}
+              </Typography>
+              <br/>
+              <Typography paragraph variant="h6">
+                {LandingData.splashSequenceBullets.map((sentence) => {
+                  return (
+                    <Typography variant="h6" style={{marginLeft: "2em"}}>
+                      • {sentence}
+                    </Typography>)
+                })}
+              </Typography>
+              <br/>
+              <Grid container="column" alignContent="center">
+                <Grid container direction="row" alignItems="center" spacing={4}>
+                  {LandingData.splashSequence.map((item) => {
+                    return (
+                      <>
+                        <Grid item xs={12} sm={10}>
+                          <Typography paragraph variant="h6">{item.text}</Typography>
+                          <TutorialCard imageUrl={item.image} />
+                          <br/>
+                        </Grid>
+                      </>
+                    )                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                  })}
+                </Grid>
+              </Grid>
+              <br/>
+              <hr style={{color: "lightgray"}} />
+              <br/>
+              <Typography variant="h4">
+                {LandingData.wrapupHeader}
+              </Typography>
+              <br/>
+              <Typography variant="h6">
+                {LandingData.wrapupText}
+              </Typography>
+              <br />
+              <Button
+                aria-label="open drawer"
+                onClick={handleDrawerOpen}
+                edge="start"
+                variant="contained"
+                color="primary"
+                disableElevation
+                size="large"
+              >
+                <MdTouchApp size="1.5em" style={{marginRight: "1em"}}/> 
+                <Typography>{LandingData.getStartedText}</Typography>
               </Button>
             </div>
         )
