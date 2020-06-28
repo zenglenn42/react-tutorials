@@ -156,7 +156,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 <Typography>{LandingData.getStartedText}</Typography>
               </Button>
               <br/><br/>
-              <hr style={{color: "#eeeeee"}} />
+              <hr style={{color: "rgba(128, 128, 128, 0.2)"}} />
 
               <br/>
               <Typography variant="h4" gutterBottom> 
@@ -177,7 +177,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 })}
               </Grid>
               <br/>
-              <hr style={{color: "#eeeeee"}} />
+              <hr style={{color: "rgba(128, 128, 128, 0.2)"}} />
               <br/>
               <Typography variant="h4">
                 {LandingData.splashSequenceHeader}
@@ -212,7 +212,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 </Grid>
               </Grid>
               <br/>
-              <hr style={{color: "#eeeeee"}} />
+              <hr style={{color: "rgba(128, 128, 128, 0.4)"}} />
               <br/>
               <Typography variant="h4">
                 {LandingData.wrapupHeader}
