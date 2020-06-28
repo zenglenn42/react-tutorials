@@ -212,7 +212,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 </Grid>
               </Grid>
               <br/>
-              <hr style={{color: "rgba(128, 128, 128, 0.4)"}} />
+              <hr style={{color: "rgba(128, 128, 128, 0.2)"}} />
               <br/>
               <Typography variant="h4">
                 {LandingData.wrapupHeader}
