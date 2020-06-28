@@ -33,8 +33,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     minHeight: '100vh',
-    backgroundColor: "#b0b0b0",
-    backgroundImage: 'url("/assets/img/clean-textile.png")',
+    // backgroundColor: "#b0b0b0",
+    // backgroundImage: 'url("/assets/img/clean-textile.png")',
+    backgroundColor: "white",
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {

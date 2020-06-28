@@ -126,7 +126,7 @@ function TutorialSummary(props) {
                     </Paper>
                 </Grid>
             </Grid>
-            <hr style={{color: "lightgray"}}/>
+            <hr style={{color: "lightgray", margin: "1em 0"}}/>
             <Typography paragraph>
                 {props.descText}
             </Typography>
