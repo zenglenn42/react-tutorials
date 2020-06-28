@@ -32,7 +32,9 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: "auto 3em",
         lineHeight: "1.5",
         padding: ".5em",
-        height: "100%"
+        height: "100%",
+        border: "1px yellow solid",
+        borderRadius: "0.0681em"
     },
 }));
 
