@@ -137,7 +137,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
               <Typography variant="h4" gutterBottom> 
                 {LandingData.callToActionHeader}
               </Typography>
-
+              <br/>
               {LandingData.callToActionText.map((sentence) => {
                 return (<Typography paragraph variant="h6">{sentence}</Typography>)
               })}
@@ -156,12 +156,13 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 <Typography>{LandingData.getStartedText}</Typography>
               </Button>
               <br/><br/>
-              <hr style={{color: "lightgray"}} />
+              <hr style={{color: "#eeeeee"}} />
 
               <br/>
               <Typography variant="h4" gutterBottom> 
                 {LandingData.tutorialCardHeader}
               </Typography>
+              <br/>
               <Typography paragraph variant="h6">
                 {LandingData.tutorialCardText}
               </Typography>
@@ -176,12 +177,12 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 })}
               </Grid>
               <br/>
-              <hr style={{color: "lightgray"}} />
+              <hr style={{color: "#eeeeee"}} />
               <br/>
               <Typography variant="h4">
                 {LandingData.splashSequenceHeader}
               </Typography>
-              <br/>
+              <br/><br/>
               <Typography variant="h6">
                 {LandingData.splashSequenceText}
               </Typography>
@@ -211,7 +212,7 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 </Grid>
               </Grid>
               <br/>
-              <hr style={{color: "lightgray"}} />
+              <hr style={{color: "#eeeeee"}} />
               <br/>
               <Typography variant="h4">
                 {LandingData.wrapupHeader}
