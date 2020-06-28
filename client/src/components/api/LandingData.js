@@ -2,8 +2,8 @@ const LandingData = {
     callToActionHeader: "Learn React",
     callToActionText: [
         "Looking for a better way to learn React?",
-        "Try annotated tutorials with overview summaries, live demos, and contextual references to instruction and code.",
-        "Follow along a guided sequence or drill down to just the content of interest. Quickly determine if a given tutorial meets your needs."
+        "Try annotated tutorials with overviews, live demos, and contextual references to instruction and code.",
+        "Follow a guided sequence or drill down to just the content of interest. Quickly determine if a given tutorial meets your needs."
     ],
     getStartedText: "Get Started",
     tutorialCardHeader: "Select",
