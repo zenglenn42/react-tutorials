@@ -86,7 +86,7 @@ function TutorialSummary(props) {
                         })}
                 </Grid>
                 <Grid container item direction="column" xs={12} sm={6}>
-                    <Paper className={classes.postIt} square elevation={0}>
+                    <Paper className={classes.postIt} square elevation={4}>
                     <Grid container direction="row">
                         <Grid item xs={4}>
                             <Typography noWrap>
