@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     postIt: {
         background: yellow[100],
         backgroundOrigin: "content-box",
-        backgroundImage: "linear-gradient(rgba(0,0,0,.03) 50%, transparent 0)",
+        backgroundImage: "linear-gradient(rgba(0,0,0,.06) 50%, transparent 0)",
         backgroundSize: "auto 3em",
         lineHeight: "1.5",
         padding: ".5em",
