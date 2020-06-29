@@ -1,10 +1,18 @@
 # react-tutorials [(demo)](https://react-tutorials.herokuapp.com/)
 
-This is a React-based container app for hosting various React tutorials I complete.  So I'm using React to master React. :-)
+Let's disrupt the whole youtube video tutorial scene, shall we?  
+
+I'm grooving on React these days and want a cool place to collect my learning experience from various tutorials I complete.  There's a ton of good instructional content on online, but I want something that allows me to snapshot the journey at key points in the instruction.  I come up with this:
+
+![alt](docs/img/ui-landing-2.0.png)
+
+It accommodates different learning styles as described on the landing page:
+
+![alt](docs/img/ui-landing-2.0-all.png)
 
 It features a slide-out drawer that allows you to select a given tutorial to explore.
 
-![alt](docs/img/ui-mobile-intro.png)
+![alt](docs/img/ui-slideout-2.0.png)
 
 Users may view one or more solved problems from a tutorial and watch the related video for that problem or drill down into the code itself on github:
 
@@ -495,3 +503,35 @@ Anthony Sistilli has done a beautiful job with his React + Material UI tutorial 
 The final implementation makes good use of Material UI Grid and various Card components along with an AppBar.  The best thing about this tutorial is just the basic work flow one takes to break down a design into components and thinking about how those components would live within a responsive grid.
 
 ![alt](docs/img/uiux-final.png)
+
+## I upgrade the landing page
+
+I'm liking the concept of my little annotated tutorial app.  It has potential to be broadly interesting and potentially disruptive.  But the design notes for the landing page are just off by a decade or so and we are visual creatures afterall.  So I need to fix this first impression.  I don't really have a strong call to action and the whole textured background thing feels like bad wabi sabi.  (Don't hate me, wabi sabi, I'll find my way back to you.)
+
+:-/
+
+![alt](docs/img/ui-mobile-intro.png)
+
+So I go casting about for inspiration and find the material design page itself:
+
+![alt](docs/img/m-landing.png)
+
+Pretty clean and spare.  I like the generous use of white space.  There's a strong narrative as well, something I'm missing, though I know this pup has potential.  Taking these two observations in mind, I come up with this:
+
+![alt](docs/img/ui-landing-2.0.png)
+
+I verb-ify the key aspects of the app (learn, select, navigate, arrive) and use those as organizing headers in the copy.  The language is somewhat nautical, suggesting a voyage, something I can riff on more.
+
+I code this up in a fever dream with ugly inline styles and such (which I'll clean up in post) but the overall effect is better, I think.  So shipping it. :-)
+
+Oh, I made liberal use of ```<Grid>``` which I gleaned from Anthony Sistilli's Material UI tutorials, though did a fair amount of point-click-and-cursing until I found this fu which maintains image aspect ratio of my carefully crafted graphics within a responsive grid:
+
+```
+<Grid item>
+  <div style={{minWidth: 0}}>
+    <img alt="" src={imageUrl} style={{maxWidth: "100%", height: "auto"}} />
+  </div>
+</Grid>
+```
+
+I still have have hair, thanks to this code.
