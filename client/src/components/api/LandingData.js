@@ -50,7 +50,8 @@ const LandingData = {
         },
     ],
     wrapupHeader: "Arrive",
-    wrapupText: "Reach your destination efficiently and start using your newly acquired knowledge."
+    wrapupText: "Reach your destination efficiently and start using your newly acquired knowledge.",
+    wrapupImage: "/assets/img/landing/Arrive.png"
 }
 
 export default LandingData

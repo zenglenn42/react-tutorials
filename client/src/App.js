@@ -222,6 +222,12 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
                 {LandingData.wrapupText}
               </Typography>
               <br />
+              <Grid container direction="row" alignItems="center" spacing={4}>
+                <Grid item xs={12} sm={12} md={4} xl={4}>
+                  <TutorialCard imageUrl={LandingData.wrapupImage} />
+                </Grid>
+              </Grid>
+              <br/>
               <Button
                 aria-label="open drawer"
                 onClick={handleDrawerOpen}
