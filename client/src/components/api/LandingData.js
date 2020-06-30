@@ -10,7 +10,7 @@ const LandingData = {
     tutorialCardText: "Select from a curated list of popular tutorials thoughtfully created by experienced developers and guides on key subjects.",
     tutorialCardImages: [
         "/assets/img/landing/Component15.png",
-        "/assets/img/landing/Component14.png",
+        "/assets/img/landing/Component30.png",
         // "/assets/img/landing/Component13.png",
         "/assets/img/landing/Component16.png",
         "/assets/img/landing/Component12.png",
