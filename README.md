@@ -1,6 +1,6 @@
 # react-tutorials [(demo)](https://react-tutorials.herokuapp.com/)
 
-Let's disrupt the whole youtube video tutorial scene, shall we?  
+Let's disrupt the youtube video tutorial scene a bit. :-)
 
 I'm grooving on React these days and want a cool place to collect my learning experience from various tutorials I complete.  There's a ton of good instructional content on online, but I want something that allows me to snapshot the journey at key points in the instruction.  I come up with this:
 
