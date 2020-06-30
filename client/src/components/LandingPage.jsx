@@ -34,11 +34,11 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
 
             <br/>
             <Typography variant="h4" gutterBottom> 
-                {LandingData.LandingImageHeader}
+                {LandingData.tutorialCardHeader}
             </Typography>
             <br/>
             <Typography paragraph variant="h6">
-                {LandingData.LandingImageText}
+                {LandingData.tutorialCardText}
             </Typography>
 
             <Grid container direction="row" wrap="nowrap" spacing={2} >
