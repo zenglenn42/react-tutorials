@@ -69,6 +69,9 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/H_PO_GY4xXU/0.jpg)](http://www.youtube.com/watch?v=H_PO_GY4xXU "React + Material UI #8: Dark Mode")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/GsSnfTKn8To/0.jpg)](http://www.youtube.com/watch?v=GsSnfTKn8To "React + Material UI #9: Templates")
+
+
 # Developer's Blog
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
