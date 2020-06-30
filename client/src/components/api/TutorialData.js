@@ -74,6 +74,16 @@ import { App as MaterialUIDark1}  from '../sistilli-material-ui/8-dark/1-light/A
 import { App as MaterialUIDark2}  from '../sistilli-material-ui/8-dark/2-dark/App'
 import { App as MaterialUIDark3}  from '../sistilli-material-ui/8-dark/3-toggle/App'
 import { App as MaterialUIDark4}  from '../sistilli-material-ui/8-dark/4-green/App'
+import { App as MaterialUITemplateAlbum}  from '../sistilli-material-ui/9-templates/album/App'
+import { App as MaterialUITemplateBlog}  from '../sistilli-material-ui/9-templates/blog/App'
+import { App as MaterialUITemplateCheckout}  from '../sistilli-material-ui/9-templates/checkout/App'
+import { App as MaterialUITemplateDashboard}  from '../sistilli-material-ui/9-templates/dashboard/App'
+import { App as MaterialUITemplatePricing}  from '../sistilli-material-ui/9-templates/pricing/App'
+import { App as MaterialUITemplateSignIn}  from '../sistilli-material-ui/9-templates/sign-in/App'
+import { App as MaterialUITemplateSignInSide}  from '../sistilli-material-ui/9-templates/sign-in-side/App'
+import { App as MaterialUITemplateSignUp}  from '../sistilli-material-ui/9-templates/sign-up/App'
+import { App as MaterialUITemplateStickyFooter}  from '../sistilli-material-ui/9-templates/sticky-footer/App'
+
 
 const avatarStyle = {
     width: "60px",
@@ -1843,6 +1853,211 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDark4 />
+          },
+        ]
+      },
+      {
+        primaryText: "#9 Templates",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #9: Templates",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=GsSnfTKn8To",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/mui-org/material-ui/docs/src/pages/getting-started/templates",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "Material UI comes with a few pre-coded templates for common tasks such as logging in and checkout.  Some of these resources may give you ideas or speed your development.",
+          date: "2020-04-06",
+          author: "Anthony Sistilli",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Example code for common tasks",
+              bulletText: "Use these templates off-the-shelf or tweak to suit your needs.",
+            },
+            {
+              bulletPoint: "Study the code",
+              bulletText: "Improve your use of the Material UI library by studying how the authors leverage components.",
+            },
+            {
+              bulletPoint: "Improve your layout",
+              bulletText: "Study use of whitespace, <Typography>, <Container>, and <Grid>",
+            },
+            {
+              bulletPoint: "Learn about useful packages",
+              bulletText: "markdown-to-jsx used in the blog and recharts used in the dashboard",
+            },
+            {
+              bulletPoint: "Learn about building forms",
+              bulletText: "with <TextField> in sign-in template",
+            },
+            {
+              bulletPoint: "Learn about the '@global' JSS target",
+              bulletText: "Used in the pricing template to override multiple unordered lists.",
+            },
+            {
+              bulletPoint: "Make your designs sensitive to 'light' and 'dark' modes",
+              bulletText: "backgroundColor: theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900]",
+            },
+            {
+              bulletPoint: "Leverage existing theme zIndices",
+              bulletText: "For JSS targets like this: 'zIndex: theme.zIndex.drawer + 1'",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-template-4",
+            primaryText: "Dashboard",
+            secondaryText: "layout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=48",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/dashboard",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplateDashboard />
+          },
+          {
+            demoKey: "material-ui-template-6",
+            primaryText: "Sign In",
+            secondaryText: "layout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=177",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-in",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplateSignIn />
+          },
+          {
+            demoKey: "material-ui-template-7",
+            primaryText: "Sign In Side",
+            secondaryText: "layout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=214",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-in-side",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplateSignInSide />
+          },
+          {
+            demoKey: "material-ui-template-8",
+            primaryText: "Sign Up",
+            secondaryText: "layout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=225",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-up",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplateSignUp />
+          },
+          {
+            demoKey: "material-ui-template-2",
+            primaryText: "Blog",
+            secondaryText: "layout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=229",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/blog",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplateBlog />
+          },
+          {
+            demoKey: "material-ui-template-3",
+            primaryText: "Checkout",
+            secondaryText: "layout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=241",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/checkout",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplateCheckout />
+          },
+          {
+            demoKey: "material-ui-template-1",
+            primaryText: "Album",
+            secondaryText: "layout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=246",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/album",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplateAlbum />
+          },
+          {
+            demoKey: "material-ui-template-5",
+            primaryText: "Pricing",
+            secondaryText: "layout",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=279",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/pricing",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplatePricing />
+          },
+          {
+            demoKey: "material-ui-template-9",
+            primaryText: "Sticky",
+            secondaryText: "footer",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/GsSnfTKn8To?t=294",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sticky-footer",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITemplateStickyFooter />
           },
         ]
       },

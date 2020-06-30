@@ -1,7 +1,7 @@
 import React from 'react'
 import { Typography, Button, Grid } from '@material-ui/core'
 import { MdTouchApp } from 'react-icons/md'
-import TutorialCard from './TutorialCard'
+import LandingImage from './LandingImage'
 import LandingData from './api/LandingData'
 
 const LandingPage = ({classes, handleDrawerOpen}) => {
@@ -34,18 +34,18 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
 
             <br/>
             <Typography variant="h4" gutterBottom> 
-                {LandingData.tutorialCardHeader}
+                {LandingData.LandingImageHeader}
             </Typography>
             <br/>
             <Typography paragraph variant="h6">
-                {LandingData.tutorialCardText}
+                {LandingData.LandingImageText}
             </Typography>
 
             <Grid container direction="row" wrap="nowrap" spacing={2} >
                 {LandingData.tutorialCardImages.map((imgSrc) => {
                     return (
                     <Grid item xs={12} sm={12} md={4} xl={4}>
-                        <TutorialCard imageUrl={imgSrc} />
+                        <LandingImage imageUrl={imgSrc} />
                     </Grid>
                     )
                 })}
@@ -77,7 +77,7 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
                         <>
                         <Grid item xs={12} sm={10}>
                             <Typography paragraph variant="h6">{item.text}</Typography>
-                            <TutorialCard imageUrl={item.image} />
+                            <LandingImage imageUrl={item.image} />
                             <br/>
                         </Grid>
                         </>
@@ -98,7 +98,7 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
             <br />
             <Grid container direction="row" alignItems="center" spacing={4}>
                 <Grid item xs={12} sm={12} md={4} xl={4}>
-                    <TutorialCard imageUrl={LandingData.wrapupImage} />
+                    <LandingImage imageUrl={LandingData.wrapupImage} />
                 </Grid>
             </Grid>
             <br/>

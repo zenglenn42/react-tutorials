@@ -16,7 +16,8 @@ export const useStyles = makeStyles((theme) => ({
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
       }),
-      boxShadow: "none"
+      boxShadow: "none",
+      zIndex: theme.zIndex.drawer + 2
     },
     appBarShift: {
       width: `calc(100% - ${drawerWidth}px)`,
@@ -35,6 +36,7 @@ export const useStyles = makeStyles((theme) => ({
     drawer: {
       width: drawerWidth,
       flexShrink: 0,
+      zIndex: theme.zIndex.drawer,
     },
     drawerPaper: {
       width: drawerWidth,

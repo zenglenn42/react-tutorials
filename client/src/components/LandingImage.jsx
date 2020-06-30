@@ -2,7 +2,7 @@ import React from "react";
 
 // https://exceptionshub.com/css3-flexbox-maintain-image-aspect-ratio.html
 
-const TutorialCard = props => {
+const LandingImage = props => {
   const { imageUrl } = props;
   return (
       <div style={{minWidth: 0}}>
@@ -11,4 +11,4 @@ const TutorialCard = props => {
   );
 };
 
-export default TutorialCard;
+export default LandingImage;
