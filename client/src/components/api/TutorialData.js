@@ -70,19 +70,28 @@ import { App as MaterialUIThemes3 } from '../sistilli-material-ui/6-themes/3-bre
 import { App as MaterialUIThemes4 } from '../sistilli-material-ui/6-themes/4-dark/App'
 import { App as MaterialUIPaper1 }  from '../sistilli-material-ui/7-paper/1-elevation/App'
 import { App as MaterialUIPaper2 }  from '../sistilli-material-ui/7-paper/2-square/App'
-import { App as MaterialUIDark1}  from '../sistilli-material-ui/8-dark/1-light/App'
-import { App as MaterialUIDark2}  from '../sistilli-material-ui/8-dark/2-dark/App'
-import { App as MaterialUIDark3}  from '../sistilli-material-ui/8-dark/3-toggle/App'
-import { App as MaterialUIDark4}  from '../sistilli-material-ui/8-dark/4-green/App'
-import { App as MaterialUITemplateAlbum}  from '../sistilli-material-ui/9-templates/album/App'
-import { App as MaterialUITemplateBlog}  from '../sistilli-material-ui/9-templates/blog/App'
-import { App as MaterialUITemplateCheckout}  from '../sistilli-material-ui/9-templates/checkout/App'
-import { App as MaterialUITemplateDashboard}  from '../sistilli-material-ui/9-templates/dashboard/App'
-import { App as MaterialUITemplatePricing}  from '../sistilli-material-ui/9-templates/pricing/App'
-import { App as MaterialUITemplateSignIn}  from '../sistilli-material-ui/9-templates/sign-in/App'
-import { App as MaterialUITemplateSignInSide}  from '../sistilli-material-ui/9-templates/sign-in-side/App'
-import { App as MaterialUITemplateSignUp}  from '../sistilli-material-ui/9-templates/sign-up/App'
-import { App as MaterialUITemplateStickyFooter}  from '../sistilli-material-ui/9-templates/sticky-footer/App'
+import { App as MaterialUIDark1 }  from '../sistilli-material-ui/8-dark/1-light/App'
+import { App as MaterialUIDark2 }  from '../sistilli-material-ui/8-dark/2-dark/App'
+import { App as MaterialUIDark3 }  from '../sistilli-material-ui/8-dark/3-toggle/App'
+import { App as MaterialUIDark4 }  from '../sistilli-material-ui/8-dark/4-green/App'
+import { App as MaterialUITemplateAlbum }  from '../sistilli-material-ui/9-templates/album/App'
+import { App as MaterialUITemplateBlog }  from '../sistilli-material-ui/9-templates/blog/App'
+import { App as MaterialUITemplateCheckout }  from '../sistilli-material-ui/9-templates/checkout/App'
+import { App as MaterialUITemplateDashboard }  from '../sistilli-material-ui/9-templates/dashboard/App'
+import { App as MaterialUITemplatePricing }  from '../sistilli-material-ui/9-templates/pricing/App'
+import { App as MaterialUITemplateSignIn }  from '../sistilli-material-ui/9-templates/sign-in/App'
+import { App as MaterialUITemplateSignInSide }  from '../sistilli-material-ui/9-templates/sign-in-side/App'
+import { App as MaterialUITemplateSignUp }  from '../sistilli-material-ui/9-templates/sign-up/App'
+import { App as MaterialUITemplateStickyFooter }  from '../sistilli-material-ui/9-templates/sticky-footer/App'
+import { App as MaterialUIGrid1 }  from '../sistilli-material-ui/10-grid/1-start/App'
+import { CenteredGrid as MaterialUIGrid2 }  from '../sistilli-material-ui/10-grid/2-doc-start/App'
+import { CenteredGrid as MaterialUIGrid3 }  from '../sistilli-material-ui/10-grid/3-doc-336/App'
+import { CenteredGrid as MaterialUIGrid4 }  from '../sistilli-material-ui/10-grid/4-doc-337/App'
+import { CenteredGrid as MaterialUIGrid5 }  from '../sistilli-material-ui/10-grid/5-doc-xs-vs-sm/App'
+import { CenteredGrid as MaterialUIGrid6 }  from '../sistilli-material-ui/10-grid/6-spacing/App'
+import { CenteredGrid as MaterialUIGrid7 }  from '../sistilli-material-ui/10-grid/7-direction/App'
+import { CenteredGrid as MaterialUIGrid8 }  from '../sistilli-material-ui/10-grid/8-nested/App'
+import { CenteredGrid as MaterialUIGrid9 }  from '../sistilli-material-ui/10-grid/9-simple-layout/App'
 
 
 const avatarStyle = {
@@ -1949,7 +1958,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-template-7",
-            primaryText: "Sign In Side",
+            primaryText: "Side Sign In",
             secondaryText: "layout",
             refLink: {
               tipText: "youtube",
@@ -2058,6 +2067,195 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUITemplateStickyFooter />
+          },
+        ]
+      },
+      {
+        primaryText: "#10 Grid",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #10: Grid",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=WV6u_6ZNWkQ",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/mui-org/material-ui/docs/src/pages/getting-started/templates",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "The <Grid> component can be a bit tricky.  It's helpful to understand that Material UI bases its grid on the flexbox model.",
+          date: "2020-04-11",
+          author: "Anthony Sistilli",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "12 column layout",
+              bulletText: "Understand how <Grid> allocates space to grid items.",
+            },
+            {
+              bulletPoint: "Grid container versus Grid item",
+              bulletText: "Certain props only apply to one or the other.",
+            },
+            {
+              bulletPoint: "Grid direction",
+              bulletText: '<Grid container direction="row"> versus <Grid container direction="column">',
+            },
+            {
+              bulletPoint: "Spacing and centering",
+              bulletText: "Learn which props will give you what you want.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-grid-1",
+            primaryText: "Starter",
+            secondaryText: "code",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/1-start",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid1 />
+          },
+          {
+            demoKey: "material-ui-grid-2",
+            primaryText: "Sizing",
+            secondaryText: "grid items",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/2-doc-start",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid2 />
+          },
+          {
+            demoKey: "material-ui-grid-3",
+            primaryText: "Sizing",
+            secondaryText: "3 + 3 + 6",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/3-doc-336",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid3 />
+          },
+          {
+            demoKey: "material-ui-grid-4",
+            primaryText: "Wrapping",
+            secondaryText: "3 + 3 + 7",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/4-doc-337",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid4 />
+          },
+          {
+            demoKey: "material-ui-grid-5",
+            primaryText: "Breakpoints",
+            secondaryText: "xs vs sm",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/5-doc-xs-vs-sm",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid5 />
+          },
+          {
+            demoKey: "material-ui-grid-6",
+            primaryText: "Grid",
+            secondaryText: "container spacing",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/6-spacing",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid6 />
+          },
+          {
+            demoKey: "material-ui-grid-7",
+            primaryText: "Grid",
+            secondaryText: "container direction",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/7-direction",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid7 />
+          },
+          {
+            demoKey: "material-ui-grid-8",
+            primaryText: "Nested Grid",
+            secondaryText: "item & container",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/8-nested",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid8 />
+          },
+          {
+            demoKey: "material-ui-grid-9",
+            primaryText: "Layout",
+            secondaryText: "simple page",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/9-simple-layout",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGrid9 />
           },
         ]
       },
