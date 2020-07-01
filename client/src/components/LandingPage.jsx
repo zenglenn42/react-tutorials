@@ -61,16 +61,14 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
                     {LandingData.splashSequenceText}
                 </Typography>
                 <br/>
-                <Typography paragraph variant="h6">
-                    {LandingData.splashSequenceBullets.map((sentence) => {
-                        return (
-                        <Typography variant="h6" style={{marginLeft: "2em"}}>
-                            • {sentence}
-                        </Typography>)
-                    })}
-                </Typography>
+                {LandingData.splashSequenceBullets.map((sentence) => {
+                    return (
+                    <Typography variant="h6" style={{marginLeft: "2em"}}>
+                        • {sentence}
+                    </Typography>)
+                })}
                 <br/>
-                <Grid container direction="column" alignItems="flexStart" spacing={4}>
+                <Grid container direction="column" spacing={4}>
                     {LandingData.splashSequence.map((item) => {
                     return (
                         <>
