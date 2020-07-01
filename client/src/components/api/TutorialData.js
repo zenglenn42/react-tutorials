@@ -2131,11 +2131,11 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-grid-2",
-            primaryText: "Sizing",
-            secondaryText: "grid items",
+            primaryText: "12 column",
+            secondaryText: "containers",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=41",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2151,7 +2151,7 @@ const TutorialData = [
             secondaryText: "3 + 3 + 6",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=208",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2167,7 +2167,7 @@ const TutorialData = [
             secondaryText: "3 + 3 + 7",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=244",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2183,7 +2183,7 @@ const TutorialData = [
             secondaryText: "xs vs sm",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=291",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2199,7 +2199,7 @@ const TutorialData = [
             secondaryText: "container spacing",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=478",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2215,7 +2215,7 @@ const TutorialData = [
             secondaryText: "container direction",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=594",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2231,7 +2231,7 @@ const TutorialData = [
             secondaryText: "item & container",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=675",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2247,7 +2247,7 @@ const TutorialData = [
             secondaryText: "simple page",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/WV6u_6ZNWkQ?t=0",
+              href: "https://youtu.be/WV6u_6ZNWkQ?t=754",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {

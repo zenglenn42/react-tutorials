@@ -71,6 +71,8 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/GsSnfTKn8To/0.jpg)](http://www.youtube.com/watch?v=GsSnfTKn8To "React + Material UI #9: Templates")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/WV6u_6ZNWkQ/0.jpg)](http://www.youtube.com/watch?v=WV6u_6ZNWkQ "React + Material UI #10: Grid")
+
 
 # Developer's Blog
 
