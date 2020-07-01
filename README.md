@@ -73,6 +73,7 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/WV6u_6ZNWkQ/0.jpg)](http://www.youtube.com/watch?v=WV6u_6ZNWkQ "React + Material UI #10: Grid")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/Z9xgsSVJGWk/0.jpg)](http://www.youtube.com/watch?v=Z9xgsSVJGWk "React + Material UI #11: Grid Centering")
 
 # Developer's Blog
 

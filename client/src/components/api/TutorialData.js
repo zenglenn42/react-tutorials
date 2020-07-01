@@ -92,6 +92,13 @@ import { CenteredGrid as MaterialUIGrid6 }  from '../sistilli-material-ui/10-gri
 import { CenteredGrid as MaterialUIGrid7 }  from '../sistilli-material-ui/10-grid/7-direction/App'
 import { CenteredGrid as MaterialUIGrid8 }  from '../sistilli-material-ui/10-grid/8-nested/App'
 import { CenteredGrid as MaterialUIGrid9 }  from '../sistilli-material-ui/10-grid/9-simple-layout/App'
+import { App as MaterialUIGridCenter1 }  from '../sistilli-material-ui/11-grid-centering/1-start/App'
+import { App as MaterialUIGridCenter2}  from '../sistilli-material-ui/11-grid-centering/2-justify/App'
+import { App as MaterialUIGridCenter3}  from '../sistilli-material-ui/11-grid-centering/3-alignItems/App'
+import { App as MaterialUIGridCenter4}  from '../sistilli-material-ui/11-grid-centering/4-justify-column/App'
+import { App as MaterialUIGridCenter5}  from '../sistilli-material-ui/11-grid-centering/5-alignItems-column/App'
+import { App as MaterialUIGridCenter6}  from '../sistilli-material-ui/11-grid-centering/6-practice/App'
+import { App as MaterialUIGridCenter7}  from '../sistilli-material-ui/11-grid-centering/7-justify-w-size/App'
 
 
 const avatarStyle = {
@@ -2071,10 +2078,10 @@ const TutorialData = [
         ]
       },
       {
-        primaryText: "#10 Grid",
+        primaryText: "#10 Grid Layout",
         summary: {
           provider: "Forge Coding",
-          courseTitle: "Material UI #10: Grid",
+          courseTitle: "Material UI #10: Grid Layout",
           demoKey: "summary",
           refLink: {
             tipText: "youtube",
@@ -2083,7 +2090,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/mui-org/material-ui/docs/src/pages/getting-started/templates",  
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid",  
             icon: <GitHubIcon />         
           },
           level: "introductory",
@@ -2256,6 +2263,167 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid9 />
+          },
+        ]
+      },
+      {
+        primaryText: "#11 Grid Centering",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #11: Grid Centering",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=Z9xgsSVJGWk",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "Learn more about Grid spacing within containers and especially centering within grid items.  The key is to understand flexbox semantics.",
+          date: "2020-04-21",
+          author: "Anthony Sistilli",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Control spacing within single major-axis flex row or column",
+              bulletText: "justify='flex-start|center|flex-end|space-between|space-around|space-evenly'",
+            },
+            {
+              bulletPoint: "Control spacing along cross-axis to single flex row or column",
+              bulletText: "alignItems='flex-start|center|flex-end|stretch|baseline'",
+            },
+            {
+              bulletPoint: "Control cross-axis spacing of multiple flex rows or columns",
+              bulletText: "alignContent='..'",
+            },
+            {
+              bulletPoint: "Adding margin gutters to containers",
+              bulletText: "Padding is your friend with breakpoint layouts.",
+            },
+            {
+              bulletPoint: "Center content within an item with textAlign",
+              bulletText: "Why justify='center' doesn't work with breakpoint layouts.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-grid-center-1",
+            primaryText: "Starter",
+            secondaryText: "code",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/1-start/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGridCenter1 />
+          },
+          {
+            demoKey: "material-ui-grid-center-2",
+            primaryText: "justify",
+            secondaryText: "direction='row'",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/2-justify/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGridCenter2 />
+          },
+          {
+            demoKey: "material-ui-grid-center-3",
+            primaryText: "alignItems",
+            secondaryText: "direction='row'",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/3-alignItems/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGridCenter3 />
+          },
+          {
+            demoKey: "material-ui-grid-center-4",
+            primaryText: "justify",
+            secondaryText: "direction='column'",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/4-justify-column/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGridCenter4 />
+          },
+          {
+            demoKey: "material-ui-grid-center-5",
+            primaryText: "alignItems",
+            secondaryText: "direction='column'",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/5-alignItems-column/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGridCenter5 />
+          },
+          {
+            demoKey: "material-ui-grid-center-6",
+            primaryText: "Practice",
+            secondaryText: "with snowflakes",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/6-practice/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGridCenter6 />
+          },
+          {
+            demoKey: "material-ui-grid-center-7",
+            primaryText: "justify",
+            secondaryText: "with xs={#}",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/7-justify-w-size/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIGridCenter7 />
           },
         ]
       },
