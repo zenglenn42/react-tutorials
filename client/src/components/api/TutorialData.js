@@ -2124,7 +2124,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/1-start",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/1-start/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid1 />
@@ -2140,7 +2140,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/2-doc-start",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/2-doc-start/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid2 />
@@ -2156,7 +2156,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/3-doc-336",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/3-doc-336/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid3 />
@@ -2172,7 +2172,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/4-doc-337",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/4-doc-337/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid4 />
@@ -2188,7 +2188,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/5-doc-xs-vs-sm",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/5-doc-xs-vs-sm/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid5 />
@@ -2204,7 +2204,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/6-spacing",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/6-spacing/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid6 />
@@ -2220,7 +2220,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/7-direction",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/7-direction/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid7 />
@@ -2236,7 +2236,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/8-nested",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/8-nested/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid8 />
@@ -2252,7 +2252,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/9-simple-layout",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/9-simple-layout/App.js",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGrid9 />
