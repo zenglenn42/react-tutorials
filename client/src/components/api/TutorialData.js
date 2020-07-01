@@ -2335,7 +2335,7 @@ const TutorialData = [
             secondaryText: "direction='row'",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=78",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2351,7 +2351,7 @@ const TutorialData = [
             secondaryText: "direction='row'",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=272",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2367,7 +2367,7 @@ const TutorialData = [
             secondaryText: "direction='column'",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=358",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2383,7 +2383,7 @@ const TutorialData = [
             secondaryText: "direction='column'",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=358",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2399,7 +2399,7 @@ const TutorialData = [
             secondaryText: "with snowflakes",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=387",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2415,7 +2415,7 @@ const TutorialData = [
             secondaryText: "with xs={#}",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=460",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
