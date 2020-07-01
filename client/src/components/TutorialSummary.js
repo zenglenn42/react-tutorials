@@ -81,7 +81,7 @@ function TutorialSummary(props) {
                                     {avatar}
                                 </Grid>
                                 <Grid item>
-                                    <Typography variant="caption" wrap>{authorNames[i]}</Typography>
+                                    <Typography variant="caption">{authorNames[i]}</Typography>
                                 </Grid>
                             </Grid>
                             )
@@ -132,9 +132,9 @@ function TutorialSummary(props) {
             <Typography paragraph>
                 {props.descText}
             </Typography>
-            <Typography paragraph>
+            <Typography>
                 Features:
-                <List dense="true" component="div" disablePadding>
+                <List dense={true} component="div" disablePadding>
                     {props.features.map((feature) => {
                         return (
                             <ListItem>
