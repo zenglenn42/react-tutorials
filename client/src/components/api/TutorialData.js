@@ -99,7 +99,7 @@ import { App as MaterialUIGridCenter4}  from '../sistilli-material-ui/11-grid-ce
 import { App as MaterialUIGridCenter5}  from '../sistilli-material-ui/11-grid-centering/5-alignItems-column/App'
 import { App as MaterialUIGridCenter6}  from '../sistilli-material-ui/11-grid-centering/6-practice/App'
 import { App as MaterialUIGridCenter7}  from '../sistilli-material-ui/11-grid-centering/7-justify-w-size/App'
-// import { App as MaterialUIDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App'
+import { TemporaryDrawer as MaterialUIDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App-Temporary'
 import { App as MaterialUIDrawer2}  from '../sistilli-material-ui/21-drawer/2-router/App'
 import { App as MaterialUIDrawer3}  from '../sistilli-material-ui/21-drawer/3-permanent/App'
 import { App as MaterialUIDrawer4}  from '../sistilli-material-ui/21-drawer/4-w-item-icons/App'
@@ -2467,32 +2467,36 @@ const TutorialData = [
               bulletPoint: "Learn to alias component names to something else",
               bulletText: "import { Drawer as MUIDrawer } from '@material-ui/core'",
             },
+            {
+              bulletPoint: "Override Drawer's PaperProps",
+              bulletText: "<Drawer PaperProps={{elevation: 4}} />",
+            },
           ],
         },
         snapshots: [
-          // {
-          //   demoKey: "material-ui-drawer-1",
-          //   primaryText: "Doc",
-          //   secondaryText: "traversal",
-          //   refLink: {
-          //     tipText: "youtube",
-          //     href: "https://youtu.be/Z9xgsSVJGWk?t=0",
-          //     icon: <FaYoutube style={{color: "red"}}/>
-          //   },
-          //   codeLink: {
-          //     tipText: "github",
-          //     href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/1-docs/App.js",
-          //     icon: <GitHubIcon />           
-          //   },
-          //   demoComponent: <MaterialUIDrawer1 />
-          // },
+          {
+            demoKey: "material-ui-drawer-1",
+            primaryText: "Docs:",
+            secondaryText: "temporary drawer",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/CjFWbEOcq-Y?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/1-docs/App-Temporary.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDrawer1 />
+          },
           {
             demoKey: "material-ui-drawer-2",
             primaryText: "Router",
             secondaryText: "code",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/CjFWbEOcq-Y?t=622",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2508,7 +2512,7 @@ const TutorialData = [
             secondaryText: "drawer",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/CjFWbEOcq-Y?t=691",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2524,7 +2528,7 @@ const TutorialData = [
             secondaryText: "list items",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/CjFWbEOcq-Y?t=1083",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2540,7 +2544,7 @@ const TutorialData = [
             secondaryText: "integration",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              href: "https://youtu.be/CjFWbEOcq-Y?t=1059",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
