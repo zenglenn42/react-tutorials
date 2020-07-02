@@ -2517,7 +2517,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/3-permanent/App.js",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/3-permanent/Drawer.jsx",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDrawer3 />
@@ -2533,14 +2533,14 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/4-styled/App.js",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/4-w-item-icons/Drawer.jsx",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDrawer4 />
           },
           {
             demoKey: "material-ui-drawer-5",
-            primaryText: "Router",
+            primaryText: "withRouter()",
             secondaryText: "integration",
             refLink: {
               tipText: "youtube",
@@ -2549,7 +2549,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/5-withRouter/App.js",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/5-withRouter/Drawer.jsx",
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDrawer5 />
