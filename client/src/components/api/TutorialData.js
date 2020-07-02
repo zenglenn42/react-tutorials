@@ -99,7 +99,11 @@ import { App as MaterialUIGridCenter4}  from '../sistilli-material-ui/11-grid-ce
 import { App as MaterialUIGridCenter5}  from '../sistilli-material-ui/11-grid-centering/5-alignItems-column/App'
 import { App as MaterialUIGridCenter6}  from '../sistilli-material-ui/11-grid-centering/6-practice/App'
 import { App as MaterialUIGridCenter7}  from '../sistilli-material-ui/11-grid-centering/7-justify-w-size/App'
-
+// import { App as MaterialUIDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App'
+import { App as MaterialUIDrawer2}  from '../sistilli-material-ui/21-drawer/2-router/App'
+import { App as MaterialUIDrawer3}  from '../sistilli-material-ui/21-drawer/3-permanent/App'
+import { App as MaterialUIDrawer4}  from '../sistilli-material-ui/21-drawer/4-w-item-icons/App'
+import { App as MaterialUIDrawer5}  from '../sistilli-material-ui/21-drawer/5-withRouter/App'
 
 const avatarStyle = {
     width: "60px",
@@ -360,7 +364,7 @@ const TutorialData = [
           },
           {
             demoKey: "todo-styled",
-            primaryText: "Todo Styled",
+            primaryText: "Todo",
             secondaryText: "Styled list",
             refLink: {
               tipText: "youtube",
@@ -376,8 +380,8 @@ const TutorialData = [
           },
           {
             demoKey: "todo-w-form",
-            primaryText: "Todo with Form",
-            secondaryText: "Add new items",
+            primaryText: "Todo",
+            secondaryText: "Form: add items",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/mxK8b99iJTg?t=804",
@@ -392,7 +396,7 @@ const TutorialData = [
           },
           {
             demoKey: "todo-w-done",
-            primaryText: "Todo with Done",
+            primaryText: "Todo",
             secondaryText: "Mark done items",
             refLink: {
               tipText: "youtube",
@@ -408,7 +412,7 @@ const TutorialData = [
           },
           {
             demoKey: "todo-w-del",
-            primaryText: "Todo with Delete",
+            primaryText: "Todo",
             secondaryText: "Delete items",
             refLink: {
               tipText: "youtube",
@@ -469,8 +473,8 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "wb-context-simple",
-            primaryText: "Simple state",
-            secondaryText: "Pass state with prop",
+            primaryText: "Simple State:",
+            secondaryText: "Pass as prop",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/XLJN4JfniH4?t=94",
@@ -485,7 +489,7 @@ const TutorialData = [
           },
           {
             demoKey: "wb-context-prop-drilling",
-            primaryText: "Prop drilling",
+            primaryText: "Prop Drilling:",
             secondaryText: "Pass state deeply",
             refLink: {
               tipText: "youtube",
@@ -501,7 +505,7 @@ const TutorialData = [
           },
           {
             demoKey: "wb-simple-context",
-            primaryText: "Read context",
+            primaryText: "Read:",
             secondaryText: "Get state from context",
             refLink: {
               tipText: "youtube",
@@ -517,7 +521,7 @@ const TutorialData = [
           },
           {
             demoKey: "wb-mutate-context",
-            primaryText: "Change context",
+            primaryText: "Change:",
             secondaryText: "Mutate state within context",
             refLink: {
               tipText: "youtube",
@@ -594,8 +598,8 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "ba-router-base",
-            primaryText: "Starter template",
-            secondaryText: "Router-based starter code",
+            primaryText: "Simple",
+            secondaryText: "Router",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/lhMKvyLRWo0",
@@ -610,7 +614,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-read-context-msg",
-            primaryText: "Simple context",
+            primaryText: "Context:",
             secondaryText: "Read string from context",
             refLink: {
               tipText: "youtube",
@@ -626,7 +630,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-store-state",
-            primaryText: "Mutable context",
+            primaryText: "Mutable context:",
             secondaryText: "useState + useContext",
             refLink: {
               tipText: "youtube",
@@ -642,7 +646,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-login-context",
-            primaryText: "Login context",
+            primaryText: "Login context:",
             secondaryText: "Manage user state",
             refLink: {
               tipText: "youtube",
@@ -723,7 +727,7 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "ba-react-router-base",
-            primaryText: "Intro",
+            primaryText: "Introduction:",
             secondaryText: "Starter code",
             refLink: {
               tipText: "youtube",
@@ -739,7 +743,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-react-router-basic-routes",
-            primaryText: "Basic routes",
+            primaryText: "Basic routes:",
             secondaryText: "/ and /about",
             refLink: {
               tipText: "youtube",
@@ -755,7 +759,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-react-router-exact-routes",
-            primaryText: "Exact routes",
+            primaryText: "Exact routes:",
             secondaryText: "<Route exact ..>",
             refLink: {
               tipText: "youtube",
@@ -771,7 +775,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-react-router-switch",
-            primaryText: "Switch",
+            primaryText: "Switch:",
             secondaryText: "render first match",
             refLink: {
               tipText: "youtube",
@@ -788,7 +792,7 @@ const TutorialData = [
           {
             demoKey: "ba-react-router-404",
             primaryText: "404",
-            secondaryText: "detect unknown route",
+            secondaryText: "detect unknown resource",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/110dW3l5GQY?t=270",
@@ -803,8 +807,8 @@ const TutorialData = [
           },
           {
             demoKey: "ba-react-router-link",
-            primaryText: "Change route",
-            secondaryText: "w/ <Link>",
+            primaryText: "Change route:",
+            secondaryText: "<Link to='..'>",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/110dW3l5GQY?t=345",
@@ -819,7 +823,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-react-router-history-push",
-            primaryText: "Change route",
+            primaryText: "Change route:",
             secondaryText: "history.push()",
             refLink: {
               tipText: "youtube",
@@ -835,7 +839,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-react-router-location-prop",
-            primaryText: "Query string",
+            primaryText: "Query string:",
             secondaryText: "location prop",
             refLink: {
               tipText: "youtube",
@@ -851,7 +855,7 @@ const TutorialData = [
           },
           {
             demoKey: "ba-react-router-match-prop",
-            primaryText: "Url params",
+            primaryText: "Url params:",
             secondaryText: "match prop",
             refLink: {
               tipText: "youtube",
@@ -867,8 +871,8 @@ const TutorialData = [
           },
           {
             demoKey: "ba-react-router-with-router",
-            primaryText: "withRouter hoc",
-            secondaryText: "share router props",
+            primaryText: "withRouter()",
+            secondaryText: "Share router props",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/110dW3l5GQY?t=849",
@@ -977,7 +981,7 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-intro-1",
-            primaryText: "Buttons",
+            primaryText: "Buttons:",
             secondaryText: "color & variant",
             refLink: {
               tipText: "youtube",
@@ -993,7 +997,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-intro-2",
-            primaryText: "Themes",
+            primaryText: "Themes:",
             secondaryText: "Override colors",
             refLink: {
               tipText: "youtube",
@@ -1009,7 +1013,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-intro-3",
-            primaryText: "Typography",
+            primaryText: "Typography:",
             secondaryText: "Text styling",
             refLink: {
               tipText: "youtube",
@@ -1025,7 +1029,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-intro-4",
-            primaryText: "makeStyles hook",
+            primaryText: "makeStyles:",
             secondaryText: "Override via className",
             refLink: {
               tipText: "youtube",
@@ -1086,8 +1090,8 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-ux-1",
-            primaryText: "Starter code",
-            secondaryText: "Skeleton app",
+            primaryText: "Starter code:",
+            secondaryText: "skeleton app",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/tKzSnjWPtEw?t=0",
@@ -1102,8 +1106,8 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-ux-2",
-            primaryText: "App layout",
-            secondaryText: "Using <Grid>",
+            primaryText: "App layout:",
+            secondaryText: "using <Grid>",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/tKzSnjWPtEw?t=342",
@@ -1134,7 +1138,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-ux-4",
-            primaryText: "Add header",
+            primaryText: "Add header:",
             secondaryText: "<AppBar>",
             refLink: {
               tipText: "youtube",
@@ -1150,7 +1154,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-ux-5",
-            primaryText: "Toolbar",
+            primaryText: "Toolbar:",
             secondaryText: "flex w/ makeStyles",
             refLink: {
               tipText: "youtube",
@@ -1166,7 +1170,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-ux-6",
-            primaryText: "Content",
+            primaryText: "Content:",
             secondaryText: "simple card",
             refLink: {
               tipText: "youtube",
@@ -1198,7 +1202,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-ux-8",
-            primaryText: "Content card",
+            primaryText: "Content card:",
             secondaryText: "buildout",
             refLink: {
               tipText: "youtube",
@@ -1214,7 +1218,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-ux-9",
-            primaryText: "Catalog",
+            primaryText: "Products:",
             secondaryText: "data-driven",
             refLink: {
               tipText: "youtube",
@@ -1279,8 +1283,8 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-useStyles-1",
-            primaryText: "Starter code",
-            secondaryText: "Skeleton app",
+            primaryText: "Starter code:",
+            secondaryText: "skeleton app",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/k_AN49fA9g0?t=0",
@@ -1295,7 +1299,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-makeStyles-2",
-            primaryText: "makeStyles",
+            primaryText: "makeStyles:",
             secondaryText: "Override button style",
             refLink: {
               tipText: "youtube",
@@ -1311,7 +1315,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-makeStyles-3",
-            primaryText: "makeStyles",
+            primaryText: "makeStyles:",
             secondaryText: "Override text style",
             refLink: {
               tipText: "youtube",
@@ -1327,7 +1331,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-makeStyles-4",
-            primaryText: "useStyles(props)",
+            primaryText: "useStyles(props):",
             secondaryText: "Conditional overrides",
             refLink: {
               tipText: "youtube",
@@ -1343,7 +1347,7 @@ const TutorialData = [
           },   
           {
             demoKey: "material-ui-makeStyles-5",
-            primaryText: "useStyles(props) multi",
+            primaryText: "useStyles(props) multi:",
             secondaryText: "Conditional overrides",
             refLink: {
               tipText: "youtube",
@@ -1359,7 +1363,7 @@ const TutorialData = [
           }, 
           {
             demoKey: "material-ui-makeStyles-6",
-            primaryText: "makeStyles(theme => (..))",
+            primaryText: "makeStyles(theme => (..)):",
             secondaryText: "Breakpoint override",
             refLink: {
               tipText: "youtube",
@@ -1375,7 +1379,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-makeStyles-7",
-            primaryText: "Advanced",
+            primaryText: "Advanced:",
             secondaryText: "props & theme",
             refLink: {
               tipText: "youtube",
@@ -1391,7 +1395,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-makeStyles-8",
-            primaryText: "Multiclass style",
+            primaryText: "Multiclass style:",
             secondaryText: "clsx pkg",
             refLink: {
               tipText: "youtube",
@@ -1444,8 +1448,8 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-button-1",
-            primaryText: "Starter code",
-            secondaryText: "Skeleton app",
+            primaryText: "Starter code:",
+            secondaryText: "skeleton app",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/ewq0UgnQo9E?t=0",
@@ -1460,7 +1464,7 @@ const TutorialData = [
           },  
           {
             demoKey: "material-ui-button-2",
-            primaryText: "Button docs",
+            primaryText: "Button docs:",
             secondaryText: "survey",
             refLink: {
               tipText: "youtube",
@@ -1476,7 +1480,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-button-3",
-            primaryText: "Icon",
+            primaryText: "Icon:",
             secondaryText: "<IconButton>",
             refLink: {
               tipText: "youtube",
@@ -1529,8 +1533,8 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-typography-1",
-            primaryText: "Props",
-            secondaryText: "",
+            primaryText: "Typography",
+            secondaryText: "props",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/OvPrUQ3gPtw?t=0",
@@ -1545,7 +1549,7 @@ const TutorialData = [
           }, 
           {
             demoKey: "material-ui-typography-2",
-            primaryText: "Override",
+            primaryText: "Override:",
             secondaryText: "style & css class",
             refLink: {
               tipText: "youtube",
@@ -1561,7 +1565,7 @@ const TutorialData = [
           },    
           {
             demoKey: "material-ui-typography-3",
-            primaryText: "Override",
+            primaryText: "Override:",
             secondaryText: "theme",
             refLink: {
               tipText: "youtube",
@@ -1577,7 +1581,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-typography-4",
-            primaryText: "Override",
+            primaryText: "Override:",
             secondaryText: "theme & css class",
             refLink: {
               tipText: "youtube",
@@ -1642,8 +1646,8 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-themes-1",
-            primaryText: "Intro",
-            secondaryText: "Essentials",
+            primaryText: "Intro:",
+            secondaryText: "essentials",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/Q4o0GmfNpJc?t=0",
@@ -1658,7 +1662,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-themes-2",
-            primaryText: "createMuiTheme",
+            primaryText: "createMuiTheme:",
             secondaryText: "new theme",
             refLink: {
               tipText: "youtube",
@@ -1674,7 +1678,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-themes-3",
-            primaryText: "Breakpoint",
+            primaryText: "Breakpoint:",
             secondaryText: "background color",
             refLink: {
               tipText: "youtube",
@@ -1739,7 +1743,7 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-paper-1",
-            primaryText: "Props",
+            primaryText: "Props:",
             secondaryText: "elevation",
             refLink: {
               tipText: "youtube",
@@ -1755,7 +1759,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-paper-2",
-            primaryText: "Props",
+            primaryText: "Props:",
             secondaryText: "square",
             refLink: {
               tipText: "youtube",
@@ -1808,7 +1812,7 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-dark-1",
-            primaryText: "Start",
+            primaryText: "Start:",
             secondaryText: "light mode",
             refLink: {
               tipText: "youtube",
@@ -1824,7 +1828,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-dark-2",
-            primaryText: "Dark mode",
+            primaryText: "Dark mode:",
             secondaryText: "w/ palette",
             refLink: {
               tipText: "youtube",
@@ -1840,7 +1844,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-dark-3",
-            primaryText: "Toggle",
+            primaryText: "Toggle:",
             secondaryText: "light & dark",
             refLink: {
               tipText: "youtube",
@@ -1856,7 +1860,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-dark-4",
-            primaryText: "Toggle",
+            primaryText: "Toggle:",
             secondaryText: "green & dark",
             refLink: {
               tipText: "youtube",
@@ -2154,7 +2158,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-grid-3",
-            primaryText: "Sizing",
+            primaryText: "Sizing:",
             secondaryText: "3 + 3 + 6",
             refLink: {
               tipText: "youtube",
@@ -2170,7 +2174,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-grid-4",
-            primaryText: "Wrapping",
+            primaryText: "Wrapping:",
             secondaryText: "3 + 3 + 7",
             refLink: {
               tipText: "youtube",
@@ -2186,8 +2190,8 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-grid-5",
-            primaryText: "Breakpoints",
-            secondaryText: "xs vs sm",
+            primaryText: "Breakpoints:",
+            secondaryText: "xs vs sm vs lg",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/WV6u_6ZNWkQ?t=291",
@@ -2202,7 +2206,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-grid-6",
-            primaryText: "Grid",
+            primaryText: "Grid:",
             secondaryText: "container spacing",
             refLink: {
               tipText: "youtube",
@@ -2218,7 +2222,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-grid-7",
-            primaryText: "Grid",
+            primaryText: "Grid:",
             secondaryText: "container direction",
             refLink: {
               tipText: "youtube",
@@ -2234,7 +2238,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-grid-8",
-            primaryText: "Nested Grid",
+            primaryText: "Nested Grid:",
             secondaryText: "item & container",
             refLink: {
               tipText: "youtube",
@@ -2250,7 +2254,7 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-grid-9",
-            primaryText: "Layout",
+            primaryText: "Layout:",
             secondaryText: "simple page",
             refLink: {
               tipText: "youtube",
@@ -2424,6 +2428,127 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIGridCenter7 />
+          },
+        ]
+      },
+      {
+        primaryText: "#21 Drawer + Router",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #21: Drawer + Router",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=CjFWbEOcq-Y",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer",  
+            icon: <GitHubIcon />         
+          },
+          level: "introductory",
+          descText: "The drawer component is indispensible and comes in 3 variants.  In this tutorial, the focus in on the 'permanent' variant along with very useful React Router integration.",
+          date: "2020-06-06",
+          author: "Anthony Sistilli",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Learn key props",
+              bulletText: "variant, anchor, open",
+            },
+            {
+              bulletPoint: "Integrate React Router actions with Drawer",
+              bulletText: "Trigger routes with drawer clicks.",
+            },
+            {
+              bulletPoint: "Learn to alias component names to something else",
+              bulletText: "import { Drawer as MUIDrawer } from '@material-ui/core'",
+            },
+          ],
+        },
+        snapshots: [
+          // {
+          //   demoKey: "material-ui-drawer-1",
+          //   primaryText: "Doc",
+          //   secondaryText: "traversal",
+          //   refLink: {
+          //     tipText: "youtube",
+          //     href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+          //     icon: <FaYoutube style={{color: "red"}}/>
+          //   },
+          //   codeLink: {
+          //     tipText: "github",
+          //     href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/1-docs/App.js",
+          //     icon: <GitHubIcon />           
+          //   },
+          //   demoComponent: <MaterialUIDrawer1 />
+          // },
+          {
+            demoKey: "material-ui-drawer-2",
+            primaryText: "Router",
+            secondaryText: "code",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/2-router/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDrawer2 />
+          },
+          {
+            demoKey: "material-ui-drawer-3",
+            primaryText: "Permanent",
+            secondaryText: "drawer",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/3-permanent/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDrawer3 />
+          },
+          {
+            demoKey: "material-ui-drawer-4",
+            primaryText: "Styled",
+            secondaryText: "list items",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/4-styled/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDrawer4 />
+          },
+          {
+            demoKey: "material-ui-drawer-5",
+            primaryText: "Router",
+            secondaryText: "integration",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/Z9xgsSVJGWk?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/5-withRouter/App.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDrawer5 />
           },
         ]
       },
