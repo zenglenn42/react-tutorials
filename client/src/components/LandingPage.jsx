@@ -33,7 +33,7 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
                 <hr style={{color: "rgba(128, 128, 128, 0.2)"}} />
 
                 <br/>
-                <Typography variant="h4" gutterBottom> 
+                <Typography variant="h5" gutterBottom> 
                     {LandingData.tutorialCardHeader}
                 </Typography>
                 <br/>
@@ -53,7 +53,7 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
                 <br/>
                 <hr style={{color: "rgba(128, 128, 128, 0.2)"}} />
                 <br/>
-                <Typography variant="h4">
+                <Typography variant="h5">
                     {LandingData.splashSequenceHeader}
                 </Typography>
                 <br/><br/>
@@ -84,7 +84,7 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
                 <br/>
                 <hr style={{color: "rgba(128, 128, 128, 0.2)"}} />
                 <br/>
-                <Typography variant="h4">
+                <Typography variant="h5">
                     {LandingData.wrapupHeader}
                 </Typography>
                 <br/>

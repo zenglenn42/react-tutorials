@@ -6,7 +6,7 @@ const LandingData = {
         "Follow a guided sequence or drill down to just the content of interest. Quickly determine if a given tutorial meets your needs."
     ],
     getStartedText: "Get Started",
-    tutorialCardHeader: "Select",
+    tutorialCardHeader: "1. Select",
     tutorialCardText: "Select from a curated list of popular tutorials thoughtfully created by experienced developers and guides on key subjects.",
     tutorialCardImages: [
         "/assets/img/landing/Component15.png",
@@ -15,7 +15,7 @@ const LandingData = {
         "/assets/img/landing/Component16.png",
         "/assets/img/landing/Component12.png",
     ],
-    splashSequenceHeader: "Navigate",
+    splashSequenceHeader: "2. Navigate",
     splashSequenceText:
         "Chart your own course through the material depending upon your learning style and needs:",
     splashSequenceBullets: [
@@ -49,7 +49,7 @@ const LandingData = {
             image: "/assets/img/landing/Component20.png",
         },
     ],
-    wrapupHeader: "Arrive",
+    wrapupHeader: "3. Arrive",
     wrapupText: "Reach your destination efficiently and start using your newly acquired knowledge.",
     wrapupImage: "/assets/img/landing/Arrive.png"
 }
