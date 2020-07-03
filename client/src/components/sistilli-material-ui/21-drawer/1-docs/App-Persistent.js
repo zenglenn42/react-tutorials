@@ -45,14 +45,16 @@ const useStyles = makeStyles((theme) => ({
   // },
   flexDiv: {
     display: 'flex',
+
+    // Account for vertically compact appbar for small screens.
+    // 64px -> 48px height.
+    marginTop: theme.spacing(2),
+    [theme.breakpoints.up('sm')]: { // for larger devices
+      marginTop: theme.spacing(0),
+    },
   },
-  // appBar: {
-  //   transition: theme.transitions.create(['margin', 'width'], {
-  //     easing: theme.transitions.easing.sharp,
-  //     duration: theme.transitions.duration.leavingScreen,
-  //   }),
-  // },
   appBar: {
+    // adding zIndex bump to play nicely with tutorial container.
     zIndex: theme.zIndex.drawer + 1,
     transition: theme.transitions.create(['margin', 'width'], {
       easing: theme.transitions.easing.sharp,
@@ -96,12 +98,11 @@ const useStyles = makeStyles((theme) => ({
   },
   drawerPaperClose: {
     overflowX: 'hidden',
-    visbility: 'visible',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    width: 0
+    width: 0,
     // width: theme.spacing(7),
     // [theme.breakpoints.up('sm')]: {
     //   width: theme.spacing(9),
@@ -114,10 +115,18 @@ const useStyles = makeStyles((theme) => ({
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
     justifyContent: 'flex-end',
+    // Account for vertically compact appbar for small screens.
+    // 64px -> 48px height.
+    minHeight: theme.spacing(6),
   },
   content: {
     flexGrow: 1,
-    padding: theme.spacing(3),
+    // Account for vertically compact appbar for small screens.
+    // 64px -> 48px height.
+    padding: theme.spacing(0, 2),
+    [theme.breakpoints.up('sm')]: {
+      padding: theme.spacing(2, 2),
+    },
     transition: theme.transitions.create('margin', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,

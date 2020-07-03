@@ -40,7 +40,14 @@ const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
   flexDiv: {
-    display: "flex"
+    display: 'flex',
+
+    // Account for vertically compact appbar for small screens.
+    // 64px -> 48px height.
+    marginTop: theme.spacing(2),
+    [theme.breakpoints.up('sm')]: { // for larger devices
+      marginTop: theme.spacing(0),
+    },
   },
   appBar: {
     zIndex: theme.zIndex.drawer + 1,
@@ -66,6 +73,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'flex-end',
     padding: theme.spacing(0, 1),
     ...theme.mixins.toolbar,
+    // Account for vertically compact appbar for small screens.
+    // 64px -> 48px height.
+    minHeight: theme.spacing(6),
   },
   menuButton: {
     marginRight: 36,
@@ -84,8 +94,8 @@ const useStyles = makeStyles((theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    marginTop: -theme.spacing(8),
     zIndex: theme.zIndex.drawer,
+    marginTop: -theme.spacing(8),
   },
   drawerPaperClose: {
     overflowX: 'hidden',
@@ -103,6 +113,12 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     height: '100vh',
     overflow: 'auto',
+    // Account for vertically compact appbar for small screens.
+    // 64px -> 48px height.  Maybe appBarSpacer is supposed to do this?
+    padding: theme.spacing(0, 2),
+    [theme.breakpoints.up('sm')]: {
+      padding: theme.spacing(2, 2),
+    },
   },
   container: {
     paddingTop: theme.spacing(4),
