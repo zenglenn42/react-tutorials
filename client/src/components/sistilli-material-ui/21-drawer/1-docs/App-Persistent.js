@@ -35,7 +35,8 @@ const drawerWidth = 240;
 // appbar.
 //
 // Sadly, I lost the content animation when opening or closing the drawer. :-/  
-// But functionally, it's behaving canonically.
+// But functionally, it's behaving canonically.  I need to understand the
+// toobar mixins idiom.
 //
 // I may revisit the animation regression.
 
@@ -103,6 +104,10 @@ const useStyles = makeStyles((theme) => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     width: 0,
+    // NB: If you make the drawer permanent and uncomment this
+    //     then you get a close option that shows just the
+    //     list item icons ... compact version of open drawer.
+    //
     // width: theme.spacing(7),
     // [theme.breakpoints.up('sm')]: {
     //   width: theme.spacing(9),
