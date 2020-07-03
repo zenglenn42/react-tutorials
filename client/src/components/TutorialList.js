@@ -8,6 +8,7 @@ import Collapse from '@material-ui/core/Collapse';
 // import ExpandLess from '@material-ui/icons/ExpandLess';
 // import ExpandMore from '@material-ui/icons/ExpandMore';
 import TutorialData from './api/TutorialData'
+import { Divider } from '@material-ui/core';
 
 const tutorialData = TutorialData
 
@@ -184,6 +185,7 @@ export default function TutorialList(props) {
       <ListSubheader  component="div" id="nested-list-subheader">
         Select a tutorial ...
       </ListSubheader>
+      <Divider />
 
       { 
         tutorialData.map((tutorial) => {
