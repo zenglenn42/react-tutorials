@@ -100,6 +100,7 @@ import { App as MaterialUIGridCenter5}  from '../sistilli-material-ui/11-grid-ce
 import { App as MaterialUIGridCenter6}  from '../sistilli-material-ui/11-grid-centering/6-practice/App'
 import { App as MaterialUIGridCenter7}  from '../sistilli-material-ui/11-grid-centering/7-justify-w-size/App'
 import { TemporaryDrawer as MaterialUIDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App-Temporary'
+import { PersistentDrawerLeft as MaterialUIPersistentDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App-Persistent'
 import { App as MaterialUIDrawer2}  from '../sistilli-material-ui/21-drawer/2-router/App'
 import { App as MaterialUIDrawer3}  from '../sistilli-material-ui/21-drawer/3-permanent/App'
 import { App as MaterialUIDrawer4}  from '../sistilli-material-ui/21-drawer/4-w-item-icons/App'
@@ -2448,7 +2449,7 @@ const TutorialData = [
             icon: <CodeIcon />         
           },
           level: "introductory",
-          descText: "The drawer component is indispensible and comes in 3 variants.  In this tutorial, the focus in on the 'permanent' variant along with very useful React Router integration.",
+          descText: "The drawer component is indispensible and comes in 3 variants, temporary, persistent, and permanent.  In this tutorial, the focus in on the permanent variant along with very useful React Router integration.",
           date: "2020-06-06",
           author: "Anthony Sistilli",
           avatars: [
@@ -2476,7 +2477,7 @@ const TutorialData = [
         snapshots: [
           {
             demoKey: "material-ui-drawer-1",
-            primaryText: "Docs:",
+            primaryText: "Variant:",
             secondaryText: "temporary drawer",
             refLink: {
               tipText: "youtube",
@@ -2489,6 +2490,22 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDrawer1 />
+          },
+          {
+            demoKey: "material-ui-persistent-drawer-1",
+            primaryText: "Variant:",
+            secondaryText: "persistent drawer",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/CjFWbEOcq-Y?t=144",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/1-docs/App-Persistent.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIPersistentDrawer1 />
           },
           {
             demoKey: "material-ui-drawer-2",
