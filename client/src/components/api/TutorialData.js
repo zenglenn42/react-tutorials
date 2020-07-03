@@ -2449,7 +2449,7 @@ const TutorialData = [
             icon: <CodeIcon />         
           },
           level: "introductory",
-          descText: "The drawer component is indispensible and comes in 3 variants, temporary, persistent, and permanent.  In this tutorial, the focus in on the permanent variant along with very useful React Router integration.",
+          descText: "The drawer component is indispensible and comes in 3 variants, temporary, persistent, and permanent.  In this tutorial, the focus is on the permanent variant along with very useful React Router integration.",
           date: "2020-06-06",
           author: "Anthony Sistilli",
           avatars: [
