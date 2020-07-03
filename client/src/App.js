@@ -24,7 +24,6 @@ import LandingPage from './components/LandingPage';
 import TutorialContent from './components/TutorialContent';
 import { useStyles } from './useStyles';
 
-
 function getMainContent(mainContent, classes, handleDrawerOpen) {
     let content = null
     
@@ -156,13 +155,12 @@ export default function PersistentDrawerLeft(props) {
           <TutorialList setMainContent={setMainContent} closeButton={drawerCloseButton} />
         </div>
       </Drawer>
-
+      <div className={classes.appBarSpacer} />
       <main 
         className={clsx(classes.content, {
           [classes.contentShift]: open,
         })}
       >
-        <div className={classes.appBarSpacer}/>
         {getMainContent(mainContent, classes, handleDrawerOpen)}
       </main>
       <div className={classes.grow}/>
