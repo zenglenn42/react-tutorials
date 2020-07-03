@@ -162,7 +162,7 @@ export default function PersistentDrawerLeft(props) {
           [classes.contentShift]: open,
         })}
       >
-        <div className={classes.contentHeader}/>
+        <div className={classes.appBarSpacer}/>
         {getMainContent(mainContent, classes, handleDrawerOpen)}
       </main>
       <div className={classes.grow}/>

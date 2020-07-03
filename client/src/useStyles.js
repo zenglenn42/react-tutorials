@@ -46,17 +46,15 @@ export const useStyles = makeStyles((theme) => ({
       display: 'flex',
       alignItems: 'center',
       padding: theme.spacing(0, 2),
-      // paddingLeft: theme.spacing(4),
       // necessary for content to be below app bar
       ...theme.mixins.toolbar,
       justifyContent: 'space-between',
       backgroundColor: theme.palette.primary.light
     },
-    contentHeader: {
+    appBarSpacer: {
       display: 'flex',
       alignItems: 'center',
       padding: theme.spacing(0, 2),
-      // paddingLeft: theme.spacing(4),
       // necessary for content to be below app bar
       ...theme.mixins.toolbar,
       justifyContent: 'space-between',
