@@ -7,7 +7,7 @@ const LandingData = {
     ],
     getStartedText: "Get Started",
     tutorialCardHeader: "1. Select",
-    tutorialCardText: "Select from a curated list of popular tutorials thoughtfully created by experienced developers and guides on key subjects.",
+    tutorialCardText: "Select from a curated list of popular tutorials created by experienced developers and guides on key subjects.",
     tutorialCardImages: [
         "/assets/img/landing/Component15.png",
         "/assets/img/landing/Component30.png",
