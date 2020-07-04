@@ -87,7 +87,7 @@ I thought it would be nice to oranize my solutions and make them shareable.  I c
 
 ## Bootstrap a minimal Heroku-ready express/react stack 
 
-I want a fairly minimal stack for now.  Maybe just express for the web server and definitely react for the front end (since that's the whole point of these tutorials) and something Heroku-ready would be nice.
+I want a fairly minimal stack for now.  Maybe just express for the web server and definitely react for the front end (since that's the whole point of these tutorials) and something Heroku-ready would be nice.  I'm not really using the backend at the moment, but that will change as the tutorials get more sophisticated.
 
 The fu in [this blog](https://daveceddia.com/deploy-react-express-app-heroku/) from Dave Ceddia fits the bill!
 
