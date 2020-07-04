@@ -54,6 +54,18 @@ const useStyles = makeStyles((theme) => ({
     },
     divider: {
         margin: theme.spacing(2, 0)
+    },
+    showOnBigScreens: {
+        display: "none",
+        [theme.breakpoints.up("sm")]: {
+            display: "inherit"
+        }
+    },
+    showOnSmallScreens: {
+        display: "inherit",
+        [theme.breakpoints.up("sm")]: {
+            display: "none"
+        }
     }
 }))
 
@@ -90,24 +102,38 @@ const LandingPage = ({classes, handleDrawerOpen}) => {
                 </Button>
                 <Divider className={styles.divider} />
 
+                <div className={styles.showOnSmallScreens}>
+                    <Grid container direction="row" wrap="nowrap" spacing={2} >
+                        {LandingData.tutorialCardImages.map((imgSrc) => {
+                            return (
+                            <Grid item xs={12} sm={12} md={4} xl={4}>
+                                <LandingImage imageUrl={imgSrc} />
+                            </Grid>
+                            )
+                        })}
+                    </Grid>
+                    <Divider className={styles.divider} />
+                </div>
                 
                 <Typography className={styles.bigText} variant={bigText} gutterBottom > 
                     {LandingData.tutorialCardHeader}
                 </Typography>
-                
-                <Grid container direction="row" wrap="nowrap" spacing={2} >
-                    {LandingData.tutorialCardImages.map((imgSrc) => {
-                        return (
-                        <Grid item xs={12} sm={12} md={4} xl={4}>
-                            <LandingImage imageUrl={imgSrc} />
-                        </Grid>
-                        )
-                    })}
-                </Grid>
 
                 <Typography paragraph className={styles.bodyText} variant={bodyText}>
                     {LandingData.tutorialCardText}
                 </Typography>
+
+                <div className={styles.showOnBigScreens}>
+                    <Grid container direction="row" wrap="nowrap" spacing={2} >
+                        {LandingData.tutorialCardImages.map((imgSrc) => {
+                            return (
+                            <Grid item xs={12} sm={12} md={4} xl={4}>
+                                <LandingImage imageUrl={imgSrc} />
+                            </Grid>
+                            )
+                        })}
+                    </Grid>
+                </div>
                 
                 <Divider className={styles.divider} />
                 

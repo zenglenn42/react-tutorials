@@ -1,5 +1,7 @@
 # react-tutorials [(demo)](https://react-tutorials.herokuapp.com/)
 
+This project is a vehicle for incrementally _applying_ the knowledge I gain from the React tutorials I curate while creating something of value for the community.
+
 Let's disrupt the youtube video tutorial scene a bit. :-)
 
 I'm grooving on React these days and want a cool place to collect my learning experience from various tutorials I complete.  There's a ton of good instructional content online, but I want something that allows me to snapshot the journey at key points in the instruction.  I come up with this:
@@ -543,3 +545,87 @@ Oh, I made liberal use of ```<Grid>``` which I gleaned from Anthony Sistilli's M
 ```
 
 I still have have hair, thanks to this code.
+
+## Let's make the landing page more responsive
+
+The landing page is clearly optimized for desktop.  On smaller screens, the initial content is very text-centric.  
+
+I want there to be some clear indicator that if you continue to scroll down, you'll find more of the narrative.  I'd like there to be more visual interest as well to entice people to explore and dwell.
+
+So I come up with this, using some of the breakpoint fu I learned from Anothny Sistilli's Material-UI series.
+
+![alt](docs/img/ui-responsive-comparison.png)
+
+Margins have been trimmed down for mobile (creating space for tutorial card images) and the button width is now full screen for smaller devices.
+
+Here's the styling and code that makes this possible:
+
+Basically the grid of tutorial cards is replicated twice, once above the fold for phones and again below the '1. Select' text on larger display geometries.  The duplicated grids are wrappered in divs with mutually exclusive ```dislay: none``` settings that leverage Material UI's ```theme.breakpoints.up("sm")``` function for returning media queries that apply to browser windows larger that 600px wide.
+
+```
+  showOnBigScreens: {
+      display: "none",
+      [theme.breakpoints.up("sm")]: {
+          display: "inherit"
+      }
+  },
+  showOnSmallScreens: {
+      display: "inherit",
+      [theme.breakpoints.up("sm")]: {
+          display: "none"
+      }
+  }
+```
+
+```
+  <div className={styles.showOnSmallScreens}>
+      <Grid container direction="row" wrap="nowrap" spacing={2} >
+          {LandingData.tutorialCardImages.map((imgSrc) => {
+              return (
+              <Grid item xs={12} sm={12} md={4} xl={4}>
+                  <LandingImage imageUrl={imgSrc} />
+              </Grid>
+              )
+          })}
+      </Grid>
+      <Divider className={styles.divider} />
+  </div>
+  
+  <Typography className={styles.bigText} variant={bigText} gutterBottom > 
+      {LandingData.tutorialCardHeader}
+  </Typography>
+
+  <Typography paragraph className={styles.bodyText} variant={bodyText}>
+      {LandingData.tutorialCardText}
+  </Typography>
+
+  <div className={styles.showOnBigScreens}>
+      <Grid container direction="row" wrap="nowrap" spacing={2} >
+          {LandingData.tutorialCardImages.map((imgSrc) => {
+              return (
+              <Grid item xs={12} sm={12} md={4} xl={4}>
+                  <LandingImage imageUrl={imgSrc} />
+              </Grid>
+              )
+          })}
+      </Grid>
+  </div>
+```
+
+## The road ahead ... better UX on mobile.  Better data model.
+
+The landing page is just a small taste of what's to come.  After completing a tutorial on Material UI's Drawer component, I realize I'm seriously abusing my users with a persistent drawer on mobile.  I probably should be using a temporary drawer or swipeable variant that disappears easily after item selection.  Plus, a left-anchored slideout on a portrait-oriented phone is just /bad/ because so much content space is occluded when the drawer is open. You can't really enjoy the experience of rapid item selection / surfing and simultaneous content viewing.  A bottom-anchored drawer that covers only 50% of the screen when open versus side-anchored drawer that takes up 80% might be a better option now that I know more about breakpoint styling.  Even in landscape mode, a right-slideout, for example, might be a better option for left-to-right languages since the content window will still have more intelligible snippets that keep the user cognitively anchored to the partially occluded screen space.
+
+I've got some ideas on how to fix all this, but it's gonna require me to refactor my data model for better traversal, searching, and sorting.  The model could also use some normalization.  I'd need to do this work for fullstack anyway and this gets me closer to that while improving UX (once you see what I have in mind :-).
+
+Also, I need to get better about list item keys.  I'm seeing alot of angry red in my console log around ```missing keys```. I'm probably hurting performance to boot.
+
+Initially, I just used the item text as both a key and the ```primaryText``` of the list element's prop.  But I open myself to key collision since two different tutorials may cover the same topic and I won't have the latitude to use the same descriptor for both.
+
+Also the semantics of the model should not get conflated with presentation issues.  In a non-Material UI world, ```<ListItemText primary={primaryText} />``` might not be a thing.  So if I want to target some other frontend library, I should stick to more generic naming in my data model.
+
+Oh, did I mention I want to get React Router in this thing?  That way, people can easily bookmark their favorite tutorials and users will get better feedback on where they are in the tutorial hierarchy as they navigate around.
+
+Also, I want this thing to start driving __more__ __traffic__ _back_ to the social media sites of the tutorial authors to show them some reciprocal love and improve their ad numbers.  That's already a possibility, to an extent, with all the youtube links I embed, but this could be scaled up bit.
+
+This little project has become exactly what I've hoped for ... a vehicle for incrementally _applying_ the knowledge I gain from the tutorials I curate while creating something of value for the community. ♥️
