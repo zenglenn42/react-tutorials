@@ -1,6 +1,6 @@
 # react-tutorials [(demo)](https://react-tutorials.herokuapp.com/)
 
-This project is a vehicle for incrementally _applying_ the knowledge I gain from the React tutorials I curate while creating something of value for the community.
+This project is a vehicle for incrementally applying the knowledge I gain from the React tutorials I curate while creating something of value for the community.
 
 Let's disrupt the youtube video tutorial scene a bit. :-)
 
