@@ -9,7 +9,7 @@ const imageUrl="/assets/img/sistilli-materialui/paella.jpg"
 export const App = () => {
     return (
         <>
-            <Grid container spacing={3} justify="space-around" style={{padding: "5px 0"}}>
+            <Grid container spacing={3} justify="space-around" style={{padding: "8px 0"}}>
                 <Grid item >
                     <RecipeReviewCard imageUrl={imageUrl} elevation={3}/>            
                 </Grid>

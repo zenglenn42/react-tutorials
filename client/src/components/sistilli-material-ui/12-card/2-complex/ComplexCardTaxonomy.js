@@ -15,13 +15,13 @@ const useStyles = makeStyles({
   root: {
     display: "flex",
     flexDirection: "column",
-    minHeight: 442,
-    minWidth: 345,
-    maxWidth: 345,
+    minHeight: 435,
+    minWidth: 290,
+    maxWidth: 290,
   },
   header: {
     backgroundColor: grey[200],
-    minHeight: "72.0333px"
+    minHeight: "92.05px"
   },
   media: {
     height: 0,

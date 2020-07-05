@@ -19,12 +19,12 @@ import { Divider } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 345,
-    minWidth: 345,
-    minHeight: 442,
+    minHeight: 435,
+    minWidth: 290,
+    maxWidth: 290,
   },
   header: {
-    minWidth: "345px"
+    minWidth: "295px"
   },
   avatar: {
     backgroundColor: red[500],
