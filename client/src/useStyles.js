@@ -91,6 +91,7 @@ export const useStyles = makeStyles((theme) => ({
       overflowY: "scroll"
     },
     scrollableListX: {
-      overflowX: "scroll"
+      overflowX: "scroll",
+      overflowY: "hidden"
     }
   }));
