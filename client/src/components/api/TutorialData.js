@@ -110,6 +110,8 @@ import { App as AsHooks2 }  from '../sistilli-hooks/2-hooks-version/App'
 import { App as AsHooks3 }  from '../sistilli-hooks/3-lifecycle/App'
 import { App as AsHooks4 }  from '../sistilli-hooks/4-useEffect/App'
 import { App as AsHooks5 }  from '../sistilli-hooks/5-useEffect-2/App'
+import { App as MaterialUICard1 }  from '../sistilli-material-ui/12-card/1-simple/App'
+import { App as MaterialUICard2 }  from '../sistilli-material-ui/12-card/2-complex/App'
 
 const avatarStyle = {
     width: "60px",
@@ -2570,6 +2572,83 @@ const TutorialData = [
           },
         ]
       },
+      {
+        primaryText: "#12 Cards",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #12: Cards",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/UNCq01LNNrg",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "code",
+            href: "https://codesandbox.io/s/affectionate-leavitt-9mdq8?file=/src/App.js",  
+            icon: <CodeIcon />         
+          },
+          level: "introductory",
+          descText: "Cards are an attractive building block for many designs.  Understand card taxonomy so you can efficiently leverage pre-built properties and sub-components.",
+          date: "2020-04-26",
+          author: "Anthony Sistilli",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "<Card> is built upon <Paper>",
+              bulletText: "but layer in several sub-components for presentation and mutability",
+            },
+            {
+              bulletPoint: "A simple card typically contains 3 parts:",
+              bulletText: "<Card>, <CardContent>, <CardActions>",
+            },
+            {
+              bulletPoint: "Complex cards may include:",
+              bulletText: "<Card>, <CardHeader>, <CardContent>, <CardActions>, <Collapse>",
+            },
+            {
+              bulletPoint: "<CardHeader> and <CardMedia> are self-closing",
+              bulletText: "You just pass stuff as props, not children.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-card-1",
+            primaryText: "Simple",
+            secondaryText: "card taxonomy",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/1-simple/SimpleCard.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUICard1 />
+          },
+          {
+            demoKey: "material-ui-card-2",
+            primaryText: "Complex",
+            secondaryText: "card taxonomy",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/2-complex/RecipeReviewCard.js",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUICard2 />
+          },              
+        ]
+      },  
       {
         primaryText: "#21 Drawer + Router",
         summary: {
