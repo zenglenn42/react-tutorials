@@ -10,12 +10,12 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+import { grey } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import { Divider } from '@material-ui/core';
+import { Divider, Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,8 +23,19 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 290,
     maxWidth: 290,
   },
+  header: {
+    minHeight: "92.05px"
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: grey[500],
+  },
+  actions: {
+    // backgroundColor: grey[400]
+    backgroundColor: "white"
   },
 }));
 
@@ -39,21 +50,27 @@ export default function RecipeReviewCard(props) {
 
   return (
     <Card className={classes.root} {...props}>
-      <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+      <CardHeader className={classes.header} />
+      <Divider />
+      <CardMedia
+        className={classes.media}
+        // image={imageUrl}
+        title="Paella dish"
       />
       <Divider />
+      <CardContent>
+        <Typography variant="body2" color="textPrimary" component="p">
+            This impressive paella is a perfect party dish and a fun meal to cook
+            together with your guests. Add 1 cup of frozen peas along with the
+            mussels, if you like.
+          </Typography>
+      </CardContent>
+      <Divider />
+      <CardActions className={classes.actions}>
+        {/* <Button variant="outlined" fullWidth>
+          <Typography variant="body2" color="textSecondary" style={{textTransform: "none"}}>&nbsp;</Typography>
+        </Button> */}
+      </CardActions>
     </Card>
   );
 }

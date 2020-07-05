@@ -113,6 +113,8 @@ import { App as AsHooks5 }  from '../sistilli-hooks/5-useEffect-2/App'
 import { App as MaterialUICard1 }  from '../sistilli-material-ui/12-card/1-simple/App'
 import { App as MaterialUICard2 }  from '../sistilli-material-ui/12-card/2-complex/App'
 import { App as MaterialUICard3 }  from '../sistilli-material-ui/12-card/3-header/App'
+import { App as MaterialUICard4 }  from '../sistilli-material-ui/12-card/4-media/App'
+import { App as MaterialUICard5 }  from '../sistilli-material-ui/12-card/5-content/App'
 
 const avatarStyle = {
     width: "60px",
@@ -2667,7 +2669,39 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUICard3 />
-          },             
+          },
+          {
+            demoKey: "material-ui-card-4",
+            primaryText: "Card",
+            secondaryText: "Media",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/4-media",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUICard4 />
+          },
+          {
+            demoKey: "material-ui-card-5",
+            primaryText: "Card",
+            secondaryText: "Content",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/5-content",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUICard5 />
+          },       
         ]
       },  
       {

@@ -10,7 +10,7 @@ import Collapse from '@material-ui/core/Collapse';
 import Avatar from '@material-ui/core/Avatar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { red } from '@material-ui/core/colors';
+import { grey } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
@@ -23,8 +23,15 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 290,
     maxWidth: 290,
   },
+  header: {
+    minHeight: "92.05px"
+  },
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
   avatar: {
-    backgroundColor: red[500],
+    backgroundColor: grey[500],
   },
 }));
 
@@ -39,20 +46,20 @@ export default function RecipeReviewCard(props) {
 
   return (
     <Card className={classes.root} {...props}>
-      <CardHeader
-        avatar={
-          <Avatar aria-label="recipe" className={classes.avatar}>
-            R
-          </Avatar>
-        }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
+      <CardHeader className={classes.header} />
+      <CardMedia
+        className={classes.media}
+        image={imageUrl}
+        title="Paella dish"
       />
+      <CardContent>
+        <Typography component="p" variant="caption" >{'<CardMedia'}</Typography>
+        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'style={{height: 0, paddingTop: "56.25%"}}'}</Typography>
+        <Typography component="p" variant="caption" >{'> // 16:9 aspect ratio'}</Typography>
+        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'image="/static/images/cards/paella.jpg"'}</Typography>
+        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'title="Paella dish"'}</Typography>
+        <Typography component="p" variant="caption" >{'</CardMedia>'}</Typography>
+      </CardContent>
       <Divider />
     </Card>
   );

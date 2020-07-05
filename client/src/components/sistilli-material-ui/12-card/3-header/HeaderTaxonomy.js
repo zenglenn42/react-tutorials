@@ -44,9 +44,8 @@ export default function ComplexCarTaxonomy(props) {
             </Avatar>
           </Tooltip>
         }
-        // titleTypographyProps={{variant: 'body2', align: 'center'}}
-        title="Title"
-        subheader="subheader text"
+        title="title"
+        subheader="subheader"
         subheaderTypographyProps={{style: {fontStyle: "oblique"}}}
         action={
         <Tooltip title="action={<icon/>}" enterDelay={300}>
@@ -59,8 +58,8 @@ export default function ComplexCarTaxonomy(props) {
       <CardContent>
         <Typography component="p" variant="caption" >{'<CardHeader>'}</Typography>
         <Typography component="p" variant="caption" >&nbsp;&nbsp;{'avatar={<Avatar>A</Avatar>}'}</Typography>
-        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'title="Title"'}</Typography>
-        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'subheader="subheader text"'}</Typography>
+        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'title="title"'}</Typography>
+        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'subheader="subheader"'}</Typography>
         <Typography component="p" variant="caption" >&nbsp;&nbsp;{'subheaderTypographyProps="{{style: {fontStyle: oblique}}}"'}</Typography>
         <Typography component="p" variant="caption" >&nbsp;&nbsp;{'action={<IconButton><MoreVertIcon/></IconButton>}'}</Typography>
         <Typography component="p" variant="caption" >{'</CardHeader>'}</Typography>

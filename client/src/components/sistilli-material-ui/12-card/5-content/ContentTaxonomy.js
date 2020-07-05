@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import grey from '@material-ui/core/colors/grey'
-import { CardHeader, CardMedia } from '@material-ui/core';
+import { CardHeader, CardMedia, Divider } from '@material-ui/core';
 
 const lineHeight = 1.43
 const lineHeight2x = lineHeight * 2
@@ -20,7 +20,8 @@ const useStyles = makeStyles({
     maxWidth: 290,
   },
   header: {
-    backgroundColor: grey[200],
+    // backgroundColor: grey[200],
+    backgroundColor: "white",
     minHeight: "92.05px"
   },
   media: {
@@ -33,14 +34,19 @@ const useStyles = makeStyles({
     marginBottom: `-${lineHeight2x}rem`
   },
   content: {
-    backgroundColor: grey[300]
+    // backgroundColor: grey[300]
+    backgroundColor: "white",
+    paddingTop: "8px",
+    paddingBottom: 0
   },
   grow: {
-    flex: 1,
-    backgroundColor: grey[300]
+    // flex: 1,
+    // backgroundColor: grey[300]
+    backgroundColor: "white"
   },
   actions: {
-    backgroundColor: grey[500]
+    // backgroundColor: grey[400]
+    backgroundColor: "white"
   },
 });
 
@@ -49,30 +55,37 @@ export default function ComplexCarTaxonomy(props) {
 
   return (
     <Card className={classes.root} {...props}>
-      <CardHeader className={classes.header} titleTypographyProps={{variant: 'body2', align: 'center'}}
+      <CardHeader className={classes.header} titleTypographyProps={{variant: 'body2', align: 'center', color: 'textSecondary'}}
         title="CardHeader"
       />
-      <Typography className={classes.mediaLabel} variant="body2" align="center">CardMedia</Typography>
+      <Divider />
+      <Typography className={classes.mediaLabel} color="textSecondary" variant="body2" align="center">CardMedia</Typography>
       <CardMedia
         className={classes.media}
-        image="/assets/img/sistilli-templates/gradient.png"
+        // image="/assets/img/sistilli-templates/gradient.png"
         title="CardMedia"
       />
+      <Divider />
       <CardContent className={classes.content}>
         <Typography
           className={classes.title}
-          color="textSecondary"
+          color="textPrimary"
           gutterBottom
           align="center"
           variant="body2"
         >
-          CardContent
         </Typography>
+        <Typography component="p" variant="caption" >{'<CardContent>'}</Typography>
+        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'<Typography>'}</Typography>
+        <Typography component="p" variant="caption" >&nbsp;&nbsp;&nbsp;&nbsp;{'This impressive paella ...'}</Typography>
+        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'</Typography>'}</Typography>
+        <Typography component="p" variant="caption" >{'</CardContent>'}</Typography>
       </CardContent>
       <div className={classes.grow} />
+      <Divider />
       <CardActions className={classes.actions}>
-        <Button variant="contained" fullWidth>
-          <Typography variant="body2" style={{textTransform: "none"}}>CardActions</Typography>
+        <Button variant="outlined" fullWidth>
+          <Typography variant="body2" color="textSecondary" style={{textTransform: "none"}}>CardActions</Typography>
         </Button>
       </CardActions>
     </Card>

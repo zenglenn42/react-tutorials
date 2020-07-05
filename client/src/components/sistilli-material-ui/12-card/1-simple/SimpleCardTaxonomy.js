@@ -55,7 +55,7 @@ export default function SimpleCard() {
       </CardContent>
       <div className={classes.grow} />
       <CardActions className={classes.actions}>
-        <Button variant="contained" color="primary" size="small" fullWidth>
+        <Button variant="contained" size="small" fullWidth>
           <Typography variant="body2" style={{textTransform: "none"}}>CardActions</Typography>
         </Button>
       </CardActions>
