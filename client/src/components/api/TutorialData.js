@@ -2645,7 +2645,7 @@ const TutorialData = [
             secondaryText: "card taxonomy",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              href: "https://youtu.be/UNCq01LNNrg?t=167",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2661,7 +2661,7 @@ const TutorialData = [
             secondaryText: "Header",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              href: "https://youtu.be/UNCq01LNNrg?t=230",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2677,7 +2677,7 @@ const TutorialData = [
             secondaryText: "Media",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              href: "https://youtu.be/UNCq01LNNrg?t=385",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2693,7 +2693,7 @@ const TutorialData = [
             secondaryText: "Content",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              href: "https://youtu.be/UNCq01LNNrg?t=508",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2709,7 +2709,7 @@ const TutorialData = [
             secondaryText: "in a grid",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              href: "https://youtu.be/UNCq01LNNrg?t=758",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
