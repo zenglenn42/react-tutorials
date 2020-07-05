@@ -115,6 +115,7 @@ import { App as MaterialUICard2 }  from '../sistilli-material-ui/12-card/2-compl
 import { App as MaterialUICard3 }  from '../sistilli-material-ui/12-card/3-header/App'
 import { App as MaterialUICard4 }  from '../sistilli-material-ui/12-card/4-media/App'
 import { App as MaterialUICard5 }  from '../sistilli-material-ui/12-card/5-content/App'
+import { App as MaterialUICard6 }  from '../sistilli-material-ui/12-card/6-gridify/App'
 
 const avatarStyle = {
     width: "60px",
@@ -2702,6 +2703,22 @@ const TutorialData = [
             },
             demoComponent: <MaterialUICard5 />
           },       
+          {
+            demoKey: "material-ui-card-6",
+            primaryText: "Cards",
+            secondaryText: "in a grid",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/UNCq01LNNrg?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/6-gridify",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUICard6 />
+          },  
         ]
       },  
       {
