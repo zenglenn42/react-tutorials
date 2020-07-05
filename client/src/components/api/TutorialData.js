@@ -762,7 +762,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/3-lifecycle/App.js",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/3-lifecycle",
               icon: <GitHubIcon />            
             },
             demoComponent: <AsHooks3 />
@@ -778,7 +778,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/4-useEffect/App.js",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/4-useEffect",
               icon: <GitHubIcon />            
             },
             demoComponent: <AsHooks4 />
@@ -794,7 +794,7 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/5-useEffect-2/App.js",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/5-useEffect-2",
               icon: <GitHubIcon />            
             },
             demoComponent: <AsHooks5 />
