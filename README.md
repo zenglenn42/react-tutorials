@@ -77,6 +77,8 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/Z9xgsSVJGWk/0.jpg)](http://www.youtube.com/watch?v=Z9xgsSVJGWk "React + Material UI #11: Grid Centering")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/UNCq01LNNrg/0.jpg)](http://www.youtube.com/watch?v=UNCq01LNNrg "React + Material UI #12: Cards + Card layout with Grid")
+
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/CjFWbEOcq-Y/0.jpg)](http://www.youtube.com/watch?v=CjFWbEOcq-Y "React + Material UI #21: Drawer & Drawer + React Router")
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/LZKsD_5ttZ4/0.jpg)](http://www.youtube.com/watch?v=LZKsD_5ttZ4 "React Classes to Hooks: Everything about useState & useEffect")
