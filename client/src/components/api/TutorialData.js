@@ -698,7 +698,7 @@ const TutorialData = [
           features: [
             {
               bulletPoint: "Review class-based state and lifecycle methods",
-              bulletText: "You need to know the past in order to appreciate a new vision of the future.",
+              bulletText: "Specifically componentDidMount, componentDidUpdate, & componentDidUnmount.",
             },
             {
               bulletPoint: "Where did render() go?",
