@@ -105,6 +105,11 @@ import { App as MaterialUIDrawer2}  from '../sistilli-material-ui/21-drawer/2-ro
 import { App as MaterialUIDrawer3}  from '../sistilli-material-ui/21-drawer/3-permanent/App'
 import { App as MaterialUIDrawer4}  from '../sistilli-material-ui/21-drawer/4-w-item-icons/App'
 import { App as MaterialUIDrawer5}  from '../sistilli-material-ui/21-drawer/5-withRouter/App'
+import { App as AsHooks1 }  from '../sistilli-hooks/1-class-worldview/App'
+import { App as AsHooks2 }  from '../sistilli-hooks/2-hooks-version/App'
+import { App as AsHooks3 }  from '../sistilli-hooks/3-lifecycle/App'
+import { App as AsHooks4 }  from '../sistilli-hooks/4-useEffect/App'
+import { App as AsHooks5 }  from '../sistilli-hooks/5-useEffect-2/App'
 
 const avatarStyle = {
     width: "60px",
@@ -660,6 +665,139 @@ const TutorialData = [
               icon: <GitHubIcon />            
             },
             demoComponent: <AppRouter3 />
+          },
+        ]
+      },
+    ]
+  },
+  {
+    playlist: [
+      {
+        primaryText: "Classes to Hooks",
+        summary: {
+          provider: "Anthony Sistilli",
+          courseTitle: "Classes to Hooks: useState & useEffect",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/LZKsD_5ttZ4",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "Find out where lifecycle methods disappeared to in a hooks-based functional component worldview.",
+          date: "2020-02-20",
+          author: "Anthony Sistilli",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Review class-based state and lifecycle methods",
+              bulletText: "You need to know the past in order to appreciate a new vision of the future.",
+            },
+            {
+              bulletPoint: "Where did render() go?",
+              bulletText: "Everything inside your hooks-based function component /is/ the render method.",
+            },
+            {
+              bulletPoint: "Use arrow functions for click handlers.",
+              bulletText: "",
+            },
+            {
+              bulletPoint: "Map componentDidUnmount method to useEffect()",
+              bulletText: "with return statement callback",
+            },
+            {
+              bulletPoint: "Map componentDidMount / componentDidUpdate to useEffect()",
+              bulletText: "with 2nd parameter [array]",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "as-hooks-1",
+            primaryText: "Class-based",
+            secondaryText: "this.state.count",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/1-class-worldview/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks1 />
+          },
+          {
+            demoKey: "as-hooks-2",
+            primaryText: "Hooks",
+            secondaryText: "useState() count",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4?t=51",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/2-hooks-version/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks2 />
+          },
+          {
+            demoKey: "as-hooks-3",
+            primaryText: "Review",
+            secondaryText: "3 lifecycle methods",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4?t=253",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/3-lifecycle/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks3 />
+          },
+          {
+            demoKey: "as-hooks-4",
+            primaryText: "useEffect()",
+            secondaryText: "replaces lifecycle",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4?t=357",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/4-useEffect/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks4 />
+          },
+          {
+            demoKey: "as-hooks-5",
+            primaryText: "useEffect()",
+            secondaryText: "granular state",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4?t=750",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/5-useEffect-2/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks5 />
           },
         ]
       },

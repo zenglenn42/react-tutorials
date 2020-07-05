@@ -79,6 +79,9 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/CjFWbEOcq-Y/0.jpg)](http://www.youtube.com/watch?v=CjFWbEOcq-Y "React + Material UI #21: Drawer & Drawer + React Router")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/LZKsD_5ttZ4/0.jpg)](http://www.youtube.com/watch?v=LZKsD_5ttZ4 "React Classes to Hooks: Everything about useState & useEffect")
+
+
 # Developer's Blog
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
