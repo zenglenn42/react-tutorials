@@ -67,7 +67,7 @@ export default function ComplexCarTaxonomy(props) {
       <CardContent className={classes.content}>
         <Typography
           className={classes.title}
-          color="textPrimary"
+          color="textSecondary"
           gutterBottom
           align="center"
           variant="body2"
@@ -78,7 +78,7 @@ export default function ComplexCarTaxonomy(props) {
       <div className={classes.grow} />
       <CardActions className={classes.actions}>
         <Button variant="contained" fullWidth>
-          <Typography variant="body2" color="textSecondary" style={{textTransform: "none"}}>CardActions</Typography>
+          <Typography variant="body2" color="textPrimary" style={{textTransform: "none"}}>CardActions</Typography>
         </Button>
       </CardActions>
     </Card>
