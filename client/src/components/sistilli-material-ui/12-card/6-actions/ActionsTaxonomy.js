@@ -36,7 +36,8 @@ const useStyles = makeStyles({
     // backgroundColor: grey[300]
     backgroundColor: "white",
     paddingTop: "8px",
-    paddingBottom: 0
+    paddingBottom: 0,
+    minHeight: "136px"
   },
   grow: {
     // flex: 1,
@@ -45,8 +46,8 @@ const useStyles = makeStyles({
   },
   actions: {
     // backgroundColor: grey[400]
-    backgroundColor: "white",
-    marginTop: "12px"
+    marginTop: "4px",
+    backgroundColor: "white"
   },
 });
 
@@ -74,12 +75,8 @@ export default function ComplexCarTaxonomy(props) {
           align="center"
           variant="body2"
         >
+          CardContent
         </Typography>
-        <Typography component="p" variant="caption" >{'<CardContent>'}</Typography>
-        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'<Typography>'}</Typography>
-        <Typography component="p" variant="caption" >&nbsp;&nbsp;&nbsp;&nbsp;{'This impressive paella ...'}</Typography>
-        <Typography component="p" variant="caption" >&nbsp;&nbsp;{'</Typography>'}</Typography>
-        <Typography component="p" variant="caption" >{'</CardContent>'}</Typography>
       </CardContent>
       <div className={classes.grow} />
       <Divider />

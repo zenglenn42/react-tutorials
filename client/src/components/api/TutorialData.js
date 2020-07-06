@@ -115,7 +115,8 @@ import { App as MaterialUICard2 }  from '../sistilli-material-ui/12-card/2-compl
 import { App as MaterialUICard3 }  from '../sistilli-material-ui/12-card/3-header/App'
 import { App as MaterialUICard4 }  from '../sistilli-material-ui/12-card/4-media/App'
 import { App as MaterialUICard5 }  from '../sistilli-material-ui/12-card/5-content/App'
-import { App as MaterialUICard6 }  from '../sistilli-material-ui/12-card/6-gridify/App'
+import { App as MaterialUICard6 }  from '../sistilli-material-ui/12-card/6-actions/App'
+import { App as MaterialUICard7 }  from '../sistilli-material-ui/12-card/7-gridify/App'
 
 const avatarStyle = {
     width: "60px",
@@ -2705,6 +2706,22 @@ const TutorialData = [
           },       
           {
             demoKey: "material-ui-card-6",
+            primaryText: "Card",
+            secondaryText: "Actions",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/UNCq01LNNrg?t=540",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/6-actions",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUICard6 />
+          },
+          {
+            demoKey: "material-ui-card-7",
             primaryText: "Cards",
             secondaryText: "in a grid",
             refLink: {
@@ -2714,10 +2731,10 @@ const TutorialData = [
             },
             codeLink: {
               tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/6-gridify",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/7-gridify",
               icon: <GitHubIcon />           
             },
-            demoComponent: <MaterialUICard6 />
+            demoComponent: <MaterialUICard7 />
           },  
         ]
       },  

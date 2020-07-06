@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
   avatar: {
     backgroundColor: grey[500],
   },
+  content: {
+    backgroundColor: grey[100]
+  },
   actions: {
     // backgroundColor: grey[400]
     backgroundColor: "white"
@@ -43,7 +46,7 @@ export default function RecipeReviewCard(props) {
         title="Paella dish"
       />
       <Divider />
-      <CardContent>
+      <CardContent className={classes.content}>
         <Typography variant="body2" color="textPrimary" component="p">
             This impressive paella is a perfect party dish and a fun meal to cook
             together with your guests. Add 1 cup of frozen peas along with the
