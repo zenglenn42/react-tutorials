@@ -6,6 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { CardHeader, CardMedia, Divider } from '@material-ui/core';
+import grey from '@material-ui/core/colors/grey'
 
 const lineHeight = 1.43
 const lineHeight2x = lineHeight * 2
@@ -19,7 +20,6 @@ const useStyles = makeStyles({
     maxWidth: 290,
   },
   header: {
-    // backgroundColor: grey[200],
     backgroundColor: "white",
     minHeight: "92.05px"
   },
@@ -33,21 +33,18 @@ const useStyles = makeStyles({
     marginBottom: `-${lineHeight2x}rem`
   },
   content: {
-    // backgroundColor: grey[300]
     backgroundColor: "white",
     paddingTop: "8px",
     paddingBottom: 0,
     minHeight: "136px"
   },
   grow: {
-    // flex: 1,
-    // backgroundColor: grey[300]
-    backgroundColor: "white"
+    flex: 1,
+    backgroundColor: grey[400]
   },
   actions: {
-    // backgroundColor: grey[400]
+    backgroundColor: grey[400],
     marginTop: "4px",
-    backgroundColor: "white"
   },
 });
 
@@ -79,9 +76,8 @@ export default function ComplexCarTaxonomy(props) {
         </Typography>
       </CardContent>
       <div className={classes.grow} />
-      <Divider />
       <CardActions className={classes.actions}>
-        <Button variant="outlined" fullWidth>
+        <Button variant="contained" fullWidth>
           <Typography variant="body2" color="textSecondary" style={{textTransform: "none"}}>CardActions</Typography>
         </Button>
       </CardActions>

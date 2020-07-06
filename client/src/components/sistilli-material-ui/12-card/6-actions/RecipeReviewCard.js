@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: grey[500],
   },
   actions: {
-    backgroundColor: grey[100],
+    backgroundColor: grey[300],
     paddingTop: 0,
     paddingBottom: 0,
     marginTop: 0,
@@ -97,7 +97,7 @@ export default function RecipeReviewCard(props) {
           onClick={handleExpandClick}
           aria-expanded={expanded}
           aria-label="show more"
-          style={{border: "1px red solid"}}
+          style={{border: "3px white solid"}}
         >
           <ExpandMoreIcon />
         </IconButton>

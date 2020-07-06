@@ -19,7 +19,6 @@ const useStyles = makeStyles({
     maxWidth: 290,
   },
   header: {
-    // backgroundColor: grey[200],
     backgroundColor: "white",
     minHeight: "92.05px"
   },
@@ -33,18 +32,15 @@ const useStyles = makeStyles({
     marginBottom: `-${lineHeight2x}rem`
   },
   content: {
-    // backgroundColor: grey[300]
     backgroundColor: "white",
     paddingTop: "8px",
     paddingBottom: 0
   },
   grow: {
     // flex: 1,
-    // backgroundColor: grey[300]
     backgroundColor: "white"
   },
   actions: {
-    // backgroundColor: grey[400]
     backgroundColor: "white",
     marginTop: "12px"
   },

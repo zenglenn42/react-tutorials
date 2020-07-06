@@ -34,7 +34,7 @@ const useStyles = makeStyles({
     backgroundColor: grey[300]
   },
   actions: {
-    backgroundColor: grey[500]
+    backgroundColor: grey[400]
   },
 });
 
