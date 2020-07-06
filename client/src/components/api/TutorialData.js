@@ -117,6 +117,8 @@ import { App as MaterialUICard4 }  from '../sistilli-material-ui/12-card/4-media
 import { App as MaterialUICard5 }  from '../sistilli-material-ui/12-card/5-content/App'
 import { App as MaterialUICard6 }  from '../sistilli-material-ui/12-card/6-actions/App'
 import { App as MaterialUICard7 }  from '../sistilli-material-ui/12-card/7-gridify/App'
+import { App as MaterialUITable1 }  from '../sistilli-material-ui/13-table/1-simple/App'
+import { App as MaterialUITable2 }  from '../sistilli-material-ui/13-table/2-enhanced/App'
 
 const avatarStyle = {
     width: "60px",
@@ -2738,6 +2740,71 @@ const TutorialData = [
           },  
         ]
       },  
+      {
+        primaryText: "#13 Tables",
+        summary: {
+          provider: "Forge Coding",
+          courseTitle: "Material UI #13: Tables",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "code",
+            href: "https://codesandbox.io/s/material-demo-q09ys?file=/demo.js",
+            icon: <CodeIcon />         
+          },
+          level: "introductory",
+          descText: "Tables in Material UI are a complex but capable component.  This tutorial discusses the basics.",
+          date: "2020-05-03",
+          author: "Anthony Sistilli",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Learn about key related components.",
+              bulletText: "<TableContainer>, <Table>, <TableHead>, <TableRow>, <TableCell>",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "material-ui-table-1",
+            primaryText: "Simple",
+            secondaryText: "table",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/?t=0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/13-table/1-simple",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITable1 />
+          },
+          {
+            demoKey: "material-ui-table-2",
+            primaryText: "Enhanced",
+            secondaryText: "table",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/?t=617",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/13-table/2-enhanced",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUITable2 />
+          }
+        ]
+      }, 
       {
         primaryText: "#21 Drawer + Router",
         summary: {
