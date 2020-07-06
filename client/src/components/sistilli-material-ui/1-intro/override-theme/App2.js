@@ -5,14 +5,14 @@ import theme from './theme'
 
 export function App() {
     return (
-        <div className="App">
+        <div>
             <ThemeProvider theme={theme}>
                 <div>
                     <Button color="primary" variant="outlined">This is our first button (color="primary")</Button>
-                </div>
+                </div><br/>
                 <div>
                     <Button color="secondary" variant="outlined">This is our first button (color="secondary")</Button>
-                </div>
+                </div><br/>
             </ThemeProvider>
         </div>
     )

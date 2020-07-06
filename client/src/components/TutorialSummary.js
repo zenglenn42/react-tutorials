@@ -10,8 +10,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import { Grid, Paper } from "@material-ui/core";
 import { yellow } from "@material-ui/core/colors";
 
-// import { FaReact as ReactIcon } from 'react-icons/fa'
-
 const useStyles = makeStyles((theme) => ({
     Demobar: {
         backgroundColor: theme.palette.primary.light,
@@ -36,6 +34,10 @@ const useStyles = makeStyles((theme) => ({
         border: "1px yellow solid",
         borderRadius: "0.0681em"
     },
+    gridContainer: {
+        paddingLeft: theme.spacing(0.5),
+        paddingRight: theme.spacing(0.5)
+    }
 }));
 
 function TutorialSummary(props) {
@@ -71,7 +73,7 @@ function TutorialSummary(props) {
                 </IconButton>
                 </Tooltip>
             </Toolbar>
-            <Grid container direction="row" alignContent="space-between">
+            <Grid className={classes.gridContainer} container direction="row" alignContent="space-between">
                 <Grid container item direction="column" xs={12} sm={6} alignContent="center">
                     {props.avatars.map((avatar, i) => {
                         const authorNames = props.author.split(",")
