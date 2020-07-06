@@ -2748,7 +2748,7 @@ const TutorialData = [
           demoKey: "summary",
           refLink: {
             tipText: "youtube",
-            href: "https://youtu.be/",
+            href: "https://youtu.be/-3Ybk8VfFt4",
             icon: <FaYoutube style={{color: "red"}}/>
           },
           codeLink: {
@@ -2777,7 +2777,7 @@ const TutorialData = [
             secondaryText: "table",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/?t=0",
+              href: "https://youtu.be/-3Ybk8VfFt4?t=0",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
@@ -2793,7 +2793,7 @@ const TutorialData = [
             secondaryText: "table",
             refLink: {
               tipText: "youtube",
-              href: "https://youtu.be/?t=617",
+              href: "https://youtu.be/-3Ybk8VfFt4?t=617",
               icon: <FaYoutube style={{color: "red"}}/>
             },
             codeLink: {
