@@ -1,10 +1,7 @@
 import React, { useState } from 'react'
 import MyForm from './MyForm'
 import MyTable from './MyTable'
-
-const generate = () => {
-    return Math.floor(Math.random()* 1000)
-}
+import ids from 'short-id'
 
 export function App() {
     const [rows, setRows] = useState([{
@@ -19,7 +16,7 @@ export function App() {
             <MyForm onSubmit={(data) => {
                 setRows((currentRows) => [
                     {
-                        id: generate(),
+                        id: ids.generate(),
                         ...data
                     },
                     ...currentRows
