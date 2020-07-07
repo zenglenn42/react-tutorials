@@ -560,6 +560,43 @@ const TutorialData = [
     ]
   },
   {
+    summary: {
+      primaryText: "React Series",
+      provider: "Ben Awad",
+      courseTitle: "React",
+      demoKey: "summary",
+      refLink: {
+        tipText: "youtube",
+        href: "https://www.youtube.com",
+        icon: <FaYoutube style={{color: "red"}}/>
+      },
+      codeLink: {
+        tipText: "github",
+        href: "https://github.com/benawad",
+        icon: <GitHubIcon />            
+      },
+      level: "introductory",
+      descText: "Ben is primarily a backend developer, but he covers a range of subjects the hit the entire stack.  He generally codes in typescript so if you're wanting to come up to speed on that, there's a bonus. Ben has a stealthy sense of humor and cuts to the chase quickly.",
+      date: "2019-01-01",
+      author: "Ben Awad",
+      avatars: [
+          <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+      ],
+      features: [
+        {
+          bulletPoint: "Hooks",
+          bulletText: "useContext, useState"
+        },
+        {
+          bulletPoint: "React Router",
+          bulletText: "useContext, useStateThemes"
+        },
+        {
+          bulletPoint: "Material UI Tables",
+          bulletText: "Learn to mutate!"
+        },
+      ],
+    },
     playlist: [
       {
         primaryText: "useContext Hook",
@@ -682,143 +719,6 @@ const TutorialData = [
           },
         ]
       },
-    ]
-  },
-  {
-    playlist: [
-      {
-        primaryText: "Classes to Hooks",
-        summary: {
-          provider: "Anthony Sistilli",
-          courseTitle: "Classes to Hooks: useState & useEffect",
-          demoKey: "summary",
-          refLink: {
-            tipText: "youtube",
-            href: "https://youtu.be/LZKsD_5ttZ4",
-            icon: <FaYoutube style={{color: "red"}}/>
-          },
-          codeLink: {
-            tipText: "github",
-            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks",
-            icon: <GitHubIcon />            
-          },
-          level: "introductory",
-          descText: "Find out where lifecycle methods disappeared to in a hooks-based functional component worldview.",
-          date: "2020-02-20",
-          author: "Anthony Sistilli",
-          avatars: [
-            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
-          ],
-          features: [
-            {
-              bulletPoint: "Review class-based state and lifecycle methods",
-              bulletText: "Specifically componentDidMount, componentDidUpdate, & componentDidUnmount.",
-            },
-            {
-              bulletPoint: "Where did render() go?",
-              bulletText: "Everything inside your hooks-based function component /is/ the render method.",
-            },
-            {
-              bulletPoint: "Use arrow functions for click handlers.",
-              bulletText: "",
-            },
-            {
-              bulletPoint: "Map componentDidUnmount method to useEffect()",
-              bulletText: "with return statement callback",
-            },
-            {
-              bulletPoint: "Map componentDidMount / componentDidUpdate to useEffect()",
-              bulletText: "with 2nd parameter [array]",
-            },
-          ],
-        },
-        snapshots: [
-          {
-            demoKey: "as-hooks-1",
-            primaryText: "Class-based",
-            secondaryText: "this.state.count",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/LZKsD_5ttZ4",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/1-class-worldview/App.js",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AsHooks1 />
-          },
-          {
-            demoKey: "as-hooks-2",
-            primaryText: "Hooks",
-            secondaryText: "useState() count",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/LZKsD_5ttZ4?t=51",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/2-hooks-version/App.js",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AsHooks2 />
-          },
-          {
-            demoKey: "as-hooks-3",
-            primaryText: "Review",
-            secondaryText: "3 lifecycle methods",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/LZKsD_5ttZ4?t=253",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/3-lifecycle",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AsHooks3 />
-          },
-          {
-            demoKey: "as-hooks-4",
-            primaryText: "useEffect()",
-            secondaryText: "replaces lifecycle",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/LZKsD_5ttZ4?t=357",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/4-useEffect",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AsHooks4 />
-          },
-          {
-            demoKey: "as-hooks-5",
-            primaryText: "useEffect()",
-            secondaryText: "granular state",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/LZKsD_5ttZ4?t=750",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/5-useEffect-2",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AsHooks5 />
-          },
-        ]
-      },
-    ]
-  },
-  {
-    playlist: [
       {
         primaryText: "React Router",
         summary: {
@@ -1040,10 +940,6 @@ const TutorialData = [
           },
         ]
       },
-    ]
-  },  
-  {
-    playlist: [
       {
         primaryText: "Material UI Tables",
         summary: {
@@ -1150,7 +1046,140 @@ const TutorialData = [
         ]
       },
     ]
-  },  
+  },
+  {
+    playlist: [
+      {
+        primaryText: "Classes to Hooks",
+        summary: {
+          provider: "Anthony Sistilli",
+          courseTitle: "Classes to Hooks: useState & useEffect",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/LZKsD_5ttZ4",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "Find out where lifecycle methods disappeared to in a hooks-based functional component worldview.",
+          date: "2020-02-20",
+          author: "Anthony Sistilli",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Anthony Sistilli" src="/assets/img/avatar/anthony-sistilli.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Review class-based state and lifecycle methods",
+              bulletText: "Specifically componentDidMount, componentDidUpdate, & componentDidUnmount.",
+            },
+            {
+              bulletPoint: "Where did render() go?",
+              bulletText: "Everything inside your hooks-based function component /is/ the render method.",
+            },
+            {
+              bulletPoint: "Use arrow functions for click handlers.",
+              bulletText: "",
+            },
+            {
+              bulletPoint: "Map componentDidUnmount method to useEffect()",
+              bulletText: "with return statement callback",
+            },
+            {
+              bulletPoint: "Map componentDidMount / componentDidUpdate to useEffect()",
+              bulletText: "with 2nd parameter [array]",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "as-hooks-1",
+            primaryText: "Class-based",
+            secondaryText: "this.state.count",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/1-class-worldview/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks1 />
+          },
+          {
+            demoKey: "as-hooks-2",
+            primaryText: "Hooks",
+            secondaryText: "useState() count",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4?t=51",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/2-hooks-version/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks2 />
+          },
+          {
+            demoKey: "as-hooks-3",
+            primaryText: "Review",
+            secondaryText: "3 lifecycle methods",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4?t=253",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/3-lifecycle",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks3 />
+          },
+          {
+            demoKey: "as-hooks-4",
+            primaryText: "useEffect()",
+            secondaryText: "replaces lifecycle",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4?t=357",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/4-useEffect",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks4 />
+          },
+          {
+            demoKey: "as-hooks-5",
+            primaryText: "useEffect()",
+            secondaryText: "granular state",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/LZKsD_5ttZ4?t=750",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/5-useEffect-2",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AsHooks5 />
+          },
+        ]
+      },
+    ]
+  },
   {
     summary: {
       primaryText: "React + Material UI",
