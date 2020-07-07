@@ -567,7 +567,7 @@ const TutorialData = [
       demoKey: "summary",
       refLink: {
         tipText: "youtube",
-        href: "https://www.youtube.com",
+        href: "https://www.youtube.com/channel/UC-8QAzbLcRglXeN_MY9blyw",
         icon: <FaYoutube style={{color: "red"}}/>
       },
       codeLink: {
