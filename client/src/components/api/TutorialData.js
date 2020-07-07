@@ -576,7 +576,7 @@ const TutorialData = [
         icon: <GitHubIcon />            
       },
       level: "introductory",
-      descText: "Ben is primarily a backend developer, but he covers a range of subjects the hit the entire stack.  He generally codes in typescript so if you're wanting to come up to speed on that, there's a bonus. Ben has a stealthy sense of humor and cuts to the chase quickly.",
+      descText: "Ben is primarily a backend developer, but he covers a range of subjects that hit the entire stack.  He generally codes in typescript so if you're wanting to come up to speed on that, there's a bonus. Ben has a stealthy sense of humor and cuts to the chase quickly.",
       date: "2019-01-01",
       author: "Ben Awad",
       avatars: [
