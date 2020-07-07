@@ -49,6 +49,10 @@ import { App as BaRouter7}  from '../benawad-router/js/7-history-push/App'
 import { App as BaRouter8}  from '../benawad-router/js/8-location-prop/App'
 import { App as BaRouter9}  from '../benawad-router/js/9-match-prop/App'
 import { App as BaRouter10}  from '../benawad-router/js/10-withRouter/App'
+import { App as BaMuiTables1}  from '../benawad-mui-tables/js/1-start/App'
+import { App as BaMuiTables2}  from '../benawad-mui-tables/js/2-simple-table/App'
+import { App as BaMuiTables3}  from '../benawad-mui-tables/js/3-new-schema/App'
+import { App as BaMuiTables4}  from '../benawad-mui-tables/js/4-add-rows/App'
 import { App as MaterialUImakeStyles1 } from '../sistilli-material-ui/3-makeStyles/1-starter/App'
 import { App as MaterialUImakeStyles2 } from '../sistilli-material-ui/3-makeStyles/2-makeStyles/App'
 import { App as MaterialUImakeStyles3 } from '../sistilli-material-ui/3-makeStyles/3-textStyle/App'
@@ -105,6 +109,7 @@ import { App as MaterialUIDrawer2}  from '../sistilli-material-ui/21-drawer/2-ro
 import { App as MaterialUIDrawer3}  from '../sistilli-material-ui/21-drawer/3-permanent/App'
 import { App as MaterialUIDrawer4}  from '../sistilli-material-ui/21-drawer/4-w-item-icons/App'
 import { App as MaterialUIDrawer5}  from '../sistilli-material-ui/21-drawer/5-withRouter/App'
+// import { App as MaterialUIDrawer6}  from '../sistilli-material-ui/21-drawer/6-responsive/App'
 import { App as AsHooks1 }  from '../sistilli-hooks/1-class-worldview/App'
 import { App as AsHooks2 }  from '../sistilli-hooks/2-hooks-version/App'
 import { App as AsHooks3 }  from '../sistilli-hooks/3-lifecycle/App'
@@ -1032,6 +1037,115 @@ const TutorialData = [
               icon: <GitHubIcon />            
             },
             demoComponent: <BaRouter10 />
+          },
+        ]
+      },
+    ]
+  },  
+  {
+    playlist: [
+      {
+        primaryText: "Material UI Tables",
+        summary: {
+          provider: "Ben Awad",
+          courseTitle: "Basic Tables in React using Material UI",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://www.youtube.com/watch?v=pNjeuU4Jwnc",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/benawad/react-typescript-material-ui-form/tree/2_table",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "This tutorial adds people to a Material UI table from state which is being updated from a form.",
+          date: "2019-04-17",
+          author: "Ben Awad",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Use a form to submit records to state.",
+              bulletText: "",
+            },
+            {
+              bulletPoint: "Drive the contents of a table from state.",
+              bulletText: "",
+            },
+            {
+              bulletPoint: "Use a helper utility to add IDs to data records.",
+              bulletText: "",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "ba-react-mui-table-1",
+            primaryText: "Input",
+            secondaryText: "Form",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/pNjeuU4Jwnc",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/1-start",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaMuiTables1 />
+          },
+          {
+            demoKey: "ba-react-mui-table-2",
+            primaryText: "Simple",
+            secondaryText: "Table",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/pNjeuU4Jwnc?t=26",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/2-simple-table",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaMuiTables2 />
+          },
+          {
+            demoKey: "ba-react-mui-table-3",
+            primaryText: "New",
+            secondaryText: "schema",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/pNjeuU4Jwnc?t=161",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/3-new-schema",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaMuiTables3 />
+          },
+          {
+            demoKey: "ba-react-mui-table-4",
+            primaryText: "Add row",
+            secondaryText: "to table",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/pNjeuU4Jwnc?ts=412",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/4-add-rows",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaMuiTables4 />
           },
         ]
       },
@@ -2944,6 +3058,22 @@ const TutorialData = [
             },
             demoComponent: <MaterialUIDrawer5 />
           },
+          // {
+          //   demoKey: "material-ui-drawer-6",
+          //   primaryText: "Responsive",
+          //   secondaryText: "drawer",
+          //   refLink: {
+          //     tipText: "youtube",
+          //     href: "https://youtu.be/CjFWbEOcq-Y?t=1059",
+          //     icon: <FaYoutube style={{color: "red"}}/>
+          //   },
+          //   codeLink: {
+          //     tipText: "github",
+          //     href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/6-responsive",
+          //     icon: <GitHubIcon />           
+          //   },
+          //   demoComponent: <MaterialUIDrawer6 />
+          // },
         ]
       },
     ]
