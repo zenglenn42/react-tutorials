@@ -57,7 +57,7 @@ class MemeGenerator extends React.Component {
         
                                 <input type="text" name="bottomText" value={this.state.bottomText} onChange={this.handleChange} placeholder="Bottom text" />
                                 <br /><hr />
-                                <button primary={true} >Generate</button>
+                                <button >Generate</button>
                             </form>
                             <h1>{this.state.topText}</h1>
                             <div style={{width: "40%"}}>
