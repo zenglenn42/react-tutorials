@@ -22,29 +22,28 @@ import SimpleState from '../wesbos-context/SimpleState'
 import PropDrilling from '../wesbos-context/PropDrilling'
 import SimpleContext from '../wesbos-context/SimpleContext'
 import MutateContext from '../wesbos-context/MutateContext'
-import { App as MaterialUIIntro1 } from '../sistilli-material-ui/1-intro/App1'
-import { App as MaterialUIIntro2 } from '../sistilli-material-ui/1-intro/override-theme/App2'
-import { App as MaterialUIIntro3 } from '../sistilli-material-ui/1-intro/App3'
-import { App as MaterialUIIntro4 } from '../sistilli-material-ui/1-intro/App4'
-import { App as MaterialUIUXCode1 } from '../sistilli-material-ui/2-uiux/1-starter/App'
-import { App as MaterialUIUXCode2 } from '../sistilli-material-ui/2-uiux/2-app-layout/App'
-import { App as MaterialUIUXCode3 } from '../sistilli-material-ui/2-uiux/3-content-layout/App'
-import { App as MaterialUIUXCode4 } from '../sistilli-material-ui/2-uiux/4-header-appbar/App'
-import { App as MaterialUIUXCode5 } from '../sistilli-material-ui/2-uiux/5-header-content/App'
-import { App as MaterialUIUXCode6 } from '../sistilli-material-ui/2-uiux/6-simple-card/App'
-import { App as MaterialUIUXCode7 } from '../sistilli-material-ui/2-uiux/7-content-grid/App'
-import { App as MaterialUIUXCode8 } from '../sistilli-material-ui/2-uiux/8-content-card/App'
-import { App as MaterialUIUXCode9 } from '../sistilli-material-ui/2-uiux/9-final-products/App'
+
 import { App as BaHooksUseState1}  from '../benawad-hooks/useState/1-start/App'
 import { App as BaHooksUseState2}  from '../benawad-hooks/useState/2-no-state-merging/App'
 import { App as BaHooksUseState3}  from '../benawad-hooks/useState/3-you-merge/App'
 import { App as BaHooksUseState4}  from '../benawad-hooks/useState/4-granular-state/App'
 import { App as BaHooksUseState5}  from '../benawad-hooks/useState/5-name-pw/App'
 import { App as BaHooksUseState6}  from '../benawad-hooks/useState/6-useForm/App'
-import { AppRouter as AppRouter0 } from '../benawad-hooks/useContext/0-router-base/AppRouter'
-import { AppRouter as AppRouter1 } from '../benawad-hooks/useContext/1-read-msg/AppRouter'
-import { AppRouter as AppRouter2 } from '../benawad-hooks/useContext/2-mutable-context/AppRouter'
-import { AppRouter as AppRouter3 } from '../benawad-hooks/useContext/3-login-context/AppRouter'
+
+import { App as BaHooksUseEffect1}  from '../benawad-hooks/useEffect/1-every-render/App'
+import { App as BaHooksUseEffect2}  from '../benawad-hooks/useEffect/2-cond/App'
+import { App as BaHooksUseEffect3}  from '../benawad-hooks/useEffect/3-once/App'
+import { App as BaHooksUseEffect4}  from '../benawad-hooks/useEffect/4-cleanup/App'
+import { App as BaHooksUseEffect5}  from '../benawad-hooks/useEffect/5-cleanup-dep/App'
+import { App as BaHooksUseEffect6}  from '../benawad-hooks/useEffect/6-events/App'
+import { App as BaHooksUseEffect7}  from '../benawad-hooks/useEffect/7-call-api/App'
+import { App as BaHooksUseEffect8}  from '../benawad-hooks/useEffect/8-localstorage/App'
+
+import { AppRouter as BaUseContext0 } from '../benawad-hooks/useContext/0-router-base/AppRouter'
+import { AppRouter as BaUseContext1 } from '../benawad-hooks/useContext/1-read-msg/AppRouter'
+import { AppRouter as BaUseContext2 } from '../benawad-hooks/useContext/2-mutable-context/AppRouter'
+import { AppRouter as BaUseContext3 } from '../benawad-hooks/useContext/3-login-context/AppRouter'
+
 import { App as BaRouter1}  from '../benawad-router/js/1-start/App'
 import { App as BaRouter2}  from '../benawad-router/js/2-basic-routes/App'
 import { App as BaRouter3}  from '../benawad-router/js/3-exact-routes/App'
@@ -59,6 +58,22 @@ import { App as BaMuiTables1}  from '../benawad-mui-tables/js/1-start/App'
 import { App as BaMuiTables2}  from '../benawad-mui-tables/js/2-simple-table/App'
 import { App as BaMuiTables3}  from '../benawad-mui-tables/js/3-new-schema/App'
 import { App as BaMuiTables4}  from '../benawad-mui-tables/js/4-add-rows/App'
+
+import { App as MaterialUIIntro1 } from '../sistilli-material-ui/1-intro/App1'
+import { App as MaterialUIIntro2 } from '../sistilli-material-ui/1-intro/override-theme/App2'
+import { App as MaterialUIIntro3 } from '../sistilli-material-ui/1-intro/App3'
+import { App as MaterialUIIntro4 } from '../sistilli-material-ui/1-intro/App4'
+
+import { App as MaterialUIUXCode1 } from '../sistilli-material-ui/2-uiux/1-starter/App'
+import { App as MaterialUIUXCode2 } from '../sistilli-material-ui/2-uiux/2-app-layout/App'
+import { App as MaterialUIUXCode3 } from '../sistilli-material-ui/2-uiux/3-content-layout/App'
+import { App as MaterialUIUXCode4 } from '../sistilli-material-ui/2-uiux/4-header-appbar/App'
+import { App as MaterialUIUXCode5 } from '../sistilli-material-ui/2-uiux/5-header-content/App'
+import { App as MaterialUIUXCode6 } from '../sistilli-material-ui/2-uiux/6-simple-card/App'
+import { App as MaterialUIUXCode7 } from '../sistilli-material-ui/2-uiux/7-content-grid/App'
+import { App as MaterialUIUXCode8 } from '../sistilli-material-ui/2-uiux/8-content-card/App'
+import { App as MaterialUIUXCode9 } from '../sistilli-material-ui/2-uiux/9-final-products/App'
+
 import { App as MaterialUImakeStyles1 } from '../sistilli-material-ui/3-makeStyles/1-starter/App'
 import { App as MaterialUImakeStyles2 } from '../sistilli-material-ui/3-makeStyles/2-makeStyles/App'
 import { App as MaterialUImakeStyles3 } from '../sistilli-material-ui/3-makeStyles/3-textStyle/App'
@@ -67,23 +82,29 @@ import { App as MaterialUImakeStyles5 } from '../sistilli-material-ui/3-makeStyl
 import { App as MaterialUImakeStyles6 } from '../sistilli-material-ui/3-makeStyles/6-theme/App'
 import { App as MaterialUImakeStyles7 } from '../sistilli-material-ui/3-makeStyles/7-props-and-theme/App'
 import { App as MaterialUImakeStyles8 } from '../sistilli-material-ui/3-makeStyles/8-multi-class/App'
+
 import { App as MaterialUIButton1 } from '../sistilli-material-ui/4-button/1-start/App'
 import { App as MaterialUIButton2 } from '../sistilli-material-ui/4-button/2-button-docs/App'
 import { App as MaterialUIButton3 } from '../sistilli-material-ui/4-button/3-icon-buttons/App'
+
 import { App as MaterialUIText1 } from '../sistilli-material-ui/5-typography/1-props/App'
 import { App as MaterialUIText2 } from '../sistilli-material-ui/5-typography/2-override/App'
 import { App as MaterialUIText3 } from '../sistilli-material-ui/5-typography/3-theme/App'
 import { App as MaterialUIText4 } from '../sistilli-material-ui/5-typography/4-themes/App'
+
 import { App as MaterialUIThemes1 } from '../sistilli-material-ui/6-themes/1-intro/App'
 import { App as MaterialUIThemes2 } from '../sistilli-material-ui/6-themes/2-create-theme/App'
 import { App as MaterialUIThemes3 } from '../sistilli-material-ui/6-themes/3-breakpoint-style/App'
 import { App as MaterialUIThemes4 } from '../sistilli-material-ui/6-themes/4-dark/App'
+
 import { App as MaterialUIPaper1 }  from '../sistilli-material-ui/7-paper/1-elevation/App'
 import { App as MaterialUIPaper2 }  from '../sistilli-material-ui/7-paper/2-square/App'
+
 import { App as MaterialUIDark1 }  from '../sistilli-material-ui/8-dark/1-light/App'
 import { App as MaterialUIDark2 }  from '../sistilli-material-ui/8-dark/2-dark/App'
 import { App as MaterialUIDark3 }  from '../sistilli-material-ui/8-dark/3-toggle/App'
 import { App as MaterialUIDark4 }  from '../sistilli-material-ui/8-dark/4-green/App'
+
 import { App as MaterialUITemplateAlbum }  from '../sistilli-material-ui/9-templates/album/App'
 import { App as MaterialUITemplateBlog }  from '../sistilli-material-ui/9-templates/blog/App'
 import { App as MaterialUITemplateCheckout }  from '../sistilli-material-ui/9-templates/checkout/App'
@@ -93,6 +114,7 @@ import { App as MaterialUITemplateSignIn }  from '../sistilli-material-ui/9-temp
 import { App as MaterialUITemplateSignInSide }  from '../sistilli-material-ui/9-templates/sign-in-side/App'
 import { App as MaterialUITemplateSignUp }  from '../sistilli-material-ui/9-templates/sign-up/App'
 import { App as MaterialUITemplateStickyFooter }  from '../sistilli-material-ui/9-templates/sticky-footer/App'
+
 import { App as MaterialUIGrid1 }  from '../sistilli-material-ui/10-grid/1-start/App'
 import { CenteredGrid as MaterialUIGrid2 }  from '../sistilli-material-ui/10-grid/2-doc-start/App'
 import { CenteredGrid as MaterialUIGrid3 }  from '../sistilli-material-ui/10-grid/3-doc-336/App'
@@ -109,18 +131,7 @@ import { App as MaterialUIGridCenter4}  from '../sistilli-material-ui/11-grid-ce
 import { App as MaterialUIGridCenter5}  from '../sistilli-material-ui/11-grid-centering/5-alignItems-column/App'
 import { App as MaterialUIGridCenter6}  from '../sistilli-material-ui/11-grid-centering/6-practice/App'
 import { App as MaterialUIGridCenter7}  from '../sistilli-material-ui/11-grid-centering/7-justify-w-size/App'
-import { TemporaryDrawer as MaterialUIDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App-Temporary'
-import { PersistentDrawerLeft as MaterialUIPersistentDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App-Persistent'
-import { App as MaterialUIDrawer2}  from '../sistilli-material-ui/21-drawer/2-router/App'
-import { App as MaterialUIDrawer3}  from '../sistilli-material-ui/21-drawer/3-permanent/App'
-import { App as MaterialUIDrawer4}  from '../sistilli-material-ui/21-drawer/4-w-item-icons/App'
-import { App as MaterialUIDrawer5}  from '../sistilli-material-ui/21-drawer/5-withRouter/App'
-// import { App as MaterialUIDrawer6}  from '../sistilli-material-ui/21-drawer/6-responsive/App'
-import { App as AsHooks1 }  from '../sistilli-hooks/1-class-worldview/App'
-import { App as AsHooks2 }  from '../sistilli-hooks/2-hooks-version/App'
-import { App as AsHooks3 }  from '../sistilli-hooks/3-lifecycle/App'
-import { App as AsHooks4 }  from '../sistilli-hooks/4-useEffect/App'
-import { App as AsHooks5 }  from '../sistilli-hooks/5-useEffect-2/App'
+
 import { App as MaterialUICard1 }  from '../sistilli-material-ui/12-card/1-simple/App'
 import { App as MaterialUICard2 }  from '../sistilli-material-ui/12-card/2-complex/App'
 import { App as MaterialUICard3 }  from '../sistilli-material-ui/12-card/3-header/App'
@@ -128,8 +139,23 @@ import { App as MaterialUICard4 }  from '../sistilli-material-ui/12-card/4-media
 import { App as MaterialUICard5 }  from '../sistilli-material-ui/12-card/5-content/App'
 import { App as MaterialUICard6 }  from '../sistilli-material-ui/12-card/6-actions/App'
 import { App as MaterialUICard7 }  from '../sistilli-material-ui/12-card/7-gridify/App'
+
 import { App as MaterialUITable1 }  from '../sistilli-material-ui/13-table/1-simple/App'
 import { App as MaterialUITable2 }  from '../sistilli-material-ui/13-table/2-enhanced/App'
+
+import { TemporaryDrawer as MaterialUIDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App-Temporary'
+import { PersistentDrawerLeft as MaterialUIPersistentDrawer1}  from '../sistilli-material-ui/21-drawer/1-docs/App-Persistent'
+import { App as MaterialUIDrawer2}  from '../sistilli-material-ui/21-drawer/2-router/App'
+import { App as MaterialUIDrawer3}  from '../sistilli-material-ui/21-drawer/3-permanent/App'
+import { App as MaterialUIDrawer4}  from '../sistilli-material-ui/21-drawer/4-w-item-icons/App'
+import { App as MaterialUIDrawer5}  from '../sistilli-material-ui/21-drawer/5-withRouter/App'
+// import { App as MaterialUIDrawer6}  from '../sistilli-material-ui/21-drawer/6-responsive/App'
+
+import { App as AsHooks1 }  from '../sistilli-hooks/1-class-worldview/App'
+import { App as AsHooks2 }  from '../sistilli-hooks/2-hooks-version/App'
+import { App as AsHooks3 }  from '../sistilli-hooks/3-lifecycle/App'
+import { App as AsHooks4 }  from '../sistilli-hooks/4-useEffect/App'
+import { App as AsHooks5 }  from '../sistilli-hooks/5-useEffect-2/App'
 
 const avatarStyle = {
     width: "60px",
@@ -1121,7 +1147,204 @@ const TutorialData = [
         ]
       },
       {
-        primaryText: "#2 useContext",
+        primaryText: "#2 useEffect",
+        summary: {
+          provider: "Ben Awad",
+          courseTitle: "useEffect",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/j1ZRyw7OtZs",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/benawad/react-hooks-tutorial/tree/2_useEffect",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "This tutorial introduces useState, a React hook for approximately replacing lifecycle methods used by class components.  Several important use-cases are discussed in the tutorial.",
+          date: "2019-06-23",
+          author: "Ben Awad",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "useEffect",
+              bulletText: "Lets you synchronize things outside of the React tree according to state and props.",
+            },
+            {
+              bulletPoint: "Use cases",
+              bulletText: "event handling, api calls, persisting to local storage"
+            },
+            {
+              bulletPoint: "Taxonomy",
+              bulletText: "effect function, dependency array, cleanup"
+            },
+            {
+              bulletPoint: "~componentDidMount",
+              bulletText: "useEffect(()=>{}, []), empty array == fire once",
+            },
+            {
+              bulletPoint: "~componentDidMount / ~componentDidUpdate",
+              bulletText: "useEffect(()=>{}, [someState]), non-empty array == fire only when someState changes",
+            },
+            {
+              bulletPoint: "~componentWillUnmount",
+              bulletText: "useEffect(()=>{ return () => {cleanupFn}}, []), cleanupFn fires when component is about to unmount",
+            },
+            {
+              bulletPoint: "Shallow compare of [dep]",
+              bulletText: "Even ref change to dep object can trigger effect. useMemo may help."
+            },
+            {
+              bulletPoint: "useEffect with closures",
+              bulletText: "Advanced use case.  See related video."
+            },
+            {
+              bulletPoint: "cleanup is granular to [dep] array",
+              bulletText: "Not just at component unmount-time thing."
+            },
+            {
+              bulletPoint: "Pro Top: avoid infinite renders b/c of useEffect",
+              bulletText: "Avoid having your dependencies be affected by stuff happening inside effect function.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "ba-hooks-useEffect-1",
+            primaryText: "Fire always",
+            secondaryText: "no dep []",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/j1ZRyw7OtZs",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/1-every-render/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseEffect1 />
+          },
+          {
+            demoKey: "ba-hooks-useEffect-2",
+            primaryText: "Fire",
+            secondaryText: "cond [..]",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/j1ZRyw7OtZs?t=58",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/2-cond/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseEffect2/>
+          },
+          {
+            demoKey: "ba-hooks-useEffect-3",
+            primaryText: "Fire once",
+            secondaryText: "empty dep []",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/j1ZRyw7OtZs?t=207",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/3-once/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseEffect3 />
+          },
+          {
+            demoKey: "ba-hooks-useEffect-4",
+            primaryText: "Cleanup",
+            secondaryText: "w return fn",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/j1ZRyw7OtZs?t=221",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/4-cleanup/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseEffect4 />
+          },
+          {
+            demoKey: "ba-hooks-useEffect-5",
+            primaryText: "Cleanup",
+            secondaryText: "dep",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/j1ZRyw7OtZs?t=338",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/5-cleanup-dep/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseEffect5 />
+          },
+          {
+            demoKey: "ba-hooks-useEffect-6",
+            primaryText: "Use case:",
+            secondaryText: "events",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/j1ZRyw7OtZs?t=405",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/6-events/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseEffect6 />
+          },
+          {
+            demoKey: "ba-hooks-useEffect-7",
+            primaryText: "Use case:",
+            secondaryText: "api call",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/j1ZRyw7OtZs?t=528",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/7-api-call/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseEffect7 />
+          },
+          {
+            demoKey: "ba-hooks-useEffect-8",
+            primaryText: "Use case:",
+            secondaryText: "local storage",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/j1ZRyw7OtZs?t=1051",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/8-localstorage/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseEffect8 />
+          },
+        ]
+      },
+      {
+        primaryText: "#3 useContext",
         summary: {
           provider: "Ben Awad",
           courseTitle: "useContext (Storing a User)",
@@ -1189,7 +1412,7 @@ const TutorialData = [
               href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/0-router-base",
               icon: <GitHubIcon />            
             },
-            demoComponent: <AppRouter0 />
+            demoComponent: <BaUseContext0 />
           },
           {
             demoKey: "ba-read-context-msg",
@@ -1205,7 +1428,7 @@ const TutorialData = [
               href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/1-read-msg",
               icon: <GitHubIcon />            
             },
-            demoComponent: <AppRouter1 />
+            demoComponent: <BaUseContext1 />
           },
           {
             demoKey: "ba-store-state",
@@ -1221,7 +1444,7 @@ const TutorialData = [
               href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/2-mutable-context",
               icon: <GitHubIcon />            
             },
-            demoComponent: <AppRouter2 />
+            demoComponent: <BaUseContext2 />
           },
           {
             demoKey: "ba-login-context",
@@ -1237,7 +1460,7 @@ const TutorialData = [
               href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/3-login-context",
               icon: <GitHubIcon />            
             },
-            demoComponent: <AppRouter3 />
+            demoComponent: <BaUseContext3 />
           },
         ]
       },
