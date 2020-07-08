@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { WatchRounded } from '@material-ui/icons'
 
 export const App = () => {
     // Can have as many useStates as we want.
