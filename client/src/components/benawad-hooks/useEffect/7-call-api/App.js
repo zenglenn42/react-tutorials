@@ -7,7 +7,11 @@ export const App = () => {
 
     // Test inet failures.
     // url = "http://httpstat.us/500"
-    const { data, loading } = useFetch(`http://numbersapi.com/${count}/trivia`)
+
+    // Need this since I host from https and numbers api is http.
+    const fixCors = "https://cors-anywhere.herokuapp.com/"
+
+    const { data, loading } = useFetch(`${fixCors}http://numbersapi.com/${count}/trivia`)
 
     return (
         <>
