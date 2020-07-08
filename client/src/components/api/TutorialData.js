@@ -22,10 +22,6 @@ import SimpleState from '../wesbos-context/SimpleState'
 import PropDrilling from '../wesbos-context/PropDrilling'
 import SimpleContext from '../wesbos-context/SimpleContext'
 import MutateContext from '../wesbos-context/MutateContext'
-import { AppRouter as AppRouter0 } from '../benawad-useContext/0-router-base/AppRouter'
-import { AppRouter as AppRouter1 } from '../benawad-useContext/1-read-msg/AppRouter'
-import { AppRouter as AppRouter2 } from '../benawad-useContext/2-mutable-context/AppRouter'
-import { AppRouter as AppRouter3 } from '../benawad-useContext/3-login-context/AppRouter'
 import { App as MaterialUIIntro1 } from '../sistilli-material-ui/1-intro/App1'
 import { App as MaterialUIIntro2 } from '../sistilli-material-ui/1-intro/override-theme/App2'
 import { App as MaterialUIIntro3 } from '../sistilli-material-ui/1-intro/App3'
@@ -39,6 +35,16 @@ import { App as MaterialUIUXCode6 } from '../sistilli-material-ui/2-uiux/6-simpl
 import { App as MaterialUIUXCode7 } from '../sistilli-material-ui/2-uiux/7-content-grid/App'
 import { App as MaterialUIUXCode8 } from '../sistilli-material-ui/2-uiux/8-content-card/App'
 import { App as MaterialUIUXCode9 } from '../sistilli-material-ui/2-uiux/9-final-products/App'
+import { App as BaHooksUseState1}  from '../benawad-hooks/useState/1-start/App'
+import { App as BaHooksUseState2}  from '../benawad-hooks/useState/2-no-state-merging/App'
+import { App as BaHooksUseState3}  from '../benawad-hooks/useState/3-you-merge/App'
+import { App as BaHooksUseState4}  from '../benawad-hooks/useState/4-granular-state/App'
+import { App as BaHooksUseState5}  from '../benawad-hooks/useState/5-name-pw/App'
+import { App as BaHooksUseState6}  from '../benawad-hooks/useState/6-useForm/App'
+import { AppRouter as AppRouter0 } from '../benawad-hooks/useContext/0-router-base/AppRouter'
+import { AppRouter as AppRouter1 } from '../benawad-hooks/useContext/1-read-msg/AppRouter'
+import { AppRouter as AppRouter2 } from '../benawad-hooks/useContext/2-mutable-context/AppRouter'
+import { AppRouter as AppRouter3 } from '../benawad-hooks/useContext/3-login-context/AppRouter'
 import { App as BaRouter1}  from '../benawad-router/js/1-start/App'
 import { App as BaRouter2}  from '../benawad-router/js/2-basic-routes/App'
 import { App as BaRouter3}  from '../benawad-router/js/3-exact-routes/App'
@@ -584,10 +590,6 @@ const TutorialData = [
       ],
       features: [
         {
-          bulletPoint: "Hooks",
-          bulletText: "useContext, useState"
-        },
-        {
           bulletPoint: "React Router",
           bulletText: "useContext, useStateThemes"
         },
@@ -598,127 +600,6 @@ const TutorialData = [
       ],
     },
     playlist: [
-      {
-        primaryText: "useContext Hook",
-        summary: {
-          provider: "Ben Awad",
-          courseTitle: "useContext (Storing a User)",
-          demoKey: "summary",
-          refLink: {
-            tipText: "youtube",
-            href: "https://youtu.be/lhMKvyLRWo0",
-            icon: <FaYoutube style={{color: "red"}}/>
-          },
-          codeLink: {
-            tipText: "github",
-            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext",
-            icon: <GitHubIcon />            
-          },
-          level: "introductory",
-          descText: "This lean but rich 10 minute tutorial introduces useContext, the hooks version of React's Context API. In this case, a user's login identity is stored and shared among components as state within a context store.",
-          date: "2019-06-29",
-          author: "Ben Awad",
-          avatars: [
-            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
-          ],
-          features: [
-            {
-              bulletPoint: "Easily share state",
-              bulletText: "Share state with deeply nested child components without prop-drilling.",
-            },
-            {
-              bulletPoint: "createContext()",
-              bulletText: "Learn to create a context data store with createContext()"
-            },
-            {
-              bulletPoint: "useContext()",
-              bulletText: "Subscribe to context state with useContext()"
-            },
-            {
-              bulletPoint: "Works nicely with useState()",
-              bulletText: "Can store useState() output (i.e., getter/setter) within a context."
-            },
-            {
-              bulletPoint: "useMemo()",
-              bulletText: "Minimize component re-rendering."
-            },
-            {
-              bulletPoint: "React Router",
-              bulletText: "Features skeleton app that uses <Router> and <Route> to achieve effect of multi-page app within single page architecutre.",
-            },
-            {
-              bulletPoint: "async / await",
-              bulletText: "Mock up a backend api call to fetch a fake user during development.",
-            }
-          ],
-        },
-        snapshots: [
-          {
-            demoKey: "ba-router-base",
-            primaryText: "Simple",
-            secondaryText: "Router",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/0-router-base",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AppRouter0 />
-          },
-          {
-            demoKey: "ba-read-context-msg",
-            primaryText: "Context:",
-            secondaryText: "Read string from context",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0?t=63",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/1-read-msg",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AppRouter1 />
-          },
-          {
-            demoKey: "ba-store-state",
-            primaryText: "Mutable context:",
-            secondaryText: "useState + useContext",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0?t=249",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/2-mutable-context",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AppRouter2 />
-          },
-          {
-            demoKey: "ba-login-context",
-            primaryText: "Login context:",
-            secondaryText: "Manage user state",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/lhMKvyLRWo0?t=424",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-useContext/3-login-context",
-              icon: <GitHubIcon />            
-            },
-            demoComponent: <AppRouter3 />
-          },
-        ]
-      },
       {
         primaryText: "React Router",
         summary: {
@@ -1042,6 +923,321 @@ const TutorialData = [
               icon: <GitHubIcon />            
             },
             demoComponent: <BaMuiTables4 />
+          },
+        ]
+      },
+    ]
+  },
+  {
+    summary: {
+      primaryText: "React Hooks",
+      provider: "Ben Awad",
+      courseTitle: "React Hooks",
+      demoKey: "summary",
+      refLink: {
+        tipText: "youtube",
+        href: "https://www.youtube.com/playlist?list=PLN3n1USn4xlmyw3ebYuZmGp60mcENitdM",
+        icon: <FaYoutube style={{color: "red"}}/>
+      },
+      codeLink: {
+        tipText: "github",
+        href: "https://github.com/benawad/react-hooks-tutorial",
+        icon: <GitHubIcon />            
+      },
+      level: "introductory",
+      descText: "This is Ben's introduction to several different React hooks, then enabling force behind functional components with no class envy.",
+      date: "2019-06-22",
+      author: "Ben Awad",
+      avatars: [
+          <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+      ],
+      features: [
+        {
+          bulletPoint: "useState",
+          bulletText: "Give your function-based components (this-less :-) state."
+        },
+        {
+          bulletPoint: "useEffect",
+          bulletText: "Replace lifecycle methods with this.",
+        },
+        {
+          bulletPoint: "useRef",
+          bulletText: "Reach down into the DOM and get a reference to a specific node.",
+        },
+        {
+          bulletPoint: "useLayoutEffect",
+          bulletText: "Need to do something specifically when the DOM has mutated?",
+        },
+        {
+          bulletPoint: "useContext",
+          bulletText: "Share state with deep children?",
+        },
+        {
+          bulletPoint: "useCallback",
+          bulletText: "Prevent a function from being created on every render.",
+        },
+        {
+          bulletPoint: "useMemo",
+          bulletText: "Performance woes? Help prevent nuisance renders.",
+        },
+      ],
+    },
+    playlist: [
+      {
+        primaryText: "#1 useState",
+        summary: {
+          provider: "Ben Awad",
+          courseTitle: "useState",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/9xhKH43llhU",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/benawad/react-hooks-tutorial/tree/1_useState",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "This tutorial introduces useState, a React hook that gives functional components the ability to manage state.",
+          date: "2019-06-29",
+          author: "Ben Awad",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Hooks only work with functions.",
+              bulletText: "But you have to follow certain coding conventions when using.",
+            },
+            {
+              bulletPoint: "const [value, setValue] = useState('initial state')",
+              bulletText: "Typical way to define a variable to hold state and a setter to mutate state.",
+            },
+            {
+              bulletPoint: "useForm",
+              bulletText: "You can tuck native hooks code into your /own/ custom hook logic. Avoids render props typically seen with Formik.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "ba-hooks-useState-1",
+            primaryText: "Skeleton",
+            secondaryText: "code",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/9xhKH43llhU",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/1-start/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseState1 />
+          },
+          {
+            demoKey: "ba-hooks-useState-2",
+            primaryText: "No auto",
+            secondaryText: "state merging",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/9xhKH43llhU?t=318",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/2-no-state-merging/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseState2 />
+          },
+          {
+            demoKey: "ba-hooks-useState-3",
+            primaryText: "You do",
+            secondaryText: "the state merging",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/9xhKH43llhU?t=391",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/3-you-merge/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseState3 />
+          },
+          {
+            demoKey: "ba-hooks-useState-4",
+            primaryText: "Granular",
+            secondaryText: "state",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/9xhKH43llhU?t=463",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/4-granular-state/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseState4 />
+          },
+          {
+            demoKey: "ba-hooks-useState-5",
+            primaryText: "<input>",
+            secondaryText: "before hooks",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/9xhKH43llhU?t=548",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/5-name-pw/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseState5 />
+          },
+          {
+            demoKey: "ba-hooks-useState-6",
+            primaryText: "<input>",
+            secondaryText: "after useForm",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/9xhKH43llhU?t=648",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/6-useForm/App.js",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseState6 />
+          },
+        ]
+      },
+      {
+        primaryText: "#2 useContext",
+        summary: {
+          provider: "Ben Awad",
+          courseTitle: "useContext (Storing a User)",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/lhMKvyLRWo0",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "This lean but rich 10 minute tutorial introduces useContext, the hooks version of React's Context API. In this case, a user's login identity is stored and shared among components as state within a context store.",
+          date: "2019-06-29",
+          author: "Ben Awad",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Easily share state",
+              bulletText: "Share state with deeply nested child components without prop-drilling.",
+            },
+            {
+              bulletPoint: "createContext()",
+              bulletText: "Learn to create a context data store with createContext()"
+            },
+            {
+              bulletPoint: "useContext()",
+              bulletText: "Subscribe to context state with useContext()"
+            },
+            {
+              bulletPoint: "Works nicely with useState()",
+              bulletText: "Can store useState() output (i.e., getter/setter) within a context."
+            },
+            {
+              bulletPoint: "useMemo()",
+              bulletText: "Minimize component re-rendering."
+            },
+            {
+              bulletPoint: "React Router",
+              bulletText: "Features skeleton app that uses <Router> and <Route> to achieve effect of multi-page app within single page architecutre.",
+            },
+            {
+              bulletPoint: "async / await",
+              bulletText: "Mock up a backend api call to fetch a fake user during development.",
+            }
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "ba-router-base",
+            primaryText: "Simple",
+            secondaryText: "Router",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/0-router-base",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AppRouter0 />
+          },
+          {
+            demoKey: "ba-read-context-msg",
+            primaryText: "Context:",
+            secondaryText: "Read string from context",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0?t=63",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/1-read-msg",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AppRouter1 />
+          },
+          {
+            demoKey: "ba-store-state",
+            primaryText: "Mutable context:",
+            secondaryText: "useState + useContext",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0?t=249",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/2-mutable-context",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AppRouter2 />
+          },
+          {
+            demoKey: "ba-login-context",
+            primaryText: "Login context:",
+            secondaryText: "Manage user state",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/lhMKvyLRWo0?t=424",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/3-login-context",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <AppRouter3 />
           },
         ]
       },
