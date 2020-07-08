@@ -32,18 +32,14 @@ export const CenteredGrid = () => {
                 </Grid>
                 <Grid item xs={12} container spacing={2}>
                     <Grid item xs={6} >
-                        Permission is hereby granted, free of charge, to any person obtaining a copy
-                        of this software and associated documentation files (the "Software"), to deal
-                        in the Software without restriction, including without limitation the rights
-                        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-                        copies of the Software
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto optio, facere, 
+                        quis omnis totam fugiat ullam amet expedita provident voluptatum repellat maxime 
+                        modi velit cumque et quibusdam eaque rem a!
                     </Grid>
                     <Grid item xs={6} >
-                        Permission is hereby granted, free of charge, to any person obtaining a copy
-                        of this software and associated documentation files (the "Software"), to deal
-                        in the Software without restriction, including without limitation the rights
-                        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-                        copies of the Software
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto optio, facere, 
+                        quis omnis totam fugiat ullam amet expedita provident voluptatum repellat maxime 
+                        modi velit cumque et quibusdam eaque rem a!
                     </Grid>
                 </Grid>
             </Grid>
