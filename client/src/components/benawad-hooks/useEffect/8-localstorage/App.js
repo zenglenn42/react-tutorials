@@ -4,7 +4,7 @@ import { Button } from '@material-ui/core'
 
 export const App = () => {
     const [count, setCount] = useState(() => JSON.parse(localStorage.getItem("count")))
-    const { data, loading } = useFetch(`http://countsapi.com/${count}/trivia`)
+    const { data, loading } = useFetch(`http://numbersapi.com/${count}/trivia`)
 
     useEffect(()=>{
         localStorage.setItem("count", JSON.stringify(count))
