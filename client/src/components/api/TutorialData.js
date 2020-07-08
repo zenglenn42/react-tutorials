@@ -945,7 +945,7 @@ const TutorialData = [
         icon: <GitHubIcon />            
       },
       level: "introductory",
-      descText: "This is Ben's introduction to several different React hooks, then enabling force behind functional components with no class envy.",
+      descText: "This is Ben's significant introduction to several different React hooks, the enabling force behind functional components with no class envy.",
       date: "2019-06-22",
       author: "Ben Awad",
       avatars: [
