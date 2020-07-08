@@ -9,7 +9,7 @@ const Hello = () => {
 
     return (
         <div>
-            Hello
+            i'm a {'<Hello/>'} component
         </div>
     )
 }
