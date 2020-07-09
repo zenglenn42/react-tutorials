@@ -9,7 +9,7 @@ export const App = () => {
     return (
         <div>
             <input name="email" placeholder="pls open console log" value={values.email} onChange={handleChange} />
-            <label for="email" >&nbsp;Name</label>
+            <label for="email" >&nbsp;Email</label>
             <br/>
 
             <input 

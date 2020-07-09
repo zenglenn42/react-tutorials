@@ -1,4 +1,5 @@
 import React from 'react'
+import { Typography, Divider } from '@material-ui/core'
 
 const Hello = () => {
 
@@ -9,7 +10,11 @@ const Hello = () => {
 
     return (
         <div>
-            i'm a {'<Hello/>'} component
+            <Divider/>
+            <Typography>hello</Typography>
+            <Typography paragraph variant="caption">i'm a {'<Hello/>'} component</Typography>
+            <Typography variant="caption">i cleanup after myself before unmounting ... see console.log</Typography>
+            <Divider/>
         </div>
     )
 }
