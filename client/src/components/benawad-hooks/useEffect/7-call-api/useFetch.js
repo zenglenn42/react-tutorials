@@ -9,15 +9,16 @@ const useFetch = url => {
     useEffect(() => {
         setState(state => ({data: state.data, loading: true}))
         fetch(url)
-        .then(x => x.text())
-        .then(y => {
-            setState({data: y, loading: false})
-        }).catch(error => {
-            // Inet down or CORS failure?
-            const errmsg = "😕 Internet request failed. Are you connected?"
-            setState({data: errmsg, loading: false})
-        })
+            .then(x => x.text())
+            .then(y => {
+                setState({data: y, loading: false})
+            }).catch(error => {
+                // Inet down or CORS failure?
+                const errmsg = "😕 Internet request failed. Are you connected?"
+                setState({data: errmsg, loading: false})
+            })
     }, [url])
+
     return state
 }
 
