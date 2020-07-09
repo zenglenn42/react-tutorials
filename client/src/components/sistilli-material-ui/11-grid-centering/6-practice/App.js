@@ -4,7 +4,7 @@ import AcUnitIcon from '@material-ui/icons/AcUnit'
 
 const useStyles = makeStyles(theme => ({
     grid: {
-        border: "2px solid black"
+        border: "1px solid darkgrey"
     },
     item: {
         backgroundColor: "lightgrey",

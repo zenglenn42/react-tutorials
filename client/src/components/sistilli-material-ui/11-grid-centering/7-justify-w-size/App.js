@@ -3,6 +3,9 @@ import { Grid, Typography, makeStyles } from '@material-ui/core'
 import AcUnitIcon from '@material-ui/icons/AcUnit'
 
 const useStyles = makeStyles({
+    grid: {
+        border: "1px solid darkgrey"
+    },
     cell: {
         backgroundColor: "lightgray"
     }
@@ -27,7 +30,7 @@ export const App = () => {
             <Typography variant="caption">
                 {'</Grid>'}
             </Typography>
-            <Grid container justify="center">
+            <Grid className={classes.grid} container justify="center">
                 <Grid className={classes.cell} item xs={12}>
                     <AcUnitIcon color="primary" />
                 </Grid>
@@ -60,7 +63,7 @@ export const App = () => {
                 {'</Grid>'}
             </Typography>
 
-            <Grid container justify="center">
+            <Grid className={classes.grid} container justify="center">
                 <Grid className={classes.cell} item>
                     <AcUnitIcon color="primary" />
                 </Grid>
@@ -78,7 +81,7 @@ export const App = () => {
             <Typography variant="caption">
                 {'</Grid>'}
             </Typography>
-            <Grid container justify="center">
+            <Grid className={classes.grid} container justify="center">
                 <Grid className={classes.cell} item xs={3}>
                     <AcUnitIcon color="primary" />
                 </Grid>
@@ -96,7 +99,7 @@ export const App = () => {
             <Typography variant="caption">
                 {'</Grid>'}
             </Typography>
-            <Grid container justify="center">
+            <Grid className={classes.grid} container justify="center">
                 <Grid className={classes.cell} item xs={3} style={{textAlign: "center"}}>
                     <AcUnitIcon color="primary" />
                 </Grid>
@@ -110,19 +113,19 @@ export const App = () => {
                 {'<Grid container justify="center" alignItems="center">'}
             </Typography>
             <br/>
-            <Typography>
+            <Typography variant="caption">
                 {'<Grid item xs={3} style={{textAlign: "center"}}>❄︎</Grid>'}
             </Typography>
             <Typography variant="caption">
                 {'</Grid>'}
             </Typography>
-            <Grid container justify="center" alignItems="center" style={{border: "1px solid gray"}}>
+            <Grid className={classes.grid} container justify="center" alignItems="center">
                 <Grid className={classes.cell} item xs={3} style={{textAlign: "center"}}>
                     <AcUnitIcon color="primary" />
                 </Grid>
             </Grid>
             <Typography variant="caption">
-                No, because in this case it centers the cell vertically but that cell is already taking up the entire vertical height of the grid.  So you don't see any effect, per se.
+                No, because in this case it centers the cell vertically but that cell is <em>already</em> taking up the entire vertical height of the grid.  So you don't see any effect, per se.
             </Typography><br/><br/>
             <Typography variant="caption">
                 You would have to give the grid some height to see the effect of alignItems ...
@@ -137,7 +140,6 @@ export const App = () => {
                     <AcUnitIcon color="primary" />
                 </Grid>
             </Grid>
-
         </>
     )
 }
