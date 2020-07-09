@@ -39,6 +39,11 @@ import { App as BaHooksUseEffect6}  from '../benawad-hooks/useEffect/6-events/Ap
 import { App as BaHooksUseEffect7}  from '../benawad-hooks/useEffect/7-call-api/App'
 import { App as BaHooksUseEffect8}  from '../benawad-hooks/useEffect/8-localstorage/App'
 
+import { App as BaHooksUseRef1}  from '../benawad-hooks/useRef/1-form-focus/App'
+import { App as BaHooksUseRef2}  from '../benawad-hooks/useRef/2-ivar/App'
+import { App as BaHooksUseRef3}  from '../benawad-hooks/useRef/3-setState-fail/App'
+import { App as BaHooksUseRef4}  from '../benawad-hooks/useRef/4-setState-win/App'
+
 import { AppRouter as BaUseContext0 } from '../benawad-hooks/useContext/0-router-base/AppRouter'
 import { AppRouter as BaUseContext1 } from '../benawad-hooks/useContext/1-read-msg/AppRouter'
 import { AppRouter as BaUseContext2 } from '../benawad-hooks/useContext/2-mutable-context/AppRouter'
@@ -1344,7 +1349,108 @@ const TutorialData = [
         ]
       },
       {
-        primaryText: "#3 useContext",
+        primaryText: "#3 useRef",
+        summary: {
+          provider: "Ben Awad",
+          courseTitle: "useRef",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/W6AJ-gRupCs",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/benawad/react-hooks-tutorial/tree/3_useRef",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "This tutorial introduces useRef, a hook useful in forms and a means of storage that doesn't trigger re-renders, unlike useState",
+          date: "2019-06-24",
+          author: "Ben Awad",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Easily address specific DOM elements from JSX",
+              bulletText: "Make imperative calls like inputRef.current.focus()",
+            },
+            {
+              bulletPoint: "Can store refs to /anything/",
+              bulletText: "Basically a storage bucket that doesn't trigger re-renders, unlike state.",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "ba-ref-1",
+            primaryText: "Form",
+            secondaryText: "focus",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/W6AJ-gRupCs",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/1-form-focus",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseRef1 />
+          },
+          {
+            demoKey: "ba-ref-2",
+            primaryText: "Instance",
+            secondaryText: "var",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/W6AJ-gRupCs",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/2-ivar",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseRef2 />
+          },
+          {
+            demoKey: "ba-ref-3",
+            primaryText: "setState",
+            secondaryText: "fail",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/W6AJ-gRupCs",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/3-setState-fail",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseRef3 />
+          },
+          {
+            demoKey: "ba-ref-4",
+            primaryText: "setState",
+            secondaryText: "guard",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/W6AJ-gRupCs",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/4-setState-win",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseRef4 />
+          },
+        ]
+      },
+      {
+        primaryText: "#4 useContext",
         summary: {
           provider: "Ben Awad",
           courseTitle: "useContext (Storing a User)",
