@@ -1,19 +1,32 @@
 import React from 'react'
-import { Grid, Typography } from '@material-ui/core'
+import { Grid, Typography, makeStyles } from '@material-ui/core'
 import AcUnitIcon from '@material-ui/icons/AcUnit'
 
+const useStyles = makeStyles(theme => ({
+    grid: {
+        border: "2px solid black"
+    },
+    item: {
+        backgroundColor: "lightgrey",
+        border: "1px solid white",
+        borderRadius: "0.2em",
+        padding: "4px",
+    }
+}))
+
 export const App = () => {
+    const classes = useStyles()
     return (
         <>
             <Typography variant="caption">
             {'<Grid container>'}
             </Typography>
 
-            <Grid container>
-                <Grid item>
+            <Grid className={classes.grid} container>
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="primary" />
                 </Grid>
-                <Grid item>
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="secondary" />
                 </Grid>
             </Grid>
@@ -23,11 +36,11 @@ export const App = () => {
             {'<Grid container justify="center">'}
             </Typography>
             
-            <Grid container justify="center">
-                <Grid item>
+            <Grid className={classes.grid} container justify="center">
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="primary" />
                 </Grid>
-                <Grid item>
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="secondary" />
                 </Grid>
             </Grid>
@@ -37,11 +50,11 @@ export const App = () => {
             {'<Grid container justify="flex-end">'}
             </Typography>
             
-            <Grid container justify="flex-end">
-                <Grid item>
+            <Grid className={classes.grid} container justify="flex-end">
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="primary" />
                 </Grid>
-                <Grid item>
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="secondary" />
                 </Grid>
             </Grid>
@@ -51,11 +64,11 @@ export const App = () => {
             {'<Grid container justify="space-between">'}
             </Typography>
             
-            <Grid container justify="space-between">
-                <Grid item>
+            <Grid className={classes.grid} container justify="space-between">
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="primary" />
                 </Grid>
-                <Grid item>
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="secondary" />
                 </Grid>
             </Grid>
@@ -65,11 +78,11 @@ export const App = () => {
             {'<Grid container justify="space-around">'}
             </Typography>
             
-            <Grid container justify="space-around">
-                <Grid item>
+            <Grid className={classes.grid} container justify="space-around">
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="primary" />
                 </Grid>
-                <Grid item>
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="secondary" />
                 </Grid>
             </Grid>
@@ -79,11 +92,11 @@ export const App = () => {
             {'<Grid container justify="space-evenly">'}
             </Typography>
             
-            <Grid container justify="space-evenly">
-                <Grid item>
+            <Grid className={classes.grid} container justify="space-evenly">
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="primary" />
                 </Grid>
-                <Grid item>
+                <Grid className={classes.item} item>
                     <AcUnitIcon color="secondary" />
                 </Grid>
             </Grid>
