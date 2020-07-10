@@ -35,7 +35,7 @@ const CoffeeCard = props => {
         title={title}
         subheader={subtitle}
       />
-      <CardMedia style={{ height: "150px" }} image={imageUrl} />
+      <CardMedia style={{ height: "0", paddingTop: "56.25%" }} image={imageUrl} />
       <CardContent>
         <Typography variant="body2" component="p">
           {description}
