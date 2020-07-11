@@ -1,5 +1,5 @@
 import React from 'react'
-import {AppBar, makeStyles} from '@material-ui/core'
+import {AppBar as MuiAppBar, makeStyles} from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -12,20 +12,20 @@ const useStyles = makeStyles(theme=>({
 	}
 }))
 
-export const MyAppBar = (props) => {
+export const AppBar = (props) => {
 	const classes = useStyles()
 
-	const {handleMenuClick, text} = props
+	const {onMenuClick, text} = props
 	return (
 		<>
 			<CssBaseline />
-			<AppBar className={classes.appBar}>
+			<MuiAppBar className={classes.appBar}>
 				<Toolbar>
 					<IconButton
 						color="inherit"
 						aria-label="open drawer"
 						edge="start"
-						onClick={handleMenuClick}
+						onClick={onMenuClick}
 					>
 						<MenuIcon />
 					</IconButton>
@@ -33,8 +33,7 @@ export const MyAppBar = (props) => {
 						{text}
 					</Typography>
 				</Toolbar>
-			</AppBar>
+			</MuiAppBar>
 		</>
 	)
 }
-

@@ -1,64 +1,18 @@
-import React, {useRef, useState, useLayoutEffect} from 'react'
-import {Drawer, Box, useTheme, List, ListItem, ListItemText, ListItemIcon } from '@material-ui/core'
-import {MyAppBar} from './MyAppBar'
-import {Home, ContactMail, Person} from '@material-ui/icons'
+import React from 'react'
+import {Drawer, useTheme, List, ListItem, ListItemText, ListItemIcon} from '@material-ui/core'
 
-const ContainerDrawer = (props) => {
-    const initialValue = () => document.body
-    const [modalContainer, setModalContainer] = useState(initialValue)
-    const containerRef = useRef(modalContainer)
-
-    useLayoutEffect(() => {
-        setModalContainer(containerRef.current)
-    }, [containerRef])
-
-    const [openDrawer, setOpenDrawer] = useState(false)
-    const handleDrawerToggle = () => {
-        setOpenDrawer(!openDrawer)
-    }
-
+export const ContainerDrawer = (props) => {
+    const {container, drawerItems, open, onClose, onClick, onDrawerItemClick} = props
     const theme = useTheme()
-
-    const itemsList = [
-        {
-            text: 'Home',
-            icon: <Home />,
-            // onClick: () => history.push('/')
-        },
-        {
-            text: 'Contact',
-            icon: <ContactMail />,
-            // onClick: () => history.push('/contact')
-        },
-        {
-            text: 'About',
-            icon: <Person />,
-            // onClick: () => history.push('/about')
-        },
-    ]
 
     return (
         <>
-        <MyAppBar 
-            text="Container-relative Drawer (Bonus)"
-            handleMenuClick={handleDrawerToggle}
-            style={{position: "relative"}}
-        />
-        <Box
-            ref={containerRef}
-            position="relative"
-            height = "125px"
-            component="div"
-            overflow="hidden auto"
-            border="1px solid grey"
-            paddingLeft="16px"
-        >
             <Drawer
                 variant="temporary" // Doesn't seem to be strictly necessary.
-                container = {modalContainer}
-                open={openDrawer} 
-                onClose={handleDrawerToggle}
-                onClick={handleDrawerToggle}
+                container = {container}
+                open={open} 
+                onClose={onClose}
+                onClick={onClick}
                 elevation={5}
                 PaperProps={{style: {position: "absolute", width: "auto", height: "100%"}}}
                 BackdropProps={{style: {position: "absolute"}}}
@@ -79,10 +33,10 @@ const ContainerDrawer = (props) => {
                 }}
             >
                 <List dense style={{padding: theme.spacing(0, 0)}}>
-                    {itemsList.map((item, index) => {
+                    {drawerItems.map((item, index) => {
                         const {text, icon} = item
                         return (
-                            <ListItem button key={text} onClick={handleDrawerToggle}>
+                            <ListItem button key={text} onClick={onDrawerItemClick}>
                                 <ListItemIcon >{icon}</ListItemIcon>
                                 <ListItemText primary={text} />
                             </ListItem>
@@ -90,11 +44,6 @@ const ContainerDrawer = (props) => {
                     })}
                 </List>
             </Drawer>
-            <p style={{position: "inherit"}}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, eaque dolor? Sit incidunt illo expedita cum nulla autem doloribus non, eum quibusdam iure numquam repellendus obcaecati molestiae quisquam ab fuga?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, eaque dolor? Sit incidunt illo expedita cum nulla autem doloribus non, eum quibusdam iure numquam repellendus obcaecati molestiae quisquam ab fuga?
-            </p>
-        </Box>        
         </>
     )
 }
