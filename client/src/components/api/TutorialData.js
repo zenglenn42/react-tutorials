@@ -3554,38 +3554,6 @@ const TutorialData = [
             demoComponent: <MaterialUIPersistentDrawer1 />
           },
           {
-            demoKey: "material-ui-drawer-6",
-            primaryText: "Hybrid:",
-            secondaryText: "responsive drawer",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/CjFWbEOcq-Y?t=166",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/6-responsive",
-              icon: <GitHubIcon />           
-            },
-            demoComponent: <MaterialUIDrawer6 />
-          },
-          {
-            demoKey: "material-ui-drawer-7",
-            primaryText: "container",
-            secondaryText: "prop",
-            refLink: {
-              tipText: "youtube",
-              href: "https://youtu.be/CjFWbEOcq-Y?t=166",
-              icon: <FaYoutube style={{color: "red"}}/>
-            },
-            codeLink: {
-              tipText: "github",
-              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/7-container",
-              icon: <GitHubIcon />           
-            },
-            demoComponent: <MaterialUIDrawer7 />
-          },
-          {
             demoKey: "material-ui-drawer-2",
             primaryText: "Router",
             secondaryText: "code",
@@ -3603,8 +3571,8 @@ const TutorialData = [
           },
           {
             demoKey: "material-ui-drawer-3",
-            primaryText: "Permanent",
-            secondaryText: "drawer",
+            primaryText: "Variant:",
+            secondaryText: "permanent drawer",
             refLink: {
               tipText: "youtube",
               href: "https://youtu.be/CjFWbEOcq-Y?t=691",
@@ -3648,6 +3616,38 @@ const TutorialData = [
               icon: <GitHubIcon />           
             },
             demoComponent: <MaterialUIDrawer5 />
+          },
+          {
+            demoKey: "material-ui-drawer-6",
+            primaryText: "Bonus:",
+            secondaryText: "responsive drawer",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/CjFWbEOcq-Y?t=166",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/6-responsive",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDrawer6 />
+          },
+          {
+            demoKey: "material-ui-drawer-7",
+            primaryText: "Bonus",
+            secondaryText: "container modal",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/CjFWbEOcq-Y?t=166",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/7-container",
+              icon: <GitHubIcon />           
+            },
+            demoComponent: <MaterialUIDrawer7 />
           },
         ]
       },
