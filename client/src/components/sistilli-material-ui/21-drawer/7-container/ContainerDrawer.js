@@ -1,15 +1,16 @@
 import React from 'react'
-import {Drawer, useTheme, List, ListItem, ListItemText, ListItemIcon, makeStyles, Divider } from '@material-ui/core'
+import {Drawer, List, ListItem, ListItemText, ListItemIcon, makeStyles, Divider } from '@material-ui/core'
 
 const useStyles = makeStyles(theme => ({
     drawerItems: {
-        overflowY: "scroll"
+        overflowY: "scroll",
+        padding: theme.spacing(0, 0)
     }
 }))
 
 export const ContainerDrawer = (props) => {
+    // eslint-disable-next-line no-unused-vars
     const {container, anchor, drawerWidth, drawerItems, open, onClose, onClick, onDrawerItemClick} = props
-    const theme = useTheme()
     const classes = useStyles()
 
     const anchorTransformMap = {
@@ -110,7 +111,7 @@ export const ContainerDrawer = (props) => {
                 // }}
 
             >
-                <List className={classes.drawerItems} dense style={{padding: theme.spacing(0, 0)}}>
+                <List className={classes.drawerItems} dense>
                     {drawerItems.map((item, index) => {
                         const {text, icon, divider} = item
                         return (divider) ? <Divider/> :
