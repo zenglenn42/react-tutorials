@@ -41,7 +41,6 @@ export const App = (props) => {
 
     const drawerList = <DrawerList 
             drawerItems={navItems} 
-            dimensions={drawerDimensions} 
             setDimensions={setDrawerDimensions} 
         />
     const mobileDrawerList = <Hidden {...desktopVisibleProps}>{drawerList}</Hidden>

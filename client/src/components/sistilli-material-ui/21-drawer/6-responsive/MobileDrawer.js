@@ -1,5 +1,5 @@
 import React from 'react'
-import {Drawer as MuiDrawer, Hidden} from '@material-ui/core'
+import {Drawer as MuiDrawer} from '@material-ui/core'
 
 export const MobileDrawer = (props) => {
     const {container, anchor, drawerContent, open, onClose, onClick} = props

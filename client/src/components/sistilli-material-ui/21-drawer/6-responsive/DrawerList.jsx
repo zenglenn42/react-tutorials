@@ -10,14 +10,14 @@ const useStyles = makeStyles(theme => ({
 
 export const DrawerList = (props) => {
     const classes = useStyles()
-    const {drawerItems, dimensions, setDimensions} = props
+    const {drawerItems, setDimensions} = props
 
     const _listRef = useRef()
     const [listRef, setListRef] = useState(_listRef)
 
     useLayoutEffect(() => {
         setListRef(listRef)
-    }, [setListRef])
+    }, [listRef, setListRef])
 
     useLayoutEffect(() => {
         const {width, height} = listRef.current.getBoundingClientRect()
