@@ -39,6 +39,10 @@ import { App as BaHooksUseEffect6}  from '../benawad-hooks/useEffect/6-events/Ap
 import { App as BaHooksUseEffect7}  from '../benawad-hooks/useEffect/7-call-api/App'
 import { App as BaHooksUseEffect8}  from '../benawad-hooks/useEffect/8-localstorage/App'
 
+import { App as BaHooksUseLayoutEffect1}  from '../benawad-hooks/useLayoutEffect/1-measure-input-field/App'
+import { App as BaHooksUseLayoutEffect2}  from '../benawad-hooks/useLayoutEffect/2-dynamic-length/App'
+import { App as BaHooksUseLayoutEffect3}  from '../benawad-hooks/useLayoutEffect/3-custom-hook/App'
+
 import { App as BaHooksUseRef1}  from '../benawad-hooks/useRef/1-form-focus/App'
 import { App as BaHooksUseRef2}  from '../benawad-hooks/useRef/2-ivar/App'
 import { App as BaHooksUseRef3}  from '../benawad-hooks/useRef/3-setState-fail/App'
@@ -1028,7 +1032,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/benawad/react-hooks-tutorial/tree/1_useState",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState",
             icon: <GitHubIcon />            
           },
           level: "introductory",
@@ -1165,7 +1169,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/benawad/react-hooks-tutorial/tree/2_useEffect",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect",
             icon: <GitHubIcon />            
           },
           level: "introductory",
@@ -1362,7 +1366,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/benawad/react-hooks-tutorial/tree/3_useRef",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef",
             icon: <GitHubIcon />            
           },
           level: "introductory",
@@ -1451,7 +1455,96 @@ const TutorialData = [
         ]
       },
       {
-        primaryText: "#4 useContext",
+        primaryText: "#4 useLayoutEffect",
+        summary: {
+          provider: "Ben Awad",
+          courseTitle: "useLayoutEffect",
+          demoKey: "summary",
+          refLink: {
+            tipText: "youtube",
+            href: "https://youtu.be/ommC6fS1SZg",
+            icon: <FaYoutube style={{color: "red"}}/>
+          },
+          codeLink: {
+            tipText: "github",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect",
+            icon: <GitHubIcon />            
+          },
+          level: "introductory",
+          descText: "This tutorial introduces useLayoutEffect, a React hook for reading DOM layout.",
+          date: "2019-06-25",
+          author: "Ben Awad",
+          avatars: [
+            <Avatar style={avatarStyle} alt="Ben Awad" src="/assets/img/avatar/ben-awad.png" />
+          ],
+          features: [
+            {
+              bulletPoint: "Similar to useEffect but ...",
+              bulletText: "fires synchronously after all DOM mutations"
+            },
+            {
+              bulletPoint: "Replaces two class-based lifecycle methods:",
+              bulletText: "componentDidMount() & componentDidUpdate(0"
+            },
+            {
+              bulletPoint: "Use case: get screen dimensions of DOM element",
+              bulletText: "ref.current.getBoundingClientRect()",
+            },
+          ],
+        },
+        snapshots: [
+          {
+            demoKey: "ba-hooks-useLayoutEffect-1",
+            primaryText: "Measure",
+            secondaryText: "input field",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/ommC6fS1SZg",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/1-measure-input-field",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseLayoutEffect1 />
+          },
+          {
+            demoKey: "ba-hooks-useLayoutEffect-2",
+            primaryText: "Measure",
+            secondaryText: "dynamic text length",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/ommC6fS1SZg?t=141",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/2-dynamic-length",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseLayoutEffect2 />
+          },
+          {
+            demoKey: "ba-hooks-useLayoutEffect-3",
+            primaryText: "Custom hook",
+            secondaryText: "useMeasure",
+            refLink: {
+              tipText: "youtube",
+              href: "https://youtu.be/ommC6fS1SZg?t=369",
+              icon: <FaYoutube style={{color: "red"}}/>
+            },
+            codeLink: {
+              tipText: "github",
+              href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/3-custom-hook",
+              icon: <GitHubIcon />            
+            },
+            demoComponent: <BaHooksUseLayoutEffect3 />
+          },
+        ]
+      },
+      {
+        primaryText: "#5 useContext",
         summary: {
           provider: "Ben Awad",
           courseTitle: "useContext (Storing a User)",
@@ -1463,7 +1556,7 @@ const TutorialData = [
           },
           codeLink: {
             tipText: "github",
-            href: "https://github.com/benawad/react-hooks-tutorial/tree/7_useContext",
+            href: "https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext",
             icon: <GitHubIcon />            
           },
           level: "introductory",
