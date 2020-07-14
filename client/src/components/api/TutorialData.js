@@ -1484,7 +1484,7 @@ const TutorialData = [
             },
             {
               bulletPoint: "Replaces two class-based lifecycle methods:",
-              bulletText: "componentDidMount() & componentDidUpdate(0"
+              bulletText: "componentDidMount() & componentDidUpdate()"
             },
             {
               bulletPoint: "Use case: get screen dimensions of DOM element",

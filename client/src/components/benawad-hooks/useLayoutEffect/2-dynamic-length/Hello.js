@@ -1,13 +1,16 @@
 import React, { useState, useRef, useLayoutEffect } from 'react'
-import useFetch from './useFetch'
 import { Button, Divider } from '@material-ui/core'
+import useFetch from './useFetch'
+
+// Need this to address CORS deployment issue since I host from https
+// but numbers API in example is http.
+const https = "https://cors-anywhere.herokuapp.com/http"
+
 
 const Hello = () => {
     const [ count, setCount] = useState(0)
 
-    // Need this since I host from https and numbers api is http.
-    const fixCors = "https://cors-anywhere.herokuapp.com/"
-    const { data, loading } = useFetch(`${fixCors}http://numbersapi.com/${count}/trivia`)
+    const { data, loading } = useFetch(`${https}://numbersapi.com/${count}/trivia`)
 
     const divRef = useRef()
     const [rect, setRect] = useState({})
@@ -20,8 +23,11 @@ const Hello = () => {
     return (
         <div>
             <div style={{ display: "flex" }}>
-                <div ref={divRef}> {!data ? loading && "loading ..." : data} </div><br/>
+                <div ref={divRef} style={{border: "1px solid grey"}}> 
+                        {!data ? loading && "loading ..." : data} 
+                </div>
             </div>
+            <br/>
             <Divider />
             <pre>
                 Bounding rectangle for number fact:<br/>
