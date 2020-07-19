@@ -1,11 +1,11 @@
 {
   "name": "react-tutorials",
   "version": "1.0.0",
-  "description": "Container for various react tutorials I complete.",
+  "description": "Learn React more efficiently.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "heroku-postbuild": "cd client && npm i && npm run build",
+    "heroku-postbuild": "cd client && yarn install && yarn run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,24 +19,12 @@
     "url": "https://github.com/zenglenn42/react-tutorials/issues"
   },
   "homepage": "https://github.com/zenglenn42/react-tutorials#readme",
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": "^1.22.4"
+  },
   "dependencies": {
     "express": "^4.17.1"
   },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-react-app": "^5.2.1",
-    "eslint-plugin-flowtype": "^4.6.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^2.5.1",
-    "prettier": "^2.0.5",
-    "typescript": "^3.9.6"
-  }
+  "devDependencies": {}
 }

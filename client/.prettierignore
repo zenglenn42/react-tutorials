@@ -1,0 +1,5 @@
+/coverage
+/dist
+/tests/build
+/tests
+/src/serviceWorker.ts
