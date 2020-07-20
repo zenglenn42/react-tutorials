@@ -47,15 +47,11 @@
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5"
   },
-  "optionalDependencies": {
-    "fsevents": "2.x"
-  },
   "resolutions": {
     "**/core-js": "^3.5.0",
     "**/eslint": "^6.6.0",
     "**/strip-comments": "^2.0.1",
     "**/chokidar": "^3.4.1",
-    "**/fsevents": "2.x",
     "**/source-map-resolve": "^0.6.0"
   },
   "browserslist": {
