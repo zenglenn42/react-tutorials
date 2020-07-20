@@ -113,6 +113,3 @@ dist
 .tern-port
 
 .DS_Store
-
-# vscode configuration
-settings.json

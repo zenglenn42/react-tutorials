@@ -45,7 +45,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^3.1.4",
-    "prettier": "^2.0.5"
+    "prettier": "2.0.5"
   },
   "resolutions": {
     "**/core-js": "^3.5.0",
@@ -74,10 +74,12 @@
     "lint": "eslint --config ./.eslintrc.js --ext .ts --ext .tsx .",
     "lint:dryrun": "yarn run lint --fix-dry-run",
     "lint:fix": "yarn run lint --fix",
-    "format": "prettier \"**/*.{json,js,md,ts,yml}\" --config ./.prettierrc.js --ignore-path .prettierignore",
-    "format:debug": "prettier \"**/*.{json,js,md,ts,yml}\" --config ./.prettierrc.js --ignore-path .prettierignore --loglevel debug",
-    "format:ci": "prettier \"**/*.{json,js,md,ts,yml}\" --config ./.prettierrc.js --ignore-path .prettierignore --check",
-    "format:write": "prettier \"**/*.{json,js,md,ts,yml}\" --config ./.prettierrc.js --ignore-path .prettierignore --write",
+    "format": "prettier --config ./.prettierrc.json --ignore-path ./.prettierignore  \"{src,public}/**/*.{json,js,jsx,md,ts,tsx,yml,css,html}\"",
+    "format:debug": "yarn run format --loglevel debug",
+    "format:check": "yarn run format --check",
+    "format:ls": "yarn run format --list-different",
+    "format:ci": "yarn run format:check",
+    "format:write": "yarn run format --write",
     "build": "react-scripts build",
     "test:unit": "react-scripts test",
     "test": "react-scripts test",

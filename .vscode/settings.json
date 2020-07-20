@@ -1,0 +1,10 @@
+{
+    "prettier.ignorePath": "./client/.prettierignore",
+    "prettier.packageManager": "yarn",
+    "prettier.configPath": "./client/.prettierrc.json",
+    "prettier.prettierPath": "./client/node_modules/prettier",
+    "prettier.requireConfig": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+}
