@@ -37,7 +37,7 @@
     "formik": "^2.1.5",
     "markdown-to-jsx": "^6.11.4",
     "recharts": "^2.0.0-beta.6",
-    "short-id": "0.1.0-1"
+    "uuid": "^8.2.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.6.1",
