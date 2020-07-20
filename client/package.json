@@ -12,6 +12,7 @@
     "url": "https://github.com/zenglenn42/react-tutorials.git"
   },
   "engines": {
+    "node": "12.x",
     "npm": "please-use-yarn",
     "yarn": "^1.22.4"
   },
