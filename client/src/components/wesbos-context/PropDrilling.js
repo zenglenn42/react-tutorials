@@ -2,10 +2,10 @@ import React from 'react'
 
 // Function-based stateless component.
 const Family = (props) => (
-        <div>
-            <p>I am a family.</p>
-            <Person name={props.name} />
-        </div>
+    <div>
+        <p>I am a family.</p>
+        <Person name={props.name} />
+    </div>
 )
 
 class Person extends React.Component {
@@ -22,19 +22,17 @@ class PropDrilling extends React.Component {
     state = {
         name: 'Wes',
         age: 100,
-        cool: true
+        cool: true,
     }
 
     render() {
-        return(
+        return (
             <div>
                 <p>I am an app.</p>
                 <Family name={this.state.name} />
                 <p>
-                    &lt;App&gt;
-                        &lt;Family name="{this.state.name}" &gt;
-                        &lt;Person name="{this.state.name}" /&gt;
-                        &lt;/Family&gt;
+                    &lt;App&gt; &lt;Family name="{this.state.name}" &gt;
+                    &lt;Person name="{this.state.name}" /&gt; &lt;/Family&gt;
                     &lt;/App&gt;
                 </p>
             </div>

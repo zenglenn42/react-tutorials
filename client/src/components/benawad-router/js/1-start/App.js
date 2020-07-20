@@ -6,10 +6,5 @@ import React from 'react'
 // route params
 
 export const App = () => {
-    return (
-        <div>
-            hey
-        </div>
-    )
+    return <div>hey</div>
 }
-

@@ -4,28 +4,39 @@ import useForm from './useForm'
 import { Button } from '@material-ui/core'
 
 export const App = () => {
-    const [values, handleChange] = useForm({password: ""})
+    const [values, handleChange] = useForm({ password: '' })
     const [showHello, setShowHello] = useState(true)
 
-    useEffect(()=> {console.log("render: I fire only on pw changes.")}, [values.password])
+    useEffect(() => {
+        console.log('render: I fire only on pw changes.')
+    }, [values.password])
 
     return (
         <div>
-            <input 
-                type="password" 
-                name="password" 
+            <input
+                type="password"
+                name="password"
                 placeholder="type here for rerender"
-                value={values.password} 
+                value={values.password}
                 onChange={handleChange}
             />
-            <label htmlFor="password" >&nbsp;Type here to trigger renders.</label><br/><br/>
+            <label htmlFor="password">
+                &nbsp;Type here to trigger renders.
+            </label>
+            <br />
+            <br />
 
-            <Button variant="contained" onClick={() => setShowHello(!showHello)}>
+            <Button
+                variant="contained"
+                onClick={() => setShowHello(!showHello)}
+            >
                 toggle mount
-            </Button><br/><br/>
+            </Button>
+            <br />
+            <br />
             {showHello && <Hello />}
         </div>
     )
 }
 
-export default App;
+export default App

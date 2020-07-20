@@ -1,7 +1,7 @@
-import React from "react"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import { Index } from "./pages"
-import { About } from "./pages/about"
+import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Index } from './pages'
+import { About } from './pages/about'
 
 export function AppRouter() {
     return (

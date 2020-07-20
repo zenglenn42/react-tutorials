@@ -7,21 +7,33 @@ const PaperDemo = () => {
             <Paper>
                 <Typography variant="h6">This is my typography</Typography>
             </Paper>
-            <br/>
-            <Typography variant="caption">Typography inside a {'<Paper>'} component.</Typography>
-            <br/><br/>
-            <hr/><br/>
+            <br />
+            <Typography variant="caption">
+                Typography inside a {'<Paper>'} component.
+            </Typography>
+            <br />
+            <br />
+            <hr />
+            <br />
             <Paper elevation={0}>
                 <Typography variant="h6">This is my typography</Typography>
             </Paper>
-            <Typography variant="caption">{'<Paper '}elevation={'{0}>'}</Typography>
-            <br/><br/>
-            <hr/><br/>
+            <Typography variant="caption">
+                {'<Paper '}elevation={'{0}>'}
+            </Typography>
+            <br />
+            <br />
+            <hr />
+            <br />
             <Paper elevation={14}>
-                <Typography variant="h6" elevation={14}>This is my typography</Typography>
+                <Typography variant="h6" elevation={14}>
+                    This is my typography
+                </Typography>
             </Paper>
-            <br/>
-            <Typography variant="caption">{'<Paper '}elevation={'{14}>'}</Typography>
+            <br />
+            <Typography variant="caption">
+                {'<Paper '}elevation={'{14}>'}
+            </Typography>
         </>
     )
 }

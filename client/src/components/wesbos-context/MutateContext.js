@@ -1,21 +1,24 @@
 import React from 'react'
 
-const MyContext = React.createContext();
+const MyContext = React.createContext()
 
 class MyProvider extends React.Component {
     state = {
         name: 'Wes',
         age: 100,
-        cool: true
+        cool: true,
     }
     render() {
         return (
-            <MyContext.Provider value={{
-                state: this.state,
-                growYearOlder: () => this.setState({
-                    age: this.state.age + 1
-                })
-            }}>
+            <MyContext.Provider
+                value={{
+                    state: this.state,
+                    growYearOlder: () =>
+                        this.setState({
+                            age: this.state.age + 1,
+                        }),
+                }}
+            >
                 {this.props.children}
             </MyContext.Provider>
         )
@@ -24,15 +27,19 @@ class MyProvider extends React.Component {
 
 // Function-based stateless component.
 const Family = (props) => (
-        <div>
-            <p>I am a family.</p>
-            <Person />
-        </div>
+    <div>
+        <p>I am a family.</p>
+        <Person />
+    </div>
 )
 
 class Person extends React.Component {
     render() {
-        const cake = <span role="img" aria-label="cake emoji">🎂</span>
+        const cake = (
+            <span role="img" aria-label="cake emoji">
+                🎂
+            </span>
+        )
         return (
             <div>
                 <MyContext.Consumer>
@@ -40,7 +47,9 @@ class Person extends React.Component {
                         <React.Fragment>
                             I am {context.state.name}
                             <p>Age: {context.state.age}</p>
-                            <button onClick={() => context.growYearOlder()}>Happy Birthday {cake}</button>
+                            <button onClick={() => context.growYearOlder()}>
+                                Happy Birthday {cake}
+                            </button>
                         </React.Fragment>
                     )}
                 </MyContext.Consumer>
@@ -51,7 +60,7 @@ class Person extends React.Component {
 
 class MutateContext extends React.Component {
     render() {
-        return(
+        return (
             <MyProvider>
                 <div>
                     <p>I am an app</p>

@@ -3,24 +3,20 @@ import React, { useState } from 'react'
 const initialToDos = [
     {
         text: 'Learn about React hooks',
-        isCompleted: false
+        isCompleted: false,
     },
     {
         text: 'Go swimming',
-        isCompleted: false
+        isCompleted: false,
     },
     {
         text: 'Drink wine',
-        isCompleted: false
+        isCompleted: false,
     },
 ]
 
-function Todo({todo, index}) {
-    return (
-        <div>
-            {todo.text}
-        </div>        
-    )
+function Todo({ todo, index }) {
+    return <div>{todo.text}</div>
 }
 
 function TodoListUnstyled() {

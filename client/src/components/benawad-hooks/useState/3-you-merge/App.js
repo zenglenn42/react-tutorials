@@ -1,15 +1,15 @@
 import React, { useState } from 'react'
 
 export const App = () => {
-    const [{ count, count2 }, setCount] = useState({count: 10, count2: 20})
+    const [{ count, count2 }, setCount] = useState({ count: 10, count2: 20 })
 
     return (
         <div>
-            <button 
-                onClick={() => 
-                    setCount(currentCount => ({ 
-                        ...currentCount,            // That's better :-)
-                        count: currentCount.count + 1 
+            <button
+                onClick={() =>
+                    setCount((currentCount) => ({
+                        ...currentCount, // That's better :-)
+                        count: currentCount.count + 1,
                     }))
                 }
             >
@@ -21,4 +21,4 @@ export const App = () => {
     )
 }
 
-export default App;
+export default App

@@ -11,16 +11,16 @@ import Post from './Post'
 
 export const App = () => {
     const navLinkStyle = {
-        display: "inline",
-        marginRight: "2em",
-        marginLeft: 0
+        display: 'inline',
+        marginRight: '2em',
+        marginLeft: 0,
     }
 
     const NavBar = (
         <>
             <nav>
                 Locations: &nbsp;
-                <ul style={{paddingLeft: 0, display: "inline"}}>
+                <ul style={{ paddingLeft: 0, display: 'inline' }}>
                     <li style={navLinkStyle}>
                         <Link to="/">/</Link>
                     </li>
@@ -35,7 +35,8 @@ export const App = () => {
                     </li>
                 </ul>
             </nav>
-            <p>Rendered components:</p><hr />
+            <p>Rendered components:</p>
+            <hr />
         </>
     )
 
@@ -47,9 +48,11 @@ export const App = () => {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/posts/:id" component={Post} />
-                <Route path="/" render={() => <div>404 unknown location</div>} />
+                <Route
+                    path="/"
+                    render={() => <div>404 unknown location</div>}
+                />
             </Switch>
         </BrowserRouter>
     )
 }
-

@@ -4,7 +4,7 @@ import SignInSide from './SignInSide'
 export const App = () => {
     return (
         <>
-            <SignInSide/>
+            <SignInSide />
         </>
     )
 }

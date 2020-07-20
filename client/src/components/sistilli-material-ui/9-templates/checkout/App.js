@@ -4,7 +4,7 @@ import Checkout from './Checkout'
 export const App = () => {
     return (
         <>
-            <Checkout/>
+            <Checkout />
         </>
     )
 }

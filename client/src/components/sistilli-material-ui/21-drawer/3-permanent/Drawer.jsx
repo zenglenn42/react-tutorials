@@ -1,19 +1,19 @@
 import React from 'react'
-import { 
+import {
     Drawer as MUIDrawer,
-    List, 
-    ListItem, 
+    List,
+    ListItem,
     ListItemText,
-    makeStyles
-} from '@material-ui/core';
+    makeStyles,
+} from '@material-ui/core'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     drawer: {
-        width: "160px"
+        width: '160px',
     },
     list: {
-        padding: theme.spacing(0, 0)
-    }
+        padding: theme.spacing(0, 0),
+    },
 }))
 
 const Drawer = (props) => {
@@ -22,11 +22,13 @@ const Drawer = (props) => {
     return (
         <MUIDrawer variant="permanent" className={classes.drawer} {...props}>
             <List className={classes.list} dense>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
+                {['Inbox', 'Starred', 'Send email', 'Drafts'].map(
+                    (text, index) => (
+                        <ListItem button key={text}>
+                            <ListItemText primary={text} />
+                        </ListItem>
+                    ),
+                )}
             </List>
         </MUIDrawer>
     )

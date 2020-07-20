@@ -4,7 +4,7 @@ import SignIn from './SignIn'
 export const App = () => {
     return (
         <>
-            <SignIn/>
+            <SignIn />
         </>
     )
 }

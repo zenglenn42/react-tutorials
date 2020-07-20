@@ -2,9 +2,7 @@ import React from 'react'
 import CoffeeCard from './CoffeeCard'
 
 const Content = () => {
-    return (
-        <CoffeeCard />
-    )
+    return <CoffeeCard />
 }
 
 export default Content

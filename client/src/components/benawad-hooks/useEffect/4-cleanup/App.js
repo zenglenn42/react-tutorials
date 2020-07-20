@@ -7,12 +7,17 @@ export const App = () => {
 
     return (
         <div>
-            <Button variant="contained" onClick={() => setShowHello(!showHello)}>
+            <Button
+                variant="contained"
+                onClick={() => setShowHello(!showHello)}
+            >
                 toggle mount
-            </Button><br/><br/>
+            </Button>
+            <br />
+            <br />
             {showHello && <Hello />}
         </div>
     )
 }
 
-export default App;
+export default App

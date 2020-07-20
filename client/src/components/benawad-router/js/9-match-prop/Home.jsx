@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Home = ({history, location}) => {
+const Home = ({ history, location }) => {
     return (
         <div>
             <div>Home component</div>

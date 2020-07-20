@@ -16,11 +16,15 @@ export const App = () => {
                 {/* Using updater function. */}
                 {/* Avoids race conditions and two updates happening at the same time. :-) */}
 
-                <button onClick={() => setCount(currentCount => currentCount + 1)}>+</button>
+                <button
+                    onClick={() => setCount((currentCount) => currentCount + 1)}
+                >
+                    +
+                </button>
                 <div>{count}</div>
             </div>
         </>
     )
 }
 
-export default App;
+export default App

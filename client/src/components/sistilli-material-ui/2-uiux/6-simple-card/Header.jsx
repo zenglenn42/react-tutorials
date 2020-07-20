@@ -1,11 +1,11 @@
 import React from 'react'
-import { AppBar, Toolbar, Typography,  makeStyles } from '@material-ui/core'
+import { AppBar, Toolbar, Typography, makeStyles } from '@material-ui/core'
 import AcUnitRoundedIcon from '@material-ui/icons/AcUnitRounded'
 
 const useStyles = makeStyles(() => ({
     typographyStyles: {
-        flex: "1"
-    }
+        flex: '1',
+    },
 }))
 
 const Header = () => {

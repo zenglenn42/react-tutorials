@@ -3,11 +3,11 @@ import { makeStyles } from '@material-ui/core'
 import PaperDemo from './PaperDemo'
 
 const useStyles = makeStyles((theme) => {
-    return ({
+    return {
         margin: {
             margin: theme.spacing(1),
-        }
-    })
+        },
+    }
 })
 
 export const App = () => {

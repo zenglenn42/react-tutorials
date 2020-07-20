@@ -1,13 +1,19 @@
-import React from "react"
+import React from 'react'
 
-function Product({product}) {
+function Product({ product }) {
     return (
-        <div className="productItem" key={product.id} >
+        <div className="productItem" key={product.id}>
             <p>Name: {product.name}</p>
-            <p>Price: {product.price.toLocaleString("en-US", {style: "currency", currency: "USD"})}</p>
+            <p>
+                Price:{' '}
+                {product.price.toLocaleString('en-US', {
+                    style: 'currency',
+                    currency: 'USD',
+                })}
+            </p>
             <p>Description: {product.desc}</p>
             <hr />
-        </div> 
+        </div>
     )
 }
 

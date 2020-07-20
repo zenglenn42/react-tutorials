@@ -1,13 +1,18 @@
-import React, { useState, useMemo } from "react"
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import { Index } from "./pages"
-import { About } from "./pages/about"
-import { UserContext } from "./UserContext"
+import React, { useState, useMemo } from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Index } from './pages'
+import { About } from './pages/about'
+import { UserContext } from './UserContext'
 
 export function AppRouter() {
-    const [value, setValue] = useState("value from context (set with setValue from useState hook)")
+    const [value, setValue] = useState(
+        'value from context (set with setValue from useState hook)',
+    )
 
-    const providerValue = useMemo(() => ({value, setValue}), [value, setValue])
+    const providerValue = useMemo(() => ({ value, setValue }), [
+        value,
+        setValue,
+    ])
 
     return (
         <Router>

@@ -4,7 +4,7 @@ import StickyFooter from './StickyFooter'
 export const App = () => {
     return (
         <>
-            <StickyFooter/>
+            <StickyFooter />
         </>
     )
 }

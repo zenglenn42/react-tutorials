@@ -3,11 +3,11 @@ import { Paper, Typography, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     black: {
-        color: "black"
+        color: 'black',
     },
     reallyRounded: {
-        borderRadius: "1rem"
-    }
+        borderRadius: '1rem',
+    },
 })
 
 const PaperDemo = () => {
@@ -18,22 +18,32 @@ const PaperDemo = () => {
             <Paper>
                 <Typography variant="h6">This is my typography</Typography>
             </Paper>
-            <br/>
-            <Typography className={classes.black} variant="caption">Paper defaults to rounded.</Typography>
-            <br/><br/>
-            <hr/><br/>
+            <br />
+            <Typography className={classes.black} variant="caption">
+                Paper defaults to rounded.
+            </Typography>
+            <br />
+            <br />
+            <hr />
+            <br />
             <Paper square>
                 <Typography variant="h6">This is my typography</Typography>
             </Paper>
-            <br/>
-            <Typography className={classes.black} variant="caption">{'<Paper square >'}</Typography>
-            <br/><br/>
-            <hr/><br/>
-            <Paper classes={{rounded: classes.reallyRounded}}>
-                <Typography  variant="h6">This is really rounded</Typography>
+            <br />
+            <Typography className={classes.black} variant="caption">
+                {'<Paper square >'}
+            </Typography>
+            <br />
+            <br />
+            <hr />
+            <br />
+            <Paper classes={{ rounded: classes.reallyRounded }}>
+                <Typography variant="h6">This is really rounded</Typography>
             </Paper>
-            <br/>
-            <Typography className={classes.black} variant="caption">Overriding .MuiPaper-rounded css class.</Typography>
+            <br />
+            <Typography className={classes.black} variant="caption">
+                Overriding .MuiPaper-rounded css class.
+            </Typography>
         </>
     )
 }

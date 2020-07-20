@@ -4,14 +4,14 @@ import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
     major: {
-        border: "1px solid black",
-        borderRadius: "0.25em",
-        backgroundColor: "darkgray",
-        height: theme.spacing(40)
+        border: '1px solid black',
+        borderRadius: '0.25em',
+        backgroundColor: 'darkgray',
+        height: theme.spacing(40),
     },
     cell: {
-        backgroundColor: "lightgray",
-        borderRadius: "0.25em",
+        backgroundColor: 'lightgray',
+        borderRadius: '0.25em',
         margin: theme.spacing(0.5, 0.5),
     },
     cell1: {
@@ -30,9 +30,17 @@ export const App = () => {
     return (
         <>
             <Typography variant="caption">
-                {'<Grid container direction="column" justify="center" alignItems="flex-start">'}
+                {
+                    '<Grid container direction="column" justify="center" alignItems="flex-start">'
+                }
             </Typography>
-            <Grid className={classes.major} container direction="column" justify="center" alignItems="flex-start">
+            <Grid
+                className={classes.major}
+                container
+                direction="column"
+                justify="center"
+                alignItems="flex-start"
+            >
                 <Grid className={clsx(classes.cell, classes.cell1)} item>
                     Cell 1
                 </Grid>
@@ -43,12 +51,21 @@ export const App = () => {
                     Cell 3
                 </Grid>
             </Grid>
-            <br/><br/>
+            <br />
+            <br />
 
             <Typography variant="caption">
-                {'<Grid container direction="column" justify="center" alignItems="center">'}
+                {
+                    '<Grid container direction="column" justify="center" alignItems="center">'
+                }
             </Typography>
-            <Grid className={classes.major} container direction="column" justify="center" alignItems="center">
+            <Grid
+                className={classes.major}
+                container
+                direction="column"
+                justify="center"
+                alignItems="center"
+            >
                 <Grid className={clsx(classes.cell, classes.cell1)} item>
                     Cell 1
                 </Grid>
@@ -59,12 +76,21 @@ export const App = () => {
                     Cell 3
                 </Grid>
             </Grid>
-            <br/><br/>
+            <br />
+            <br />
 
             <Typography variant="caption">
-                {'<Grid container direction="column" justify="center" alignItems="flex-end">'}
+                {
+                    '<Grid container direction="column" justify="center" alignItems="flex-end">'
+                }
             </Typography>
-            <Grid className={classes.major} container direction="column" justify="center" alignItems="flex-end">
+            <Grid
+                className={classes.major}
+                container
+                direction="column"
+                justify="center"
+                alignItems="flex-end"
+            >
                 <Grid className={clsx(classes.cell, classes.cell1)} item>
                     Cell 1
                 </Grid>
@@ -75,12 +101,21 @@ export const App = () => {
                     Cell 3
                 </Grid>
             </Grid>
-            <br/><br/>
+            <br />
+            <br />
 
             <Typography variant="caption">
-                {'<Grid container direction="column" justify="center" alignItems="stretch">'}
+                {
+                    '<Grid container direction="column" justify="center" alignItems="stretch">'
+                }
             </Typography>
-            <Grid className={classes.major} container direction="column" justify="center" alignItems="stretch">
+            <Grid
+                className={classes.major}
+                container
+                direction="column"
+                justify="center"
+                alignItems="stretch"
+            >
                 <Grid className={clsx(classes.cell, classes.cell1)} item>
                     Cell 1
                 </Grid>
@@ -91,12 +126,21 @@ export const App = () => {
                     Cell 3
                 </Grid>
             </Grid>
-            <br/><br/>
+            <br />
+            <br />
 
             <Typography variant="caption">
-                {'<Grid container direction="column" justify="center" alignItems="baseline">'}
+                {
+                    '<Grid container direction="column" justify="center" alignItems="baseline">'
+                }
             </Typography>
-            <Grid className={classes.major} container direction="column" justify="center" alignItems="baseline">
+            <Grid
+                className={classes.major}
+                container
+                direction="column"
+                justify="center"
+                alignItems="baseline"
+            >
                 <Grid className={clsx(classes.cell, classes.cell1)} item>
                     Cell 1
                 </Grid>
@@ -107,7 +151,8 @@ export const App = () => {
                     Cell 3
                 </Grid>
             </Grid>
-            <br/><br/>
+            <br />
+            <br />
         </>
     )
 }

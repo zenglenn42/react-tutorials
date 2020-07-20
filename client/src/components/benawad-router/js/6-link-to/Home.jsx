@@ -6,10 +6,10 @@ const Home = () => {
     return (
         <div>
             <div>Home component</div>
-            <hr/>
+            <hr />
             <Link to="/about">
                 <Button variant="contained">
-                    <Typography style={{textTransform: "none"}}>
+                    <Typography style={{ textTransform: 'none' }}>
                         Change to '/about' route (with Link)
                     </Typography>
                 </Button>

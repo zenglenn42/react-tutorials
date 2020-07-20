@@ -1,26 +1,21 @@
 import React from 'react'
-import { 
+import {
     Drawer as MUIDrawer,
-    List, 
-    ListItem, 
+    List,
+    ListItem,
     ListItemIcon,
     ListItemText,
-    makeStyles
-} from '@material-ui/core';
-import {
-    Inbox,
-    Star,
-    Email,
-    Drafts
-} from '@material-ui/icons'
+    makeStyles,
+} from '@material-ui/core'
+import { Inbox, Star, Email, Drafts } from '@material-ui/icons'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     drawer: {
-        width: "190px"
+        width: '190px',
     },
     list: {
-        padding: theme.spacing(0, 0)
-    }
+        padding: theme.spacing(0, 0),
+    },
 }))
 
 const Drawer = (props) => {
@@ -47,10 +42,10 @@ const Drawer = (props) => {
         <MUIDrawer variant="permanent" className={classes.drawer} {...props}>
             <List className={classes.list} dense>
                 {itemsList.map((item, index) => {
-                    const {text, icon} = item
+                    const { text, icon } = item
                     return (
                         <ListItem button key={text}>
-                            <ListItemIcon >{icon}</ListItemIcon>
+                            <ListItemIcon>{icon}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     )

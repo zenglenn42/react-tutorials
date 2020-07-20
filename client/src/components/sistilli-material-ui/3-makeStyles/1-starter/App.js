@@ -1,11 +1,11 @@
-import React from "react"
-import { makeStyles, Button } from "@material-ui/core"
+import React from 'react'
+import { makeStyles, Button } from '@material-ui/core'
 
 const useStyles = makeStyles({
-    buttonStyle : {
+    buttonStyle: {
         // color: "red",
         // border: "none"
-    }
+    },
 })
 
 export const App = () => {
@@ -17,4 +17,3 @@ export const App = () => {
         </>
     )
 }
-

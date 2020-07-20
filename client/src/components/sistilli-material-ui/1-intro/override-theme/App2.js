@@ -8,11 +8,17 @@ export function App() {
         <div>
             <ThemeProvider theme={theme}>
                 <div>
-                    <Button color="primary" variant="outlined">This is our first button (color="primary")</Button>
-                </div><br/>
+                    <Button color="primary" variant="outlined">
+                        This is our first button (color="primary")
+                    </Button>
+                </div>
+                <br />
                 <div>
-                    <Button color="secondary" variant="outlined">This is our first button (color="secondary")</Button>
-                </div><br/>
+                    <Button color="secondary" variant="outlined">
+                        This is our first button (color="secondary")
+                    </Button>
+                </div>
+                <br />
             </ThemeProvider>
         </div>
     )

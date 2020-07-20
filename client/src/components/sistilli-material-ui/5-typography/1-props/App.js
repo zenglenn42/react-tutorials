@@ -10,13 +10,19 @@ export const App = () => {
             <Typography color="secondary">color="secondary"</Typography>
             <Typography gutterBottom="6">gutterBottom="6"</Typography>
             <Typography noWrap={true}>
-                    noWrap={'{true}'} really long line of text, really long line of text, really long line of text, really long line of text, really long line of text, really long line of text
+                noWrap={'{true}'} really long line of text, really long line of
+                text, really long line of text, really long line of text, really
+                long line of text, really long line of text
             </Typography>
             <Typography noWrap={false}>
-                    noWrap={'{false}'} really long line of text, really long line of text, really long line of text, really long line of text, really long line of text, really long line of text
+                noWrap={'{false}'} really long line of text, really long line of
+                text, really long line of text, really long line of text, really
+                long line of text, really long line of text
             </Typography>
             <Typography variant="h1">variant="h1"</Typography>
-            <Typography variant="h6" variantMapping={{h6: "span"}}>I live in a span.</Typography>
+            <Typography variant="h6" variantMapping={{ h6: 'span' }}>
+                I live in a span.
+            </Typography>
         </div>
     )
 }

@@ -1,13 +1,13 @@
-import React from "react"
-import { makeStyles, Button } from "@material-ui/core"
+import React from 'react'
+import { makeStyles, Button } from '@material-ui/core'
 
 const useStyles = makeStyles({
-    buttonStyle : {
-        color: "red"
+    buttonStyle: {
+        color: 'red',
     },
     textStyle: {
-        color: "green"
-    }
+        color: 'green',
+    },
 })
 
 export const App = () => {
@@ -20,8 +20,8 @@ export const App = () => {
 
             {/* I'm doing this instead of console logging shown in tutorial for better presentation. */}
             {/* Yes, I could use classes.scrollStyle idiom here but want output to match tutorial. */}
-            <hr/>
-            <div style={{overflowX: "scroll"}}>
+            <hr />
+            <div style={{ overflowX: 'scroll' }}>
                 classes =
                 <pre className={classes.preStyle}>
                     {JSON.stringify(classes, null, 2)}
@@ -30,4 +30,3 @@ export const App = () => {
         </>
     )
 }
-

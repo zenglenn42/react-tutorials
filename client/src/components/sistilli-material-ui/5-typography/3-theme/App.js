@@ -6,13 +6,13 @@ import { purple, green } from '@material-ui/core/colors'
 const overrideTheme = createMuiTheme({
     palette: {
         primary: purple,
-        secondary: green
+        secondary: green,
     },
     typography: {
         h1: {
-            fontSize: "2em"
-        }
-    }
+            fontSize: '2em',
+        },
+    },
 })
 
 export const App = () => {
@@ -24,4 +24,3 @@ export const App = () => {
         </div>
     )
 }
-

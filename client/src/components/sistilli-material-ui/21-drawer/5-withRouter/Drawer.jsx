@@ -1,26 +1,22 @@
 import React from 'react'
-import { 
+import {
     Drawer as MUIDrawer,
-    List, 
-    ListItem, 
+    List,
+    ListItem,
     ListItemIcon,
     ListItemText,
     makeStyles,
-} from '@material-ui/core';
-import {
-    Home,
-    ContactMail,
-    Person
-} from '@material-ui/icons'
-import { withRouter } from 'react-router-dom';
+} from '@material-ui/core'
+import { Home, ContactMail, Person } from '@material-ui/icons'
+import { withRouter } from 'react-router-dom'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     drawer: {
-        width: "160px"
+        width: '160px',
     },
     list: {
-        padding: theme.spacing(0, 0)
-    }
+        padding: theme.spacing(0, 0),
+    },
 }))
 
 const Drawer = (props) => {
@@ -30,27 +26,27 @@ const Drawer = (props) => {
         {
             text: 'Home',
             icon: <Home />,
-            onClick: () => history.push('/')
+            onClick: () => history.push('/'),
         },
         {
             text: 'Contact',
             icon: <ContactMail />,
-            onClick: () => history.push('/contact')
+            onClick: () => history.push('/contact'),
         },
         {
             text: 'About',
             icon: <Person />,
-            onClick: () => history.push('/about')
+            onClick: () => history.push('/about'),
         },
     ]
     return (
         <MUIDrawer variant="permanent" className={classes.drawer} {...props}>
             <List className={classes.list} dense>
                 {itemsList.map((item, index) => {
-                    const {text, icon, onClick} = item
+                    const { text, icon, onClick } = item
                     return (
                         <ListItem button key={text} onClick={onClick}>
-                            <ListItemIcon >{icon}</ListItemIcon>
+                            <ListItemIcon>{icon}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     )

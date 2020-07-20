@@ -2,21 +2,21 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { makeStyles, Paper } from '@material-ui/core'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     link: {
-        display: "inline",
+        display: 'inline',
         marginRight: theme.spacing(2),
-        marginLeft: 0
+        marginLeft: 0,
     },
     list: {
         paddingLeft: 0,
-        display: "inline"
+        display: 'inline',
     },
     paperRoutes: {
-        backgroundColor: "lightgray",
+        backgroundColor: 'lightgray',
         padding: theme.spacing(1),
-        marginBottom: theme.spacing(1)
-    }
+        marginBottom: theme.spacing(1),
+    },
 }))
 
 export const Navbar = () => {
@@ -25,7 +25,7 @@ export const Navbar = () => {
     return (
         <>
             <nav>
-                <Paper className={classes.paperRoutes} elevation={0} square >
+                <Paper className={classes.paperRoutes} elevation={0} square>
                     Routes: &nbsp;
                     <ul className={classes.list}>
                         <li className={classes.link}>

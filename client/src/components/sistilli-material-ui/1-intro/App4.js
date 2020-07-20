@@ -5,14 +5,14 @@ import { Button } from '@material-ui/core'
 
 const useStyles = makeStyles({
     app: {
-        overflow: "scroll"
+        overflow: 'scroll',
     },
     helloStyle: {
-        fontStyle: "oblique"
+        fontStyle: 'oblique',
     },
     buttonStyle: {
-        color: "red",
-    }
+        color: 'red',
+    },
 })
 
 export function App() {
@@ -20,22 +20,25 @@ export function App() {
 
     return (
         <div className={classes.app}>
-                <Typography className={classes.helloStyle} variant="h1" color="primary">
-                    Hello there
-                </Typography>
-                <Typography>
-                    Overriding fontStyle ...
-                </Typography>
-                <pre>
-                    const useStyles = makeStyles({'{helloStyle: {fontStyle: "oblique"}}'})
-                </pre>
-                <pre>
-                    const classes = useStyles()
-                </pre>
-                <pre>
-                    {'<'}Typography className={'{'}{'classes.helloStyle}'} variant="h1" color="primary"{'>'}Hello ...
-                </pre>
-                <Button variant="contained">Using buttonStyle</Button>
+            <Typography
+                className={classes.helloStyle}
+                variant="h1"
+                color="primary"
+            >
+                Hello there
+            </Typography>
+            <Typography>Overriding fontStyle ...</Typography>
+            <pre>
+                const useStyles = makeStyles(
+                {'{helloStyle: {fontStyle: "oblique"}}'})
+            </pre>
+            <pre>const classes = useStyles()</pre>
+            <pre>
+                {'<'}Typography className={'{'}
+                {'classes.helloStyle}'} variant="h1" color="primary"{'>'}Hello
+                ...
+            </pre>
+            <Button variant="contained">Using buttonStyle</Button>
         </div>
     )
 }

@@ -3,7 +3,7 @@ import EnhancedTable from './EnhancedTable'
 
 export const App = () => {
     return (
-        <div style={{padding: "0 5px"}}>
+        <div style={{ padding: '0 5px' }}>
             <EnhancedTable />
         </div>
     )

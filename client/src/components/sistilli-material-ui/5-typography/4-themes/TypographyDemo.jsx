@@ -2,29 +2,27 @@ import React from 'react'
 import { Typography, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
-    colorPrimary: props => {
+    colorPrimary: (props) => {
         const mainShade = 700
-        const color = props.color 
-            ? (
-                (typeof(props.color) === "string") 
-                    ? props.color
-                    : props.color[mainShade]
-            )
+        const color = props.color
+            ? typeof props.color === 'string'
+                ? props.color
+                : props.color[mainShade]
             : null
-        return ({
-            color: color
-        })
-    }
+        return {
+            color: color,
+        }
+    },
 })
 
 const TypographyDemo = (props) => {
     const classes = useStyles(props)
     return (
-        <Typography 
+        <Typography
             classes={{
-                colorPrimary: classes.colorPrimary
+                colorPrimary: classes.colorPrimary,
             }}
-            color="primary" 
+            color="primary"
             variant="h1"
         >
             Hello world, i'm a primary h1.

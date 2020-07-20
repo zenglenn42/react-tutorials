@@ -1,4 +1,4 @@
-import {useState,  useLayoutEffect, useRef} from 'react'
+import { useState, useLayoutEffect, useRef } from 'react'
 
 export const useMeasure = (deps) => {
     const [rect, setRect] = useState({})

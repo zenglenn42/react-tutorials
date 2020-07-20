@@ -3,14 +3,14 @@ import { makeStyles, Grid } from '@material-ui/core'
 
 const useClasses = makeStyles({
     blueItem: {
-        backgroundColor: "blue",
-        height: "200px"
+        backgroundColor: 'blue',
+        height: '200px',
     },
     redItem: {
-        backgroundColor: "red",
+        backgroundColor: 'red',
     },
     greenItem: {
-        backgroundColor: "green",
+        backgroundColor: 'green',
     },
 })
 
@@ -24,4 +24,3 @@ export const App = () => {
         </Grid>
     )
 }
-

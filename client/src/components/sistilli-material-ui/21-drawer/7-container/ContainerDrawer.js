@@ -1,20 +1,37 @@
 import React from 'react'
-import {Drawer, List, ListItem, ListItemText, ListItemIcon, makeStyles, Divider } from '@material-ui/core'
+import {
+    Drawer,
+    List,
+    ListItem,
+    ListItemText,
+    ListItemIcon,
+    makeStyles,
+    Divider,
+} from '@material-ui/core'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
     drawerItems: {
-        overflowY: "scroll",
-        padding: theme.spacing(0, 0)
-    }
+        overflowY: 'scroll',
+        padding: theme.spacing(0, 0),
+    },
 }))
 
 export const ContainerDrawer = (props) => {
     // eslint-disable-next-line no-unused-vars
-    const {container, anchor, drawerWidth, drawerItems, open, onClose, onClick, onDrawerItemClick} = props
+    const {
+        container,
+        anchor,
+        drawerWidth,
+        drawerItems,
+        open,
+        onClose,
+        onClick,
+        onDrawerItemClick,
+    } = props
     const classes = useStyles()
 
     const anchorTransformMap = {
-        "left": {
+        left: {
             slideToward: 'right', // 'top' works too
             // entering: {
             //     transform: "translateX(0%)",
@@ -25,7 +42,7 @@ export const ContainerDrawer = (props) => {
             //     origin: "left top",
             // },
         },
-        "top": {
+        top: {
             slideToward: 'bottom',
             // entering: {
             //     transform: "translateY(0%)",
@@ -36,8 +53,8 @@ export const ContainerDrawer = (props) => {
             //     origin: "center top",
             // },
         },
-        "right": {
-            slideToward: 'bottom',  // work around bug
+        right: {
+            slideToward: 'bottom', // work around bug
 
             // **BROKEN**
             // slideToward: 'left', // yields animation jitter
@@ -50,8 +67,8 @@ export const ContainerDrawer = (props) => {
             //     origin: "right top",
             // },
         },
-        "bottom": {
-            slideToward: 'right',   // work around bug
+        bottom: {
+            slideToward: 'right', // work around bug
 
             // **BROKEN**           // yields animation jitter
             // slideToward: 'top',
@@ -63,24 +80,24 @@ export const ContainerDrawer = (props) => {
             //     transform: "translateY(100%)",
             //     origin: "center bottom",
             // },
-        }
+        },
     }
 
     return (
         <>
             <Drawer
                 variant="temporary" // Doesn't seem to be strictly necessary.
-                container = {container}
-                anchor = {anchor}
-                open={open} 
+                container={container}
+                anchor={anchor}
+                open={open}
                 onClose={onClose}
                 onClick={onClick}
                 elevation={5}
-                PaperProps={{style: {position: "absolute"}}}
-                BackdropProps={{style: {position: "absolute"}}}
-                ModalProps={{style: {position: "absolute"}}}
+                PaperProps={{ style: { position: 'absolute' } }}
+                BackdropProps={{ style: { position: 'absolute' } }}
+                ModalProps={{ style: { position: 'absolute' } }}
                 SlideProps={{
-                    direction: anchorTransformMap[anchor].slideToward
+                    direction: anchorTransformMap[anchor].slideToward,
 
                     // KEEP FOR DEBUG
                     //
@@ -98,7 +115,6 @@ export const ContainerDrawer = (props) => {
                     //     node.style.transition = theme.transitions.create('transform', {easing: theme.transitions.easing.easeInOut});
                     //     node.style.webkitTransition = theme.transitions.create('-webkit-transform', {easing: theme.transitions.easeInOut});
                     // },
-
                 }}
 
                 // KEEP FOR DEBUG
@@ -109,15 +125,19 @@ export const ContainerDrawer = (props) => {
                 //     enter: theme.transitions.duration.enteringScreen,
                 //     exit: theme.transitions.duration.leavingScreen,
                 // }}
-
             >
                 <List className={classes.drawerItems} dense>
                     {drawerItems.map((item, index) => {
-                        const {text, icon, divider} = item
-                        return (divider) ? <Divider/> :
-                        (
-                            <ListItem button key={text} onClick={onDrawerItemClick}>
-                                <ListItemIcon >{icon}</ListItemIcon>
+                        const { text, icon, divider } = item
+                        return divider ? (
+                            <Divider />
+                        ) : (
+                            <ListItem
+                                button
+                                key={text}
+                                onClick={onDrawerItemClick}
+                            >
+                                <ListItemIcon>{icon}</ListItemIcon>
                                 <ListItemText primary={text} />
                             </ListItem>
                         )

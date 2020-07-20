@@ -4,14 +4,14 @@ import { makeStyles, Grid, Paper, Typography } from '@material-ui/core'
 const useClasses = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        paddingBottom: theme.spacing(1)
+        paddingBottom: theme.spacing(1),
     },
     paper: {
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.primary.contrastText,
-        backgroundColor: theme.palette.primary.main
-    }
+        backgroundColor: theme.palette.primary.main,
+    },
 }))
 
 export const CenteredGrid = () => {
@@ -40,7 +40,8 @@ export const CenteredGrid = () => {
                     <Paper className={classes.paper}>xs=6</Paper>
                 </Grid>
             </Grid>
-            <br/><br/>
+            <br />
+            <br />
 
             <Typography gutterBottom={2}>direction='column'</Typography>
             <Grid container spacing={2} direction="column">
@@ -66,4 +67,3 @@ export const CenteredGrid = () => {
         </div>
     )
 }
-

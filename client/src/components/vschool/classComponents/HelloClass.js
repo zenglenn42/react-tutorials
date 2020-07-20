@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 
 class HelloClass extends React.Component {
     render() {
@@ -19,17 +19,17 @@ class Header extends React.Component {
 
 class Greeting extends React.Component {
     getTimeOfDay(hours) {
-        let timeOfDay = ""
+        let timeOfDay = ''
         if (hours < 12) {
-            timeOfDay = "morning"
+            timeOfDay = 'morning'
         } else if (hours < 17 && hours >= 12) {
-            timeOfDay = "afternoon"
+            timeOfDay = 'afternoon'
         } else {
-            timeOfDay = "evening"
+            timeOfDay = 'evening'
         }
         return timeOfDay
     }
-    
+
     render() {
         const date = new Date()
         const hours = date.getHours()

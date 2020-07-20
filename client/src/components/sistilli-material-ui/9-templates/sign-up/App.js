@@ -4,7 +4,7 @@ import SignUp from './SignUp'
 export const App = () => {
     return (
         <>
-            <SignUp/>
+            <SignUp />
         </>
     )
 }

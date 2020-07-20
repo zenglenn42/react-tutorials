@@ -6,8 +6,8 @@ import { Button, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     buttonSpacing: {
-        marginBottom: "3rem"
-    }
+        marginBottom: '3rem',
+    },
 })
 
 export const App = () => {
@@ -18,14 +18,14 @@ export const App = () => {
     }
 
     const classes = useStyles()
-    
+
     return (
         <div className="App">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <Button 
-                    className={classes.buttonSpacing} 
-                    onClick={handleShowingCounterOnClick} 
+                <Button
+                    className={classes.buttonSpacing}
+                    onClick={handleShowingCounterOnClick}
                     variant="contained"
                 >
                     Show / Hide counter

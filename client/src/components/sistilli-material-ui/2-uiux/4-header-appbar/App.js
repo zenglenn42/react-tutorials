@@ -6,10 +6,10 @@ export const App = () => {
     return (
         <Grid container direction="column">
             <Grid item>
-                <Header/>
+                <Header />
             </Grid>
             <Grid container item>
-                <Grid item xs={false}  sm={2}></Grid>
+                <Grid item xs={false} sm={2}></Grid>
                 <Grid item xs={12} sm={8}>
                     content
                 </Grid>
@@ -18,4 +18,3 @@ export const App = () => {
         </Grid>
     )
 }
-

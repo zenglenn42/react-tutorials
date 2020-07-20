@@ -7,12 +7,12 @@ export const App = () => {
     return (
         <>
             <Grid container spacing={3} justify="space-around">
-                <Grid item >
+                <Grid item>
                     <SimpleCard variant="outlined" />
                 </Grid>
                 <Grid item>
                     <SimpleCardTaxonomy variant="outlined" />
-                </Grid> 
+                </Grid>
             </Grid>
         </>
     )

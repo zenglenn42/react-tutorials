@@ -10,13 +10,12 @@ const useClasses = makeStyles((theme) => ({
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.primary.contrastText,
-        backgroundColor: theme.palette.primary.main
+        backgroundColor: theme.palette.primary.main,
     },
     nestedGrid: {
-        border: "1px solid red",
-        backgroundColor: "lightgray"
-
-    }
+        border: '1px solid red',
+        backgroundColor: 'lightgray',
+    },
 }))
 
 export const CenteredGrid = () => {
@@ -24,12 +23,20 @@ export const CenteredGrid = () => {
 
     return (
         <div className={classes.root}>
-            <Typography gutterBottom={2}>Nested row grid inside column grid.</Typography>
+            <Typography gutterBottom={2}>
+                Nested row grid inside column grid.
+            </Typography>
             <Grid container spacing={2} direction="column">
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>xs=12</Paper>
                 </Grid>
-                <Grid className={classes.nestedGrid} item xs={12} container spacing={1}>
+                <Grid
+                    className={classes.nestedGrid}
+                    item
+                    xs={12}
+                    container
+                    spacing={1}
+                >
                     <Grid item xs={3}>
                         <Paper className={classes.paper}>xs=3</Paper>
                     </Grid>
@@ -59,4 +66,3 @@ export const CenteredGrid = () => {
         </div>
     )
 }
-

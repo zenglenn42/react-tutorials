@@ -1,12 +1,12 @@
 import React, { Divider } from 'react'
-import { 
-    Home, 
-    ContactMail, 
-    Person, 
-    Work, 
-    AcUnit, 
-    LocalDrink, 
-    DirectionsWalk 
+import {
+    Home,
+    ContactMail,
+    Person,
+    Work,
+    AcUnit,
+    LocalDrink,
+    DirectionsWalk,
 } from '@material-ui/icons'
 
 export const navItems = [
@@ -47,5 +47,5 @@ export const navItems = [
         text: 'Walk',
         icon: <DirectionsWalk />,
         // onClick: () => history.push('/walk')
-    }
-]    
+    },
+]

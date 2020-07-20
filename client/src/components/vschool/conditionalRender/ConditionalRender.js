@@ -1,22 +1,22 @@
-import React from "react"
+import React from 'react'
 
 class ConditionalRender extends React.Component {
     constructor() {
         super()
         this.state = {
-            isLoggedIn: false
+            isLoggedIn: false,
         }
         this.handleClick = this.handleClick.bind(this)
     }
 
     setButtonText() {
-        return this.state.isLoggedIn ? "logout" : "login"
+        return this.state.isLoggedIn ? 'logout' : 'login'
     }
 
     handleClick() {
-        this.setState(prevState => {
+        this.setState((prevState) => {
             return {
-                isLoggedIn: !prevState.isLoggedIn
+                isLoggedIn: !prevState.isLoggedIn,
             }
         })
     }
@@ -24,13 +24,14 @@ class ConditionalRender extends React.Component {
     render() {
         const buttonText = this.setButtonText()
         return (
-        <div>
-            { this.state.isLoggedIn ? 
-                <p>You are logged in.</p> :
-                <p>You are logged out.</p>
-            }
-            <button onClick={this.handleClick}>{buttonText}</button>
-        </div>
+            <div>
+                {this.state.isLoggedIn ? (
+                    <p>You are logged in.</p>
+                ) : (
+                    <p>You are logged out.</p>
+                )}
+                <button onClick={this.handleClick}>{buttonText}</button>
+            </div>
         )
     }
 }

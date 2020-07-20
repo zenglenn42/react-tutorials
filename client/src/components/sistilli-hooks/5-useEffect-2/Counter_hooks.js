@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import { Button, makeStyles } from '@material-ui/core';
+import { Button, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     buttonSpacing: {
-        marginBottom: "3rem"
-    }
+        marginBottom: '3rem',
+    },
 })
 
 const Counter_hooks = () => {
     const classes = useStyles()
-    
+
     const [count, setCount] = useState(0)
     const handleIncrementOnClick = () => {
         setCount(count + 1)
@@ -41,29 +41,27 @@ const Counter_hooks = () => {
     // Effectively 'componentDidMount' and 'componentDidUpdate' if count changes
 
     useEffect(() => {
-        console.log("The count has been updated.")
-        return () => {console.log("This cleanup has been called.")}
+        console.log('The count has been updated.')
+        return () => {
+            console.log('This cleanup has been called.')
+        }
     }, [count])
 
     return (
         <div>
-            <h2>
-                Count #1: {count}
-            </h2>
-            <Button 
-                className={classes.buttonSpacing} 
-                onClick={handleIncrementOnClick} 
+            <h2>Count #1: {count}</h2>
+            <Button
+                className={classes.buttonSpacing}
+                onClick={handleIncrementOnClick}
                 variant="contained"
             >
                 Increment Count
             </Button>
 
-            <h2>
-                Count #2: {countTwo}
-            </h2>
-            <Button 
-                className={classes.buttonSpacing} 
-                onClick={handleIncrementCountTwoOnClick} 
+            <h2>Count #2: {countTwo}</h2>
+            <Button
+                className={classes.buttonSpacing}
+                onClick={handleIncrementCountTwoOnClick}
                 variant="contained"
             >
                 Increment Count Two

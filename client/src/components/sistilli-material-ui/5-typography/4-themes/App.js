@@ -9,21 +9,20 @@ const overrideTheme = createMuiTheme({
     },
     typography: {
         h1: {
-            fontSize: "2em"
-        }
-    }
+            fontSize: '2em',
+        },
+    },
 })
 
 export const App = () => {
     return (
         <div>
-            <ThemeProvider theme={overrideTheme} >
-                <TypographyDemo/>
-                <TypographyDemo color={teal}/>
-                <TypographyDemo color={red}/>
+            <ThemeProvider theme={overrideTheme}>
+                <TypographyDemo />
+                <TypographyDemo color={teal} />
+                <TypographyDemo color={red} />
                 <TypographyDemo color="black" />
             </ThemeProvider>
         </div>
     )
 }
-
