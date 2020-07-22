@@ -75,7 +75,8 @@
     },
     "scripts": {
         "start": "react-scripts start",
-        "lint": "eslint --config ./.eslintrc.json  --ignore-path ./.eslintignore --ext .js,.jsx,.ts,.tsx .",
+        "lint": "eslint --config ./.eslintrc.json --ignore-path ./.eslintignore --cache --ext .js,.jsx,.ts,.tsx,.html {src,public}",
+        "lint:ci": "eslint --config ./.eslintrc.ci.json  --ignore-path ./.eslintignore --cache --ext .js,.jsx,.ts,.tsx,.html {src,public}",
         "lint:dryrun": "yarn run lint --fix-dry-run",
         "lint:fix": "yarn run lint --fix",
         "lint:help": "yarn run lint --help",
