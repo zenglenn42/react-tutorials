@@ -85,7 +85,7 @@
         "format:check": "yarn run format --check",
         "format:ls": "yarn run format --list-different",
         "format:ci": "yarn run format:check",
-        "format:write": "yarn run format --write",
+        "format:fix": "yarn run format --write",
         "build": "react-scripts build",
         "test:unit": "react-scripts test",
         "test": "react-scripts test",
