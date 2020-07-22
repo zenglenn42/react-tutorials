@@ -1,3 +1,8 @@
+build/
 coverage/
 dist/
-/src/serviceWorker.js
+node_modules/
+schemas/
+src/serviceWorker.js
+.cach
+.eslintcache
