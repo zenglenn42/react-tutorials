@@ -162,7 +162,7 @@ export default function Dashboard() {
                         onClick={handleDrawerOpen}
                         className={clsx(
                             classes.menuButton,
-                            open && classes.menuButtonHidden,
+                            open && classes.menuButtonHidden
                         )}
                     >
                         <MenuIcon />
@@ -189,7 +189,7 @@ export default function Dashboard() {
                     classes={{
                         paper: clsx(
                             classes.drawerPaper,
-                            !open && classes.drawerPaperClose,
+                            !open && classes.drawerPaperClose
                         ),
                     }}
                     open={open}

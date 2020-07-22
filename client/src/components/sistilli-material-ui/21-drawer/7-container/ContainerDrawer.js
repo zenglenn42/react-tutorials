@@ -21,7 +21,6 @@ export const ContainerDrawer = (props) => {
     const {
         container,
         anchor,
-        drawerWidth,
         drawerItems,
         open,
         onClose,

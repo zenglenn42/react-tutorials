@@ -15,7 +15,7 @@ const Content = () => {
     return (
         <Grid container spacing={4}>
             {coffeeMakerList.map((coffeeMakerObj) =>
-                getCoffeeMakerCard(coffeeMakerObj),
+                getCoffeeMakerCard(coffeeMakerObj)
             )}
         </Grid>
     )

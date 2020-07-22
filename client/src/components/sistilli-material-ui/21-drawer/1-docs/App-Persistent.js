@@ -179,7 +179,7 @@ export function PersistentDrawerLeft() {
                         edge="start"
                         className={clsx(
                             classes.menuButton,
-                            open && classes.hide,
+                            open && classes.hide
                         )}
                     >
                         <MenuIcon />
@@ -206,7 +206,7 @@ export function PersistentDrawerLeft() {
                     classes={{
                         paper: clsx(
                             classes.drawerPaper,
-                            !open && classes.drawerPaperClose,
+                            !open && classes.drawerPaperClose
                         ),
                     }}
                 >
@@ -233,7 +233,7 @@ export function PersistentDrawerLeft() {
                                     </ListItemIcon>
                                     <ListItemText primary={text} />
                                 </ListItem>
-                            ),
+                            )
                         )}
                     </List>
                     <Divider />

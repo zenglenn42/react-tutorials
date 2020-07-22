@@ -11,7 +11,7 @@ const Hello = () => {
     const [count, setCount] = useState(0)
 
     const { data, loading } = useFetch(
-        `${https}://numbersapi.com/${count}/trivia`,
+        `${https}://numbersapi.com/${count}/trivia`
     )
 
     const [rect, divRef] = useMeasure(data)

@@ -6,7 +6,7 @@ import PersistentDrawerLeft from './App'
 
 ReactDOM.render(
     <PersistentDrawerLeft text="React Tutorials" main="splash" />,
-    document.getElementById('root'),
+    document.getElementById('root')
 )
 
 // If you want your app to work offline and load faster, you can change

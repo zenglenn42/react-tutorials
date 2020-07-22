@@ -12,7 +12,7 @@ export const App = () => {
     const fixCors = 'https://cors-anywhere.herokuapp.com/'
 
     const { data, loading } = useFetch(
-        `${fixCors}http://numbersapi.com/${count}/trivia`,
+        `${fixCors}http://numbersapi.com/${count}/trivia`
     )
 
     return (

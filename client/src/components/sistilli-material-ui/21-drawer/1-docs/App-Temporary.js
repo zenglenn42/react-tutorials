@@ -58,7 +58,7 @@ export function TemporaryDrawer() {
                             </ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
-                    ),
+                    )
                 )}
             </List>
             <Divider />

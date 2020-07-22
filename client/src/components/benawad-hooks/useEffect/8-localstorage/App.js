@@ -4,14 +4,14 @@ import { Button } from '@material-ui/core'
 
 export const App = () => {
     const [count, setCount] = useState(() =>
-        JSON.parse(localStorage.getItem('count') || 0),
+        JSON.parse(localStorage.getItem('count') || 0)
     )
 
     // Need this since I host from https and numbers api is http.
     const fixCors = 'https://cors-anywhere.herokuapp.com/'
 
     const { data, loading } = useFetch(
-        `${fixCors}http://numbersapi.com/${count}/trivia`,
+        `${fixCors}http://numbersapi.com/${count}/trivia`
     )
 
     useEffect(() => {

@@ -26,7 +26,7 @@ const CoolButton = (props) => {
             <Button
                 className={classNames(
                     classes.buttonText,
-                    classes.buttonBackground,
+                    classes.buttonBackground
                 )}
                 fullWidth
                 variant="outlined"
@@ -41,10 +41,10 @@ const CoolButton = (props) => {
                     {JSON.stringify(
                         classNames(
                             classes.buttonText,
-                            classes.buttonBackground,
+                            classes.buttonBackground
                         ),
                         null,
-                        1,
+                        1
                     )}{' '}
                     <br />
                 </pre>

@@ -39,7 +39,7 @@ class MemeGenerator extends React.Component {
     handleSubmit = (event) => {
         event.preventDefault()
         const randomIndex = Math.floor(
-            Math.random() * this.state.allMemeImages.length,
+            Math.random() * this.state.allMemeImages.length
         )
         this.setState({
             imgSrc: this.state.allMemeImages[randomIndex].url,

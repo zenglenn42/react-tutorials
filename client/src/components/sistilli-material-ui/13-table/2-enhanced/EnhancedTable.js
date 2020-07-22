@@ -293,7 +293,7 @@ export default function EnhancedTable() {
         } else if (selectedIndex > 0) {
             newSelected = newSelected.concat(
                 selected.slice(0, selectedIndex),
-                selected.slice(selectedIndex + 1),
+                selected.slice(selectedIndex + 1)
             )
         }
 
@@ -342,7 +342,7 @@ export default function EnhancedTable() {
                             {stableSort(rows, getComparator(order, orderBy))
                                 .slice(
                                     page * rowsPerPage,
-                                    page * rowsPerPage + rowsPerPage,
+                                    page * rowsPerPage + rowsPerPage
                                 )
                                 .map((row, index) => {
                                     const isItemSelected = isSelected(row.name)

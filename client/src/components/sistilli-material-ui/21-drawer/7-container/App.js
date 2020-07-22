@@ -32,7 +32,6 @@ export const App = (props) => {
     }
 
     const appBarText = 'Container-modal Drawer (Bonus)'
-    const drawerWidth = '200px'
     const drawerAnchor = 'right'
     const navItems = [
         {
@@ -95,7 +94,6 @@ export const App = (props) => {
                 <ContainerDrawer
                     container={container}
                     anchor={drawerAnchor}
-                    drawerWidth={drawerWidth}
                     drawerItems={navItems}
                     open={openDrawer}
                     onClose={handleDrawerToggle}

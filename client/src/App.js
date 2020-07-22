@@ -13,8 +13,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import TutorialList from './components/TutorialList'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
-import { FaReact as ReactIcon } from 'react-icons/fa'
-import { FaHome } from 'react-icons/fa'
+import { FaReact as ReactIcon, FaHome } from 'react-icons/fa'
 import Paper from '@material-ui/core/Paper'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import WorkIcon from '@material-ui/icons/Work'
@@ -102,7 +101,7 @@ export default function PersistentDrawerLeft(props) {
                         edge="start"
                         className={clsx(
                             classes.menuButton,
-                            open && classes.hide,
+                            open && classes.hide
                         )}
                     >
                         <MenuIcon />
@@ -163,8 +162,12 @@ export default function PersistentDrawerLeft(props) {
                     </ListItemIcon>
                     {drawerCloseButton}
                     {/* <IconButton onClick={handleDrawerClose}>
-            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
-          </IconButton> */}
+                        {theme.direction === 'ltr' ? (
+                            <ChevronLeftIcon />
+                        ) : (
+                            <ChevronRightIcon />
+                        )}
+                    </IconButton> */}
                 </div>
                 <Divider />
                 <div className={classes.scrollableList}>
@@ -196,15 +199,15 @@ export default function PersistentDrawerLeft(props) {
                     </Typography>
                     <div className={classes.grow} />
                     {/* <Tooltip title="github" enterDelay={300}>
-            <IconButton
-                component="a"
-                color="inherit"
-                href="https://github.com/zenglenn42/react-tutorials"
-                aria-label="github"
-              >
-                <GitHubIcon />
-            </IconButton>
-          </Tooltip> */}
+                        <IconButton
+                            component="a"
+                            color="inherit"
+                            href="https://github.com/zenglenn42/react-tutorials"
+                            aria-label="github"
+                        >
+                            <GitHubIcon />
+                        </IconButton>
+                    </Tooltip> */}
                 </Toolbar>
             </div>
         </div>

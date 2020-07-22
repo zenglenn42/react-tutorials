@@ -237,7 +237,7 @@ export default function TutorialList(props) {
                     listItems = getTutorialPlaylistItems(tutorial)
                 } else {
                     listItems = tutorial.playlist.map((chapter) =>
-                        getTutorialListItems(chapter),
+                        getTutorialListItems(chapter)
                     )
                 }
                 return <React.Fragment>{listItems}</React.Fragment>

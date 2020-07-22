@@ -27,7 +27,7 @@ const Drawer = (props) => {
                         <ListItem button key={text}>
                             <ListItemText primary={text} />
                         </ListItem>
-                    ),
+                    )
                 )}
             </List>
         </MUIDrawer>

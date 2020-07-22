@@ -8,7 +8,7 @@ const Hello = () => {
     // Need this since I host from https and numbers api is http.
     const fixCors = 'https://cors-anywhere.herokuapp.com/'
     const { data, loading } = useFetch(
-        `${fixCors}http://numbersapi.com/${count}/trivia`,
+        `${fixCors}http://numbersapi.com/${count}/trivia`
     )
 
     return (
