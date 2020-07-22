@@ -7,5 +7,23 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.useEditorConfig": false
+    "prettier.useEditorConfig": false,
+    "eslint.alwaysShowStatus": true,
+    "eslint.workingDirectories": [
+        "./client"
+    ],
+    "json.schemas": [
+    {
+        "fileMatch": [
+            "/client/.eslintrc*.json"
+        ],
+        "url": "./client/schemas/eslintrc.json"
+    },
+    {
+        "fileMatch": [
+            "/client/.prettierrc*.json"
+        ],
+        "url": "./client/schemas/prettierrc.json"
+    }
+    ]
 }
