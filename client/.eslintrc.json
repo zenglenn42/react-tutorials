@@ -44,7 +44,6 @@
                 "import/namespace": 1,
                 "import/default": 1,
                 "import/no-named-as-default-member": 1,
-                "no-indent": 1,
                 "no-var": 1,
                 "prefer-const": 1,
                 "react/prop-types": 1,
