@@ -41,7 +41,7 @@ class TravelForm extends React.Component {
 
     render() {
         let dietaryRestrictions = ''
-        for (var key in this.state.diet) {
+        for (const key in this.state.diet) {
             if (this.state.diet[key]) {
                 dietaryRestrictions += key + ' '
             }

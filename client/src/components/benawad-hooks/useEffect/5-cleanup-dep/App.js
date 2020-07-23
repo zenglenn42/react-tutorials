@@ -17,7 +17,7 @@ export const App = () => {
                 value={values.email}
                 onChange={handleChange}
             />
-            <label for="email">&nbsp;Email</label>
+            <label htmlFor="email">&nbsp;Email</label>
             <br />
 
             <input
@@ -27,7 +27,7 @@ export const App = () => {
                 value={values.password}
                 onChange={handleChange}
             />
-            <label for="password">&nbsp;Password</label>
+            <label htmlFor="password">&nbsp;Password</label>
         </div>
     )
 }

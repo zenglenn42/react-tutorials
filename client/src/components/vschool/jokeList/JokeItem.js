@@ -1,7 +1,7 @@
 import React from 'react'
 
 function JokeItem(props) {
-    let jokeQuestion = props.question ? <p>Q: {props.question}</p> : null
+    const jokeQuestion = props.question ? <p>Q: {props.question}</p> : null
     return (
         <div className="jokeItem">
             {jokeQuestion}

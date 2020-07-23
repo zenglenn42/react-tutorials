@@ -46,7 +46,9 @@ export const App = () => {
                                 setDarkMode(!darkMode)
                             }}
                         />
-                        <label for="toggleMode">Toggle light / dark mode</label>
+                        <label htmlFor="toggleMode">
+                            Toggle light / dark mode
+                        </label>
                     </div>
                 </Grid>
             </Paper>

@@ -6,7 +6,7 @@ export const App = () => {
 
     return (
         <div>
-            <label for="email">Name:&nbsp;</label>
+            <label htmlFor="email">Name:&nbsp;</label>
             <input
                 name="email"
                 value={email}
@@ -14,7 +14,7 @@ export const App = () => {
             />
             <br />
 
-            <label for="password">Password:&nbsp;</label>
+            <label htmlFor="password">Password:&nbsp;</label>
             <input
                 type="password"
                 name="password"
