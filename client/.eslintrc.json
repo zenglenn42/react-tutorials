@@ -21,15 +21,15 @@
             "version": "detect"
         }
     },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
     "overrides": [
         {
             // Lint config just for .js / .jsx
             "files": ["**/*.js?(x)"],
             "parser": "espree",
-            "parserOptions": {
-                "ecmaVersion": 2018,
-                "sourceType": "module"
-            },
             "extends": [],
             "rules": {
                 // Files that may include jsx.
