@@ -536,11 +536,12 @@ This is what my user interface is looking like with video and code links added t
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
 
-I thought it would be nice to oranize my solutions and make them shareable.  I could just blast them to [codesandbox](https://codesandbox.io/).  But I want to play around with React itself and crafting a React-based container for my solutions would be a good design exercise and something I could plug into my growing portfolio.
+It'd be nice to share my solutions in an associative context should I ever need to refer back to something I'd learned.  True, I could just blast stuff to [codesandbox](https://codesandbox.io/).  But I want to linger and play with React itself and crafting a React-based container for my solutions is a good design exercise, something I could plug into my growing portfolio.
 
 ### [Bootstrap to Heroku](#contents)
 
-I want a fairly minimal stack for now.  Maybe just express for the web server and definitely react for the front end (since that's the whole point of these tutorials) and something Heroku-ready would be nice.  I'm not really using the backend at the moment, but that may change as the tutorials get more sophisticated.
+I want a minimal stack for now.  Just express for the web server and definitely react for the front end (since that's the whole point)
+and something Heroku-ready would be a low impedance.  I'm not really using the backend at the moment, but that may change as the tutorials get more sophisticated.
 
 The fu in [this blog](https://daveceddia.com/deploy-react-express-app-heroku/) from Dave Ceddia fits the bill!
 
