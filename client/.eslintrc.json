@@ -28,10 +28,7 @@
                 "plugin:import/warnings",
                 "plugin:react/recommended",
                 // Is react-hooks needed? Implied by "react-app"?
-                "plugin:react-hooks/recommended",
-                "prettier",
-                "prettier/react",
-                "plugin:prettier/recommended"
+                "plugin:react-hooks/recommended"
             ],
             "rules": {
                 // Files that may include jsx.
@@ -58,7 +55,10 @@
                 "react/jsx-indent-props": 0,
                 "react/jsx-props-no-spreading": 1,
                 "react/jsx-one-expression-per-line": 1,
-                "no-trailing-spaces": 2
+                "no-trailing-spaces": 2,
+                "indent": "off",
+                "semi": 0,
+                "comma-dangle": [1, "never"]
             }
         },
         {
@@ -80,11 +80,7 @@
                 // Is react-hooks needed? Implied by "react-app"?
                 "plugin:react-hooks/recommended",
                 "plugin:prettier/recommended",
-                "plugin:import/typescript",
-                "prettier",
-                "prettier/react",
-                "plugin:prettier/recommended",
-                "plugin:@typescript-eslint/recommended"
+                "plugin:import/typescript"
             ],
             "plugins": ["@typescript-eslint"],
             "rules": {
@@ -97,7 +93,10 @@
                 "@typescript-eslint/semi": 0,
                 "react/jsx-indent": 0,
                 "react/jsx-indent-props": 0,
-                "no-trailing-spaces": 2
+                "no-trailing-spaces": 2,
+                "indent": "off",
+                "semi": 0,
+                "comma-dangle": [1, "never"]
             }
         }
     ]
