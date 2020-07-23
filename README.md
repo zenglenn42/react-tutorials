@@ -1,6 +1,6 @@
 # react-tutorials [(demo)](https://react-tutorials.herokuapp.com/)
 
-### A scalabe web app for curating and annotating online tutorials into an emergent curriculum.
+### A scalable web app for curating and annotating online tutorials into an emergent curriculum.
 
 ---
 #### Contents
