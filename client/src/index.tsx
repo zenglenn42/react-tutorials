@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
-import PersistentDrawerLeft from './App'
+import PersistentDrawerLeft from './app/App'
 
 ReactDOM.render(
     <PersistentDrawerLeft text="React Tutorials" main="splash" />,
