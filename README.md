@@ -536,7 +536,7 @@ This is what my user interface is looking like with video and code links added t
 
 A few weeks ago, I completed Bob Ziroll's really nice React tutorial on [youtube](https://youtu.be/DLX62G4lc44).
 
-It'd be nice to share my solutions in an associative context should I ever need to refer back to something I'd learned.  True, I could just blast stuff to [codesandbox](https://codesandbox.io/).  But I want to linger and play with React itself and crafting a React-based container for my solutions is a good design exercise, something I could plug into my growing portfolio.
+It'd be nice to share my solutions in an associative context should I ever need to refer back to something I'd learned.  True, I could just blast stuff to [codesandbox](https://codesandbox.io/), but I want to linger and play with React itself and crafting a React-based container for my solutions is a good design exercise, something I could plug into my growing portfolio.
 
 ### [Bootstrap to Heroku](#contents)
 
