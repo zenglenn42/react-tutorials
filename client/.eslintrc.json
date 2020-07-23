@@ -8,6 +8,8 @@
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:react/recommended",
+        // Is react-hooks needed? Implied by "react-app"?
+        "plugin:react-hooks/recommended",
         "plugin:prettier/recommended"
     ],
     "plugins": ["html"],
