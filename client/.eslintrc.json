@@ -1,17 +1,6 @@
 {
     // Shared lint config.
     "root": true,
-    "extends": [
-        "react-app",
-        "eslint:recommended",
-        "plugin:jsx-a11y/recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings",
-        "plugin:react/recommended",
-        // Is react-hooks needed? Implied by "react-app"?
-        "plugin:react-hooks/recommended",
-        "plugin:prettier/recommended"
-    ],
     "plugins": ["html"],
     "env": {
         "browser": true
@@ -30,7 +19,20 @@
             // Lint config just for .js / .jsx
             "files": ["**/*.js?(x)"],
             "parser": "espree",
-            "extends": [],
+            "extends": [
+                "react-app",
+                "airbnb",
+                "eslint:recommended",
+                "plugin:jsx-a11y/recommended",
+                "plugin:import/errors",
+                "plugin:import/warnings",
+                "plugin:react/recommended",
+                // Is react-hooks needed? Implied by "react-app"?
+                "plugin:react-hooks/recommended",
+                "prettier",
+                "prettier/react",
+                "plugin:prettier/recommended"
+            ],
             "rules": {
                 // Files that may include jsx.
                 "react/jsx-filename-extension": [
@@ -51,7 +53,12 @@
                 "react/prop-types": 1,
                 "react/no-unescaped-entities": 1,
                 "react/no-unknown-property": 1,
-                "react/jsx-key": 1
+                "react/jsx-key": 1,
+                "react/jsx-indent": 0,
+                "react/jsx-indent-props": 0,
+                "react/jsx-props-no-spreading": 1,
+                "react/jsx-one-expression-per-line": 1,
+                "no-trailing-spaces": 2
             }
         },
         {
@@ -63,7 +70,20 @@
                 "project": ["./tsconfig.json"]
             },
             "extends": [
+                "react-app",
+                "airbnb-typescript",
+                "eslint:recommended",
+                "plugin:jsx-a11y/recommended",
+                "plugin:import/errors",
+                "plugin:import/warnings",
+                "plugin:react/recommended",
+                // Is react-hooks needed? Implied by "react-app"?
+                "plugin:react-hooks/recommended",
+                "plugin:prettier/recommended",
                 "plugin:import/typescript",
+                "prettier",
+                "prettier/react",
+                "plugin:prettier/recommended",
                 "plugin:@typescript-eslint/recommended"
             ],
             "plugins": ["@typescript-eslint"],
@@ -73,7 +93,11 @@
                 "@typescript-eslint/indent": 0,
                 "@typescript-eslint/no-var-requires": 1,
                 "@typescript-eslint/no-unused-vars": 1,
-                "@typescript-eslint/no-empty-function": 1
+                "@typescript-eslint/no-empty-function": 1,
+                "@typescript-eslint/semi": 0,
+                "react/jsx-indent": 0,
+                "react/jsx-indent-props": 0,
+                "no-trailing-spaces": 2
             }
         }
     ]
