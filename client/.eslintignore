@@ -5,3 +5,4 @@ node_modules/
 schemas/
 src/serviceWorker.js
 .cache
+src/tutorials/
