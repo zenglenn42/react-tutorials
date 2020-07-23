@@ -18,7 +18,7 @@
         {
             // Lint config just for .js / .jsx
             "files": ["**/*.js?(x)"],
-            "parser": "espree",
+            "parser": "babel-eslint",
             "extends": [
                 "react-app",
                 "airbnb",
