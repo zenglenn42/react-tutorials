@@ -99,14 +99,11 @@ and package.json files given certain input assumptions like:
 * airbnb style integration?
 * runtime environment (node, browser, etc)
 
-I just think of all the collective wasted time people have spent getting these tools hooked up.
-...the endless number of blogs lovingly crafter around the ritual.
+I just think of all the collective wasted time people have spent getting these tools hooked up ... the endless number of blogs and videos lovingly crafted around this ritual.
 
 Currently the options are to hangout as a script kitty and bootstrap off of some youtuber's recipe or wade into the depths to be tossed back periodically against the craggly shores, bloodied but undeterred.  I do the latter, of course, trying to discern best practices and collectively accepted limitations.  Generally I start with the cli and get that nice before hooking that into the editor's configuration.  This puts me in good shape for continuous integration at some point (soon).
 
-I'm not sure my eslint configuration is 100%, but it's good enough to illustrate some sketchy stuff I've been doing.  I realize that I should reorganize the code base a bit so I can have
-tutorial code opt-out of linting entirely since tutorial authors seldom drag lint into the picture as they sketch out some lean javscript to illustrate a concept.  I don't want my
-code snapshots to diverge too much from the video versions on youtube.  But for my
+I'm not sure my eslint configuration is 100%, but it's good enough to illustrate some sketchy stuff I've been doing.  I reorganize the code base so tutorial code may opt-out of linting entirely since tutorial authors seldom drag lint into the picture as they sketch out some lean javscript to illustrate a concept.  I don't want my code snapshots to diverge too much from the video versions on youtube.  But for my
 container app, I'll definitely start refactoring that with lint.  I'd like to migrate to TS as well. 
 
 ## [The road ahead](#contents)
@@ -215,7 +212,7 @@ I verb-ify the key aspects of the app (learn, select, navigate, arrive) and use 
 
 I code this up in a fever dream with ugly inline styles and such (which I'll clean up in post) but the overall effect is better, I think.  So shipping it. :-)
 
-Oh, I made liberal use of ```<Grid>``` which I gleaned from Anthony Sistilli's Material UI tutorials, though did a fair amount of point-click-and-cursing until I found this fu which maintains image aspect ratio of my carefully crafted graphics within a responsive grid:
+Oh, I make liberal use of ```<Grid>``` which I glean from the Material UI tutorials, though I do point-click-and-curse until I find this image fu which maintains aspect ratio within a responsive grid:
 
 ```
 <Grid item>
@@ -404,7 +401,7 @@ I spend time today adding some intrinsic beauty to the container code.  In the r
         </List>
 ```
 
-I pick out all the unique data and organize that as an array in an [api file](https://github.com/zenglenn42/react-tutorials/blob/94a96a82343bc49a0fc3d56846b37c9cf5adb14a/client/src/components/api/TutorialData.js#L1):
+I pick out all the unique data and organize that as an array in an [api file](https://github.com/zenglenn42/react-tutorials/blob/94a96a82343bc49a0fc3d56846b37c9cf5adb14a/client/src/components/api/TutorialData.js#L1).  This could all be turned into an endpoint, but for now, I have a browser-side static model:
 
 ```
 import React from 'react';
@@ -543,7 +540,7 @@ I thought it would be nice to oranize my solutions and make them shareable.  I c
 
 ### [Bootstrap to Heroku](#contents)
 
-I want a fairly minimal stack for now.  Maybe just express for the web server and definitely react for the front end (since that's the whole point of these tutorials) and something Heroku-ready would be nice.  I'm not really using the backend at the moment, but that will change as the tutorials get more sophisticated.
+I want a fairly minimal stack for now.  Maybe just express for the web server and definitely react for the front end (since that's the whole point of these tutorials) and something Heroku-ready would be nice.  I'm not really using the backend at the moment, but that may change as the tutorials get more sophisticated.
 
 The fu in [this blog](https://daveceddia.com/deploy-react-express-app-heroku/) from Dave Ceddia fits the bill!
 
