@@ -171,7 +171,7 @@ import { App as AsHooks5 } from '../sistilli-hooks/5-useEffect-2/App'
 
 const avatarStyle = {
     width: '60px',
-    height: '60px',
+    height: '60px'
 }
 
 const TutorialData = [
@@ -186,13 +186,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/DLX62G4lc44',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -204,34 +204,34 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Bob Ziroll"
                             src="/assets/img/avatar/bob-ziroll-2.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Props',
-                            bulletText: 'Use props to customize components.',
+                            bulletText: 'Use props to customize components.'
                         },
                         {
                             bulletPoint: 'Class components',
                             bulletText:
-                                'Used especially for stateful components.  Introduction to lifecycle methods.',
+                                'Used especially for stateful components.  Introduction to lifecycle methods.'
                         },
                         {
                             bulletPoint: 'Function components',
                             bulletText:
-                                "Used especially for presentational components. No treatment of 'hooks'.",
+                                "Used especially for presentational components. No treatment of 'hooks'."
                         },
                         {
                             bulletPoint: 'Forms',
                             bulletText:
-                                'Use component state to drive interactive forms.  Write event handlers.',
+                                'Use component state to drive interactive forms.  Write event handlers.'
                         },
                         {
                             bulletPoint: 'Fetch',
                             bulletText:
-                                'Use fetch inside of a lifecycle method to make API calls across the net.',
-                        },
-                    ],
+                                'Use fetch inside of a lifecycle method to make API calls across the net.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -241,15 +241,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=2896',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <TodoList />,
+                        demoComponent: <TodoList />
                     },
                     {
                         demoKey: 'jokeList',
@@ -258,15 +258,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=5384',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/jokeList',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <JokeList />,
+                        demoComponent: <JokeList />
                     },
                     {
                         demoKey: 'mapComponents',
@@ -275,15 +275,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=6513',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/mapComponents',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <ProductCatalog />,
+                        demoComponent: <ProductCatalog />
                     },
                     {
                         demoKey: 'classComponents',
@@ -292,15 +292,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=7421',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/classComponents',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <HelloClass />,
+                        demoComponent: <HelloClass />
                     },
                     {
                         demoKey: 'loginState',
@@ -309,15 +309,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=7935',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state1',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <LoginState />,
+                        demoComponent: <LoginState />
                     },
                     {
                         demoKey: 'countState',
@@ -326,15 +326,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=8153',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state2',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <CountState />,
+                        demoComponent: <CountState />
                     },
                     {
                         demoKey: 'conditionalRender',
@@ -343,15 +343,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=11674',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/conditionalRender',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <ConditionalRender />,
+                        demoComponent: <ConditionalRender />
                     },
                     {
                         demoKey: 'travelForm',
@@ -360,15 +360,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=14666',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/forms',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <TravelForm />,
+                        demoComponent: <TravelForm />
                     },
                     {
                         demoKey: 'memeGenerator',
@@ -377,19 +377,19 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/DLX62G4lc44?t=16569',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/memeGenerator',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MemeGenerator />,
-                    },
-                ],
-            },
-        ],
+                        demoComponent: <MemeGenerator />
+                    }
+                ]
+            }
+        ]
     },
     {
         playlist: [
@@ -402,12 +402,12 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/mxK8b99iJTg',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'codesandbox',
                         href: 'https://codesandbox.io/s/oj3qm2zq06',
-                        icon: <CodeIcon />,
+                        icon: <CodeIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -424,20 +424,20 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Brad Traversy"
                             src="/assets/img/avatar/brad-traversy.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Todo list',
                             bulletText:
-                                'Manage a todo list by adding, completing, and deleting items.',
+                                'Manage a todo list by adding, completing, and deleting items.'
                         },
                         {
                             bulletPoint: 'React hook, useState()',
                             bulletText:
-                                'Manage state within function-based list and input form components.',
-                        },
-                    ],
+                                'Manage state within function-based list and input form components.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -447,15 +447,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/mxK8b99iJTg?t=442',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListUnstyled.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <TodoListUnstyled />,
+                        demoComponent: <TodoListUnstyled />
                     },
                     {
                         demoKey: 'todo-styled',
@@ -464,15 +464,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/mxK8b99iJTg?t=492',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListStyled.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <TodoListStyled />,
+                        demoComponent: <TodoListStyled />
                     },
                     {
                         demoKey: 'todo-w-form',
@@ -481,15 +481,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/mxK8b99iJTg?t=804',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithForm.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <TodoWithForm />,
+                        demoComponent: <TodoWithForm />
                     },
                     {
                         demoKey: 'todo-w-done',
@@ -498,15 +498,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/mxK8b99iJTg?t=1016',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDone.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <TodoWithDone />,
+                        demoComponent: <TodoWithDone />
                     },
                     {
                         demoKey: 'todo-w-del',
@@ -515,19 +515,19 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/mxK8b99iJTg?t=1175',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDel.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <TodoWithDel />,
-                    },
-                ],
-            },
-        ],
+                        demoComponent: <TodoWithDel />
+                    }
+                ]
+            }
+        ]
     },
     {
         playlist: [
@@ -540,12 +540,12 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/XLJN4JfniH4',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href: 'https://github.com/wesbos/React-Context',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -557,25 +557,25 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Wes Bos"
                             src="/assets/img/avatar/wes-bos.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Class-based implementation',
                             bulletText:
-                                'Learn about React.createContext(), <Context.Provider>, <Context.Consumer>',
+                                'Learn about React.createContext(), <Context.Provider>, <Context.Consumer>'
                         },
                         {
                             bulletPoint: 'Applicability',
                             bulletText:
-                                'Fits between lightweight component state and heavy duty datastores like Redux.',
+                                'Fits between lightweight component state and heavy duty datastores like Redux.'
                         },
                         {
                             bulletPoint: 'State for nested children',
                             bulletText:
-                                "Avoid 'prop-drilling' when passing state to deeply nested child components.",
-                        },
-                    ],
+                                "Avoid 'prop-drilling' when passing state to deeply nested child components."
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -585,15 +585,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/XLJN4JfniH4?t=94',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleState.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <SimpleState />,
+                        demoComponent: <SimpleState />
                     },
                     {
                         demoKey: 'wb-context-prop-drilling',
@@ -602,15 +602,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/XLJN4JfniH4?t=178',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/PropDrilling.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <PropDrilling />,
+                        demoComponent: <PropDrilling />
                     },
                     {
                         demoKey: 'wb-simple-context',
@@ -619,15 +619,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/XLJN4JfniH4?t=295',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleContext.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <SimpleContext />,
+                        demoComponent: <SimpleContext />
                     },
                     {
                         demoKey: 'wb-mutate-context',
@@ -636,19 +636,19 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/XLJN4JfniH4?t=755',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/MutateContext.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MutateContext />,
-                    },
-                ],
-            },
-        ],
+                        demoComponent: <MutateContext />
+                    }
+                ]
+            }
+        ]
     },
     {
         summary: {
@@ -660,12 +660,12 @@ const TutorialData = [
                 tipText: 'youtube',
                 href:
                     'https://www.youtube.com/channel/UC-8QAzbLcRglXeN_MY9blyw',
-                icon: <FaYoutube style={{ color: 'red' }} />,
+                icon: <FaYoutube style={{ color: 'red' }} />
             },
             codeLink: {
                 tipText: 'github',
                 href: 'https://github.com/benawad',
-                icon: <GitHubIcon />,
+                icon: <GitHubIcon />
             },
             level: 'introductory',
             descText:
@@ -677,18 +677,18 @@ const TutorialData = [
                     style={avatarStyle}
                     alt="Ben Awad"
                     src="/assets/img/avatar/ben-awad.png"
-                />,
+                />
             ],
             features: [
                 {
                     bulletPoint: 'React Router',
-                    bulletText: 'useContext, useStateThemes',
+                    bulletText: 'useContext, useStateThemes'
                 },
                 {
                     bulletPoint: 'Material UI Tables',
-                    bulletText: 'Learn to mutate!',
-                },
-            ],
+                    bulletText: 'Learn to mutate!'
+                }
+            ]
         },
         playlist: [
             {
@@ -700,12 +700,12 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=110dW3l5GQY',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href: 'https://github.com/benawad/react-router-example',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -717,50 +717,50 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: "Make 'back' button work!",
                             bulletText:
-                                'Allow for canonical browsing within SPA.',
+                                'Allow for canonical browsing within SPA.'
                         },
                         {
                             bulletPoint:
                                 'Understand <BrowserRouter>, <Route>, <Switch>',
                             bulletText:
-                                'Render one or more React components when browser location matches a path.',
+                                'Render one or more React components when browser location matches a path.'
                         },
                         {
                             bulletPoint: 'Constrain path matching',
-                            bulletText: 'With <Route exact ..> and <Switch>',
+                            bulletText: 'With <Route exact ..> and <Switch>'
                         },
                         {
                             bulletPoint: '404',
                             bulletText:
-                                'Detect unknown url locations on the frontend.',
+                                'Detect unknown url locations on the frontend.'
                         },
                         {
                             bulletPoint: 'Change router path',
                             bulletText:
-                                "With <Link to='path'> or with history.push('path')",
+                                "With <Link to='path'> or with history.push('path')"
                         },
                         {
                             bulletPoint: 'Query string',
                             bulletText:
-                                "Extract query strings from urls with 'search' prop.",
+                                "Extract query strings from urls with 'search' prop."
                         },
                         {
                             bulletPoint: 'Parameters in paths',
                             bulletText:
-                                "How to define path parameters and extract them with 'match' prop.",
+                                "How to define path parameters and extract them with 'match' prop."
                         },
                         {
                             bulletPoint: 'withRouter() hoc',
                             bulletText:
-                                'Give non-route components knowledge of router props.',
-                        },
-                    ],
+                                'Give non-route components knowledge of router props.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -770,15 +770,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/1-start',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter1 />,
+                        demoComponent: <BaRouter1 />
                     },
                     {
                         demoKey: 'ba-react-router-basic-routes',
@@ -787,15 +787,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=25',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/2-basic-routes',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter2 />,
+                        demoComponent: <BaRouter2 />
                     },
                     {
                         demoKey: 'ba-react-router-exact-routes',
@@ -804,15 +804,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=151',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/3-exact-routes',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter3 />,
+                        demoComponent: <BaRouter3 />
                     },
                     {
                         demoKey: 'ba-react-router-switch',
@@ -821,15 +821,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=210',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/4-switch',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter4 />,
+                        demoComponent: <BaRouter4 />
                     },
                     {
                         demoKey: 'ba-react-router-404',
@@ -838,15 +838,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=270',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/5-404-route',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter5 />,
+                        demoComponent: <BaRouter5 />
                     },
                     {
                         demoKey: 'ba-react-router-link',
@@ -855,15 +855,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=345',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/6-link-to',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter6 />,
+                        demoComponent: <BaRouter6 />
                     },
                     {
                         demoKey: 'ba-react-router-history-push',
@@ -872,15 +872,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=423',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/7-history-push',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter7 />,
+                        demoComponent: <BaRouter7 />
                     },
                     {
                         demoKey: 'ba-react-router-location-prop',
@@ -889,15 +889,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=527',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/8-location-prop',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter8 />,
+                        demoComponent: <BaRouter8 />
                     },
                     {
                         demoKey: 'ba-react-router-match-prop',
@@ -906,15 +906,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=578',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/9-match-prop',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter9 />,
+                        demoComponent: <BaRouter9 />
                     },
                     {
                         demoKey: 'ba-react-router-with-router',
@@ -923,17 +923,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/110dW3l5GQY?t=849',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/10-withRouter',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaRouter10 />,
-                    },
-                ],
+                        demoComponent: <BaRouter10 />
+                    }
+                ]
             },
             {
                 primaryText: 'Material UI Tables',
@@ -944,13 +944,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=pNjeuU4Jwnc',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/benawad/react-typescript-material-ui-form/tree/2_table',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -962,25 +962,25 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint:
                                 'Use a form to submit records to state.',
-                            bulletText: '',
+                            bulletText: ''
                         },
                         {
                             bulletPoint:
                                 'Drive the contents of a table from state.',
-                            bulletText: '',
+                            bulletText: ''
                         },
                         {
                             bulletPoint:
                                 'Use a helper utility to add IDs to data records.',
-                            bulletText: '',
-                        },
-                    ],
+                            bulletText: ''
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -990,15 +990,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/pNjeuU4Jwnc',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/1-start',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaMuiTables1 />,
+                        demoComponent: <BaMuiTables1 />
                     },
                     {
                         demoKey: 'ba-react-mui-table-2',
@@ -1007,15 +1007,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/pNjeuU4Jwnc?t=26',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/2-simple-table',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaMuiTables2 />,
+                        demoComponent: <BaMuiTables2 />
                     },
                     {
                         demoKey: 'ba-react-mui-table-3',
@@ -1024,15 +1024,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/pNjeuU4Jwnc?t=161',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/3-new-schema',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaMuiTables3 />,
+                        demoComponent: <BaMuiTables3 />
                     },
                     {
                         demoKey: 'ba-react-mui-table-4',
@@ -1041,19 +1041,19 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/pNjeuU4Jwnc?ts=412',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/4-add-rows',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaMuiTables4 />,
-                    },
-                ],
-            },
-        ],
+                        demoComponent: <BaMuiTables4 />
+                    }
+                ]
+            }
+        ]
     },
     {
         summary: {
@@ -1065,12 +1065,12 @@ const TutorialData = [
                 tipText: 'youtube',
                 href:
                     'https://www.youtube.com/playlist?list=PLN3n1USn4xlmyw3ebYuZmGp60mcENitdM',
-                icon: <FaYoutube style={{ color: 'red' }} />,
+                icon: <FaYoutube style={{ color: 'red' }} />
             },
             codeLink: {
                 tipText: 'github',
                 href: 'https://github.com/benawad/react-hooks-tutorial',
-                icon: <GitHubIcon />,
+                icon: <GitHubIcon />
             },
             level: 'introductory',
             descText:
@@ -1082,43 +1082,43 @@ const TutorialData = [
                     style={avatarStyle}
                     alt="Ben Awad"
                     src="/assets/img/avatar/ben-awad.png"
-                />,
+                />
             ],
             features: [
                 {
                     bulletPoint: 'useState',
                     bulletText:
-                        'Give your function-based components (this-less :-) state.',
+                        'Give your function-based components (this-less :-) state.'
                 },
                 {
                     bulletPoint: 'useEffect',
-                    bulletText: 'Replace lifecycle methods with this.',
+                    bulletText: 'Replace lifecycle methods with this.'
                 },
                 {
                     bulletPoint: 'useRef',
                     bulletText:
-                        'Reach down into the DOM and get a reference to a specific node.',
+                        'Reach down into the DOM and get a reference to a specific node.'
                 },
                 {
                     bulletPoint: 'useLayoutEffect',
                     bulletText:
-                        'Need to do something specifically when the DOM has mutated?',
+                        'Need to do something specifically when the DOM has mutated?'
                 },
                 {
                     bulletPoint: 'useContext',
-                    bulletText: 'Share state with deep children?',
+                    bulletText: 'Share state with deep children?'
                 },
                 {
                     bulletPoint: 'useCallback',
                     bulletText:
-                        'Prevent a function from being created on every render.',
+                        'Prevent a function from being created on every render.'
                 },
                 {
                     bulletPoint: 'useMemo',
                     bulletText:
-                        'Performance woes? Help prevent nuisance renders.',
-                },
-            ],
+                        'Performance woes? Help prevent nuisance renders.'
+                }
+            ]
         },
         playlist: [
             {
@@ -1130,13 +1130,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/9xhKH43llhU',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -1148,26 +1148,26 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Hooks only work with functions.',
                             bulletText:
-                                'But you have to follow certain coding conventions when using.',
+                                'But you have to follow certain coding conventions when using.'
                         },
                         {
                             bulletPoint:
                                 "const [value, setValue] = useState('initial state')",
                             bulletText:
-                                'Typical way to define a variable to hold state and a setter to mutate state.',
+                                'Typical way to define a variable to hold state and a setter to mutate state.'
                         },
                         {
                             bulletPoint: 'useForm',
                             bulletText:
-                                'You can tuck native hooks code into your /own/ custom hook logic. Avoids render props typically seen with Formik.',
-                        },
-                    ],
+                                'You can tuck native hooks code into your /own/ custom hook logic. Avoids render props typically seen with Formik.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -1177,15 +1177,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/9xhKH43llhU',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/1-start/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseState1 />,
+                        demoComponent: <BaHooksUseState1 />
                     },
                     {
                         demoKey: 'ba-hooks-useState-2',
@@ -1194,15 +1194,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/9xhKH43llhU?t=318',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/2-no-state-merging/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseState2 />,
+                        demoComponent: <BaHooksUseState2 />
                     },
                     {
                         demoKey: 'ba-hooks-useState-3',
@@ -1211,15 +1211,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/9xhKH43llhU?t=391',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/3-you-merge/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseState3 />,
+                        demoComponent: <BaHooksUseState3 />
                     },
                     {
                         demoKey: 'ba-hooks-useState-4',
@@ -1228,15 +1228,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/9xhKH43llhU?t=463',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/4-granular-state/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseState4 />,
+                        demoComponent: <BaHooksUseState4 />
                     },
                     {
                         demoKey: 'ba-hooks-useState-5',
@@ -1245,15 +1245,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/9xhKH43llhU?t=548',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/5-name-pw/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseState5 />,
+                        demoComponent: <BaHooksUseState5 />
                     },
                     {
                         demoKey: 'ba-hooks-useState-6',
@@ -1262,17 +1262,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/9xhKH43llhU?t=648',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/6-useForm/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseState6 />,
-                    },
-                ],
+                        demoComponent: <BaHooksUseState6 />
+                    }
+                ]
             },
             {
                 primaryText: '#2 useEffect',
@@ -1283,13 +1283,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/j1ZRyw7OtZs',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -1301,62 +1301,61 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'useEffect',
                             bulletText:
-                                'Lets you synchronize things outside of the React tree according to state and props.',
+                                'Lets you synchronize things outside of the React tree according to state and props.'
                         },
                         {
                             bulletPoint: 'Use cases',
                             bulletText:
-                                'event handling, api calls, persisting to local storage',
+                                'event handling, api calls, persisting to local storage'
                         },
                         {
                             bulletPoint: 'Taxonomy',
                             bulletText:
-                                'effect function, dependency array, cleanup',
+                                'effect function, dependency array, cleanup'
                         },
                         {
                             bulletPoint: '~componentDidMount',
                             bulletText:
-                                'useEffect(()=>{}, []), empty array == fire once',
+                                'useEffect(()=>{}, []), empty array == fire once'
                         },
                         {
                             bulletPoint:
                                 '~componentDidMount / ~componentDidUpdate',
                             bulletText:
-                                'useEffect(()=>{}, [someState]), non-empty array == fire only when someState changes',
+                                'useEffect(()=>{}, [someState]), non-empty array == fire only when someState changes'
                         },
                         {
                             bulletPoint: '~componentWillUnmount',
                             bulletText:
-                                'useEffect(()=>{ return () => {cleanupFn}}, []), cleanupFn fires when component is about to unmount',
+                                'useEffect(()=>{ return () => {cleanupFn}}, []), cleanupFn fires when component is about to unmount'
                         },
                         {
                             bulletPoint: 'Shallow compare of [dep]',
                             bulletText:
-                                'Even ref change to dep object can trigger effect. useMemo may help.',
+                                'Even ref change to dep object can trigger effect. useMemo may help.'
                         },
                         {
                             bulletPoint: 'useEffect with closures',
-                            bulletText:
-                                'Advanced use case.  See related video.',
+                            bulletText: 'Advanced use case.  See related video.'
                         },
                         {
                             bulletPoint: 'cleanup is granular to [dep] array',
                             bulletText:
-                                'Not just at component unmount-time thing.',
+                                'Not just at component unmount-time thing.'
                         },
                         {
                             bulletPoint:
                                 'Pro Top: avoid infinite renders b/c of useEffect',
                             bulletText:
-                                'Avoid having your dependencies be affected by stuff happening inside effect function.',
-                        },
-                    ],
+                                'Avoid having your dependencies be affected by stuff happening inside effect function.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -1366,15 +1365,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/j1ZRyw7OtZs',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/1-every-render/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseEffect1 />,
+                        demoComponent: <BaHooksUseEffect1 />
                     },
                     {
                         demoKey: 'ba-hooks-useEffect-2',
@@ -1383,15 +1382,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/j1ZRyw7OtZs?t=58',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/2-cond/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseEffect2 />,
+                        demoComponent: <BaHooksUseEffect2 />
                     },
                     {
                         demoKey: 'ba-hooks-useEffect-3',
@@ -1400,15 +1399,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/j1ZRyw7OtZs?t=207',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/3-once/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseEffect3 />,
+                        demoComponent: <BaHooksUseEffect3 />
                     },
                     {
                         demoKey: 'ba-hooks-useEffect-4',
@@ -1417,15 +1416,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/j1ZRyw7OtZs?t=221',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/4-cleanup/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseEffect4 />,
+                        demoComponent: <BaHooksUseEffect4 />
                     },
                     {
                         demoKey: 'ba-hooks-useEffect-5',
@@ -1434,15 +1433,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/j1ZRyw7OtZs?t=338',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/5-cleanup-dep/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseEffect5 />,
+                        demoComponent: <BaHooksUseEffect5 />
                     },
                     {
                         demoKey: 'ba-hooks-useEffect-6',
@@ -1451,15 +1450,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/j1ZRyw7OtZs?t=405',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/6-events/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseEffect6 />,
+                        demoComponent: <BaHooksUseEffect6 />
                     },
                     {
                         demoKey: 'ba-hooks-useEffect-7',
@@ -1468,15 +1467,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/j1ZRyw7OtZs?t=528',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/7-api-call/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseEffect7 />,
+                        demoComponent: <BaHooksUseEffect7 />
                     },
                     {
                         demoKey: 'ba-hooks-useEffect-8',
@@ -1485,17 +1484,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/j1ZRyw7OtZs?t=1051',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/8-localstorage/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseEffect8 />,
-                    },
-                ],
+                        demoComponent: <BaHooksUseEffect8 />
+                    }
+                ]
             },
             {
                 primaryText: '#3 useRef',
@@ -1506,13 +1505,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/W6AJ-gRupCs',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -1524,21 +1523,21 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint:
                                 'Easily address specific DOM elements from JSX',
                             bulletText:
-                                'Make imperative calls like inputRef.current.focus()',
+                                'Make imperative calls like inputRef.current.focus()'
                         },
                         {
                             bulletPoint: 'Can store refs to /anything/',
                             bulletText:
-                                "Basically a storage bucket that doesn't trigger re-renders, unlike state.",
-                        },
-                    ],
+                                "Basically a storage bucket that doesn't trigger re-renders, unlike state."
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -1548,15 +1547,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/W6AJ-gRupCs',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/1-form-focus',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseRef1 />,
+                        demoComponent: <BaHooksUseRef1 />
                     },
                     {
                         demoKey: 'ba-ref-2',
@@ -1565,15 +1564,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/W6AJ-gRupCs',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/2-ivar',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseRef2 />,
+                        demoComponent: <BaHooksUseRef2 />
                     },
                     {
                         demoKey: 'ba-ref-3',
@@ -1582,15 +1581,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/W6AJ-gRupCs',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/3-setState-fail',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseRef3 />,
+                        demoComponent: <BaHooksUseRef3 />
                     },
                     {
                         demoKey: 'ba-ref-4',
@@ -1599,17 +1598,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/W6AJ-gRupCs',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/4-setState-win',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseRef4 />,
-                    },
-                ],
+                        demoComponent: <BaHooksUseRef4 />
+                    }
+                ]
             },
             {
                 primaryText: '#4 useLayoutEffect',
@@ -1620,13 +1619,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/ommC6fS1SZg',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -1638,26 +1637,26 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Similar to useEffect but ...',
                             bulletText:
-                                'fires synchronously after all DOM mutations',
+                                'fires synchronously after all DOM mutations'
                         },
                         {
                             bulletPoint:
                                 'Replaces two class-based lifecycle methods:',
                             bulletText:
-                                'componentDidMount() & componentDidUpdate()',
+                                'componentDidMount() & componentDidUpdate()'
                         },
                         {
                             bulletPoint:
                                 'Use case: get screen dimensions of DOM element',
-                            bulletText: 'ref.current.getBoundingClientRect()',
-                        },
-                    ],
+                            bulletText: 'ref.current.getBoundingClientRect()'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -1667,15 +1666,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/ommC6fS1SZg',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/1-measure-input-field',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseLayoutEffect1 />,
+                        demoComponent: <BaHooksUseLayoutEffect1 />
                     },
                     {
                         demoKey: 'ba-hooks-useLayoutEffect-2',
@@ -1684,15 +1683,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/ommC6fS1SZg?t=141',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/2-dynamic-length',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseLayoutEffect2 />,
+                        demoComponent: <BaHooksUseLayoutEffect2 />
                     },
                     {
                         demoKey: 'ba-hooks-useLayoutEffect-3',
@@ -1701,17 +1700,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/ommC6fS1SZg?t=369',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/3-custom-hook',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaHooksUseLayoutEffect3 />,
-                    },
-                ],
+                        demoComponent: <BaHooksUseLayoutEffect3 />
+                    }
+                ]
             },
             {
                 primaryText: '#5 useContext',
@@ -1722,13 +1721,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/lhMKvyLRWo0',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -1740,44 +1739,44 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Easily share state',
                             bulletText:
-                                'Share state with deeply nested child components without prop-drilling.',
+                                'Share state with deeply nested child components without prop-drilling.'
                         },
                         {
                             bulletPoint: 'createContext()',
                             bulletText:
-                                'Learn to create a context data store with createContext()',
+                                'Learn to create a context data store with createContext()'
                         },
                         {
                             bulletPoint: 'useContext()',
                             bulletText:
-                                'Subscribe to context state with useContext()',
+                                'Subscribe to context state with useContext()'
                         },
                         {
                             bulletPoint: 'Works nicely with useState()',
                             bulletText:
-                                'Can store useState() output (i.e., getter/setter) within a context.',
+                                'Can store useState() output (i.e., getter/setter) within a context.'
                         },
                         {
                             bulletPoint: 'useMemo()',
-                            bulletText: 'Minimize component re-rendering.',
+                            bulletText: 'Minimize component re-rendering.'
                         },
                         {
                             bulletPoint: 'React Router',
                             bulletText:
-                                'Features skeleton app that uses <Router> and <Route> to achieve effect of multi-page app within single page architecutre.',
+                                'Features skeleton app that uses <Router> and <Route> to achieve effect of multi-page app within single page architecutre.'
                         },
                         {
                             bulletPoint: 'async / await',
                             bulletText:
-                                'Mock up a backend api call to fetch a fake user during development.',
-                        },
-                    ],
+                                'Mock up a backend api call to fetch a fake user during development.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -1787,15 +1786,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/lhMKvyLRWo0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/0-router-base',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaUseContext0 />,
+                        demoComponent: <BaUseContext0 />
                     },
                     {
                         demoKey: 'ba-read-context-msg',
@@ -1804,15 +1803,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/lhMKvyLRWo0?t=63',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/1-read-msg',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaUseContext1 />,
+                        demoComponent: <BaUseContext1 />
                     },
                     {
                         demoKey: 'ba-store-state',
@@ -1821,15 +1820,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/lhMKvyLRWo0?t=249',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/2-mutable-context',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaUseContext2 />,
+                        demoComponent: <BaUseContext2 />
                     },
                     {
                         demoKey: 'ba-login-context',
@@ -1838,19 +1837,19 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/lhMKvyLRWo0?t=424',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/3-login-context',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <BaUseContext3 />,
-                    },
-                ],
-            },
-        ],
+                        demoComponent: <BaUseContext3 />
+                    }
+                ]
+            }
+        ]
     },
     {
         playlist: [
@@ -1863,13 +1862,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/LZKsD_5ttZ4',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -1881,36 +1880,36 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint:
                                 'Review class-based state and lifecycle methods',
                             bulletText:
-                                'Specifically componentDidMount, componentDidUpdate, & componentDidUnmount.',
+                                'Specifically componentDidMount, componentDidUpdate, & componentDidUnmount.'
                         },
                         {
                             bulletPoint: 'Where did render() go?',
                             bulletText:
-                                'Everything inside your hooks-based function component /is/ the render method.',
+                                'Everything inside your hooks-based function component /is/ the render method.'
                         },
                         {
                             bulletPoint:
                                 'Use arrow functions for click handlers.',
-                            bulletText: '',
+                            bulletText: ''
                         },
                         {
                             bulletPoint:
                                 'Map componentDidUnmount method to useEffect()',
-                            bulletText: 'with return statement callback',
+                            bulletText: 'with return statement callback'
                         },
                         {
                             bulletPoint:
                                 'Map componentDidMount / componentDidUpdate to useEffect()',
-                            bulletText: 'with 2nd parameter [array]',
-                        },
-                    ],
+                            bulletText: 'with 2nd parameter [array]'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -1920,15 +1919,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/LZKsD_5ttZ4',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/1-class-worldview/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <AsHooks1 />,
+                        demoComponent: <AsHooks1 />
                     },
                     {
                         demoKey: 'as-hooks-2',
@@ -1937,15 +1936,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/LZKsD_5ttZ4?t=51',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/2-hooks-version/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <AsHooks2 />,
+                        demoComponent: <AsHooks2 />
                     },
                     {
                         demoKey: 'as-hooks-3',
@@ -1954,15 +1953,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/LZKsD_5ttZ4?t=253',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/3-lifecycle',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <AsHooks3 />,
+                        demoComponent: <AsHooks3 />
                     },
                     {
                         demoKey: 'as-hooks-4',
@@ -1971,15 +1970,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/LZKsD_5ttZ4?t=357',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/4-useEffect',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <AsHooks4 />,
+                        demoComponent: <AsHooks4 />
                     },
                     {
                         demoKey: 'as-hooks-5',
@@ -1988,19 +1987,19 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/LZKsD_5ttZ4?t=750',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/5-useEffect-2',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <AsHooks5 />,
-                    },
-                ],
-            },
-        ],
+                        demoComponent: <AsHooks5 />
+                    }
+                ]
+            }
+        ]
     },
     {
         summary: {
@@ -2012,13 +2011,13 @@ const TutorialData = [
                 tipText: 'youtube',
                 href:
                     'https://www.youtube.com/channel/UCoYzQqZNCRqqAomJwJ6yEdg',
-                icon: <FaYoutube style={{ color: 'red' }} />,
+                icon: <FaYoutube style={{ color: 'red' }} />
             },
             codeLink: {
                 tipText: 'github',
                 href:
                     'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui',
-                icon: <GitHubIcon />,
+                icon: <GitHubIcon />
             },
             level: 'introductory',
             descText:
@@ -2030,35 +2029,34 @@ const TutorialData = [
                     style={avatarStyle}
                     alt="Anthony Sistilli"
                     src="/assets/img/avatar/anthony-sistilli.png"
-                />,
+                />
             ],
             features: [
                 {
                     bulletPoint: 'Themes',
                     bulletText:
-                        'Themes can embody an extensive, cohesive, and overridable collection of styling attributes that define the overall look of your applications.',
+                        'Themes can embody an extensive, cohesive, and overridable collection of styling attributes that define the overall look of your applications.'
                 },
                 {
                     bulletPoint: 'Styles',
                     bulletText:
-                        'Learn multiple ways to style and override component apperance at a more granular level.',
+                        'Learn multiple ways to style and override component apperance at a more granular level.'
                 },
                 {
                     bulletPoint: 'Grids',
                     bulletText:
-                        'Breakdown some of the more tricky aspects of responsive grid layouts.',
+                        'Breakdown some of the more tricky aspects of responsive grid layouts.'
                 },
                 {
                     bulletPoint: 'Components',
                     bulletText:
-                        'Get a solid introduction to essential components and visual primitives.',
+                        'Get a solid introduction to essential components and visual primitives.'
                 },
                 {
                     bulletPoint: 'Workflow',
-                    bulletText:
-                        'Go from design to code in a systematic manner.',
-                },
-            ],
+                    bulletText: 'Go from design to code in a systematic manner.'
+                }
+            ]
         },
         playlist: [
             {
@@ -2070,12 +2068,12 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=pHclLuRolzE',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'code',
                         href: 'https://codesandbox.io/s/eloquent-beaver-3j1l2',
-                        icon: <CodeIcon />,
+                        icon: <CodeIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -2087,27 +2085,27 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Buttons',
-                            bulletText: 'Style using props.',
+                            bulletText: 'Style using props.'
                         },
                         {
                             bulletPoint: 'Themes',
                             bulletText:
-                                'Override default theme with createMuiTheme',
+                                'Override default theme with createMuiTheme'
                         },
                         {
                             bulletPoint: 'Typography',
-                            bulletText: 'Text styling with props.',
+                            bulletText: 'Text styling with props.'
                         },
                         {
                             bulletPoint: 'makeStyles',
-                            bulletText: 'Surgical styling overrides.',
-                        },
-                    ],
+                            bulletText: 'Surgical styling overrides.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -2117,15 +2115,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/pHclLuRolzE',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App1.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIIntro1 />,
+                        demoComponent: <MaterialUIIntro1 />
                     },
                     {
                         demoKey: 'material-ui-intro-2',
@@ -2134,15 +2132,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/pHclLuRolzE?t=327',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/override-theme',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIIntro2 />,
+                        demoComponent: <MaterialUIIntro2 />
                     },
                     {
                         demoKey: 'material-ui-intro-3',
@@ -2151,15 +2149,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/pHclLuRolzE?t=597',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App3.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIIntro3 />,
+                        demoComponent: <MaterialUIIntro3 />
                     },
                     {
                         demoKey: 'material-ui-intro-4',
@@ -2168,17 +2166,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/pHclLuRolzE?t=770',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App4.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIIntro4 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIIntro4 />
+                    }
+                ]
             },
             {
                 primaryText: '#2 Code a Design',
@@ -2189,12 +2187,12 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/tKzSnjWPtEw',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href: 'https://github.com/AtotheY/material-ui-ux-video',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -2206,30 +2204,30 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Breakdown a design',
                             bulletText:
-                                'Deconstruct a design into a collection of Material UI components.',
+                                'Deconstruct a design into a collection of Material UI components.'
                         },
                         {
                             bulletPoint: 'Analyze spacial layout',
                             bulletText:
-                                'Leverage <Grid> component at multiple levels of layout.',
+                                'Leverage <Grid> component at multiple levels of layout.'
                         },
                         {
                             bulletPoint: 'Map design features to components.',
                             bulletText:
-                                'Use or augment primitives like <AppBar>, <Card>, and <IconButton>.',
+                                'Use or augment primitives like <AppBar>, <Card>, and <IconButton>.'
                         },
                         {
                             bulletPoint: 'Develop workflow',
                             bulletText:
-                                'Progress through implementation in structured way.',
-                        },
-                    ],
+                                'Progress through implementation in structured way.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -2239,15 +2237,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/1-starter',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode1 />,
+                        demoComponent: <MaterialUIUXCode1 />
                     },
                     {
                         demoKey: 'material-ui-ux-2',
@@ -2256,15 +2254,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=342',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/2-app-layout',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode2 />,
+                        demoComponent: <MaterialUIUXCode2 />
                     },
                     {
                         demoKey: 'material-ui-ux-3',
@@ -2273,15 +2271,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=596',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/3-content-layout',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode3 />,
+                        demoComponent: <MaterialUIUXCode3 />
                     },
                     {
                         demoKey: 'material-ui-ux-4',
@@ -2290,15 +2288,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=855',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/4-header-appbar',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode4 />,
+                        demoComponent: <MaterialUIUXCode4 />
                     },
                     {
                         demoKey: 'material-ui-ux-5',
@@ -2307,15 +2305,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=996',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/5-header-content',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode5 />,
+                        demoComponent: <MaterialUIUXCode5 />
                     },
                     {
                         demoKey: 'material-ui-ux-6',
@@ -2324,15 +2322,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=1205',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/6-simple-card',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode6 />,
+                        demoComponent: <MaterialUIUXCode6 />
                     },
                     {
                         demoKey: 'material-ui-ux-7',
@@ -2341,15 +2339,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=1354',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/7-content-grid',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode7 />,
+                        demoComponent: <MaterialUIUXCode7 />
                     },
                     {
                         demoKey: 'material-ui-ux-8',
@@ -2358,15 +2356,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=1624',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/8-content-card',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode8 />,
+                        demoComponent: <MaterialUIUXCode8 />
                     },
                     {
                         demoKey: 'material-ui-ux-9',
@@ -2375,17 +2373,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/tKzSnjWPtEw?t=2068',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/9-final-products',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIUXCode9 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIUXCode9 />
+                    }
+                ]
             },
             {
                 primaryText: '#3 makeStyles',
@@ -2396,13 +2394,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/tKzSnjWPtEw',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'code',
                         href:
                             'https://codesandbox.io/s/practical-goldberg-fzpht',
-                        icon: <CodeIcon />,
+                        icon: <CodeIcon />
                     },
                     level: 'intermediate',
                     descText:
@@ -2414,35 +2412,35 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'What is JSS?',
                             bulletText:
-                                'Increasingly popular way of blending CSS with JSX to style in React',
+                                'Increasingly popular way of blending CSS with JSX to style in React'
                         },
                         {
                             bulletPoint: 'Advanced use cases',
                             bulletText:
-                                'Use props and themes to control style definitions.',
+                                'Use props and themes to control style definitions.'
                         },
                         {
                             bulletPoint: 'classnames packge',
                             bulletText:
-                                'Apply multiple styling classes with 3rd party package. ',
+                                'Apply multiple styling classes with 3rd party package. '
                         },
                         {
                             bulletPoint: 'Breakpoints',
                             bulletText:
-                                'Change styles according to window size.',
+                                'Change styles according to window size.'
                         },
                         {
                             bulletPoint: 'makeStyles vs withStyles',
                             bulletText:
-                                'Pass style classes as props via withStyles higher order component.',
-                        },
-                    ],
+                                'Pass style classes as props via withStyles higher order component.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -2452,15 +2450,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/k_AN49fA9g0?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/1-starter',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUImakeStyles1 />,
+                        demoComponent: <MaterialUImakeStyles1 />
                     },
                     {
                         demoKey: 'material-ui-makeStyles-2',
@@ -2469,15 +2467,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/k_AN49fA9g0?t=62',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/2-makeStyles',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUImakeStyles2 />,
+                        demoComponent: <MaterialUImakeStyles2 />
                     },
                     {
                         demoKey: 'material-ui-makeStyles-3',
@@ -2486,15 +2484,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/k_AN49fA9g0?t=313',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/3-textStyle',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUImakeStyles3 />,
+                        demoComponent: <MaterialUImakeStyles3 />
                     },
                     {
                         demoKey: 'material-ui-makeStyles-4',
@@ -2503,15 +2501,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/k_AN49fA9g0?t=378',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/4-props',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUImakeStyles4 />,
+                        demoComponent: <MaterialUImakeStyles4 />
                     },
                     {
                         demoKey: 'material-ui-makeStyles-5',
@@ -2520,15 +2518,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/k_AN49fA9g0?t=453',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/5-props-multi',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUImakeStyles5 />,
+                        demoComponent: <MaterialUImakeStyles5 />
                     },
                     {
                         demoKey: 'material-ui-makeStyles-6',
@@ -2537,15 +2535,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/k_AN49fA9g0?t=524',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/6-theme',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUImakeStyles6 />,
+                        demoComponent: <MaterialUImakeStyles6 />
                     },
                     {
                         demoKey: 'material-ui-makeStyles-7',
@@ -2554,15 +2552,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/k_AN49fA9g0?t=669',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/7-props-and-theme',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUImakeStyles7 />,
+                        demoComponent: <MaterialUImakeStyles7 />
                     },
                     {
                         demoKey: 'material-ui-makeStyles-8',
@@ -2571,17 +2569,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/k_AN49fA9g0?t=736',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/8-multi-class',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUImakeStyles8 />,
-                    },
-                ],
+                        demoComponent: <MaterialUImakeStyles8 />
+                    }
+                ]
             },
             {
                 primaryText: '#4 Button',
@@ -2592,13 +2590,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/tKzSnjWPtEw',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'intermediate',
                     descText:
@@ -2610,20 +2608,20 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Button variants',
                             bulletText:
-                                'Map Material UI props to well known CSS attributes.',
+                                'Map Material UI props to well known CSS attributes.'
                         },
                         {
                             bulletPoint: 'Override MUI css classes',
                             buttetText:
-                                'Using the classes prop for granular overrides.',
-                        },
-                    ],
+                                'Using the classes prop for granular overrides.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -2633,15 +2631,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/ewq0UgnQo9E?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button/1-starter',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIButton1 />,
+                        demoComponent: <MaterialUIButton1 />
                     },
                     {
                         demoKey: 'material-ui-button-2',
@@ -2650,15 +2648,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/ewq0UgnQo9E?t=33',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button/2-button-docs',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIButton2 />,
+                        demoComponent: <MaterialUIButton2 />
                     },
                     {
                         demoKey: 'material-ui-button-3',
@@ -2667,17 +2665,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/ewq0UgnQo9E?t=153',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button/3-icon-buttons',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIButton3 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIButton3 />
+                    }
+                ]
             },
             {
                 primaryText: '#5 Typography',
@@ -2688,13 +2686,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=OvPrUQ3gPtw',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -2706,20 +2704,20 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Typography variants',
                             bulletText:
-                                'Learn about common variants such as h1, body1, etc',
+                                'Learn about common variants such as h1, body1, etc'
                         },
                         {
                             bulletPoint: 'Override default appearance',
                             bulletText:
-                                'Using style, MUI css class, and theme overrides.',
-                        },
-                    ],
+                                'Using style, MUI css class, and theme overrides.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -2729,15 +2727,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/OvPrUQ3gPtw?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/1-props',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIText1 />,
+                        demoComponent: <MaterialUIText1 />
                     },
                     {
                         demoKey: 'material-ui-typography-2',
@@ -2746,15 +2744,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/OvPrUQ3gPtw?t=389',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/2-override',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIText2 />,
+                        demoComponent: <MaterialUIText2 />
                     },
                     {
                         demoKey: 'material-ui-typography-3',
@@ -2763,15 +2761,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/OvPrUQ3gPtw?t=471',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/3-theme',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIText3 />,
+                        demoComponent: <MaterialUIText3 />
                     },
                     {
                         demoKey: 'material-ui-typography-4',
@@ -2780,17 +2778,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/OvPrUQ3gPtw?t=471',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/4-themes',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIText4 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIText4 />
+                    }
+                ]
             },
             {
                 primaryText: '#6 Themes',
@@ -2802,13 +2800,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=Q4o0GmfNpJc',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -2820,35 +2818,35 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Basic theme objects',
                             bulletText:
-                                'Learn about breakpoints, palettes, and typography.',
+                                'Learn about breakpoints, palettes, and typography.'
                         },
                         {
                             bulletPoint: 'Create your own theme',
                             bulletText:
-                                'Use createMuiTheme then share with components via <ThemeProvider theme={theme}> or useTheme() hook.',
+                                'Use createMuiTheme then share with components via <ThemeProvider theme={theme}> or useTheme() hook.'
                         },
                         {
                             bulletPoint: 'Run-time theme selection tip',
                             bulletText:
-                                "Import themes from a separate 'themes' file if selection is dynamic and based upon a setting or reducer value.",
+                                "Import themes from a separate 'themes' file if selection is dynamic and based upon a setting or reducer value."
                         },
                         {
                             bulletPoint: 'Read theme breakpoints',
                             bulletText:
-                                'Change background color, or other presentation attributes, based upon browser window size.',
+                                'Change background color, or other presentation attributes, based upon browser window size.'
                         },
                         {
                             bulletPoint: 'Dark theme',
                             bulletText:
-                                "Use createMuiTheme to enable palette.type='dark'",
-                        },
-                    ],
+                                "Use createMuiTheme to enable palette.type='dark'"
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -2858,15 +2856,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Q4o0GmfNpJc?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/1-intro/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIThemes1 />,
+                        demoComponent: <MaterialUIThemes1 />
                     },
                     {
                         demoKey: 'material-ui-themes-2',
@@ -2875,15 +2873,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Q4o0GmfNpJc?t=380',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/2-create-theme/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIThemes2 />,
+                        demoComponent: <MaterialUIThemes2 />
                     },
                     {
                         demoKey: 'material-ui-themes-3',
@@ -2892,15 +2890,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Q4o0GmfNpJc?t=708',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/3-breakpoint-style/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIThemes3 />,
+                        demoComponent: <MaterialUIThemes3 />
                     },
                     {
                         demoKey: 'material-ui-themes-4',
@@ -2909,17 +2907,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Q4o0GmfNpJc?t=987',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/4-dark/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIThemes4 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIThemes4 />
+                    }
+                ]
             },
             {
                 primaryText: '#7 Paper',
@@ -2930,13 +2928,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=nmCcr-Y9qdc',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -2948,15 +2946,15 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Paper is a wrapper',
                             bulletText:
-                                'It wraps nested items inside a div with a background color and box shadow.',
-                        },
-                    ],
+                                'It wraps nested items inside a div with a background color and box shadow.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -2966,15 +2964,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/nmCcr-Y9qdc?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper/1-elevation',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIPaper1 />,
+                        demoComponent: <MaterialUIPaper1 />
                     },
                     {
                         demoKey: 'material-ui-paper-2',
@@ -2983,17 +2981,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/nmCcr-Y9qdc?t=175',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper/2-square',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIPaper2 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIPaper2 />
+                    }
+                ]
             },
             {
                 primaryText: '#8 Dark Mode',
@@ -3004,13 +3002,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=H_PO_GY4xXU',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -3022,20 +3020,20 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Dark mode is easy in Material-UI',
                             bulletText:
-                                "Override the theme and set palette.type='dark' and bam.",
+                                "Override the theme and set palette.type='dark' and bam."
                         },
                         {
                             bulletPoint: 'But <Paper> is key.',
                             bulletText:
-                                'Not all components change background color in relation to dark mode.',
-                        },
-                    ],
+                                'Not all components change background color in relation to dark mode.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -3045,15 +3043,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/H_PO_GY4xXU?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/1-light',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDark1 />,
+                        demoComponent: <MaterialUIDark1 />
                     },
                     {
                         demoKey: 'material-ui-dark-2',
@@ -3062,15 +3060,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/H_PO_GY4xXU?t=113',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/2-dark',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDark2 />,
+                        demoComponent: <MaterialUIDark2 />
                     },
                     {
                         demoKey: 'material-ui-dark-3',
@@ -3079,15 +3077,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/H_PO_GY4xXU?t=287',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/3-toggle',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDark3 />,
+                        demoComponent: <MaterialUIDark3 />
                     },
                     {
                         demoKey: 'material-ui-dark-4',
@@ -3096,17 +3094,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/H_PO_GY4xXU?t=424',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/4-green',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDark4 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIDark4 />
+                    }
+                ]
             },
             {
                 primaryText: '#9 Templates',
@@ -3117,13 +3115,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=GsSnfTKn8To',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/mui-org/material-ui/docs/src/pages/getting-started/templates',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -3135,50 +3133,50 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Example code for common tasks',
                             bulletText:
-                                'Use these templates off-the-shelf or tweak to suit your needs.',
+                                'Use these templates off-the-shelf or tweak to suit your needs.'
                         },
                         {
                             bulletPoint: 'Study the code',
                             bulletText:
-                                'Improve your use of the Material UI library by studying how the authors leverage components.',
+                                'Improve your use of the Material UI library by studying how the authors leverage components.'
                         },
                         {
                             bulletPoint: 'Improve your layout',
                             bulletText:
-                                'Study use of whitespace, <Typography>, <Container>, and <Grid>',
+                                'Study use of whitespace, <Typography>, <Container>, and <Grid>'
                         },
                         {
                             bulletPoint: 'Learn about useful packages',
                             bulletText:
-                                'markdown-to-jsx used in the blog and recharts used in the dashboard',
+                                'markdown-to-jsx used in the blog and recharts used in the dashboard'
                         },
                         {
                             bulletPoint: 'Learn about building forms',
-                            bulletText: 'with <TextField> in sign-in template',
+                            bulletText: 'with <TextField> in sign-in template'
                         },
                         {
                             bulletPoint: "Learn about the '@global' JSS target",
                             bulletText:
-                                'Used in the pricing template to override multiple unordered lists.',
+                                'Used in the pricing template to override multiple unordered lists.'
                         },
                         {
                             bulletPoint:
                                 "Make your designs sensitive to 'light' and 'dark' modes",
                             bulletText:
-                                "backgroundColor: theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900]",
+                                "backgroundColor: theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900]"
                         },
                         {
                             bulletPoint: 'Leverage existing theme zIndices',
                             bulletText:
-                                "For JSS targets like this: 'zIndex: theme.zIndex.drawer + 1'",
-                        },
-                    ],
+                                "For JSS targets like this: 'zIndex: theme.zIndex.drawer + 1'"
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -3188,15 +3186,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=48',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/dashboard',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplateDashboard />,
+                        demoComponent: <MaterialUITemplateDashboard />
                     },
                     {
                         demoKey: 'material-ui-template-6',
@@ -3205,15 +3203,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=177',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-in',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplateSignIn />,
+                        demoComponent: <MaterialUITemplateSignIn />
                     },
                     {
                         demoKey: 'material-ui-template-7',
@@ -3222,15 +3220,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=214',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-in-side',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplateSignInSide />,
+                        demoComponent: <MaterialUITemplateSignInSide />
                     },
                     {
                         demoKey: 'material-ui-template-8',
@@ -3239,15 +3237,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=225',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-up',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplateSignUp />,
+                        demoComponent: <MaterialUITemplateSignUp />
                     },
                     {
                         demoKey: 'material-ui-template-2',
@@ -3256,15 +3254,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=229',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/blog',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplateBlog />,
+                        demoComponent: <MaterialUITemplateBlog />
                     },
                     {
                         demoKey: 'material-ui-template-3',
@@ -3273,15 +3271,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=241',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/checkout',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplateCheckout />,
+                        demoComponent: <MaterialUITemplateCheckout />
                     },
                     {
                         demoKey: 'material-ui-template-1',
@@ -3290,15 +3288,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=246',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/album',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplateAlbum />,
+                        demoComponent: <MaterialUITemplateAlbum />
                     },
                     {
                         demoKey: 'material-ui-template-5',
@@ -3307,15 +3305,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=279',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/pricing',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplatePricing />,
+                        demoComponent: <MaterialUITemplatePricing />
                     },
                     {
                         demoKey: 'material-ui-template-9',
@@ -3324,17 +3322,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/GsSnfTKn8To?t=294',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sticky-footer',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITemplateStickyFooter />,
-                    },
-                ],
+                        demoComponent: <MaterialUITemplateStickyFooter />
+                    }
+                ]
             },
             {
                 primaryText: '#10 Grid Layout',
@@ -3345,13 +3343,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=WV6u_6ZNWkQ',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -3363,30 +3361,30 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: '12 column layout',
                             bulletText:
-                                'Understand how <Grid> allocates space to grid items.',
+                                'Understand how <Grid> allocates space to grid items.'
                         },
                         {
                             bulletPoint: 'Grid container versus Grid item',
                             bulletText:
-                                'Certain props only apply to one or the other.',
+                                'Certain props only apply to one or the other.'
                         },
                         {
                             bulletPoint: 'Grid direction',
                             bulletText:
-                                '<Grid container direction="row"> versus <Grid container direction="column">',
+                                '<Grid container direction="row"> versus <Grid container direction="column">'
                         },
                         {
                             bulletPoint: 'Spacing and centering',
                             bulletText:
-                                'Learn which props will give you what you want.',
-                        },
-                    ],
+                                'Learn which props will give you what you want.'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -3396,15 +3394,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/1-start/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid1 />,
+                        demoComponent: <MaterialUIGrid1 />
                     },
                     {
                         demoKey: 'material-ui-grid-2',
@@ -3413,15 +3411,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=41',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/2-doc-start/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid2 />,
+                        demoComponent: <MaterialUIGrid2 />
                     },
                     {
                         demoKey: 'material-ui-grid-3',
@@ -3430,15 +3428,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=208',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/3-doc-336/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid3 />,
+                        demoComponent: <MaterialUIGrid3 />
                     },
                     {
                         demoKey: 'material-ui-grid-4',
@@ -3447,15 +3445,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=244',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/4-doc-337/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid4 />,
+                        demoComponent: <MaterialUIGrid4 />
                     },
                     {
                         demoKey: 'material-ui-grid-5',
@@ -3464,15 +3462,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=291',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/5-doc-xs-vs-sm/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid5 />,
+                        demoComponent: <MaterialUIGrid5 />
                     },
                     {
                         demoKey: 'material-ui-grid-6',
@@ -3481,15 +3479,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=478',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/6-spacing/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid6 />,
+                        demoComponent: <MaterialUIGrid6 />
                     },
                     {
                         demoKey: 'material-ui-grid-7',
@@ -3498,15 +3496,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=594',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/7-direction/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid7 />,
+                        demoComponent: <MaterialUIGrid7 />
                     },
                     {
                         demoKey: 'material-ui-grid-8',
@@ -3515,15 +3513,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=675',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/8-nested/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid8 />,
+                        demoComponent: <MaterialUIGrid8 />
                     },
                     {
                         demoKey: 'material-ui-grid-9',
@@ -3532,17 +3530,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/WV6u_6ZNWkQ?t=754',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/9-simple-layout/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGrid9 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIGrid9 />
+                    }
+                ]
             },
             {
                 primaryText: '#11 Grid Centering',
@@ -3553,13 +3551,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=Z9xgsSVJGWk',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'github',
                         href:
                             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering',
-                        icon: <GitHubIcon />,
+                        icon: <GitHubIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -3571,38 +3569,38 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint:
                                 'Control spacing within single major-axis flex row or column',
                             bulletText:
-                                "justify='flex-start|center|flex-end|space-between|space-around|space-evenly'",
+                                "justify='flex-start|center|flex-end|space-between|space-around|space-evenly'"
                         },
                         {
                             bulletPoint:
                                 'Control spacing along cross-axis to single flex row or column',
                             bulletText:
-                                "alignItems='flex-start|center|flex-end|stretch|baseline'",
+                                "alignItems='flex-start|center|flex-end|stretch|baseline'"
                         },
                         {
                             bulletPoint:
                                 'Control cross-axis spacing of multiple flex rows or columns',
-                            bulletText: "alignContent='..'",
+                            bulletText: "alignContent='..'"
                         },
                         {
                             bulletPoint: 'Adding margin gutters to containers',
                             bulletText:
-                                'Padding is your friend with breakpoint layouts.',
+                                'Padding is your friend with breakpoint layouts.'
                         },
                         {
                             bulletPoint:
                                 'Center content within an item with textAlign',
                             bulletText:
-                                "Why justify='center' doesn't work with breakpoint layouts.",
-                        },
-                    ],
+                                "Why justify='center' doesn't work with breakpoint layouts."
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -3612,15 +3610,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Z9xgsSVJGWk?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/1-start/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGridCenter1 />,
+                        demoComponent: <MaterialUIGridCenter1 />
                     },
                     {
                         demoKey: 'material-ui-grid-center-2',
@@ -3629,15 +3627,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Z9xgsSVJGWk?t=78',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/2-justify/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGridCenter2 />,
+                        demoComponent: <MaterialUIGridCenter2 />
                     },
                     {
                         demoKey: 'material-ui-grid-center-3',
@@ -3646,15 +3644,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Z9xgsSVJGWk?t=272',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/3-alignItems/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGridCenter3 />,
+                        demoComponent: <MaterialUIGridCenter3 />
                     },
                     {
                         demoKey: 'material-ui-grid-center-4',
@@ -3663,15 +3661,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Z9xgsSVJGWk?t=358',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/4-justify-column/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGridCenter4 />,
+                        demoComponent: <MaterialUIGridCenter4 />
                     },
                     {
                         demoKey: 'material-ui-grid-center-5',
@@ -3680,15 +3678,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Z9xgsSVJGWk?t=358',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/5-alignItems-column/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGridCenter5 />,
+                        demoComponent: <MaterialUIGridCenter5 />
                     },
                     {
                         demoKey: 'material-ui-grid-center-6',
@@ -3697,15 +3695,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Z9xgsSVJGWk?t=387',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/6-practice/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGridCenter6 />,
+                        demoComponent: <MaterialUIGridCenter6 />
                     },
                     {
                         demoKey: 'material-ui-grid-center-7',
@@ -3714,17 +3712,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/Z9xgsSVJGWk?t=460',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/7-justify-w-size/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIGridCenter7 />,
-                    },
-                ],
+                        demoComponent: <MaterialUIGridCenter7 />
+                    }
+                ]
             },
             {
                 primaryText: '#12 Cards',
@@ -3735,13 +3733,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/UNCq01LNNrg',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'code',
                         href:
                             'https://codesandbox.io/s/affectionate-leavitt-9mdq8?file=/src/App.js',
-                        icon: <CodeIcon />,
+                        icon: <CodeIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -3753,36 +3751,36 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: '<Card> is built upon <Paper>',
                             bulletText:
-                                'but layer in several sub-components for presentation and mutability',
+                                'but layer in several sub-components for presentation and mutability'
                         },
                         {
                             bulletPoint:
                                 'A simple card typically contains 3 parts:',
-                            bulletText: '<Card>, <CardContent>, <CardActions>',
+                            bulletText: '<Card>, <CardContent>, <CardActions>'
                         },
                         {
                             bulletPoint: 'Complex cards may include:',
                             bulletText:
-                                '<Card>, <CardHeader>, <CardContent>, <CardActions>, <Collapse>',
+                                '<Card>, <CardHeader>, <CardContent>, <CardActions>, <Collapse>'
                         },
                         {
                             bulletPoint:
                                 '<CardHeader> and <CardMedia> are self-closing',
                             bulletText:
-                                'You just pass stuff as props, not children.',
+                                'You just pass stuff as props, not children.'
                         },
                         {
                             bulletPoint: 'ProTip: <CardMedia> styling',
                             bulletText:
-                                "media: {height: 0, paddingTop: '56.25%'}  // 16:9 aspect",
-                        },
-                    ],
+                                "media: {height: 0, paddingTop: '56.25%'}  // 16:9 aspect"
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -3792,15 +3790,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/UNCq01LNNrg?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/1-simple/SimpleCard.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUICard1 />,
+                        demoComponent: <MaterialUICard1 />
                     },
                     {
                         demoKey: 'material-ui-card-2',
@@ -3809,15 +3807,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/UNCq01LNNrg?t=167',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/2-complex/RecipeReviewCard.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUICard2 />,
+                        demoComponent: <MaterialUICard2 />
                     },
                     {
                         demoKey: 'material-ui-card-3',
@@ -3826,15 +3824,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/UNCq01LNNrg?t=230',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/3-header',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUICard3 />,
+                        demoComponent: <MaterialUICard3 />
                     },
                     {
                         demoKey: 'material-ui-card-4',
@@ -3843,15 +3841,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/UNCq01LNNrg?t=385',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/4-media',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUICard4 />,
+                        demoComponent: <MaterialUICard4 />
                     },
                     {
                         demoKey: 'material-ui-card-5',
@@ -3860,15 +3858,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/UNCq01LNNrg?t=508',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/5-content',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUICard5 />,
+                        demoComponent: <MaterialUICard5 />
                     },
                     {
                         demoKey: 'material-ui-card-6',
@@ -3877,15 +3875,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/UNCq01LNNrg?t=540',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/6-actions',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUICard6 />,
+                        demoComponent: <MaterialUICard6 />
                     },
                     {
                         demoKey: 'material-ui-card-7',
@@ -3894,17 +3892,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/UNCq01LNNrg?t=758',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/7-gridify',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUICard7 />,
-                    },
-                ],
+                        demoComponent: <MaterialUICard7 />
+                    }
+                ]
             },
             {
                 primaryText: '#13 Tables',
@@ -3915,13 +3913,13 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://youtu.be/-3Ybk8VfFt4',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'code',
                         href:
                             'https://codesandbox.io/s/material-demo-q09ys?file=/demo.js',
-                        icon: <CodeIcon />,
+                        icon: <CodeIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -3933,15 +3931,15 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Learn about key related components.',
                             bulletText:
-                                '<TableContainer>, <Table>, <TableHead>, <TableRow>, <TableCell>',
-                        },
-                    ],
+                                '<TableContainer>, <Table>, <TableHead>, <TableRow>, <TableCell>'
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -3951,15 +3949,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/-3Ybk8VfFt4?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/13-table/1-simple',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITable1 />,
+                        demoComponent: <MaterialUITable1 />
                     },
                     {
                         demoKey: 'material-ui-table-2',
@@ -3968,17 +3966,17 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/-3Ybk8VfFt4?t=617',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/13-table/2-enhanced',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUITable2 />,
-                    },
-                ],
+                        demoComponent: <MaterialUITable2 />
+                    }
+                ]
             },
             {
                 primaryText: '#21 Drawer + Router',
@@ -3989,12 +3987,12 @@ const TutorialData = [
                     refLink: {
                         tipText: 'youtube',
                         href: 'https://www.youtube.com/watch?v=CjFWbEOcq-Y',
-                        icon: <FaYoutube style={{ color: 'red' }} />,
+                        icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
                         tipText: 'codesandbox',
                         href: 'https://codesandbox.io/s/winter-brook-fnepe',
-                        icon: <CodeIcon />,
+                        icon: <CodeIcon />
                     },
                     level: 'introductory',
                     descText:
@@ -4006,36 +4004,35 @@ const TutorialData = [
                             style={avatarStyle}
                             alt="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
-                        />,
+                        />
                     ],
                     features: [
                         {
                             bulletPoint: 'Learn key props',
-                            bulletText: 'variant, anchor, open',
+                            bulletText: 'variant, anchor, open'
                         },
                         {
                             bulletPoint:
                                 'Integrate React Router actions with Drawer',
-                            bulletText: 'Trigger routes with drawer clicks.',
+                            bulletText: 'Trigger routes with drawer clicks.'
                         },
                         {
                             bulletPoint:
                                 'Learn to alias component names to something else',
                             bulletText:
-                                "import { Drawer as MUIDrawer } from '@material-ui/core'",
+                                "import { Drawer as MUIDrawer } from '@material-ui/core'"
                         },
                         {
                             bulletPoint: "Override Drawer's PaperProps",
-                            bulletText:
-                                '<Drawer PaperProps={{elevation: 4}} />',
+                            bulletText: '<Drawer PaperProps={{elevation: 4}} />'
                         },
                         {
                             bulletPoint:
                                 '**BONUS** Includes a containerized temporary drawer.',
                             bulletText:
-                                "<Drawer variant='temporary' container={containerRef} />",
-                        },
-                    ],
+                                "<Drawer variant='temporary' container={containerRef} />"
+                        }
+                    ]
                 },
                 snapshots: [
                     {
@@ -4045,15 +4042,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/CjFWbEOcq-Y?t=0',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/1-docs/App-Temporary.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDrawer1 />,
+                        demoComponent: <MaterialUIDrawer1 />
                     },
                     {
                         demoKey: 'material-ui-persistent-drawer-1',
@@ -4062,15 +4059,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/CjFWbEOcq-Y?t=144',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/1-docs/App-Persistent.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIPersistentDrawer1 />,
+                        demoComponent: <MaterialUIPersistentDrawer1 />
                     },
                     {
                         demoKey: 'material-ui-drawer-2',
@@ -4079,15 +4076,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/CjFWbEOcq-Y?t=622',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/2-router/App.js',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDrawer2 />,
+                        demoComponent: <MaterialUIDrawer2 />
                     },
                     {
                         demoKey: 'material-ui-drawer-3',
@@ -4096,15 +4093,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/CjFWbEOcq-Y?t=691',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/3-permanent/Drawer.jsx',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDrawer3 />,
+                        demoComponent: <MaterialUIDrawer3 />
                     },
                     {
                         demoKey: 'material-ui-drawer-4',
@@ -4113,15 +4110,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/CjFWbEOcq-Y?t=1083',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/4-w-item-icons/Drawer.jsx',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDrawer4 />,
+                        demoComponent: <MaterialUIDrawer4 />
                     },
                     {
                         demoKey: 'material-ui-drawer-5',
@@ -4130,15 +4127,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/CjFWbEOcq-Y?t=1059',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/5-withRouter/Drawer.jsx',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDrawer5 />,
+                        demoComponent: <MaterialUIDrawer5 />
                     },
                     {
                         demoKey: 'material-ui-drawer-7',
@@ -4147,15 +4144,15 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/CjFWbEOcq-Y?t=166',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/7-container',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDrawer7 />,
+                        demoComponent: <MaterialUIDrawer7 />
                     },
                     {
                         demoKey: 'material-ui-drawer-6',
@@ -4164,20 +4161,20 @@ const TutorialData = [
                         refLink: {
                             tipText: 'youtube',
                             href: 'https://youtu.be/CjFWbEOcq-Y?t=166',
-                            icon: <FaYoutube style={{ color: 'red' }} />,
+                            icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
                             tipText: 'github',
                             href:
                                 'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/6-responsive',
-                            icon: <GitHubIcon />,
+                            icon: <GitHubIcon />
                         },
-                        demoComponent: <MaterialUIDrawer6 />,
-                    },
-                ],
-            },
-        ],
-    },
+                        demoComponent: <MaterialUIDrawer6 />
+                    }
+                ]
+            }
+        ]
+    }
 ]
 
 export default TutorialData

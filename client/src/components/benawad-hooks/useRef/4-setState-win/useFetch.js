@@ -1,10 +1,12 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable arrow-body-style */
 import { useState, useEffect, useRef } from 'react'
 
 const useFetch = (url) => {
     const isCurrent = useRef(true)
     const [state, setState] = useState({
         data: null,
-        loading: true,
+        loading: true
     })
 
     useEffect(() => {
@@ -15,7 +17,7 @@ const useFetch = (url) => {
     }, [])
 
     useEffect(() => {
-        setState((state) => ({ data: state.data, loading: true }))
+        setState((prevState) => ({ data: prevState.data, loading: true }))
         fetch(url)
             .then((x) => x.text())
             .then((y) => {

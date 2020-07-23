@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-newline */
 import React from 'react'
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom'
 import Home from './Home'
@@ -13,7 +14,7 @@ export const App = () => {
     const navLinkStyle = {
         display: 'inline',
         marginRight: '2em',
-        marginLeft: 0,
+        marginLeft: 0
     }
 
     const NavBar = (
@@ -56,3 +57,5 @@ export const App = () => {
         </BrowserRouter>
     )
 }
+
+export default App

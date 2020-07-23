@@ -12,7 +12,7 @@ export const App = () => {
     const navLinkStyle = {
         display: 'inline',
         marginRight: '2em',
-        marginLeft: 0,
+        marginLeft: 0
     }
 
     const NavBar = (
@@ -44,3 +44,5 @@ export const App = () => {
         </BrowserRouter>
     )
 }
+
+export default App

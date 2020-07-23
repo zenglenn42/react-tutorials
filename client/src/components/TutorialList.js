@@ -17,11 +17,11 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         maxWidth: 360,
         backgroundColor: 'white',
-        color: 'default',
+        color: 'default'
     },
     nested: {
-        paddingLeft: theme.spacing(4),
-    },
+        paddingLeft: theme.spacing(4)
+    }
 }))
 
 const findMatchingTutorial = (key) => {

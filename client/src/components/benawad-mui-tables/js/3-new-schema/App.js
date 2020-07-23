@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react'
 import MyForm from './MyForm'
 import MyTable from './MyTable'
@@ -16,10 +17,12 @@ export function App() {
                         id: 45,
                         firstName: 'bob',
                         lastName: 'bob2',
-                        email: 'bob@bob.com',
-                    },
+                        email: 'bob@bob.com'
+                    }
                 ]}
             />
         </div>
     )
 }
+
+export default App

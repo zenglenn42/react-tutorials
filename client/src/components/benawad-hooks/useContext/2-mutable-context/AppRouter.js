@@ -11,7 +11,7 @@ export function AppRouter() {
 
     const providerValue = useMemo(() => ({ value, setValue }), [
         value,
-        setValue,
+        setValue
     ])
 
     return (
@@ -35,3 +35,5 @@ export function AppRouter() {
         </Router>
     )
 }
+
+export default AppRouter

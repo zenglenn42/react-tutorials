@@ -10,13 +10,13 @@ import Paper from '@material-ui/core/Paper'
 
 const useStyles = makeStyles({
     table: {
-        minWidth: 650,
+        minWidth: 650
     },
     hideLastBorder: {
         '&:last-child td, &:last-child th': {
-            border: 0,
-        },
-    },
+            border: 0
+        }
+    }
 })
 
 export default function MyTable(props) {

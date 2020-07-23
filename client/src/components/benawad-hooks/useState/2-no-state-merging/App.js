@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-curly-newline */
+/* eslint-disable implicit-arrow-linebreak */
 /* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState } from 'react'
 
@@ -9,7 +11,7 @@ export const App = () => {
             <button
                 onClick={() =>
                     setCount((currentCount) => ({
-                        count: currentCount.count + 1,
+                        count: currentCount.count + 1
                     }))
                 }
                 type="button"

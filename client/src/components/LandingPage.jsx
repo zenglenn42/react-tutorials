@@ -5,7 +5,7 @@ import {
     Grid,
     Container,
     makeStyles,
-    Divider,
+    Divider
 } from '@material-ui/core'
 import { MdTouchApp } from 'react-icons/md'
 import LandingImage from './LandingImage'
@@ -17,32 +17,32 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: theme.spacing(1),
         [theme.breakpoints.up('sm')]: {
             marginTop: theme.spacing(4),
-            marginBottom: theme.spacing(3),
-        },
+            marginBottom: theme.spacing(3)
+        }
     },
     bigText: {
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(1),
         [theme.breakpoints.up('sm')]: {
             marginTop: theme.spacing(2),
-            marginBottom: theme.spacing(1),
-        },
+            marginBottom: theme.spacing(1)
+        }
     },
     bodyText: {
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(1),
         [theme.breakpoints.up('sm')]: {
             marginTop: theme.spacing(2),
-            marginBottom: theme.spacing(1),
-        },
+            marginBottom: theme.spacing(1)
+        }
     },
     button: {
         marginTop: theme.spacing(2),
         marginBottom: theme.spacing(1),
         [theme.breakpoints.up('sm')]: {
             marginTop: theme.spacing(2),
-            marginBottom: theme.spacing(2),
-        },
+            marginBottom: theme.spacing(2)
+        }
     },
     buttonSize: {
         // Button attributes on smaller devices.
@@ -56,24 +56,24 @@ const useStyles = makeStyles((theme) => ({
             // This is a 'large' button by mui standards.
             padding: '8px 22px',
             fontSize: '0.9375rem',
-            width: 'auto',
-        },
+            width: 'auto'
+        }
     },
     divider: {
-        margin: theme.spacing(2, 0),
+        margin: theme.spacing(2, 0)
     },
     showOnBigScreens: {
         display: 'none',
         [theme.breakpoints.up('sm')]: {
-            display: 'inherit',
-        },
+            display: 'inherit'
+        }
     },
     showOnSmallScreens: {
         display: 'inherit',
         [theme.breakpoints.up('sm')]: {
-            display: 'none',
-        },
-    },
+            display: 'none'
+        }
+    }
 }))
 
 const biggestText = 'h4'
