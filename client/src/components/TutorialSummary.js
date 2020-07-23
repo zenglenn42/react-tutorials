@@ -15,13 +15,13 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: theme.palette.primary.light,
         paddingLeft: '0.5em',
         paddingRight: '0px',
-        marginBottom: '1em',
+        marginBottom: '1em'
     },
     grow: {
-        flex: '1 1 auto',
+        flex: '1 1 auto'
     },
     scrollableListX: {
-        overflowX: 'scroll',
+        overflowX: 'scroll'
     },
     postIt: {
         background: yellow[100],
@@ -32,12 +32,12 @@ const useStyles = makeStyles((theme) => ({
         padding: '.5em',
         height: '100%',
         border: '1px yellow solid',
-        borderRadius: '0.0681em',
+        borderRadius: '0.0681em'
     },
     gridContainer: {
         paddingLeft: theme.spacing(0.5),
-        paddingRight: theme.spacing(0.5),
-    },
+        paddingRight: theme.spacing(0.5)
+    }
 }))
 
 function TutorialSummary(props) {
@@ -46,7 +46,7 @@ function TutorialSummary(props) {
     const summary = (
         <div className={classes.scrollableListX}>
             <Toolbar className={classes.Demobar} variant="dense">
-                <Typography variant="h6" noWrap={true}>
+                <Typography variant="h6" noWrap>
                     {props.courseTitle}
                 </Typography>
                 <div className={classes.grow} />
@@ -139,17 +139,15 @@ function TutorialSummary(props) {
             <Typography paragraph>{props.descText}</Typography>
             <Typography>
                 Features:
-                <List dense={true} component="div" disablePadding>
-                    {props.features.map((feature) => {
-                        return (
-                            <ListItem>
-                                <ListItemText
-                                    primary={'• ' + feature.bulletPoint}
-                                    secondary={feature.bulletText}
-                                />
-                            </ListItem>
-                        )
-                    })}
+                <List dense component="div" disablePadding>
+                    {props.features.map((feature) => (
+                        <ListItem>
+                            <ListItemText
+                                primary={`• ${feature.bulletPoint}`}
+                                secondary={feature.bulletText}
+                            />
+                        </ListItem>
+                    ))}
                 </List>
             </Typography>
         </div>

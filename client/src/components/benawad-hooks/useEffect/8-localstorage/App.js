@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import useFetch from './useFetch'
 import { Button } from '@material-ui/core'
+import useFetch from './useFetch'
 
 export const App = () => {
     const [count, setCount] = useState(() =>
@@ -28,3 +28,5 @@ export const App = () => {
         </>
     )
 }
+
+export default App

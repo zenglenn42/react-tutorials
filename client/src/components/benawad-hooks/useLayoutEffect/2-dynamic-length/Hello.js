@@ -17,7 +17,7 @@ const Hello = () => {
     const [rect, setRect] = useState({})
 
     useLayoutEffect(() => {
-        //console.log(divRef.current.getBoundingClientRect())
+        // console.log(divRef.current.getBoundingClientRect())
         setRect(divRef.current.getBoundingClientRect())
     }, [data])
 

@@ -11,13 +11,13 @@ import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
-import TutorialList from './components/TutorialList'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import { FaReact as ReactIcon, FaHome } from 'react-icons/fa'
 import Paper from '@material-ui/core/Paper'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import WorkIcon from '@material-ui/icons/Work'
 import Tooltip from '@material-ui/core/Tooltip'
+import TutorialList from './components/TutorialList'
 import TutorialSummary from './components/TutorialSummary'
 import LandingPage from './components/LandingPage'
 import TutorialContent from './components/TutorialContent'
@@ -54,11 +54,12 @@ function getMainContent(mainContent, classes, handleDrawerOpen) {
 }
 
 export default function PersistentDrawerLeft(props) {
+    const { main, text } = props
     const classes = useStyles()
     const theme = useTheme()
     const [open, setOpen] = React.useState(false)
     const [mainContent, setMainContent] = React.useState({
-        demoKey: props.main,
+        demoKey: main
     })
 
     const handleDrawerOpen = () => {
@@ -90,7 +91,7 @@ export default function PersistentDrawerLeft(props) {
             <AppBar
                 position="fixed"
                 className={clsx(classes.appBar, {
-                    [classes.appBarShift]: open,
+                    [classes.appBarShift]: open
                 })}
             >
                 <Toolbar>
@@ -118,7 +119,7 @@ export default function PersistentDrawerLeft(props) {
                         </IconButton>
                     </Tooltip>
                     <Typography variant="h6" noWrap>
-                        {props.text || 'Persistent drawer'}
+                        {text || 'Persistent drawer'}
                     </Typography>
                     <div className={classes.grow} />
                     <Tooltip title="portfolio" enterDelay={300}>
@@ -151,7 +152,7 @@ export default function PersistentDrawerLeft(props) {
                 anchor="left"
                 open={open}
                 classes={{
-                    paper: classes.drawerPaper,
+                    paper: classes.drawerPaper
                 }}
             >
                 <div className={classes.drawerHeader}>
@@ -180,7 +181,7 @@ export default function PersistentDrawerLeft(props) {
             <div className={classes.appBarSpacer} />
             <main
                 className={clsx(classes.content, {
-                    [classes.contentShift]: open,
+                    [classes.contentShift]: open
                 })}
             >
                 {getMainContent(mainContent, classes, handleDrawerOpen)}
@@ -188,7 +189,7 @@ export default function PersistentDrawerLeft(props) {
             <div className={classes.grow} />
             <div
                 className={clsx(classes.appBar, {
-                    [classes.appBarShift]: open,
+                    [classes.appBarShift]: open
                 })}
                 style={{ backgroundColor: 'gray' }}
             >

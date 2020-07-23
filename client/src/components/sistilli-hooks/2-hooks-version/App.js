@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState } from 'react'
+import { Button, makeStyles } from '@material-ui/core'
 import logo from './logo.svg'
 import './App.css'
-import { Button, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     buttonSpacing: {
-        marginBottom: '3rem',
-    },
+        marginBottom: '3rem'
+    }
 })
 
 export const App = () => {

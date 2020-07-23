@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
-import useForm from './useForm'
 import { Button } from '@material-ui/core'
+import useForm from './useForm'
 
 export const App = () => {
     const [values, handleChange] = useForm({ email: '', password: '' })
@@ -9,24 +9,28 @@ export const App = () => {
 
     return (
         <div>
-            <input
-                ref={inputRef}
-                name="email"
-                placeholder="email"
-                value={values.email}
-                onChange={handleChange}
-            />
-            <label htmlFor="email">&nbsp;Email</label>
+            <label htmlFor="email">
+                <input
+                    ref={inputRef}
+                    name="email"
+                    placeholder="email"
+                    value={values.email}
+                    onChange={handleChange}
+                />
+                &nbsp;Email
+            </label>
             <br />
 
-            <input
-                type="password"
-                name="password"
-                placeholder="password"
-                value={values.password}
-                onChange={handleChange}
-            />
-            <label htmlFor="password">&nbsp;Password</label>
+            <label htmlFor="password">
+                <input
+                    type="password"
+                    name="password"
+                    placeholder="password"
+                    value={values.password}
+                    onChange={handleChange}
+                />
+                &nbsp;Password
+            </label>
             <br />
             <br />
 

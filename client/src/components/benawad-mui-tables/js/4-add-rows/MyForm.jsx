@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/jsx-curly-brace-presence */
 import React, { useState } from 'react'
 import { Button, makeStyles } from '@material-ui/core'
 
@@ -5,14 +8,14 @@ const useStyles = makeStyles({
     form: {
         margin: '0 auto',
         textAlign: 'center',
-        width: '356px',
+        width: '356px'
     },
     input: {
         margin: '8px auto',
         fontSize: '150%',
         border: 'none',
-        borderBottom: '1px solid lightgrey',
-    },
+        borderBottom: '1px solid lightgrey'
+    }
 })
 
 const Submitted = (props) => {
@@ -61,7 +64,7 @@ function MyForm(props) {
 
         const newPerson = {
             ...person,
-            [name]: value,
+            [name]: value
         }
         setPerson(newPerson)
     }

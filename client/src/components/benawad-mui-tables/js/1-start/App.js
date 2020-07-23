@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react'
 import MyForm from './MyForm'
 
@@ -12,3 +13,5 @@ export function App() {
         </div>
     )
 }
+
+export default App

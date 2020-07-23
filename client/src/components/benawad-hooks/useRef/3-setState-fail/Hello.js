@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import useFetch from './useFetch'
 import { Button, Divider } from '@material-ui/core'
+import useFetch from './useFetch'
 
 const Hello = () => {
     const [count, setCount] = useState(0)

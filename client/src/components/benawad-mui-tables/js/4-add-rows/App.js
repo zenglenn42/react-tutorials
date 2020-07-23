@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
+import { v4 as generateId } from 'uuid'
 import MyForm from './MyForm'
 import MyTable from './MyTable'
-import { v4 as generateId } from 'uuid'
 
 export function App() {
     const [rows, setRows] = useState([
@@ -9,8 +9,8 @@ export function App() {
             id: 45,
             firstName: 'bob',
             lastName: 'bob2',
-            email: 'bob@bob.com',
-        },
+            email: 'bob@bob.com'
+        }
     ])
 
     return (
@@ -20,9 +20,9 @@ export function App() {
                     setRows((currentRows) => [
                         {
                             id: generateId(),
-                            ...data,
+                            ...data
                         },
-                        ...currentRows,
+                        ...currentRows
                     ])
                 }}
             />
@@ -30,3 +30,5 @@ export function App() {
         </div>
     )
 }
+
+export default App

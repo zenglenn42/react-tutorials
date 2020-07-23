@@ -1,10 +1,13 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable no-console */
+/* eslint-disable camelcase */
 import React, { useState, useEffect } from 'react'
 import { Button, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     buttonSpacing: {
-        marginBottom: '3rem',
-    },
+        marginBottom: '3rem'
+    }
 })
 
 const Counter_hooks = () => {
@@ -26,7 +29,8 @@ const Counter_hooks = () => {
     //     console.log("The count has been updated.")
     // }, [])
 
-    // Effectively 'componentDidMount' & 'componentDidUpdate' if /any/ state variable changes (w/ no array)
+    // Effectively 'componentDidMount' & 'componentDidUpdate' if /any/ state variable
+    // changes (w/ no array)
     //
     // useEffect(() => {
     //     console.log("The count has been updated.")

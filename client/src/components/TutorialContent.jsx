@@ -5,8 +5,8 @@ const TutorialContent = ({ classes, mainContent }) => {
     return (
         <div className={classes.scrollableListX}>
             <Toolbar className={classes.Demobar} variant="dense">
-                <Typography variant="h6" noWrap={true}>
-                    {mainContent.primaryText} {mainContent.secondaryText}
+                <Typography variant="h6" noWrap>
+                    {mainContent.primaryText}&nbsp;{mainContent.secondaryText}
                 </Typography>
                 <div className={classes.grow} />
                 <Tooltip title={mainContent.refLink.tipText} enterDelay={300}>

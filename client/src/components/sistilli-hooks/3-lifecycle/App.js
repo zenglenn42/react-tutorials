@@ -1,28 +1,29 @@
 import React, { Component } from 'react'
+import { Button } from '@material-ui/core'
 import logo from './logo.svg'
 import Counter from './Counter_class'
-import { Button } from '@material-ui/core'
 import './App.css'
 
 const buttonSpacing = {
-    marginBottom: '3rem',
+    marginBottom: '3rem'
 }
 
 export class App extends Component {
     constructor() {
         super()
         this.state = {
-            showingCounter: false,
+            showingCounter: false
         }
     }
 
     render() {
         const handleShowingCounter = () => {
-            this.setState({
-                showingCounter: !this.state.showingCounter,
-            })
+            this.setState((prevState) => ({
+                showingCounter: !prevState.showingCounter
+            }))
         }
 
+        const { showingCounter } = this.state
         return (
             <div className="App">
                 <header className="App-header">
@@ -34,7 +35,7 @@ export class App extends Component {
                     >
                         Show / Hide counter
                     </Button>
-                    {this.state.showingCounter && <Counter />}
+                    {showingCounter && <Counter />}
                 </header>
             </div>
         )

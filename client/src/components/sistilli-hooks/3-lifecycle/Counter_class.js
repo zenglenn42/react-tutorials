@@ -1,12 +1,13 @@
+/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable react/destructuring-assignment */
+/* eslint-disable no-console */
 import React, { Component } from 'react'
 import { Button } from '@material-ui/core'
 
-export class Counter extends Component {
+export default class Counter extends Component {
     constructor() {
         super()
-        this.state = {
-            count: 0,
-        }
+        this.state = { count: 0 }
     }
 
     componentDidMount() {
@@ -23,13 +24,11 @@ export class Counter extends Component {
 
     render() {
         const handleIncrementClick = () => {
-            this.setState({
-                count: this.state.count + 1,
-            })
+            this.setState((prevState) => ({ count: prevState.count + 1 }))
         }
 
         const buttonSpacing = {
-            marginBottom: '3rem',
+            marginBottom: '3rem'
         }
 
         return (
@@ -46,5 +45,3 @@ export class Counter extends Component {
         )
     }
 }
-
-export default Counter

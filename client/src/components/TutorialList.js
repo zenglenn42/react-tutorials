@@ -7,8 +7,8 @@ import ListItemText from '@material-ui/core/ListItemText'
 import Collapse from '@material-ui/core/Collapse'
 // import ExpandLess from '@material-ui/icons/ExpandLess';
 // import ExpandMore from '@material-ui/icons/ExpandMore';
-import TutorialData from './api/TutorialData'
 import { Divider } from '@material-ui/core'
+import TutorialData from './api/TutorialData'
 
 const tutorialData = TutorialData
 
@@ -53,7 +53,7 @@ export default function TutorialList(props) {
         const playlistKey = e.currentTarget.getAttribute('data-playlistkey')
         const tutorialKey =
             e.currentTarget.getAttribute('data-tutorialkey') || 'splash'
-        const key = playlistKey ? playlistKey : tutorialKey
+        const key = playlistKey || tutorialKey
         const value = open[key] || false
         setOpen({ ...open, [key]: !value })
 
@@ -83,7 +83,7 @@ export default function TutorialList(props) {
 
     const getTutorialListItems = (tutorial) => {
         // console.log("getTutorialListItems = ", tutorial)
-        const primaryText = tutorial.primaryText
+        const { primaryText } = tutorial
         const secondaryText = tutorial.summary.author
 
         const collapseListItems = tutorial.snapshots.map((solution) => {
@@ -115,7 +115,7 @@ export default function TutorialList(props) {
             </Collapse>
         )
         const listItems = (
-            <ListSubheader disableSticky={true} id={tutorial.summary.provider}>
+            <ListSubheader disableSticky id={tutorial.summary.provider}>
                 <ListItem
                     button
                     key={primaryText}
@@ -137,12 +137,12 @@ export default function TutorialList(props) {
 
     const getTutorialPlaylistItems = (tutorial) => {
         // console.log("getTutorialPlaylistItems = ", tutorial)
-        const primaryText = tutorial.summary.primaryText
+        const { primaryText } = tutorial.summary
         const secondaryText = tutorial.summary.author
 
         const collapseListItems = tutorial.playlist.map((pl) => {
             return (
-                <ListSubheader disableSticky={true} id={pl.primaryText}>
+                <ListSubheader disableSticky id={pl.primaryText}>
                     <ListItem
                         button
                         data-tutorialkey={pl.primaryText}
@@ -158,10 +158,7 @@ export default function TutorialList(props) {
                         unmountOnExit
                     >
                         <List component="div" disablePadding>
-                            <ListSubheader
-                                disableSticky={true}
-                                id={pl.primaryText}
-                            >
+                            <ListSubheader disableSticky id={pl.primaryText}>
                                 {pl.snapshots.map((solution) => {
                                     return (
                                         <ListItem
@@ -200,7 +197,7 @@ export default function TutorialList(props) {
         )
         // const collapseList = tutorial.playlist.map((chapter) => getTutorialListItems(chapter))
         const listItems = (
-            <ListSubheader disableSticky={true} id={tutorial.summary.provider}>
+            <ListSubheader disableSticky id={tutorial.summary.provider}>
                 <ListItem
                     button
                     data-playlistkey={primaryText}
@@ -240,7 +237,7 @@ export default function TutorialList(props) {
                         getTutorialListItems(chapter)
                     )
                 }
-                return <React.Fragment>{listItems}</React.Fragment>
+                return <>{listItems}</>
             })}
         </List>
     )

@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Typography } from '@material-ui/core'

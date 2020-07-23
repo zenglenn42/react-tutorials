@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React, { useState } from 'react'
 
 export const App = () => {
@@ -16,6 +17,7 @@ export const App = () => {
                     setCount((c) => c + 1) // probably should combine state
                     setCount2((c) => c + 1) // into 1 object sinc we're updating together here.
                 }}
+                type="button"
             >
                 +
             </button>
