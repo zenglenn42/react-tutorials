@@ -1,3 +1,6 @@
+/* eslint-disable arrow-body-style */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import ListColor from '@material-ui/core/colors/yellow'
@@ -13,32 +16,32 @@ const useStyles = makeStyles(() => ({
             'linear-gradient(rgba(0,0,0,.0681) 50%, transparent 0)',
         backgroundSize: 'auto 3em',
         lineHeight: '1.5',
-        padding: '.5em',
+        padding: '.5em'
     },
     todoInput: {
-        width: '100%',
+        width: '100%'
     },
     todo: {
-        display: 'flex',
+        display: 'flex'
     },
     growDiv: {
-        flex: '1 1 auto',
-    },
+        flex: '1 1 auto'
+    }
 }))
 
 const initialToDos = [
     {
         text: 'Learn about React hooks',
-        isDone: false,
+        isDone: false
     },
     {
         text: 'Go swimming',
-        isDone: false,
+        isDone: false
     },
     {
         text: 'Drink wine',
-        isDone: false,
-    },
+        isDone: false
+    }
 ]
 
 function Todo({ todo, index, didTodo }) {
@@ -49,7 +52,9 @@ function Todo({ todo, index, didTodo }) {
             {todo.text}
             <div className={classes.growDiv} />
             <div>
-                <button onClick={() => didTodo(index)}>Done</button>
+                <button onClick={() => didTodo(index)} type="button">
+                    Done
+                </button>
             </div>
         </div>
     )

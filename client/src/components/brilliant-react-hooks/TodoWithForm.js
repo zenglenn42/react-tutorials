@@ -1,3 +1,6 @@
+/* eslint-disable arrow-body-style */
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
 import ListColor from '@material-ui/core/colors/yellow'
@@ -13,29 +16,29 @@ const useStyles = makeStyles(() => ({
             'linear-gradient(rgba(0,0,0,.0681) 50%, transparent 0)',
         backgroundSize: 'auto 3em',
         lineHeight: '1.5',
-        padding: '.5em',
+        padding: '.5em'
     },
     todoInput: {
-        width: '100%',
-    },
+        width: '100%'
+    }
 }))
 
 const initialToDos = [
     {
         text: 'Learn about React hooks',
-        isCompleted: false,
+        isCompleted: false
     },
     {
         text: 'Go swimming',
-        isCompleted: false,
+        isCompleted: false
     },
     {
         text: 'Drink wine',
-        isCompleted: false,
-    },
+        isCompleted: false
+    }
 ]
 
-function Todo({ todo, index }) {
+function Todo({ todo }) {
     return <div>{todo.text}</div>
 }
 
@@ -74,7 +77,7 @@ function TodoWithForm() {
     return (
         <div className={classes.todoList}>
             {todos.map((todo, index) => {
-                return <Todo key={index} index={index} todo={todo} />
+                return <Todo key={index} todo={todo} />
             })}
             <TodoForm addTodo={addTodo} />
         </div>

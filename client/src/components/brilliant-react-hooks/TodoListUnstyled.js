@@ -1,21 +1,23 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 
 const initialToDos = [
     {
         text: 'Learn about React hooks',
-        isCompleted: false,
+        isCompleted: false
     },
     {
         text: 'Go swimming',
-        isCompleted: false,
+        isCompleted: false
     },
     {
         text: 'Drink wine',
-        isCompleted: false,
-    },
+        isCompleted: false
+    }
 ]
 
-function Todo({ todo, index }) {
+function Todo({ todo }) {
     return <div>{todo.text}</div>
 }
 
@@ -25,7 +27,7 @@ function TodoListUnstyled() {
     return (
         <div>
             {todos.map((todo, index) => {
-                return <Todo key={index} index={index} todo={todo} />
+                return <Todo key={index} todo={todo} />
             })}
         </div>
     )
