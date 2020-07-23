@@ -1,7 +1,7 @@
 import React from 'react'
 
 const style = {
-    flex: '1',
+    flex: '1'
 }
 
 class MemeGenerator extends React.Component {
@@ -12,7 +12,7 @@ class MemeGenerator extends React.Component {
             imgSrc: 'https://i.imgflip.com/1bij.jpg',
             topText: 'One does not merely',
             bottomText: 'go shopping',
-            allMemeImages: [],
+            allMemeImages: []
         }
     }
 
@@ -24,7 +24,7 @@ class MemeGenerator extends React.Component {
                 const { memes } = response.data
                 this.setState({
                     isLoading: false,
-                    allMemeImages: memes,
+                    allMemeImages: memes
                 })
             })
     }
@@ -32,7 +32,7 @@ class MemeGenerator extends React.Component {
     handleChange = (event) => {
         const { name, value } = event.target
         this.setState({
-            [name]: value,
+            [name]: value
         })
     }
 
@@ -42,7 +42,7 @@ class MemeGenerator extends React.Component {
             Math.random() * this.state.allMemeImages.length
         )
         this.setState({
-            imgSrc: this.state.allMemeImages[randomIndex].url,
+            imgSrc: this.state.allMemeImages[randomIndex].url
         })
     }
 

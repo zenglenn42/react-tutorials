@@ -6,11 +6,11 @@ const useStyles = makeStyles((theme) => ({
         return {
             color: props.cool ? 'blue' : 'red',
             [theme.breakpoints.up('sm')]: {
-                color: 'cyan',
+                color: 'cyan'
             },
-            backgroundColor: props.cool ? 'orange' : 'yellow',
+            backgroundColor: props.cool ? 'orange' : 'yellow'
         }
-    },
+    }
 }))
 
 const CoolButton = (props) => {

@@ -10,9 +10,9 @@ const useStyles = makeStyles({
                 : props.color[mainShade]
             : null
         return {
-            color: color,
+            color: color
         }
-    },
+    }
 })
 
 const TypographyDemo = (props) => {
@@ -20,7 +20,7 @@ const TypographyDemo = (props) => {
     return (
         <Typography
             classes={{
-                colorPrimary: classes.colorPrimary,
+                colorPrimary: classes.colorPrimary
             }}
             color="primary"
             variant="h1"

@@ -3,8 +3,8 @@ import { makeStyles, Button } from '@material-ui/core'
 
 const useStyles = makeStyles({
     buttonStyle: {
-        color: (props) => (props.cool ? 'blue' : 'red'),
-    },
+        color: (props) => (props.cool ? 'blue' : 'red')
+    }
 })
 
 const CoolButton = (props) => {

@@ -4,7 +4,7 @@ import {
     createMuiTheme,
     ThemeProvider,
     Typography,
-    makeStyles,
+    makeStyles
 } from '@material-ui/core'
 import { grey } from '@material-ui/core/colors'
 
@@ -17,15 +17,15 @@ const darkTheme = createMuiTheme({
             // Tutorial authors and any other secondary text in typography components
             // become invisible since we have white-on-white situation.
 
-            secondary: 'default',
-        },
-    },
+            secondary: 'default'
+        }
+    }
 })
 
 const useStyles = makeStyles({
     colorPrimary: {
-        color: grey[900],
-    },
+        color: grey[900]
+    }
 })
 
 export const App = () => {

@@ -8,19 +8,19 @@ import Button from '@material-ui/core/Button'
 
 const useStyles = makeStyles(() => ({
     root: {
-        minWidth: 275,
+        minWidth: 275
     },
     bullet: {
         display: 'inline-block',
         margin: '0 2px',
-        tranform: 'scale(0.8)',
+        tranform: 'scale(0.8)'
     },
     title: {
-        fontSize: 14,
+        fontSize: 14
     },
     pos: {
-        marginBottom: 12,
-    },
+        marginBottom: 12
+    }
 }))
 
 const CoffeeCard = () => {

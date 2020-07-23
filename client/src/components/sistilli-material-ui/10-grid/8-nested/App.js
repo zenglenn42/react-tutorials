@@ -4,18 +4,18 @@ import { makeStyles, Grid, Paper, Typography } from '@material-ui/core'
 const useClasses = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        paddingBottom: theme.spacing(1),
+        paddingBottom: theme.spacing(1)
     },
     paper: {
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.primary.contrastText,
-        backgroundColor: theme.palette.primary.main,
+        backgroundColor: theme.palette.primary.main
     },
     nestedGrid: {
         border: '1px solid red',
-        backgroundColor: 'lightgray',
-    },
+        backgroundColor: 'lightgray'
+    }
 }))
 
 export const CenteredGrid = () => {

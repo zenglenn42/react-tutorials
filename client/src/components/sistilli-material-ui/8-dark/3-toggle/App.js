@@ -6,7 +6,7 @@ import {
     Grid,
     createMuiTheme,
     ThemeProvider,
-    Switch,
+    Switch
 } from '@material-ui/core'
 
 export const App = () => {
@@ -22,9 +22,9 @@ export const App = () => {
                 // Tutorial authors and any other secondary text in typography components
                 // become invisible since we have white-on-white situation.
 
-                secondary: 'default',
-            },
-        },
+                secondary: 'default'
+            }
+        }
     })
 
     return (

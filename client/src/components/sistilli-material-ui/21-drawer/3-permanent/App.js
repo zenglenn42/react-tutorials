@@ -13,17 +13,17 @@ export const App = () => {
     const paperProps = {
         style: {
             position: 'relative',
-            marginRight: theme.spacing(1),
+            marginRight: theme.spacing(1)
         },
-        elevation: 4,
+        elevation: 4
     }
 
     const useStyles = makeStyles({
         container: {
             display: 'flex',
             border: '1px solid black',
-            backgroundColor: 'lightgray',
-        },
+            backgroundColor: 'lightgray'
+        }
     })
 
     const classes = useStyles()

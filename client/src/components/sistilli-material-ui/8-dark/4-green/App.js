@@ -6,7 +6,7 @@ import {
     Grid,
     createMuiTheme,
     ThemeProvider,
-    Switch,
+    Switch
 } from '@material-ui/core'
 import { green } from '@material-ui/core/colors'
 
@@ -23,9 +23,9 @@ export const App = () => {
                 // Tutorial authors and any other secondary text in typography components
                 // become invisible since we have white-on-white situation.
 
-                secondary: 'default',
-            },
-        },
+                secondary: 'default'
+            }
+        }
     })
 
     const greenTheme = createMuiTheme({
@@ -39,9 +39,9 @@ export const App = () => {
                 // Tutorial authors and any other secondary text in typography components
                 // become invisible since we have white-on-white situation.
 
-                secondary: 'default',
-            },
-        },
+                secondary: 'default'
+            }
+        }
     })
 
     return (

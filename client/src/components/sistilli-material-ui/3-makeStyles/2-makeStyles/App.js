@@ -3,8 +3,8 @@ import { makeStyles, Button } from '@material-ui/core'
 
 const useStyles = makeStyles({
     buttonStyle: {
-        color: 'red',
-    },
+        color: 'red'
+    }
 })
 
 export const App = () => {

@@ -17,31 +17,31 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         minHeight: 435,
         minWidth: 290,
-        maxWidth: 290,
+        maxWidth: 290
     },
     header: {
         backgroundColor: grey[200],
-        minHeight: '92.05px',
+        minHeight: '92.05px'
     },
     media: {
         height: 0,
-        paddingTop: '56.25%', // 16:9
+        paddingTop: '56.25%' // 16:9
     },
     mediaLabel: {
         position: 'relative',
         paddingTop: `${lineHeight}rem`,
-        marginBottom: `-${lineHeight2x}rem`,
+        marginBottom: `-${lineHeight2x}rem`
     },
     content: {
-        backgroundColor: grey[300],
+        backgroundColor: grey[300]
     },
     grow: {
         flex: 1,
-        backgroundColor: grey[300],
+        backgroundColor: grey[300]
     },
     actions: {
-        backgroundColor: grey[400],
-    },
+        backgroundColor: grey[400]
+    }
 })
 
 export default function ComplexCarTaxonomy(props) {

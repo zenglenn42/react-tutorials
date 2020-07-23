@@ -47,26 +47,26 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             // for larger devices
-            marginTop: theme.spacing(0),
-        },
+            marginTop: theme.spacing(0)
+        }
     },
     appBar: {
         zIndex: theme.zIndex.drawer + 1,
         transition: theme.transitions.create(['width', 'margin'], {
             easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
-        }),
+            duration: theme.transitions.duration.leavingScreen
+        })
     },
     appBarShift: {
         marginLeft: drawerWidth,
         width: `calc(100% - ${drawerWidth}px)`,
         transition: theme.transitions.create(['width', 'margin'], {
             easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
+            duration: theme.transitions.duration.enteringScreen
+        })
     },
     toolbar: {
-        paddingRight: 24, // keep right padding when drawer closed
+        paddingRight: 24 // keep right padding when drawer closed
     },
     toolbarIcon: {
         display: 'flex',
@@ -76,16 +76,16 @@ const useStyles = makeStyles((theme) => ({
         ...theme.mixins.toolbar,
         // Account for vertically compact appbar for small screens.
         // 64px -> 48px height.
-        minHeight: theme.spacing(6),
+        minHeight: theme.spacing(6)
     },
     menuButton: {
-        marginRight: 36,
+        marginRight: 36
     },
     menuButtonHidden: {
-        display: 'none',
+        display: 'none'
     },
     title: {
-        flexGrow: 1,
+        flexGrow: 1
     },
     drawerPaper: {
         position: 'relative',
@@ -93,21 +93,21 @@ const useStyles = makeStyles((theme) => ({
         width: drawerWidth,
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.enteringScreen,
+            duration: theme.transitions.duration.enteringScreen
         }),
         zIndex: theme.zIndex.drawer,
-        marginTop: -theme.spacing(8),
+        marginTop: -theme.spacing(8)
     },
     drawerPaperClose: {
         overflowX: 'hidden',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
+            duration: theme.transitions.duration.leavingScreen
         }),
         width: theme.spacing(7),
         [theme.breakpoints.up('sm')]: {
-            width: theme.spacing(9),
-        },
+            width: theme.spacing(9)
+        }
     },
     appBarSpacer: theme.mixins.toolbar,
     content: {
@@ -118,22 +118,22 @@ const useStyles = makeStyles((theme) => ({
         // 64px -> 48px height.  Maybe appBarSpacer is supposed to do this?
         padding: theme.spacing(0, 2),
         [theme.breakpoints.up('sm')]: {
-            padding: theme.spacing(2, 2),
-        },
+            padding: theme.spacing(2, 2)
+        }
     },
     container: {
         paddingTop: theme.spacing(4),
-        paddingBottom: theme.spacing(4),
+        paddingBottom: theme.spacing(4)
     },
     paper: {
         padding: theme.spacing(2),
         display: 'flex',
         overflow: 'auto',
-        flexDirection: 'column',
+        flexDirection: 'column'
     },
     fixedHeight: {
-        height: 240,
-    },
+        height: 240
+    }
 }))
 
 export default function Dashboard() {
@@ -190,7 +190,7 @@ export default function Dashboard() {
                         paper: clsx(
                             classes.drawerPaper,
                             !open && classes.drawerPaperClose
-                        ),
+                        )
                     }}
                     open={open}
                 >

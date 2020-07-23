@@ -6,23 +6,23 @@ import clsx from 'clsx'
 const useStyles = makeStyles((theme) => ({
     root: {
         '& > *': {
-            margin: theme.spacing(1),
-        },
+            margin: theme.spacing(1)
+        }
     },
     rowCentered: {
         display: 'flex',
-        alignItems: 'center',
+        alignItems: 'center'
     },
     icon: {
-        margin: theme.spacing(3),
+        margin: theme.spacing(3)
     },
     cssRootOverride: {
-        border: '3px solid black',
+        border: '3px solid black'
     },
     notAllowed: {
         cursor: 'not-allowed',
-        pointerEvents: 'auto',
-    },
+        pointerEvents: 'auto'
+    }
 }))
 
 export const App = () => {
@@ -81,7 +81,7 @@ export const App = () => {
             <div className={classes.root}>
                 <IconButton
                     classes={{
-                        root: classes.cssRootOverride,
+                        root: classes.cssRootOverride
                     }}
                     aria-label="delete"
                 >

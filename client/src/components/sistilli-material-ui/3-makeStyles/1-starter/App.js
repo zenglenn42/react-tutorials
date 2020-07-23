@@ -5,7 +5,7 @@ const useStyles = makeStyles({
     buttonStyle: {
         // color: "red",
         // border: "none"
-    },
+    }
 })
 
 export const App = () => {

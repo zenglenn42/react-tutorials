@@ -22,7 +22,7 @@ class PropDrilling extends React.Component {
     state = {
         name: 'Wes',
         age: 100,
-        cool: true,
+        cool: true
     }
 
     render() {

@@ -4,11 +4,11 @@ import AcUnitIcon from '@material-ui/icons/AcUnit'
 
 const useStyles = makeStyles({
     grid: {
-        border: '1px solid darkgrey',
+        border: '1px solid darkgrey'
     },
     cell: {
-        backgroundColor: 'lightgray',
-    },
+        backgroundColor: 'lightgray'
+    }
 })
 
 export const App = () => {

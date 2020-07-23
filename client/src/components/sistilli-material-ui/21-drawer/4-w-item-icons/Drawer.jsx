@@ -5,17 +5,17 @@ import {
     ListItem,
     ListItemIcon,
     ListItemText,
-    makeStyles,
+    makeStyles
 } from '@material-ui/core'
 import { Inbox, Star, Email, Drafts } from '@material-ui/icons'
 
 const useStyles = makeStyles((theme) => ({
     drawer: {
-        width: '190px',
+        width: '190px'
     },
     list: {
-        padding: theme.spacing(0, 0),
-    },
+        padding: theme.spacing(0, 0)
+    }
 }))
 
 const Drawer = (props) => {
@@ -23,20 +23,20 @@ const Drawer = (props) => {
     const itemsList = [
         {
             text: 'Inbox',
-            icon: <Inbox />,
+            icon: <Inbox />
         },
         {
             text: 'Starred',
-            icon: <Star />,
+            icon: <Star />
         },
         {
             text: 'Send email',
-            icon: <Email />,
+            icon: <Email />
         },
         {
             text: 'Drafts',
-            icon: <Drafts />,
-        },
+            icon: <Drafts />
+        }
     ]
     return (
         <MUIDrawer variant="permanent" className={classes.drawer} {...props}>

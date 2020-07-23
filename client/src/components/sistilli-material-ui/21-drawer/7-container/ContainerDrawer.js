@@ -6,14 +6,14 @@ import {
     ListItemText,
     ListItemIcon,
     makeStyles,
-    Divider,
+    Divider
 } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     drawerItems: {
         overflowY: 'scroll',
-        padding: theme.spacing(0, 0),
-    },
+        padding: theme.spacing(0, 0)
+    }
 }))
 
 export const ContainerDrawer = (props) => {
@@ -25,13 +25,13 @@ export const ContainerDrawer = (props) => {
         open,
         onClose,
         onClick,
-        onDrawerItemClick,
+        onDrawerItemClick
     } = props
     const classes = useStyles()
 
     const anchorTransformMap = {
         left: {
-            slideToward: 'right', // 'top' works too
+            slideToward: 'right' // 'top' works too
             // entering: {
             //     transform: "translateX(0%)",
             //     origin: "left top",
@@ -42,7 +42,7 @@ export const ContainerDrawer = (props) => {
             // },
         },
         top: {
-            slideToward: 'bottom',
+            slideToward: 'bottom'
             // entering: {
             //     transform: "translateY(0%)",
             //     origin: "center top",
@@ -53,7 +53,7 @@ export const ContainerDrawer = (props) => {
             // },
         },
         right: {
-            slideToward: 'bottom', // work around bug
+            slideToward: 'bottom' // work around bug
 
             // **BROKEN**
             // slideToward: 'left', // yields animation jitter
@@ -67,7 +67,7 @@ export const ContainerDrawer = (props) => {
             // },
         },
         bottom: {
-            slideToward: 'right', // work around bug
+            slideToward: 'right' // work around bug
 
             // **BROKEN**           // yields animation jitter
             // slideToward: 'top',
@@ -79,7 +79,7 @@ export const ContainerDrawer = (props) => {
             //     transform: "translateY(100%)",
             //     origin: "center bottom",
             // },
-        },
+        }
     }
 
     return (
@@ -96,7 +96,7 @@ export const ContainerDrawer = (props) => {
                 BackdropProps={{ style: { position: 'absolute' } }}
                 ModalProps={{ style: { position: 'absolute' } }}
                 SlideProps={{
-                    direction: anchorTransformMap[anchor].slideToward,
+                    direction: anchorTransformMap[anchor].slideToward
 
                     // KEEP FOR DEBUG
                     //

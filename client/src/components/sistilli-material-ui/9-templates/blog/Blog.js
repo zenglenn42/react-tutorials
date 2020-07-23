@@ -18,8 +18,8 @@ import post3 from './blog-post.3.md'
 
 const useStyles = makeStyles((theme) => ({
     mainGrid: {
-        marginTop: theme.spacing(3),
-    },
+        marginTop: theme.spacing(3)
+    }
 }))
 
 const sections = [
@@ -32,7 +32,7 @@ const sections = [
     { title: 'Science', url: '#' },
     { title: 'Health', url: '#' },
     { title: 'Style', url: '#' },
-    { title: 'Travel', url: '#' },
+    { title: 'Travel', url: '#' }
 ]
 
 // const imageUrl = "https://source.unsplash.com/random"
@@ -44,7 +44,7 @@ const mainFeaturedPost = {
         "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
     image: imageUrl,
     imgText: 'main image description',
-    linkText: 'Continue reading…',
+    linkText: 'Continue reading…'
 }
 
 const featuredPosts = [
@@ -54,7 +54,7 @@ const featuredPosts = [
         description:
             'This is a wider card with supporting text below as a natural lead-in to additional content.',
         image: imageUrl,
-        imageText: 'Image Text',
+        imageText: 'Image Text'
     },
     {
         title: 'Post title',
@@ -62,8 +62,8 @@ const featuredPosts = [
         description:
             'This is a wider card with supporting text below as a natural lead-in to additional content.',
         image: imageUrl,
-        imageText: 'Image Text',
-    },
+        imageText: 'Image Text'
+    }
 ]
 
 const posts = [post1, post2, post3]
@@ -83,13 +83,13 @@ const sidebar = {
         { title: 'July 1999', url: '#' },
         { title: 'June 1999', url: '#' },
         { title: 'May 1999', url: '#' },
-        { title: 'April 1999', url: '#' },
+        { title: 'April 1999', url: '#' }
     ],
     social: [
         { name: 'GitHub', icon: GitHubIcon },
         { name: 'Twitter', icon: TwitterIcon },
-        { name: 'Facebook', icon: FacebookIcon },
-    ],
+        { name: 'Facebook', icon: FacebookIcon }
+    ]
 }
 
 export default function Blog() {

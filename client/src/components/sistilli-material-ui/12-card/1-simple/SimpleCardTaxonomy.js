@@ -13,29 +13,29 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         minHeight: 212.7,
         minWidth: 275,
-        maxWidth: 275,
+        maxWidth: 275
     },
     bullet: {
         display: 'inline-block',
         margin: '0 2px',
-        transform: 'scale(0.8)',
+        transform: 'scale(0.8)'
     },
     title: {
-        fontSize: 14,
+        fontSize: 14
     },
     pos: {
-        marginBottom: 12,
+        marginBottom: 12
     },
     content: {
-        backgroundColor: grey[300],
+        backgroundColor: grey[300]
     },
     grow: {
         flex: 1,
-        backgroundColor: grey[300],
+        backgroundColor: grey[300]
     },
     actions: {
-        backgroundColor: grey[400],
-    },
+        backgroundColor: grey[400]
+    }
 })
 
 export default function SimpleCard() {

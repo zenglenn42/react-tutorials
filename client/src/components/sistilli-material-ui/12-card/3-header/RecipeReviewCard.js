@@ -12,11 +12,11 @@ const useStyles = makeStyles((theme) => ({
     root: {
         minHeight: 435,
         minWidth: 290,
-        maxWidth: 290,
+        maxWidth: 290
     },
     avatar: {
-        backgroundColor: red[500],
-    },
+        backgroundColor: red[500]
+    }
 }))
 
 export default function RecipeReviewCard(props) {

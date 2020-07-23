@@ -52,33 +52,33 @@ const useStyles = makeStyles((theme) => ({
         marginTop: theme.spacing(2),
         [theme.breakpoints.up('sm')]: {
             // for larger devices
-            marginTop: theme.spacing(0),
-        },
+            marginTop: theme.spacing(0)
+        }
     },
     appBar: {
         // adding zIndex bump to play nicely with tutorial container.
         zIndex: theme.zIndex.drawer + 1,
         transition: theme.transitions.create(['margin', 'width'], {
             easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
-        }),
+            duration: theme.transitions.duration.leavingScreen
+        })
     },
     appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
         marginLeft: drawerWidth,
         transition: theme.transitions.create(['margin', 'width'], {
             easing: theme.transitions.easing.easeOut,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
+            duration: theme.transitions.duration.enteringScreen
+        })
     },
     toolbar: {
-        paddingRight: 24, // keep right padding when drawer closed
+        paddingRight: 24 // keep right padding when drawer closed
     },
     menuButton: {
-        marginRight: theme.spacing(2),
+        marginRight: theme.spacing(2)
     },
     hide: {
-        display: 'none',
+        display: 'none'
     },
     // drawer: {
     //   width: drawerWidth,
@@ -93,18 +93,18 @@ const useStyles = makeStyles((theme) => ({
         width: drawerWidth,
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.enteringScreen,
+            duration: theme.transitions.duration.enteringScreen
         }),
         marginTop: -theme.spacing(8),
-        zIndex: theme.zIndex.drawer,
+        zIndex: theme.zIndex.drawer
     },
     drawerPaperClose: {
         overflowX: 'hidden',
         transition: theme.transitions.create('width', {
             easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
+            duration: theme.transitions.duration.leavingScreen
         }),
-        width: 0,
+        width: 0
         // NB: If you make the drawer permanent and uncomment this
         //     then you get a close option that shows just the
         //     list item icons ... compact version of open drawer.
@@ -123,7 +123,7 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'flex-end',
         // Account for vertically compact appbar for small screens.
         // 64px -> 48px height.
-        minHeight: theme.spacing(6),
+        minHeight: theme.spacing(6)
     },
     content: {
         flexGrow: 1,
@@ -131,21 +131,21 @@ const useStyles = makeStyles((theme) => ({
         // 64px -> 48px height.
         padding: theme.spacing(0, 2),
         [theme.breakpoints.up('sm')]: {
-            padding: theme.spacing(2, 2),
+            padding: theme.spacing(2, 2)
         },
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.sharp,
-            duration: theme.transitions.duration.leavingScreen,
-        }),
+            duration: theme.transitions.duration.leavingScreen
+        })
         // marginLeft: -drawerWidth,
     },
     contentShift: {
         transition: theme.transitions.create('margin', {
             easing: theme.transitions.easing.easeOut,
-            duration: theme.transitions.duration.enteringScreen,
-        }),
+            duration: theme.transitions.duration.enteringScreen
+        })
         // marginLeft: 0,
-    },
+    }
 }))
 
 export function PersistentDrawerLeft() {
@@ -168,7 +168,7 @@ export function PersistentDrawerLeft() {
             <AppBar
                 position="relative"
                 className={clsx(classes.appBar, {
-                    [classes.appBarShift]: open,
+                    [classes.appBarShift]: open
                 })}
             >
                 <Toolbar className={classes.toolbar}>
@@ -207,7 +207,7 @@ export function PersistentDrawerLeft() {
                         paper: clsx(
                             classes.drawerPaper,
                             !open && classes.drawerPaperClose
-                        ),
+                        )
                     }}
                 >
                     <div className={classes.drawerHeader}>
@@ -254,7 +254,7 @@ export function PersistentDrawerLeft() {
                 </Drawer>
                 <main
                     className={clsx(classes.content, {
-                        [classes.contentShift]: open,
+                        [classes.contentShift]: open
                     })}
                 >
                     {/* <div className={classes.drawerHeader} /> */}

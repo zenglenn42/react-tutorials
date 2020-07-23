@@ -3,11 +3,11 @@ import { Paper, Typography, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     black: {
-        color: 'black',
+        color: 'black'
     },
     reallyRounded: {
-        borderRadius: '1rem',
-    },
+        borderRadius: '1rem'
+    }
 })
 
 const PaperDemo = () => {

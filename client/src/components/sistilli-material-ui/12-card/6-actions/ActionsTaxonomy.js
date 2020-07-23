@@ -17,35 +17,35 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         minHeight: 435,
         minWidth: 290,
-        maxWidth: 290,
+        maxWidth: 290
     },
     header: {
         backgroundColor: 'white',
-        minHeight: '92.05px',
+        minHeight: '92.05px'
     },
     media: {
         height: 0,
-        paddingTop: '56.25%', // 16:9
+        paddingTop: '56.25%' // 16:9
     },
     mediaLabel: {
         position: 'relative',
         paddingTop: `${lineHeight}rem`,
-        marginBottom: `-${lineHeight2x}rem`,
+        marginBottom: `-${lineHeight2x}rem`
     },
     content: {
         backgroundColor: 'white',
         paddingTop: '8px',
         paddingBottom: 0,
-        minHeight: '136px',
+        minHeight: '136px'
     },
     grow: {
         flex: 1,
-        backgroundColor: grey[400],
+        backgroundColor: grey[400]
     },
     actions: {
         backgroundColor: grey[400],
-        marginTop: '4px',
-    },
+        marginTop: '4px'
+    }
 })
 
 export default function ComplexCarTaxonomy(props) {
@@ -58,7 +58,7 @@ export default function ComplexCarTaxonomy(props) {
                 titleTypographyProps={{
                     variant: 'body2',
                     align: 'center',
-                    color: 'textSecondary',
+                    color: 'textSecondary'
                 }}
                 title="CardHeader"
             />

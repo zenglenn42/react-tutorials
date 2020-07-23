@@ -13,11 +13,11 @@ import MailIcon from '@material-ui/icons/Mail'
 
 const useStyles = makeStyles({
     list: {
-        width: 250,
+        width: 250
     },
     fullList: {
-        width: 'auto',
-    },
+        width: 'auto'
+    }
 })
 
 export function TemporaryDrawer() {
@@ -26,7 +26,7 @@ export function TemporaryDrawer() {
         top: false,
         left: false,
         bottom: false,
-        right: false,
+        right: false
     })
 
     const toggleDrawer = (anchor, open) => (event) => {
@@ -43,7 +43,7 @@ export function TemporaryDrawer() {
     const list = (anchor) => (
         <div
             className={clsx(classes.list, {
-                [classes.fullList]: anchor === 'top' || anchor === 'bottom',
+                [classes.fullList]: anchor === 'top' || anchor === 'bottom'
             })}
             role="presentation"
             onClick={toggleDrawer(anchor, false)}

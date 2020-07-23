@@ -5,9 +5,9 @@ const useStyles = makeStyles({
     buttonStyle: (props) => {
         return {
             color: props.cool ? 'blue' : 'red',
-            backgroundColor: props.cool ? 'orange' : 'yellow',
+            backgroundColor: props.cool ? 'orange' : 'yellow'
         }
-    },
+    }
 })
 
 const CoolButton = (props) => {

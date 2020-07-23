@@ -6,17 +6,17 @@ const useStyles = makeStyles((theme) => ({
     link: {
         display: 'inline',
         marginRight: theme.spacing(2),
-        marginLeft: 0,
+        marginLeft: 0
     },
     list: {
         paddingLeft: 0,
-        display: 'inline',
+        display: 'inline'
     },
     paperRoutes: {
         backgroundColor: 'lightgray',
         padding: theme.spacing(1),
-        marginBottom: theme.spacing(1),
-    },
+        marginBottom: theme.spacing(1)
+    }
 }))
 
 export const Navbar = () => {

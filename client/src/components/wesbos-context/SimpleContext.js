@@ -6,13 +6,13 @@ class MyProvider extends React.Component {
     state = {
         name: 'Wes',
         age: 100,
-        cool: true,
+        cool: true
     }
     render() {
         return (
             <MyContext.Provider
                 value={{
-                    state: this.state,
+                    state: this.state
                 }}
             >
                 {this.props.children}

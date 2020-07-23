@@ -6,7 +6,7 @@ class TodoList extends React.Component {
     constructor() {
         super()
         this.state = {
-            todos: todoData,
+            todos: todoData
         }
         this.handleTodoChange = this.handleTodoChange.bind(this)
     }

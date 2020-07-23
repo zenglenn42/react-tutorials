@@ -9,8 +9,8 @@ import Markdown from './Markdown'
 const useStyles = makeStyles((theme) => ({
     markdown: {
         ...theme.typography.body2,
-        padding: theme.spacing(3, 0),
-    },
+        padding: theme.spacing(3, 0)
+    }
 }))
 
 export default function Main(props) {
@@ -37,5 +37,5 @@ export default function Main(props) {
 
 Main.propTypes = {
     posts: PropTypes.array,
-    title: PropTypes.string,
+    title: PropTypes.string
 }

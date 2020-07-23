@@ -4,8 +4,8 @@ import { makeStyles, Grid, Typography, Divider } from '@material-ui/core'
 const useClasses = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        paddingBottom: theme.spacing(1),
-    },
+        paddingBottom: theme.spacing(1)
+    }
 }))
 
 export const CenteredGrid = () => {

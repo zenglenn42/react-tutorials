@@ -6,7 +6,7 @@ class MyProvider extends React.Component {
     state = {
         name: 'Wes',
         age: 100,
-        cool: true,
+        cool: true
     }
     render() {
         return (
@@ -15,8 +15,8 @@ class MyProvider extends React.Component {
                     state: this.state,
                     growYearOlder: () =>
                         this.setState({
-                            age: this.state.age + 1,
-                        }),
+                            age: this.state.age + 1
+                        })
                 }}
             >
                 {this.props.children}

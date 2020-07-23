@@ -53,7 +53,7 @@ const rows = [
         'Long Branch, NJ',
         'VISA ⠀•••• 5919',
         212.79
-    ),
+    )
 ]
 
 function preventDefault(event) {
@@ -62,8 +62,8 @@ function preventDefault(event) {
 
 const useStyles = makeStyles((theme) => ({
     seeMore: {
-        marginTop: theme.spacing(3),
-    },
+        marginTop: theme.spacing(3)
+    }
 }))
 
 export default function Orders() {

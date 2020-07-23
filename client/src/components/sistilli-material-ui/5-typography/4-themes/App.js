@@ -5,13 +5,13 @@ import { createMuiTheme, ThemeProvider } from '@material-ui/core'
 
 const overrideTheme = createMuiTheme({
     palette: {
-        primary: purple,
+        primary: purple
     },
     typography: {
         h1: {
-            fontSize: '2em',
-        },
-    },
+            fontSize: '2em'
+        }
+    }
 })
 
 export const App = () => {

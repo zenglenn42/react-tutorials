@@ -3,8 +3,8 @@ import { Typography, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
     gutterBottom: {
-        marginBottom: '0.6em',
-    },
+        marginBottom: '0.6em'
+    }
 })
 
 export const App = () => {
@@ -17,7 +17,7 @@ export const App = () => {
             <Typography
                 gutterBottom
                 classes={{
-                    gutterBottom: classes.gutterBottom,
+                    gutterBottom: classes.gutterBottom
                 }}
             >
                 Overriding gutterBottom with MUI css class.

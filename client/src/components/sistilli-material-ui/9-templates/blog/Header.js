@@ -10,19 +10,19 @@ import Link from '@material-ui/core/Link'
 
 const useStyles = makeStyles((theme) => ({
     toolbar: {
-        borderBottom: `1px solid ${theme.palette.divider}`,
+        borderBottom: `1px solid ${theme.palette.divider}`
     },
     toolbarTitle: {
-        flex: 1,
+        flex: 1
     },
     toolbarSecondary: {
         justifyContent: 'space-between',
-        overflowX: 'auto',
+        overflowX: 'auto'
     },
     toolbarLink: {
         padding: theme.spacing(1),
-        flexShrink: 0,
-    },
+        flexShrink: 0
+    }
 }))
 
 export default function Header(props) {
@@ -30,7 +30,7 @@ export default function Header(props) {
     const { sections, title } = props
 
     return (
-        <React.Fragment>
+        <>
             <Toolbar className={classes.toolbar}>
                 <Button size="small">Subscribe</Button>
                 <Typography
@@ -68,11 +68,11 @@ export default function Header(props) {
                     </Link>
                 ))}
             </Toolbar>
-        </React.Fragment>
+        </>
     )
 }
 
 Header.propTypes = {
     sections: PropTypes.array,
-    title: PropTypes.string,
+    title: PropTypes.string
 }

@@ -13,11 +13,11 @@ const useStyles = makeStyles(() => ({
     root: {
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100%',
+        minHeight: '100%'
     },
     growDiv: {
-        flex: '1 1 auto',
-    },
+        flex: '1 1 auto'
+    }
 }))
 
 const CoffeeCard = (props) => {

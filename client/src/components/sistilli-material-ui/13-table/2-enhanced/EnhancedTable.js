@@ -27,7 +27,7 @@ function createData(name, calories, fat, carbs, protein) {
         calories,
         fat,
         carbs,
-        protein,
+        protein
     }
 }
 
@@ -44,7 +44,7 @@ const rows = [
     createData('Lollipop', 392, 0.2, 98, 0.0),
     createData('Marshmallow', 318, 0, 81, 2.0),
     createData('Nougat', 360, 19.0, 9, 37.0),
-    createData('Oreo', 437, 18.0, 63, 4.0),
+    createData('Oreo', 437, 18.0, 63, 4.0)
 ]
 
 function descendingComparator(a, b, orderBy) {
@@ -78,32 +78,32 @@ const headCells = [
         id: 'name',
         numeric: false,
         disablePadding: true,
-        label: 'Dessert (100g serving)',
+        label: 'Dessert (100g serving)'
     },
     {
         id: 'calories',
         numeric: true,
         disablePadding: false,
-        label: 'Calories',
+        label: 'Calories'
     },
     {
         id: 'fat',
         numeric: true,
         disablePadding: false,
-        label: 'Fat (g)',
+        label: 'Fat (g)'
     },
     {
         id: 'carbs',
         numeric: true,
         disablePadding: false,
-        label: 'Carbs (g)',
+        label: 'Carbs (g)'
     },
     {
         id: 'protein',
         numeric: true,
         disablePadding: false,
-        label: 'Protein (g)',
-    },
+        label: 'Protein (g)'
+    }
 ]
 
 function EnhancedTableHead(props) {
@@ -113,7 +113,7 @@ function EnhancedTableHead(props) {
         orderBy,
         numSelected,
         rowCount,
-        onRequestSort,
+        onRequestSort
     } = props
     const createSortHandler = (property) => (event) => {
         onRequestSort(event, property)
@@ -130,7 +130,7 @@ function EnhancedTableHead(props) {
                         checked={rowCount > 0 && numSelected === rowCount}
                         onChange={onSelectAllClick}
                         inputProps={{
-                            'aria-label': 'select all desserts',
+                            'aria-label': 'select all desserts'
                         }}
                     />
                 </TableCell>
@@ -167,27 +167,27 @@ EnhancedTableHead.propTypes = {
     onSelectAllClick: PropTypes.func.isRequired,
     order: PropTypes.oneOf(['asc', 'desc']).isRequired,
     orderBy: PropTypes.string.isRequired,
-    rowCount: PropTypes.number.isRequired,
+    rowCount: PropTypes.number.isRequired
 }
 
 const useToolbarStyles = makeStyles((theme) => ({
     root: {
         paddingLeft: theme.spacing(2),
-        paddingRight: theme.spacing(1),
+        paddingRight: theme.spacing(1)
     },
     highlight:
         theme.palette.type === 'light'
             ? {
                   color: theme.palette.secondary.main,
-                  backgroundColor: lighten(theme.palette.secondary.light, 0.85),
+                  backgroundColor: lighten(theme.palette.secondary.light, 0.85)
               }
             : {
                   color: theme.palette.text.primary,
-                  backgroundColor: theme.palette.secondary.dark,
+                  backgroundColor: theme.palette.secondary.dark
               },
     title: {
-        flex: '1 1 100%',
-    },
+        flex: '1 1 100%'
+    }
 }))
 
 const EnhancedTableToolbar = (props) => {
@@ -197,7 +197,7 @@ const EnhancedTableToolbar = (props) => {
     return (
         <Toolbar
             className={clsx(classes.root, {
-                [classes.highlight]: numSelected > 0,
+                [classes.highlight]: numSelected > 0
             })}
         >
             {numSelected > 0 ? (
@@ -238,20 +238,20 @@ const EnhancedTableToolbar = (props) => {
 }
 
 EnhancedTableToolbar.propTypes = {
-    numSelected: PropTypes.number.isRequired,
+    numSelected: PropTypes.number.isRequired
 }
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        width: '100%',
+        width: '100%'
     },
     paper: {
         width: '100%',
-        marginBottom: theme.spacing(2),
+        marginBottom: theme.spacing(2)
     },
     table: {
-        minWidth: 750,
-    },
+        minWidth: 750
+    }
     // TODO fix #20379.
     // sortSpan: visuallyHidden,
 }))
@@ -364,7 +364,7 @@ export default function EnhancedTable() {
                                                 <Checkbox
                                                     checked={isItemSelected}
                                                     inputProps={{
-                                                        'aria-labelledby': labelId,
+                                                        'aria-labelledby': labelId
                                                     }}
                                                 />
                                             </TableCell>
@@ -394,7 +394,7 @@ export default function EnhancedTable() {
                             {emptyRows > 0 && (
                                 <TableRow
                                     style={{
-                                        height: (dense ? 33 : 53) * emptyRows,
+                                        height: (dense ? 33 : 53) * emptyRows
                                     }}
                                 >
                                     <TableCell colSpan={6} />

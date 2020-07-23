@@ -5,9 +5,9 @@ const useStyles = makeStyles((theme) => ({
     buttonStyle: {
         color: 'red',
         [theme.breakpoints.up('sm')]: {
-            color: 'blue',
-        },
-    },
+            color: 'blue'
+        }
+    }
 }))
 
 const CoolButton = () => {

@@ -4,16 +4,16 @@ import {
     List,
     ListItem,
     ListItemText,
-    makeStyles,
+    makeStyles
 } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     drawer: {
-        width: '160px',
+        width: '160px'
     },
     list: {
-        padding: theme.spacing(0, 0),
-    },
+        padding: theme.spacing(0, 0)
+    }
 }))
 
 const Drawer = (props) => {

@@ -9,19 +9,19 @@ import Typography from '@material-ui/core/Typography'
 const useStyles = makeStyles({
     root: {
         minWidth: 275,
-        maxWidth: 275,
+        maxWidth: 275
     },
     bullet: {
         display: 'inline-block',
         margin: '0 2px',
-        transform: 'scale(0.8)',
+        transform: 'scale(0.8)'
     },
     title: {
-        fontSize: 14,
+        fontSize: 14
     },
     pos: {
-        marginBottom: 12,
-    },
+        marginBottom: 12
+    }
 })
 
 export default function SimpleCard(props) {

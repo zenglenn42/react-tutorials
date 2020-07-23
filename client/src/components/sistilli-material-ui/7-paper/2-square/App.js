@@ -12,16 +12,16 @@ const darkTheme = createMuiTheme({
             // Tutorial authors and any other secondary text in typography components
             // become invisible since we have white-on-white situation.
 
-            secondary: 'default',
-        },
-    },
+            secondary: 'default'
+        }
+    }
 })
 
 const useStyles = makeStyles((theme) => {
     return {
         margin: {
-            margin: theme.spacing(1),
-        },
+            margin: theme.spacing(1)
+        }
     }
 })
 

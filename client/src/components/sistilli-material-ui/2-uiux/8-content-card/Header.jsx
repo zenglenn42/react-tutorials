@@ -4,8 +4,8 @@ import AcUnitRoundedIcon from '@material-ui/icons/AcUnitRounded'
 
 const useStyles = makeStyles(() => ({
     typographyStyles: {
-        flex: '1',
-    },
+        flex: '1'
+    }
 }))
 
 const Header = () => {

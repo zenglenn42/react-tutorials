@@ -5,14 +5,14 @@ import {
     ListItem,
     ListItemIcon,
     ListItemText,
-    makeStyles,
+    makeStyles
 } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
     list: {
         overflowY: 'scroll',
-        padding: theme.spacing(0, 0),
-    },
+        padding: theme.spacing(0, 0)
+    }
 }))
 
 export const DrawerList = (props) => {

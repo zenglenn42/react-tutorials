@@ -3,11 +3,11 @@ import { makeStyles, Button } from '@material-ui/core'
 
 const useStyles = makeStyles({
     buttonStyle: {
-        color: 'red',
+        color: 'red'
     },
     textStyle: {
-        color: 'green',
-    },
+        color: 'green'
+    }
 })
 
 export const App = () => {
@@ -18,8 +18,8 @@ export const App = () => {
             <Button className={classes.buttonStyle}>Small buttton</Button>
             <h1 className={classes.textStyle}>this is text</h1>
 
-            {/* I'm doing this instead of console logging shown in tutorial for better presentation. */}
-            {/* Yes, I could use classes.scrollStyle idiom here but want output to match tutorial. */}
+            {/* Doing this instead of console logging shown in tutorial for better presentation. */}
+            {/* Could use classes.scrollStyle idiom here but want output to match tutorial. */}
             <hr />
             <div style={{ overflowX: 'scroll' }}>
                 classes =

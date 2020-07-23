@@ -12,8 +12,8 @@ class TravelForm extends React.Component {
             diet: {
                 isVegetarian: false,
                 isKosher: false,
-                isLactoseFree: false,
-            },
+                isLactoseFree: false
+            }
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -25,8 +25,8 @@ class TravelForm extends React.Component {
                 return {
                     diet: {
                         ...prevState.diet,
-                        [name]: checked,
-                    },
+                        [name]: checked
+                    }
                 }
             })
         } else {

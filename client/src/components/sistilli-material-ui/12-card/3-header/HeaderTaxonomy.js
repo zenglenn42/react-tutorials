@@ -8,7 +8,7 @@ import {
     IconButton,
     Tooltip,
     CardContent,
-    Typography,
+    Typography
 } from '@material-ui/core'
 import MoreVertIcon from '@material-ui/icons/MoreVert'
 
@@ -18,15 +18,15 @@ const useStyles = makeStyles({
         flexDirection: 'column',
         minHeight: 435,
         minWidth: 290,
-        maxWidth: 290,
+        maxWidth: 290
     },
     header: {
         backgroundColor: grey[200],
-        minHeight: '92.05px',
+        minHeight: '92.05px'
     },
     avatar: {
-        backgroundColor: grey[500],
-    },
+        backgroundColor: grey[500]
+    }
 })
 
 export default function ComplexCarTaxonomy(props) {

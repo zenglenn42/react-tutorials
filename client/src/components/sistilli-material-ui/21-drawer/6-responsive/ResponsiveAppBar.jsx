@@ -8,11 +8,11 @@ import Typography from '@material-ui/core/Typography'
 
 const useStyles = makeStyles((theme) => ({
     appBar: {
-        position: 'static',
+        position: 'static'
     },
     grow: {
-        flex: 1,
-    },
+        flex: 1
+    }
 }))
 
 export const ResponsiveAppBar = (props) => {

@@ -4,14 +4,14 @@ import { makeStyles } from '@material-ui/core/styles'
 
 const useStyles = makeStyles({
     app: {
-        overflow: 'scroll',
+        overflow: 'scroll'
     },
     helloStyle: {
-        fontStyle: 'oblique',
+        fontStyle: 'oblique'
     },
     buttonStyle: {
-        color: 'red',
-    },
+        color: 'red'
+    }
 })
 
 export function App() {

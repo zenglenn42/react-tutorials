@@ -4,7 +4,7 @@ class LoginState extends React.Component {
     constructor() {
         super()
         this.state = {
-            isLoggedIn: true,
+            isLoggedIn: true
         }
     }
 

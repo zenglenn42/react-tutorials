@@ -4,7 +4,7 @@ class CountState extends React.Component {
     constructor() {
         super()
         this.state = {
-            count: 0,
+            count: 0
         }
         this.handleClick = this.handleClick.bind(this)
     }
@@ -20,14 +20,14 @@ class CountState extends React.Component {
             textAlign: 'center',
             fontSize: '400%',
             fontStyle: 'bold',
-            margin: '0.5em 0',
+            margin: '0.5em 0'
         }
 
         const buttonStyle = {
             display: 'block',
             margin: '0 auto',
             fontSize: '125%',
-            borderRadius: '0.10em',
+            borderRadius: '0.10em'
         }
 
         return (

@@ -7,7 +7,7 @@ import {
     Work,
     AcUnit,
     LocalDrink,
-    DirectionsWalk,
+    DirectionsWalk
 } from '@material-ui/icons'
 import { AppBar } from './MyAppBar'
 import { ContainerDrawer } from './ContainerDrawer'
@@ -36,42 +36,42 @@ export const App = (props) => {
     const navItems = [
         {
             text: 'Home',
-            icon: <Home />,
+            icon: <Home />
             // onClick: () => history.push('/')
         },
         {
             text: 'Contact',
-            icon: <ContactMail />,
+            icon: <ContactMail />
             // onClick: () => history.push('/contact')
         },
         {
             text: 'About',
-            icon: <Person />,
+            icon: <Person />
             // onClick: () => history.push('/about')
         },
         {
             text: 'Work',
-            icon: <Work />,
+            icon: <Work />
             // onClick: () => history.push('/work')
         },
         {
-            divider: <Divider />,
+            divider: <Divider />
         },
         {
             text: 'Make snow',
-            icon: <AcUnit />,
+            icon: <AcUnit />
             // onClick: () => history.push('/makesnow')
         },
         {
             text: 'Drink',
-            icon: <LocalDrink />,
+            icon: <LocalDrink />
             // onClick: () => history.push('/drink')
         },
         {
             text: 'Walk',
-            icon: <DirectionsWalk />,
+            icon: <DirectionsWalk />
             // onClick: () => history.push('/walk')
-        },
+        }
     ]
 
     return (

@@ -3,7 +3,7 @@ import {
     Typography,
     createMuiTheme,
     ThemeProvider,
-    Paper,
+    Paper
 } from '@material-ui/core'
 
 const darkTheme = createMuiTheme({
@@ -16,9 +16,9 @@ const darkTheme = createMuiTheme({
             // Tutorial authors and any other secondary text in typography components
             // become invisible since we have white-on-white situation.
 
-            secondary: 'default',
-        },
-    },
+            secondary: 'default'
+        }
+    }
 })
 
 export const App = () => {

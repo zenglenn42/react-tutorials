@@ -8,10 +8,10 @@ const useStyles = makeStyles((theme) => {
     const darkTeal = teal[900]
     return {
         buttonSpacing: {
-            marginRight: theme.spacing(2),
+            marginRight: theme.spacing(2)
         },
         input: {
-            display: 'none',
+            display: 'none'
         },
         // Is there an easier way to override button color?
         // This works but doesn't seem very elegant. Tried creating a theme
@@ -21,10 +21,10 @@ const useStyles = makeStyles((theme) => {
             '&:hover': {
                 backgroundColor: darkTeal,
                 '@media (hover: none)': {
-                    backgroundColor: mainTeal,
-                },
-            },
-        },
+                    backgroundColor: mainTeal
+                }
+            }
+        }
     }
 })
 
@@ -277,7 +277,7 @@ export const App = () => {
                 <p>href prop</p>
                 <Button
                     classes={{
-                        containedPrimary: classes.tealButton,
+                        containedPrimary: classes.tealButton
                     }}
                     startIcon={<Work />}
                     className={classes.buttonSpacing}

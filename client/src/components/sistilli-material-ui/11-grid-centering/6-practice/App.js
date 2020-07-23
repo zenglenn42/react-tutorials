@@ -4,14 +4,14 @@ import AcUnitIcon from '@material-ui/icons/AcUnit'
 
 const useStyles = makeStyles((theme) => ({
     grid: {
-        border: '1px solid darkgrey',
+        border: '1px solid darkgrey'
     },
     item: {
         backgroundColor: 'lightgrey',
         border: '1px solid white',
         borderRadius: '0.2em',
-        padding: '4px',
-    },
+        padding: '4px'
+    }
 }))
 
 export const App = () => {

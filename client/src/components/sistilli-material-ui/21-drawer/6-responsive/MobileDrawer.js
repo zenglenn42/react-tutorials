@@ -6,17 +6,17 @@ export const MobileDrawer = (props) => {
 
     const anchorTransformMap = {
         left: {
-            slideToward: 'right', // 'top' works too
+            slideToward: 'right' // 'top' works too
         },
         top: {
-            slideToward: 'bottom',
+            slideToward: 'bottom'
         },
         right: {
-            slideToward: 'bottom', // work around animation jitter bug
+            slideToward: 'bottom' // work around animation jitter bug
         },
         bottom: {
-            slideToward: 'right', // work around animation jitter bug
-        },
+            slideToward: 'right' // work around animation jitter bug
+        }
     }
 
     return (
@@ -33,12 +33,12 @@ export const MobileDrawer = (props) => {
                 BackdropProps={{ style: { position: 'absolute' } }}
                 ModalProps={{
                     style: { position: 'absolute' },
-                    hideBackdrop: true, // Disabling backdrop for now because
+                    hideBackdrop: true // Disabling backdrop for now because
                     // it bleeds into my desktop render :-/
                     // TODO: make backdrop sensitive to breakpoints.
                 }}
                 SlideProps={{
-                    direction: anchorTransformMap[anchor].slideToward,
+                    direction: anchorTransformMap[anchor].slideToward
                 }}
             >
                 {drawerContent}

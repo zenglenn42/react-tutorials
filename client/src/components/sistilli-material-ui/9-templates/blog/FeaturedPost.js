@@ -11,14 +11,14 @@ import Hidden from '@material-ui/core/Hidden'
 
 const useStyles = makeStyles({
     card: {
-        display: 'flex',
+        display: 'flex'
     },
     cardDetails: {
-        flex: 1,
+        flex: 1
     },
     cardMedia: {
-        width: 160,
-    },
+        width: 160
+    }
 })
 
 export default function FeaturedPost(props) {
@@ -62,5 +62,5 @@ export default function FeaturedPost(props) {
 }
 
 FeaturedPost.propTypes = {
-    post: PropTypes.object,
+    post: PropTypes.object
 }

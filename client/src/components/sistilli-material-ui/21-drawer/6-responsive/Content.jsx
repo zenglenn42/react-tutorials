@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
             marginLeft:
                 props.drawerAnchor === 'left'
                     ? props.drawerDimensions.width + theme.spacing(1)
-                    : 0,
+                    : 0
         }
-    },
+    }
 }))
 
 export const Content = (props) => {

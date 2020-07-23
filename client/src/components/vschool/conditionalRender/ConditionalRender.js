@@ -4,7 +4,7 @@ class ConditionalRender extends React.Component {
     constructor() {
         super()
         this.state = {
-            isLoggedIn: false,
+            isLoggedIn: false
         }
         this.handleClick = this.handleClick.bind(this)
     }
@@ -16,7 +16,7 @@ class ConditionalRender extends React.Component {
     handleClick() {
         this.setState((prevState) => {
             return {
-                isLoggedIn: !prevState.isLoggedIn,
+                isLoggedIn: !prevState.isLoggedIn
             }
         })
     }

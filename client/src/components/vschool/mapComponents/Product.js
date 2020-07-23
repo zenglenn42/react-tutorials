@@ -8,7 +8,7 @@ function Product({ product }) {
                 Price:{' '}
                 {product.price.toLocaleString('en-US', {
                     style: 'currency',
-                    currency: 'USD',
+                    currency: 'USD'
                 })}
             </p>
             <p>Description: {product.desc}</p>

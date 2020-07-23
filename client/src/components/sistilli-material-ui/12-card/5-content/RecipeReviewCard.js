@@ -12,25 +12,25 @@ const useStyles = makeStyles((theme) => ({
     root: {
         minHeight: 435,
         minWidth: 290,
-        maxWidth: 290,
+        maxWidth: 290
     },
     header: {
-        minHeight: '92.05px',
+        minHeight: '92.05px'
     },
     media: {
         height: 0,
-        paddingTop: '56.25%', // 16:9
+        paddingTop: '56.25%' // 16:9
     },
     avatar: {
-        backgroundColor: grey[500],
+        backgroundColor: grey[500]
     },
     content: {
-        backgroundColor: grey[100],
+        backgroundColor: grey[100]
     },
     actions: {
         // backgroundColor: grey[400]
-        backgroundColor: 'white',
-    },
+        backgroundColor: 'white'
+    }
 }))
 
 export default function RecipeReviewCard(props) {

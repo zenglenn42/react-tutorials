@@ -10,13 +10,13 @@ const useStyles = makeStyles((theme) => ({
         return {
             color: props.cool ? 'blue' : 'white',
             [theme.breakpoints.up('sm')]: {
-                color: 'cyan',
-            },
+                color: 'cyan'
+            }
         }
     },
     buttonBackground: {
-        backgroundColor: 'red',
-    },
+        backgroundColor: 'red'
+    }
 }))
 
 const CoolButton = (props) => {

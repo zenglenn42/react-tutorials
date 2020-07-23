@@ -5,8 +5,8 @@ import PaperDemo from './PaperDemo'
 const useStyles = makeStyles((theme) => {
     return {
         margin: {
-            margin: theme.spacing(1),
-        },
+            margin: theme.spacing(1)
+        }
     }
 })
 

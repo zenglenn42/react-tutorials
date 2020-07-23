@@ -18,43 +18,43 @@ const useStyles = makeStyles((theme) => ({
     root: {
         minHeight: 435,
         minWidth: 290,
-        maxWidth: 290,
+        maxWidth: 290
     },
     header: {
-        minHeight: '92.05px',
+        minHeight: '92.05px'
     },
     media: {
         height: 0,
-        paddingTop: '56.25%', // 16:9
+        paddingTop: '56.25%' // 16:9
     },
     avatar: {
-        backgroundColor: grey[500],
+        backgroundColor: grey[500]
     },
     actions: {
         backgroundColor: grey[300],
         paddingTop: 0,
         paddingBottom: 0,
         marginTop: 0,
-        marginBottom: 0,
+        marginBottom: 0
     },
     grow: {
         flex: 1,
         // backgroundColor: grey[300]
-        backgroundColor: 'white',
+        backgroundColor: 'white'
     },
     content: {
-        minHeight: '112px',
+        minHeight: '112px'
     },
     expand: {
         transform: 'rotate(0deg)',
         marginLeft: 'auto',
         transition: theme.transitions.create('transform', {
-            duration: theme.transitions.duration.shortest,
-        }),
+            duration: theme.transitions.duration.shortest
+        })
     },
     expandOpen: {
-        transform: 'rotate(180deg)',
-    },
+        transform: 'rotate(180deg)'
+    }
 }))
 
 export default function RecipeReviewCard(props) {
@@ -103,7 +103,7 @@ export default function RecipeReviewCard(props) {
                 </IconButton>
                 <IconButton
                     className={clsx(classes.expand, {
-                        [classes.expandOpen]: expanded,
+                        [classes.expandOpen]: expanded
                     })}
                     onClick={handleExpandClick}
                     aria-expanded={expanded}

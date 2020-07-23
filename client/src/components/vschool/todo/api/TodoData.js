@@ -2,18 +2,18 @@ const todoData = [
     {
         id: 0,
         task: 'wash car',
-        done: false,
+        done: false
     },
     {
         id: 1,
         task: 'pay bills',
-        done: false,
+        done: false
     },
     {
         id: 2,
         task: 'laundry',
-        done: true,
-    },
+        done: true
+    }
 ]
 
 export default todoData

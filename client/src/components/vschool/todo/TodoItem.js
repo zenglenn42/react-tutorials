@@ -5,7 +5,7 @@ function TodoItem(props) {
         ? {
               textDecoration: 'line-through',
               display: 'inline',
-              marginLeft: '1em',
+              marginLeft: '1em'
           }
         : { display: 'inline', marginLeft: '1em' }
     return (

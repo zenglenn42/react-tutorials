@@ -7,22 +7,22 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid black',
         borderRadius: '0.25em',
         backgroundColor: 'darkgray',
-        height: theme.spacing(20),
+        height: theme.spacing(20)
     },
     cell: {
         backgroundColor: 'lightgray',
         borderRadius: '0.25em',
-        margin: theme.spacing(0.5, 0.5),
+        margin: theme.spacing(0.5, 0.5)
     },
     cell1: {
-        padding: theme.spacing(0.6, 1),
+        padding: theme.spacing(0.6, 1)
     },
     cell2: {
-        padding: theme.spacing(1.4, 1),
+        padding: theme.spacing(1.4, 1)
     },
     cell3: {
-        padding: theme.spacing(2.2, 1),
-    },
+        padding: theme.spacing(2.2, 1)
+    }
 }))
 
 export const App = () => {

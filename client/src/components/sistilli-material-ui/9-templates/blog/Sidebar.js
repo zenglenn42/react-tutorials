@@ -9,11 +9,11 @@ import Link from '@material-ui/core/Link'
 const useStyles = makeStyles((theme) => ({
     sidebarAboutBox: {
         padding: theme.spacing(2),
-        backgroundColor: theme.palette.grey[200],
+        backgroundColor: theme.palette.grey[200]
     },
     sidebarSection: {
-        marginTop: theme.spacing(3),
-    },
+        marginTop: theme.spacing(3)
+    }
 }))
 
 export default function Sidebar(props) {
@@ -75,5 +75,5 @@ Sidebar.propTypes = {
     archives: PropTypes.array,
     description: PropTypes.string,
     social: PropTypes.array,
-    title: PropTypes.string,
+    title: PropTypes.string
 }

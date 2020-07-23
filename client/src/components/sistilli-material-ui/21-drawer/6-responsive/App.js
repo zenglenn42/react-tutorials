@@ -29,7 +29,7 @@ export const App = (props) => {
     // Track dimensions of desktop drawer.
     const [drawerDimensions, setDrawerDimensions] = useState({
         width: 0,
-        height: 0,
+        height: 0
     })
 
     const appBarText = 'Responsive Drawer (Bonus)'
