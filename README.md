@@ -131,7 +131,7 @@ Margins have been trimmed down for mobile (creating space for tutorial card imag
 
 Here's the styling and code that makes this possible:
 
-Basically the grid of tutorial cards is replicated twice, once above the fold for phones and again below the '1. Select' text on larger display geometries.  The duplicated grids are wrappered in divs with mutually exclusive ```display: none``` settings that leverage Material UI's ```theme.breakpoints.up("sm")``` function for returning media queries that apply to browser windows larger that 600px wide.  Later I find the ```<Hidden>``` component which is ideal for these scenarios.
+Basically the grid of tutorial cards is replicated twice, once above the fold for phones and again below the '1. Select' text on larger display geometries.  The duplicated grids are wrappered in divs with mutually exclusive ```display: none``` settings that leverage Material UI's ```theme.breakpoints.up("sm")``` function for returning media queries that apply to browser windows larger that 600px wide.  Later, I find the ```<Hidden>``` component which is ideal for these scenarios.
 
 ```
   showOnBigScreens: {
