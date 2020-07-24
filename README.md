@@ -6,7 +6,7 @@
 #### Contents
 
 * [Introduction](#introduction)
-* [Deveveloper's Blog](#developers-blog)
+* [Developer's Blog](#developers-blog)
   * [Dev platform upgrade](#)
   * [The road ahead](#the-road-ahead)
   * [Responsive landing page](#responsive-landing-page)
@@ -78,19 +78,14 @@ I notice:
 
 I rebaseline my create-react-app (cra) dev environment for typescript courtesy the ```--template typescript``` option. 
 
-I plug the airbnb coding style guide into a linter with cli and gui integration
-for ci and (vscode) workflows.  The automated code formatter, prettier, gets
+I plug the airbnb coding style guide into a linter with cli and gui integration for ci and (vscode) workflows.  The automated code formatter, prettier, gets
 the same treatment.  
 
-I spin up on the latest thinking around js package management as I wrestle with unmet peer dependencies, crustly cra-bundled packages, and open source dev teams that heroically accommodate the myriad use cases into which their build stacks and utilities gets harnessed.
-It looks like yarn and npm each have about 50% of the market, though pnpm also seems
-viable and efficient.  Yarn v2 just came out and it looks like a major rewrite.  NPM continues
-to evolve under feature pressure from FB's yarn v1 (and now the community-driven v2).  I opt for yarn v1 to expand my horizons and save the v2 experience for another day.  I can definitely use yarn workspaces to organize frontend and backend code nicely.
+I spin up on the latest thinking around js package management as I wrestle with unmet peer dependencies, crusty cra-bundled packages, and open source dev teams that heroically accommodate the myriad use cases into which their build stacks and utilities gets harnessed. It looks like yarn and npm each have about 50% of the market, though pnpm also seems viable and efficient.  Yarn v2 just came out and it looks like a major rewrite.  NPM continues to evolve under feature pressure from FB's yarn v1 (and now the community-driven v2).  I opt for yarn v1 to expand my horizons and save the v2 experience for another day.  I can definitely use yarn workspaces to organize frontend and backend code nicely.
 
 I even get json schemas for prettier and eslint configurations plugged into vscode's intellisense engine for edit-time hinting as my cursor hovers over key/value pairs.
 
-What the community needs is a configurator for spitting out .eslintrc.json, .prettier.json,
-and package.json files given certain input assumptions like:
+What the community needs is a configurator for spitting out .eslintrc.json, .prettier.json, and package.json files given certain input assumptions like:
 
 * dev platform
 * package manager preference
@@ -99,22 +94,18 @@ and package.json files given certain input assumptions like:
 * airbnb style integration?
 * runtime environment (node, browser, etc)
 
-I just think of all the collective wasted time people have spent getting these tools hooked up ... the endless number of blogs and videos lovingly crafted around this ritual.
-
-Currently the options are to hangout as a script kitty and bootstrap off of some youtuber's recipe or wade into the depths to be tossed back periodically against the craggly shores, bloodied but undeterred.  I do the latter, of course, trying to discern best practices and collectively accepted limitations.  Generally I start with the cli and get that nice before hooking that into the editor's configuration.  This puts me in good shape for continuous integration at some point (soon).
-
-I'm not sure my eslint configuration is 100%, but it's good enough to illustrate some sketchy stuff I've been doing.  I reorganize the code base so tutorial code may opt-out of linting entirely since tutorial authors seldom drag lint into the picture as they sketch out some lean javscript to illustrate a concept.  I don't want my code snapshots to diverge too much from the video versions on youtube.  But for my
+I'm not sure my eslint configuration is 100%, but it's good enough to illustrate some sketchy stuff I've been doing.  I reorganize the code base so tutorial code may opt-out of linting entirely since tutorial authors seldom drag lint into the picture as they sketch out some lean javascript to illustrate a concept.  I don't want my code snapshots to diverge too much from the video versions on youtube.  But for my
 container app, I'll definitely start refactoring that with lint.  I'd like to migrate to TS as well. 
 
 ## [The road ahead](#contents)
 
 ... better UX on mobile.  Better data model.
 
-After completing a tutorial on Material UI's Drawer component, I realize I'm seriously abusing my users with a persistent drawer on mobile.  I probably should be using a temporary drawer or swipeable variant that disappears easily after item selection.  Plus, a left-anchored slideout on a portrait-oriented phone is just /bad/ because so much content space is occluded when the drawer is open. You can't really enjoy the experience of rapid item selection / surfing and simultaneous content viewing.  A bottom-anchored drawer that covers only 50% of the screen when open versus side-anchored drawer that takes up 80% might be a better option now that I know more about breakpoint styling.  Even in landscape mode, a right-slideout, for example, might be a better option for left-to-right languages since the content window will still have more intelligible snippets that keep the user cognitively anchored to the partially occluded screen space.
+After completing a tutorial on Material UI's Drawer component, I realize I'm seriously abusing my users with a persistent drawer on mobile.  I probably should be using a temporary drawer or swipe-able variant that disappears easily after item selection.  Plus, a left-anchored slideout on a portrait-oriented phone is just /bad/ because so much content space is occluded when the drawer is open. You can't really enjoy the experience of rapid item selection / surfing and simultaneous content viewing.  A bottom-anchored drawer that covers only 50% of the screen when open versus side-anchored drawer that takes up 80% might be a better option now that I know more about breakpoint styling.  Even in landscape mode, a right-slideout, for example, might be a better option for left-to-right languages since the content window will still have more intelligible snippets that keep the user cognitively anchored to the partially occluded screen space.
 
 I've got some ideas on how to fix all this, but it's gonna require me to refactor my data model for better traversal, searching, and sorting.  The model could also use some normalization.  I'd need to do this work for fullstack anyway and this gets me closer to that while improving UX (once you see what I have in mind :-).
 
-Also, I need to get better about list item keys.  I'm seeing alot of angry red in my console log around ```missing keys```. I'm probably hurting performance to boot.
+Also, I need to get better about list item keys.  I'm seeing a lot of angry red in my console log around ```missing keys```. I'm probably hurting performance to boot.
 
 Initially, I just used the item text as both a key and the ```primaryText``` of the list element's prop.  But I open myself to key collision since two different tutorials may cover the same topic and I won't have the latitude to use the same descriptor for both.
 
@@ -140,7 +131,7 @@ Margins have been trimmed down for mobile (creating space for tutorial card imag
 
 Here's the styling and code that makes this possible:
 
-Basically the grid of tutorial cards is replicated twice, once above the fold for phones and again below the '1. Select' text on larger display geometries.  The duplicated grids are wrappered in divs with mutually exclusive ```dislay: none``` settings that leverage Material UI's ```theme.breakpoints.up("sm")``` function for returning media queries that apply to browser windows larger that 600px wide.
+Basically the grid of tutorial cards is replicated twice, once above the fold for phones and again below the '1. Select' text on larger display geometries.  The duplicated grids are wrappered in divs with mutually exclusive ```display: none``` settings that leverage Material UI's ```theme.breakpoints.up("sm")``` function for returning media queries that apply to browser windows larger that 600px wide.  Later I find the ```<Hidden>``` component which is ideal for these scenarios.
 
 ```
   showOnBigScreens: {
@@ -194,7 +185,7 @@ Basically the grid of tutorial cards is replicated twice, once above the fold fo
 
 ## [Landing page upgrade](#contents)
 
-I'm liking the concept of my little annotated tutorial app.  It has potential to be broadly interesting and potentially disruptive.  But the design notes for the landing page are just off by a decade or so and we are visual creatures afterall.  So I need to fix this first impression.  I don't really have a strong call to action and the whole textured background thing feels like bad wabi sabi.  (Don't hate me, wabi sabi, I'll find my way back to you.)
+I'm liking the concept of my little annotated tutorial app.  It has potential to be broadly interesting and potentially disruptive.  But the design notes for the landing page are just off by a decade or so and we are visual creatures after all.  So I need to fix this first impression.  I don't really have a strong call to action and the whole textured background thing feels like bad wabi sabi.  (Don't hate me, wabi sabi, I'll find my way back to you.)
 
 :-/
 
@@ -561,7 +552,7 @@ The basic server directory layout is:
 ./node_modules         # third party packages required by server
 ```
 
-The frontend react code lives in a subdirectory off the server folder and is bootstrapped by a call to 'create-react-app' as described in the blog above.  This configures the webpack toolchain responsible for transforming client code and packages into a deployable, browser-ready bundle.
+The frontend react code lives in a subdirectory off the server folder and is bootstrapped by a call to 'create-react-app' as described in the blog above.  This configures the webpack tool-chain responsible for transforming client code and packages into a deployable, browser-ready bundle.
 
 ```
 ./client               # react client folder
