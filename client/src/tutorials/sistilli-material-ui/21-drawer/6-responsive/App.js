@@ -1,12 +1,13 @@
 import React, { useRef, useState, useLayoutEffect } from 'react'
-import { Box, Hidden } from '@material-ui/core'
-
+import { Box } from '@material-ui/core'
 import { ResponsiveAppBar } from './ResponsiveAppBar'
 import { MobileDrawer } from './MobileDrawer'
 import { DesktopDrawer } from './DesktopDrawer'
 import { navItems } from './NavItems'
 import { DrawerList } from './DrawerList'
+import { ResponsiveFrame } from './ResponsiveFrame'
 import { Content } from './Content'
+import useIsDesktop from './useIsDesktop'
 
 export const App = (props) => {
     const defaultContainer = () => document.body
@@ -19,9 +20,16 @@ export const App = (props) => {
         setContainer(containerRef.current)
     }, [containerRef])
 
+    // Use a custom hook to detect when we're in 'desktop' versus
+    // 'mobile' browser window width.
+    //
+    // (Stringify mess is pure expedience, otherwise useIsDesktop hook
+    // doesn't destructure nicely.  Returns null. Feels esoteric.)
+    const isDesktop = JSON.stringify(useIsDesktop('sm')).includes('true')
+    const isMobile = !isDesktop
+
     // Track the state of the mobile drawer.
     const [openMobileDrawer, setOpenMobileDrawer] = useState(false)
-
     const handleMobileDrawerToggle = () => {
         setOpenMobileDrawer(!openMobileDrawer)
     }
@@ -35,21 +43,11 @@ export const App = (props) => {
     const appBarText = 'Responsive Drawer (Bonus)'
     const drawerAnchor = 'right'
 
-    // Define the responsive boundary between mobile & desktop.
-    const desktopVisibleBp = { smUp: true } // hides mobile stuff
-    const mobileVisibleBp = { xsDown: true } // hides desktop stuff
-    const implementation = { implementation: 'css' }
-    const desktopVisibleProps = { ...desktopVisibleBp, ...implementation }
-    const mobileVisibleProps = { ...mobileVisibleBp, ...implementation }
-
     const drawerList = (
         <DrawerList
             drawerItems={navItems}
             setDimensions={setDrawerDimensions}
         />
-    )
-    const mobileDrawerList = (
-        <Hidden {...desktopVisibleProps}>{drawerList}</Hidden>
     )
 
     return (
@@ -58,7 +56,7 @@ export const App = (props) => {
                 text={appBarText}
                 onMenuClick={handleMobileDrawerToggle}
                 menuSide={drawerAnchor}
-                hiddenMenuProps={desktopVisibleProps}
+                isMobile={isMobile}
                 style={{ position: 'relative' }}
             />
             <Box
@@ -70,28 +68,30 @@ export const App = (props) => {
                 border="1px solid grey"
                 paddingLeft="16px"
             >
-                <Hidden {...desktopVisibleProps}>
+                {isMobile ? (
                     <MobileDrawer
                         container={container}
                         anchor={drawerAnchor}
-                        drawerContent={mobileDrawerList}
+                        drawerContent={drawerList}
                         open={openMobileDrawer}
                         onClose={handleMobileDrawerToggle}
                         onClick={handleMobileDrawerToggle}
                     />
-                    <Content />
-                </Hidden>
-                <Hidden {...mobileVisibleProps}>
+                ) : (
                     <DesktopDrawer
                         anchor={drawerAnchor}
                         drawerContent={drawerList}
                     />
-                    <Content
-                        // Since drawer is always visible, avoid content occlusion.
-                        drawerAnchor={drawerAnchor}
-                        drawerDimensions={drawerDimensions}
-                    />
-                </Hidden>
+                )}
+                <ResponsiveFrame
+                    isDesktop={isDesktop}
+                    marginHints={{
+                        drawerAnchor: drawerAnchor,
+                        drawerDimensions: drawerDimensions
+                    }}
+                >
+                    <Content />
+                </ResponsiveFrame>
             </Box>
         </>
     )
