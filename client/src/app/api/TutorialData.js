@@ -191,7 +191,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -246,7 +246,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/todo',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/todo',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoList />
@@ -263,7 +263,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/jokeList',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/jokeList',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <JokeList />
@@ -280,7 +280,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/mapComponents',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/mapComponents',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <ProductCatalog />
@@ -297,7 +297,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/classComponents',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/classComponents',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <HelloClass />
@@ -314,7 +314,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state1',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/state1',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <LoginState />
@@ -331,7 +331,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/state2',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/state2',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <CountState />
@@ -348,7 +348,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/conditionalRender',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/conditionalRender',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <ConditionalRender />
@@ -365,7 +365,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/forms',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/forms',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TravelForm />
@@ -382,7 +382,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/vschool/memeGenerator',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/memeGenerator',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MemeGenerator />
@@ -452,7 +452,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListUnstyled.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoListUnstyled.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoListUnstyled />
@@ -469,7 +469,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoListStyled.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoListStyled.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoListStyled />
@@ -486,7 +486,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithForm.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoWithForm.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoWithForm />
@@ -503,7 +503,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDone.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoWithDone.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoWithDone />
@@ -520,7 +520,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/brilliant-react-hooks/TodoWithDel.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoWithDel.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoWithDel />
@@ -590,7 +590,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleState.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/wesbos-context/SimpleState.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <SimpleState />
@@ -607,7 +607,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/PropDrilling.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/wesbos-context/PropDrilling.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <PropDrilling />
@@ -624,7 +624,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/SimpleContext.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/wesbos-context/SimpleContext.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <SimpleContext />
@@ -641,7 +641,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/wesbos-context/MutateContext.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/wesbos-context/MutateContext.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MutateContext />
@@ -775,7 +775,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/1-start',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/1-start',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter1 />
@@ -792,7 +792,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/2-basic-routes',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/2-basic-routes',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter2 />
@@ -809,7 +809,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/3-exact-routes',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/3-exact-routes',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter3 />
@@ -826,7 +826,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/4-switch',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/4-switch',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter4 />
@@ -843,7 +843,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/5-404-route',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/5-404-route',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter5 />
@@ -860,7 +860,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/6-link-to',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/6-link-to',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter6 />
@@ -877,7 +877,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/7-history-push',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/7-history-push',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter7 />
@@ -894,7 +894,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/8-location-prop',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/8-location-prop',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter8 />
@@ -911,7 +911,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/9-match-prop',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/9-match-prop',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter9 />
@@ -928,7 +928,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-router/js/10-withRouter',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/10-withRouter',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter10 />
@@ -995,7 +995,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/1-start',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-mui-tables/js/1-start',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaMuiTables1 />
@@ -1012,7 +1012,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/2-simple-table',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-mui-tables/js/2-simple-table',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaMuiTables2 />
@@ -1029,7 +1029,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/3-new-schema',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-mui-tables/js/3-new-schema',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaMuiTables3 />
@@ -1046,7 +1046,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-mui-tables/js/4-add-rows',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-mui-tables/js/4-add-rows',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaMuiTables4 />
@@ -1135,7 +1135,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useState',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -1182,7 +1182,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/1-start/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useState/1-start/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseState1 />
@@ -1199,7 +1199,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/2-no-state-merging/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useState/2-no-state-merging/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseState2 />
@@ -1216,7 +1216,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/3-you-merge/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useState/3-you-merge/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseState3 />
@@ -1233,7 +1233,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/4-granular-state/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useState/4-granular-state/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseState4 />
@@ -1250,7 +1250,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/5-name-pw/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useState/5-name-pw/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseState5 />
@@ -1267,7 +1267,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useState/6-useForm/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useState/6-useForm/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseState6 />
@@ -1288,7 +1288,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -1370,7 +1370,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/1-every-render/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect/1-every-render/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseEffect1 />
@@ -1387,7 +1387,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/2-cond/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect/2-cond/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseEffect2 />
@@ -1404,7 +1404,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/3-once/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect/3-once/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseEffect3 />
@@ -1421,7 +1421,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/4-cleanup/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect/4-cleanup/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseEffect4 />
@@ -1438,7 +1438,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/5-cleanup-dep/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect/5-cleanup-dep/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseEffect5 />
@@ -1455,7 +1455,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/6-events/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect/6-events/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseEffect6 />
@@ -1472,7 +1472,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/7-api-call/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect/7-api-call/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseEffect7 />
@@ -1489,7 +1489,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useEffect/8-localstorage/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useEffect/8-localstorage/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseEffect8 />
@@ -1510,7 +1510,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useRef',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -1552,7 +1552,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/1-form-focus',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useRef/1-form-focus',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseRef1 />
@@ -1569,7 +1569,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/2-ivar',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useRef/2-ivar',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseRef2 />
@@ -1586,7 +1586,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/3-setState-fail',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useRef/3-setState-fail',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseRef3 />
@@ -1603,7 +1603,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useRef/4-setState-win',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useRef/4-setState-win',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseRef4 />
@@ -1624,7 +1624,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useLayoutEffect',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -1671,7 +1671,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/1-measure-input-field',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useLayoutEffect/1-measure-input-field',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseLayoutEffect1 />
@@ -1688,7 +1688,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/2-dynamic-length',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useLayoutEffect/2-dynamic-length',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseLayoutEffect2 />
@@ -1705,7 +1705,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useLayoutEffect/3-custom-hook',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useLayoutEffect/3-custom-hook',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaHooksUseLayoutEffect3 />
@@ -1726,7 +1726,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useContext',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -1791,7 +1791,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/0-router-base',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useContext/0-router-base',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaUseContext0 />
@@ -1808,7 +1808,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/1-read-msg',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useContext/1-read-msg',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaUseContext1 />
@@ -1825,7 +1825,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/2-mutable-context',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useContext/2-mutable-context',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaUseContext2 />
@@ -1842,7 +1842,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/benawad-hooks/useContext/3-login-context',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useContext/3-login-context',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaUseContext3 />
@@ -1867,7 +1867,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-hooks',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -1924,7 +1924,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/1-class-worldview/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-hooks/1-class-worldview/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <AsHooks1 />
@@ -1941,7 +1941,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/2-hooks-version/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-hooks/2-hooks-version/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <AsHooks2 />
@@ -1958,7 +1958,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/3-lifecycle',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-hooks/3-lifecycle',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <AsHooks3 />
@@ -1975,7 +1975,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/4-useEffect',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-hooks/4-useEffect',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <AsHooks4 />
@@ -1992,7 +1992,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-hooks/5-useEffect-2',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-hooks/5-useEffect-2',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <AsHooks5 />
@@ -2016,7 +2016,7 @@ const TutorialData = [
             codeLink: {
                 tipText: 'github',
                 href:
-                    'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui',
+                    'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui',
                 icon: <GitHubIcon />
             },
             level: 'introductory',
@@ -2120,7 +2120,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App1.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/1-intro/App1.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIIntro1 />
@@ -2137,7 +2137,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/override-theme',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/1-intro/override-theme',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIIntro2 />
@@ -2154,7 +2154,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App3.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/1-intro/App3.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIIntro3 />
@@ -2171,7 +2171,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/1-intro/App4.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/1-intro/App4.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIIntro4 />
@@ -2242,7 +2242,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/1-starter',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/1-starter',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode1 />
@@ -2259,7 +2259,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/2-app-layout',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/2-app-layout',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode2 />
@@ -2276,7 +2276,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/3-content-layout',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/3-content-layout',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode3 />
@@ -2293,7 +2293,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/4-header-appbar',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/4-header-appbar',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode4 />
@@ -2310,7 +2310,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/5-header-content',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/5-header-content',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode5 />
@@ -2327,7 +2327,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/6-simple-card',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/6-simple-card',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode6 />
@@ -2344,7 +2344,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/7-content-grid',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/7-content-grid',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode7 />
@@ -2361,7 +2361,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/8-content-card',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/8-content-card',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode8 />
@@ -2378,7 +2378,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/2-uiux/9-final-products',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/2-uiux/9-final-products',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIUXCode9 />
@@ -2455,7 +2455,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/1-starter',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/3-makeStyles/1-starter',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUImakeStyles1 />
@@ -2472,7 +2472,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/2-makeStyles',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/3-makeStyles/2-makeStyles',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUImakeStyles2 />
@@ -2489,7 +2489,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/3-textStyle',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/3-makeStyles/3-textStyle',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUImakeStyles3 />
@@ -2506,7 +2506,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/4-props',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/3-makeStyles/4-props',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUImakeStyles4 />
@@ -2523,7 +2523,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/5-props-multi',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/3-makeStyles/5-props-multi',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUImakeStyles5 />
@@ -2540,7 +2540,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/6-theme',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/3-makeStyles/6-theme',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUImakeStyles6 />
@@ -2557,7 +2557,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/7-props-and-theme',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/3-makeStyles/7-props-and-theme',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUImakeStyles7 />
@@ -2574,7 +2574,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/3-makeStyles/8-multi-class',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/3-makeStyles/8-multi-class',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUImakeStyles8 />
@@ -2595,7 +2595,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/4-button',
                         icon: <GitHubIcon />
                     },
                     level: 'intermediate',
@@ -2636,7 +2636,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button/1-starter',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/4-button/1-starter',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIButton1 />
@@ -2653,7 +2653,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button/2-button-docs',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/4-button/2-button-docs',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIButton2 />
@@ -2670,7 +2670,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/4-button/3-icon-buttons',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/4-button/3-icon-buttons',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIButton3 />
@@ -2691,7 +2691,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/5-typography',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -2732,7 +2732,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/1-props',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/5-typography/1-props',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIText1 />
@@ -2749,7 +2749,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/2-override',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/5-typography/2-override',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIText2 />
@@ -2766,7 +2766,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/3-theme',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/5-typography/3-theme',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIText3 />
@@ -2783,7 +2783,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/5-typography/4-themes',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/5-typography/4-themes',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIText4 />
@@ -2805,7 +2805,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/6-themes',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -2861,7 +2861,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/1-intro/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/6-themes/1-intro/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIThemes1 />
@@ -2878,7 +2878,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/2-create-theme/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/6-themes/2-create-theme/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIThemes2 />
@@ -2895,7 +2895,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/3-breakpoint-style/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/6-themes/3-breakpoint-style/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIThemes3 />
@@ -2912,7 +2912,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/6-themes/4-dark/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/6-themes/4-dark/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIThemes4 />
@@ -2933,7 +2933,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/7-paper',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -2969,7 +2969,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper/1-elevation',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/7-paper/1-elevation',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIPaper1 />
@@ -2986,7 +2986,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/7-paper/2-square',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/7-paper/2-square',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIPaper2 />
@@ -3007,7 +3007,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/8-dark',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -3048,7 +3048,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/1-light',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/8-dark/1-light',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDark1 />
@@ -3065,7 +3065,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/2-dark',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/8-dark/2-dark',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDark2 />
@@ -3082,7 +3082,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/3-toggle',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/8-dark/3-toggle',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDark3 />
@@ -3099,7 +3099,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/8-dark/4-green',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/8-dark/4-green',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDark4 />
@@ -3191,7 +3191,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/dashboard',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/dashboard',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplateDashboard />
@@ -3208,7 +3208,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-in',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/sign-in',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplateSignIn />
@@ -3225,7 +3225,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-in-side',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/sign-in-side',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplateSignInSide />
@@ -3242,7 +3242,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sign-up',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/sign-up',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplateSignUp />
@@ -3259,7 +3259,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/blog',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/blog',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplateBlog />
@@ -3276,7 +3276,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/checkout',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/checkout',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplateCheckout />
@@ -3293,7 +3293,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/album',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/album',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplateAlbum />
@@ -3310,7 +3310,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/pricing',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/pricing',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplatePricing />
@@ -3327,7 +3327,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/9-templates/sticky-footer',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/9-templates/sticky-footer',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITemplateStickyFooter />
@@ -3348,7 +3348,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -3399,7 +3399,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/1-start/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/1-start/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid1 />
@@ -3416,7 +3416,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/2-doc-start/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/2-doc-start/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid2 />
@@ -3433,7 +3433,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/3-doc-336/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/3-doc-336/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid3 />
@@ -3450,7 +3450,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/4-doc-337/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/4-doc-337/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid4 />
@@ -3467,7 +3467,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/5-doc-xs-vs-sm/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/5-doc-xs-vs-sm/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid5 />
@@ -3484,7 +3484,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/6-spacing/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/6-spacing/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid6 />
@@ -3501,7 +3501,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/7-direction/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/7-direction/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid7 />
@@ -3518,7 +3518,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/8-nested/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/8-nested/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid8 />
@@ -3535,7 +3535,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/10-grid/9-simple-layout/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/10-grid/9-simple-layout/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGrid9 />
@@ -3556,7 +3556,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/11-grid-centering',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -3615,7 +3615,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/1-start/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/11-grid-centering/1-start/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGridCenter1 />
@@ -3632,7 +3632,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/2-justify/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/11-grid-centering/2-justify/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGridCenter2 />
@@ -3649,7 +3649,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/3-alignItems/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/11-grid-centering/3-alignItems/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGridCenter3 />
@@ -3666,7 +3666,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/4-justify-column/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/11-grid-centering/4-justify-column/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGridCenter4 />
@@ -3683,7 +3683,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/5-alignItems-column/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/11-grid-centering/5-alignItems-column/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGridCenter5 />
@@ -3700,7 +3700,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/6-practice/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/11-grid-centering/6-practice/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGridCenter6 />
@@ -3717,7 +3717,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/11-grid-centering/7-justify-w-size/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/11-grid-centering/7-justify-w-size/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIGridCenter7 />
@@ -3795,7 +3795,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/1-simple/SimpleCard.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/12-card/1-simple/SimpleCard.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUICard1 />
@@ -3812,7 +3812,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/2-complex/RecipeReviewCard.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/12-card/2-complex/RecipeReviewCard.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUICard2 />
@@ -3829,7 +3829,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/3-header',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/12-card/3-header',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUICard3 />
@@ -3846,7 +3846,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/4-media',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/12-card/4-media',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUICard4 />
@@ -3863,7 +3863,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/5-content',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/12-card/5-content',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUICard5 />
@@ -3880,7 +3880,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/6-actions',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/12-card/6-actions',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUICard6 />
@@ -3897,7 +3897,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/12-card/7-gridify',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/12-card/7-gridify',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUICard7 />
@@ -3954,7 +3954,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/13-table/1-simple',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/13-table/1-simple',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITable1 />
@@ -3971,7 +3971,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/13-table/2-enhanced',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/13-table/2-enhanced',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUITable2 />
@@ -4047,7 +4047,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/1-docs/App-Temporary.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/1-docs/App-Temporary.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDrawer1 />
@@ -4064,7 +4064,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/1-docs/App-Persistent.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/1-docs/App-Persistent.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIPersistentDrawer1 />
@@ -4081,7 +4081,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/2-router/App.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/2-router/App.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDrawer2 />
@@ -4098,7 +4098,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/3-permanent/Drawer.jsx',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/3-permanent/Drawer.jsx',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDrawer3 />
@@ -4115,7 +4115,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/4-w-item-icons/Drawer.jsx',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/4-w-item-icons/Drawer.jsx',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDrawer4 />
@@ -4132,7 +4132,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/5-withRouter/Drawer.jsx',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/5-withRouter/Drawer.jsx',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDrawer5 />
@@ -4149,7 +4149,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/7-container',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/7-container',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDrawer7 />
@@ -4166,11 +4166,28 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/components/sistilli-material-ui/21-drawer/6-responsive',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/6-responsive',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDrawer6 />
                     }
+                    // {
+                    //     demoKey: 'material-ui-drawer-8',
+                    //     primaryText: 'Bonus:',
+                    //     secondaryText: 'nested drawer',
+                    //     refLink: {
+                    //         tipText: 'youtube',
+                    //         href: 'https://youtu.be/CjFWbEOcq-Y?t=166',
+                    //         icon: <FaYoutube style={{ color: 'red' }} />
+                    //     },
+                    //     codeLink: {
+                    //         tipText: 'github',
+                    //         href:
+                    //             'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/8-nested',
+                    //         icon: <GitHubIcon />
+                    //     },
+                    //     demoComponent: <MaterialUIDrawer8 />
+                    // }
                 ]
             }
         ]
