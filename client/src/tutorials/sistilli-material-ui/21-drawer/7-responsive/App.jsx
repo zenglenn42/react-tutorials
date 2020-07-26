@@ -10,39 +10,48 @@ import { Content } from './Content'
 import useIsDesktop from './useIsDesktop'
 
 export const App = (props) => {
+    const appBarText = 'Responsive Drawer (Bonus)'
+
+    // Breakpoint between 'mobile' and 'desktop'
+    //
+    // This browser width (or wider) is desktop.
+    // See material-ui theme.breakpoints.keys.
+
+    const bpUp = 'sm' // xs | sm | md | lg | xl
+
+    // Use ref to a containing div to position drawer.
+
+    const drawerAnchor = 'right' // left | right | top | bottom
     const defaultContainer = () => document.body
     const [container, setContainer] = useState(defaultContainer)
     const containerRef = useRef(container)
-
-    // Capture a reference to the <div/> that will parent
-    // our drawer of nav items.
     useLayoutEffect(() => {
         setContainer(containerRef.current)
     }, [containerRef])
 
-    // Use a custom hook to detect when we're in 'desktop' versus
-    // 'mobile' browser window width.
+    // Responsively detect when browser crosses threshold
+    // between mobile and desktop (especially on resize).
     //
-    // (Stringify mess is pure expedience, otherwise useIsDesktop hook
-    // doesn't destructure nicely.  Returns null. Feels esoteric.)
-    const isDesktop = JSON.stringify(useIsDesktop('sm')).includes('true')
+    // FIX: Stringify is pure expedience, otherwise hook returns
+    //      referentially unstable result. Why?
+
+    const isDesktop = JSON.stringify(useIsDesktop(bpUp)).includes('true')
     const isMobile = !isDesktop
 
-    // Track the state of the mobile drawer.
+    // Remember open/closed state of mobile drawer.
+
     const [openMobileDrawer, setOpenMobileDrawer] = useState(false)
     const handleMobileDrawerToggle = () => {
         setOpenMobileDrawer(!openMobileDrawer)
     }
 
-    // Track dimensions of desktop drawer.
+    // Track dimensions of drawer for margin hints,
+    // otherwsie always-visible desktop drawer occludes main content.
+
     const [drawerDimensions, setDrawerDimensions] = useState({
         width: 0,
         height: 0
     })
-
-    const appBarText = 'Responsive Drawer (Bonus)'
-    const drawerAnchor = 'right'
-
     const drawerList = (
         <DrawerList
             drawerItems={drawerData}
