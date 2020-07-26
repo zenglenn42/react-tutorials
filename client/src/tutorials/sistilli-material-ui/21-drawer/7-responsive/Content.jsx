@@ -1,23 +1,31 @@
 import React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import Home from './Home'
+import About from './About'
+import Contact from './Contact'
 
-export const Content = () => {
+const Content = (props) => {
+    const { className } = props
     return (
-        <p style={{ position: 'inherit' }}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Aspernatur, eaque dolor? Sit incidunt illo expedita cum nulla autem
-            doloribus non, eum quibusdam iure numquam repellendus obcaecati
-            molestiae quisquam ab fuga? Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Aspernatur, eaque dolor? Sit incidunt illo
-            expedita cum nulla autem doloribus non, eum quibusdam iure numquam
-            repellendus obcaecati molestiae quisquam ab fuga? Lorem ipsum dolor,
-            sit amet consectetur adipisicing elit. Aspernatur, eaque dolor? Sit
-            incidunt illo expedita cum nulla autem doloribus non, eum quibusdam
-            iure numquam repellendus obcaecati molestiae quisquam ab fuga? Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
-            eaque dolor? Sit incidunt illo expedita cum nulla autem doloribus
-            non, eum quibusdam iure numquam repellendus obcaecati molestiae
-            quisquam ab fuga?
-        </p>
+        <>
+            <Switch>
+                <Route
+                    exact
+                    from="/"
+                    render={(props) => <Home className={className} />}
+                />
+                <Route
+                    exact
+                    path="/contact"
+                    render={(props) => <Contact className={className} />}
+                />
+                <Route
+                    exact
+                    from="/about"
+                    render={(props) => <About className={className} />}
+                />
+            </Switch>
+        </>
     )
 }
 

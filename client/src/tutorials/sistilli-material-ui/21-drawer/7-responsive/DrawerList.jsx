@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useState, useRef } from 'react'
+import { withRouter } from 'react-router-dom'
 import {
     Divider,
     List,
@@ -15,9 +16,9 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export const DrawerList = (props) => {
+export const DrawerList = withRouter((props) => {
     const classes = useStyles()
-    const { drawerItems, setDimensions } = props
+    const { drawerItems, setDimensions, history } = props
 
     const _listRef = useRef()
     const [listRef, setListRef] = useState(_listRef)
@@ -36,12 +37,14 @@ export const DrawerList = (props) => {
         <div ref={listRef}>
             <List className={classes.list} dense>
                 {drawerItems.map((item, index) => {
-                    const { text, icon, divider, onClick } = item
-                    const _onClick = onClick ? onClick : () => {}
+                    const { text, icon, divider, routepath } = item
+                    const onClick = routepath
+                        ? () => history.push(routepath)
+                        : () => {}
                     return divider ? (
                         <Divider />
                     ) : (
-                        <ListItem button key={text} onClick={_onClick}>
+                        <ListItem button key={text} onClick={onClick}>
                             <ListItemIcon>{icon}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
@@ -50,6 +53,6 @@ export const DrawerList = (props) => {
             </List>
         </div>
     )
-}
+})
 
 export default DrawerList

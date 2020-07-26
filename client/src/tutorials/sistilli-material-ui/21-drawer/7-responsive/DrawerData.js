@@ -1,51 +1,21 @@
-import React, { Divider } from 'react'
-import {
-    Home,
-    ContactMail,
-    Person,
-    Work,
-    AcUnit,
-    LocalDrink,
-    DirectionsWalk
-} from '@material-ui/icons'
+import React from 'react'
+import { Home, ContactMail, Person } from '@material-ui/icons'
 
 export const drawerData = [
     {
         text: 'Home',
-        icon: <Home />
+        icon: <Home />,
+        routepath: '/'
         // onClick: () => history.push('/')
     },
     {
         text: 'Contact',
-        icon: <ContactMail />
-        // onClick: () => history.push('/contact')
+        icon: <ContactMail />,
+        routepath: 'contact'
     },
     {
         text: 'About',
-        icon: <Person />
-        // onClick: () => history.push('/about')
-    },
-    {
-        text: 'Work',
-        icon: <Work />
-        // onClick: () => history.push('/work')
-    },
-    {
-        divider: <Divider />
-    },
-    {
-        text: 'Make snow',
-        icon: <AcUnit />
-        // onClick: () => history.push('/makesnow')
-    },
-    {
-        text: 'Drink',
-        icon: <LocalDrink />
-        // onClick: () => history.push('/drink')
-    },
-    {
-        text: 'Walk',
-        icon: <DirectionsWalk />
-        // onClick: () => history.push('/walk')
+        icon: <Person />,
+        routepath: '/about'
     }
 ]

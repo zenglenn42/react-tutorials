@@ -1,12 +1,12 @@
 import React, { useRef, useState, useLayoutEffect } from 'react'
-import { Box } from '@material-ui/core'
-import { ResponsiveAppBar } from './ResponsiveAppBar'
-import { MobileDrawer } from './MobileDrawer'
-import { DesktopDrawer } from './DesktopDrawer'
+import { BrowserRouter } from 'react-router-dom'
+import { makeStyles } from '@material-ui/core'
 import { drawerData } from './DrawerData'
 import { DrawerList } from './DrawerList'
+import { ResponsiveAppBar } from './ResponsiveAppBar'
+import { ResponsiveDrawer } from './ResponsiveDrawer'
 import { ResponsiveFrame } from './ResponsiveFrame'
-import { Content } from './Content'
+import Content from './Content'
 import useIsDesktop from './useIsDesktop'
 
 export const App = (props) => {
@@ -59,49 +59,57 @@ export const App = (props) => {
         />
     )
 
+    const useStyles = makeStyles({
+        container: {
+            position: 'relative',
+            minHeight: '33vh',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            border: '1px solid grey',
+            backgroundColor: '#fbbc05',
+            overflow: 'hidden auto',
+            padding: '1em 1em'
+        },
+        content: {
+            border: '1px solid red'
+        }
+    })
+    const classes = useStyles()
+
     return (
         <>
-            <ResponsiveAppBar
-                text={appBarText}
-                onMenuClick={handleMobileDrawerToggle}
-                menuSide={drawerAnchor}
-                isMobile={isMobile}
-                style={{ position: 'relative' }}
-            />
-            <Box
-                ref={containerRef}
-                position="relative"
-                maxHeight="40%"
-                component="div"
-                overflow="hidden auto"
-                border="1px solid grey"
-                paddingLeft="16px"
-            >
-                {isMobile ? (
-                    <MobileDrawer
-                        container={container}
+            <BrowserRouter>
+                <ResponsiveAppBar
+                    isMobile={isMobile}
+                    text={appBarText}
+                    onMenuClick={handleMobileDrawerToggle}
+                    menuSide={drawerAnchor}
+                    style={{ position: 'relative' }}
+                />
+                <div ref={containerRef} className={classes.container}>
+                    <ResponsiveDrawer
+                        isMobile={isMobile}
                         anchor={drawerAnchor}
-                        drawerContent={drawerList}
-                        open={openMobileDrawer}
-                        onClose={handleMobileDrawerToggle}
-                        onClick={handleMobileDrawerToggle}
+                        content={drawerList}
+                        mobileProps={{
+                            container: container,
+                            open: openMobileDrawer,
+                            onClose: handleMobileDrawerToggle,
+                            onClick: handleMobileDrawerToggle
+                        }}
                     />
-                ) : (
-                    <DesktopDrawer
-                        anchor={drawerAnchor}
-                        drawerContent={drawerList}
-                    />
-                )}
-                <ResponsiveFrame
-                    isDesktop={isDesktop}
-                    marginHints={{
-                        drawerAnchor: drawerAnchor,
-                        drawerDimensions: drawerDimensions
-                    }}
-                >
-                    <Content />
-                </ResponsiveFrame>
-            </Box>
+                    <ResponsiveFrame
+                        isDesktop={isDesktop}
+                        desktopProps={{
+                            drawerAnchor: drawerAnchor,
+                            drawerDimensions: drawerDimensions
+                        }}
+                    >
+                        <Content className={classes.content} />
+                    </ResponsiveFrame>
+                </div>
+            </BrowserRouter>
         </>
     )
 }

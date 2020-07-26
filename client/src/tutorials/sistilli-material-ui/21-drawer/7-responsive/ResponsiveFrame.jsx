@@ -3,37 +3,35 @@ import { makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
-    mobile: {
-        marginRight: theme.spacing(1.5)
-    },
-    desktop: (props) => {
-        const { marginHints } = props
+    all: {},
+    desktop: (marginHints) => {
+        // Content should flow around always-visible drawer.
         return {
             marginTop:
                 marginHints.drawerAnchor === 'top'
-                    ? marginHints.drawerDimensions.height + theme.spacing(1)
+                    ? marginHints.drawerDimensions.height + theme.spacing(0)
                     : 0,
             marginRight:
                 marginHints.drawerAnchor === 'right'
-                    ? marginHints.drawerDimensions.width + theme.spacing(1.5)
-                    : theme.spacing(1.5),
+                    ? marginHints.drawerDimensions.width + theme.spacing(0)
+                    : 0,
             marginBottom:
                 marginHints.drawerAnchor === 'bottom'
-                    ? marginHints.drawerDimensions.height + theme.spacing(1)
+                    ? marginHints.drawerDimensions.height + theme.spacing(0)
                     : 0,
             marginLeft:
                 marginHints.drawerAnchor === 'left'
-                    ? marginHints.drawerDimensions.width + theme.spacing(1)
+                    ? marginHints.drawerDimensions.width + theme.spacing(0)
                     : 0
         }
     }
 }))
 
 export const ResponsiveFrame = (props) => {
-    const { isDesktop, children } = props
-    const classes = useStyles(props)
+    const { isDesktop, desktopProps, children } = props
+    const classes = useStyles(desktopProps)
     return (
-        <div className={clsx(classes.mobile, { [classes.desktop]: isDesktop })}>
+        <div className={clsx(classes.all, { [classes.desktop]: isDesktop })}>
             {children}
         </div>
     )
