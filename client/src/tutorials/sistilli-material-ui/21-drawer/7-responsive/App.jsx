@@ -10,7 +10,7 @@ import { Content } from './Content'
 import useIsDesktop from './useIsDesktop'
 
 export const App = (props) => {
-    const appBarText = 'Responsive Drawer (Bonus)'
+    const appBarText = 'Resize me for demo'
 
     // Breakpoint between 'mobile' and 'desktop'
     //
