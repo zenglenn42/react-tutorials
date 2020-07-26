@@ -1,8 +1,6 @@
 import React, { useRef, useState, useLayoutEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core'
-import { drawerData } from './DrawerData'
-import { DrawerList } from './DrawerList'
 import { ResponsiveAppBar } from './ResponsiveAppBar'
 import { ResponsiveDrawer } from './ResponsiveDrawer'
 import { ResponsiveFrame } from './ResponsiveFrame'
@@ -12,14 +10,14 @@ import useIsDesktop from './useIsDesktop'
 export const App = (props) => {
     const appBarText = 'Resize me for demo'
 
-    // Breakpoint between 'mobile' and 'desktop'
+    // Define the threshold between 'mobile' and 'desktop' browser widths.
     //
-    // This browser width (or wider) is desktop.
+    // Anything at or above this width is considered 'desktop'.
     // See material-ui theme.breakpoints.keys.
 
     const bpUp = 'sm' // xs | sm | md | lg | xl
 
-    // Use ref to a containing div to position drawer.
+    // Position the nav drawer relative to a containing div.
 
     const drawerAnchor = 'right' // left | right | top | bottom
     const defaultContainer = () => document.body
@@ -29,8 +27,8 @@ export const App = (props) => {
         setContainer(containerRef.current)
     }, [containerRef])
 
-    // Responsively detect when browser crosses threshold
-    // between mobile and desktop (especially on resize).
+    // Detect when the size of browser window crosses the threshold
+    // between 'mobile' and 'desktop' (especially on resize).
     //
     // FIX: Stringify is pure expedience, otherwise hook returns
     //      referentially unstable result. Why?
@@ -38,26 +36,21 @@ export const App = (props) => {
     const isDesktop = JSON.stringify(useIsDesktop(bpUp)).includes('true')
     const isMobile = !isDesktop
 
-    // Remember open/closed state of mobile drawer.
+    // Remember the open/closed state of the mobile drawer.
 
     const [openMobileDrawer, setOpenMobileDrawer] = useState(false)
     const handleMobileDrawerToggle = () => {
         setOpenMobileDrawer(!openMobileDrawer)
     }
 
-    // Track dimensions of drawer for margin hints,
-    // otherwsie always-visible desktop drawer occludes main content.
+    // Track dimensions of the nav drawer for margin hints
+    // when rendering on desktops.
+    // Otherwise, always-visible desktop drawer occludes main content.
 
     const [drawerDimensions, setDrawerDimensions] = useState({
         width: 0,
         height: 0
     })
-    const drawerList = (
-        <DrawerList
-            drawerItems={drawerData}
-            setDimensions={setDrawerDimensions}
-        />
-    )
 
     const useStyles = makeStyles({
         container: {
@@ -91,7 +84,7 @@ export const App = (props) => {
                     <ResponsiveDrawer
                         isMobile={isMobile}
                         anchor={drawerAnchor}
-                        content={drawerList}
+                        setDimensions={setDrawerDimensions}
                         mobileProps={{
                             container: container,
                             open: openMobileDrawer,
