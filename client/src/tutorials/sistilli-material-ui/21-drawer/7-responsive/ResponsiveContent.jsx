@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export const ResponsiveFrame = (props) => {
+export const ResponsiveContent = (props) => {
     const { isDesktop, desktopProps, children } = props
     const classes = useStyles(desktopProps)
     return (
@@ -37,4 +37,4 @@ export const ResponsiveFrame = (props) => {
     )
 }
 
-export default ResponsiveFrame
+export default ResponsiveContent

@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core'
 import { ResponsiveAppBar } from './ResponsiveAppBar'
 import { ResponsiveDrawer } from './ResponsiveDrawer'
-import { ResponsiveFrame } from './ResponsiveFrame'
+import { ResponsiveContent } from './ResponsiveContent'
 import Content from './Content'
 import useIsDesktop from './useIsDesktop'
 
@@ -31,7 +31,7 @@ export const App = (props) => {
     // between 'mobile' and 'desktop' (especially on resize).
     //
     // FIX: Stringify is pure expedience, otherwise hook returns
-    //      referentially unstable result. Why?
+    //      referentially unstable result. Why? :-/
 
     const isDesktop = JSON.stringify(useIsDesktop(bpUp)).includes('true')
     const isMobile = !isDesktop
@@ -43,9 +43,9 @@ export const App = (props) => {
         setOpenMobileDrawer(!openMobileDrawer)
     }
 
-    // Track dimensions of the nav drawer for margin hints
-    // when rendering on desktops.
-    // Otherwise, always-visible desktop drawer occludes main content.
+    // Track dimensions of the nav drawer for margin hints,
+    // especially when rendering on desktops, otherwise the always-visible
+    // desktop drawer occludes main content.
 
     const [drawerDimensions, setDrawerDimensions] = useState({
         width: 0,
@@ -92,7 +92,7 @@ export const App = (props) => {
                             onClick: handleMobileDrawerToggle
                         }}
                     />
-                    <ResponsiveFrame
+                    <ResponsiveContent
                         isDesktop={isDesktop}
                         desktopProps={{
                             drawerAnchor: drawerAnchor,
@@ -100,7 +100,7 @@ export const App = (props) => {
                         }}
                     >
                         <Content className={classes.content} />
-                    </ResponsiveFrame>
+                    </ResponsiveContent>
                 </div>
             </BrowserRouter>
         </>
