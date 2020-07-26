@@ -3,7 +3,7 @@ import { Box } from '@material-ui/core'
 import { ResponsiveAppBar } from './ResponsiveAppBar'
 import { MobileDrawer } from './MobileDrawer'
 import { DesktopDrawer } from './DesktopDrawer'
-import { navItems } from './NavItems'
+import { drawerData } from './DrawerData'
 import { DrawerList } from './DrawerList'
 import { ResponsiveFrame } from './ResponsiveFrame'
 import { Content } from './Content'
@@ -45,7 +45,7 @@ export const App = (props) => {
 
     const drawerList = (
         <DrawerList
-            drawerItems={navItems}
+            drawerItems={drawerData}
             setDimensions={setDrawerDimensions}
         />
     )

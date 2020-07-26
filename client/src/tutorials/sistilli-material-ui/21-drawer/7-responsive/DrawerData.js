@@ -9,7 +9,7 @@ import {
     DirectionsWalk
 } from '@material-ui/icons'
 
-export const navItems = [
+export const drawerData = [
     {
         text: 'Home',
         icon: <Home />
