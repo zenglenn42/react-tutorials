@@ -531,8 +531,8 @@ It'd be nice to share my solutions in an associative context should I ever need 
 
 ### [Bootstrap to Heroku](#contents)
 
-I want a minimal stack for now.  Just express for the web server and definitely react for the front end (since that's the whole point)
-and something Heroku-ready would be a low impedance.  I'm not really using the backend at the moment, but that may change as the tutorials get more sophisticated.
+I want a minimal stack for now.  Just express for the web server and definitely React for the front end (since that's the whole point)
+and something Heroku-ready would lower impedance since I already host stuff there.  I'm not really using the backend at the moment, but that may change as the tutorials get more sophisticated.
 
 The fu in [this blog](https://daveceddia.com/deploy-react-express-app-heroku/) from Dave Ceddia fits the bill!
 
@@ -552,10 +552,10 @@ The basic server directory layout is:
 ./node_modules         # third party packages required by server
 ```
 
-The frontend react code lives in a subdirectory off the server folder and is bootstrapped by a call to 'create-react-app' as described in the blog above.  This configures the webpack tool-chain responsible for transforming client code and packages into a deployable, browser-ready bundle.
+The frontend React code lives in a subdirectory off the server folder and is bootstrapped by a call to 'create-react-app' as described in the blog above.  This configures the webpack tool-chain responsible for transforming client code and packages into a deployable, browser-ready bundle.
 
 ```
-./client               # react client folder
+./client               # React client folder
 ./client/index.js      # generic, top-level build entrypoint for React client
 ./client/App.js        # application-specific frontend code
 ./client/package.json  # client config management control file
