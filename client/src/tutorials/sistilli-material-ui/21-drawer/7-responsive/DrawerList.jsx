@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const DrawerList = withRouter((props) => {
     const classes = useStyles()
-    const { drawerItems, setDimensions, history } = props
+    const { items, setDimensions, history } = props
 
     const _listRef = useRef()
     const [listRef, setListRef] = useState(_listRef)
@@ -36,7 +36,7 @@ export const DrawerList = withRouter((props) => {
     return (
         <div ref={listRef}>
             <List className={classes.list} dense>
-                {drawerItems.map((item, index) => {
+                {items.map((item, index) => {
                     const { text, icon, divider, routepath } = item
                     const onClick = routepath
                         ? () => history.push(routepath)

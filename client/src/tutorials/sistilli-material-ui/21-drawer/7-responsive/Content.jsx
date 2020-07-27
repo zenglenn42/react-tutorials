@@ -4,7 +4,7 @@ import Home from './Home'
 import About from './About'
 import Contact from './Contact'
 
-const Content = (props) => {
+export const Content = (props) => {
     const { className } = props
     return (
         <>

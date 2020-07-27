@@ -63,7 +63,7 @@ const useBreakpoint = (queries) => {
 
 const theme = createMuiTheme()
 
-const useIsDesktop = (bpUp) => {
+export const useIsDesktop = (bpUp) => {
     // Is current browser window width >= corresponding breakpoint
     // defined in the material-ui theme?
     //     bpUp = 'xs' | 'sm' | 'md' | 'lg' | 'xl'

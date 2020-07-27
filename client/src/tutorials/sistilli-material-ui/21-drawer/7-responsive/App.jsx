@@ -4,8 +4,9 @@ import { makeStyles } from '@material-ui/core'
 import { ResponsiveAppBar } from './ResponsiveAppBar'
 import { ResponsiveDrawer } from './ResponsiveDrawer'
 import { ResponsiveContent } from './ResponsiveContent'
-import Content from './Content'
-import useIsDesktop from './useIsDesktop'
+import { Content } from './Content'
+import { drawerData as drawerItems } from './DrawerData'
+import { useIsDesktop } from './useIsDesktop'
 
 export const App = (props) => {
     const appBarText = 'Resize me for demo'
@@ -82,9 +83,10 @@ export const App = (props) => {
                 />
                 <div ref={containerRef} className={classes.container}>
                     <ResponsiveDrawer
-                        isMobile={isMobile}
                         anchor={drawerAnchor}
+                        items={drawerItems}
                         setDimensions={setDrawerDimensions}
+                        isMobile={isMobile}
                         mobileProps={{
                             container: container,
                             open: openMobileDrawer,
