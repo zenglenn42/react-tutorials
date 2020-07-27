@@ -1,5 +1,5 @@
 import React from 'react'
-import { AppBar as MuiAppBar, makeStyles } from '@material-ui/core'
+import { AppBar as MuiAppBar, makeStyles, Hidden } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const ResponsiveAppBar = (props) => {
     const classes = useStyles()
-    const { isMobile, text, onMenuClick, menuSide } = props
+    const { onMenuClick, text, menuSide, hiddenMenuProps } = props
     const _menuSide =
         menuSide === 'left' || menuSide === 'right' ? menuSide : 'left'
     const menuButton = (
@@ -35,13 +35,17 @@ export const ResponsiveAppBar = (props) => {
         <>
             <CssBaseline />
             <MuiAppBar className={classes.appBar}>
-                <Toolbar variant="dense">
-                    {isMobile && _menuSide === 'left' && menuButton}
+                <Toolbar>
+                    <Hidden {...hiddenMenuProps}>
+                        {_menuSide === 'left' && menuButton}
+                    </Hidden>
                     <Typography variant="h6" noWrap>
                         {text}
                     </Typography>
                     <div className={classes.grow} />
-                    {isMobile && _menuSide === 'right' && menuButton}
+                    <Hidden {...hiddenMenuProps}>
+                        {_menuSide !== 'left' && menuButton}
+                    </Hidden>
                 </Toolbar>
             </MuiAppBar>
         </>

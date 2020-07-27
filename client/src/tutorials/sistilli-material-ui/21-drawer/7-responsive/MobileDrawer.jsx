@@ -28,14 +28,14 @@ export const MobileDrawer = (props) => {
                 open={open}
                 onClose={onClose}
                 onClick={onClick}
-                elevation={10}
+                elevation={5}
                 PaperProps={{ style: { position: 'absolute' } }}
                 BackdropProps={{ style: { position: 'absolute' } }}
                 ModalProps={{
                     style: { position: 'absolute' },
-                    hideBackdrop: true // Disabling backdrop for now because
-                    // it bleeds into my desktop render :-/
+                    // Disabling backdrop for now because it bleeds into my desktop render :-/
                     // TODO: make backdrop sensitive to breakpoints.
+                    hideBackdrop: true
                 }}
                 SlideProps={{
                     direction: anchorTransformMap[anchor].slideToward

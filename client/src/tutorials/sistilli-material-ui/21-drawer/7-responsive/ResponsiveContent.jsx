@@ -3,7 +3,9 @@ import { makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
-    all: {},
+    all: {
+        overflow: 'auto scroll'
+    },
     desktop: (marginHints) => {
         // Content should flow around always-visible drawer.
         return {

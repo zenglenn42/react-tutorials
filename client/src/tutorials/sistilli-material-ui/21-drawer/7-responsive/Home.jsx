@@ -5,7 +5,7 @@ const Home = (props) => {
     const { className } = props
     return (
         <div className={className}>
-            <h2>Grata domum</h2>
+            <h2>Grata domum ...</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Aspernatur, eaque dolor? Sit incidunt illo expedita cum nulla
@@ -13,7 +13,7 @@ const Home = (props) => {
                 obcaecati molestiae quisquam ab fuga?
             </p>
             <Divider />
-            <h2>Welcome home</h2>
+            <h2>Welcome home ...</h2>
             <p style={{ fontStyle: 'oblique' }}>
                 But I must explain to you how all this mistaken idea of
                 denouncing pleasure and praising pain was born and I will give

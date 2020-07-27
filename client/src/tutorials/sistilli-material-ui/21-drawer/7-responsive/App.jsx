@@ -6,6 +6,7 @@ import { ResponsiveDrawer } from './ResponsiveDrawer'
 import { ResponsiveContent } from './ResponsiveContent'
 import { Content } from './Content'
 import { drawerData as drawerItems } from './DrawerData'
+import { Footer } from './Footer'
 import { useIsDesktop } from './useIsDesktop'
 
 export const App = (props) => {
@@ -53,22 +54,26 @@ export const App = (props) => {
         height: 0
     })
 
-    const useStyles = makeStyles({
+    const useStyles = makeStyles((theme) => ({
         container: {
             position: 'relative',
             minHeight: '33vh',
+            maxHeight: '33vh',
             display: 'flex',
+            flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
             border: '1px solid grey',
-            backgroundColor: '#fbbc05',
-            overflow: 'hidden auto',
-            padding: '1em 1em'
+            backgroundColor: theme.palette.grey[100],
+            padding: '0.5em 1em',
+            // Prevent mobile drawer exit-transform from flying
+            // away outside the bounds of the container.  Odd.
+            overflow: 'hidden'
         },
         content: {
-            border: '1px solid red'
+            // border: '1px solid red'
         }
-    })
+    }))
     const classes = useStyles()
 
     return (
@@ -104,6 +109,7 @@ export const App = (props) => {
                         <Content className={classes.content} />
                     </ResponsiveContent>
                 </div>
+                <Footer />
             </BrowserRouter>
         </>
     )

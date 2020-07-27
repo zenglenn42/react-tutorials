@@ -1,7 +1,12 @@
 import React from 'react'
 
 const Contact = (props) => {
-    return <h2>Contact page</h2>
+    const { className } = props
+    return (
+        <div className={className}>
+            <h2>Contact page</h2>
+        </div>
+    )
 }
 
 export default Contact
