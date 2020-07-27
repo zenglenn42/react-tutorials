@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const ResponsiveAppBar = (props) => {
     const classes = useStyles()
-    const { text, onMenuClick, menuSide, isMobile } = props
+    const { isMobile, text, onMenuClick, menuSide } = props
     const _menuSide =
         menuSide === 'left' || menuSide === 'right' ? menuSide : 'left'
     const menuButton = (

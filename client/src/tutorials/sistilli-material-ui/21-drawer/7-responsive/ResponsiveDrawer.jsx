@@ -4,7 +4,7 @@ import DesktopDrawer from './DesktopDrawer'
 import { DrawerList } from './DrawerList'
 
 export const ResponsiveDrawer = (props) => {
-    const { anchor, items, setDimensions, isMobile, mobileProps } = props
+    const { isMobile, anchor, items, setDimensions, mobileProps } = props
     const drawerList = (
         <DrawerList items={items} setDimensions={setDimensions} />
     )

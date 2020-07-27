@@ -83,10 +83,10 @@ export const App = (props) => {
                 />
                 <div ref={containerRef} className={classes.container}>
                     <ResponsiveDrawer
+                        isMobile={isMobile}
                         anchor={drawerAnchor}
                         items={drawerItems}
                         setDimensions={setDrawerDimensions}
-                        isMobile={isMobile}
                         mobileProps={{
                             container: container,
                             open: openMobileDrawer,
