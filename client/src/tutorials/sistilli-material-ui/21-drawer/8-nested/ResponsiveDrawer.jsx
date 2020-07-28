@@ -4,24 +4,39 @@ import DesktopDrawer from './DesktopDrawer'
 import { DrawerList } from './DrawerList'
 
 export const ResponsiveDrawer = (props) => {
-    const { isMobile, anchor, items, setDimensions, mobileProps } = props
-    const drawerList = (
-        <DrawerList pages={items} setDimensions={setDimensions} />
-    )
+    const {
+        isMobile,
+        anchor,
+        data,
+        setDimensions,
+        MobileProps,
+        PaperProps,
+        style
+    } = props
+    const drawerList = <DrawerList pages={data} setDimensions={setDimensions} />
+    const paperStyle = PaperProps.style
+    const propsStyle = style
+    const _style = { ...paperStyle, ...propsStyle }
 
     return (
         <>
             {isMobile ? (
                 <MobileDrawer
-                    container={mobileProps.container}
+                    container={MobileProps.container}
                     anchor={anchor}
                     drawerContent={drawerList}
-                    open={mobileProps.open}
-                    onClose={mobileProps.onClose}
-                    onClick={mobileProps.onClick}
+                    open={MobileProps.open}
+                    onClose={MobileProps.onClose}
+                    onClick={MobileProps.onClick}
+                    ModalProps={{ keepMounted: true }}
+                    PaperProps={{ ...PaperProps, style: { ..._style } }}
                 />
             ) : (
-                <DesktopDrawer anchor={anchor} drawerContent={drawerList} />
+                <DesktopDrawer
+                    anchor={anchor}
+                    drawerContent={drawerList}
+                    PaperProps={{ ...PaperProps, style: { ..._style } }}
+                />
             )}
         </>
     )

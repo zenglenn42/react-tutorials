@@ -13,13 +13,19 @@ export const drawerData = [
         pathname: '/about',
         children: [
             {
-                pathname: '/about-lorem-ipsum',
-                title: 'Lorem Ipsum'
+                pathname: 'https://en.wikipedia.org/wiki/Lorem_ipsum',
+                title: 'Lorem Ipsum',
+                linkProps: {
+                    'target': '_blank'
+                }
             },
             {
-                pathname: '/about-me',
-                title: 'Me'
+                pathname: 'https://zenglenn42.github.io/portfolio/about.html',
+                title: 'Me',
+                linkProps: {
+                    'target': '_blank'
+                }
             }
         ]
-    }
+    },
 ]

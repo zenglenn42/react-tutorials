@@ -5,12 +5,12 @@ import { ResponsiveAppBar } from './ResponsiveAppBar'
 import { ResponsiveDrawer } from './ResponsiveDrawer'
 import { ResponsiveContent } from './ResponsiveContent'
 import { Content } from './Content'
-import { drawerData as drawerItems } from './DrawerData'
+import { drawerData as pages } from './DrawerData'
 import { Footer } from './Footer'
 import { useIsDesktop } from './useIsDesktop'
 
 export const App = (props) => {
-    const appBarText = 'Resize me for demo'
+    const appBarText = "Click 'About' menu item for demo"
 
     // Define the threshold between 'mobile' and 'desktop' browser widths.
     //
@@ -75,6 +75,7 @@ export const App = (props) => {
         }
     }))
     const classes = useStyles()
+    const drawerWidth = 150
 
     return (
         <>
@@ -90,13 +91,16 @@ export const App = (props) => {
                     <ResponsiveDrawer
                         isMobile={isMobile}
                         anchor={drawerAnchor}
-                        items={drawerItems}
+                        data={pages}
                         setDimensions={setDrawerDimensions}
-                        mobileProps={{
+                        MobileProps={{
                             container: container,
                             open: openMobileDrawer,
                             onClose: handleMobileDrawerToggle,
                             onClick: handleMobileDrawerToggle
+                        }}
+                        PaperProps={{
+                            style: { width: `${drawerWidth}px` }
                         }}
                     />
                     <ResponsiveContent

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
@@ -23,20 +23,6 @@ export const Content = (props) => {
                     exact
                     from="/about"
                     render={(props) => <About className={className} />}
-                />
-                <Route
-                    exact
-                    from="/about-lorem-ipsum"
-                    render={(props) => (
-                        <Redirect to="https://en.wikipedia.org/wiki/Lorem_ipsum" />
-                    )}
-                />
-                <Route
-                    exact
-                    from="/about-me"
-                    render={(props) => (
-                        <Redirect to="https://zenglenn42.github.io/portfolio/about.html" />
-                    )}
                 />
             </Switch>
         </>

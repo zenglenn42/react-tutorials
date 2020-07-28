@@ -2,33 +2,14 @@
 // https://github.com/mui-org/material-ui/blob/next/LICENSE
 
 import React, { useLayoutEffect, useState, useRef } from 'react'
-import { withRouter } from 'react-router-dom'
-import {
-    List,
-    ListItem,
-    ListItemText,
-    makeStyles,
-    Collapse
-} from '@material-ui/core'
+import { List } from '@material-ui/core'
+import DrawerItem from './DrawerItem'
 import { pageToTitle } from './helpers'
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        flexDirection: 'column',
-        paddingLeft: theme.spacing(1),
-        justifyContent: 'flex-start',
-        alignItems: 'flex-start'
-    },
-    list: {
-        overflowY: 'scroll',
-        padding: theme.spacing(0, 0)
-    }
-}))
 
 const renderNavItems = (options) => {
     const { pages, ...params } = options
     return (
-        <List classes={params.classes} dense>
+        <List style={{ paddingBottom: 0 }}>
             {pages.reduce(
                 // eslint-disable-next-line no-use-before-define
                 (items, page) =>
@@ -48,63 +29,53 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
         return items
     }
 
+    const title = pageToTitle(page)
     if (page.children && page.children.length > 1) {
-        // const topLevel = activePage
-        //    ? activePage.pathname.indexOf(`${page.pathname}/`) === 0
-        //    : false
-        let { pathname } = page
-        let onClick = pathname ? () => params.history.push(pathname) : () => {}
-        let title = pageToTitle(page)
+        const topLevel = activePage
+            ? activePage.pathname.indexOf(`${page.pathname}/`) === 0
+            : false
         items.push(
-            <ListItem
-                classes={params.classes}
-                button
-                key={title}
-                title={title}
-                onClick={onClick}
+            <DrawerItem
+                linkProps={page.linkProps}
                 depth={depth}
+                key={title}
+                topLevel={topLevel && !page.subheader}
+                openImmediately={topLevel || Boolean(page.subheader)}
+                title={title}
             >
-                <ListItemText primary={title} />
-                <Collapse in={true} timeout="auto" unmountOnExit>
-                    {renderNavItems({
-                        pages: page.children,
-                        activePage,
-                        depth: depth + 1,
-                        ...params
-                    })}
-                </Collapse>
-            </ListItem>
+                {renderNavItems({
+                    pages: page.children,
+                    activePage,
+                    depth: depth + 1,
+                    ...params
+                })}
+            </DrawerItem>
         )
     } else {
+        const title = pageToTitle(page)
         page =
             page.children && page.children.length === 1
                 ? page.children[0]
                 : page
-        let { pathname } = page
-        let onClick = pathname ? () => params.history.push(pathname) : () => {}
-        let title = pageToTitle(page)
+
         items.push(
-            <ListItem
-                classes={params.classes}
-                button
+            <DrawerItem
+                linkProps={page.linkProps}
+                depth={depth}
                 key={title}
                 title={title}
-                onClick={onClick}
-                depth={depth}
-            >
-                <ListItemText primary={title} />
-            </ListItem>
+                href={page.pathname}
+                onClick={params.onClose}
+            />
         )
     }
 
     return items
 }
 
-export const DrawerList = withRouter((props) => {
-    const classes = useStyles()
+export const DrawerList = (props) => {
     const { pages, setDimensions, history } = props
-    // const { activePage, pages } = useContext(PageContext)
-    const activePage = { pathname: '/' }
+    const [activePage, setActivePage] = useState({ pathname: '/' })
 
     const _listRef = useRef()
     const [listRef, setListRef] = useState(_listRef)
@@ -116,14 +87,14 @@ export const DrawerList = withRouter((props) => {
     useLayoutEffect(() => {
         const { width, height } = listRef.current.getBoundingClientRect()
         setDimensions({ width: width, height: height })
-        //console.log("list dimensions:", width, height)
+        // console.log("list dimensions:", width, height)
     }, [listRef, setDimensions])
 
     return (
         <div ref={listRef}>
-            {renderNavItems({ pages, activePage, history, depth: 0, classes })}
+            {renderNavItems({ pages, activePage, history, depth: 0 })}
         </div>
     )
-})
+}
 
 export default DrawerList

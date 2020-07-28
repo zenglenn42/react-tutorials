@@ -2,7 +2,22 @@ import React from 'react'
 import { Drawer as MuiDrawer } from '@material-ui/core'
 
 export const MobileDrawer = (props) => {
-    const { container, anchor, drawerContent, open, onClose, onClick } = props
+    const {
+        container,
+        anchor,
+        drawerContent,
+        open,
+        onClose,
+        onClick,
+        ModalProps,
+        PaperProps,
+        BackdropProps,
+        style
+    } = props
+    const paperStyle = PaperProps.style
+    const propsStyle = style
+    const reqdStyle = { position: 'absolute' }
+    const _style = { ...paperStyle, ...propsStyle, ...reqdStyle }
 
     const anchorTransformMap = {
         left: {
@@ -29,13 +44,17 @@ export const MobileDrawer = (props) => {
                 onClose={onClose}
                 onClick={onClick}
                 elevation={5}
-                PaperProps={{ style: { position: 'absolute' } }}
-                BackdropProps={{ style: { position: 'absolute' } }}
+                PaperProps={{ ...PaperProps, style: { ..._style } }}
+                BackdropProps={{
+                    ...BackdropProps,
+                    style: { position: 'absolute' }
+                }}
                 ModalProps={{
                     style: { position: 'absolute' },
                     // Disabling backdrop for now because it bleeds into my desktop render :-/
                     // TODO: make backdrop sensitive to breakpoints.
-                    hideBackdrop: true
+                    hideBackdrop: true,
+                    ...ModalProps
                 }}
                 SlideProps={{
                     direction: anchorTransformMap[anchor].slideToward
