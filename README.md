@@ -30,23 +30,24 @@
 
 Let's disrupt the youtube video tutorial scene a bit. :-)
 
-I'm grooving on React these days and want a cool place to collect my learning experience from various tutorials I complete.  There's a ton of good instructional content online, but I want something that allows me to snapshot the journey at key points in the instruction.  I come up with this:
+I'm grooving on React these days and want a cool place to collect my learning experience from tutorials I complete.  There's a ton of good instructional content online, but I want to snapshot the code and bookmark the video timetag at key points in the instruction.  I come up with this:
 
 ![alt](docs/img/ui-landing-2.0.png)
 
-It accommodates different learning styles as described on the landing page:
+It accommodates different learning styles: dabbler, motivated student, and seeker of specific knowledge.
+(It stills needs a search window, but that is in the plan.)
 
 ![alt](docs/img/ui-landing-2.0-all.png)
 
-It features a slide-out drawer that allows you to select a given tutorial to explore.
+Select from 25+ tutorials using a slide-out drawer.
 
 ![alt](docs/img/ui-slideout-2.0.png)
 
-Users may view one or more solved problems from a tutorial and watch the related video for that problem or drill down into the code itself on github:
+View solved problems or work through an instructional progression with video and code links nearby for reference:
 
 ![alt](docs/img/ui-mobile-demo.png)
 
-The demos are live and reflect specific curriculum goals:
+Demos are live and reflect specific curriculum goals:
 
 ![alt](docs/img/ui-mobile-examples.png)
 
@@ -121,13 +122,13 @@ This little project has become exactly what I've hoped for ... a vehicle for inc
 
 The landing page is clearly optimized for desktop.  On smaller screens, the initial content is very text-centric.  
 
-I want there to be some clear indicator that if you continue to scroll down, you'll find more of the narrative.  I'd like there to be more visual interest as well to entice people to explore and dwell.
+I want an enticing indicator of scroll-worthy content beyond the landing page so visitors explore and linger.
 
-So I come up with this, using some of the breakpoint fu I learned from Anothny Sistilli's Material-UI series.
+Using some breakpoint-sensitive styling fu from Anothny Sistilli's Material-UI series, I create this:
 
 ![alt](docs/img/ui-responsive-comparison.png)
 
-Margins have been trimmed down for mobile (creating space for tutorial card images) and the button width is now full screen for smaller devices.
+Margins and typeface size scale down a tad for mobile (creating space for colorful tutorial cards above the fold) plus the 'Getting Started' button width is now full screen on smaller devices.
 
 Here's the styling and code that makes this possible:
 
