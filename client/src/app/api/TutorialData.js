@@ -162,6 +162,7 @@ import { App as MaterialUIDrawer4 } from '../../tutorials/sistilli-material-ui/2
 import { App as MaterialUIDrawer5 } from '../../tutorials/sistilli-material-ui/21-drawer/5-withRouter/App'
 import { App as MaterialUIDrawer6 } from '../../tutorials/sistilli-material-ui/21-drawer/6-container/App'
 import { App as MaterialUIDrawer7 } from '../../tutorials/sistilli-material-ui/21-drawer/7-responsive/App'
+import { App as MaterialUIDrawer8 } from '../../tutorials/sistilli-material-ui/21-drawer/8-nested/App'
 
 import { App as AsHooks1 } from '../../tutorials/sistilli-hooks/1-class-worldview/App'
 import { App as AsHooks2 } from '../../tutorials/sistilli-hooks/2-hooks-version/App'
@@ -4170,6 +4171,23 @@ const TutorialData = [
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIDrawer7 />
+                    },
+                    {
+                        demoKey: 'material-ui-drawer-8',
+                        primaryText: 'Bonus:',
+                        secondaryText: 'nested drawer',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/CjFWbEOcq-Y?t=166',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/21-drawer/8-nested',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <MaterialUIDrawer8 />
                     }
                 ]
             }
