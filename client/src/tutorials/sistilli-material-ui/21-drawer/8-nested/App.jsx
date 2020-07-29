@@ -82,9 +82,17 @@ export const App = (props) => {
             // border: '1px solid red'
         }
     }))
-    const classes = useStyles()
-    const drawerWidth = 140
 
+    // Set static width to avoid dynamic sizing.
+    const drawerWidth = 190
+
+    /* eslint-disable no-undef */
+    const _PaperProps =
+        typeof drawerWidth !== 'undefined'
+            ? { style: { width: `${drawerWidth}px` } }
+            : null
+
+    const classes = useStyles()
     return (
         <>
             <BrowserRouter>
@@ -101,17 +109,13 @@ export const App = (props) => {
                         anchor={drawerAnchor}
                         data={pages}
                         setDimensions={setDrawerDimensions}
-                        // Weirdly, all Mui drawers know about 'onClose', even though
-                        // it's irrelevant for permanent drawers which are always open.
                         onClose={handleDrawerClose}
                         MobileProps={{
                             container: container,
                             open: openDrawer,
                             onOpen: handleDrawerOpen
                         }}
-                        PaperProps={{
-                            style: { width: `${drawerWidth}px` }
-                        }}
+                        PaperProps={_PaperProps} // controls drawer width
                     />
                     <ResponsiveContent
                         isDesktop={isDesktop}
