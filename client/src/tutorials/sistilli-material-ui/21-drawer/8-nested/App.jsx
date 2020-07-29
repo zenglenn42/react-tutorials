@@ -75,7 +75,7 @@ export const App = (props) => {
         }
     }))
     const classes = useStyles()
-    const drawerWidth = 150
+    const drawerWidth = 140
 
     return (
         <>
