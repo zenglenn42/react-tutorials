@@ -6,6 +6,38 @@ import { List } from '@material-ui/core'
 import DrawerItem from './DrawerItem'
 import { pageToTitle } from './helpers'
 
+let savedScrollTop = null
+function PersistScroll(props) {
+    const { children } = props
+    const rootRef = React.useRef()
+
+    React.useEffect(() => {
+        const parent = rootRef.current ? rootRef.current.parentElement : null
+        const activeElement = document.querySelector('.drawer-active')
+
+        if (!parent || !activeElement || !activeElement.scrollIntoView) {
+            return undefined
+        }
+
+        const activeBox = activeElement.getBoundingClientRect()
+
+        if (savedScrollTop === null || activeBox.top - savedScrollTop < 0) {
+            // Center the selected item in the list container.
+            activeElement.scrollIntoView()
+            // Fix a Chrome issue, reset the tabbable ring back to the top of the document.
+            document.body.scrollIntoView()
+        } else {
+            parent.scrollTop = savedScrollTop
+        }
+
+        return () => {
+            savedScrollTop = parent.scrollTop
+        }
+    }, [])
+
+    return <div ref={rootRef}>{children}</div>
+}
+
 const renderDrawerItems = (options) => {
     const { pages, ...params } = options
     return (
@@ -102,12 +134,14 @@ export const DrawerList = (props) => {
 
     return (
         <div ref={listRef}>
-            {renderDrawerItems({
-                pages,
-                activePage,
-                depth: 0,
-                onLeafItemClick
-            })}
+            <PersistScroll>
+                {renderDrawerItems({
+                    pages,
+                    activePage,
+                    depth: 0,
+                    onLeafItemClick
+                })}
+            </PersistScroll>
         </div>
     )
 }

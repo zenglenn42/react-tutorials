@@ -32,5 +32,30 @@ export const drawerData = [
                 }
             }
         ]
+    },
+    {
+        pathname: '/components',
+        icon: <ArrowDropDownIcon />,
+        children: [
+            {
+                pathname: '/components',
+                subheader: '/components/layout',
+                icon: <ArrowDropDownIcon />,
+                children: [
+                    { pathname: '/components/box' },
+                    { pathname: '/components/container' }
+                ]
+            },
+            {
+                pathname: '/components',
+                subheader: '/components/inputs',
+                icon: <ArrowDropDownIcon />,
+                children: [
+                    { pathname: '/components/buttons' },
+                    { pathname: '/components/button-group' },
+                    { pathname: '/components/pickers', title: 'Date / Time' }
+                ]
+            }
+        ]
     }
 ]

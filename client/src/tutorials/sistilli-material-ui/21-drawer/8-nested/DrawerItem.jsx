@@ -140,11 +140,11 @@ export default function DrawerItem(props) {
     return (
         <ListItem
             component={Button}
-            classes={{
-                root: classes.button,
-                // text: classes.buttonText,
-                button: classes.buttonPadding
-            }}
+            // classes={{
+            //     root: classes.button,
+            //     // text: classes.buttonText,
+            //     button: classes.buttonPadding
+            // }}
             className={classes.itemLeaf}
             disableGutters
             {...other}
@@ -152,6 +152,7 @@ export default function DrawerItem(props) {
             {extHref ? (
                 <Link
                     component={Button}
+                    activeClassName={`drawer-active ${classes.active}`}
                     underline="none"
                     style={style}
                     className={clsx(classes.buttonLeaf, `depth-${depth}`)}
@@ -168,6 +169,8 @@ export default function DrawerItem(props) {
             ) : (
                 <Link
                     component={RouterLink}
+                    disableTouchRipple
+                    activeClassName={`drawer-active ${classes.active}`}
                     underline="none"
                     style={style}
                     to={href}
