@@ -1,31 +1,35 @@
-// import React from 'react'
-// import { Home, ContactMail, Person } from '@material-ui/icons'
+import React from 'react'
+import { Home, ContactMail, Person } from '@material-ui/icons'
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 
 export const drawerData = [
     {
         title: 'Home',
-        pathname: '/'
+        pathname: '/',
+        icon: <Home />
     },
     {
-        pathname: '/contact'
+        pathname: '/contact',
+        icon: <ContactMail />
     },
     {
         pathname: '/about',
+        icon: <ArrowDropDownIcon />,
         children: [
             {
                 pathname: 'https://en.wikipedia.org/wiki/Lorem_ipsum',
-                title: 'Lorem Ipsum',
+                title: 'About lorem',
                 linkProps: {
-                    'target': '_blank'
+                    target: '_blank'
                 }
             },
             {
                 pathname: 'https://zenglenn42.github.io/portfolio/about.html',
-                title: 'Me',
+                title: 'About me',
                 linkProps: {
-                    'target': '_blank'
+                    target: '_blank'
                 }
             }
         ]
-    },
+    }
 ]

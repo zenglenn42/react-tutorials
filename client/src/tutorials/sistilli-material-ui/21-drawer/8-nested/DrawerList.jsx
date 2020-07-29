@@ -9,7 +9,11 @@ import { pageToTitle } from './helpers'
 const renderNavItems = (options) => {
     const { pages, ...params } = options
     return (
-        <List style={{ paddingBottom: 0 }}>
+        <List
+            style={{
+                paddingBottom: 0
+            }}
+        >
             {pages.reduce(
                 // eslint-disable-next-line no-use-before-define
                 (items, page) =>
@@ -30,6 +34,7 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
     }
 
     const title = pageToTitle(page)
+    const icon = page.icon
     if (page.children && page.children.length > 1) {
         const topLevel = activePage
             ? activePage.pathname.indexOf(`${page.pathname}/`) === 0
@@ -42,6 +47,7 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
                 topLevel={topLevel && !page.subheader}
                 openImmediately={topLevel || Boolean(page.subheader)}
                 title={title}
+                icon={icon}
             >
                 {renderNavItems({
                     pages: page.children,
@@ -66,6 +72,7 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
                 title={title}
                 href={page.pathname}
                 onClick={params.onClose}
+                icon={icon}
             />
         )
     }

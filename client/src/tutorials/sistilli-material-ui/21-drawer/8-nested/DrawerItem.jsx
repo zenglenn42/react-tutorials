@@ -5,13 +5,24 @@ import { makeStyles } from '@material-ui/core/styles'
 import ListItem from '@material-ui/core/ListItem'
 import Button from '@material-ui/core/Button'
 import Collapse from '@material-ui/core/Collapse'
-import { Link, useTheme } from '@material-ui/core'
+import {
+    Link,
+    useTheme,
+    ListItemIcon,
+    ListItemText,
+    Typography
+} from '@material-ui/core'
 import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
+    listIconWidth: {
+        minWidth: theme.spacing(6)
+    },
     item: {
         // backgroundColor: 'grey',
-        display: 'block',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
         paddingTop: 0,
         paddingBottom: 0,
         textTransform: 'none',
@@ -31,21 +42,20 @@ const useStyles = makeStyles((theme) => ({
     },
     buttonBoldText: {
         textTransform: 'none',
-        fontWeight: 'bold'
-        // fontWeight: theme.typography.fontWeightRegular,
-        // '&.depth-0': {
-        //   fontWeight: theme.typography.fontWeightMedium,
-        // }
+        fontWeight: 'bold',
+        color: 'black'
     },
     button: {
-        display: 'block',
+        display: 'flex',
         letterSpacing: 0,
         textTransform: 'none',
         width: '100%',
         textAlign: 'left',
         paddingLeft: 0,
         paddingTop: 0,
-        paddingBottom: 0
+        paddingBottom: 0,
+        justifyContent: 'flex-start',
+        alignItems: 'center'
     },
     buttonLeaf: {
         //backgroundColor: 'red',
@@ -76,6 +86,7 @@ export default function DrawerItem(props) {
         topLevel = false,
         title,
         linkProps,
+        icon,
         ...other
     } = props
     const classes = useStyles()
@@ -91,20 +102,35 @@ export default function DrawerItem(props) {
 
     if (!href) {
         return (
-            <ListItem className={classes.item} disableGutters {...other}>
-                <Button
-                    activeClassName={`drawer-active ${classes.active}`}
+            <>
+                <Link
+                    component={Button}
+                    underline="none"
+                    style={style}
+                    className={clsx(classes.buttonLeaf, `depth-${depth}`)}
+                    onClick={handleClick}
+                    {...linkProps}
                     classes={{
                         root: classes.button,
-                        label: classes.buttonBoldText
-                        // label: topLevel ? 'algolia-lvl0' : ''
+                        text: classes.buttonText
                     }}
-                    onClick={handleClick}
-                    style={style}
-                    variant="text"
                 >
-                    {title}
-                </Button>
+                    <ListItemIcon
+                        classes={{
+                            root: classes.listIconWidth
+                        }}
+                    >
+                        {icon}
+                    </ListItemIcon>
+                    <Typography
+                        variant="body1"
+                        classes={{
+                            root: classes.buttonBoldText
+                        }}
+                    >
+                        {title}
+                    </Typography>
+                </Link>
                 <Collapse
                     style={{ marginTop: theme.spacing(-1) }}
                     in={open}
@@ -113,7 +139,7 @@ export default function DrawerItem(props) {
                 >
                     {children}
                 </Collapse>
-            </ListItem>
+            </>
         )
     }
 
@@ -124,7 +150,8 @@ export default function DrawerItem(props) {
             component={Button}
             classes={{
                 root: classes.button,
-                text: classes.buttonText
+                text: classes.buttonText,
+                button: classes.buttonPadding
             }}
             className={classes.itemLeaf}
             disableGutters
@@ -158,6 +185,13 @@ export default function DrawerItem(props) {
                     }}
                     {...linkProps}
                 >
+                    <ListItemIcon
+                        classes={{
+                            root: classes.listIconWidth
+                        }}
+                    >
+                        {icon}
+                    </ListItemIcon>
                     {title}
                 </Link>
             )}
