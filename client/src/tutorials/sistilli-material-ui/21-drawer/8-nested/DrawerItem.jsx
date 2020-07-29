@@ -140,11 +140,11 @@ export default function DrawerItem(props) {
     return (
         <ListItem
             component={Button}
-            // classes={{
-            //     root: classes.button,
-            //     // text: classes.buttonText,
-            //     button: classes.buttonPadding
-            // }}
+            classes={{
+                root: classes.button,
+                // text: classes.buttonText,
+                button: classes.buttonPadding
+            }}
             className={classes.itemLeaf}
             disableGutters
             {...other}
