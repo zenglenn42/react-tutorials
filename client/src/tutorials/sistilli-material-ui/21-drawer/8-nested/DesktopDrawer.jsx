@@ -12,7 +12,9 @@ export const DesktopDrawer = (props) => {
         <MuiDrawer
             variant="permanent"
             anchor={anchor}
-            open={true} // this really is the essence of a perm drawer anyway
+            open={true} // Drawer is always visible on 'Desktop'.
+            // FEATURE: Add support for persistent variant
+            //          with sensitivity to open and onClose.
             PaperProps={{ ...PaperProps, style: { ..._style } }}
         >
             {drawerContent}

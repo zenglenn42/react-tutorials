@@ -5,13 +5,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import ListItem from '@material-ui/core/ListItem'
 import Button from '@material-ui/core/Button'
 import Collapse from '@material-ui/core/Collapse'
-import {
-    Link,
-    useTheme,
-    ListItemIcon,
-    ListItemText,
-    Typography
-} from '@material-ui/core'
+import { Link, useTheme, ListItemIcon, Typography } from '@material-ui/core'
 import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
@@ -82,18 +76,17 @@ export default function DrawerItem(props) {
         depth,
         href,
         onClick,
-        openImmediately = true,
-        topLevel = false,
+        openImmediately = false,
         title,
         linkProps,
         icon,
         ...other
     } = props
     const classes = useStyles()
-    const [open, setOpen] = React.useState(openImmediately)
+    const [sublistOpen, setSublistOpen] = React.useState(openImmediately)
 
-    const handleClick = () => {
-        setOpen((oldOpen) => !oldOpen)
+    const handleSublistToggle = () => {
+        setSublistOpen((prevOpen) => !prevOpen)
     }
 
     const style = {
@@ -108,11 +101,10 @@ export default function DrawerItem(props) {
                     underline="none"
                     style={style}
                     className={clsx(classes.buttonLeaf, `depth-${depth}`)}
-                    onClick={handleClick}
+                    onClick={handleSublistToggle}
                     {...linkProps}
                     classes={{
-                        root: classes.button,
-                        text: classes.buttonText
+                        root: classes.button
                     }}
                 >
                     <ListItemIcon
@@ -133,7 +125,7 @@ export default function DrawerItem(props) {
                 </Link>
                 <Collapse
                     style={{ marginTop: theme.spacing(-1) }}
-                    in={open}
+                    in={sublistOpen}
                     timeout="auto"
                     unmountOnExit
                 >
@@ -150,7 +142,7 @@ export default function DrawerItem(props) {
             component={Button}
             classes={{
                 root: classes.button,
-                text: classes.buttonText,
+                // text: classes.buttonText,
                 button: classes.buttonPadding
             }}
             className={classes.itemLeaf}
@@ -164,10 +156,11 @@ export default function DrawerItem(props) {
                     style={style}
                     className={clsx(classes.buttonLeaf, `depth-${depth}`)}
                     href={extHref}
+                    onClick={onClick}
                     {...linkProps}
                     classes={{
-                        root: classes.button,
-                        text: classes.buttonText
+                        root: classes.button
+                        //text: classes.buttonText
                     }}
                 >
                     {title}
@@ -178,10 +171,11 @@ export default function DrawerItem(props) {
                     underline="none"
                     style={style}
                     to={href}
+                    onClick={onClick}
                     className={clsx(classes.buttonLeaf, `depth-${depth}`)}
                     classes={{
-                        root: classes.button,
-                        text: classes.buttonText
+                        root: classes.button
+                        //text: classes.buttonText
                     }}
                     {...linkProps}
                 >
@@ -206,6 +200,5 @@ DrawerItem.propTypes = {
     linkProps: PropTypes.object,
     onClick: PropTypes.func,
     openImmediately: PropTypes.bool,
-    title: PropTypes.string.isRequired,
-    topLevel: PropTypes.bool
+    title: PropTypes.string.isRequired
 }

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Home, ContactMail, Person } from '@material-ui/icons'
+import { Home, ContactMail } from '@material-ui/icons'
+// import { Person } from '@material-ui/icons'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 
 export const drawerData = [

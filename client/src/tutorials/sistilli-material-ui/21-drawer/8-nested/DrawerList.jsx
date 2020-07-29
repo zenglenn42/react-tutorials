@@ -74,7 +74,8 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
                 depth={depth}
                 key={title}
                 href={page.pathname}
-                onClick={params.onClose}
+                // Typically triggers mobile menu close.  Ignored on desktop.
+                onClick={params.onLeafItemClick}
             />
         )
     }
@@ -83,7 +84,7 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
 }
 
 export const DrawerList = (props) => {
-    const { pages, setDimensions } = props
+    const { pages, setDimensions, onLeafItemClick } = props
     const [activePage, setActivePage] = useState({ pathname: '/' })
 
     const _listRef = useRef()
@@ -101,7 +102,12 @@ export const DrawerList = (props) => {
 
     return (
         <div ref={listRef}>
-            {renderDrawerItems({ pages, activePage, depth: 0 })}
+            {renderDrawerItems({
+                pages,
+                activePage,
+                depth: 0,
+                onLeafItemClick
+            })}
         </div>
     )
 }

@@ -8,7 +8,7 @@ export const MobileDrawer = (props) => {
         drawerContent,
         open,
         onClose,
-        onClick,
+        // onOpen,  // FEATURE: Add support for SwipeableDrawer
         ModalProps,
         PaperProps,
         BackdropProps,
@@ -24,10 +24,10 @@ export const MobileDrawer = (props) => {
             slideToward: 'right' // 'top' works too
         },
         top: {
-            slideToward: 'bottom'
+            slideToward: 'down'
         },
         right: {
-            slideToward: 'bottom' // work around animation jitter bug
+            slideToward: 'down' // work around animation jitter bug
         },
         bottom: {
             slideToward: 'right' // work around animation jitter bug
@@ -37,12 +37,12 @@ export const MobileDrawer = (props) => {
     return (
         <>
             <MuiDrawer
-                variant="temporary" // Doesn't seem to be strictly necessary.
+                variant="temporary"
                 container={container}
                 anchor={anchor}
                 open={open}
                 onClose={onClose}
-                onClick={onClick}
+                // onOpen={onClose} // FEATURE: Add support for SwipeableDrawer
                 elevation={5}
                 PaperProps={{ ...PaperProps, style: { ..._style } }}
                 BackdropProps={{
@@ -50,11 +50,9 @@ export const MobileDrawer = (props) => {
                     style: { position: 'absolute' }
                 }}
                 ModalProps={{
-                    style: { position: 'absolute' },
-                    // Disabling backdrop for now because it bleeds into my desktop render :-/
-                    // TODO: make backdrop sensitive to breakpoints.
-                    hideBackdrop: true,
-                    ...ModalProps
+                    ...ModalProps,
+                    style: { position: 'absolute' }
+                    // hideBackdrop: false,  // Debug modal backdrop bleeding into desktop.
                 }}
                 SlideProps={{
                     direction: anchorTransformMap[anchor].slideToward

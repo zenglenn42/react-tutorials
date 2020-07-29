@@ -38,11 +38,19 @@ export const App = (props) => {
     const isDesktop = JSON.stringify(useIsDesktop(bpUp)).includes('true')
     const isMobile = !isDesktop
 
-    // Remember the open/closed state of the mobile drawer.
+    // Remember the open/closed state of the drawer (especially on mobile)
 
-    const [openMobileDrawer, setOpenMobileDrawer] = useState(false)
-    const handleMobileDrawerToggle = () => {
-        setOpenMobileDrawer(!openMobileDrawer)
+    const [openDrawer, setOpenDrawer] = useState(false)
+    const handleDrawerOpen = () => {
+        setOpenDrawer(true)
+    }
+    const handleDrawerClose = () => {
+        setOpenDrawer(false)
+    }
+    const handleDrawerToggle = () => {
+        setOpenDrawer((prevState) => {
+            return !prevState
+        })
     }
 
     // Track dimensions of the nav drawer for margin hints,
@@ -83,7 +91,7 @@ export const App = (props) => {
                 <ResponsiveAppBar
                     isMobile={isMobile}
                     text={appBarText}
-                    onMenuClick={handleMobileDrawerToggle}
+                    onMenuClick={handleDrawerToggle}
                     menuSide={drawerAnchor}
                     style={{ position: 'relative' }}
                 />
@@ -93,11 +101,13 @@ export const App = (props) => {
                         anchor={drawerAnchor}
                         data={pages}
                         setDimensions={setDrawerDimensions}
+                        // Weirdly, all Mui drawers know about 'onClose', even though
+                        // it's irrelevant for permanent drawers which are always open.
+                        onClose={handleDrawerClose}
                         MobileProps={{
                             container: container,
-                            open: openMobileDrawer,
-                            onClose: handleMobileDrawerToggle,
-                            onClick: handleMobileDrawerToggle
+                            open: openDrawer,
+                            onOpen: handleDrawerOpen
                         }}
                         PaperProps={{
                             style: { width: `${drawerWidth}px` }
