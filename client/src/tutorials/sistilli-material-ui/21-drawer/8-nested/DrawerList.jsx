@@ -6,7 +6,7 @@ import { List } from '@material-ui/core'
 import DrawerItem from './DrawerItem'
 import { pageToTitle } from './helpers'
 
-const renderNavItems = (options) => {
+const renderDrawerItems = (options) => {
     const { pages, ...params } = options
     return (
         <List
@@ -34,22 +34,24 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
     }
 
     const title = pageToTitle(page)
-    const icon = page.icon
+    const icon = page.icon // optional
+
     if (page.children && page.children.length > 1) {
         const topLevel = activePage
             ? activePage.pathname.indexOf(`${page.pathname}/`) === 0
             : false
+        // push collapsible parent node and related children
         items.push(
             <DrawerItem
+                title={title}
+                icon={icon}
                 linkProps={page.linkProps}
                 depth={depth}
                 key={title}
                 topLevel={topLevel && !page.subheader}
                 openImmediately={topLevel || Boolean(page.subheader)}
-                title={title}
-                icon={icon}
             >
-                {renderNavItems({
+                {renderDrawerItems({
                     pages: page.children,
                     activePage,
                     depth: depth + 1,
@@ -58,7 +60,7 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
             </DrawerItem>
         )
     } else {
-        const title = pageToTitle(page)
+        // push leaf node, an actual route or external link
         page =
             page.children && page.children.length === 1
                 ? page.children[0]
@@ -66,13 +68,13 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
 
         items.push(
             <DrawerItem
+                title={title}
+                icon={icon}
                 linkProps={page.linkProps}
                 depth={depth}
                 key={title}
-                title={title}
                 href={page.pathname}
                 onClick={params.onClose}
-                icon={icon}
             />
         )
     }
@@ -81,7 +83,7 @@ function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
 }
 
 export const DrawerList = (props) => {
-    const { pages, setDimensions, history } = props
+    const { pages, setDimensions } = props
     const [activePage, setActivePage] = useState({ pathname: '/' })
 
     const _listRef = useRef()
@@ -99,7 +101,7 @@ export const DrawerList = (props) => {
 
     return (
         <div ref={listRef}>
-            {renderNavItems({ pages, activePage, history, depth: 0 })}
+            {renderDrawerItems({ pages, activePage, depth: 0 })}
         </div>
     )
 }
