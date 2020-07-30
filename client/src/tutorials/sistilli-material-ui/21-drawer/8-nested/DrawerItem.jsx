@@ -12,7 +12,7 @@ import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp'
 
 const useStyles = makeStyles((theme) => ({
     listIconWidth: {
-        minWidth: theme.spacing(6.5)
+        minWidth: theme.spacing(6)
     },
     item: {
         // backgroundColor: 'grey',
@@ -87,7 +87,7 @@ export default function DrawerItem(props) {
     }
 
     const style = {
-        paddingLeft: theme.spacing(2) * (depth + 1)
+        paddingLeft: theme.spacing(2.5) * (depth + 1)
     }
 
     if (!href) {
@@ -104,13 +104,15 @@ export default function DrawerItem(props) {
                         root: classes.button
                     }}
                 >
-                    <ListItemIcon
-                        classes={{
-                            root: classes.listIconWidth
-                        }}
-                    >
-                        {icon}
-                    </ListItemIcon>
+                    {icon && (
+                        <ListItemIcon
+                            classes={{
+                                root: classes.listIconWidth
+                            }}
+                        >
+                            {icon}
+                        </ListItemIcon>
+                    )}
                     <Typography
                         variant="body1"
                         classes={{
@@ -150,7 +152,7 @@ export default function DrawerItem(props) {
             {extHref ? (
                 <Link
                     component={Button}
-                    // activeClassName={`drawer-active ${classes.active}`} 
+                    // activeClassName={`drawer-active ${classes.active}`}
                     underline="none"
                     style={style}
                     className={clsx(classes.buttonLeaf, `depth-${depth}`)}
@@ -162,6 +164,15 @@ export default function DrawerItem(props) {
                         //text: classes.buttonText
                     }}
                 >
+                    {icon && (
+                        <ListItemIcon
+                            classes={{
+                                root: classes.listIconWidth
+                            }}
+                        >
+                            {icon}
+                        </ListItemIcon>
+                    )}
                     {title}
                 </Link>
             ) : (
@@ -179,13 +190,15 @@ export default function DrawerItem(props) {
                     }}
                     {...linkProps}
                 >
-                    <ListItemIcon
-                        classes={{
-                            root: classes.listIconWidth
-                        }}
-                    >
-                        {icon}
-                    </ListItemIcon>
+                    {icon && (
+                        <ListItemIcon
+                            classes={{
+                                root: classes.listIconWidth
+                            }}
+                        >
+                            {icon}
+                        </ListItemIcon>
+                    )}
                     {title}
                 </Link>
             )}
