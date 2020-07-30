@@ -20,7 +20,9 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Drawer = (props) => {
-    const { history } = props
+    const { history, staticContext, ...rest } = props
+    // Strip staticContext from props to fix 'unknown prop' warning.
+    // https://github.com/ReactTraining/react-router/issues/4683
     const classes = useStyles()
     const itemsList = [
         {
@@ -40,7 +42,7 @@ const Drawer = (props) => {
         }
     ]
     return (
-        <MUIDrawer variant="permanent" className={classes.drawer} {...props}>
+        <MUIDrawer variant="permanent" className={classes.drawer} {...rest}>
             <List className={classes.list} dense>
                 {itemsList.map((item, index) => {
                     const { text, icon, onClick } = item
