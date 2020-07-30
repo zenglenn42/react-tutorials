@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function RecipeReviewCard(props) {
-    const { imageUrl } = props
+    const { imageUrl, ...rest } = props
     const classes = useStyles()
     const [expanded, setExpanded] = React.useState(false)
 
@@ -49,7 +49,7 @@ export default function RecipeReviewCard(props) {
     }
 
     return (
-        <Card className={classes.root} {...props}>
+        <Card className={classes.root} {...rest}>
             <CardHeader
                 avatar={
                     <Avatar aria-label="recipe" className={classes.avatar}>

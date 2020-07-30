@@ -19,11 +19,11 @@ const useStyles = makeStyles((theme) => ({
     }
 }))
 
-export default function RecipeReviewCard(props) {
+export default function RecipeReviewCard({ imageUrl, ...rest }) {
     const classes = useStyles()
 
     return (
-        <Card className={classes.root} {...props}>
+        <Card className={classes.root} {...rest}>
             <CardHeader
                 avatar={
                     <Avatar aria-label="recipe" className={classes.avatar}>

@@ -27,11 +27,11 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function RecipeReviewCard(props) {
-    const { imageUrl } = props
+    const { imageUrl, ...rest } = props
     const classes = useStyles()
 
     return (
-        <Card className={classes.root} {...props}>
+        <Card className={classes.root} {...rest}>
             <CardHeader className={classes.header} />
             <CardMedia
                 className={classes.media}
