@@ -8,6 +8,7 @@ import {
     makeStyles,
     Divider
 } from '@material-ui/core'
+import { v4 as getKey } from 'uuid'
 
 const useStyles = makeStyles((theme) => ({
     drawerItems: {
@@ -42,7 +43,7 @@ export const ContainerDrawer = (props) => {
             // },
         },
         top: {
-            slideToward: 'bottom'
+            slideToward: 'down'
             // entering: {
             //     transform: "translateY(0%)",
             //     origin: "center top",
@@ -53,7 +54,7 @@ export const ContainerDrawer = (props) => {
             // },
         },
         right: {
-            slideToward: 'bottom' // work around bug
+            slideToward: 'down' // work around bug
 
             // **BROKEN**
             // slideToward: 'left', // yields animation jitter
@@ -129,11 +130,11 @@ export const ContainerDrawer = (props) => {
                     {drawerItems.map((item, index) => {
                         const { text, icon, divider } = item
                         return divider ? (
-                            <Divider />
+                            <Divider key={getKey()} />
                         ) : (
                             <ListItem
                                 button
-                                key={text}
+                                key={getKey()}
                                 onClick={onDrawerItemClick}
                             >
                                 <ListItemIcon>{icon}</ListItemIcon>
