@@ -41,7 +41,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         letterSpacing: 0,
         textTransform: 'none',
-        width: '100%',
         textAlign: 'left',
         paddingLeft: 0,
         justifyContent: 'flex-start',
