@@ -10,26 +10,24 @@ import clsx from 'clsx'
 
 const useStyles = makeStyles((theme) => ({
     listIconWidth: {
-        minWidth: theme.spacing(6)
+        minWidth: theme.spacing(6.5)
     },
     item: {
         // backgroundColor: 'grey',
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        paddingTop: 0,
-        paddingBottom: 0,
         textTransform: 'none',
         color: 'black'
     },
     itemLeaf: {
         // backgroundColor: 'yellow',
         display: 'block',
-        paddingTop: 0,
-        paddingBottom: 0,
         color: 'black',
         textDecoration: 'none',
-        textTransform: 'none'
+        textTransform: 'none',
+        paddingTop: 0,
+        paddingBottom: theme.spacing(1, 0)
     },
     buttonText: {
         textTransform: 'none'
@@ -37,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     buttonBoldText: {
         textTransform: 'none',
         fontWeight: 'bold',
-        color: 'black'
+        fontSize: '96%'
     },
     button: {
         display: 'flex',
@@ -46,23 +44,21 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
         textAlign: 'left',
         paddingLeft: 0,
-        paddingTop: 0,
-        paddingBottom: 0,
         justifyContent: 'flex-start',
-        alignItems: 'center'
+        alignItems: 'center',
+        width: '100%'
     },
     buttonLeaf: {
         //backgroundColor: 'red',
         letterSpacing: 0,
         textDecoration: 'none',
         width: '100%',
-        paddingTop: 0,
-        paddingBottom: 0,
         color: 'black'
     },
     collapse: {
         paddingBottom: 0
     },
+    // This doesn't seem to have an effect as yet.
     active: {
         color: theme.palette.primary.main,
         fontWeight: theme.typography.fontWeightMedium
@@ -141,9 +137,9 @@ export default function DrawerItem(props) {
         <ListItem
             component={Button}
             classes={{
-                root: classes.button,
+                root: classes.button
                 // text: classes.buttonText,
-                button: classes.buttonPadding
+                // button: classes.buttonPadding
             }}
             className={classes.itemLeaf}
             disableGutters
