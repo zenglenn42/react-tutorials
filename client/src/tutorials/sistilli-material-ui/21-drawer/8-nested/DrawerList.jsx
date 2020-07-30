@@ -118,7 +118,9 @@ function reduceChildRoutes({ activePage, items, page, depth, key, ...params }) {
 
 export const DrawerList = (props) => {
     const { pages, setDimensions, onLeafItemClick } = props
-    const [activePage, setActivePage] = useState({ pathname: '/' })
+    //const [activePage, setActivePage] = useState({ pathname: '/' })
+    //temporarily comment out this since we're not mutating active page yet
+    const [activePage] = useState({ pathname: '/' })
 
     const _listRef = useRef()
     const [listRef, setListRef] = useState(_listRef)
