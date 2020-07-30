@@ -61,7 +61,7 @@ const renderDrawerItems = (options) => {
     )
 }
 
-function reduceChildRoutes({ activePage, items, page, depth, ...params }) {
+function reduceChildRoutes({ activePage, items, page, depth, key, ...params }) {
     if (page.displayNav === false) {
         return items
     }
