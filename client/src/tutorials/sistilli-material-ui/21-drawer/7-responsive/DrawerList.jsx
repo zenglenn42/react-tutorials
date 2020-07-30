@@ -8,6 +8,7 @@ import {
     ListItemText,
     makeStyles
 } from '@material-ui/core'
+import { v4 as getKey } from 'uuid'
 
 const useStyles = makeStyles((theme) => ({
     list: {
@@ -42,9 +43,9 @@ export const DrawerList = withRouter((props) => {
                         ? () => history.push(routepath)
                         : () => {}
                     return divider ? (
-                        <Divider />
+                        <Divider key={getKey()} />
                     ) : (
-                        <ListItem button key={text} onClick={onClick}>
+                        <ListItem button key={getKey()} onClick={onClick}>
                             <ListItemIcon>{icon}</ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
