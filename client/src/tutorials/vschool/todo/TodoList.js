@@ -1,4 +1,5 @@
 import React from 'react'
+import { v4 as getKey } from 'uuid'
 import TodoItem from './TodoItem'
 import todoData from './api/TodoData'
 
@@ -25,7 +26,11 @@ class TodoList extends React.Component {
 
     render() {
         return this.state.todos.map((todo) => (
-            <TodoItem handleTodoChange={this.handleTodoChange} item={todo} />
+            <TodoItem
+                handleTodoChange={this.handleTodoChange}
+                item={todo}
+                key={getKey()}
+            />
         ))
     }
 }
