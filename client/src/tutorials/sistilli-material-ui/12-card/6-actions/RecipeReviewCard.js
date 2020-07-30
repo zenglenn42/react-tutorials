@@ -25,7 +25,8 @@ const useStyles = makeStyles((theme) => ({
     },
     media: {
         height: 0,
-        paddingTop: '56.25%' // 16:9
+        paddingTop: '56.25%', // 16:9
+        filter: 'grayscale(100%)'
     },
     avatar: {
         backgroundColor: grey[500]
@@ -58,6 +59,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function RecipeReviewCard(props) {
+    const { imageUrl, ...rest } = props
     const classes = useStyles()
     const [expanded, setExpanded] = useState(false)
 
@@ -66,14 +68,10 @@ export default function RecipeReviewCard(props) {
     }
 
     return (
-        <Card className={classes.root} {...props}>
+        <Card className={classes.root} {...rest}>
             <CardHeader className={classes.header} />
             <Divider />
-            <CardMedia
-                className={classes.media}
-                // image={imageUrl}
-                title="Paella dish"
-            />
+            <CardMedia className={classes.media} image={imageUrl} />
             <Divider />
             <CardContent className={classes.content}>
                 <Typography component="p" variant="caption">

@@ -24,7 +24,8 @@ const useStyles = makeStyles({
     },
     media: {
         height: 0,
-        paddingTop: '56.25%' // 16:9
+        paddingTop: '56.25%', // 16:9
+        filter: 'grayscale(100%)'
     },
     mediaLabel: {
         position: 'relative',
@@ -71,7 +72,7 @@ export default function ComplexCarTaxonomy(props) {
             </Typography>
             <CardMedia
                 className={classes.media}
-                // image="/assets/img/sistilli-templates/gradient.png"
+                image="/assets/img/sistilli-templates/gradient.png"
                 title="CardMedia"
             />
             <Divider />
