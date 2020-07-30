@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core'
+import { relative } from 'path'
 
 export const drawerWidth = 255
 
@@ -93,5 +94,17 @@ export const useStyles = makeStyles((theme) => ({
     scrollableListX: {
         overflowX: 'scroll',
         overflowY: 'hidden'
+    },
+    mortarboard: {
+        position: 'relative',
+        right: '29px',
+        bottom: '9px',
+        scale: '0.68',
+        transform: 'rotate(-21deg)'
+    },
+    appbarText: {
+        position: 'relative',
+        right: '20px',
+        top: '2px'
     }
 }))

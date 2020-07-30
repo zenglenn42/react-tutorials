@@ -13,6 +13,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import { FaReact as ReactIcon, FaHome } from 'react-icons/fa'
+import { GoMortarBoard as MortarBoardIcon } from 'react-icons/go'
 import Paper from '@material-ui/core/Paper'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import WorkIcon from '@material-ui/icons/Work'
@@ -116,9 +117,14 @@ export default function PersistentDrawerLeft(props) {
                             target="_blank"
                         >
                             <ReactIcon />
+                            <MortarBoardIcon className={classes.mortarboard} />
                         </IconButton>
                     </Tooltip>
-                    <Typography variant="h6" noWrap>
+                    <Typography
+                        className={classes.appbarText}
+                        variant="h6"
+                        noWrap
+                    >
                         {text || 'Persistent drawer'}
                     </Typography>
                     <div className={classes.grow} />
