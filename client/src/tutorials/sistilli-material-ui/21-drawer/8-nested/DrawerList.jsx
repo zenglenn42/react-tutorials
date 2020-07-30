@@ -5,7 +5,6 @@ import React, { useLayoutEffect, useState, useRef } from 'react'
 import { List, Divider } from '@material-ui/core'
 import DrawerItem from './DrawerItem'
 import { pageToTitle } from './helpers'
-import { v4 as getKey } from 'uuid'
 
 let savedScrollTop = null
 function PersistScroll(props) {
@@ -85,7 +84,7 @@ function reduceChildRoutes({ activePage, items, page, depth, key, ...params }) {
                 icon={icon}
                 linkProps={page.linkProps}
                 depth={depth}
-                key={getKey()}
+                key={title}
                 topLevel={topLevel && !page.subheader}
                 openImmediately={topLevel || Boolean(page.subheader)}
             >
@@ -110,7 +109,7 @@ function reduceChildRoutes({ activePage, items, page, depth, key, ...params }) {
                 icon={icon}
                 linkProps={page.linkProps}
                 depth={depth}
-                key={getKey()}
+                key={title}
                 href={page.pathname}
                 // Typically triggers mobile menu close.  Ignored on desktop.
                 onClick={params.onLeafItemClick}
