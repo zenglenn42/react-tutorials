@@ -165,7 +165,6 @@ export default function DrawerItem(props) {
             ) : (
                 <Link
                     component={RouterLink}
-                    disableTouchRipple
                     activeClassName={`drawer-active ${classes.active}`}
                     underline="none"
                     style={style}
