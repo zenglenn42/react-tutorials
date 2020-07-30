@@ -2637,7 +2637,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/4-button/1-starter',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/sistilli-material-ui/4-button/1-start',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MaterialUIButton1 />
