@@ -6,7 +6,7 @@ class TravelForm extends React.Component {
         this.state = {
             firstName: '',
             lastName: '',
-            age: null,
+            age: '',
             gender: '',
             destination: '',
             diet: {
