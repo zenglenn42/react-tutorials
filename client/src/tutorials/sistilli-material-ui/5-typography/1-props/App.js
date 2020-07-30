@@ -8,7 +8,7 @@ export const App = () => {
             <Typography align="center">align="center"</Typography>
             <Typography align="right">align="right"</Typography>
             <Typography color="secondary">color="secondary"</Typography>
-            <Typography gutterBottom="6">gutterBottom="6"</Typography>
+            <Typography gutterBottom>gutterBottom</Typography>
             <Typography noWrap={true}>
                 noWrap={'{true}'} really long line of text, really long line of
                 text, really long line of text, really long line of text, really
