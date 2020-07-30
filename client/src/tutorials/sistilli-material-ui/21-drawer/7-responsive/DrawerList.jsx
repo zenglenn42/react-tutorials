@@ -1,5 +1,6 @@
 import React, { useLayoutEffect, useState, useRef } from 'react'
 import { withRouter } from 'react-router-dom'
+import { v4 as getKey } from 'uuid'
 import {
     Divider,
     List,
@@ -42,7 +43,7 @@ export const DrawerList = withRouter((props) => {
                         ? () => history.push(routepath)
                         : () => {}
                     return divider ? (
-                        <Divider />
+                        <Divider key={getKey()}/>
                     ) : (
                         <ListItem button key={text} onClick={onClick}>
                             <ListItemIcon>{icon}</ListItemIcon>

@@ -150,7 +150,7 @@ export default function DrawerItem(props) {
             {extHref ? (
                 <Link
                     component={Button}
-                    activeClassName={`drawer-active ${classes.active}`}
+                    // activeClassName={`drawer-active ${classes.active}`} 
                     underline="none"
                     style={style}
                     className={clsx(classes.buttonLeaf, `depth-${depth}`)}
@@ -167,7 +167,7 @@ export default function DrawerItem(props) {
             ) : (
                 <Link
                     component={RouterLink}
-                    activeClassName={`drawer-active ${classes.active}`}
+                    // activeClassName={`drawer-active ${classes.active}`}
                     underline="none"
                     style={style}
                     to={href}

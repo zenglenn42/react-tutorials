@@ -14,6 +14,9 @@ export const drawerData = [
         routepath: 'contact'
     },
     {
+        divider: true
+    },
+    {
         text: 'About',
         icon: <Person />,
         routepath: '/about'

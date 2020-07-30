@@ -2,6 +2,7 @@
 // https://github.com/mui-org/material-ui/blob/next/LICENSE
 
 import React, { useLayoutEffect, useState, useRef } from 'react'
+import { v4 as getKey } from 'uuid'
 import { List, Divider } from '@material-ui/core'
 import DrawerItem from './DrawerItem'
 import { pageToTitle } from './helpers'
@@ -66,7 +67,7 @@ function reduceChildRoutes({ activePage, items, page, depth, key, ...params }) {
     }
 
     if (page.pathname === 'divider') {
-        items.push(<Divider />)
+        items.push(<Divider key={getKey()} />)
         return items
     }
 
