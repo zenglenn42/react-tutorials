@@ -1,7 +1,6 @@
 import React from 'react'
 import { Home, ContactMail } from '@material-ui/icons'
-// import { Person } from '@material-ui/icons'
-import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
+import { Person, Widgets } from '@material-ui/icons'
 
 export const drawerData = [
     {
@@ -15,7 +14,7 @@ export const drawerData = [
     },
     {
         pathname: '/about',
-        icon: <ArrowDropDownIcon />,
+        icon: <Person />,
         children: [
             {
                 pathname: 'https://en.wikipedia.org/wiki/Lorem_ipsum',
@@ -33,14 +32,14 @@ export const drawerData = [
             }
         ]
     },
+    { pathname: 'divider' },
     {
         pathname: '/components',
-        icon: <ArrowDropDownIcon />,
+        icon: <Widgets />,
         children: [
             {
                 pathname: '/components',
                 subheader: '/components/layout',
-                icon: <ArrowDropDownIcon />,
                 children: [
                     { pathname: '/components/box' },
                     { pathname: '/components/container' }
@@ -49,7 +48,6 @@ export const drawerData = [
             {
                 pathname: '/components',
                 subheader: '/components/inputs',
-                icon: <ArrowDropDownIcon />,
                 children: [
                     { pathname: '/components/buttons' },
                     { pathname: '/components/button-group' },

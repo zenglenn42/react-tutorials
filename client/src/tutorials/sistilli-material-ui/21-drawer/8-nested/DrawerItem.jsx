@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button'
 import Collapse from '@material-ui/core/Collapse'
 import { Link, useTheme, ListItemIcon, Typography } from '@material-ui/core'
 import clsx from 'clsx'
+import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
+import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp'
 
 const useStyles = makeStyles((theme) => ({
     listIconWidth: {
@@ -117,6 +119,7 @@ export default function DrawerItem(props) {
                     >
                         {title}
                     </Typography>
+                    {sublistOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
                 </Link>
                 <Collapse
                     style={{ marginTop: theme.spacing(-1) }}
