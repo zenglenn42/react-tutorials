@@ -1,4 +1,5 @@
 import React from 'react'
+import { v4 as getKey } from 'uuid'
 import {
     Typography,
     Button,
@@ -98,6 +99,7 @@ const LandingPage = ({ classes, handleDrawerOpen }) => {
                             className={styles.bodyText}
                             paragraph
                             variant={bodyText}
+                            key={getKey()}
                         >
                             {sentence}
                         </Typography>
@@ -124,7 +126,14 @@ const LandingPage = ({ classes, handleDrawerOpen }) => {
                     <Grid container direction="row" wrap="nowrap" spacing={2}>
                         {LandingData.tutorialCardImages.map((imgSrc) => {
                             return (
-                                <Grid item xs={12} sm={12} md={4} xl={4}>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    sm={12}
+                                    md={4}
+                                    xl={4}
+                                    key={getKey()}
+                                >
                                     <LandingImage imageUrl={imgSrc} />
                                 </Grid>
                             )
@@ -153,7 +162,14 @@ const LandingPage = ({ classes, handleDrawerOpen }) => {
                     <Grid container direction="row" wrap="nowrap" spacing={2}>
                         {LandingData.tutorialCardImages.map((imgSrc) => {
                             return (
-                                <Grid item xs={12} sm={12} md={4} xl={4}>
+                                <Grid
+                                    item
+                                    xs={12}
+                                    sm={12}
+                                    md={4}
+                                    xl={4}
+                                    key={getKey()}
+                                >
                                     <LandingImage imageUrl={imgSrc} />
                                 </Grid>
                             )
@@ -177,6 +193,7 @@ const LandingPage = ({ classes, handleDrawerOpen }) => {
                             className={styles.bodyText}
                             variant={bodyText}
                             style={{ marginLeft: '2em' }}
+                            key={getKey()}
                         >
                             • {sentence}
                         </Typography>
@@ -186,17 +203,15 @@ const LandingPage = ({ classes, handleDrawerOpen }) => {
                 <Grid container direction="column" spacing={4}>
                     {LandingData.splashSequence.map((item) => {
                         return (
-                            <>
-                                <Grid item xs={12} sm={10}>
-                                    <Typography
-                                        className={styles.bodyText}
-                                        variant={bodyText}
-                                    >
-                                        {item.text}
-                                    </Typography>
-                                    <LandingImage imageUrl={item.image} />
-                                </Grid>
-                            </>
+                            <Grid item xs={12} sm={10} key={getKey()}>
+                                <Typography
+                                    className={styles.bodyText}
+                                    variant={bodyText}
+                                >
+                                    {item.text}
+                                </Typography>
+                                <LandingImage imageUrl={item.image} />
+                            </Grid>
                         )
                     })}
                 </Grid>

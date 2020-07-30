@@ -1,4 +1,5 @@
 import React from 'react'
+import { v4 as getKey } from 'uuid'
 import Typography from '@material-ui/core/Typography'
 import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
@@ -95,6 +96,7 @@ function TutorialSummary(props) {
                                 item
                                 direction="column"
                                 alignItems="center"
+                                key={getKey()}
                             >
                                 <Grid item>{avatar}</Grid>
                                 <Grid item>
@@ -141,7 +143,7 @@ function TutorialSummary(props) {
                 Features:
                 <List dense component="div" disablePadding>
                     {props.features.map((feature) => (
-                        <ListItem>
+                        <ListItem key={getKey()}>
                             <ListItemText
                                 primary={`• ${feature.bulletPoint}`}
                                 secondary={feature.bulletText}

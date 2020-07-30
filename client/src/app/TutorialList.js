@@ -9,6 +9,7 @@ import Collapse from '@material-ui/core/Collapse'
 // import ExpandMore from '@material-ui/icons/ExpandMore';
 import { Divider } from '@material-ui/core'
 import TutorialData from './api/TutorialData'
+import { v4 as getKey } from 'uuid'
 
 const tutorialData = TutorialData
 
@@ -115,7 +116,11 @@ export default function TutorialList(props) {
             </Collapse>
         )
         const listItems = (
-            <ListSubheader disableSticky id={tutorial.summary.provider}>
+            <ListSubheader
+                disableSticky
+                id={tutorial.summary.provider}
+                key={getKey()}
+            >
                 <ListItem
                     button
                     key={primaryText}
@@ -142,7 +147,7 @@ export default function TutorialList(props) {
 
         const collapseListItems = tutorial.playlist.map((pl) => {
             return (
-                <ListSubheader disableSticky id={pl.primaryText}>
+                <ListSubheader disableSticky id={pl.primaryText} key={getKey()}>
                     <ListItem
                         button
                         data-tutorialkey={pl.primaryText}
@@ -167,6 +172,7 @@ export default function TutorialList(props) {
                                             data-demokey={solution.demoKey}
                                             className={classes.nested}
                                             onClick={handleSolutionClick}
+                                            key={getKey()}
                                         >
                                             <ListItemText
                                                 dense="true"
@@ -237,7 +243,9 @@ export default function TutorialList(props) {
                         getTutorialListItems(chapter)
                     )
                 }
-                return <>{listItems}</>
+                return (
+                    <React.Fragment key={getKey()}>{listItems}</React.Fragment>
+                )
             })}
         </List>
     )
