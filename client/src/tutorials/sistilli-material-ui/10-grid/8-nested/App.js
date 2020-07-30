@@ -23,7 +23,7 @@ export const CenteredGrid = () => {
 
     return (
         <div className={classes.root}>
-            <Typography gutterBottom={2}>
+            <Typography gutterBottom>
                 Nested row grid inside column grid.
             </Typography>
             <Grid container spacing={2} direction="column">

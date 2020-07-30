@@ -19,7 +19,7 @@ export const CenteredGrid = () => {
 
     return (
         <div className={classes.root}>
-            <Typography gutterBottom={2}>spacing=0</Typography>
+            <Typography gutterBottom>spacing=0</Typography>
             <Grid container spacing={0}>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>xs=12</Paper>
@@ -43,7 +43,7 @@ export const CenteredGrid = () => {
             <br />
             <br />
 
-            <Typography gutterBottom={2}>spacing=3</Typography>
+            <Typography gutterBottom>spacing=3</Typography>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
                     <Paper className={classes.paper}>xs=12</Paper>
