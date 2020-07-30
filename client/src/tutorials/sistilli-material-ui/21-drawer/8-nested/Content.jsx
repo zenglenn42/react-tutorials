@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
+import Components from './Components'
 
 export const Content = (props) => {
     const { className } = props
@@ -23,6 +24,10 @@ export const Content = (props) => {
                     exact
                     from="/about"
                     render={(props) => <About className={className} />}
+                />
+                <Route
+                    from="/components"
+                    render={(props) => <Components className={className} />}
                 />
             </Switch>
         </>
