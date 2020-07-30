@@ -29,6 +29,10 @@ export const Content = (props) => {
                     from="/components"
                     render={(props) => <Components className={className} />}
                 />
+                <Route
+                    from="/"
+                    render={() => <h2 className={className}>404</h2>}
+                />
             </Switch>
         </>
     )
