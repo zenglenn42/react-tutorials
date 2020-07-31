@@ -90,7 +90,7 @@ export const App = (props) => {
     const _PaperProps =
         typeof drawerWidth !== 'undefined'
             ? { style: { width: `${drawerWidth}px` } }
-            : null
+            : {}
 
     const classes = useStyles()
     return (
