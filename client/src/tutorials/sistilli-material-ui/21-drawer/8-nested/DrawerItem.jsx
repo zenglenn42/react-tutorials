@@ -123,12 +123,7 @@ export default function DrawerItem(props) {
                     </Typography>
                     {sublistOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
                 </Link>
-                <Collapse
-                    style={{ marginTop: theme.spacing(-1) }}
-                    in={sublistOpen}
-                    timeout="auto"
-                    unmountOnExit
-                >
+                <Collapse in={sublistOpen} timeout="auto" unmountOnExit>
                     {children}
                 </Collapse>
             </>
