@@ -1,65 +1,92 @@
 import React from 'react'
-import { Drawer as MuiDrawer } from '@material-ui/core'
+import { Drawer, makeStyles } from '@material-ui/core'
+import clsx from 'clsx'
+
+const useStyles = makeStyles({
+    paper: {
+        '& .MuiDrawer-paper': {
+            width: ({ width }) => (width ? `${width}` : 'none'),
+            // Required for container-relative positioning.
+            position: 'absolute'
+        }
+    }
+})
+
+// FIX: I notice some slide-exit-transform 'jitter' when anchored on right
+//      or bottom of containing element.  Override with directions that work
+//      for now.
+
+const anchorTransformMap = {
+    left: {
+        slideToward: 'right'
+    },
+    top: {
+        slideToward: 'down'
+    },
+    right: {
+        slideToward: 'down' // work around jitter
+    },
+    bottom: {
+        slideToward: 'right' // work around jitter
+    }
+}
 
 export const MobileDrawer = (props) => {
     const {
-        container,
-        anchor,
-        drawerContent,
-        open,
+        anchor = 'left',
+        className,
+        drawerList = [],
+        MobileProps = {},
         onClose,
+        open,
+        PaperProps = {},
+        SlideProps = {},
+        width = ''
         // onOpen,  // FEATURE: Add support for SwipeableDrawer
-        ModalProps,
-        PaperProps,
-        BackdropProps,
-        style
     } = props
-    const paperStyle = PaperProps.style
-    const propsStyle = style
-    const reqdStyle = { position: 'absolute' }
-    const _style = { ...paperStyle, ...propsStyle, ...reqdStyle }
 
-    const anchorTransformMap = {
-        left: {
-            slideToward: 'right' // 'top' works too
-        },
-        top: {
-            slideToward: 'down'
-        },
-        right: {
-            slideToward: 'down' // work around animation jitter bug
-        },
-        bottom: {
-            slideToward: 'right' // work around animation jitter bug
-        }
-    }
+    const {
+        BackdropProps = {},
+        container = document.body,
+        elevation,
+        ModalProps = {},
+        PaperProps: MobilePaperProps = {}
+    } = MobileProps
+
+    const classes = useStyles({ width })
 
     return (
         <>
-            <MuiDrawer
+            <Drawer
                 variant="temporary"
-                container={container}
                 anchor={anchor}
-                open={open}
-                onClose={onClose}
-                // onOpen={onClose} // FEATURE: Add support for SwipeableDrawer
-                elevation={5}
-                PaperProps={{ ...PaperProps, style: { ..._style } }}
                 BackdropProps={{
                     ...BackdropProps,
+                    // Required for container-relative positioning.
                     style: { position: 'absolute' }
                 }}
+                className={clsx(classes.paper, className)}
+                container={container}
+                elevation={elevation}
                 ModalProps={{
                     ...ModalProps,
-                    style: { position: 'absolute' }
-                    // hideBackdrop: false,  // Debug modal backdrop bleeding into desktop.
+                    // Required for container-relative positioning.
+                    style: { position: 'absolute' },
+                    keepMounted: true // Required for scroll persistence.
                 }}
+                onClose={onClose}
+                // onOpen={onClose} // FEATURE: Add support for SwipeableDrawer
+                open={open}
+                PaperProps={{ ...PaperProps, ...MobilePaperProps }}
                 SlideProps={{
+                    ...SlideProps,
+                    // Override transform directions to workaround
+                    // animation exit-slide jitter.
                     direction: anchorTransformMap[anchor].slideToward
                 }}
             >
-                {drawerContent}
-            </MuiDrawer>
+                {drawerList}
+            </Drawer>
         </>
     )
 }

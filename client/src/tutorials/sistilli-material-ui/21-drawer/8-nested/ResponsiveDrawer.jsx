@@ -3,59 +3,43 @@ import MobileDrawer from './MobileDrawer'
 import DesktopDrawer from './DesktopDrawer'
 import { DrawerList } from './DrawerList'
 
+// For now, all styling is prop based.  Add more patternful
+// class-based approach once I understand the idioms better.
+// const useStyles = makeStyles({
+//     /* Styles applied to the root element. */
+//     root: {},
+// })
+
 export const ResponsiveDrawer = (props) => {
-    const {
-        isMobile,
-        anchor,
-        data,
-        setDimensions,
-        onClose,
-        MobileProps,
-        PaperProps,
-        style
-    } = props
-    const paperStyle = PaperProps.style
-    const propsStyle = style
-    const _style = { ...paperStyle, ...propsStyle }
+    const { CommonProps, DesktopProps, MobileProps } = props
+    const { data, isMobile, onClose, setDimensions } = CommonProps
 
     const drawerList = (
         <DrawerList
             pages={data}
+            // Provide a callback for locking in the actual layout dimensions of
+            // the drawer as seen by the DOM.  This prevents content occlusion on
+            // desktop views (where the drawer is always visible).
             setDimensions={setDimensions}
-            // On mobile, close the modal drawer after a route or external link is clicked.
+            // On mobile, close the modal drawer after a route or external link
+            // is clicked.  (The router handles getting you to the href.)
             onLeafItemClick={onClose}
-            // NB: Oddly, on desktop, we do the same thing but it's basically a no-op
-            //     since the drawer remains invariantly open (by definition) since the
-            //     underlying implementation of DesktopDrawer uses a 'permanent' variant.
         />
     )
-    // Hmm. When resizing an open menu from desktop to mobile dimensions, we want
-    //      the state of the drawer list to persist.  Stuff that's selected or
-    //      expanded in one view should be the same for the other view.
-    //
-    //      Wonder if we can share the exact same drawer list between mobile and
-    //      desktop views using a ref ivar?  Otherwise we could share via context
-    //      to avoid diverging drawer state across views.
 
     return (
         <>
             {isMobile ? (
                 <MobileDrawer
-                    container={MobileProps.container}
-                    anchor={anchor}
-                    drawerContent={drawerList}
-                    open={MobileProps.open}
-                    onOpen={MobileProps.onOpen}
-                    onClose={onClose}
-                    // onOpen={MobileProps.onOpen}  // FEATURE: Add support for SwipeableDrawer
-                    ModalProps={{ keepMounted: true }}
-                    PaperProps={{ ...PaperProps, style: { ..._style } }}
+                    {...CommonProps}
+                    MobileProps={MobileProps}
+                    drawerList={drawerList}
                 />
             ) : (
                 <DesktopDrawer
-                    anchor={anchor}
-                    drawerContent={drawerList}
-                    PaperProps={{ ...PaperProps, style: { ..._style } }}
+                    {...CommonProps}
+                    {...DesktopProps}
+                    drawerList={drawerList}
                 />
             )}
         </>

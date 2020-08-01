@@ -1,24 +1,41 @@
 import React from 'react'
-import { Drawer as MuiDrawer } from '@material-ui/core'
+import { Drawer, makeStyles } from '@material-ui/core'
+import clsx from 'clsx'
+
+const useStyles = makeStyles({
+    paper: {
+        '& .MuiDrawer-paper': {
+            width: ({ width }) => (width ? `${width}` : 'none'),
+            position: 'absolute' // req'd for container-relative positioning
+        }
+    }
+})
 
 export const DesktopDrawer = (props) => {
-    const { anchor, drawerContent, PaperProps, style } = props
-    const paperStyle = PaperProps.style
-    const propsStyle = style
-    const reqdStyle = { position: 'absolute' }
-    const _style = { ...paperStyle, ...propsStyle, ...reqdStyle }
+    const {
+        anchor,
+        className,
+        drawerList = [],
+        open,
+        PaperProps = {},
+        SlideProps = {},
+        width = ''
+    } = props
+    const classes = useStyles({ width })
 
     return (
-        <MuiDrawer
+        <Drawer
             variant="permanent"
             anchor={anchor}
+            className={clsx(classes.paper, className)}
             open={true} // Drawer is always visible on 'Desktop'.
             // FEATURE: Add support for persistent variant
             //          with sensitivity to open and onClose.
-            PaperProps={{ ...PaperProps, style: { ..._style } }}
+            PaperProps={PaperProps}
+            SlideProps={SlideProps}
         >
-            {drawerContent}
-        </MuiDrawer>
+            {drawerList}
+        </Drawer>
     )
 }
 
