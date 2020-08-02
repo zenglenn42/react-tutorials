@@ -114,7 +114,6 @@ export const App = (props) => {
                             data: pages,
                             isMobile: isMobile,
                             onClose: handleDrawerClose,
-                            open: openDrawer,
                             // PaperProps: { style: { backgroundColor: 'green' } },
                             setDimensions: setDrawerDimensions,
                             SlideProps: {},
@@ -129,7 +128,8 @@ export const App = (props) => {
                             container: container,
                             // elevation: {16},
                             BackdropProps: {},
-                            ModalProps: {}
+                            ModalProps: {},
+                            open: openDrawer
                             // FEATURE: Add support for SwipeableDrawer
                             // onOpen: handleDrawerOpen
 

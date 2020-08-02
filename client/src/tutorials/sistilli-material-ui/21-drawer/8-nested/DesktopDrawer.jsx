@@ -16,7 +16,6 @@ export const DesktopDrawer = (props) => {
         anchor,
         className,
         drawerList = [],
-        open,
         PaperProps = {},
         SlideProps = {},
         width = ''

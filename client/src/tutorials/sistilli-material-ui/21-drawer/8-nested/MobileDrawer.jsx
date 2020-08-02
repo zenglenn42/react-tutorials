@@ -38,7 +38,6 @@ export const MobileDrawer = (props) => {
         drawerList = [],
         MobileProps = {},
         onClose,
-        open,
         PaperProps = {},
         SlideProps = {},
         width = ''
@@ -50,6 +49,7 @@ export const MobileDrawer = (props) => {
         container = document.body,
         elevation,
         ModalProps = {},
+        open,
         PaperProps: MobilePaperProps = {}
     } = MobileProps
 
