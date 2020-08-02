@@ -53,11 +53,8 @@ export const App = (props) => {
 
     // Detect when the size of browser window crosses the threshold
     // between 'mobile' and 'desktop' (especially on resize).
-    //
-    // FIX: Stringify is pure expedience, otherwise hook returns
-    //      referentially unstable result. Why? :-/
 
-    const isDesktop = JSON.stringify(useIsDesktop(bpUp)).includes('true')
+    const isDesktop = useIsDesktop(bpUp)
     const isMobile = !isDesktop
 
     // Remember the open/closed state of the drawer (especially on mobile)
