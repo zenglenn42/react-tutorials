@@ -53,6 +53,14 @@ import { AppRouter as BaUseContext1 } from '../../tutorials/benawad-hooks/useCon
 import { AppRouter as BaUseContext2 } from '../../tutorials/benawad-hooks/useContext/2-mutable-context/AppRouter'
 import { AppRouter as BaUseContext3 } from '../../tutorials/benawad-hooks/useContext/3-login-context/AppRouter'
 
+import { App as BaUseCallback1 } from '../../tutorials/benawad-hooks/useCallback/1-start/App'
+import { App as BaUseCallback2 } from '../../tutorials/benawad-hooks/useCallback/2-lambda/App'
+import { App as BaUseCallback3 } from '../../tutorials/benawad-hooks/useCallback/3-lambdafail/App'
+import { App as BaUseCallback4 } from '../../tutorials/benawad-hooks/useCallback/4-usecallbackfail/App'
+import { App as BaUseCallback5 } from '../../tutorials/benawad-hooks/useCallback/5-usecallback/App'
+import { App as BaUseCallback6 } from '../../tutorials/benawad-hooks/useCallback/6-withparam/App'
+import { App as BaUseCallback7 } from '../../tutorials/benawad-hooks/useCallback/7-withmap/App'
+
 import { App as BaRouter1 } from '../../tutorials/benawad-router/js/1-start/App'
 import { App as BaRouter2 } from '../../tutorials/benawad-router/js/2-basic-routes/App'
 import { App as BaRouter3 } from '../../tutorials/benawad-router/js/3-exact-routes/App'
@@ -1732,7 +1740,7 @@ const TutorialData = [
                     },
                     level: 'introductory',
                     descText:
-                        "This lean but rich 10 minute tutorial introduces useContext, the hooks version of React's Context API. In this case, a user's login identity is stored and shared among components as state within a context store.",
+                        "This tutorial introduces useContext, the hooks version of React's Context API. In this case, a user's login identity is stored and shared among components as state within a context store.",
                     date: '2019-06-29',
                     author: 'Ben Awad',
                     avatars: [
@@ -1847,6 +1855,184 @@ const TutorialData = [
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaUseContext3 />
+                    }
+                ]
+            },
+            {
+                primaryText: '#6 useCallback',
+                summary: {
+                    provider: 'Ben Awad',
+                    courseTitle: 'useContact',
+                    demoKey: 'summary',
+                    refLink: {
+                        tipText: 'youtube',
+                        href: 'https://youtu.be/-Ls48dd-vJE',
+                        icon: <FaYoutube style={{ color: 'red' }} />
+                    },
+                    codeLink: {
+                        tipText: 'github',
+                        href:
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useCallback',
+                        icon: <GitHubIcon />
+                    },
+                    level: 'introductory',
+                    descText:
+                        'This tutorial introduces useCallback as a means to defeat re-rendering woes caused by changing functions refs.',
+                    date: '2019-06-29',
+                    author: 'Ben Awad',
+                    avatars: [
+                        <Avatar
+                            style={avatarStyle}
+                            alt="Ben Awad"
+                            src="/assets/img/avatar/ben-awad.png"
+                        />
+                    ],
+                    features: [
+                        {
+                            bulletPoint:
+                                'Prevent functions from being recreated on every render.',
+                            bulletText:
+                                'Especially lambdas (i.e., onClick={() => {..}}'
+                        },
+                        {
+                            bulletPoint:
+                                'Can work nicely with React.memo with care.',
+                            bulletText:
+                                'By default, React re-renders child component if parent changes. React.memo renders only if props change.'
+                        },
+                        {
+                            bulletPoint:
+                                "Can work nicely with useEffect especially if it depends upon a function that doesn't change.",
+                            bulletText:
+                                'useCallback can help codify that invariant aspect of the function'
+                        },
+                        {
+                            bulletPoint:
+                                'The updater idiom is your friend when setting state inside useCallback.',
+                            bulletText:
+                                'setCount(c => c + 1) beats setCount(count + 1)'
+                        }
+                    ]
+                },
+                snapshots: [
+                    {
+                        demoKey: 'ba-callback-base',
+                        primaryText: 'Start',
+                        secondaryText: '',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/-Ls48dd-vJE',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useCallback/1-start',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseCallback1 />
+                    },
+                    {
+                        demoKey: 'ba-callback-lambda',
+                        primaryText: 'Lambda',
+                        secondaryText: 'naive',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/-Ls48dd-vJE?t=25',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useCallback/2-lambda',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseCallback2 />
+                    },
+                    {
+                        demoKey: 'ba-callback-lambdafail',
+                        primaryText: 'Lambda',
+                        secondaryText: 'problem',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/-Ls48dd-vJE?t=111',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useCallback/3-lambdafail',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseCallback3 />
+                    },
+                    {
+                        demoKey: 'ba-callback-memoized',
+                        primaryText: 'useCallback',
+                        secondaryText: 'naive',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/-Ls48dd-vJE?t=211',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useCallback/4-usecallbackfail',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseCallback4 />
+                    },
+                    {
+                        demoKey: 'ba-callback-winning',
+                        primaryText: 'useCallback',
+                        secondaryText: 'winning',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/-Ls48dd-vJE?t=290',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useCallback/5-usecallback',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseCallback5 />
+                    },
+                    {
+                        demoKey: 'ba-callback-param',
+                        primaryText: 'useCallback',
+                        secondaryText: 'w param',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/-Ls48dd-vJE?t=348',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useCallback/6-withparam',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseCallback6 />
+                    },
+                    {
+                        demoKey: 'ba-callback-map',
+                        primaryText: 'useCallback',
+                        secondaryText: 'w map',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/-Ls48dd-vJE?t=560',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useCallback/7-withmap',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseCallback7 />
                     }
                 ]
             }
