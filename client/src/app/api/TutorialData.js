@@ -61,6 +61,12 @@ import { App as BaUseCallback5 } from '../../tutorials/benawad-hooks/useCallback
 import { App as BaUseCallback6 } from '../../tutorials/benawad-hooks/useCallback/6-withparam/App'
 import { App as BaUseCallback7 } from '../../tutorials/benawad-hooks/useCallback/7-withmap/App'
 
+import { App as BaUseMemo1 } from '../../tutorials/benawad-hooks/useMemo/1-start/App'
+import { App as BaUseMemo2 } from '../../tutorials/benawad-hooks/useMemo/2-recompute/App'
+import { App as BaUseMemo3 } from '../../tutorials/benawad-hooks/useMemo/3-memofail/App'
+import { App as BaUseMemo4 } from '../../tutorials/benawad-hooks/useMemo/4-outer-scope/App'
+import { App as BaUseMemo5 } from '../../tutorials/benawad-hooks/useMemo/5-with-callback/App'
+
 import { App as BaRouter1 } from '../../tutorials/benawad-router/js/1-start/App'
 import { App as BaRouter2 } from '../../tutorials/benawad-router/js/2-basic-routes/App'
 import { App as BaRouter3 } from '../../tutorials/benawad-router/js/3-exact-routes/App'
@@ -1862,7 +1868,7 @@ const TutorialData = [
                 primaryText: '#6 useCallback',
                 summary: {
                     provider: 'Ben Awad',
-                    courseTitle: 'useContact',
+                    courseTitle: 'useCallback',
                     demoKey: 'summary',
                     refLink: {
                         tipText: 'youtube',
@@ -2033,6 +2039,136 @@ const TutorialData = [
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaUseCallback7 />
+                    }
+                ]
+            },
+            {
+                primaryText: '#7 useMemo',
+                summary: {
+                    provider: 'Ben Awad',
+                    courseTitle: 'useMemo',
+                    demoKey: 'summary',
+                    refLink: {
+                        tipText: 'youtube',
+                        href: 'https://youtu.be/RkBg0gDTLU8',
+                        icon: <FaYoutube style={{ color: 'red' }} />
+                    },
+                    codeLink: {
+                        tipText: 'github',
+                        href:
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useMemo',
+                        icon: <GitHubIcon />
+                    },
+                    level: 'introductory',
+                    descText:
+                        'This tutorial introduces useMemo which optimizes expensively computed values by caching them.',
+                    date: '2019-06-27',
+                    author: 'Ben Awad',
+                    avatars: [
+                        <Avatar
+                            style={avatarStyle}
+                            alt="Ben Awad"
+                            src="/assets/img/avatar/ben-awad.png"
+                        />
+                    ],
+                    features: [
+                        {
+                            bulletPoint:
+                                'Avoid repeatedly calling expensive functions that have relatively invariant inputs.',
+                            bulletText: 'This may cause unnecessary re-renders.'
+                        },
+                        {
+                            bulletPoint:
+                                'Can work nicely with useCallback to tame the dependency array.',
+                            bulletText: ''
+                        }
+                    ]
+                },
+                snapshots: [
+                    {
+                        demoKey: 'ba-memo-base',
+                        primaryText: 'Start',
+                        secondaryText: '',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/RkBg0gDTLU8',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useMemo/1-start',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseMemo1 />
+                    },
+                    {
+                        demoKey: 'ba-memo-recompute',
+                        primaryText: 'Kanye',
+                        secondaryText: 'word',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/RkBg0gDTLU8?t=44',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useMemo/2-recompute',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseMemo2 />
+                    },
+                    {
+                        demoKey: 'ba-memo-fail',
+                        primaryText: 'useMemo unstable',
+                        secondaryText: 'function ref',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/RkBg0gDTLU8?t=292',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useMemo/3-memofail',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseMemo3 />
+                    },
+                    {
+                        demoKey: 'ba-memo-outerscope',
+                        primaryText: 'useMemo',
+                        secondaryText: 'outer scope',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/RkBg0gDTLU8?t=415',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useMemo/4-outer-scope',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseMemo4 />
+                    },
+                    {
+                        demoKey: 'ba-memo-wcallback',
+                        primaryText: 'useMemo with',
+                        secondaryText: 'useCallback',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/RkBg0gDTLU8?t=548',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useMemo/5-with-callback',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseMemo5 />
                     }
                 ]
             }
