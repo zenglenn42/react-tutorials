@@ -67,6 +67,10 @@ import { App as BaUseMemo3 } from '../../tutorials/benawad-hooks/useMemo/3-memof
 import { App as BaUseMemo4 } from '../../tutorials/benawad-hooks/useMemo/4-outer-scope/App'
 import { App as BaUseMemo5 } from '../../tutorials/benawad-hooks/useMemo/5-with-callback/App'
 
+import { App as BaUseReducer1 } from '../../tutorials/benawad-hooks/useReducer/1-simple/App'
+import { App as BaUseReducer2 } from '../../tutorials/benawad-hooks/useReducer/2-todo/App'
+import { App as BaUseReducer3 } from '../../tutorials/benawad-hooks/useReducer/3-shines/App'
+
 import { App as BaRouter1 } from '../../tutorials/benawad-router/js/1-start/App'
 import { App as BaRouter2 } from '../../tutorials/benawad-router/js/2-basic-routes/App'
 import { App as BaRouter3 } from '../../tutorials/benawad-router/js/3-exact-routes/App'
@@ -2171,7 +2175,117 @@ const TutorialData = [
                         demoComponent: <BaUseMemo5 />
                     }
                 ]
-            }
+            },
+            {
+                primaryText: '#8 useReducer',
+                summary: {
+                    provider: 'Ben Awad',
+                    courseTitle: 'useReducer',
+                    demoKey: 'summary',
+                    refLink: {
+                        tipText: 'youtube',
+                        href: 'https://youtu.be/wcRawY6aJaw',
+                        icon: <FaYoutube style={{ color: 'red' }} />
+                    },
+                    codeLink: {
+                        tipText: 'github',
+                        href:
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useReducer',
+                        icon: <GitHubIcon />
+                    },
+                    level: 'introductory',
+                    descText:
+                        'This tutorial introduces useReducer, a hook that extends concepts of useState and useContext to manage complex state through Redux-lik idioms.',
+                    date: '2019-06-28',
+                    author: 'Ben Awad',
+                    avatars: [
+                        <Avatar
+                            style={avatarStyle}
+                            alt="Ben Awad"
+                            src="/assets/img/avatar/ben-awad.png"
+                        />
+                    ],
+                    features: [
+                        {
+                            bulletPoint: 'Better than useState if you have multiple stateful items to change',
+                            bulletText: 'in response to some action',
+                        },
+                        {
+                            bulletPoint: 'Basic usage ...',
+                            bulletText: '[state, dispatch] = useReducer(reducer, initializerFn)',
+                        },
+                        {
+                            bulletPoint: 'Reducers define how to transition from one state to the next',
+                            bulletText: 'based upon an action.',
+                        },
+                        {
+                            bulletPoint: 'Dispatchers trigger state changes by sending actions to reducers.',
+                            bulletText: 'Typically invoke dispatch during onClick events, for example.'
+                        },
+                        {
+                            bulletPoint: 'useReducer, useContext, useState all trigger component re-renders',
+                            bulletText: 'since they mutate state'
+                        },
+                        {
+                            bulletPoint: 'Use useReducer over Redux when ...',
+                            bulletText: 'manipulating local state in a component versus managing state across disparate components.'
+                        },
+                    ]
+                },
+                snapshots: [
+                    {
+                        demoKey: 'ba-reducer-simple',
+                        primaryText: 'Simple',
+                        secondaryText: 'reducer',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/wcRawY6aJaw',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useReducer/1-simple',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseReducer1 />
+                    },
+                    {
+                        demoKey: 'ba-reducer-todo',
+                        primaryText: 'Todo',
+                        secondaryText: 'list',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/wcRawY6aJaw?t=293',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useReducer/2-todo',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseReducer2 />
+                    },
+                    {
+                        demoKey: 'ba-reducer-shines',
+                        primaryText: 'useReducer',
+                        secondaryText: 'shines',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/wcRawY6aJaw?t=807',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-hooks/useReducer/3-shines',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaUseReducer3 />
+                    },
+                ]
+            },
         ]
     },
     {
