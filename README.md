@@ -664,6 +664,8 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/pNjeuU4Jwnc/0.jpg)](http://www.youtube.com/watch?v=pNjeuU4Jwnc "Basic Tables in React using Material UI")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/HpHLa-5Wdys/0.jpg)](http://www.youtube.com/watch?v=HpHLa-5Wdys "ReactJS Tutorial - 31 - Portals")
+
 #### Anthony Sistilli
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/pHclLuRolzE/0.jpg)](http://www.youtube.com/watch?v=pHclLuRolzE "React + Material UI #1: Introduction - 2020 Edition")
