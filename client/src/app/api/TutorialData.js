@@ -3,15 +3,15 @@ import { FaYoutube } from 'react-icons/fa'
 import CodeIcon from '@material-ui/icons/Code'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import Avatar from '@material-ui/core/Avatar'
-import MemeGenerator from '../../tutorials/vschool/memeGenerator/MemeGenerator'
-import JokeList from '../../tutorials/vschool/jokeList/JokeList'
-import TodoList from '../../tutorials/vschool/todo/TodoList'
-import ProductCatalog from '../../tutorials/vschool/mapComponents/ProductCatalog'
-import HelloClass from '../../tutorials/vschool/classComponents/HelloClass'
-import LoginState from '../../tutorials/vschool/state1/LoginState'
-import CountState from '../../tutorials/vschool/state2/CountState'
-import ConditionalRender from '../../tutorials/vschool/conditionalRender/ConditionalRender'
-import TravelForm from '../../tutorials/vschool/forms/TravelForm'
+import MemeGenerator from '../../tutorials/ziroll-react/memeGenerator/MemeGenerator'
+import JokeList from '../../tutorials/ziroll-react/jokeList/JokeList'
+import TodoList from '../../tutorials/ziroll-react/todo/TodoList'
+import ProductCatalog from '../../tutorials/ziroll-react/mapComponents/ProductCatalog'
+import HelloClass from '../../tutorials/ziroll-react/classComponents/HelloClass'
+import LoginState from '../../tutorials/ziroll-react/state1/LoginState'
+import CountState from '../../tutorials/ziroll-react/state2/CountState'
+import ConditionalRender from '../../tutorials/ziroll-react/conditionalRender/ConditionalRender'
+import TravelForm from '../../tutorials/ziroll-react/forms/TravelForm'
 
 import TodoListUnstyled from '../../tutorials/traversy-react-hooks/TodoListUnstyled'
 import TodoListStyled from '../../tutorials/traversy-react-hooks/TodoListStyled'
@@ -214,7 +214,7 @@ const TutorialData = [
                     codeLink: {
                         tipText: 'github',
                         href:
-                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool',
+                            'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react',
                         icon: <GitHubIcon />
                     },
                     level: 'introductory',
@@ -269,7 +269,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/todo',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/todo',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoList />
@@ -286,7 +286,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/jokeList',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/jokeList',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <JokeList />
@@ -303,7 +303,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/mapComponents',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/mapComponents',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <ProductCatalog />
@@ -320,7 +320,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/classComponents',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/classComponents',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <HelloClass />
@@ -337,7 +337,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/state1',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/state1',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <LoginState />
@@ -354,7 +354,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/state2',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/state2',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <CountState />
@@ -371,7 +371,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/conditionalRender',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/conditionalRender',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <ConditionalRender />
@@ -388,7 +388,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/forms',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/forms',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TravelForm />
@@ -405,7 +405,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vschool/memeGenerator',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/ziroll-react/memeGenerator',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MemeGenerator />
