@@ -23,6 +23,10 @@ import PropDrilling from '../../tutorials/wesbos-context/PropDrilling'
 import SimpleContext from '../../tutorials/wesbos-context/SimpleContext'
 import MutateContext from '../../tutorials/wesbos-context/MutateContext'
 
+import { App as VgPortals1 } from '../../tutorials/vishwas-react/portals/1-root-div/App'
+import { App as VgPortals2 } from '../../tutorials/vishwas-react/portals/2-portal-div/App'
+import { App as VgPortals3 } from '../../tutorials/vishwas-react/portals/3-modal/App'
+
 import { App as BaHooksUseState1 } from '../../tutorials/benawad-hooks/useState/1-start/App'
 import { App as BaHooksUseState2 } from '../../tutorials/benawad-hooks/useState/2-no-state-merging/App'
 import { App as BaHooksUseState3 } from '../../tutorials/benawad-hooks/useState/3-you-merge/App'
@@ -664,6 +668,156 @@ const TutorialData = [
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MutateContext />
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        summary: {
+            primaryText: 'ReactJS Series',
+            provider: 'Vishwas Gopinav',
+            courseTitle: 'ReactJS',
+            demoKey: 'summary',
+            refLink: {
+                tipText: 'youtube',
+                href:
+                    'https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw',
+                icon: <FaYoutube style={{ color: 'red' }} />
+            },
+            codeLink: {
+                tipText: 'github',
+                href: 'https://github.com/gopinav',
+                icon: <GitHubIcon />
+            },
+            level: 'introductory - advanced',
+            descText:
+                'Vishwas is a big-picture instructor.  His content is nicely structured and progressive.',
+            date: '2018-10-22',
+            author: 'Vishwas Gopinav',
+            avatars: [
+                <Avatar
+                    style={avatarStyle}
+                    alt="Vishwas Gopinav"
+                    src="/assets/img/avatar/vishwas-gopinav.png"
+                />
+            ],
+            features: [
+                {
+                    bulletPoint: 'Fundamentals',
+                    bulletText: 'Introduction to basic concepts.'
+                },
+                {
+                    bulletPoint: 'Advanced Topics',
+                    bulletText:
+                        'Sharing stateful logic, using hooks, error boundaries, ref, portals'
+                },
+                {
+                    bulletPoint: 'Ecosystem',
+                    bulletText:
+                        'State management, routing, styling, forms, testing, typescript'
+                }
+            ]
+        },
+        playlist: [
+            {
+                primaryText: 'React Portals',
+                summary: {
+                    provider: 'Vishwas Gopinav',
+                    courseTitle: 'React Portals',
+                    demoKey: 'summary',
+                    refLink: {
+                        tipText: 'youtube',
+                        href: 'https://www.youtube.com/watch?v=HpHLa-5Wdys',
+                        icon: <FaYoutube style={{ color: 'red' }} />
+                    },
+                    codeLink: {
+                        tipText: 'github',
+                        href: 'https://github.com/gopinav/React-Tutorias',
+                        icon: <GitHubIcon />
+                    },
+                    level: 'advanced',
+                    descText:
+                        'This tutorial illustrates how to use React portals to render a component to a DOM node other than the one associated with the parent component.',
+                    date: '2018-10-22',
+                    author: 'Vishwas Gopinav',
+                    avatars: [
+                        <Avatar
+                            style={avatarStyle}
+                            alt="Vishwas Gopinav"
+                            src="/assets/img/avatar/vishwas-gopinav.png"
+                        />
+                    ],
+                    features: [
+                        {
+                            bulletPoint:
+                                'Render your component under /any/ DOM node',
+                            bulletText:
+                                "instead of under your parent's DOM node"
+                        },
+                        {
+                            bulletPoint: 'Typical use cases:',
+                            bulletText:
+                                'modals, pop-ups, tool-tips ... places where you may want more control over styling and visibility.'
+                        },
+                        {
+                            bulletPoint:
+                                'Events still bubble up to React parent component.',
+                            bulletText: ''
+                        }
+                    ]
+                },
+                snapshots: [
+                    {
+                        demoKey: 'vg-react-portal-root',
+                        primaryText: 'render',
+                        secondaryText: 'to root div',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/HpHLa-5Wdys',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vishwas-react/portals/1-root-div',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <VgPortals1 />
+                    },
+                    {
+                        demoKey: 'vg-react-portal-div',
+                        primaryText: 'render',
+                        secondaryText: 'to portal',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/HpHLa-5Wdys?t=44',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vishwas-react/portals/2-portal-div',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <VgPortals2 />
+                    },
+                    {
+                        demoKey: 'vg-react-modal',
+                        primaryText: 'modal',
+                        secondaryText: 'use case',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/HpHLa-5Wdys?t=244',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/vishwas-react/portals/3-modal',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <VgPortals3 />
                     }
                 ]
             }
@@ -2207,29 +2361,36 @@ const TutorialData = [
                     ],
                     features: [
                         {
-                            bulletPoint: 'Better than useState if you have multiple stateful items to change',
-                            bulletText: 'in response to some action',
+                            bulletPoint:
+                                'Better than useState if you have multiple stateful items to change',
+                            bulletText: 'in response to some action'
                         },
                         {
                             bulletPoint: 'Basic usage ...',
-                            bulletText: '[state, dispatch] = useReducer(reducer, initializerFn)',
+                            bulletText:
+                                '[state, dispatch] = useReducer(reducer, initializerFn)'
                         },
                         {
-                            bulletPoint: 'Reducers define how to transition from one state to the next',
-                            bulletText: 'based upon an action.',
+                            bulletPoint:
+                                'Reducers define how to transition from one state to the next',
+                            bulletText: 'based upon an action.'
                         },
                         {
-                            bulletPoint: 'Dispatchers trigger state changes by sending actions to reducers.',
-                            bulletText: 'Typically invoke dispatch during onClick events, for example.'
+                            bulletPoint:
+                                'Dispatchers trigger state changes by sending actions to reducers.',
+                            bulletText:
+                                'Typically invoke dispatch during onClick events, for example.'
                         },
                         {
-                            bulletPoint: 'useReducer, useContext, useState all trigger component re-renders',
+                            bulletPoint:
+                                'useReducer, useContext, useState all trigger component re-renders',
                             bulletText: 'since they mutate state'
                         },
                         {
                             bulletPoint: 'Use useReducer over Redux when ...',
-                            bulletText: 'manipulating local state in a component versus managing state across disparate components.'
-                        },
+                            bulletText:
+                                'manipulating local state in a component versus managing state across disparate components.'
+                        }
                     ]
                 },
                 snapshots: [
@@ -2283,9 +2444,9 @@ const TutorialData = [
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaUseReducer3 />
-                    },
+                    }
                 ]
-            },
+            }
         ]
     },
     {
