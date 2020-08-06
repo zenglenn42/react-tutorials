@@ -203,7 +203,7 @@ const TutorialData = [
             {
                 primaryText: 'Introduction to React',
                 summary: {
-                    provider: 'vschool.io',
+                    provider: 'freeCodeCamp.org',
                     courseTitle: 'Learn React JS - Full Course for Beginners',
                     demoKey: 'summary',
                     refLink: {
