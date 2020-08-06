@@ -16,6 +16,7 @@ const TutorialContent = ({ classes, mainContent }) => {
                         href={mainContent.refLink.href}
                         aria-label={mainContent.refLink.tipText}
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         {mainContent.refLink.icon}
                     </IconButton>
@@ -27,6 +28,7 @@ const TutorialContent = ({ classes, mainContent }) => {
                         href={mainContent.codeLink.href}
                         aria-label={mainContent.codeLink.tipText}
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         {mainContent.codeLink.icon}
                     </IconButton>

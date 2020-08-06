@@ -127,7 +127,7 @@ function Templates(props) {
                             className={classes.cardMedia}
                             image={layout.src}
                             title={layout.title}
-                            rel="nofollow"
+                            rel="nofollow noopener noreferrer"
                             target="_blank"
                         />
                         <CardContent className={classes.cardContent}>

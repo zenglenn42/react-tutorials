@@ -20,14 +20,16 @@ export const drawerData = [
                 pathname: 'https://en.wikipedia.org/wiki/Lorem_ipsum',
                 title: 'About lorem',
                 linkProps: {
-                    target: '_blank'
+                    target: '_blank',
+                    rel: 'noopener noreferrer'
                 }
             },
             {
                 pathname: 'https://zenglenn42.github.io/portfolio/about.html',
                 title: 'About me',
                 linkProps: {
-                    target: '_blank'
+                    target: '_blank',
+                    rel: 'noopener noreferrer'
                 }
             }
         ]

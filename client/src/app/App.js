@@ -115,6 +115,7 @@ export default function PersistentDrawerLeft(props) {
                             href="https://reactjs.org/"
                             aria-label="react home"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <ReactIcon />
                             <MortarBoardIcon className={classes.mortarboard} />
@@ -135,6 +136,7 @@ export default function PersistentDrawerLeft(props) {
                             href="https://zenglenn42.github.io/portfolio/"
                             aria-label="portfolio"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <WorkIcon />
                         </IconButton>
@@ -146,6 +148,7 @@ export default function PersistentDrawerLeft(props) {
                             href="https://github.com/zenglenn42/react-tutorials"
                             aria-label="github"
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             <GitHubIcon />
                         </IconButton>

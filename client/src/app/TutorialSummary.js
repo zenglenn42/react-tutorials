@@ -58,6 +58,7 @@ function TutorialSummary(props) {
                         href={props.refLink.href}
                         aria-label={props.refLink.tipText}
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         {props.refLink.icon}
                     </IconButton>
@@ -69,6 +70,7 @@ function TutorialSummary(props) {
                         href={props.codeLink.href}
                         aria-label={props.codeLink.tipText}
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         {props.codeLink.icon}
                     </IconButton>
