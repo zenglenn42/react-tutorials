@@ -1,6 +1,5 @@
 /* eslint-disable arrow-body-style */
 /* eslint-disable react/no-array-index-key */
-/* eslint-disable object-curly-newline */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
@@ -40,12 +39,12 @@ const initialToDos = [
         isDone: false
     },
     {
-        text: 'Drink wine',
+        text: 'Drink beverage',
         isDone: false
     }
 ]
 
-function Todo({ todo, index, didTodo, delTodo }) {
+function Todo({ todo, index, didTodo }) {
     const classes = useStyles()
     const textStyle = { textDecoration: todo.isDone && 'line-through' }
     return (
@@ -55,9 +54,6 @@ function Todo({ todo, index, didTodo, delTodo }) {
             <div>
                 <button onClick={() => didTodo(index)} type="button">
                     Done
-                </button>
-                <button onClick={() => delTodo(index)} type="button">
-                    X
                 </button>
             </div>
         </div>
@@ -88,7 +84,7 @@ function TodoForm({ addTodo }) {
     )
 }
 
-function TodoWithDel() {
+function TodoWithDone() {
     const classes = useStyles()
     const [todos, setTodos] = useState(initialToDos)
 
@@ -103,12 +99,6 @@ function TodoWithDel() {
         setTodos(newTodos)
     }
 
-    const delTodo = (index) => {
-        const newTodos = [...todos]
-        newTodos.splice(index, 1)
-        setTodos(newTodos)
-    }
-
     return (
         <div className={classes.todoList}>
             {todos.map((todo, index) => {
@@ -118,7 +108,6 @@ function TodoWithDel() {
                         index={index}
                         todo={todo}
                         didTodo={didTodo}
-                        delTodo={delTodo}
                     />
                 )
             })}
@@ -127,4 +116,4 @@ function TodoWithDel() {
     )
 }
 
-export default TodoWithDel
+export default TodoWithDone

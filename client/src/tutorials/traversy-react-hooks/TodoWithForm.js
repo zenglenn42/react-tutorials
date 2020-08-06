@@ -1,5 +1,5 @@
-/* eslint-disable react/no-array-index-key */
 /* eslint-disable arrow-body-style */
+/* eslint-disable react/no-array-index-key */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import { makeStyles } from '@material-ui/core/styles'
@@ -17,6 +17,9 @@ const useStyles = makeStyles(() => ({
         backgroundSize: 'auto 3em',
         lineHeight: '1.5',
         padding: '.5em'
+    },
+    todoInput: {
+        width: '100%'
     }
 }))
 
@@ -30,7 +33,7 @@ const initialToDos = [
         isCompleted: false
     },
     {
-        text: 'Drink wine',
+        text: 'Drink beverage',
         isCompleted: false
     }
 ]
@@ -39,17 +42,46 @@ function Todo({ todo }) {
     return <div>{todo.text}</div>
 }
 
-function TodoListStyled() {
-    const [todos] = useState(initialToDos)
+function TodoForm({ addTodo }) {
     const classes = useStyles()
+    const [value, setValue] = useState('')
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        if (!value) return
+        addTodo(value)
+        setValue('')
+    }
+
+    return (
+        <form onSubmit={handleSubmit}>
+            <input
+                className={classes.todoInput}
+                type="text"
+                placeholder="Add new todo ..."
+                onChange={(e) => setValue(e.target.value)}
+                value={value}
+            />
+        </form>
+    )
+}
+
+function TodoWithForm() {
+    const classes = useStyles()
+    const [todos, setTodos] = useState(initialToDos)
+    const addTodo = (text) => {
+        const newTodos = [...todos, { text }]
+        setTodos(newTodos)
+    }
 
     return (
         <div className={classes.todoList}>
             {todos.map((todo, index) => {
                 return <Todo key={index} todo={todo} />
             })}
+            <TodoForm addTodo={addTodo} />
         </div>
     )
 }
 
-export default TodoListStyled
+export default TodoWithForm

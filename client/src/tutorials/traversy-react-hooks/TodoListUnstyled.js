@@ -12,7 +12,7 @@ const initialToDos = [
         isCompleted: false
     },
     {
-        text: 'Drink wine',
+        text: 'Drink beverage',
         isCompleted: false
     }
 ]

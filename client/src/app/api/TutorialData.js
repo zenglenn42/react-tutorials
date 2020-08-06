@@ -13,11 +13,11 @@ import CountState from '../../tutorials/vschool/state2/CountState'
 import ConditionalRender from '../../tutorials/vschool/conditionalRender/ConditionalRender'
 import TravelForm from '../../tutorials/vschool/forms/TravelForm'
 
-import TodoListUnstyled from '../../tutorials/brilliant-react-hooks/TodoListUnstyled'
-import TodoListStyled from '../../tutorials/brilliant-react-hooks/TodoListStyled'
-import TodoWithForm from '../../tutorials/brilliant-react-hooks/TodoWithForm'
-import TodoWithDone from '../../tutorials/brilliant-react-hooks/TodoWithDone'
-import TodoWithDel from '../../tutorials/brilliant-react-hooks/TodoWithDel'
+import TodoListUnstyled from '../../tutorials/traversy-react-hooks/TodoListUnstyled'
+import TodoListStyled from '../../tutorials/traversy-react-hooks/TodoListStyled'
+import TodoWithForm from '../../tutorials/traversy-react-hooks/TodoWithForm'
+import TodoWithDone from '../../tutorials/traversy-react-hooks/TodoWithDone'
+import TodoWithDel from '../../tutorials/traversy-react-hooks/TodoWithDel'
 import SimpleState from '../../tutorials/wesbos-context/SimpleState'
 import PropDrilling from '../../tutorials/wesbos-context/PropDrilling'
 import SimpleContext from '../../tutorials/wesbos-context/SimpleContext'
@@ -475,7 +475,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoListUnstyled.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/traversy-react-hooks/TodoListUnstyled.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoListUnstyled />
@@ -492,7 +492,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoListStyled.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/traversy-react-hooks/TodoListStyled.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoListStyled />
@@ -509,7 +509,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoWithForm.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/traversy-react-hooks/TodoWithForm.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoWithForm />
@@ -526,7 +526,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoWithDone.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/traversy-react-hooks/TodoWithDone.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoWithDone />
@@ -543,7 +543,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/brilliant-react-hooks/TodoWithDel.js',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/traversy-react-hooks/TodoWithDel.js',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <TodoWithDel />
