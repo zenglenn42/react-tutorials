@@ -75,21 +75,21 @@ import { App as BaUseReducer1 } from '../../tutorials/benawad-hooks/useReducer/1
 import { App as BaUseReducer2 } from '../../tutorials/benawad-hooks/useReducer/2-todo/App'
 import { App as BaUseReducer3 } from '../../tutorials/benawad-hooks/useReducer/3-shines/App'
 
-import { App as BaRouter1 } from '../../tutorials/benawad-router/js/1-start/App'
-import { App as BaRouter2 } from '../../tutorials/benawad-router/js/2-basic-routes/App'
-import { App as BaRouter3 } from '../../tutorials/benawad-router/js/3-exact-routes/App'
-import { App as BaRouter4 } from '../../tutorials/benawad-router/js/4-switch/App'
-import { App as BaRouter5 } from '../../tutorials/benawad-router/js/5-404-route/App'
-import { App as BaRouter6 } from '../../tutorials/benawad-router/js/6-link-to/App'
-import { App as BaRouter7 } from '../../tutorials/benawad-router/js/7-history-push/App'
-import { App as BaRouter8 } from '../../tutorials/benawad-router/js/8-location-prop/App'
-import { App as BaRouter9 } from '../../tutorials/benawad-router/js/9-match-prop/App'
-import { App as BaRouter10 } from '../../tutorials/benawad-router/js/10-withRouter/App'
+import { App as BaRouter1 } from '../../tutorials/benawad-react/benawad-router/js/1-start/App'
+import { App as BaRouter2 } from '../../tutorials/benawad-react/benawad-router/js/2-basic-routes/App'
+import { App as BaRouter3 } from '../../tutorials/benawad-react/benawad-router/js/3-exact-routes/App'
+import { App as BaRouter4 } from '../../tutorials/benawad-react/benawad-router/js/4-switch/App'
+import { App as BaRouter5 } from '../../tutorials/benawad-react/benawad-router/js/5-404-route/App'
+import { App as BaRouter6 } from '../../tutorials/benawad-react/benawad-router/js/6-link-to/App'
+import { App as BaRouter7 } from '../../tutorials/benawad-react/benawad-router/js/7-history-push/App'
+import { App as BaRouter8 } from '../../tutorials/benawad-react/benawad-router/js/8-location-prop/App'
+import { App as BaRouter9 } from '../../tutorials/benawad-react/benawad-router/js/9-match-prop/App'
+import { App as BaRouter10 } from '../../tutorials/benawad-react/benawad-router/js/10-withRouter/App'
 
-import { App as BaMuiTables1 } from '../../tutorials/benawad-mui-tables/js/1-start/App'
-import { App as BaMuiTables2 } from '../../tutorials/benawad-mui-tables/js/2-simple-table/App'
-import { App as BaMuiTables3 } from '../../tutorials/benawad-mui-tables/js/3-new-schema/App'
-import { App as BaMuiTables4 } from '../../tutorials/benawad-mui-tables/js/4-add-rows/App'
+import { App as BaMuiTables1 } from '../../tutorials/benawad-react/benawad-mui-tables/js/1-start/App'
+import { App as BaMuiTables2 } from '../../tutorials/benawad-react/benawad-mui-tables/js/2-simple-table/App'
+import { App as BaMuiTables3 } from '../../tutorials/benawad-react/benawad-mui-tables/js/3-new-schema/App'
+import { App as BaMuiTables4 } from '../../tutorials/benawad-react/benawad-mui-tables/js/4-add-rows/App'
 
 import { App as MaterialUIIntro1 } from '../../tutorials/sistilli-material-ui/1-intro/App1'
 import { App as MaterialUIIntro2 } from '../../tutorials/sistilli-material-ui/1-intro/override-theme/App2'
@@ -948,7 +948,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/1-start',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/1-start',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter1 />
@@ -965,7 +965,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/2-basic-routes',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/2-basic-routes',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter2 />
@@ -982,7 +982,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/3-exact-routes',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/3-exact-routes',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter3 />
@@ -999,7 +999,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/4-switch',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/4-switch',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter4 />
@@ -1016,7 +1016,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/5-404-route',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/5-404-route',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter5 />
@@ -1033,7 +1033,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/6-link-to',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/6-link-to',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter6 />
@@ -1050,7 +1050,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/7-history-push',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/7-history-push',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter7 />
@@ -1067,7 +1067,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/8-location-prop',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/8-location-prop',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter8 />
@@ -1084,7 +1084,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/9-match-prop',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/9-match-prop',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter9 />
@@ -1101,7 +1101,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-router/js/10-withRouter',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-router/js/10-withRouter',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaRouter10 />
