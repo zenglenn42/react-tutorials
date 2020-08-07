@@ -91,6 +91,9 @@ import { App as BaMuiTables2 } from '../../tutorials/benawad-react/benawad-mui-t
 import { App as BaMuiTables3 } from '../../tutorials/benawad-react/benawad-mui-tables/js/3-new-schema/App'
 import { App as BaMuiTables4 } from '../../tutorials/benawad-react/benawad-mui-tables/js/4-add-rows/App'
 
+import { App as BaReduxOrContext1 } from '../../tutorials/benawad-react/benawad-redux-v-context/1-start/App'
+import { AppWrapper as BaReduxOrContext2 } from '../../tutorials/benawad-react/benawad-redux-v-context/2-efficient/AppWrapper'
+
 import { App as MaterialUIIntro1 } from '../../tutorials/sistilli-material-ui/1-intro/App1'
 import { App as MaterialUIIntro2 } from '../../tutorials/sistilli-material-ui/1-intro/override-theme/App2'
 import { App as MaterialUIIntro3 } from '../../tutorials/sistilli-material-ui/1-intro/App3'
@@ -1168,7 +1171,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-mui-tables/js/1-start',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-mui-tables/js/1-start',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaMuiTables1 />
@@ -1185,7 +1188,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-mui-tables/js/2-simple-table',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-mui-tables/js/2-simple-table',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaMuiTables2 />
@@ -1202,7 +1205,7 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-mui-tables/js/3-new-schema',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-mui-tables/js/3-new-schema',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaMuiTables3 />
@@ -1219,10 +1222,100 @@ const TutorialData = [
                         codeLink: {
                             tipText: 'github',
                             href:
-                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-mui-tables/js/4-add-rows',
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-mui-tables/js/4-add-rows',
                             icon: <GitHubIcon />
                         },
                         demoComponent: <BaMuiTables4 />
+                    }
+                ]
+            },
+            {
+                primaryText: 'Redux or Context?',
+                summary: {
+                    provider: 'Ben Awad',
+                    courseTitle: 'Redux or Context in React',
+                    demoKey: 'summary',
+                    refLink: {
+                        tipText: 'youtube',
+                        href: 'https://www.youtube.com/watch?v=5gUHfe-ETuo',
+                        icon: <FaYoutube style={{ color: 'red' }} />
+                    },
+                    codeLink: {
+                        tipText: 'codesandbox',
+                        href: 'https://codesandbox.io/s/lurh9',
+                        icon: <CodeIcon />
+                    },
+                    level: 'introductory',
+                    descText:
+                        'This tutorial reviews usage of useContext with an example and offers guidance on when to consider upgrading to a 3rd party state management library like Redux.',
+                    date: '2019-05-24',
+                    author: 'Ben Awad',
+                    avatars: [
+                        <Avatar
+                            style={avatarStyle}
+                            alt="Ben Awad"
+                            src="/assets/img/avatar/ben-awad.png"
+                        />
+                    ],
+                    features: [
+                        {
+                            bulletPoint:
+                                "Use context when data doesn't not update frequently.",
+                            bulletText: ''
+                        },
+                        {
+                            bulletPoint:
+                                'Use context when all or most of the data is consumed by the subscribers to that data.',
+                            bulletText:
+                                "Otherwise, you'll get nuisance re-renders in children that may not care about a particular field in context state."
+                        },
+                        {
+                            bulletPoint:
+                                'Consider low-boilerplate wrappers to Redux, like easy-peasy.',
+                            bulletText:
+                                'This way you get a clean programming abstraction plus the benefit of excellent Redux dev tools.'
+                        },
+                        {
+                            bulletPoint: 'Tutorial leverages easy-peasy',
+                            bulletText:
+                                'for a no-nuisance-render implementation'
+                        }
+                    ]
+                },
+                snapshots: [
+                    {
+                        demoKey: 'ba-react-redux-v-context-1',
+                        primaryText: 'useContext',
+                        secondaryText: 'with re-renders',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/5gUHfe-ETuo',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-redux-v-context/1-start',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaReduxOrContext1 />
+                    },
+                    {
+                        demoKey: 'ba-react-redux-v-context-2',
+                        primaryText: 'Easy-Peasy',
+                        secondaryText: 'Redux',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/5gUHfe-ETuo?t=180',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/benawad-react/benawad-redux-v-context/2-efficient',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <BaReduxOrContext2 />
                     }
                 ]
             }
@@ -2669,7 +2762,7 @@ const TutorialData = [
                         icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
-                        tipText: 'code',
+                        tipText: 'codesandbox',
                         href: 'https://codesandbox.io/s/eloquent-beaver-3j1l2',
                         icon: <CodeIcon />
                     },
@@ -2995,7 +3088,7 @@ const TutorialData = [
                         icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
-                        tipText: 'code',
+                        tipText: 'codesandbox',
                         href:
                             'https://codesandbox.io/s/practical-goldberg-fzpht',
                         icon: <CodeIcon />
@@ -4334,7 +4427,7 @@ const TutorialData = [
                         icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
-                        tipText: 'code',
+                        tipText: 'codesandbox',
                         href:
                             'https://codesandbox.io/s/affectionate-leavitt-9mdq8?file=/src/App.js',
                         icon: <CodeIcon />
@@ -4514,7 +4607,7 @@ const TutorialData = [
                         icon: <FaYoutube style={{ color: 'red' }} />
                     },
                     codeLink: {
-                        tipText: 'code',
+                        tipText: 'codesandbox',
                         href:
                             'https://codesandbox.io/s/material-demo-q09ys?file=/demo.js',
                         icon: <CodeIcon />
