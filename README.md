@@ -704,7 +704,7 @@ Hosted solutions are available for the following tutorials:
 
 #### Harry Wolf
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/o-nCM1857QA/0.jpg)](http://www.youtube.com/watch?v=o-nCM1857QA "Why I Love useReducer")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/o-nCM1857AQ/0.jpg)](http://www.youtube.com/watch?v=o-nCM1857AQ "Why I Love useReducer")
 
 
 # [Photo Gallery](#contents)
