@@ -702,6 +702,10 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/HpHLa-5Wdys/0.jpg)](http://www.youtube.com/watch?v=HpHLa-5Wdys "ReactJS Tutorial - 31 - Portals")
 
+#### Harry Wolf
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/o-nCM1857QA/0.jpg)](http://www.youtube.com/watch?v=o-nCM1857QA "Why I Love useReducer")
+
 
 # [Photo Gallery](#contents)
 
