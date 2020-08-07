@@ -664,6 +664,8 @@ Hosted solutions are available for the following tutorials:
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/pNjeuU4Jwnc/0.jpg)](http://www.youtube.com/watch?v=pNjeuU4Jwnc "Basic Tables in React using Material UI")
 
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/5gUHfe-ETuo/0.jpg)](http://www.youtube.com/watch?v=5gUHfe-ETuo "Redux or Context in React?")
+
 #### Anthony Sistilli
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/pHclLuRolzE/0.jpg)](http://www.youtube.com/watch?v=pHclLuRolzE "React + Material UI #1: Introduction - 2020 Edition")
