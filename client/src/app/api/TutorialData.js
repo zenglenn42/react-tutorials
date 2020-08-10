@@ -741,7 +741,7 @@ const TutorialData = [
                     },
                     level: 'intermediate',
                     descText:
-                        'This tutorial explains illustrates how useReducer is a better state manager for a classic login form.',
+                        'This tutorial illustrates how useReducer beats useState for a classic login form.',
                     date: '2019-04-29',
                     author: 'Harry Wolff',
                     avatars: [
