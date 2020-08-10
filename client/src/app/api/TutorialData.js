@@ -689,18 +689,18 @@ const TutorialData = [
             refLink: {
                 tipText: 'youtube',
                 href:
-                    'https://www.youtube.com/channel/',
+                    'https://www.youtube.com/channel/UCgdeMp2ZBnovi12THmLc47g',
                 icon: <FaYoutube style={{ color: 'red' }} />
             },
             codeLink: {
                 tipText: 'github',
-                href: 'https://github.com/harrywolff',
+                href: 'https://github.com/hswolff',
                 icon: <GitHubIcon />
             },
             level: 'intermediate',
             descText:
                 'Harry blends technical depth and perspective with progressive, good-natured delivery.',
-            date: 'yyyy-mm-dd',
+            date: '2017-07-24',
             author: 'Harry Wolff',
             avatars: [
                 <Avatar
@@ -715,7 +715,8 @@ const TutorialData = [
                     bulletText: ''
                 },
                 {
-                    bulletPoint: 'Improve code clarity by using the right API for the task.',
+                    bulletPoint:
+                        'Improve code clarity by using the right API for the task.',
                     bulletText: ''
                 }
             ]
@@ -734,13 +735,14 @@ const TutorialData = [
                     },
                     codeLink: {
                         tipText: 'github',
-                        href: 'https://github.com/harrywolff',
+                        href:
+                            'https://github.com/hswolff/youtube/tree/master/videos/why-i-love-usereducer',
                         icon: <GitHubIcon />
                     },
                     level: 'intermediate',
                     descText:
                         'This tutorial explains illustrates how useReducer is a better state manager for a classic login form.',
-                    date: 'yyyy-mm-dd',
+                    date: '2019-04-29',
                     author: 'Harry Wolff',
                     avatars: [
                         <Avatar
@@ -751,15 +753,19 @@ const TutorialData = [
                     ],
                     features: [
                         {
-                            bulletPoint: 'Begin with a simple login form with no behavior',
+                            bulletPoint:
+                                'Begin with a simple login form with no behavior',
                             bulletText: ''
                         },
                         {
-                            bulletPoint: 'Progressively add state to cover the various cases and edge-cases assoociated with authentication.',
-                            bulletText: 'Notice how stateful code adds complexity.'
+                            bulletPoint:
+                                'Progressively add state to cover the various cases and edge-cases assoociated with authentication.',
+                            bulletText:
+                                'Notice how stateful code adds complexity.'
                         },
                         {
-                            bulletPoint: 'Apply useReducer to state state along event transitions.',
+                            bulletPoint:
+                                'Apply useReducer to state state along event transitions.',
                             bulletText: 'Makes the code easier to reason about.'
                         }
                     ]
