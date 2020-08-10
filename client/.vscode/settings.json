@@ -1,0 +1,8 @@
+{
+    "prettier.configPath": "./client/.prettierrc.json",
+    "prettier.ignorePath": "./client/.prettierignore",
+    "prettier.packageManager": "yarn",
+    "prettier.prettierPath": "./client/node_modules",
+    "prettier.requireConfig": true,
+    "prettier.tabWidth": 4
+}
