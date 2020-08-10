@@ -27,6 +27,10 @@ import { App as VgPortals1 } from '../../tutorials/vishwas-react/portals/1-root-
 import { App as VgPortals2 } from '../../tutorials/vishwas-react/portals/2-portal-div/App'
 import { App as VgPortals3 } from '../../tutorials/vishwas-react/portals/3-modal/App'
 
+import { App as HwUseReducer1 } from '../../tutorials/harrywolff-react/useReducer/1-useState/App'
+import { App as HwUseReducer2 } from '../../tutorials/harrywolff-react/useReducer/2-useReducer/App'
+import { App as HwUseReducer3 } from '../../tutorials/harrywolff-react/useReducer/3-multiverse/App'
+
 import { App as BaHooksUseState1 } from '../../tutorials/benawad-hooks/useState/1-start/App'
 import { App as BaHooksUseState2 } from '../../tutorials/benawad-hooks/useState/2-no-state-merging/App'
 import { App as BaHooksUseState3 } from '../../tutorials/benawad-hooks/useState/3-you-merge/App'
@@ -671,6 +675,146 @@ const TutorialData = [
                             icon: <GitHubIcon />
                         },
                         demoComponent: <MutateContext />
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        summary: {
+            primaryText: 'React Series with Harry',
+            provider: 'Harry Wolff',
+            courseTitle: 'React',
+            demoKey: 'summary',
+            refLink: {
+                tipText: 'youtube',
+                href:
+                    'https://www.youtube.com/channel/',
+                icon: <FaYoutube style={{ color: 'red' }} />
+            },
+            codeLink: {
+                tipText: 'github',
+                href: 'https://github.com/harrywolff',
+                icon: <GitHubIcon />
+            },
+            level: 'intermediate',
+            descText:
+                'Harry blends technical depth and perspective with progressive, good-natured delivery.',
+            date: 'yyyy-mm-dd',
+            author: 'Harry Wolff',
+            avatars: [
+                <Avatar
+                    style={avatarStyle}
+                    alt="Harry Wolff"
+                    src="/assets/img/avatar/harry-wolff.png"
+                />
+            ],
+            features: [
+                {
+                    bulletPoint: 'Understand tradeoffs in implementations.',
+                    bulletText: ''
+                },
+                {
+                    bulletPoint: 'Improve code clarity by using the right API for the task.',
+                    bulletText: ''
+                }
+            ]
+        },
+        playlist: [
+            {
+                primaryText: 'useReducer',
+                summary: {
+                    provider: 'Harry Wolff',
+                    courseTitle: 'Why I love useReducer',
+                    demoKey: 'summary',
+                    refLink: {
+                        tipText: 'youtube',
+                        href: 'https://www.youtube.com/watch?v=o-nCM1857AQ',
+                        icon: <FaYoutube style={{ color: 'red' }} />
+                    },
+                    codeLink: {
+                        tipText: 'github',
+                        href: 'https://github.com/harrywolff',
+                        icon: <GitHubIcon />
+                    },
+                    level: 'intermediate',
+                    descText:
+                        'This tutorial explains illustrates how useReducer is a better state manager for a classic login form.',
+                    date: 'yyyy-mm-dd',
+                    author: 'Harry Wolff',
+                    avatars: [
+                        <Avatar
+                            style={avatarStyle}
+                            alt="Harry Wolff"
+                            src="/assets/img/avatar/harry-wolff.png"
+                        />
+                    ],
+                    features: [
+                        {
+                            bulletPoint: 'Begin with a simple login form with no behavior',
+                            bulletText: ''
+                        },
+                        {
+                            bulletPoint: 'Progressively add state to cover the various cases and edge-cases assoociated with authentication.',
+                            bulletText: 'Notice how stateful code adds complexity.'
+                        },
+                        {
+                            bulletPoint: 'Apply useReducer to state state along event transitions.',
+                            bulletText: 'Makes the code easier to reason about.'
+                        }
+                    ]
+                },
+                snapshots: [
+                    {
+                        demoKey: 'hw-react-userReducer-1',
+                        primaryText: 'login',
+                        secondaryText: 'useState',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/o-nCM1857AQ',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/harrywolf-react/useReducer/1-useState',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <HwUseReducer1 />
+                    },
+                    {
+                        demoKey: 'hw-react-userReducer-2',
+                        primaryText: 'login',
+                        secondaryText: 'useReducer',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/o-nCM1857AQ',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/harrywolf-react/useReducer/2-useReducer',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <HwUseReducer2 />
+                    },
+                    {
+                        demoKey: 'hw-react-userReducer-3',
+                        primaryText: 'login',
+                        secondaryText: 'comparison',
+                        refLink: {
+                            tipText: 'youtube',
+                            href: 'https://youtu.be/o-nCM1857AQ',
+                            icon: <FaYoutube style={{ color: 'red' }} />
+                        },
+                        codeLink: {
+                            tipText: 'github',
+                            href:
+                                'https://github.com/zenglenn42/react-tutorials/tree/master/client/src/tutorials/harrywolf-react/useReducer/3-multiverse',
+                            icon: <GitHubIcon />
+                        },
+                        demoComponent: <HwUseReducer3 />
                     }
                 ]
             }
