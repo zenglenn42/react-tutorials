@@ -31,6 +31,7 @@
         "clsx": "^1.1.1",
         "easy-peasy": "^3.3.1",
         "formik": "^2.1.5",
+        "immer": "^7.0.7",
         "markdown-to-jsx": "^6.11.4",
         "react": "^16.13.1",
         "react-dom": "^16.13.1",
@@ -39,6 +40,7 @@
         "react-scripts": "3.4.1",
         "recharts": "^2.0.0-beta.6",
         "typescript": "~3.7.2",
+        "use-immer": "^0.4.1",
         "uuid": "^8.2.0"
     },
     "devDependencies": {
@@ -80,6 +82,7 @@
         "check": "yarn --check-files",
         "clean": "rm -rf .eslintcache build yarn.lock yarn-error.log node_modules && ls",
         "start": "react-scripts start",
+        "start:offline": "yarn run start --offline",
         "lint": "eslint --config ./.eslintrc.json --ignore-path ./.eslintignore --cache --ext .js,.jsx,.ts,.tsx,.html {src,public}",
         "lint:ci": "eslint --config ./.eslintrc.ci.json  --ignore-path ./.eslintignore --cache --ext .js,.jsx,.ts,.tsx,.html {src,public}",
         "lint:dryrun": "yarn run lint --fix-dry-run",
