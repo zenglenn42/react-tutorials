@@ -771,8 +771,8 @@ const TutorialData = [
                         },
                         {
                             bulletPoint:
-                                'Apply useReducer to state state along event transitions.',
-                            bulletText: 'Makes the code easier to reason about.'
+                                'Apply useReducer for state management along event transitions.',
+                            bulletText: 'Make the code easier to reason about by mapping closer to user /behavior/ as opposed to low-level, imperative details.'
                         }
                     ]
                 },
@@ -800,7 +800,7 @@ const TutorialData = [
                         secondaryText: 'useReducer',
                         refLink: {
                             tipText: 'youtube',
-                            href: 'https://youtu.be/o-nCM1857AQ',
+                            href: 'https://youtu.be/o-nCM1857AQ?t=532',
                             icon: <FaYoutube style={{ color: 'red' }} />
                         },
                         codeLink: {
