@@ -233,6 +233,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Bob Ziroll"
+                            key="Bob Ziroll"
                             src="/assets/img/avatar/bob-ziroll-2.png"
                         />
                     ],
@@ -448,11 +449,13 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Kapehe"
+                            key="Kapehe"
                             src="/assets/img/avatar/kapehe.png"
                         />,
                         <Avatar
                             style={avatarStyle}
                             alt="Brad Traversy"
+                            key="Brad Traversy"
                             src="/assets/img/avatar/brad-traversy.png"
                         />
                     ],
@@ -586,6 +589,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Wes Bos"
+                            key="Wes Bos"
                             src="/assets/img/avatar/wes-bos.png"
                         />
                     ],
@@ -706,6 +710,7 @@ const TutorialData = [
                 <Avatar
                     style={avatarStyle}
                     alt="Harry Wolff"
+                    key="Harry Wolff"
                     src="/assets/img/avatar/harry-wolff.png"
                 />
             ],
@@ -748,6 +753,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Harry Wolff"
+                            key="Harry Wolff"
                             src="/assets/img/avatar/harry-wolff.png"
                         />
                     ],
@@ -852,6 +858,7 @@ const TutorialData = [
                 <Avatar
                     style={avatarStyle}
                     alt="Vishwas Gopinav"
+                    key="Vishwas Gopinav"
                     src="/assets/img/avatar/vishwas-gopinav.png"
                 />
             ],
@@ -898,6 +905,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Vishwas Gopinav"
+                            key="Vishwas Gopinav"
                             src="/assets/img/avatar/vishwas-gopinav.png"
                         />
                     ],
@@ -1002,6 +1010,7 @@ const TutorialData = [
                 <Avatar
                     style={avatarStyle}
                     alt="Ben Awad"
+                    key="Ben Awad"
                     src="/assets/img/avatar/ben-awad.png"
                 />
             ],
@@ -1042,6 +1051,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -1287,6 +1297,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -1404,6 +1415,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -1497,6 +1509,7 @@ const TutorialData = [
                 <Avatar
                     style={avatarStyle}
                     alt="Ben Awad"
+                    key="Ben Awad"
                     src="/assets/img/avatar/ben-awad.png"
                 />
             ],
@@ -1563,6 +1576,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -1716,6 +1730,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -1938,6 +1953,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -2052,6 +2068,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -2154,6 +2171,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -2291,6 +2309,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -2469,6 +2488,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -2599,6 +2619,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Ben Awad"
+                            key="Ben Awad"
                             src="/assets/img/avatar/ben-awad.png"
                         />
                     ],
@@ -2720,6 +2741,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -2869,6 +2891,7 @@ const TutorialData = [
                 <Avatar
                     style={avatarStyle}
                     alt="Anthony Sistilli"
+                    key="Anthony Sistilli"
                     src="/assets/img/avatar/anthony-sistilli.png"
                 />
             ],
@@ -2925,6 +2948,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -3044,6 +3068,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -3252,6 +3277,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -3448,6 +3474,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -3544,6 +3571,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -3658,6 +3686,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -3786,6 +3815,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -3860,6 +3890,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -3973,6 +4004,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -4201,6 +4233,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -4409,6 +4442,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -4591,6 +4625,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -4771,6 +4806,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
@@ -4844,6 +4880,7 @@ const TutorialData = [
                         <Avatar
                             style={avatarStyle}
                             alt="Anthony Sistilli"
+                            key="Anthony Sistilli"
                             src="/assets/img/avatar/anthony-sistilli.png"
                         />
                     ],
