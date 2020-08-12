@@ -1,204 +1,136 @@
 import React from 'react'
-import { Link as RouterLink } from 'react-router-dom'
-import PropTypes from 'prop-types'
-import { makeStyles } from '@material-ui/core/styles'
-import ListItem from '@material-ui/core/ListItem'
-import Button from '@material-ui/core/Button'
-import Collapse from '@material-ui/core/Collapse'
-import { Link, useTheme, ListItemIcon, Typography } from '@material-ui/core'
+import { NavLink } from 'react-router-dom'
 import clsx from 'clsx'
+import PropTypes from 'prop-types'
+import { Button, Collapse, ListItem, makeStyles } from '@material-ui/core'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp'
+import { FaRegIdBadge } from 'react-icons/fa'
 
 const useStyles = makeStyles((theme) => ({
-    listIconWidth: {
-        minWidth: theme.spacing(6)
-    },
-    item: {
-        // backgroundColor: 'grey',
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        textTransform: 'none',
-        color: 'black'
-    },
-    itemLeaf: {
-        // backgroundColor: 'yellow',
+    listItem: {
         display: 'block',
-        color: 'black',
-        textDecoration: 'none',
-        textTransform: 'none',
         paddingTop: 0,
-        paddingBottom: theme.spacing(1, 0)
-    },
-    buttonText: {
-        textTransform: 'none'
-    },
-    buttonBoldText: {
-        textTransform: 'none',
-        fontWeight: 'bold',
-        fontSize: '96%'
-    },
-    button: {
-        display: 'flex',
-        letterSpacing: 0,
-        textTransform: 'none',
-        textAlign: 'left',
-        paddingLeft: 0,
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        width: '100%'
-    },
-    buttonLeaf: {
-        //backgroundColor: 'red',
-        letterSpacing: 0,
-        textDecoration: 'none',
-        width: '100%',
-        color: 'black'
-    },
-    collapse: {
         paddingBottom: 0
     },
-    // This doesn't seem to have an effect as yet.
-    active: {
+    collapseButton: {
+        letterSpacing: 0,
+        justifyContent: 'flex-start',
+        textTransform: 'none',
+        width: '100%',
+        fontWeight: 'bold',
+        fontSize: '97%',
+        opacity: '.70'
+        // '&.depth-0': {
+        //     // Styling based upon nested depth of subdrawer.
+        //     fontSize: '96%',
+        //     fontWeight: 'bold'
+        // }
+    },
+    leftIndent: (depth) => {
+        return {
+            paddingLeft: theme.spacing(2.5) * (depth + 1)
+        }
+    },
+    // !! Define 'navlinkButton' before 'activeRoute' style for
+    //    proper css override behavior.
+    navlinkButton: {
+        letterSpacing: 0,
+        justifyContent: 'flex-start',
+        textDecoration: 'none', // no underline
+        textTransform: 'none', // no uppercase
+        fontWeight: theme.typography.fontWeightNormal,
+        width: '100%'
+        // You may style based upon nested depth.
+        // '&.depth-0': {
+        //     fontWeight: 'bold'
+        // }
+    },
+    activeRoute: {
+        // NavLink will use this.
         color: theme.palette.primary.main,
-        fontWeight: theme.typography.fontWeightMedium
+        fontSize: '113%',
+        fontWeight: 'bold'
+        // More subtle than 'bold' but requires additional
+        // fonts to be installed (e.g., 700 weight).
+        // fontWeight: theme.typography.fontWeightMedium
     }
 }))
 
 export default function DrawerItem(props) {
-    const theme = useTheme()
     const {
         children,
         depth,
         href,
         onClick,
-        openImmediately = false,
+        subdrawerOpen = false,
         title,
-        linkProps,
-        icon,
-        ...other
+        linkProps
     } = props
-    const classes = useStyles()
-    const [sublistOpen, setSublistOpen] = React.useState(openImmediately)
 
-    const handleSublistToggle = () => {
-        setSublistOpen((prevOpen) => !prevOpen)
-    }
+    const classes = useStyles(depth)
 
-    const style = {
-        paddingLeft: theme.spacing(2.5) * (depth + 1)
-    }
+    const isSubdrawer = !href
+    // Use this state only if the item is a collapsible sub-drawer.
+    const [collapseIn, setCollapseIn] = React.useState(subdrawerOpen)
 
-    if (!href) {
-        return (
-            <>
-                <Link
-                    component={Button}
-                    underline="none"
-                    style={style}
-                    className={clsx(classes.buttonLeaf, `depth-${depth}`)}
-                    onClick={handleSublistToggle}
-                    {...linkProps}
-                    classes={{
-                        root: classes.button
-                    }}
-                >
-                    {icon && (
-                        <ListItemIcon
-                            classes={{
-                                root: classes.listIconWidth
-                            }}
-                        >
-                            {icon}
-                        </ListItemIcon>
+    let drawerItem = undefined
+    if (isSubdrawer) {
+        const handleCollapseToggle = () => {
+            setCollapseIn((prevState) => !prevState)
+        }
+        drawerItem = (
+            <ListItem className={classes.listItem} disableGutters>
+                <Button
+                    color="inherit"
+                    className={clsx(
+                        classes.collapseButton,
+                        classes.leftIndent,
+                        `depth-${depth}`
                     )}
-                    <Typography
-                        variant="body1"
-                        classes={{
-                            root: classes.buttonBoldText
-                        }}
-                    >
-                        {title}
-                    </Typography>
-                    {sublistOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
-                </Link>
-                <Collapse in={sublistOpen} timeout="auto" unmountOnExit>
+                    onClick={handleCollapseToggle}
+                    endIcon={
+                        collapseIn ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />
+                    }
+                >
+                    {title}
+                </Button>
+                <Collapse in={collapseIn} timeout="auto" unmountOnExit>
                     {children}
                 </Collapse>
-            </>
+            </ListItem>
+        )
+    } else {
+        // Item is either an external url or internal route.
+        const externalUrl = href.indexOf('http') === 0 && href
+        const navLinkProps = externalUrl
+            ? { to: { pathname: `${externalUrl}` } }
+            : {
+                  to: href, // internal route
+                  activeClassName: `drawer-active ${classes.activeRoute}`
+              }
+        drawerItem = (
+            <ListItem className={classes.listItem} disableGutters>
+                <Button
+                    color="inherit"
+                    component={NavLink}
+                    className={clsx(
+                        classes.navlinkButton,
+                        classes.leftIndent,
+                        `depth-${depth}`
+                    )}
+                    disableTouchRipple
+                    exact
+                    onClick={onClick}
+                    {...navLinkProps} // for route or external url
+                    {...linkProps} // from json drawer data file
+                >
+                    {title}
+                </Button>
+            </ListItem>
         )
     }
-
-    const extHref = href.indexOf('http') === 0 && href
-
-    return (
-        <ListItem
-            component={Button}
-            classes={{
-                root: classes.button
-                // text: classes.buttonText,
-                // button: classes.buttonPadding
-            }}
-            className={classes.itemLeaf}
-            disableGutters
-            {...other}
-        >
-            {extHref ? (
-                <Link
-                    component={Button}
-                    // activeClassName={`drawer-active ${classes.active}`}
-                    underline="none"
-                    style={style}
-                    className={clsx(classes.buttonLeaf, `depth-${depth}`)}
-                    href={extHref}
-                    onClick={onClick}
-                    {...linkProps}
-                    classes={{
-                        root: classes.button
-                        //text: classes.buttonText
-                    }}
-                >
-                    {icon && (
-                        <ListItemIcon
-                            classes={{
-                                root: classes.listIconWidth
-                            }}
-                        >
-                            {icon}
-                        </ListItemIcon>
-                    )}
-                    {title}
-                </Link>
-            ) : (
-                <Link
-                    component={RouterLink}
-                    // activeClassName={`drawer-active ${classes.active}`}
-                    underline="none"
-                    style={style}
-                    to={href}
-                    onClick={onClick}
-                    className={clsx(classes.buttonLeaf, `depth-${depth}`)}
-                    classes={{
-                        root: classes.button
-                        //text: classes.buttonText
-                    }}
-                    {...linkProps}
-                >
-                    {icon && (
-                        <ListItemIcon
-                            classes={{
-                                root: classes.listIconWidth
-                            }}
-                        >
-                            {icon}
-                        </ListItemIcon>
-                    )}
-                    {title}
-                </Link>
-            )}
-        </ListItem>
-    )
+    return drawerItem
 }
 
 DrawerItem.propTypes = {
@@ -207,6 +139,6 @@ DrawerItem.propTypes = {
     href: PropTypes.string,
     linkProps: PropTypes.object,
     onClick: PropTypes.func,
-    openImmediately: PropTypes.bool,
+    subdrawerOpen: PropTypes.bool,
     title: PropTypes.string.isRequired
 }
