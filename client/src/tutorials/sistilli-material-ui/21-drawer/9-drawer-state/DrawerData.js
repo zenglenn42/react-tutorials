@@ -1,20 +1,13 @@
-import React from 'react'
-import { Home, ContactMail } from '@material-ui/icons'
-import { Person, Widgets } from '@material-ui/icons'
-
 export const drawerData = [
     {
         title: 'Home',
-        pathname: '/',
-        icon: <Home />
+        pathname: '/'
     },
     {
-        pathname: '/contact',
-        icon: <ContactMail />
+        pathname: '/contact'
     },
     {
         pathname: '/about',
-        icon: <Person />,
         children: [
             {
                 pathname: 'https://en.wikipedia.org/wiki/Lorem_ipsum',
@@ -37,7 +30,6 @@ export const drawerData = [
     { pathname: 'divider' },
     {
         pathname: '/components',
-        icon: <Widgets />,
         children: [
             {
                 pathname: '/components',
