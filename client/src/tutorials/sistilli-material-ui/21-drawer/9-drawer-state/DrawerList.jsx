@@ -79,6 +79,7 @@ function reduceChildRoutes({ activePage, items, page, depth, key, ...params }) {
             ? activePage.pathname.indexOf(`${page.pathname}/`) === 0
             : false
         // push collapsible parent node and related children
+        const topLevelProp = topLevel && !page.subheader
         items.push(
             <DrawerItem
                 title={title}
@@ -86,8 +87,8 @@ function reduceChildRoutes({ activePage, items, page, depth, key, ...params }) {
                 linkProps={page.linkProps}
                 depth={depth}
                 key={title}
-                topLevel={topLevel && !page.subheader}
-                openImmediately={topLevel || Boolean(page.subheader)}
+                topLevel={topLevelProp}
+                // subdrawerOpen={topLevel || Boolean(page.subheader)}
             >
                 {renderDrawerItems({
                     pages: page.children,
@@ -104,6 +105,7 @@ function reduceChildRoutes({ activePage, items, page, depth, key, ...params }) {
                 ? page.children[0]
                 : page
 
+        console.log('DrawerList: pushing leaf item', title)
         items.push(
             <DrawerItem
                 title={title}
@@ -125,7 +127,8 @@ export const DrawerList = (props) => {
     const { pages, setDimensions, onLeafItemClick } = props
     //const [activePage, setActivePage] = useState({ pathname: '/' })
     //temporarily comment out this since we're not mutating active page yet
-    const [activePage] = useState({ pathname: '/' })
+    //const [activePage] = useState({ pathname: '/' })
+    const activePage = void 0
 
     const _listRef = useRef()
     const [listRef, setListRef] = useState(_listRef)
