@@ -86,7 +86,7 @@ export const App = (props) => {
     // content of drawer.  However you may override that here
     // with a static width.
 
-    const drawerWidth = null
+    const drawerWidth = 170
     const drawerWidthUnits = 'px'
 
     const drawerStaticWidth =
