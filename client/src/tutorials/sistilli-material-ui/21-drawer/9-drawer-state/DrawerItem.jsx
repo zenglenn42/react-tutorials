@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import { Button, Collapse, ListItem, makeStyles } from '@material-ui/core'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown'
 import ArrowDropUpIcon from '@material-ui/icons/ArrowDropUp'
-import { FaRegIdBadge } from 'react-icons/fa'
+import LinkIcon from '@material-ui/icons/Link'
 
 const useStyles = makeStyles((theme) => ({
     listItem: {
@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
     activeRoute: {
         // NavLink will use this.
         color: theme.palette.primary.main,
-        fontSize: '113%',
+        fontSize: '110%',
         fontWeight: 'bold'
         // More subtle than 'bold' but requires additional
         // fonts to be installed (e.g., 700 weight).
@@ -103,12 +103,17 @@ export default function DrawerItem(props) {
     } else {
         // Item is either an external url or internal route.
         const externalUrl = href.indexOf('http') === 0 && href
-        const navLinkProps = externalUrl
-            ? { to: { pathname: `${externalUrl}` } }
-            : {
-                  to: href, // internal route
-                  activeClassName: `drawer-active ${classes.activeRoute}`
-              }
+        let navlinkProps = {}
+        let iconProps = {}
+        if (externalUrl) {
+            navlinkProps = { to: { pathname: `${externalUrl}` } }
+            iconProps = { endIcon: <LinkIcon /> }
+        } else {
+            navlinkProps = {
+                to: href, // internal route
+                activeClassName: `drawer-active ${classes.activeRoute}`
+            }
+        }
         drawerItem = (
             <ListItem className={classes.listItem} disableGutters>
                 <Button
@@ -122,8 +127,9 @@ export default function DrawerItem(props) {
                     disableTouchRipple
                     exact
                     onClick={onClick}
-                    {...navLinkProps} // for route or external url
+                    {...navlinkProps} // designate route or external url
                     {...linkProps} // from json drawer data file
+                    {...iconProps} // indicate link to an external url with an icon 🔗
                 >
                     {title}
                 </Button>
