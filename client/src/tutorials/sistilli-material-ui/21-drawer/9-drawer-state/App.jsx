@@ -73,26 +73,28 @@ export const App = (props) => {
     //     setOpenDrawer(true)
     // }
 
-    // Track dynamic dimensions of the nav drawer to communicate
-    // margin hints to main content window on desktop so always-visible
-    // drawer does not occlude content.
-
-    const [drawerDimensions, setDrawerDimensions] = useState({
-        width: 0,
-        height: 0
-    })
-
     // Normally drawerWidth is computed dynamically according to
     // content of drawer.  However you may override that here
     // with a static width.
 
-    const drawerWidth = 170
+    const drawerWidth = null
     const drawerWidthUnits = 'px'
 
     const drawerStaticWidth =
         typeof drawerWidth === 'number'
             ? `${drawerWidth}${drawerWidthUnits}`
             : ''
+
+    // Track dynamic dimensions of the nav drawer to communicate
+    // margin hints to main content window on desktop so always-visible
+    // drawer does not occlude content.
+
+    const [drawerDimensions, setDrawerDimensions] = useState({
+        width: drawerWidth || 0,
+        height: 0
+    })
+
+    console.log('App drawerDimensions =', drawerDimensions)
 
     return (
         <>
@@ -129,7 +131,6 @@ export const App = (props) => {
                             open: openDrawer
                             // FEATURE: Add support for SwipeableDrawer
                             // onOpen: handleDrawerOpen
-
                             // PaperProps: { style: { backgroundColor: 'blue' } }
                         }}
                     />
