@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect } from 'react'
+import React, { useCallback, useRef, useState, useLayoutEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core'
 import { ResponsiveAppBar } from './ResponsiveAppBar'
@@ -60,14 +60,14 @@ export const App = (props) => {
     // Remember the open/closed state of the drawer (especially on mobile)
 
     const [openDrawer, setOpenDrawer] = useState(false)
-    const handleDrawerClose = () => {
-        setOpenDrawer(false)
-    }
-    const handleDrawerToggle = () => {
-        setOpenDrawer((prevState) => {
-            return !prevState
-        })
-    }
+    const handleDrawerClose = useCallback(() => setOpenDrawer(false), [])
+    const handleDrawerToggle = useCallback(
+        () =>
+            setOpenDrawer((prevState) => {
+                return !prevState
+            }),
+        []
+    )
     // FEATURE: Add support for SwipeableDrawer
     // const handleDrawerOpen = () => {
     //     setOpenDrawer(true)
@@ -94,8 +94,6 @@ export const App = (props) => {
         height: 0
     })
 
-    console.log('App drawerDimensions =', drawerDimensions)
-
     return (
         <>
             <BrowserRouter>
@@ -115,7 +113,7 @@ export const App = (props) => {
                             onClose: handleDrawerClose,
                             // PaperProps: { style: { backgroundColor: 'green' } },
                             setDimensions: setDrawerDimensions,
-                            SlideProps: {},
+                            // SlideProps: {},
                             width: drawerStaticWidth
                         }}
                         DesktopProps={
@@ -126,11 +124,10 @@ export const App = (props) => {
                         MobileProps={{
                             container: container,
                             // elevation: {16},
-                            BackdropProps: {},
-                            ModalProps: {},
+                            // BackdropProps: {},
+                            // ModalProps: {},
                             open: openDrawer
-                            // FEATURE: Add support for SwipeableDrawer
-                            // onOpen: handleDrawerOpen
+                            // onOpen: handleDrawerOpen // Add support for SwipeableDrawer
                             // PaperProps: { style: { backgroundColor: 'blue' } }
                         }}
                     />
