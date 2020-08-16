@@ -73,8 +73,6 @@ function usePortal(id, children) {
     // Ensure the portal div exists in the DOM (at first render) and is only created once.
 
     const container = lazyUseRef(containerRef, document.createElement('div'))
-    container.setAttribute('id', 'hello')
-
     return createPortal(children, container)
 }
 
